@@ -25,21 +25,21 @@ Truett Projects
 * :ref:`Index of Glossary Terms <genindex>`
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden:
    :caption: 🍱 Collection
 
    project-1/index.rst
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden:
    :caption: 🧪 Testing
 
    project-2/index.rst
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden:
    :caption: 💡 Math
 
