@@ -31,7 +31,6 @@ extensions = [
     'sphinx_rtd_theme',
     'hoverxref.extension',
     'sphinxemoji.sphinxemoji',
-    'sphinxcontrib.bibtex',
     'sphinxcontrib.contentui',
     'sphinxcontrib.httpdomain',
     'sphinxcontrib.plantuml',
