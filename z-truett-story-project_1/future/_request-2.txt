@@ -1,0 +1,38 @@
+
+# Planned Story Projects
+
+## Conversions
+
+In addition to using the upgraded CSS for existing Stories, we plan to convert old presentations to the new Truett Story format.
+
+Here is target upgrade example: https://afdsi.com/preso-shower-15-05/
+
+## New Stories
+
+### Biograph
+* https://afdsi.com/_ankita/amp-story-player/_AMP-biograph.html
+* Advice and Warnings
+* Solid
+* Diabetes
+* Observations
+* Monitor and Report
+* Electronic Label
+
+### Story of Rice, improving:
+* https://afdsi.com/web-story-rice/
+
+### Knowledge Graph using:
+* https://afdsi.com/_elena/knowledge-graph
+
+### Story of Pizza using:
+* https://afdsi.com/_elena/pizza-protege
+
+### Story of Resource Description Framework (RDF) using:
+* https://afdsi.com/_elena/pubchem-RDF
+
+### Story of the Grapy, using:
+* https://afdsi.com/_elena/sowa-graph
+
+### Story of Plato, reworking
+* https://afdsi.com/_svg-projects/story-plato-layers/
+

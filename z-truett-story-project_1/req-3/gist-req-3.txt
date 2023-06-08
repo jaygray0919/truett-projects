@@ -1,0 +1,19 @@
+
+# 3. sidebar for amp-story-player
+
+## From initial requirements document
+
+> When upgrading the CSS template, one of our requirements is to implement a table-of-contents in a sidebar.
+An earlier Google amp-story version supported a sidebar.
+However, the current release deprecates a sidebar in amp-story and "moves it" to amp-story-player using JavaScript.
+In effect, amp-story-player is an iframe for an external instances of an amp-story.
+The sidebar is part of the iframe and enables navigation within the instance of an amp-story.
+
+Here is the Google sidebar guidance example:
+* https://codepen.io/mszylkowski/pen/dyOLKgE
+
+# Status:
+* Complete (well done)
+
+# Next steps:
+* Update preliminary sidebar CSS to standardize Truett CSS, fonts and colors

@@ -1,0 +1,15 @@
+
+# 5. amp-interactive additions
+
+## From initial requirements document
+
+>The upgraded CSS template needs to include the following new AMP features:
+* amp-story-interactives-disclaimer: https://codepen.io/mszylkowski/pen/QWKborj
+* amp-story-interactives-slider: https://codepen.io/mszylkowski/pen/LYNmLQY
+* amp-story-animation: https://codepen.io/mszylkowski/pen/GRZmdBO
+
+# Status:
+* Not started
+
+# Next steps:
+* Create samples for Truett Story template slides
