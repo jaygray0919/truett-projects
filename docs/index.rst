@@ -26,28 +26,24 @@ Truett Projects
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: 🍱 Collection
 
    project-1/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: 🧪 Testing
 
    project-2/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: 💡 Math
 
    project-3/index.rst
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
    :caption: 📚 Reference
 
    glossary.rst
