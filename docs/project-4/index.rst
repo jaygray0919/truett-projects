@@ -4,7 +4,7 @@ Project-4 Tasks
 ***************
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :numbered:
    :caption: Project-4 Tasks
 

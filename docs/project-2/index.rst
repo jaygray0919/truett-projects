@@ -4,7 +4,7 @@ Project-2 Tasks
 ***************
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :numbered:
    :caption: Project-2 Tasks
 
