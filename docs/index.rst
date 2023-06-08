@@ -26,21 +26,27 @@ Truett Projects
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Collection
+   :caption: 🍱 Project 1
 
    project-1/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🧪 Testing
+   :caption: 🧪 Project 2
 
    project-2/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 💡 Math
+   :caption: 💡 Project 3
 
    project-3/index.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 🍱 Project 4
+
+   project-4/index.rst
 
 .. toctree::
    :maxdepth: 1
