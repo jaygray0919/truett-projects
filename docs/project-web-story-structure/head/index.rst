@@ -1,8 +1,8 @@
 .. index:
 
-************
-Story <head>
-************
+***************
+<head> elements
+***************
 
 
 .. include:: _local.txt
