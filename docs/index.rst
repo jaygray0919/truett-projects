@@ -62,7 +62,7 @@ Truett Projects
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Transform - HTML to SVG
+   :caption: 🍱 Transformation Management
 
    project-html-to-svg/index.rst
 
