@@ -1,7 +1,7 @@
 .. index:
 
 **********
-Background
+background
 **********
 
 
