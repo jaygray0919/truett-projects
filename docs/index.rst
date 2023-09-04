@@ -28,13 +28,13 @@ Truett Projects
    :maxdepth: 2
    :caption: 🍱 Web Story Structure
 
-   project-web-stories-structure/index.rst
+   project-web-story-structure/index.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: 🧪 Web Story Instances 
 
-   project-web-stories-instances/index.rst
+   project-web-story-instance/index.rst
 
 .. toctree::
    :maxdepth: 2
