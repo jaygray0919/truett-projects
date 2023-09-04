@@ -14,7 +14,7 @@
 
 .. highlight:: html
 
-Comments about <head> components here.
+Add guidance about <head> elements here.
 
 ::
 
@@ -39,5 +39,5 @@ Comments about <head> components here.
 
 
 .. attention::
-   advice here.
+   Will need to correctly set title and canonical URL for each instance.
 
