@@ -13,12 +13,13 @@ Story Structure Management
    background/index.rst
    cover-page/index.rst
    doc-reader/index.rst
-   font-combination/index.rst
    font-color/index.rst
+   font-combination/index.rst
    font-library/index.rst
    font-size/index.rst
    head/index.rst
    landscape/index.rst
+   line-height/index.rst
    link-style/index.rst
    outlink/index.rst
    pan-zoom/index.rst
