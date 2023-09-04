@@ -26,43 +26,43 @@ Truett Projects
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Web Stories Structure
+   :caption: 🍱 Web Story Structure
 
    project-web-stories-structure/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🧪 Web Stories Instances 
+   :caption: 🧪 Web Story Instances 
 
    project-web-stories-instances/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 💡 Library Management - Fonts
+   :caption: 💡 Libraries - Fonts
 
    project-library-management-fonts/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Library Management - JavaScript
+   :caption: 🍱 Libraries - JavaScript
 
    project-library-management-javascript/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Library Management - SVGs
+   :caption: 🍱 Libraries - SVGs
 
    project-library-management-svg/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Library Management - Color
+   :caption: 🍱 Libraries - Color
 
    project-library-management-color/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Transformation Management
+   :caption: 🍱 Transformations
 
    project-html-to-svg/index.rst
 
