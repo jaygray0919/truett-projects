@@ -1,0 +1,190 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon"                href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<link rel="canonical"           href="index.html">
+<title>
+Pizza text avec Recursive
+</title>
+
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<script  async                                            src="https://cdn.ampproject.org/v0.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap" rel="stylesheet">
+
+<!--
+toggles g and a
+src: url("recursive-2019_11_22-20_38.woff2") format("woff2-variations");
+
+no toggle: g and a
+src: url("Recursive-VF_CASL,CRSV,MONO,slnt,wght.ttf") format("truetype");
+
+@font-face { font-family: "Recursive"; src: url("recursive-2019_11_22-20_38.woff2") format("woff2-variations"); font-style: normal; font-weight: 300 900; font-stretch: 35% 100%; font-display: swap; }
+
+no toggle: g and a
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap" rel="stylesheet">
+-->
+
+<style amp-custom>
+
+html {
+  font-family: "Recursive", monospace;
+  background: black;
+  color: #fff;
+}
+
+/* 
+  CSS custom properties trick for variable fonts; see 
+  https://pixelambacht.nl/2019/fixing-variable-font-inheritance/ 
+*/
+
+:root {
+  /* Start with axis defaults. Exclude weight, which is better controlled via the usual font-weight CSS property */
+  --MONO: 0;   /* Monospace    */
+  --CASL: 0;   /* Casual       */
+  --slnt: 0;   /* Upright      */
+  --CRSV: 0.5; /* Auto Cursive */
+}
+
+*,
+*:before,
+*:after {
+  font-variation-settings: 
+  "MONO" var(--MONO),
+  "CASL" var(--CASL),
+  "slnt" var(--slnt),
+  "CRSV" var(--CRSV);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 1vw;
+}
+
+h1 {
+  --CASL: 1;   /* Casual       */
+  --slnt: 0;   /* About 5deg   */
+  --MONO: 1;   /* Monospace    */
+  font-size: 3rem;
+  /* word-spacing:-0.6em; */
+  /* font-weight: 300; */
+  /* word-break: break-all; */
+  line-height: 1;
+  animation: weightShift 5s infinite alternate;
+  transition: 0.75s;
+  margin: 0;
+  text-align: center;
+}
+
+h1:hover {
+  --slnt: -7;
+  --CRSV: 0;
+  font-weight: 300;
+  /* font-weight: 800; */
+}
+
+h1 span {
+  font-weight: 900;
+  transition: 1s;
+}
+
+h1:hover span {
+  font-weight: 300;
+}
+
+h2 {
+  --CASL: 1;
+  --slnt: 0;
+  --MONO: 1;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 span {
+  font-weight: 700;
+  transition: 1s;
+}
+
+h2:hover {
+  --slnt: -10;
+  --CRSV: 0;
+  font-weight: 800;
+}
+
+p {
+  --MONO: 1;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  transition: 1s;
+}
+
+p:hover {
+  --slnt: -10;
+  --CRSV: 0;
+  font-weight: 800;
+  transition: 1s;
+}
+
+a {
+  --slnt: -10;
+  color: inherit;
+}
+
+</style>
+</head>
+<body>
+
+<h1><span>Generate <wbr>machine&#x2013;readable <wbr>electronic labels</span></h1>
+<h2><span>For foods&#x002C; drugs&#x002C; cosmetics&#x002C; meals&#x002C; textiles&#x002C; and commodities</span></h2>
+<p>
+Pizza is a complex product, made from hundreds of parts to satisfy different demands.
+</p>
+<p>
+An electronic label describes complex products by linking structured data from many sources into knowledge graphs.
+</p>
+<p>
+Structured data describes aroma, flavor, texture, shape, size, composition, formulation, preparation, purpose, usage and potentially harmful ingredients.
+</p>
+<p>
+Structured data describes how a product and its ingredients are sourced, processed, preserved and packaged.
+</p>
+<p>
+Electronic labels represent electronic containers that combine knowledge graphs.
+</p>
+<p>
+Electronic labels are machine‐readable and add value to machine‐automation and machine‐learning projects.
+</p>
+<p>
+Electronic labels help authorities control national border and product safety inspections; certify genuine products; expose counterfeit products.
+</p>
+<p>
+Electronic labels are combined to make new labels for new products, and for new levels of machine‐automation and machine‐learning.
+</p>
+<p>
+For humans, electronic labels are published and spoken in 27 natural languages.
+</p>
+<p>
+For scanners, electronic labels are served using Quick Response codes.
+</p>
+<p>
+For computers, electronic labels are served from Uniform Resource Identifiers.
+</p>
+
+<!-- </div> -->
+</body>
+</html>

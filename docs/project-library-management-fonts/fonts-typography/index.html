@@ -1,0 +1,956 @@
+<!--
+source:
+https://codepen.io/Daniela_Li/pen/yRpWqN
+
+font-family: "Source Serif Pro";
+https://fonts.google.com/specimen/Source+Serif+Pro
+
+https://fonts.google.com/specimen/Source+Sans+Pro
+
+also
+Source Serif Pro VF
+-->
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon"                href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<link rel="canonical"           href="index.html">
+<title>
+amp.dev font substitution test
+</title>
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<script  async                                            src="https://cdn.ampproject.org/v0.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+.button {
+  font-size: 1rem;
+  font-family: Georgia, "New Times Roman", serif;
+  text-decoration: none;
+  color: #383838;
+  padding: 0.25em;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  transition: all linear 0.2s;
+}
+
+.button:hover {
+  background-color: #e4e1e1;
+  background-image: linear-gradient(#fefafa, #cbc7c7);
+  font-variation-settings: "wght" 450, "wdth" 100, "opsz" 16, "GRAD" 150;
+}
+
+.toggle-web-fonts {
+  position: fixed;
+  top: 0.5em;
+  right: 8em;
+  z-index: 999;
+}
+
+@media (min-width: 30em) {
+  .toggle-web-fonts {
+    right: 0.5em;
+  }
+}
+.toggle-web-fonts.on:after {
+  content: ": on";
+}
+
+.toggle-web-fonts.off:after {
+  content: ": off";
+}
+
+/**
+ * Breakpoint Configuration
+ *
+ */
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-ExtraLight.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-ExtraLight.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 200;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-ExtraLightIt.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-ExtraLightIt.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-ExtraLightIt.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-Light.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-Light.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-LightIt.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-LightIt.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-LightIt.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-Regular.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-Regular.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-It.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-It.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-It.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-Semibold.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-Semibold.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-Semibold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-SemiboldIt.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-SemiboldIt.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-SemiboldIt.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-Bold.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-Bold.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-BoldIt.ttf.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-BoldIt.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-BoldIt.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-Black.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-Black.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-Black.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/woff2/SourceSerifPro-BlackIt.woff2") format("woff2"), url("https://rwt.io/_demo_fonts/source-serif-pro/woff/SourceSerifPro-BlackIt.ttf.woff") format("woff"), url("https://rwt.io/_demo_fonts/source-serif-pro/ttf/SourceSerifPro-BlackIt.ttf") format("truetype");
+  font-display: swap;
+}
+/* Variable Fonts */
+@font-face {
+  font-family: "Source Serif Pro VF";
+  font-weight: 200 900;
+  /* default: 389 */
+  font-style: normal;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/var/SourceSerifVariable-Roman.ttf.woff2") format("woff2-variations");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif Pro VF";
+  font-weight: 200 900;
+  /* default: 389 */
+  font-style: italic;
+  font-stretch: normal;
+  src: url("https://rwt.io/_demo_fonts/source-serif-pro/var/SourceSerifVariable-Italic.ttf.woff2") format("woff2-variations");
+  font-display: swap;
+}
+.section-content {
+  margin: 0 auto;
+  padding: 0 0.5em;
+}
+
+@media only screen and (min-width: 24.15em) {
+  .section-content {
+    max-width: 98%;
+  }
+}
+@media only screen and (min-width: 43.75em) {
+  .section-content {
+    max-width: 98%;
+  }
+}
+@media only screen and (min-width: 60.25em) {
+  .section-content {
+    max-width: 98%;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .section-content {
+    max-width: 98em;
+  }
+}
+html {
+  background-color: #ffffff;
+  color: #3c3d31;
+  font-size: 100%;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+body,
+p,
+th,
+td,
+ul,
+li {
+  font-family: "Source Serif Pro", Georgia, "New Times Roman", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.wf-inactive body,
+.wf-inactive p,
+.wf-inactive th,
+.wf-inactive td,
+.wf-inactive ul,
+.wf-inactive li {
+  font-family: Georgia, "New Times Roman", serif;
+}
+
+ul {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+@media only screen and (min-width: 43.75em) {
+  ul {
+    font-size: 1.125rem;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 60.25em) {
+  ul {
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 75em) {
+  ul {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.25;
+  margin: 0 auto 1rem;
+  max-width: 40rem;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+@media only screen and (min-width: 43.75em) {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 60.25em) {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 75em) {
+  p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+.wf-inactive p {
+  font-size: 1.025em;
+  line-height: 1.125;
+  word-spacing: -0.5px;
+}
+@media screen and (min-width: 24.15em) {
+  .wf-inactive p {
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 43.75em) {
+  .wf-inactive p {
+    font-size: 1.1em;
+    letter-spacing: -0.5px;
+    line-height: 1.375;
+  }
+}
+@media (min-width: 60.25em) {
+  p {
+    max-width: 42rem;
+  }
+  .wf-inactive p {
+    font-size: 1.05em;
+    line-height: 1.475;
+    word-spacing: 1.5px;
+  }
+}
+@media (min-width: 75em) {
+  p {
+    max-width: 44rem;
+  }
+  .wf-inactive p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    word-spacing: 1.5px;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-family: "Source Serif Pro", Georgia, "New Times Roman", serif;
+  font-weight: 300;
+  margin: 1rem auto;
+  max-width: 40rem;
+}
+@media only screen and (min-width: 43.75em) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+.wf-inactive h1 {
+  font-family: Georgia, "New Times Roman", serif;
+  letter-spacing: -0.5px;
+}
+@media screen and (min-width: 43.75em) {
+  .wf-inactive h1 {
+    font-family: Georgia, "New Times Roman", serif;
+    letter-spacing: normal;
+  }
+}
+@media screen and (min-width: 60.25em) {
+  h1 {
+    max-width: 42rem;
+  }
+  .wf-inactive h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 75em) {
+  h1 {
+    max-width: 44rem;
+  }
+  .wf-inactive h1 {
+    font-size: 4.05em;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-family: "Source Serif Pro", Georgia, "New Times Roman", serif;
+  font-weight: 300;
+  margin: 0 auto 1rem auto;
+  max-width: 40rem;
+}
+@media only screen and (min-width: 43.75em) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+.wf-inactive h2 {
+  font-family: Georgia, "New Times Roman", serif;
+  letter-spacing: -0.75px;
+}
+@media screen and (min-width: 43.75em) {
+  .wf-inactive h2 {
+    letter-spacing: 0.5px;
+    word-spacing: -1px;
+  }
+}
+@media screen and (min-width: 60.25em) {
+  h2 {
+    max-width: 42rem;
+  }
+}
+@media (min-width: 75em) {
+  h2 {
+    max-width: 44rem;
+  }
+  .wf-inactive h2 {
+    letter-spacing: 0.5px;
+  }
+}
+p + h2 {
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.15;
+  font-family: "Source Serif Pro", Georgia, "New Times Roman", serif;
+  font-weight: 400;
+  margin: 0 auto 0.5rem auto;
+  max-width: 40rem;
+}
+@media only screen and (min-width: 43.75em) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+.wf-inactive h3 {
+  font-family: Georgia, "New Times Roman", serif;
+  letter-spacing: -0.75px;
+}
+@media screen and (min-width: 43.75em) {
+  .wf-inactive h3 {
+    letter-spacing: 0.5px;
+    word-spacing: -1px;
+  }
+}
+@media screen and (min-width: 60.25em) {
+  h3 {
+    max-width: 42rem;
+  }
+  .wf-inactive h3 {
+    letter-spacing: 0.5px;
+    word-spacing: -1px;
+  }
+}
+@media (min-width: 75em) {
+  h3 {
+    max-width: 44rem;
+  }
+  .wf-inactive h3 {
+    letter-spacing: 0.5px;
+    word-spacing: -1px;
+  }
+}
+p + h3 {
+  margin-top: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3125rem;
+  line-height: 1.2;
+  font-family: "Source Serif Pro", Georgia, "New Times Roman", serif;
+  font-weight: bold;
+  margin: 0 auto 0 auto;
+  max-width: 40rem;
+}
+@media only screen and (min-width: 43.75em) {
+  h4 {
+    font-size: 1.375rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+.wf-inactive h4 {
+  font-family: Georgia, "New Times Roman", serif;
+  letter-spacing: -0.75px;
+}
+@media screen and (min-width: 43.75em) {
+  .wf-inactive h4 {
+    letter-spacing: -1px;
+  }
+}
+@media screen and (min-width: 60.25em) {
+  h4 {
+    max-width: 42rem;
+  }
+}
+@media (min-width: 75em) {
+  h4 {
+    max-width: 44rem;
+  }
+  .wf-inactive h4 {
+    letter-spacing: -1px;
+    word-spacing: -1px;
+  }
+}
+p + h4 {
+  margin-top: 1rem;
+}
+
+.headline-super {
+  font-size: 2.75rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+@media only screen and (min-width: 43.75em) {
+  .headline-super {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .headline-super {
+    font-size: 4.5rem;
+  }
+}
+.wf-inactive .headline-super {
+  letter-spacing: -0.75px;
+}
+@media screen and (min-width: 43.75em) {
+  .wf-inactive .headline-super {
+    font-size: 3.5rem;
+    letter-spacing: 0.5px;
+  }
+}
+@media screen and (min-width: 75em) {
+  .wf-inactive .headline-super {
+    letter-spacing: 1px;
+    font-size: 4.425rem;
+  }
+}
+
+.text-xsmall {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+@media only screen and (min-width: 60.25em) {
+  .text-xsmall {
+    font-size: 0.875rem;
+    line-height: 1.33;
+  }
+}
+
+.text-small {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+@media only screen and (min-width: 60.25em) {
+  .text-small {
+    font-size: 1rem;
+    line-height: 1.33;
+  }
+}
+
+.text-medium {
+  font-size: 1.3125rem;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 43.75em) {
+  .text-medium {
+    font-size: 1.375rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .text-medium {
+    font-size: 1.5rem;
+  }
+}
+
+.text-mlarge {
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+@media only screen and (min-width: 43.75em) {
+  .text-mlarge {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .text-mlarge {
+    font-size: 2rem;
+  }
+}
+
+.text-large {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+@media only screen and (min-width: 43.75em) {
+  .text-large {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .text-large {
+    font-size: 3rem;
+  }
+}
+
+.text-xlarge {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+@media only screen and (min-width: 43.75em) {
+  .text-xlarge {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .text-xlarge {
+    font-size: 4rem;
+  }
+}
+
+.text-xxlarge {
+  font-size: 2.75rem;
+  line-height: 1.1;
+}
+@media only screen and (min-width: 43.75em) {
+  .text-xxlarge {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .text-xxlarge {
+    font-size: 4.5rem;
+  }
+}
+
+/* Conditionally bringing in Variable Fonts */
+/* to temporarily disable variable font support just add 'not' after @supports like the example below */
+/* @supports not (font-variation-settings: normal) { */
+@supports (font-variation-settings: normal) {
+  :root {
+    /* Breakpoint variables */
+    --bp-small: 24.15;
+    --bp-medium: 43.75;
+    --bp-large: 60.25;
+    --bp-xlarge: 75;
+    /* Paragraph variables */
+    --p-line-height-min: 1.25;
+    --p-line-height-max: 1.4;
+    --p-font-size-min: 1.0;
+    --p-font-size-max: 1.25;
+    --p-vf-wght: 389;
+    /* Super heading variables */
+    --hs-line-height-min: 1.1;
+    --hs-line-height-max: 1.1;
+    --hs-font-size-min: 2.75;
+    --hs-font-size-max: 4.5;
+    --h2-vf-wght-multiplier-s: 1;
+    --h2-vf-wght-multiplier-m: 1;
+    --h2-vf-wght-multiplier-l: 1;
+    /* H1 variables */
+    --h1-line-height-min: 1.1;
+    --h1-line-height-max: 1.1;
+    --h1-font-size-min: 2.5;
+    --h1-font-size-max: 4;
+    --h1-vf-wght-multiplier-s: 0.75;
+    --h1-vf-wght-multiplier-m: 0.75;
+    --h1-vf-wght-multiplier-l: 0.75;
+    /* H2 variables */
+    --h2-line-height-min: 1.15;
+    --h2-line-height-max: 1.15;
+    --h2-font-size-min: 2;
+    --h2-font-size-max: 3;
+    --h2-vf-wght-multiplier-s: 0.75;
+    --h2-vf-wght-multiplier-m: 0.75;
+    --h2-vf-wght-multiplier-l: 0.75;
+    /* H3 variables */
+    --h3-line-height-min: 1.15;
+    --h3-line-height-max: 1.15;
+    --h3-font-size-min: 1.5;
+    --h3-font-size-max: 2;
+    --h3-vf-wght-multiplier-s: 1.15;
+    --h3-vf-wght-multiplier-m: 1.2;
+    --h3-vf-wght-multiplier-l: 1.25;
+    /* H4 variables */
+    --h4-line-height-min: 1.2;
+    --h4-line-height-max: 1.2;
+    --h4-font-size-min: 1.3125;
+    --h4-font-size-max: 1.5;
+    --h4-vf-wght-multiplier-s: 1.3;
+    --h4-vf-wght-multiplier-m: 1.4;
+    --h4-vf-wght-multiplier-l: 1.5;
+  }
+
+  body,
+p,
+th,
+td,
+ul,
+li {
+    font-family: "Source Serif Pro VF", Georgia, "New Times Roman", serif;
+    font-weight: var(--p-vf-wght);
+    font-style: normal;
+  }
+
+  p {
+    font-size: calc( var(--p-font-size-min) * 1rem );
+    font-weight: var(--p-vf-wght);
+    line-height: var(--p-line-height-min);
+  }
+  @media screen and (min-width: 24.15em) {
+    p {
+      line-height: calc(( var(--p-line-height-min) * 1em ) + ( var(--p-line-height-max) - var(--p-line-height-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-large) - var(--bp-small) )));
+    }
+  }
+  @media (min-width: 60.25em) {
+    p {
+      font-size: calc(( var(--p-font-size-min) * 1em ) + ( var(--p-font-size-max) - var(--p-font-size-min) ) * ((100vw - ( var(--bp-large) * 1em )) / ( var(--bp-xlarge) - var(--bp-large) )));
+      line-height: var(--p-line-height-max);
+    }
+  }
+  @media (min-width: 75em) {
+    p {
+      font-size: calc( var(--p-font-size-max) * 1em );
+    }
+  }
+
+  .headline-super {
+    font-family: "Source Serif Pro VF", Georgia, "New Times Roman", serif;
+    font-weight: calc( var(--p-vf-wght) * var(--hs-vf-wght-multiplier-s) );
+    font-size: calc( var(--hs-font-size-min) * 1em );
+    line-height: var(--hs-line-height-min);
+  }
+  .wf-inactive .headline-super {
+    font-family: Georgia, "New Times Roman", serif;
+    letter-spacing: -0.5px;
+  }
+  @media screen and (min-width: 24.15em) {
+    .headline-super {
+      line-height: calc(( var(--hs-line-height-min) * 1em ) + ( var(--hs-line-height-max) - var(--hs-line-height-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+      font-size: calc(( var(--hs-font-size-min) * 1em ) + ( var(--hs-font-size-max) - var(--hs-font-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+    }
+  }
+  @media screen and (min-width: 43.75em) {
+    .headline-super {
+      font-weight: calc( var(--p-vf-wght) * var(--hs-vf-wght-multiplier-m) );
+    }
+    .wf-inactive .headline-super {
+      letter-spacing: normal;
+    }
+  }
+  @media (min-width: 75em) {
+    .headline-super {
+      font-size: calc( var(--hs-font-size-max) * 1em );
+      font-weight: calc( var(--p-vf-wght) * var(--hs-vf-wght-multiplier-l) );
+      line-height: var(--hs-line-height-max);
+    }
+    .wf-inactive .headline-super {
+      letter-spacing: -1px;
+    }
+  }
+
+  h1 {
+    font-family: "Source Serif Pro VF", Georgia, "New Times Roman", serif;
+    font-weight: calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-s) );
+    font-size: calc( var(--h1-font-size-min) * 1em );
+    font-style: normal;
+    line-height: var(--h1-line-height-min);
+  }
+  .wf-inactive h1 {
+    font-family: Georgia, "New Times Roman", serif;
+    letter-spacing: -0.5px;
+  }
+  @media screen and (min-width: 24.15em) {
+    h1 {
+      line-height: calc(( var(--h1-line-height-min) * 1em ) + ( var(--h1-line-height-max) - var(--h1-line-height-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+      font-size: calc(( var(--h1-font-size-min) * 1em ) + ( var(--h1-font-size-max) - var(--h1-font-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+    }
+  }
+  @media screen and (min-width: 43.75em) {
+    h1 {
+      font-weight: calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-m) );
+    }
+    .wf-inactive h1 {
+      letter-spacing: normal;
+    }
+  }
+  @media (min-width: 75em) {
+    h1 {
+      font-size: calc( var(--h1-font-size-max) * 1em );
+      font-weight: calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-l) );
+      line-height: var(--h1-line-height-max);
+    }
+    .wf-inactive h1 {
+      letter-spacing: -1px;
+    }
+  }
+
+  h2 {
+    font-family: "Source Serif Pro VF", Georgia, "New Times Roman", serif;
+    font-size: calc( var(--h2-font-size-min) * 1em );
+    font-weight: calc( var(--p-vf-wght) * var(--h2-vf-wght-multiplier-s) );
+    line-height: var(--h2-line-height-min);
+  }
+  .wf-inactive h2 {
+    font-family: Georgia, "New Times Roman", serif;
+    letter-spacing: -0.75px;
+  }
+  @media screen and (min-width: 24.15em) {
+    h2 {
+      line-height: calc(( var(--h2-line-height-min) * 1em ) + ( var(--h2-line-height-max) - var(--h2-line-height-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+      font-size: calc(( var(--h2-font-size-min) * 1em ) + ( var(--h2-font-size-max) - var(--h2-font-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+    }
+  }
+  @media screen and (min-width: 43.75em) {
+    h2 {
+      font-weight: calc( var(--p-vf-wght) * var(--h2-vf-wght-multiplier-m) );
+    }
+    .wf-inactive h2 {
+      letter-spacing: -1px;
+    }
+  }
+  @media (min-width: 75em) {
+    h2 {
+      font-size: calc( var(--h2-font-size-max) * 1em );
+      font-weight: calc( var(--p-vf-wght) * var(--h2-vf-wght-multiplier-l) );
+      line-height: var(--h2-line-height-max);
+    }
+  }
+
+  h3 {
+    font-family: "Source Serif Pro VF", Georgia, "New Times Roman", serif;
+    font-size: calc( var(--h3-font-size-min) * 1em );
+    font-weight: calc( var(--p-vf-wght) * var(--h3-vf-wght-multiplier-s) );
+    line-height: var(--h3-line-height-min);
+  }
+  .wf-inactive h3 {
+    font-family: Georgia, "New Times Roman", serif;
+    letter-spacing: -0.75px;
+  }
+  @media screen and (min-width: 24.15em) {
+    h3 {
+      line-height: calc(( var(--h3-line-height-min) * 1em ) + ( var(--h3-line-height-max) - var(--h3-line-height-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+      font-size: calc(( var(--h3-font-size-min) * 1em ) + ( var(--h3-font-size-max) - var(--h3-font-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+    }
+  }
+  @media screen and (min-width: 43.75em) {
+    h3 {
+      font-weight: calc( var(--p-vf-wght) * var(--h3-vf-wght-multiplier-m) );
+    }
+    .wf-inactive h3 {
+      letter-spacing: -1px;
+    }
+  }
+  @media (min-width: 75em) {
+    h3 {
+      font-size: calc( var(--h3-font-size-max) * 1em );
+      font-weight: calc( var(--p-vf-wght) * var(--h3-vf-wght-multiplier-l) );
+      line-height: var(--h3-line-height-max);
+    }
+  }
+
+  h4 {
+    font-family: "Source Serif Pro VF", Georgia, "New Times Roman", serif;
+    font-size: calc( var(--h4-font-size-min) * 1em );
+    font-weight: calc( var(--p-vf-wght) * var(--h4-vf-wght-multiplier-s) );
+    line-height: var(--h4-line-height-min);
+  }
+  .wf-inactive h4 {
+    font-family: Georgia, "New Times Roman", serif;
+    letter-spacing: -0.75px;
+  }
+  @media screen and (min-width: 24.15em) {
+    h4 {
+      line-height: calc(( var(--h4-line-height-min) * 1em ) + ( var(--h4-line-height-max) - var(--h4-line-height-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+      font-size: calc(( var(--h4-font-size-min) * 1em ) + ( var(--h4-font-size-max) - var(--h4-font-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
+    }
+  }
+  @media screen and (min-width: 43.75em) {
+    h4 {
+      font-weight: calc( var(--p-vf-wght) * var(--h4-vf-wght-multiplier-m) );
+    }
+    .wf-inactive h4 {
+      letter-spacing: -1px;
+    }
+  }
+  @media (min-width: 75em) {
+    h4 {
+      font-size: calc( var(--h4-font-size-max) * 1em );
+      font-weight: calc( var(--p-vf-wght) * var(--h4-vf-wght-multiplier-l) );
+      line-height: var(--h4-line-height-max);
+    }
+  }
+}
+/* end VF supports block */
+</style>
+</head>
+<body>
+
+<header role="banner" class="banner clearfix" id="banner">
+<div class="section-content">
+<div class="branding clearfix"></div>
+</div>
+</header>
+  
+<main class="content-area clearfix">
+<div class="section-content">
+<article class="article-detail initial">
+
+<h1 class="headline-super">
+A super big headline might look like this
+</h1>
+
+<p>
+Imagine that you have before you a <strong>flagon of wine</strong>. You may choose your own <em>favourite vintage</em> for this imaginary demonstration, so that it be a <strong><em>deep shimmering crimson in colour</em></strong>. You have two goblets before you. One is of solid gold, wrought in the most exquisite patterns. The other is of crystal-clear glass, thin as a bubble, and as transparent. Pour and drink; and according to your choice of goblet, I shall know whether or not you are a connoisseur of wine.
+</p>
+
+<h1>
+And this is a regular top level heading
+</h1>
+
+<p>
+For if you have no feelings about wine one way or the other, you will want the sensation of drinking the stuff out of a vessel that may have cost thousands of pounds; but if you are a member of that vanishing tribe, the amateurs of fine vintages, you will choose the crystal, because everything about it is calculated to reveal rather than hide the beautiful thing which it was meant to contain.
+</p>
+
+<h2>
+This is a second level heading
+</h2>
+
+<p>
+Bear with me in this long-winded and fragrant metaphor; for you will find that almost all the virtues of the perfect wine-glass have a parallel in typography. There is the long, thin stem that obviates fingerprints on the bowl. Why? Because no cloud must come between your eyes and the fiery heart of the liquid. Are not the margins on book pages similarly meant to obviate the necessity of fingering the type-page? Again: the glass is colourless or at the most only faintly tinged in the bowl, because the connoisseur judges wine partly by its colour and is impatient of anything that alters it. There are a thousand mannerisms in typography that are as impudent and arbitrary as putting port in tumblers of red or green glass! When a goblet has a base that looks too small for security, it does not matter how cleverly it is weighted; you feel nervous lest it should tip over. There are ways of setting lines of type which may work well enough, and yet keep the reader subconsciously worried by the fear of ‘doubling’ lines, reading three words as one, and so forth.
+</p>
+
+<h3>
+This is a third level heading
+</h3>
+
+<p>
+Now the man who first chose glass instead of clay or metal to hold his wine was a ‘modernist’ in the sense in which I am going to use that term. That is, the first thing he asked of his particular object was not ‘How should it look?’ but ‘What must it do?’ and to that extent all good typography is modernist.
+</p>
+
+<h4>
+And this is a fourth level heading
+</h4>
+
+<p>
+Wine is so strange and potent a thing that it has been used in the central ritual of religion in one place and time, and attacked by a virago with a hatchet in another. There is only one thing in the world that is capable of stirring and altering men’s minds to the same extent, and that is the coherent expression of thought. That is man’s chief miracle, unique to man. There is no ‘explanation’ whatever of the fact that I can make arbitrary sounds which will lead a total stranger to think my own thought. It is sheer magic that I should be able to hold a one-sided conversation by means of black marks on paper with an unknown person half-way across the world. Talking, broadcasting, writing, and printing are all quite literally forms of thought transference, and it is the ability and eagerness to transfer and receive the contents of the mind that is almost alone responsible for human civilization.
+</p>
+</article>
+</div>
+</main>
+</body>
+</html>

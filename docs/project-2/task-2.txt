@@ -1,4 +1,0 @@
-.. task-2.txt
-
-.. note::
-   * Each section opens with a sentence about using the page example. |br| In some cases there is a second sentence.

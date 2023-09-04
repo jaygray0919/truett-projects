@@ -1,0 +1,975 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon"                href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<link rel="canonical"           href="index.html" />
+<title>
+Pizza+biograph: Amstelvar+Recursive
+</title>
+
+<!-- <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome"> -->
+<!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" /> -->
+
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<script  async                                            src="https://cdn.ampproject.org/v0.js"></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+@font-face {
+    font-family: Recursive;
+    src: url("Recursive-2019.woff2") format("woff2-variations");
+    text-align: initial;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: Amstelvar-VF;
+  src: url("AmstelvarAlpha-VF.woff2") format("woff2-variations");
+  font-style: normal;
+  font-weight: 300 900;
+  font-stretch: 35% 100%;
+  font-display: swap;
+}
+
+.support {
+  align-items: center;
+  /* background: tomato; */
+  color: #fff;
+  display: flex;
+  font-size: 0.9rem;
+  padding: 0 10px 0 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: 100;
+}
+
+.support a {
+  color: #fff;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+@supports (display: grid) {
+  .support {
+    background: #058a6e;
+    right: 40px;
+    transform: translateX(100%);
+    transition: right 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .support:hover {
+    right: 0;
+    transform: translateX(0%);
+  }
+}
+
+.support svg {
+  fill: #ffffff;
+  height: 30px;
+  margin-right: 5px;
+  padding: 5px;
+  width: 30px;
+}
+
+.unsupported {
+  display: block;
+}
+
+@supports (display: grid) {
+  .unsupported {
+    display: none;
+  }
+}
+
+.supported {
+  display: none;
+}
+
+@supports (display: grid) {
+  .supported {
+    display: block;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 60em) {
+  main {
+    justify-content: flex-end;
+  }
+}
+
+@supports (display: grid) {
+  main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 60em) {
+    main {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 60em) {
+  .intro {
+    flex: 0 0 calc(50% - 3rem);
+    margin-left: calc(25% - 3rem);
+  }
+}
+
+@supports (display: grid) {
+  .intro {
+    grid-column: 1/span 2;
+  }
+  @media (min-width: 60em) {
+    .intro {
+      grid-column: 2/span 2;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 60em) {
+  .summary {
+    order: 1;
+  }
+}
+
+@supports (display: grid) {
+  .summary {
+    grid-column: 1/span 2;
+  }
+  @media (min-width: 60em) {
+    .summary {
+      grid-column: 4/span 1;
+    }
+  }
+}
+
+@supports (display: grid) {
+  .post-content {
+    grid-column: 1/span 2;
+  }
+  @media (min-width: 60em) {
+    .post-content {
+      grid-column: 2;
+    }
+  }
+}
+
+@media (min-width: 60em) {
+  .post-content {
+    flex: 0 0 calc(50% - 3rem);
+  }
+  @supports (display: grid) {
+    .post-content {
+      grid-column: 2/span 2;
+    }
+  }
+}
+
+.byline,
+.social {
+  flex: 0 0 calc(50% - 3rem);
+}
+
+@media (min-width: 60em) {
+  @supports (display: flex) {
+    .byline,
+.social {
+      flex: 0 0 calc(25% - 3rem);
+    }
+  }
+}
+
+/* Styles ------------------------------------------------- */
+
+body {
+  background: #fff;
+  color: #5a5c6c;
+}
+
+div {
+  margin: 0.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 60em) {
+  @supports (display: flex) {
+    div {
+      flex: 0 0 calc(25% - 3rem);
+    }
+  }
+}
+
+div:hover {
+  background-color: #fbf9fa;
+}
+
+.social a {
+  margin-top: 1rem;
+}
+
+a {
+  color: #bf4080;
+}
+
+a:hover {
+  color: #7c1d46;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social a {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+:root {
+  --recursive-b025-aalt: "aalt" off;
+  --recursive-b025-case: "case" off;
+  --recursive-b025-dlig: "dlig" off;
+  --recursive-b025-dnom: "dnom" off;
+  --recursive-b025-frac: "frac" off;
+  --recursive-b025-numr: "numr" off;
+  --recursive-b025-ordn: "ordn" off;
+  --recursive-b025-pnum: "pnum" off;
+  --recursive-b025-sinf: "sinf" off;
+  --recursive-b025-ss01: "ss01" off;
+  --recursive-b025-ss02: "ss02" off;
+  --recursive-b025-ss03: "ss03" off;
+  --recursive-b025-ss04: "ss04" off;
+  --recursive-b025-ss05: "ss05" off;
+  --recursive-b025-ss06: "ss06" off;
+  --recursive-b025-ss07: "ss07" off;
+  --recursive-b025-ss08: "ss08" off;
+  --recursive-b025-ss09: "ss09" off;
+  --recursive-b025-ss10: "ss10" off;
+  --recursive-b025-ss11: "ss11" off;
+  --recursive-b025-ss20: "ss20" off;
+  --recursive-b025-sups: "sups" off;
+  --recursive-b025-titl: "titl" off;
+  --recursive-b025-zero: "zero" off;
+  --base-font-size: 1rem;
+  --sans-font-stack: Recursive, Arial, Helvetica, sans-serif;
+  --mono-font-stack: Recursive, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+/* If class is applied, update custom property and apply modern font-variant-* when supported */
+.recursive-b025-aalt {
+  --recursive-b025-aalt: "aalt" on;
+}
+
+.recursive-b025-case {
+  --recursive-b025-case: "case" on;
+}
+
+.recursive-b025-dlig {
+  --recursive-b025-dlig: "dlig" on;
+}
+
+@supports (font-variant-ligatures: discretionary-ligatures) {
+  .recursive-b025-dlig {
+      --recursive-b025-dlig: "____";
+      font-variant-ligatures: discretionary-ligatures;
+  }
+}
+
+.recursive-b025-dnom {
+  --recursive-b025-dnom: "dnom" on;
+}
+
+.recursive-b025-frac {
+  --recursive-b025-frac: "frac" on;
+}
+
+@supports (font-variant-numeric: diagonal-fractions) {
+  .recursive-b025-frac {
+      --recursive-b025-frac: "____";
+      font-variant-numeric: diagonal-fractions;
+  }
+}
+
+.recursive-b025-numr {
+  --recursive-b025-numr: "numr" on;
+}
+
+.recursive-b025-ordn {
+  --recursive-b025-ordn: "ordn" on;
+}
+
+@supports (font-variant-numeric: ordinal) {
+  .recursive-b025-ordn {
+      --recursive-b025-ordn: "____";
+      font-variant-numeric: ordinal;
+  }
+}
+
+.recursive-b025-pnum {
+  --recursive-b025-pnum: "pnum" on;
+}
+
+@supports (font-variant-numeric: proportional-nums) {
+  .recursive-b025-pnum {
+      --recursive-b025-pnum: "____";
+      font-variant-numeric: proportional-nums;
+  }
+}
+
+.recursive-b025-sinf {
+  --recursive-b025-sinf: "sinf" on;
+}
+
+.recursive-b025-ss01 {
+  --recursive-b025-ss01: "ss01" on;
+}
+
+.recursive-b025-ss02 {
+  --recursive-b025-ss02: "ss02" on;
+}
+
+.recursive-b025-ss03 {
+  --recursive-b025-ss03: "ss03" on;
+}
+
+.recursive-b025-ss04 {
+  --recursive-b025-ss04: "ss04" on;
+}
+
+.recursive-b025-ss05 {
+  --recursive-b025-ss05: "ss05" on;
+}
+
+.recursive-b025-ss06 {
+  --recursive-b025-ss06: "ss06" on;
+}
+
+.recursive-b025-ss07 {
+  --recursive-b025-ss07: "ss07" on;
+}
+
+.recursive-b025-ss08 {
+  --recursive-b025-ss08: "ss08" on;
+}
+
+.recursive-b025-ss09 {
+  --recursive-b025-ss09: "ss09" on;
+}
+
+.recursive-b025-ss10 {
+  --recursive-b025-ss10: "ss10" on;
+}
+
+.recursive-b025-ss11 {
+  --recursive-b025-ss11: "ss11" on;
+}
+
+.recursive-b025-ss20 {
+  --recursive-b025-ss20: "ss20" on;
+}
+
+.recursive-b025-sups {
+  --recursive-b025-sups: "sups" on;
+}
+
+@supports (font-variant-position: super) {
+  .recursive-b025-sups {
+      --recursive-b025-sups: "____";
+      font-variant-position: super;
+  }
+}
+
+.recursive-b025-titl {
+  --recursive-b025-titl: "titl" on;
+}
+
+@supports (font-variant-caps: titling-caps) {
+  .recursive-b025-titl {
+      --recursive-b025-titl: "____";
+      font-variant-caps: titling-caps;
+  }
+}
+
+.recursive-b025-zero {
+  --recursive-b025-zero: "zero" on;
+}
+
+@supports (font-variant-numeric: slashed-zero) {
+  .recursive-b025-zero {
+      --recursive-b025-zero: "____";
+      font-variant-numeric: slashed-zero;
+  }
+}
+
+/* Apply current state of all custom properties whenever a class is being applied */
+.recursive-b025-aalt,
+.recursive-b025-case,
+.recursive-b025-dlig,
+.recursive-b025-dnom,
+.recursive-b025-frac,
+.recursive-b025-numr,
+.recursive-b025-ordn,
+.recursive-b025-pnum,
+.recursive-b025-sinf,
+.recursive-b025-ss01,
+.recursive-b025-ss02,
+.recursive-b025-ss03,
+.recursive-b025-ss04,
+.recursive-b025-ss05,
+.recursive-b025-ss06,
+.recursive-b025-ss07,
+.recursive-b025-ss08,
+.recursive-b025-ss09,
+.recursive-b025-ss10,
+.recursive-b025-ss11,
+.recursive-b025-ss20,
+.recursive-b025-sups,
+.recursive-b025-titl,
+.recursive-b025-zero {
+  font-feature-settings: var(--recursive-b025-aalt), var(--recursive-b025-case), var(--recursive-b025-dlig), var(--recursive-b025-dnom), var(--recursive-b025-frac), var(--recursive-b025-numr), var(--recursive-b025-ordn), var(--recursive-b025-pnum), var(--recursive-b025-sinf), var(--recursive-b025-ss01), var(--recursive-b025-ss02), var(--recursive-b025-ss03), var(--recursive-b025-ss04), var(--recursive-b025-ss05), var(--recursive-b025-ss06), var(--recursive-b025-ss07), var(--recursive-b025-ss08), var(--recursive-b025-ss09), var(--recursive-b025-ss10), var(--recursive-b025-ss11), var(--recursive-b025-ss20), var(--recursive-b025-sups), var(--recursive-b025-titl), var(--recursive-b025-zero);
+}
+
+/* Variable instances */
+.recursive-b025-mono-linear-light {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-light-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-light {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-light-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-medium {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-medium-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-medium {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-medium-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-semibold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-semibold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-semibold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-semibold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-bold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-bold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-bold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-bold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-extrabold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-extrabold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-extrabold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-extrabold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-black {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-black-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-black {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-black-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-linear-extrablack {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-linear-extrablack-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-mono-casual-extrablack {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-mono-casual-extrablack-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-light {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-light {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-medium {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-medium {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-bold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-bold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-black {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-black {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-linear-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-linear-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-b025-sans-casual-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-b025-sans-casual-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.centered {
+  text-align: center;
+}
+
+.example {
+  border: 5px solid #1F64FF;
+  padding: 1em;
+  width: 90%;
+}
+
+.example1 .byline-credit {
+  font-weight: 300;
+  font-variation-settings: "MONO" 0, "CASL" 1, "slnt" -15, "ital" 1;
+  text-transform: uppercase;
+}
+
+.example1 p {
+  line-height: 1.1
+}
+
+.example2 {
+  columns: 2;
+  column-gap: 4em;
+  column-rule: 2px solid #1F64FF;
+}
+
+.example3 h2{
+  font-size: 4.5em;
+}
+
+.page-title {
+  font-family: Recursive, monospace;
+  color: #1F64FF;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin: 1rem auto;
+  text-align: center; 
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 10, "ital" 1;
+}
+
+.post-title {
+  font-family: Recursive, monospace;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-variation-settings: "CASL" 1, "wght" 400, "slnt" 10, "ital" 1;
+}
+
+.meta {
+  font-family: Recursive, monospace;
+  font-size: 0.9rem;
+  font-variation-settings: "MONO" 0, "CASL" 1, "slnt" -10, "ital" 1;
+}
+
+
+/* Amstelvar-VF fails when using Recursive design */
+.post-content,
+.summary > h3,p {
+  font-family: Amstelvar-VF, serif;
+  font-variation-settings:
+    'wght' var(--text-wght),
+    'wdth' var(--text-wdth),
+    'opsz' var(--text-opsz),
+    'GRAD' var(--text-GRAD);
+}
+
+.summary h3 {
+  font-size: 1.2rem;
+  --text-wght: 325;
+  --text-wdth: 100;
+  --text-opsz: 16;
+  --text-GRAD: 88;
+}
+
+h3,p {
+  font-size: 1.0rem;
+  --text-wght: 325;
+  --text-wdth: 100;
+}
+
+.post-content p {
+  font-size: 1.1rem;
+  transition: 1s;
+  --text-wght: 375;
+  --text-wdth: 100;
+  --text-opsz: 16;
+  --text-GRAD: 88;
+}
+
+.post-content p:hover {
+  --text-wght: 400;
+  --text-GRAD: 230;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1 class="page-title">
+electronic labels
+</h1>
+</header>
+
+<main>
+
+<div class="intro">
+<h1 class="post-title">
+Generate machine&#x2010;readable electronic labels for foods&#x002C; drugs&#x002C; cosmetics&#x002C; meals&#x002C; textiles&#x002C; and commodities
+</h1>
+</div>
+
+<div class="byline">
+<p class="meta">
+by Jay Gray
+</p>
+</div>
+
+<div class="social">
+<a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-mn-1014"></use></svg></a>
+<!-- <a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-mn-1013"></use></svg></a> -->
+<!-- <a href="#"><span class="fa fa-twitter"></span></a> -->
+<!-- <a href="#"><span class="fa fa-facebook-square"></span></a> -->
+<!-- <a href="#"><span class="fa fa-google-plus-square"></span></a> -->
+</div>
+
+<div class="summary">
+<h3>
+TL;DR Summary
+</h3>
+<p>
+Pizza description using an electronic label.
+</p>
+</div>
+
+
+<div class="post-content">
+<p>
+Pizza is a complex product, made from hundreds of parts to satisfy different demands.
+</p>
+<p>
+An electronic label describes complex products by linking structured data from many sources into knowledge graphs.
+</p>
+<p>
+Structured data describes aroma, flavor, texture, shape, size, composition, formulation, preparation, purpose, usage and potentially harmful ingredients.
+</p>
+<p>
+Structured data describes how a product and its ingredients are sourced, processed, preserved and packaged.
+</p>
+<p>
+Electronic labels represent electronic containers that combine knowledge graphs.
+</p>
+<p>
+Electronic labels are machine‐readable and add value to machine‐automation and machine‐learning projects.
+</p>
+<p>
+Electronic labels help authorities control national border and product safety inspections; certify genuine products; expose counterfeit products.
+</p>
+<p>
+Electronic labels are combined to make new labels for new products, and for new levels of machine‐automation and machine‐learning.
+</p>
+<p>
+For humans, electronic labels are published and spoken in 27 natural languages.
+</p>
+<p>
+For scanners, electronic labels are served using Quick Response codes.
+</p>
+<p>
+For computers, electronic labels are served from Uniform Resource Identifiers.
+</p>
+
+<hr>
+
+<div class="example example2 recursive-b025-mono-linear">
+
+<h1>Biograph Summary</h1>
+<p class="recursive-b025-mono-linear">
+Ontologies define facts about things and relationships among things.
+</p>
+<p class="recursive-b025-mono-linear">
+Graph Kits use ontologies to define things that are closely related.
+</p>
+<p class="recursive-b025-mono-linear">
+Products and product components are defined using Graph Kits and presented using Electronic Labels.
+</p>
+<p class="recursive-b025-mono-linear">
+Electronic Labels provide intake data for your Biograph.
+</p>
+<p class="recursive-b025-mono-linear">
+Biograph uses Shapes to link intake data with outcome data (sensor or monitor data).
+</p>
+<p class="recursive-b025-mono-linear">
+Biograph uses Forms to present intake and outcome data to users and advisers.
+</p>
+<p class="recursive-b025-mono-linear">
+Biograph uses Footprints to store data in a pod that you control.
+</p>
+<p class="recursive-b025-mono-linear">
+Using that data, you adjust your lifestyles based on your personal choices or expert advice.
+</p>
+<p class="recursive-b025-mono-linear">
+But you control the data and share it on your terms.
+</p>
+<p class="recursive-b025-mono-linear">
+Biograph puts you in charge of making data intensive decisions and sharing your data with apps and people you trust.
+</p>
+</div>
+
+</div>
+</main>
+
+</body>
+<svg style="position:absolute;width:0;height:0;overflow:hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+
+<!-- notes: -->
+<!-- x1="0%" x2="25%" y1="0%" y2="120% -->
+
+<!-- SITE SYMBOLS (no gradients) -->
+<svg id="svg-angle-down-solid" viewBox="0 0 64 64"><path d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z"></path></svg>
+
+<svg id="svg-search" viewbox="0 0 64 64"><path d="M61.925 58.24l-15.2-15.84c3.92-4.64 6.080-10.48 6.080-16.64-0.080-14.16-11.6-25.76-25.84-25.76s-25.84 11.6-25.84 25.84 11.6 25.84 25.84 25.84c5.36 0 10.4-1.6 14.8-4.64l15.36 15.92c0.64 0.64 1.52 1.040 2.4 1.040s1.68-0.32 2.32-0.96c1.36-1.28 1.36-3.44 0.080-4.8zM26.965 6.72c10.56 0 19.12 8.56 19.12 19.12s-8.64 19.040-19.12 19.040-19.12-8.56-19.12-19.040 8.56-19.12 19.12-19.12z"></path></svg>
+
+<svg id="svg-close" viewBox="0 0 64 64"><path d="M39.503 32l22.963-22.963c2.046-2.046 2.046-5.457 0-7.503s-5.456-2.046-7.503 0l-22.963 22.963-22.963-22.963c-2.046-2.046-5.457-2.046-7.503 0s-2.046 5.457 0 7.503l22.963 22.963-22.963 22.963c-2.046 2.046-2.046 5.456 0 7.503s5.457 2.046 7.503 0l22.963-22.963 22.963 22.963c2.046 2.046 5.456 2.046 7.503 0s2.046-5.456 0-7.503l-22.963-22.963z"></path></svg>
+
+<!-- PAGE SYMBOLS (no gradients) stroke. fill currentColor do not work correctly. Page symbol may need a different design -->
+
+<svg id="svg-code-architecture" viewBox="0 0 64 64"><path d="M53.333 12h-52c-0.8 0-1.333-0.533-1.333-1.333s0.533-1.333 1.333-1.333h52c0.8 0 1.333 0.533 1.333 1.333s-0.533 1.333-1.333 1.333z"></path><path d="M62.667 54.667h-52c-0.8 0-1.333-0.533-1.333-1.333s0.533-1.333 1.333-1.333h52c0.8 0 1.333 0.533 1.333 1.333s-0.533 1.333-1.333 1.333z"></path><path d="M10.667 54.667c-0.8 0-1.333-0.533-1.333-1.333v-52c0-0.8 0.533-1.333 1.333-1.333s1.333 0.533 1.333 1.333v52c0 0.8-0.533 1.333-1.333 1.333z"></path><path d="M53.333 64c-0.8 0-1.333-0.533-1.333-1.333v-52c0-0.8 0.533-1.333 1.333-1.333s1.333 0.533 1.333 1.333v52c0 0.8-0.533 1.333-1.333 1.333z"></path><path d="M25.333 40.267c-0.4 0-0.667-0.133-0.933-0.4l-6.667-6.667c-0.533-0.533-0.533-1.333 0-1.867l6.667-6.667c0.533-0.533 1.333-0.533 1.867 0s0.533 1.333 0 1.867l-5.733 5.733 5.733 5.733c0.533 0.533 0.533 1.333 0 1.867-0.267 0.267-0.533 0.4-0.933 0.4z"></path><path d="M38.667 40.267c-0.8 0-1.333-0.533-1.333-1.333 0-0.4 0.133-0.667 0.4-0.933l5.733-5.733-5.733-5.733c-0.533-0.533-0.533-1.333 0-1.867s1.333-0.533 1.867 0l6.667 6.667c0.533 0.533 0.533 1.333 0 1.867l-6.667 6.667c-0.267 0.267-0.533 0.4-0.933 0.4z"></path><path d="M29.333 43.6c-0.133 0-0.133 0-0.267 0-0.667-0.133-1.2-0.8-1.067-1.6 0 0 0 0 0 0l4-20c0.133-0.667 0.8-1.2 1.467-1.067s1.2 0.8 1.067 1.467c0 0 0 0 0 0.133l-4 20c0 0.533-0.533 1.067-1.2 1.067z"></path></svg>
+
+<!-- MENU SYMBOLS -->
+
+<svg id="svg-mn-1011" width="60" height="59" viewBox="0 0 60 59"><defs><linearGradient id="lgr-1011" x1="80%" x2="30%" y1="0%" y2="95%"><stop offset="0%" stop-color="rgb(0,220,192)"></stop><stop offset="100%" stop-color="rgb(0,90,240)"></stop></linearGradient></defs><g transform="matrix(.74214 0 0 .74214 -7.66 -8.063)"><path d="M78.33 84.685c-4.113-8.924-13.298-7.668-13.298-7.668 4.245 3.322 6.689 8.828 7.975 12.762h9.347c1.063-4.732 6.814-9.713 6.814-9.713-7.941-.47-10.838 4.62-10.838 4.62zM51.73 84.685c-4.113-8.924-13.298-7.668-13.298-7.668 4.245 3.322 6.688 8.828 7.974 12.762h9.348c1.063-4.732 6.814-9.713 6.814-9.713-7.942-.47-10.838 4.62-10.838 4.62zM25.13 84.685c-4.113-8.924-13.298-7.668-13.298-7.668 4.245 3.322 6.688 8.828 7.974 12.762h9.347c1.063-4.732 6.815-9.713 6.815-9.713-7.942-.47-10.839 4.62-10.839 4.62zM90.113 23.826l-1.416-.438v-7.335a1.5 1.5 0 00-3 0v6.469c-.579-.15-1.16-.288-1.748-.404-1.8-.352-3.623-.566-5.441-.794a367.32 367.32 0 00-9.215-1.02 717.109 717.109 0 00-11.596-1.064l-6.333-5.77c-10.415-.443-16.042 7.208-16.042 7.208l-12.5 1.75-5.625-11.563-6.875 1.25v15.063s-.131 1.952 2.31 2.35c7.453 1.219 14.938 2.244 22.414 3.318 8.256 1.186 16.52 3.13 24.914 2.79 2.27-.091 4.459-.498 6.639-.981v2.782a3.997 3.997 0 001.5 7.703 3.997 3.997 0 001.5-7.703v-3.47a99.79 99.79 0 012.362-.525c.144-.03.288-.077.431-.111l.055.003.597-.172c.225-.062.45-.122.675-.194l11.978-3.443v5.278a1.5 1.5 0 003 0v-8.338c.803-.294 1.667-.665 2.125-1.037.823-.669.01-1.382-.709-1.602zm-44.348-6.517s2.358-.95 4.17-.987l3.171 3.346-5.166.123-2.175-2.482zm5.474 10.702a1.5 1.5 0 110-3h18.244a1.5 1.5 0 010 3H51.24z"/><circle cx="19.646" cy="63.042" r="2"/><circle cx="14.99" cy="69.042" r="2"/><circle cx="27.729" cy="64.042" r="2"/><circle cx="36.438" cy="64.042" r="2"/><circle cx="44.896" cy="64.042" r="2"/></svg>
+
+<svg id="svg-mn-1012" width="60" height="60" viewBox="-14 0 60 60"><defs><linearGradient id="lgr-1012" x1="80%" x2="30%" y1="0%" y2="95%"><stop offset="0%" stop-color="rgb(201,75,75)"></stop><stop offset="100%" stop-color="rgb(75,19,79)"></stop></linearGradient></defs><g><path d="M27.841 30.315c-.8-1.8-3.5-7.7-6.4-14-3-6.5-6.5-13.9-7.1-15.4-.1-.3-.4-.6-.7-.8-.3-.1-.7-.2-1 0-.3.1-.6.4-.8.7-.2.3-.2.7 0 1.1.6 1.6 3.9 8.7 7.1 15.6 2.8 5.9 5.6 12.1 6.4 13.9.6 1.5.6 3.4-.1 4.7-.5.9-1.3 1.4-2.3 1.6-.8.1-1.6 0-2.7-.1-5.7-.7-13.1-.9-19.6 2.8-.3.2-.5.5-.6.8-.1.3 0 .7.1 1 .2.4.7.7 1.2.7.2 0 .5-.1.7-.2 5.9-3.4 12.7-3.1 17.9-2.5 1 .1 2.2.3 3.4.1 1.9-.3 3.3-1.3 4.3-3 1.1-2 1.2-4.7.2-7z"/><path d="M9.541 35.815c1.4-.3 2.6-.6 3.7-1.1.4-.2.9-.3 1.3-.5l.8-.3c.9-.3 2-.6 3-.4.4.1.7.3.9.6.2.3.2.6.2.7 0 .1-.2.2-.4.3-.1.1-.4.2-.4.5 0 .5.8.6.9.6.2 0 .5-.1.7-.2.3-.2.6-.5.8-.9.1-.2.2-.4.2-.6.1-.2.1-.4.1-.6 0-.4-.1-.8-.2-1.2-.3-.8-1-1.3-1.7-1.6-.6-.2-1.4-.3-2.2-.2-.7.1-1.2.2-1.8.4l-1 .3c-.2.1-.4.1-.6.2-.7.2-1.4.6-2.2 1-2.4 1.2-5.1 2.5-6.7.2-.4-.6-.7-1.4-.8-2.3-.2-1.7.3-3.4 1.2-4.8 0-.1.2-.3.1-.6l-.1-.2-.2-.1c-.1 0-.3 0-.5.1-.9.8-1.6 1.9-2 3.4-.4 1.5-.4 2.9 0 4.1.8 2.9 3.3 4 6.9 3.2zM12.041 19.215c0-.2-.2-.3-.4-.3s-.5.1-.7 0c-.2 0-.5-.1-.7-.1-.3-.1-.5-.1-.8-.3 0-.2.1-.4.1-.6.1-.1.2-.2.3-.2.4-.2.9-.4 1.5-.3.2.1.4-.2.3-.4-.1-.2-.3-.3-.5-.1-.3.2-.6.3-.9.3h-.5-.1c0-.2-.1-.4-.1-.5.2-.1.3-.2.5-.3.1 0 .3-.1.5-.1h.4c.1 0 .2 0 .3-.1.1-.1.1-.3 0-.4v-.1c-.1-.1-.2-.3-.3-.3-.1 0-.2.1-.2.2l-.3.3c-.2.2-.6.5-1 .5-.1-.2-.3-.5-.5-.7 0 0 0-.1.1-.1.1-.3.3-.6.5-.8l.4-.4c.1-.1.6-.2.5-.5-.1-.2-.3-.4-.5-.3-.1.1-.2.3-.3.4-.1.2-.3.4-.5.6-.2.2-.5.4-.8.5-.3-.2-.6-.4-.9-.5v-.3c0-.3.1-.5.3-.7.3-.2-.1-.5-.3-.4-.2 0-.1.4-.1.5 0 .3-.1.5-.3.7-.1.1-.3.1-.4-.1-.1-.4-.1-.9-.1-1.2 0-.2.1-.5.1-.7.1-.1.1-.3.1-.4 0-.1-.1-.1-.1-.1-.2-.1-.4 0-.5.2v.4c.1.3 0 .7 0 1.1-.1.3-.1.8-.4 1-.1 0-.2 0-.3.1-.6 0-.9-1.1-.8-1.6 0-.1-.1-.3-.1-.3-.1 0-.3 0-.4.1v.3c.6.7.6 1.9-.4 2.1-.3.1-.7 0-1-.2-.1-.1-.3-.2-.4-.3-.1-.1-.3-.5-.5-.3-.4.2-.1.5.2.6.2 0 .4.1.5.2.3.2.6.5.8.7 0 0 .1.1.1.2 0 0 0 .1-.1.1h-.2c-.4 0-.7-.1-1-.1-.2 0-.5-.1-.6-.2-.2-.1-.4-.4-.6-.3-.2 0-.4.3-.4.5s.1.3.4.3h.7c.2 0 .5.1.7.2.3.1.5.2.8.4 0 .2-.1.3-.1.5-.1.1-.3.2-.4.3-.5.2-1 .4-1.5.2-.2-.1-.4.2-.3.4.1.2.3.3.5.1.3-.2.6-.3 1-.3h.7c0 .2.1.3.1.5l-.6.3c-.2 0-.3.1-.5.1h-.4c-.1 0-.2 0-.3.1-.1.1-.1.3 0 .4v.1c.1.1.2.3.3.3.1 0 .2-.1.2-.2.1-.1.2-.2.3-.2.2-.2.7-.5 1.1-.5.1.2.2.4.4.6 0 .1-.1.1-.1.2-.2.3-.3.6-.5.8-.1.1-.3.3-.4.3-.1.1-.7.2-.5.5.1.2.3.4.5.3.1-.1.2-.3.3-.4.1-.2.3-.4.5-.6.2-.2.5-.4.8-.5.3.2.5.4.9.5v.3c0 .3-.1.5-.4.7-.3.2.1.5.3.4.2 0 .2-.4.2-.5 0-.3.1-.5.3-.7.1-.1.3-.1.4.1.1.4.1.9 0 1.2 0 .2-.1.5-.2.7-.1.1-.2.3-.1.4 0 .1.1.1.1.1.2.1.4 0 .5-.2v-.4c-.1-.3 0-.7.1-1.1.1-.3.1-.8.4-1 .1 0 .2 0 .3-.1.6.1.8 1.1.7 1.6 0 .1.1.3.1.3.1 0 .3 0 .4-.1.1 0 .1-.2 0-.3-.3-.4-.4-.8-.3-1.3 0-.2.1-.4.1-.5.3-.6 1.2-.7 1.9-.4.1.1.3.2.4.3.1.1.3.5.5.3.4-.2.1-.5-.2-.6-.2 0-.4-.1-.5-.2-.3-.2-.6-.5-.9-.7v-.1c0-.1.1-.2.1-.3h.1c.4 0 .7 0 1 .1.2 0 .5.1.6.2.2.1.4.3.6.3.2.3.4 0 .4-.2zM41.341 26.915c0-.2-.2-.3-.4-.3s-.5.1-.7 0c-.2 0-.5-.1-.7-.1-.3-.1-.5-.1-.8-.3 0-.2.1-.4.1-.6.1-.1.2-.2.3-.2.4-.2.9-.4 1.5-.3.2.1.4-.2.3-.4-.1-.2-.3-.3-.5-.1-.3.2-.6.3-.9.3h-.5-.1c0-.2-.1-.4-.1-.5.2-.1.3-.2.5-.3.1 0 .3-.1.5-.1h.4c.1 0 .2 0 .3-.1.1-.1.1-.3 0-.4v-.1c-.1-.1-.2-.3-.3-.3-.1 0-.2.1-.2.2l-.3.3c-.2.2-.6.5-1 .5-.1-.2-.3-.5-.5-.7 0 0 0-.1.1-.1.1-.3.3-.6.5-.8l.4-.4c.1-.1.6-.2.5-.5-.1-.2-.3-.4-.5-.3-.1.1-.2.3-.3.4-.1.2-.3.4-.5.6-.2.2-.5.4-.8.5-.3-.2-.6-.4-.9-.5v-.3c0-.3.1-.5.3-.7.3-.2-.1-.5-.3-.4-.2 0-.1.4-.1.5 0 .3-.1.5-.3.7-.1.1-.3.1-.4-.1-.1-.4-.1-.9-.1-1.2 0-.2.1-.5.1-.7.1-.1.1-.3.1-.4 0-.1-.1-.1-.1-.1-.2-.1-.4 0-.5.2v.4c.1.3 0 .7 0 1.1-.1.3-.1.8-.4 1-.1 0-.2 0-.3.1-.6 0-.9-1.1-.8-1.6 0-.1-.1-.3-.1-.3-.1 0-.3 0-.4.1v.3c.6.7.6 1.9-.4 2.1-.3.1-.7 0-1-.2-.1-.1-.3-.2-.4-.3-.1-.1-.3-.5-.5-.3-.4.2-.1.5.2.6.2 0 .4.1.5.2.3.2.6.5.8.7 0 0 .1.1.1.2 0 0 0 .1-.1.1h-.2c-.4 0-.7-.1-1-.1-.2 0-.5-.1-.6-.2-.2-.1-.4-.4-.6-.3-.2 0-.4.3-.4.5s.1.3.4.3h.7c.2 0 .5.1.7.2.3.1.5.2.8.4 0 .2-.1.3-.1.5-.1.1-.3.2-.4.3-.5.2-1 .4-1.5.2-.2-.1-.4.2-.3.4.1.2.3.3.5.1.3-.2.6-.3 1-.3h.7c0 .2.1.3.1.5l-.6.3c-.2 0-.3.1-.5.1h-.4c-.1 0-.2 0-.3.1-.1.1-.1.3 0 .4v.1c.1.1.2.3.3.3.1 0 .2-.1.2-.2.1-.1.2-.2.3-.2.2-.2.7-.5 1.1-.5.1.2.2.4.4.6 0 .1-.1.1-.1.2-.2.3-.3.6-.5.8-.1.1-.3.3-.4.3-.1.1-.7.2-.5.5.1.2.3.4.5.3.1-.1.2-.3.3-.4.1-.2.3-.4.5-.6.2-.2.5-.4.8-.5.3.2.5.4.9.5v.3c0 .3-.1.5-.4.7-.3.2.1.5.3.4.2 0 .2-.4.2-.5 0-.3.1-.5.3-.7.1-.1.3-.1.4.1.1.4.1.9 0 1.2 0 .2-.1.5-.2.7-.1.1-.2.3-.1.4 0 .1.1.1.1.1.2.1.4 0 .5-.2v-.4c-.1-.3 0-.7.1-1.1.1-.3.1-.8.4-1 .1 0 .2 0 .3-.1.6.1.8 1.1.7 1.6 0 .1.1.3.1.3.1 0 .3 0 .4-.1.1 0 .1-.2 0-.3-.3-.4-.4-.8-.3-1.3 0-.2.1-.4.1-.5.3-.6 1.2-.7 1.9-.4.1.1.3.2.4.3.1.1.3.5.5.3.4-.2.1-.5-.2-.6-.2 0-.4-.1-.5-.2-.3-.2-.6-.5-.9-.7v-.1c0-.1.1-.2.1-.3h.1c.4 0 .7 0 1 .1.2 0 .5.1.6.2.2.1.4.3.6.3.2.2.4 0 .4-.2zM41.341 48.915c0-.2-.2-.3-.4-.3s-.5.1-.7 0c-.2 0-.5-.1-.7-.1-.3-.1-.5-.1-.8-.3 0-.2.1-.4.1-.6.1-.1.2-.2.3-.2.4-.2.9-.4 1.5-.3.2.1.4-.2.3-.4-.1-.2-.3-.3-.5-.1-.3.2-.6.3-.9.3h-.5-.1c0-.2-.1-.4-.1-.5.2-.1.3-.2.5-.3.1 0 .3-.1.5-.1h.4c.1 0 .2 0 .3-.1.1-.1.1-.3 0-.4v-.1c-.1-.1-.2-.3-.3-.3-.1 0-.2.1-.2.2l-.3.3c-.2.2-.6.5-1 .5-.1-.2-.3-.5-.5-.7 0 0 0-.1.1-.1.1-.3.3-.6.5-.8l.4-.4c.1-.1.6-.2.5-.5-.1-.2-.3-.4-.5-.3-.1.1-.2.3-.3.4-.1.2-.3.4-.5.6-.2.2-.5.4-.8.5-.3-.2-.6-.4-.9-.5v-.3c0-.3.1-.5.3-.7.3-.2-.1-.5-.3-.4-.2 0-.1.4-.1.5 0 .3-.1.5-.3.7-.1.1-.3.1-.4-.1-.1-.4-.1-.9-.1-1.2 0-.2.1-.5.1-.7.1-.1.1-.3.1-.4 0-.1-.1-.1-.1-.1-.2-.1-.4 0-.5.2v.4c.1.3 0 .7 0 1.1-.1.3-.1.8-.4 1-.1 0-.2 0-.3.1-.6 0-.9-1.1-.8-1.6 0-.1-.1-.3-.1-.3-.1 0-.3 0-.4.1v.3c.6.7.6 1.9-.4 2.1-.3.1-.7 0-1-.2-.1-.1-.3-.2-.4-.3-.1-.1-.3-.5-.5-.3-.4.2-.1.5.2.6.2 0 .4.1.5.2.3.2.6.5.8.7 0 0 .1.1.1.2 0 0 0 .1-.1.1h-.2c-.4 0-.7-.1-1-.1-.2 0-.5-.1-.6-.2-.2-.1-.4-.4-.6-.3-.2 0-.4.3-.4.5s.1.3.4.3h.7c.2 0 .5.1.7.2.3.1.5.2.8.4 0 .2-.1.3-.1.5-.1.1-.3.2-.4.3-.5.2-1 .4-1.5.2-.2-.1-.4.2-.3.4.1.2.3.3.5.1.3-.2.6-.3 1-.3h.7c0 .2.1.3.1.5l-.6.3c-.2 0-.3.1-.5.1h-.4c-.1 0-.2 0-.3.1-.1.1-.1.3 0 .4v.1c.1.1.2.3.3.3.1 0 .2-.1.2-.2.1-.1.2-.2.3-.2.2-.2.7-.5 1.1-.5.1.2.2.4.4.6 0 .1-.1.1-.1.2-.2.3-.3.6-.5.8-.1.1-.3.3-.4.3-.1.1-.7.2-.5.5.1.2.3.4.5.3.1-.1.2-.3.3-.4.1-.2.3-.4.5-.6.2-.2.5-.4.8-.5.3.2.5.4.9.5v.3c0 .3-.1.5-.4.7-.3.2.1.5.3.4.2 0 .2-.4.2-.5 0-.3.1-.5.3-.7.1-.1.3-.1.4.1.1.4.1.9 0 1.2 0 .2-.1.5-.2.7-.1.1-.2.3-.1.4 0 .1.1.1.1.1.2.1.4 0 .5-.2v-.4c-.1-.3 0-.7.1-1.1.1-.3.1-.8.4-1 .1 0 .2 0 .3-.1.6.1.8 1.1.7 1.6 0 .1.1.3.1.3.1 0 .3 0 .4-.1.1 0 .1-.2 0-.3-.3-.4-.4-.8-.3-1.3 0-.2.1-.4.1-.5.3-.6 1.2-.7 1.9-.4.1.1.3.2.4.3.1.1.3.5.5.3.4-.2.1-.5-.2-.6-.2 0-.4-.1-.5-.2-.3-.2-.6-.5-.9-.7v-.1c0-.1.1-.2.1-.3h.1c.4 0 .7 0 1 .1.2 0 .5.1.6.2.2.1.4.3.6.3.2.2.4 0 .4-.2zM9.041 53.415c-.7-1.1-1.5-2.1-2.2-3.2-.3-.4-.5-.7-.8-1.2-.9 1.4-1.8 2.8-2.6 4.2-.2.3-.3.5-.5.8-.4.7-.4 1.5-.2 2.2v.1c.4 1.5 1.4 2.4 3 2.6.6.1 1.2 0 1.7-.2.7-.2 1.3-.7 1.8-1.5.2-.3.3-.5.4-.8.2-.9 0-2-.6-3zM17.841 48.515c-.7-1.1-1.5-2.1-2.2-3.2-.3-.4-.5-.7-.8-1.2-.9 1.4-1.8 2.8-2.6 4.2-.2.3-.3.5-.5.8-.4.7-.4 1.5-.2 2.2v.1c.4 1.5 1.4 2.4 3 2.6.6.1 1.2 0 1.7-.2.7-.2 1.3-.7 1.8-1.5.2-.3.3-.5.4-.8.2-1 .1-2-.6-3z"/></g></svg>
+
+<svg id="svg-mn-1013" width="60" height="60" viewBox="5 0 53 53"><defs><linearGradient id="lgr-1013" x1="80%" x2="30%" y1="0%" y2="95%"><stop offset="0%" stop-color="rgb(99,99,99)"></stop><stop offset="100%" stop-color="rgb(162,171,88)"></stop></linearGradient></defs><g transform="scale(.209)"><path d="M153.438 214.998h38.635a7.728 7.728 0 007.729-7.729V149.29c11.293 3.33 32.566 10.726 56.601 24.7a7.954 7.954 0 004.01 1.083 8.004 8.004 0 006.927-3.982c2.218-3.819.922-8.717-2.897-10.934-38.067-22.107-69.365-28.665-69.927-28.792a8.086 8.086 0 00-1.611-.17 7.84 7.84 0 00-.83-.046H153.44c-.089 0-.175.011-.263.014-4.158-.182-13.592-1.108-23.015-5.193-5.649-2.433-11.267-5.932-16.021-10.952-3.619-3.839-6.79-8.56-9.144-14.62l90.698-49.689c2.32 1.6 6.411 1.43 13.793-2.433 5.441 6.621 11.063 12.573 15.952 16.842l4.215 25.197s3.901-13.677 8.358-16.17c4.46-2.493 16.107-2.07 16.107-2.07l-16.145-11.402c-2.209-6.94-6.71-16.284-12.248-25.609 3.609-3.844 5.995-6.912 5.995-6.912s-4.047.371-9.403 1.387a186.802 186.802 0 00-3.978-5.968C204.671 3.924 191.212-1.413 188.748.301c-2.463 1.713-2.137 16.187 11.531 35.832.225.323.455.645.683.968-5.817 3.643-7.754 6.656-7.669 9.222L103.386 95.58c-.12-.422-.24-.844-.353-1.277a7.997 7.997 0 00-9.748-5.743 7.997 7.997 0 00-5.743 9.746c.453 1.764.97 3.464 1.531 5.115L0 152.218l2.664 4.241 88.208-48.325c3.036 7.113 7.069 13.06 11.646 17.88 9.842 10.375 21.847 15.59 31.787 18.282a86.23 86.23 0 0011.403 2.256v60.717a7.73 7.73 0 007.73 7.73zm44.068-202.11a2.665 2.665 0 01-3.711-.667 2.665 2.665 0 114.376-3.046 2.666 2.666 0 01-.665 3.712z"/><circle cx="172.755" cy="102.95" r="22.5"/><path d="M131.62 185.25a2.001 2.001 0 00-2.204-1.774c-15.38 1.662-29.272 4.263-40.939 7.588a2.001 2.001 0 001.098 3.849l-.003-.002c11.393-3.247 25.083-5.816 40.274-7.457a2.005 2.005 0 001.774-2.205zM226.632 246.152l-.002-.002c-16.906 2.916-36.568 4.59-57.541 4.59-31.868.002-60.722-3.872-81.452-10.07-10.362-3.093-18.689-6.78-24.279-10.736-5.632-3.98-8.297-8.056-8.269-11.86.002-2.267.885-4.54 2.794-6.91 1.901-2.36 4.83-4.745 8.669-7.008a2 2 0 00-2.031-3.445c-4.122 2.436-7.42 5.06-9.75 7.938-2.324 2.868-3.686 6.067-3.683 9.426.027 5.768 3.855 10.813 9.962 15.127 18.39 12.9 59.708 21.487 108.039 21.54 21.186 0 41.057-1.689 58.221-4.647a2.002 2.002 0 001.631-2.31 1.999 1.999 0 00-2.309-1.633zM276.294 202.372c-6.652-4.476-16.021-8.353-27.482-11.557a1.998 1.998 0 00-2.463 1.39 1.998 1.998 0 001.389 2.463c11.191 3.12 20.23 6.912 26.32 11.02 6.14 4.136 9.064 8.417 9.028 12.386.009 3.211-1.831 6.556-5.796 9.948-3.946 3.37-9.9 6.622-17.448 9.506a1.997 1.997 0 00-1.154 2.582 2.004 2.004 0 002.584 1.154c7.822-2.997 14.133-6.387 18.612-10.198 4.454-3.788 7.195-8.164 7.204-12.992-.033-6.032-4.19-11.253-10.794-15.702z"/><path d="M110.299 212.011c5.935-5.297 15.661-6.873 23.159-8.355 4.896-.968 3.347-6.37-1.453-5.422-9.84 1.945-22.479 4.526-29.337 12.613-7.59 8.95 5.778 15.986 12.602 18.633 3.357 1.302 9.04-3.514 4.438-5.299-4.131-1.6-15.757-6.504-9.409-12.17zM214.509 200.716c-1.792-.45-8.566 2.435-6.35 2.99 6.523 1.637 19.998 4.396 21.683 12.535 1.228 5.932-8.873 9.19-12.758 10.508-10.605 3.597-22.185 4.67-33.29 5.352a208.15 208.15 0 01-39.745-1.385c-1.822-.239-3.748.21-5.4.988-.493.232-2.768 1.764-.949 2.002 27.147 3.563 57.005 3.288 83.185-5.592 5.542-1.88 15.593-5.503 16.654-12.345 1.47-9.48-16.934-13.524-23.03-15.053z"/></g></svg>
+
+<svg id="svg-mn-1014" width="60" height="60" viewBox="0 0 89 89"><defs><linearGradient id="lgr-1014" x1="75%" x2="20%" y1="-25%" y2="120%"><stop offset="0%" stop-color="rgb(100,191,70)"></stop><stop offset="100%" stop-color="rgb(225,235,100)"></stop></linearGradient></defs><path d="M79.668 62.549h-2.954l5.302-7.195a.998.998 0 00-.805-1.593h-4.602V50.54a1 1 0 10-2 0v3.221h-.176a20.542 20.542 0 00-11.238-9.987l1.083-4.174a1 1 0 00-1.474-1.112l-5.723 3.365v-2.369c0-4.724-3.844-8.567-8.567-8.567h-3.542a20.362 20.362 0 00-9.004-14.974h6.738a1 1 0 100-2H32.194c-.021 0-.038.01-.058.012a10.131 10.131 0 00-.185-.071l1.1-4.312a1 1 0 00-1.434-1.133l-5.618 2.951V8.567C25.999 3.843 22.155 0 17.432 0H8.567C3.843 0 0 3.843 0 8.567v8.865c0 4.724 3.844 8.567 8.567 8.567H12v26.25a1 1 0 102 0v-7.333h8.194v4.227a1.001 1.001 0 001.593.805l7.296-5.376v3.778c0 4.724 3.844 8.567 8.567 8.567h3.433v17.375a1 1 0 001 1h8.908v4.37a1.001 1.001 0 001.593.805l7.602-5.601c.022-.016.031-.042.051-.06v5.178c0 4.724 3.844 8.567 8.567 8.567h8.865c4.724 0 8.567-3.843 8.567-8.567v-8.865c0-4.726-3.844-8.57-8.568-8.57zm-4.057-1.872l-3.622-4.916h7.244l-3.622 4.916zM61.738 41.434l-1.702 6.563-2.431-4.133 4.133-2.43zm-31.18-30.181l-1.572 6.164-2.398-4.078 3.97-2.086zM3.999 17.431V8.566a4.572 4.572 0 014.567-4.567h8.865a4.572 4.572 0 014.567 4.567v8.865a4.572 4.572 0 01-4.567 4.567H8.566a4.571 4.571 0 01-4.567-4.567zm20.195 29.732v-7.245l4.916 3.623-4.916 3.622zm6.888-7.681v3.027l-7.296-5.376a1.001 1.001 0 00-1.593.806v4.977h-8.194V25.999h3.433c4.724 0 8.567-3.843 8.567-8.567v-1.146l2.492 4.239a1.003 1.003 0 001.003.483 1 1 0 00.828-.743l1.131-4.432A18.347 18.347 0 0142.96 30.916h-3.311c-4.723-.001-8.567 3.842-8.567 8.566zm4 8.866v-8.866a4.572 4.572 0 014.567-4.567h8.865a4.572 4.572 0 014.567 4.567v8.866a4.572 4.572 0 01-4.567 4.567h-8.865a4.572 4.572 0 01-4.567-4.567zm19.909 29.333v-7.245l4.916 3.623-4.916 3.622zm7.245-6.564v2.197c-.02-.018-.029-.044-.051-.06l-7.602-5.602a1 1 0 00-1.593.806v4.833h-7.908V56.915h3.433c4.724 0 8.567-3.843 8.567-8.567v-1.426l2.452 4.17a1.003 1.003 0 001.001.483 1 1 0 00.829-.739l1.326-5.112c3.964 1.491 7.336 4.367 9.457 8.036h-2.139a1 1 0 00-.805 1.593l5.302 7.195h-3.704c-4.722.001-8.565 3.845-8.565 8.569zm22 8.865a4.572 4.572 0 01-4.567 4.567h-8.865a4.572 4.572 0 01-4.567-4.567v-8.865a4.572 4.572 0 014.567-4.567h8.865a4.572 4.572 0 014.567 4.567v8.865zm-72.237-13.65v-8.417a1 1 0 112 0v8.417a1 1 0 11-2 0zm6.166 7.958a1 1 0 01-1 1h-4.166a1 1 0 01-1-1v-2.958a1 1 0 112 0v1.958h3.166a1 1 0 011 1zm11.75 0a1 1 0 01-1 1h-5.832a1 1 0 110-2h5.832a1 1 0 011 1zm11.167 0a1 1 0 01-1 1h-6.583a1 1 0 110-2h6.583a1 1 0 011 1zm35.529-34.874v6.125a1 1 0 11-2 0v-6.125a1 1 0 112 0zM58.332 15.941h4.163c.489 6.462 5.654 11.626 12.115 12.115v5.109a1 1 0 102 0v-5.109c6.793-.514 12.166-6.193 12.166-13.115 0-7.26-5.906-13.166-13.166-13.166-6.922 0-12.601 5.373-13.115 12.166h-4.163a1 1 0 100 2zM75.611 5.775c5.054 0 9.166 4.112 9.166 9.166s-4.112 9.166-9.166 9.166-9.166-4.112-9.166-9.166 4.112-9.166 9.166-9.166zm-28.029 9.166a1 1 0 011-1h4.875a1 1 0 110 2h-4.875a1 1 0 01-1-1z"/></svg>
+
+</defs></svg>
+</html>

@@ -14,7 +14,7 @@ Truett Projects
 :Project: `Truett Project Documentation <https://example.com/index.html>`_
 :Author: `Jay Gray <https://ontomatica.io>`_
 :Organization: `Ontomatica <https://dailyfood.io>`_
-:Date: June 2023
+:Date: September 2023
 
 .. image:: _images/docs-latest.svg
    :align: left
@@ -26,27 +26,46 @@ Truett Projects
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Project 1
+   :caption: 🍱 Web Stories Structure
 
-   project-1/index.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: 🧪 Project 2
-
-   project-2/index.rst
+   project-web-stories-structure/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 💡 Project 3
+   :caption: 🧪 Web Stories Instances 
 
-   project-3/index.rst
+   project-web-stories-instances/index.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: 🍱 Project 4
+   :caption: 💡 Library Management - Fonts
 
-   project-4/index.rst
+   project-library-management-fonts/index.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 🍱 Library Management - JavaScript
+
+   project-library-management-javascript/index.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 🍱 Library Management - SVGs
+
+   project-library-management-svg/index.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 🍱 Library Management - Color
+
+   project-library-management-color/index.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 🍱 Transform - HTML to SVG
+
+   project-html-to-svg/index.rst
+
 
 .. toctree::
    :maxdepth: 1

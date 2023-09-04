@@ -1,0 +1,180 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon"                href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<link rel="canonical"           href="index.html">
+<title>
+Variable Font &#x2013; avec options
+</title>
+
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<script  async                                            src="https://cdn.ampproject.org/v0.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Rosario&display=swap" rel="stylesheet"> 
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+@font-face { font-family: "Amstelvar-VF"; src: url("https://mdn.github.io/css-examples/variable-fonts/fonts/AmstelvarAlpha-VF.woff2") format("woff2-variations"); font-style: normal; font-weight: 300 900; font-stretch: 35% 100%; font-display: swap; }
+
+@font-face { font-family: "Roboto-VF"; src: url("https://mdn.github.io/css-examples/variable-fonts/fonts/Roboto-VF.woff2") format("woff2-variations"); font-style: normal; font-weight: 300 900; font-stretch: 35% 100%; font-display: swap; }
+
+@font-face { font-family: "Roboto-Flex"; src: url("Roboto-Flex.woff2") format("woff2-variations"); font-style: normal; font-weight: 300 900; font-stretch: 35% 100%; font-display: swap; }
+
+/* SERIF */
+/* Roboto Slab, serif */
+/* Playfair Display, serif */
+/* Amstelvar-VF, serif */ /* Amstelvar-VF supports GRAD */
+
+/* SANS-SERIF */
+/* Raleway, sans-serif */
+/* Rosario, sans-serif */
+
+/* MONOSPACE */
+/* Noto Sans Mono, monospace */
+
+/* LOCAL */
+/* Roboto-VF, sans-serif */
+/* Roboto-Flex, sans-serif */
+/* Amstelvar-VF, serif */
+
+
+body {
+  font-family: Amstelvar-VF, serif;
+  height: 100vh;
+  padding-left:5vw;
+  padding-right:5vw;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+:root {
+  --text-wght: 375;
+  --text-wdth: 100;
+  --text-opsz: 16;
+  --text-GRAD: 88;
+}
+
+.container2 > * {
+  font-size: 5rem;
+  font-variation-settings:
+    'wght' var(--text-wght),
+    'wdth' var(--text-wdth),
+    'opsz' var(--text-opsz),
+    'GRAD' var(--text-GRAD);
+}
+
+.container2 h1 {
+  --text-wght: 450;
+  --text-wdth: 85;
+  --text-opsz: 80;
+  font-size: 5rem;
+}
+
+.container2 h2 {
+  --text-wght: 575;
+  --text-wdth: 95;
+  --text-opsz: 36;
+  font-size: 3rem;
+  transition: 1s;
+}
+
+.container2 h2:hover {
+  --text-GRAD: 130;
+}
+
+.container2 p {
+  font-size: 1.1rem;
+  transition: 1s;
+}
+
+.container2 p:hover {
+  --text-wght: 400;
+  --text-GRAD: 230;
+}
+
+
+/* Piazzolla, serif
+   CSS custom properties trick for variable fonts; see https://pixelambacht.nl/2019/fixing-variable-font-inheritance/ 
+   hover: success
+:root {
+  --OPSZ: 8;
+}
+h1 {
+  font-size: 36pt;
+  font-weight: 100;
+  text-align: center;
+  --OPSZ: 8;
+  font-variation-settings: "opsz" var(--OPSZ);
+}
+h1:hover {
+  --OPSZ: 30;
+  font-variation-settings: "opsz" var(--OPSZ);
+}
+p {
+  font-size: 22px;
+  font-optical-sizing: auto;
+}
+p:hover {
+  font-optical-sizing: none;
+}
+*/
+
+</style>
+
+</head>
+
+ 
+<body>
+<div class="container container2">
+<h1>Generate machine-readable electronic labels</h1>
+<h2>For foods&#x002C; drugs&#x002C; cosmetics&#x002C; meals&#x002C; textiles&#x002C; and commodities</h2>
+<p>
+Pizza is a complex product, made from hundreds of parts to satisfy different demands.
+</p>
+<p>
+An electronic label describes complex products by linking structured data from many sources into knowledge graphs.
+</p>
+<p>
+Structured data describes aroma, flavor, texture, shape, size, composition, formulation, preparation, purpose, usage and potentially harmful ingredients.
+</p>
+<p>
+Structured data describes how a product and its ingredients are sourced, processed, preserved and packaged.
+</p>
+<p>
+Electronic labels represent electronic containers that combine knowledge graphs.
+</p>
+<p>
+Electronic labels are machine‐readable and add value to machine‐automation and machine‐learning projects.
+</p>
+<p>
+Electronic labels help authorities control national border and product safety inspections; certify genuine products; expose counterfeit products.
+</p>
+<p>
+Electronic labels are combined to make new labels for new products, and for new levels of machine‐automation and machine‐learning.
+</p>
+<p>
+For humans, electronic labels are published and spoken in 27 natural languages.
+</p>
+<p>
+For scanners, electronic labels are served using Quick Response codes.
+</p>
+<p>
+For computers, electronic labels are served from Uniform Resource Identifiers.
+</p>
+</div>
+</body>
+</html>

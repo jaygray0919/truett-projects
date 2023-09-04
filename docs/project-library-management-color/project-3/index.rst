@@ -1,0 +1,10 @@
+.. index:
+
+*********
+Project-3
+*********
+
+
+.. include:: _local.txt
+
+.. include:: _substitution.txt

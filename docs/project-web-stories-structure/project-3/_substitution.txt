@@ -1,0 +1,33 @@
+
+.. |br| raw:: html .. define a hard line break for HTML
+   
+   <br>
+
+
+.. |nbsp| unicode:: U+00A0 .. non-breaking space
+   :trim:
+
+.. |emd| unicode:: U+02014 .. em dash
+
+.. |end| unicode:: U+02013 .. en dash
+   :trim:
+
+.. |eg| replace:: e.g.,
+
+.. |etal| replace:: et al.
+
+.. |ie| replace:: i.e.,
+
+.. |gram| unicode:: U+0067 .. small letter g
+.. |millig| unicode:: U+006d U+0067 .. small letter m, small letter g
+.. |microg| unicode:: U+00B5 U+0067 .. micro sign, small letter g
+.. |percent| unicode:: U+0025 .. percent sign
+.. |millil| unicode:: U+006d U+006c .. small letter m, small letter l
+.. |kilog| unicode:: U+006b U+0067 .. small letter k, small letter g
+.. |liter| unicode:: U+004c .. capital L
+.. |ediblep| unicode:: U+0045 U+0050 .. capital E, capital P
+.. |per| unicode:: U+0070 U+0065 U+0072 .. small p
+.. |divide| unicode:: U+00F7 .. division sign
+.. |multiply| unicode:: U+00D7 .. multiplication sign
+.. |equal| unicode:: U+003d .. equal sign
+
