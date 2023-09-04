@@ -1,8 +1,8 @@
 .. index:
 
-*********
-Project-3
-*********
+********
+pan zoom
+********
 
 
 .. include:: _local.txt

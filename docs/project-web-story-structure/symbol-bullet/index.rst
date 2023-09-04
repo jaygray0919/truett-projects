@@ -1,8 +1,8 @@
 .. index:
 
-*********
-Project-3
-*********
+*****************
+symbols |emd| bullets
+*****************
 
 
 .. include:: _local.txt

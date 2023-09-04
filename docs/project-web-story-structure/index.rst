@@ -15,6 +15,7 @@ Story Structure Management
    doc-reader/index.rst
    font-color/index.rst
    font-library/index.rst
+   head/index.rst
    landscape/index.rst
    link-style/index.rst
    outlink/index.rst
