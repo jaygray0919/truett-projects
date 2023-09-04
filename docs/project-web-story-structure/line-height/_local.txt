@@ -60,5 +60,5 @@ Advice about line height.
 
 
 .. attention::
-   Only use links and fonts actually used ina story.
+   Notes about line height.
 

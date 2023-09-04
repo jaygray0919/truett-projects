@@ -26,5 +26,5 @@ Add guidance about text align here.
 
 
 .. attention::
-   Notes about spacers.
+   Notes about text align.
 

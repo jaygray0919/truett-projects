@@ -1,14 +1,14 @@
 
-.. describe:: font libraries
+.. describe:: font size
 
-   truetype fonts
+   item
 
-   exceptions in specific situations
+   item
 
 
 .. highlight:: html
 
-Select fonts to be used from this list.
+Guidance about font size.
 
 ::
 
@@ -198,5 +198,5 @@ Select fonts to be used from this list.
    
 
 .. attention::
-   Only use links and fonts actually used ina story.
+   Notes about font size.
 
