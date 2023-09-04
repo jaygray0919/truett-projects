@@ -1,8 +1,45 @@
 
-.. describe:: text here
+.. describe:: link style
 
-   Item.
+   Item
 
-   Item.
+   Item
 
-   Item.
+   Item
+
+
+.. highlight:: html
+
+Add guidance link styling.
+
+::
+
+   .uline {
+     text-decoration: none;
+     position: relative;
+   }
+   
+   .uline::before {
+     position: absolute;
+     content: "";
+     height: 2px;
+     bottom: -4px;
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     width: 50%;
+     background: var(--on-e6e6e6);
+     -o-transition: 0.5s;
+     -ms-transition: 0.5s;
+     -moz-transition: 0.5s;
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+   }
+   
+   .uline:hover::before {
+     width: 70%;
+     background: var(--on-1f64ff);
+   }
+
+.. attention::
+   Notes about link styling.

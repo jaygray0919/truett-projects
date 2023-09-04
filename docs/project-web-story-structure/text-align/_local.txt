@@ -1,0 +1,30 @@
+
+.. describe:: text align
+
+   item
+
+   item
+
+   item
+
+
+.. highlight:: html
+
+Add guidance about text align here.
+
+::
+
+   .ta-l {
+     text-align: left;
+   }
+   .ta-c {
+     text-align: center;
+   }
+   .ta-r {
+     text-align: right;
+   }
+
+
+.. attention::
+   Notes about spacers.
+

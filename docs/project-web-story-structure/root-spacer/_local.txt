@@ -1,8 +1,101 @@
 
-.. describe:: text here
+.. describe:: :root spacer
 
-   Item.
+   item
 
-   Item.
+   item
 
-   Item.
+   item
+
+
+
+.. highlight:: html
+
+Add guidance about :root spacer elements here.
+
+::
+
+   :root {
+     --space-unit-v: 1rem;
+     --space-xxxxs: calc(0.125 * var(--space-unit-v));
+     --space-xxxs: calc(0.25 * var(--space-unit-v));
+     --space-xxs: calc(0.375 * var(--space-unit-v));
+     --space-xs: calc(0.5 * var(--space-unit-v));
+     --space-sm: calc(0.75 * var(--space-unit-v));
+     --space-md: calc(1.25 * var(--space-unit-v));
+     --space-lg: calc(2 * var(--space-unit-v));
+     --space-xl: calc(3.25 * var(--space-unit-v));
+     --space-xxl: calc(5.25 * var(--space-unit-v));
+     --space-xxxl: calc(8.5 * var(--space-unit-v));
+     --space-xxxxl: calc(13.75 * var(--space-unit-v));
+   
+     --space-unit-h: 1rem;
+     --space-05: calc(0.5 * var(--space-unit-h)); /*  8px */
+     --space-10: calc(1 * var(--space-unit-h)); /* 16px */
+     --space-15: calc(1.5 * var(--space-unit-h)); /* 24px */
+     --space-20: calc(2 * var(--space-unit-h)); /* 32px */
+   
+     --margin-10: 1em;
+     --margin-12: 1.2em;
+     --margin-20: 2em;
+   
+     --breakpoint-xs: 0;
+     --breakpoint-sm: 576px;
+     --breakpoint-md: 768px;
+     --breakpoint-lg: 992px;
+     --breakpoint-xl: 1200px;
+   }
+
+   /* spacers, vertical */
+   .v-sp-1 {
+     height: var(--space-xxxxs);
+   }
+   .v-sp-2 {
+     height: var(--space-xxxs);
+   }
+   .v-sp-3 {
+     height: var(--space-xxs);
+   }
+   .v-sp-4 {
+     height: var(--space-xs);
+   }
+   .v-sp-5 {
+     height: var(--space-sm);
+   }
+   .v-sp-6 {
+     height: var(--space-md);
+   }
+   .v-sp-7 {
+     height: var(--space-lg);
+   }
+   .v-sp-8 {
+     height: var(--space-xl);
+   }
+   .v-sp-9 {
+     height: var(--space-xxl);
+   }
+   .v-sp-10 {
+     height: var(--space-xxxl);
+   }
+   .v-sp-11 {
+     height: var(--space-xxxxl);
+   }
+   
+   /* spacers, horizontal */
+   .h-sp-08 {
+     width: var(--space-05);
+   }
+   .h-sp-16 {
+     width: var(--space-10);
+   }
+   .h-sp-24 {
+     width: var(--space-15);
+   }
+   .h-sp-32 {
+     width: var(--space-20);
+   }
+
+
+.. attention::
+   notes about spacers.
+

@@ -27,4 +27,5 @@ Story Structure Management
    root-color/index.rst
    root-spacer/index.rst
    symbol-bullet/index.rst
+   text-align/index.rst
 

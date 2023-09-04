@@ -1,8 +1,96 @@
 
-.. describe:: text here
+.. describe:: cover page
 
    Item.
 
    Item.
 
    Item.
+
+
+.. highlight:: html
+
+Add guidance about cover page elements here.
+
+::
+
+   .noedge {
+     padding: 0;
+   }
+   .c-bottom {
+     align-content: end;
+   }
+   .mb {
+     margin-bottom: 1em;
+   }
+   
+   .paper {
+     box-shadow:
+       0 1px 1px 0 rgba(0, 0, 0, 0.14),
+       0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2),
+       0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+     -webkit-box-shadow:
+       0 1px 1px 0 rgba(0, 0, 0, 0.14),
+       0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2),
+       0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+     -moz-box-shadow:
+       0 1px 1px 0 rgba(0, 0, 0, 0.14),
+       0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2),
+       0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+   }
+   
+   .co-s {
+     color: var(--on-6c757d);
+   }
+   .bg-w {
+     background-color: var(--on-ffffff);
+   }
+   
+   .cover-70 {
+     width: 70%;
+   }
+   .cover-50 {
+     width: 50%;
+   }
+   
+   .d-flex {
+     display: flex;
+     display: -ms-flexbox;
+   }
+   .flex-fill {
+     flex: 1 1 auto;
+   }
+   .pt {
+     padding-top: 1em;
+   }
+   .pb {
+     color: var(--on-440044);
+     padding-bottom: 1em;
+   }
+   .ml-s {
+     margin-left: 0.5em;
+   }
+   .co-p {
+     color: var(--on-ff0000);
+   }
+   .co-h1 {
+     color: var(--on-440044);
+   }
+   .w-80 {
+     width: 80%;
+   }
+   .w-50 {
+     width: 50%;
+   }
+   .mx-a {
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .sep-v {
+     border-left: 24px solid var(--on-ff0000);
+   }
+
+
+.. attention::
+   Note about cover page.
+
