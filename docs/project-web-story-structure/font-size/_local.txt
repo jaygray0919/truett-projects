@@ -1,0 +1,202 @@
+
+.. describe:: font libraries
+
+   truetype fonts
+
+   exceptions in specific situations
+
+
+.. highlight:: html
+
+Select fonts to be used from this list.
+
+::
+
+   .fs-10 {
+     font-size: calc(1 * var(--story-page-vw));
+   }
+   .fs-11 {
+     font-size: calc(1.1 * var(--story-page-vw));
+   }
+   .fs-12 {
+     font-size: calc(1.2 * var(--story-page-vw));
+   }
+   .fs-13 {
+     font-size: calc(1.3 * var(--story-page-vw));
+   }
+   .fs-14 {
+     font-size: calc(1.4 * var(--story-page-vw));
+   }
+   .fs-15 {
+     font-size: calc(1.5 * var(--story-page-vw));
+   }
+   .fs-16 {
+     font-size: calc(1.6 * var(--story-page-vw));
+   }
+   .fs-17 {
+     font-size: calc(1.7 * var(--story-page-vw));
+   }
+   .fs-18 {
+     font-size: calc(1.8 * var(--story-page-vw));
+   }
+   .fs-19 {
+     font-size: calc(1.9 * var(--story-page-vw));
+   }
+   .fs-20 {
+     font-size: calc(2 * var(--story-page-vw));
+   }
+   .fs-21 {
+     font-size: calc(2.1 * var(--story-page-vw));
+   }
+   .fs-22 {
+     font-size: calc(2.2 * var(--story-page-vw));
+   }
+   .fs-23 {
+     font-size: calc(2.3 * var(--story-page-vw));
+   }
+   .fs-24 {
+     font-size: calc(2.4 * var(--story-page-vw));
+   }
+   .fs-25 {
+     font-size: calc(2.5 * var(--story-page-vw));
+   }
+   .fs-26 {
+     font-size: calc(2.6 * var(--story-page-vw));
+   }
+   .fs-27 {
+     font-size: calc(2.7 * var(--story-page-vw));
+   }
+   .fs-28 {
+     font-size: calc(2.8 * var(--story-page-vw));
+   }
+   .fs-29 {
+     font-size: calc(2.9 * var(--story-page-vw));
+   }
+   .fs-30 {
+     font-size: calc(3 * var(--story-page-vw));
+   }
+   .fs-31 {
+     font-size: calc(3.1 * var(--story-page-vw));
+   }
+   .fs-32 {
+     font-size: calc(3.2 * var(--story-page-vw));
+   }
+   .fs-33 {
+     font-size: calc(3.3 * var(--story-page-vw));
+   }
+   .fs-34 {
+     font-size: calc(3.4 * var(--story-page-vw));
+   }
+   .fs-35 {
+     font-size: calc(3.5 * var(--story-page-vw));
+   }
+   .fs-36 {
+     font-size: calc(3.6 * var(--story-page-vw));
+   }
+   .fs-37 {
+     font-size: calc(3.7 * var(--story-page-vw));
+   }
+   .fs-38 {
+     font-size: calc(3.8 * var(--story-page-vw));
+   }
+   .fs-39 {
+     font-size: calc(3.9 * var(--story-page-vw));
+   }
+   .fs-40 {
+     font-size: calc(4 * var(--story-page-vw));
+   }
+   .fs-41 {
+     font-size: calc(4.1 * var(--story-page-vw));
+   }
+   .fs-42 {
+     font-size: calc(4.2 * var(--story-page-vw));
+   }
+   .fs-43 {
+     font-size: calc(4.3 * var(--story-page-vw));
+   }
+   .fs-44 {
+     font-size: calc(4.4 * var(--story-page-vw));
+   }
+   .fs-45 {
+     font-size: calc(4.5 * var(--story-page-vw));
+   }
+   .fs-46 {
+     font-size: calc(4.6 * var(--story-page-vw));
+   }
+   .fs-47 {
+     font-size: calc(4.7 * var(--story-page-vw));
+   }
+   .fs-48 {
+     font-size: calc(4.8 * var(--story-page-vw));
+   }
+   .fs-49 {
+     font-size: calc(4.9 * var(--story-page-vw));
+   }
+   .fs-50 {
+     font-size: calc(5 * var(--story-page-vw));
+   }
+   .fs-51 {
+     font-size: calc(5.1 * var(--story-page-vw));
+   }
+   .fs-52 {
+     font-size: calc(5.2 * var(--story-page-vw));
+   }
+   .fs-53 {
+     font-size: calc(5.3 * var(--story-page-vw));
+   }
+   .fs-54 {
+     font-size: calc(5.4 * var(--story-page-vw));
+   }
+   .fs-55 {
+     font-size: calc(5.5 * var(--story-page-vw));
+   }
+   .fs-56 {
+     font-size: calc(5.6 * var(--story-page-vw));
+   }
+   .fs-57 {
+     font-size: calc(5.7 * var(--story-page-vw));
+   }
+   .fs-58 {
+     font-size: calc(5.8 * var(--story-page-vw));
+   }
+   .fs-59 {
+     font-size: calc(5.9 * var(--story-page-vw));
+   }
+   .fs-60 {
+     font-size: calc(6 * var(--story-page-vw));
+   }
+   .fs-61 {
+     font-size: calc(6.1 * var(--story-page-vw));
+   }
+   .fs-62 {
+     font-size: calc(6.2 * var(--story-page-vw));
+   }
+   .fs-63 {
+     font-size: calc(6.3 * var(--story-page-vw));
+   }
+   .fs-64 {
+     font-size: calc(6.4 * var(--story-page-vw));
+   }
+   .fs-65 {
+     font-size: calc(6.5 * var(--story-page-vw));
+   }
+   .fs-66 {
+     font-size: calc(6.6 * var(--story-page-vw));
+   }
+   .fs-67 {
+     font-size: calc(6.7 * var(--story-page-vw));
+   }
+   .fs-68 {
+     font-size: calc(6.8 * var(--story-page-vw));
+   }
+   .fs-69 {
+     font-size: calc(6.9 * var(--story-page-vw));
+   }
+   .fs-70 {
+     font-size: calc(7 * var(--story-page-vw));
+   }
+   
+
+.. attention::
+   Only use links and fonts actually used ina story.
+
