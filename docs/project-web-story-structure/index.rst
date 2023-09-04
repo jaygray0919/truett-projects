@@ -8,8 +8,19 @@ Story Structure Management
    :maxdepth: 2
    :numbered:
 
-   project-1/index.rst
-   project-2/index.rst
-   project-3/index.rst
-   project-4/index.rst
+   amp-img/index.rst
+   attachment/index.rst
+   background/index.rst
+   cover-page/index.rst
+   doc-reader/index.rst
+   font-color/index.rst
+   font-library/index.rst
+   landscape/index.rst
+   link-style/index.rst
+   outlink/index.rst
+   pan-zoom/index.rst
+   quiz/index.rst
+   root-color/index.rst
+   root-spacer/index.rst
+   symbol-bullet/index.rst
 

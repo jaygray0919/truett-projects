@@ -1,0 +1,34 @@
+
+.. describe:: Story <head>
+
+   Item.
+
+   Item.
+
+   Item.
+
+.. highlight:: html
+
+The literal blocks are now highlighted as HTML, until a new directive is found.
+
+::
+
+   <!DOCTYPE html>
+   <html amp lang="en">
+   <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width"/>
+   <link rel="shortcut icon"
+     href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+   
+   <title>
+   Story template: Knowledge Graph
+   </title>
+   
+   <link rel="canonical"
+     href="index.html" />
+   <script async
+     src="https://cdn.ampproject.org/v0.js"></script>
+   <script async custom-element="amp-story"
+     src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
