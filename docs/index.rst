@@ -11,7 +11,7 @@
 Truett Projects
 ---------------
 
-:Project: `Truett Project Documentation <https://example.com/index.html>`_
+:Project: `Truett Documentation <https://example.com/index.html>`_
 :Author: `Jay Gray <https://ontomatica.io>`_
 :Organization: `Ontomatica <https://dailyfood.io>`_
 :Date: September 2023
@@ -93,5 +93,3 @@ Copyright 2023 Ontomatica LLC. This work is licensed under a `Creative Commons A
    :width: 7%
    :alt: Creative Commons License
 
-
-.. include:: substitution.txt
