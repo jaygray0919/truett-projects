@@ -5,12 +5,12 @@
 
    Item.
 
-   Item.
-
+.. attention::
+   Note dependence on CSS color variables.
+   CSS cover-[value] depends on title width
+   CSS w-[value] depends on title width
 
 .. highlight:: html
-
-Add guidance about cover page elements here.
 
 ::
 
@@ -23,7 +23,6 @@ Add guidance about cover page elements here.
    .mb {
      margin-bottom: 1em;
    }
-   
    .paper {
      box-shadow:
        0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -38,21 +37,18 @@ Add guidance about cover page elements here.
        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2),
        0 0 2.5px 0 rgba(0, 0, 0, 0.12);
    }
-   
    .co-s {
      color: var(--on-6c757d);
    }
    .bg-w {
      background-color: var(--on-ffffff);
    }
-   
    .cover-70 {
      width: 70%;
    }
    .cover-50 {
      width: 50%;
    }
-   
    .d-flex {
      display: flex;
      display: -ms-flexbox;
@@ -91,6 +87,26 @@ Add guidance about cover page elements here.
    }
 
 
-.. attention::
-   Note about cover page.
+.. highlight:: html
 
+Change hgroup for each Web Story instance.
+Change author for each Web Story instance.
+
+::
+
+      <amp-story-grid-layer class="noedge c-bottom mb" template="vertical">
+        <div class="paper co-s bg-w cover-70 d-flex">
+          <div class="flex-fill pt pb">
+            <hgroup class="ml-s">
+              <div class="Poppins-Regular-400 fs-14 co-p">
+                part of education series: connecting the dots
+              </div>
+              <h1 class="Poppins-ExtraBoldItalic-800 fs-20 co-h1">
+                Solve Problems with Knowledge Graphs
+              </h1>
+            </hgroup>
+            <div class="Poppins-Medium-500 fs-16 w-80 mx-a">by Paula Perez</div>
+          </div>
+          <div class="sep-v"></div>
+        </div>
+      </amp-story-grid-layer>
