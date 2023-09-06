@@ -1,8 +1,8 @@
 .. index:
 
-********************
-@fontface Noto Serif
-********************
+*******************
+fontface Noto Serif
+*******************
 
 
 .. include:: _local.txt

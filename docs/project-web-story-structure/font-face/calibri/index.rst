@@ -1,8 +1,8 @@
 .. index:
 
-*****************
-@fontface Calibri
-*****************
+****************
+fontface Calibri
+****************
 
 
 .. include:: _local.txt
