@@ -38,12 +38,12 @@ hoverxref_roles = [
     ]
 
 hoverxref_role_types = {
-    "mod": "modal",  # for Python Sphinx Domain
-    "doc": "modal",  # for whole docs
-    "class": "tooltip",  # for Python Sphinx Domain
-    "ref": "tooltip",  # for hoverxref_auto_ref config
+    "mod": "modal",        # for Python Sphinx Domain
+    "doc": "modal",        # for whole docs
+    "class": "tooltip",    # for Python Sphinx Domain
+    "ref": "tooltip",      # for hoverxref_auto_ref config
     "confval": "tooltip",  # for custom object
-    "term": "tooltip",  # for glossaries
+    "term": "tooltip",     # for glossaries
 }
 
 graphviz_output_format = 'svg'
@@ -52,7 +52,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 source_encoding = 'utf-8-sig'
 master_doc = 'index'
-project = 'Truett Project Documentation'
+project = 'Truett Documentation'
 copyright = '2023, Ontomatica'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -69,7 +69,7 @@ number_figures = True
 # There are two options for replacing |today|: either, you set today to some non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-today_fmt = '%d %B %Y'
+today_fmt = ' %Y %B %d'
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 default_role = None
@@ -106,7 +106,6 @@ rst_prolog = """
 
 """
 
-
 # List of patterns, relative to source directory, that match files and directories to ignore when looking for source files.
 exclude_patterns = [
     '_build',
@@ -136,7 +135,6 @@ html_theme_options = {
 }
 
 html_title = ""
-
 html_short_title = 'Truett Documentation'
 
 html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
@@ -162,7 +160,7 @@ html_js_files = [
     'https://cdn.ampproject.org/v0/amp-selector-0.1.js',
 ]
 
-html_last_updated_fmt = '%d %b %Y'
+html_last_updated_fmt = '%y-%m-%d'
 html_domain_indices = True
 html_use_index = True
 html_split_index = True
