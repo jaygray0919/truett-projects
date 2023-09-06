@@ -1,0 +1,102 @@
+
+.. describe:: combinations - Noto Serif
+   CSS element definitions
+
+.. attention::
+   Only use links and fonts actually used in a Web Story.
+
+.. highlight:: html
+
+::
+
+   /** @format */
+   .NotoSerif-Thin-100 {
+     font-family: NotoSerif-Thin-100;
+     font-style: normal;
+     font-weight: 100;
+   }
+   .NotoSerif-ThinItalic-100 {
+     font-family: NotoSerif-ThinItalic-100;
+     font-style: italic;
+     font-weight: 100;
+   }
+   .NotoSerif-ExtraLight-200 {
+     font-family: NotoSerif-ExtraLight-200;
+     font-style: normal;
+     font-weight: 200;
+   }
+   .NotoSerif-ExtraLightItalic-200 {
+     font-family: NotoSerif-ExtraLightItalic-200;
+     font-style: italic;
+     font-weight: 200;
+   }
+   .NotoSerif-Light-300 {
+     font-family: NotoSerif-Light-300;
+     font-style: normal;
+     font-weight: 300;
+   }
+   .NotoSerif-LightItalic-300 {
+     font-family: NotoSerif-LightItalic-300;
+     font-style: italic;
+     font-weight: 300;
+   }
+   .NotoSerif-Regular-400 {
+     font-family: NotoSerif-Regular-400;
+     font-style: normal;
+     font-weight: 400;
+   }
+   .NotoSerif-Italic-400 {
+     font-family: NotoSerif-Italic-400;
+     font-style: italic;
+     font-weight: 400;
+   }
+   .NotoSerif-Medium-500 {
+     font-family: NotoSerif-Medium-500;
+     font-style: normal;
+     font-weight: 500;
+   }
+   .NotoSerif-MediumItalic-500 {
+     font-family: NotoSerif-MediumItalic-500;
+     font-style: italic;
+     font-weight: 500;
+   }
+   .NotoSerif-SemiBold-600 {
+     font-family: NotoSerif-SemiBold-600;
+     font-style: normal;
+     font-weight: 600;
+   }
+   .NotoSerif-SemiBoldItalic-600 {
+     font-family: NotoSerif-SemiBoldItalic-600;
+     font-style: italic;
+     font-weight: 600;
+   }
+   .NotoSerif-Bold-700 {
+     font-family: NotoSerif-Bold-700;
+     font-style: normal;
+     font-weight: 700;
+   }
+   .NotoSerif-BoldItalic-700 {
+     font-family: NotoSerif-BoldItalic-700;
+     font-style: italic;
+     font-weight: 700;
+   }
+   .NotoSerif-ExtraBold-800 {
+     font-family: NotoSerif-ExtraBold-800;
+     font-style: normal;
+     font-weight: 800;
+   }
+   .NotoSerif-ExtraBoldItalic-800 {
+     font-family: NotoSerif-ExtraBoldItalic-800;
+     font-style: italic;
+     font-weight: 800;
+   }
+   .NotoSerif-Black-900 {
+     font-family: NotoSerif-Black-900;
+     font-style: normal;
+     font-weight: 900;
+   }
+   .NotoSerif-BlackItalic-900 {
+     font-family: NotoSerif-BlackItalic-900;
+     font-style: italic;
+     font-weight: 900;
+   }

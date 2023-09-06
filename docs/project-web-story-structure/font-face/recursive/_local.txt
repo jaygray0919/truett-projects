@@ -1,0 +1,75 @@
+
+.. describe:: @font-face Recursive
+   truetype font
+   Variable Font (VF)
+
+.. highlight:: html
+
+::
+
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/recursive/xxx.ttf"/>
+
+
+.. highlight:: html
+
+::
+
+   @font-face {
+     font-family: Recursive;
+     text-align: initial;
+     font-weight: 100 1000;
+     font-stretch: 25% 151%;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf") format("truetype");
+     font-display: swap;
+   }
+   
+   :root {
+   /* recursive font-feature-settings (custom properties) - off */
+     --rc-aalt: "aalt" off;
+     --rc-case: "case" off;
+     --rc-dlig: "dlig" off;
+     --rc-dnom: "dnom" off;
+     --rc-frac: "frac" off;
+     --rc-numr: "numr" off;
+     --rc-ordn: "ordn" off;
+     --rc-pnum: "pnum" off;
+     --rc-sinf: "sinf" off;
+     --rc-ss01: "ss01" off;
+     --rc-ss02: "ss02" off;
+     --rc-ss03: "ss03" off;
+     --rc-ss04: "ss04" off;
+     --rc-ss05: "ss05" off;
+     --rc-ss06: "ss06" off;
+     --rc-ss07: "ss07" off;
+     --rc-ss08: "ss08" off;
+     --rc-ss09: "ss09" off;
+     --rc-ss10: "ss10" off;
+     --rc-ss11: "ss11" off;
+     --rc-ss20: "ss20" off;
+     --rc-sups: "sups" off;
+     --rc-titl: "titl" off;
+     --rc-zero: "zero" off;
+   }
+   
+   /* If rcsv-class is applied, UPDATE custom property */
+   .rc-pnum{--rc-pnum:"pnum" on;}
+   .rc-ss01{--rc-ss01:"ss01" on;}
+   .rc-ss02{--rc-ss02:"ss02" on;}
+   .rc-ss03{--rc-ss03:"ss03" on;}
+   .rc-ss04{--rc-ss04:"ss04" on;}
+   .rc-ss05{--rc-ss05:"ss05" on;}
+   .rc-ss06{--rc-ss06:"ss06" on;}
+   .rc-ss07{--rc-ss07:"ss07" on;}
+   .rc-ss08{--rc-ss08:"ss08" on;}
+   .rc-ss09{--rc-ss09:"ss09" on;}
+   .rc-ss10{--rc-ss10:"ss10" on;}
+   .rc-ss11{--rc-ss11:"ss11" on;}
+   .rc-ss20{--rc-ss20:"ss20" on;}
+   
+   /* Apply current state of all custom properties WHEN a rc-class is applied */
+   .rc-pnum,.rc-ss01,.rc-ss02,.rc-ss03,.rc-ss04,.rc-ss05,.rc-ss06,.rc-ss07,.rc-ss08,.rc-ss09,.rc-ss10,.rc-ss11,
+   .rc-ss20 {
+     font-feature-settings:
+       var(--rc-pnum), var(--rc-ss01), var(--rc-ss02), var(--rc-ss03), var(--rc-ss04), var(--rc-ss05), var(--rc-ss06), var(--rc-ss07), var(--rc-ss08), var(--rc-ss09), var(--rc-ss10), var(--rc-ss11), var(--rc-ss20);
+   }

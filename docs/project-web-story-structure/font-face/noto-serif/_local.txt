@@ -1,0 +1,199 @@
+
+.. describe:: @font-face Noto Serif
+   truetype font
+
+.. attention::
+   Only use links and fonts actually used in a Web Story.
+
+.. highlight:: html
+
+::
+
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Black.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-BlackItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Bold.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-BoldItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraBold.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraBoldItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraLight.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraLightItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Italic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Light.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-LightItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Medium.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-MediumItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-SemiBold.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-SemiBoldItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Thin.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf" 
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ThinItalic.ttf"/>
+
+
+.. highlight:: html
+
+::
+
+   /** @format */
+   @font-face {
+     font-family: NotoSerif-Thin-100;
+     font-style: normal;
+     font-weight: 100;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Thin.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-ThinItalic-100;
+     font-style: italic;
+     font-weight: 100;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ThinItalic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-ExtraLight-200;
+     font-style: normal;
+     font-weight: 200;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraLight.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-ExtraLightItalic-200;
+     font-style: italic;
+     font-weight: 200;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraLightItalic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-Light-300;
+     font-style: normal;
+     font-weight: 300;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Light.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-LightItalic-300;
+     font-style: italic;
+     font-weight: 300;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-LightItalic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-Regular-400;
+     font-style: normal;
+     font-weight: 400;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-Italic-400;
+     font-style: italic;
+     font-weight: 400;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Italic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-Medium-500;
+     font-style: normal;
+     font-weight: 500;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Medium.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-MediumItalic-500;
+     font-style: italic;
+     font-weight: 500;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-MediumItalic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-SemiBold-600;
+     font-style: normal;
+     font-weight: 600;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-SemiBold.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-SemiBoldItalic-600;
+     font-style: italic;
+     font-weight: 600;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-SemiBoldItalic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-Bold-700;
+     font-style: normal;
+     font-weight: 700;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Bold.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-BoldItalic-700;
+     font-style: italic;
+     font-weight: 700;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-BoldItalic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-ExtraBold-800;
+     font-style: normal;
+     font-weight: 800;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraBold.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-ExtraBoldItalic-800;
+     font-style: italic;
+     font-weight: 800;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraBoldItalic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-Black-900;
+     font-style: normal;
+     font-weight: 900;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Black.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   @font-face {
+     font-family: NotoSerif-BlackItalic-900;
+     font-style: italic;
+     font-weight: 900;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-BlackItalic.ttf")
+       format("truetype");
+     font-display: swap;
+   }
+   

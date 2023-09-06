@@ -1,14 +1,11 @@
 
-.. describe:: font libraries
+.. describe:: @font-face Poppins
+   truetype font
 
-   truetype fonts
-
-   exceptions in specific situations
-
+.. attention::
+   Only use links and fonts actually used in a Web Story.
 
 .. highlight:: html
-
-Select fonts to be used from this list.
 
 ::
 
@@ -48,52 +45,9 @@ Select fonts to be used from this list.
      href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Thin.ttf"/>
    <link crossorigin rel="preload" as="font" type="font/ttf" 
      href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-ThinItalic.ttf"/>
-   
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Black.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-BlackItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Bold.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-BoldItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraBold.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraBoldItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraLight.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ExtraLightItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Italic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Light.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-LightItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Medium.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-MediumItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-SemiBold.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-SemiBoldItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Thin.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-ThinItalic.ttf"/>
-   
-   <link crossorigin rel="preload" as="font" type="font/woff"
-     href="https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri.woff"/>
-
 
 
 .. highlight:: html
-
-Select font libraries to be used from this list.
 
 ::
 
@@ -258,8 +212,3 @@ Select font libraries to be used from this list.
      font-style: italic;
      font-display: swap;
    }
-
-
-.. attention::
-   Only use links and fonts actually used ina story.
-

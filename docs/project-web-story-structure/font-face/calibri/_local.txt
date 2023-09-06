@@ -1,0 +1,11 @@
+
+.. describe:: @font-face Calibri
+   woff font
+
+.. highlight:: html
+
+::
+
+   <link crossorigin rel="preload" as="font" type="font/woff"
+     href="https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri.woff"/>
+

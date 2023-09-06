@@ -1,13 +1,14 @@
 .. index:
 
-*****************
-font combinations
-*****************
+****************************
+@font-face and preload links
+****************************
 
 .. toctree::
    :maxdepth: 2
    :numbered:
 
+   calibri/index.rst
    noto-serif/index.rst
    poppins/index.rst
    recursive/index.rst
