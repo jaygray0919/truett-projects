@@ -1,8 +1,8 @@
 .. index:
 
-*******************
-fontface Zilla Slab
-*******************
+********************
+font-face Zilla Slab
+********************
 
 
 .. include:: _local.txt

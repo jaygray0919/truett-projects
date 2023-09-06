@@ -5,8 +5,9 @@
 
    item
 
-   item
 
+.. attention::
+   Notes about color variables.
 
 
 .. highlight:: html
@@ -120,8 +121,4 @@ Add guidance about :root color elements here.
    .c-onlogo {
      color: var(--on-1f64ff);
    }
-   
-
-.. attention::
-   Notes about color variables.
 

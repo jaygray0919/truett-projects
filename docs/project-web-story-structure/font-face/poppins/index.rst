@@ -1,8 +1,8 @@
 .. index:
 
-****************
-fontface Poppins
-****************
+*****************
+font-face Poppins
+*****************
 
 
 .. include:: _local.txt

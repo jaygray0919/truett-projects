@@ -1,8 +1,8 @@
 .. index:
 
-******************
-fontface Recursive
-******************
+*******************
+font-face Recursive
+*******************
 
 
 .. include:: _local.txt
