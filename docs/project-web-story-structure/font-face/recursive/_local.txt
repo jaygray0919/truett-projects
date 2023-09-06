@@ -1,7 +1,10 @@
 
 .. describe:: @font-face Recursive
+
    truetype font
+
    Variable Font (VF)
+
 
 .. highlight:: html
 

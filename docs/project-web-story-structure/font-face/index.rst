@@ -1,8 +1,8 @@
 .. index:
 
-****************************
-@font-face and preload links
-****************************
+***************************
+font-face and preload links
+***************************
 
 .. toctree::
    :maxdepth: 2
