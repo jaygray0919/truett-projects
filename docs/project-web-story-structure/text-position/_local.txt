@@ -1,0 +1,22 @@
+
+.. describe:: text position
+
+   item
+
+   item
+
+
+.. attention::
+   Notes about text position.
+
+
+
+.. highlight:: html
+
+Advice about text position.
+
+::
+
+
+
+

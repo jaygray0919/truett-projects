@@ -15,16 +15,18 @@ Story Structure
    font-face/index.rst
    font-size/index.rst
    text-line-height/index.rst
-   text-color-position-shadow/index.rst
+   text-position/index.rst
    link-style/index.rst
 
    amp-img/index.rst
-   background/index.rst
+   background-text-color-shadow/index.rst
+
    cover-page/index.rst
    symbol-bullet/index.rst
    landscape/index.rst
    pan-zoom/index.rst
    quiz/index.rst
+
    outlink/index.rst
    attachment/index.rst
    doc-reader/index.rst

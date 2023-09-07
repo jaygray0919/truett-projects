@@ -1,16 +1,17 @@
 
-.. describe:: background, text color and shadow
+.. describe:: background - text color - text shadow
 
    Item
 
    Item
 
-   Item
+.. attention::
+   Notes about background, text color, text shadow
 
 
 .. highlight:: html
 
-Add guidance about background, text color and shadow.
+Add guidance about background, text color and text shadow.
 
 ::
 
@@ -41,7 +42,4 @@ Add guidance about background, text color and shadow.
        0px -4px 10px rgba(255, 255, 255, 0.3);
    }
 
-
-.. attention::
-   Notes about background, text color and shadow.
 
