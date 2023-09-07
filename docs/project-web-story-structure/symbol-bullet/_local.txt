@@ -1,8 +1,8 @@
 
-.. describe:: text here
+.. describe:: text color position and shadow
 
-   Item.
+   Item
 
-   Item.
+   Item
 
-   Item.
+   Item

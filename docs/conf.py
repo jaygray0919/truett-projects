@@ -66,10 +66,7 @@ release = 'a'
 # Turns on numbered figures for HTML output
 number_figures = True
 
-# There are two options for replacing |today|: either, you set today to some non-false value, then it is used:
-#today = ''
-# Else, today_fmt is used as the format for a strftime call.
-today_fmt = ' %Y %B %d'
+today_fmt = '%y-%m-%d'
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 default_role = None
@@ -134,7 +131,7 @@ html_theme_options = {
     'body_max_width': 'none'
 }
 
-html_title = ""
+html_title = "Truett"
 html_short_title = 'Truett Documentation'
 
 html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
@@ -169,4 +166,4 @@ html_show_sphinx = False
 html_show_copyright = False
 html_file_suffix = '.html'
 html_search_language = 'en'
-htmlhelp_basename = 'spx'
+htmlhelp_basename = 'truett'

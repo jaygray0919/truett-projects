@@ -1,31 +1,30 @@
 .. index:
 
-**************************
-Story Structure Management
-**************************
+***************
+Story Structure
+***************
 
 .. toctree::
    :maxdepth: 2
    :numbered:
 
-   amp-img/index.rst
-   attachment/index.rst
-   background/index.rst
-   cover-page/index.rst
-   doc-reader/index.rst
-   font-color/index.rst
+   head/index.rst
+   root-color/index.rst
+   root-spacer/index.rst
    font-combination/index.rst
    font-face/index.rst
    font-size/index.rst
-   head/index.rst
-   landscape/index.rst
-   line-height/index.rst
+   text-line-height/index.rst
+   text-color-position-shadow/index.rst
    link-style/index.rst
-   outlink/index.rst
+
+   amp-img/index.rst
+   background/index.rst
+   cover-page/index.rst
+   symbol-bullet/index.rst
+   landscape/index.rst
    pan-zoom/index.rst
    quiz/index.rst
-   root-color/index.rst
-   root-spacer/index.rst
-   symbol-bullet/index.rst
-   text-align/index.rst
-
+   outlink/index.rst
+   attachment/index.rst
+   doc-reader/index.rst

@@ -1,0 +1,64 @@
+
+.. describe:: line height
+
+   item
+
+   item
+
+
+.. highlight:: html
+
+Advice about line height.
+
+::
+
+   .lh-06 {
+     line-height: calc(0.6rem + 0.1rem);
+   }
+   .lh-08 {
+     line-height: calc(0.8rem + 0.2rem);
+   }
+   .lh-10 {
+     line-height: calc(1rem + 0.3rem);
+   }
+   .lh-12 {
+     line-height: calc(1.2rem + 0.4rem);
+   }
+   .lh-14 {
+     line-height: calc(1.4rem + 0.5rem);
+   }
+   .lh-16 {
+     line-height: calc(1.6rem + 0.6rem);
+   }
+   .lh-18 {
+     line-height: calc(1.8rem + 0.7rem);
+   }
+   .lh-20 {
+     line-height: calc(2rem + 0.7rem);
+   }
+   .lh-22 {
+     line-height: calc(2.2rem + 0.7rem);
+   }
+   .lh-24 {
+     line-height: calc(2.4rem + 0.7rem);
+   }
+   .lh-26 {
+     line-height: calc(2.6rem + 0.7rem);
+   }
+   .lh-28 {
+     line-height: calc(2.8rem + 0.7rem);
+   }
+   .lh-30 {
+     line-height: calc(3rem + 0.7rem);
+   }
+   .lh-32 {
+     line-height: calc(3.2rem + 0.7rem);
+   }
+   .lh-34 {
+     line-height: calc(3.4rem + 0.7rem);
+   }
+
+
+.. attention::
+   Notes about line height.
+

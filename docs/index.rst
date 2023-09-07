@@ -8,8 +8,9 @@
 |br|
 |br|
 
+===============
 Truett Projects
----------------
+===============
 
 :Project: `Truett Documentation <https://example.com/index.html>`_
 :Author: `Jay Gray <https://ontomatica.io>`_
@@ -84,7 +85,7 @@ Truett Projects
 |br|
 
 License
-^^^^^^^
+-------
 
 Copyright 2023 Ontomatica LLC. This work is licensed under a `Creative Commons Attribution 3.0 License <https://creativecommons.org/licenses/by/3.0/us/deed.en_US>`_.
 
