@@ -1,8 +1,7 @@
 
-.. describe:: text here
+.. describe:: landscape; left and right
 
-   Item.
+   item
 
-   Item.
+   item
 
-   Item.

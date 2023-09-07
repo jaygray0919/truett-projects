@@ -1,8 +1,7 @@
 
-.. describe:: text here
+.. describe:: pan - zoom
 
-   Item.
+   item
 
-   Item.
+   item
 
-   Item.

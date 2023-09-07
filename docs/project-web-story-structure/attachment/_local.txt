@@ -1,8 +1,6 @@
 
-.. describe:: text here
+.. describe:: attachment
 
-   Item.
+   item
 
-   Item.
-
-   Item.
+   item

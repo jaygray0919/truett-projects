@@ -1,17 +1,17 @@
 
-.. describe:: background - text color - text shadow
+.. describe:: slide background - text color - text shadow
 
-   Item
+   item
 
-   Item
+   item
 
 .. attention::
-   Notes about background, text color, text shadow
+   Notes about slide background, text color, text shadow
 
 
 .. highlight:: html
 
-Add guidance about background, text color and text shadow.
+Add guidance about slide background, text color and text shadow.
 
 ::
 

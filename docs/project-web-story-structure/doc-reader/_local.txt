@@ -1,8 +1,7 @@
 
-.. describe:: text here
+.. describe:: Google doc reader
 
-   Item.
+   item
 
-   Item.
+   item
 
-   Item.

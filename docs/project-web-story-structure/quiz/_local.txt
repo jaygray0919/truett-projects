@@ -1,8 +1,7 @@
 
-.. describe:: text here
+.. describe:: quiz
 
-   Item.
+   item
 
-   Item.
+   item
 
-   Item.

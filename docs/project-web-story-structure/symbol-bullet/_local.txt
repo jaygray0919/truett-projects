@@ -1,7 +1,5 @@
 
-.. describe:: text color position and shadow
-
-   Item
+.. describe:: sybols and bullets
 
    Item
 
