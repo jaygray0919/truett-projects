@@ -1,7 +1,7 @@
 .. index:
 
 *******************
-list |end| mustache
+list |emd| mustache
 *******************
 
 
