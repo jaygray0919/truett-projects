@@ -1,0 +1,18 @@
+
+.. describe:: amp-list and amp-mustache
+
+   item
+
+   item
+
+
+.. attention::
+   Notes about amp-list and amp-mustache.
+
+
+.. highlight:: html
+
+Guidance about amp-list and amp-mustache.
+
+::
+

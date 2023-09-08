@@ -6,6 +6,10 @@
    item
 
 
+.. attention::
+   Notes about font size.
+
+
 .. highlight:: html
 
 Guidance about font size.
@@ -195,8 +199,4 @@ Guidance about font size.
    .fs-70 {
      font-size: calc(7 * var(--story-page-vw));
    }
-   
-
-.. attention::
-   Notes about font size.
 

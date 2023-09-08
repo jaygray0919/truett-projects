@@ -6,6 +6,10 @@
    item
 
 
+.. attention::
+   Notes about line height.
+
+
 .. highlight:: html
 
 Advice about line height.
@@ -58,7 +62,4 @@ Advice about line height.
      line-height: calc(3.4rem + 0.7rem);
    }
 
-
-.. attention::
-   Notes about line height.
 

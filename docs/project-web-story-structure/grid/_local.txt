@@ -1,0 +1,18 @@
+
+.. describe:: grid
+
+   item
+
+   item
+
+
+.. attention::
+   Notes about grid.
+
+
+.. highlight:: html
+
+Guidance about grid.
+
+::
+

@@ -5,13 +5,35 @@
 
    item
 
+
 .. attention::
-   Notes about slide background, text color, text shadow
+   Remember to add --on-595775 to :root
 
 
 .. highlight:: html
 
-Add guidance about slide background, text color and text shadow.
+White background, text color and text shadow.
+
+::
+
+   <amp-story-grid-layer
+     template="fill"
+     style="background-color:#ffffff;"
+   ></amp-story-grid-layer>
+
+   /* for background, light */
+   .hcolor-dark {
+     color: var(--on-595775);
+   }
+
+   /* for background, light: shadow-text-back-light - stbl */
+   .stbl {
+     text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+   }
+
+.. highlight:: html
+
+Dark background, text color and text shadow.
 
 ::
 
@@ -19,22 +41,12 @@ Add guidance about slide background, text color and text shadow.
    .hcolor-light {
      color: var(--on-ffffff);
    }
-   
-   /* for background, light */
-   .hcolor-dark {
-     color: var(--on-595775);
-   }
-   
+
    /* constellation original */
    .shadow-text {
      text-shadow: 0px 4px 4px rgb(0 0 0 / 0.95);
    }
-   
-   /* for background, light: shadow-text-back-light - stbl */
-   .stbl {
-     text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
-   }
-   
+
    /* for background, dark: shadow-text-back-dark - stbd */
    .stbd {
      text-shadow:
