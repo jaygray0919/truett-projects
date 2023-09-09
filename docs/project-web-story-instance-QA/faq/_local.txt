@@ -2,14 +2,16 @@
 .. describe:: dialogue - questions and answers
 
    Repeat the structure below for each new question
-   
-   Sphinx generates sequence number
+
+   In the question, identify the target instance (short term, we'll keep questions about all instances on a single page)
+
+   Sphinx generates the sequence number
 
 
 Item
 ----
 
-Question here
+Question here about a specific instance
 
 Answer here
 
@@ -17,7 +19,7 @@ Answer here
 Item
 ----
 
-Question here
+Question here about a specific instance
 
 Answer here
 
@@ -25,6 +27,6 @@ Answer here
 Item
 ----
 
-Question here
+Question here about a specific instance
 
 Answer here
