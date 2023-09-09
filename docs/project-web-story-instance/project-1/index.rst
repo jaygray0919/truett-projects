@@ -1,8 +1,8 @@
 .. index:
 
-*********
-Project-1
-*********
+*****************************
+UMSL Preso |emd| Semantic Web
+*****************************
 
 
 .. include:: _local.txt

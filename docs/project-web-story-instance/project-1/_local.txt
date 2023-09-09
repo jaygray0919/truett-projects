@@ -1,8 +1,7 @@
 
-.. describe:: Project 1
+.. describe:: UMSL preso - Semantic Web
 
-   Item.
+   item
 
-   Item.
+   item
 
-   Item.

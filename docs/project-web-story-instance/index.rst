@@ -1,7 +1,7 @@
 .. index:
 
 *********************
-Manage Story Instance
+Instances |emd| Source
 *********************
 
 .. toctree::
