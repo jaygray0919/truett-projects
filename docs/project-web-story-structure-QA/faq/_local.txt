@@ -1,42 +1,30 @@
 
 .. describe:: dialogue - questions and answers
 
-   Item
+   Repeat the structure below for each new question
+   
+   Sphinx generates sequence number
 
-   Item
 
-
-Item 1
-------
-
-Question
+Item
+----
 
 Question here
-
-Answer
 
 Answer here
 
 
-Item 2
-------
-
-Question
+Item
+----
 
 Question here
-
-Answer
 
 Answer here
 
 
-Item 3
-------
-
-Question
+Item
+----
 
 Question here
-
-Answer
 
 Answer here
