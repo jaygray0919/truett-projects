@@ -39,6 +39,7 @@ Truett Projects
    :caption: 🧪 Web Story Instances 
 
    project-web-story-instance/index.rst
+   project-web-story-instance-QA/index.rst
 
 .. toctree::
    :maxdepth: 2
