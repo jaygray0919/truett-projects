@@ -1,0 +1,154 @@
+
+.. describe:: provenance
+
+   item
+
+   item
+
+
+.. attention::
+   Notes about provenance.
+
+
+.. highlight:: css
+
+Guidance about provenance CSS for Web Story
+
+::
+
+   /** @format */
+   .g-flexed {
+     display: flex;
+     flex-flow: row wrap;
+     border: solid #333;
+     border-width: 1px 1px 0 0;
+   }
+   .g-dl {
+     display: flex;
+     flex-flow: row wrap;
+     border: solid #333;
+     border-width: 1px 1px 0 0;
+   }
+   .g-dt {
+     font-family: NotoSerif;
+     flex-basis: 30%;
+     padding: 2px 4px;
+     text-align: right;
+     color: #fff;
+   }
+   .g-dd {
+     font-family: NotoSerif;
+     flex-basis: 70%;
+     flex-grow: 1;
+     margin: 0;
+     padding: 2px 4px;
+     border-bottom: 1px solid #333;
+   }
+   /* .prov__text ul{font-weight:100;margin:16px auto;line-height:1.6;font-size:14px} */
+   .show-yes {
+     visibility: visible;
+   }
+   .show-no {
+     display: none;
+   }
+   .show-hide {
+     visibility: hidden;
+   }
+   .img-container {
+     position: absolute;
+     width: 0px;
+     height: 0px;
+   }
+
+
+.. highlight:: html
+
+Guidance about provenance HTML elements for Web Story
+
+::
+
+   <!-- @format -->
+   <amp-story-page id="item-68" data-item-label="Provenance and Version Notes">
+     <amp-story-grid-layer template="fill">
+       <amp-img
+         id="background-network-black"
+         data-item-role="background"
+         data-item-type="static"
+         data-item-label="background-network-black"
+         src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg"
+         width="800"
+         height="800"
+         layout="responsive"
+       ></amp-img>
+     </amp-story-grid-layer>
+     <amp-story-grid-layer template="vertical">
+       <div class="titles" animate-in="fade-in" animate-in-duration="2s">
+         <h2>Provenance and Document Properties</h2>
+         <p class="spr-4">&nbsp;</p>
+         <dl class="g-dl show-yes g-flexed">
+           <dt class="g-dt show-yes">author</dt>
+           <dd class="g-dd show-yes">Ankita Dhandha</dd>
+         </dl>
+         <dl class="g-dl show-yes flexed">
+           <dt class="g-dt show-yes">organization</dt>
+           <dd class="g-dd show-yes">Ontomatica</dd>
+         </dl>
+         <dl class="g-dl show-yes flexed">
+           <dt class="g-dt show-yes">date published</dt>
+           <dd class="g-dd show-yes">20-12-01</dd>
+         </dl>
+         <dl class="g-dl show-yes flexed">
+           <dt class="g-dt show-yes">date modified</dt>
+           <dd class="g-dd show-yes">20-12-10</dd>
+           <dt class="g-dt show-yes">modification note</dt>
+           <dd class="g-dd show-yes">Added Section 4</dd>
+         </dl>
+         <dl class="g-dl show-yes flexed">
+           <dt class="g-dt show-yes">date modified</dt>
+           <dd class="g-dd show-yes">20-12-16</dd>
+           <dt class="g-dt show-yes">modification note</dt>
+           <dd class="g-dd show-yes">Added Section 5</dd>
+         </dl>
+         <dl class="g-dl show-yes flexed">
+           <dt class="g-dt show-yes">date modified</dt>
+           <dd class="g-dd show-yes">21-01-01</dd>
+           <dt class="g-dt show-yes">release note</dt>
+           <dd class="g-dd show-yes">
+             Added information based on Gregg Kellogg email
+           </dd>
+         </dl>
+         <dl class="g-dl show-yes flexed">
+           <dt class="g-dt show-yes">date modified</dt>
+           <dd class="g-dd show-yes">21-07-07</dd>
+           <dt class="g-dt show-yes">release note</dt>
+           <dd class="g-dd show-yes">
+             Updated to use Schema.org Markup Validator (SMV)
+           </dd>
+         </dl>
+         <dl class="g-dl show-yes flexed">
+           <dt class="g-dt show-yes">date modified</dt>
+           <dd class="g-dd show-yes">22-08-12</dd>
+           <dt class="g-dt show-yes">release note</dt>
+           <dd class="g-dd show-yes">updated story format</dd>
+         </dl>
+         <dl class="g-dl show-no flexed">
+           <dt class="g-dt show-no">date modified</dt>
+           <dd class="g-dd show-no">21-01-11</dd>
+           <dt class="g-dt show-no">release note</dt>
+           <dd class="g-dd show-no">more future information</dd>
+         </dl>
+         <dl class="g-dl show-no flexed">
+           <dt class="g-dt show-no">date modified</dt>
+           <dd class="g-dd show-no">21-01-11</dd>
+           <dt class="g-dt show-no">release note</dt>
+           <dd class="g-dd show-no">more future information</dd>
+         </dl>
+         <dl class="g-dl show-no flexed">
+           <dt class="g-dt show-no">date modified</dt>
+           <dd class="g-dd show-no">21-01-11</dd>
+           <dt class="g-dt show-no">release note</dt>
+           <dd class="g-dd show-no">more future information</dd>
+         </dl>
+       </div>
+     </amp-story-grid-layer>
+   </amp-story-page>

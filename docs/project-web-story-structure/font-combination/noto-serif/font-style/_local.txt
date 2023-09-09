@@ -1,5 +1,5 @@
 
-.. describe:: combinations - Noto Serif
+.. describe:: font-style - Noto Serif
 
    CSS element definitions
 

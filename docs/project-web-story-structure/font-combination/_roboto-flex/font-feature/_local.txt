@@ -1,0 +1,25 @@
+
+.. describe:: font-feature - Recursive
+
+   Variable Font feature setting
+
+
+
+.. highlight:: html
+
+::
+
+   h4 {
+     font-feature-settings:
+       "ss01" on,
+       "ss02" on,
+       "ss08" on;
+   }
+   
+   h5 {
+     font-feature-settings:
+       "ss01" on,
+       "ss02" on,
+       "ss08" on;
+   }
+   

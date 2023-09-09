@@ -6,52 +6,12 @@
 .. attention::
    Only use links and fonts actually used in a Web Story.
 
-.. highlight:: html
-
-::
-
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Black.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-BlackItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Bold.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-BoldItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-ExtraBold.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-ExtraBoldItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-ExtraLight.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-ExtraLightItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Italic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Light.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-LightItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Medium.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-MediumItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Regular.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-SemiBold.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-SemiBoldItalic.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Thin.ttf"/>
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-ThinItalic.ttf"/>
-
 
 .. highlight:: html
 
 ::
 
+   /** @format */
    @font-face {
      font-family: Poppins-100-Normal;
      src: url("https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Thin.ttf")

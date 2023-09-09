@@ -5,14 +5,13 @@ Story Structure
 ***************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :numbered:
 
    head/index.rst
    root-color/index.rst
    root-spacer/index.rst
    font-combination/index.rst
-   font-face/index.rst
    font-size/index.rst
    text-line-height/index.rst
    text-position/index.rst

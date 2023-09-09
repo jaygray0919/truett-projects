@@ -1,10 +1,12 @@
 
-.. describe:: combinations - Recursive
+.. describe:: font-style - Recursive
 
    CSS element definitions
 
+
 .. attention::
    Only use links and fonts actually used in a Web Story.
+
 
 .. highlight:: html
 

@@ -1,8 +1,13 @@
 .. index:
 
-************************
-combinations - Recursive
-************************
+*********
+Recursive
+*********
 
+.. toctree::
+   :maxdepth: 2
 
-.. include:: _local.txt
+   font-face/index.rst
+   font-feature/index.rst
+   font-link/index.rst
+   font-style/index.rst

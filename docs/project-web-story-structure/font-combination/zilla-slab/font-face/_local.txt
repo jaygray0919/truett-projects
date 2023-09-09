@@ -6,13 +6,6 @@
 .. attention::
    Only use links and fonts actually used in a Web Story.
 
-.. highlight:: html
-
-::
-
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/xxx.ttf"/>
-
 
 .. highlight:: html
 
@@ -99,4 +92,3 @@
        format("truetype");
      font-display: swap;
    }
-   

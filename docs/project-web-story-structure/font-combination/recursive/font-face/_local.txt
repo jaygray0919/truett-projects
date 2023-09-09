@@ -3,21 +3,15 @@
 
    truetype font
 
-   Variable Font (VF)
+.. attention::
+   Only use links and fonts actually used in a Web Story.
 
 
 .. highlight:: html
 
 ::
 
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/recursive/xxx.ttf"/>
-
-
-.. highlight:: html
-
-::
-
+   /** @format */
    @font-face {
      font-family: Recursive;
      text-align: initial;

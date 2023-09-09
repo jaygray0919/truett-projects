@@ -1,5 +1,5 @@
 
-.. describe:: combinations - Zilla Slab
+.. describe:: font-style - Zilla Slab
 
    CSS element definitions
 
