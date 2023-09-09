@@ -1,8 +1,8 @@
 .. index:
 
-*************************
-Story Instance Management
-*************************
+*********************
+Manage Story Instance
+*********************
 
 .. toctree::
    :maxdepth: 2

@@ -1,8 +1,8 @@
 .. index:
 
-***************
-Story Structure
-***************
+*********************
+Structure |emd| Story
+*********************
 
 .. toctree::
    :maxdepth: 1
@@ -34,3 +34,4 @@ Story Structure
    doc-reader/index.rst
 
    list-mustache
+

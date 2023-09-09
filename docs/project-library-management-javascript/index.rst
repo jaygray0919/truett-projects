@@ -1,8 +1,8 @@
 .. index:
 
-*********************
-JavaScript Management
-*********************
+*****************
+Manage JavaScript
+*****************
 
 .. toctree::
    :maxdepth: 2

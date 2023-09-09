@@ -5,7 +5,7 @@ font combinations
 *****************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    noto-serif/index.rst
    poppins/index.rst

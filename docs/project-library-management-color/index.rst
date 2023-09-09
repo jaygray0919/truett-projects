@@ -1,8 +1,8 @@
 .. index:
 
-****************
-Color Management
-****************
+************
+Manage Color
+************
 
 .. toctree::
    :maxdepth: 2

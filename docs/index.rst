@@ -31,6 +31,7 @@ Truett Projects
    :caption: 🍱 Web Story Structure
 
    project-web-story-structure/index.rst
+   project-web-story-structure-QA/index.rst
 
 .. toctree::
    :maxdepth: 2

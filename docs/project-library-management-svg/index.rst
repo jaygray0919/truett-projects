@@ -1,8 +1,8 @@
 .. index:
 
-**************
-SVG Management
-**************
+**********
+Manage SVG
+**********
 
 .. toctree::
    :maxdepth: 2

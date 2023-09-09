@@ -1,0 +1,42 @@
+
+.. describe:: dialogue - questions and answers
+
+   Item
+
+   Item
+
+
+Item 1
+------
+
+Question
+
+Question here
+
+Answer
+
+Answer here
+
+
+Item 2
+------
+
+Question
+
+Question here
+
+Answer
+
+Answer here
+
+
+Item 3
+------
+
+Question
+
+Question here
+
+Answer
+
+Answer here
