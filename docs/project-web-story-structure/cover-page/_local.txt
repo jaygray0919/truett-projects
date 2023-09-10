@@ -1,9 +1,9 @@
 
 .. describe:: cover page
 
-   Item.
+   item
 
-   Item.
+   item
 
 .. attention::
    Note dependence on CSS color variables.
