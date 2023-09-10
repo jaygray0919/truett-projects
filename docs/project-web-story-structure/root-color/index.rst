@@ -1,8 +1,8 @@
 .. index:
 
-**********
-root color
-**********
+***********
+:root color
+***********
 
 
 .. include:: _local.txt
