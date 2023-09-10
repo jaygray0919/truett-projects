@@ -1,8 +1,9 @@
 .. index:
 
 **************************
-font-style |emd| Recursive
+font-style |emd| Noto Sans
 **************************
 
 
 .. include:: _local.txt
+

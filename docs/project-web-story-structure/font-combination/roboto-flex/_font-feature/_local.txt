@@ -1,5 +1,5 @@
 
-.. describe:: font-feature - Recursive
+.. describe:: font-feature - Roboto Flex
 
    Variable Font feature setting
 

@@ -1,0 +1,28 @@
+
+.. describe:: @font-face World of Water
+
+   truetype font
+
+.. attention::
+   Only use links and fonts actually used in a Web Story.
+
+
+.. highlight:: css
+
+::
+
+   /** @format */
+
+   /**
+    * uppercase letter o
+    * 004F
+    */
+   
+   @font-face {
+     font-family: world-of-water;
+     font-style: normal;
+     font-weight: 400;
+     src:
+       url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.ttf") format("truetype");
+     font-display:swap;
+   }

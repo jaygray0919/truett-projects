@@ -1,0 +1,43 @@
+
+.. describe:: combinations - World of Water
+
+   CSS element definitions
+
+.. attention::
+   Only use links and fonts actually used in a Web Story.
+
+.. highlight:: css
+
+::
+
+   /** @format */
+
+   /* Set custom properties for each layout feature */
+   :root {
+     --world-of-water-frac: "frac" off;
+     --world-of-water-cpsp: "cpsp" off;
+   }
+   
+   /* If class is applied, update custom property and apply modern font-variant-* when supported */
+   .world-of-water-frac {
+     --world-of-water-frac: "frac" on;
+   }
+   
+   @supports (font-variant-numeric: diagonal-fractions) {
+     .world-of-water-frac {
+       --world-of-water-frac: "____";
+       font-variant-numeric: diagonal-fractions;
+     }
+   }
+   
+   .world-of-water-cpsp {
+       --world-of-water-cpsp: "cpsp" on;
+   }
+   
+   /* Apply current state of all custom properties
+      whenever a class is being applied */
+   .world-of-water-frac,
+   .world-of-water-cpsp {
+     font-feature-settings: var(--world-of-water-frac), var(--world-of-water-cpsp);
+   }
+

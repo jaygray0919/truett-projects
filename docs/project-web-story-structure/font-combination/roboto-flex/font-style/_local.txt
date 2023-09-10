@@ -1,0 +1,48 @@
+
+.. describe:: font-style - Roboto Flex
+
+   CSS element definitions
+
+
+.. attention::
+   Only use links and fonts actually used in a Web Story.
+
+
+.. highlight:: css
+
+::
+
+   /** @format */
+   .rbfx-sans {
+     font-family: RobotFlex;
+     font-variation-settings:
+       "width" 100,
+       "opsz" 14,
+       "GRAD" 0,
+       "slnt" 0,
+       "XTRA" 468,
+       "XOPQ" 96,
+       "YOPQ" 79,
+       "YTLC" 514,
+       "YTUC" 712,
+       "YTAS" 750,
+       "YTDE" -203,
+       "YTFI" 738;
+   }
+   .rbfx-sans-italic {
+     font-family: RobotFlex;
+     font-variation-settings:
+       "width" 100,
+       "opsz" 14,
+       "GRAD" 0,
+       "slnt" -10,
+       "XTRA" 468,
+       "XOPQ" 96,
+       "YOPQ" 79,
+       "YTLC" 514,
+       "YTUC" 712,
+       "YTAS" 750,
+       "YTDE" -203,
+       "YTFI" 738;
+   }
+
