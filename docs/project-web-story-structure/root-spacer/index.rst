@@ -1,8 +1,8 @@
 .. index:
 
-***********
-root spacer
-***********
+************
+:root spacer
+************
 
 
 .. include:: _local.txt
