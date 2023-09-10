@@ -1,6 +1,0 @@
-
-.. describe:: sybols and bullets
-
-   Item
-
-   Item

@@ -4,6 +4,9 @@
 quiz
 ****
 
+.. toctree::
+   :maxdepth: 1
 
-.. include:: _local.txt
-
+   1/index.rst
+   2/index.rst
+   3/index.rst

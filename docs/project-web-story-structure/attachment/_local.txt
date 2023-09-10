@@ -1,6 +1,0 @@
-
-.. describe:: attachment
-
-   item
-
-   item

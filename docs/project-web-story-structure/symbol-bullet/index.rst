@@ -1,8 +1,14 @@
 .. index:
 
-*****************
+*********************
 symbols |emd| bullets
-*****************
+*********************
 
 
-.. include:: _local.txt
+.. toctree::
+   :maxdepth: 1
+
+   bullet-color/index.rst
+   symbol/index.rst
+   example-bullet/index.rst
+   example-symbol/index.rst
