@@ -6,7 +6,7 @@
 .. attention::
    Only use links and fonts actually used in a Web Story.
 
-.. highlight:: html
+.. highlight:: css
 
 ::
 
