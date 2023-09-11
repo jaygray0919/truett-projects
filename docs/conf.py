@@ -137,8 +137,8 @@ html_short_title = 'Truett Documentation'
 html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
 
 html_extra_path = [
-    '_files/font-face-amstelvar.html',
-    '_files/dir/sequence-by-group.html',
+    '_files/fonts/font-face-amstelvar.html',
+    '_files/color/sequence-by-group.html',
     ]
 
 html_static_path = [
