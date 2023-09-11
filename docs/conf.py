@@ -157,6 +157,10 @@ html_js_files = [
     'https://cdn.ampproject.org/v0/amp-selector-0.1.js',
 ]
 
+html_extra_path = [
+    '_static/file/_font-face-amstelvar.html',
+    ]
+
 html_last_updated_fmt = '%y-%m-%d'
 html_domain_indices = True
 html_use_index = True
