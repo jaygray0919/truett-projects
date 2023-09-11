@@ -1,3 +1,4 @@
 
 
-`amstelvar <_static/file/_font-face-amstelvar.html>`_
+`amstelvar <../_static/file/_font-face-amstelvar.html>`_
+
