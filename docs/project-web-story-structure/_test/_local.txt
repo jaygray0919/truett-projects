@@ -1,13 +1,17 @@
 
 
-`amstelvar-1 </font-face-amstelvar.html>`_
+`amstelvar-1-fail </font-face-amstelvar.html>`_
 
 ---
 
-`amstelvar-2 <font-face-amstelvar.html>`_
+`amstelvar-2-fail <font-face-amstelvar.html>`_
 
 ---
 
-`amstelvar-3 <_files/font-face-amstelvar.html>`_
+`amstelvar-3-fail <_files/font-face-amstelvar.html>`_
+
+---
+
+`amstelvar-4 <https://truett-projects.readthedocs.io/en/latest/font-face-amstelvar.html>`_
 
 ---
