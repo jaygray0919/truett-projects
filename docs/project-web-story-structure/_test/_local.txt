@@ -7,3 +7,7 @@
 `amstelvar-2 <font-face-amstelvar.html>`_
 
 ---
+
+`amstelvar-3 <_files/font-face-amstelvar.html>`_
+
+---
