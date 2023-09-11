@@ -14,5 +14,5 @@ HTML content stored in _files and set in conf.py
 `amstelvar </en/latest/font-face-amstelvar.html>`_
 
 
-`sequence-by-group </en/latest/dir/font-face-amstelvar.html>`_
+`sequence-by-group </en/latest/dir/sequence-by-group.html>`_
 
