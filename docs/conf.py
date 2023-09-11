@@ -139,6 +139,7 @@ html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
 html_static_path = [
     '_static',
     '_images',
+    '_files',
 ]
 
 html_css_files = [
@@ -158,7 +159,7 @@ html_js_files = [
 ]
 
 html_extra_path = [
-    '_static/file/_font-face-amstelvar.html',
+    '_files/font-face-amstelvar.html',
     ]
 
 html_last_updated_fmt = '%y-%m-%d'
