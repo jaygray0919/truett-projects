@@ -1,4 +1,7 @@
 
 
-`amstelvar <../_static/file/_font-face-amstelvar.html>`_
+`amstelvar-1 <../_files/font-face-amstelvar.html>`_
 
+---
+
+`amstelvar-2 <_files/font-face-amstelvar.html>`_

@@ -136,10 +136,13 @@ html_short_title = 'Truett Documentation'
 
 html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
 
+html_extra_path = [
+    '_files/font-face-amstelvar.html',
+    ]
+
 html_static_path = [
     '_static',
     '_images',
-    '_files',
 ]
 
 html_css_files = [
@@ -157,10 +160,6 @@ html_js_files = [
     'https://cdn.ampproject.org/v0/amp-mustache-0.2.js',
     'https://cdn.ampproject.org/v0/amp-selector-0.1.js',
 ]
-
-html_extra_path = [
-    '_files/font-face-amstelvar.html',
-    ]
 
 html_last_updated_fmt = '%y-%m-%d'
 html_domain_indices = True
