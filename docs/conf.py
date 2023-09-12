@@ -162,7 +162,7 @@ html_js_files = [
     'https://cdn.ampproject.org/v0/amp-selector-0.1.js',
 ]
 
-html_last_updated_fmt = '%y-%m-%d'
+html_last_updated_fmt = '%y-%m-%d at %H:%M'
 html_domain_indices = True
 html_use_index = True
 html_split_index = True
