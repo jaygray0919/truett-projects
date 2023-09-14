@@ -1,6 +1,5 @@
 .. index:
 
-****
 grid |emd| two column image
 ***************************
 

@@ -12,17 +12,6 @@
     *  verbose
     *    '.grid-pc' set grid type
     */
-   
-   /* change element name */
-   /* move size to body */
-   /* move color to body */
-   .recursive-casual {
-     font-family: Poppins-400-Normal;
-     font-size: calc(2 * var(--story-page-vw));
-     color: var(--on-ffffff);
-     margin-top: 1em;
-     border: none;
-   }
 
    .grid-pc {
      display: grid;

@@ -1,12 +1,56 @@
 
-.. describe:: amp-list and amp-mustache 2
+.. describe:: amp-list and amp-mustache 1
 
    item
 
    item
+
+
+.. attention::
+   Notes about amp-list and amp-mustache.
 
 
 .. highlight:: html
 
+Guidance about amp-list and amp-mustache for Web Story
+
 ::
 
+   <!-- @format -->
+   <amp-story-page id="item-11" data-item-label="Title Page">
+   
+     <!-- first declaration - logo -->
+     <amp-story-grid-layer class="logo-layer" template="vertical">
+       <div class="logo-wrapper">
+         <amp-list
+           template="mst-logo"
+           width="auto"
+           height="96"
+           layout="fixed-height"
+           src="amp-state:localState-logo"
+         >
+           <template id="mst-logo" type="amp-mustache">
+             <amp-img
+               src="{{logo}}"
+               layout="responsive"
+               width="80"
+               height="80"
+             ></amp-img>
+           </template>
+           <amp-state id="localState-logo">
+             <script type="application/json">
+               {
+                 "items": [
+                   {
+                     "logo": "https://afdsi.com/static/logo/onto_sym_white_black_back_w421_h421_.png"
+                   }
+                 ]
+               }
+             </script>
+           </amp-state>
+           <div overflow class="list-overflow"></div>
+         </amp-list>
+       </div>
+     </amp-story-grid-layer>
+
+   </amp-story-page>

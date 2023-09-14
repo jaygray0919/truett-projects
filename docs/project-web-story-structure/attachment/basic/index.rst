@@ -1,7 +1,7 @@
 .. index:
 
-attachment-1
-************
+attachment |emd| basic
+**********************
 
 
 .. include:: _local.txt
