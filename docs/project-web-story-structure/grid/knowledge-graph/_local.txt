@@ -6,6 +6,8 @@
 
 .. highlight:: css
 
+Guidance about KG grid
+
 ::
 
    .grid-knowledge-graph {

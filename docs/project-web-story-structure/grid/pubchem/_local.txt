@@ -3,10 +3,10 @@
 
    item
 
-   item
-
 
 .. highlight:: css
+
+Guidance about PC grid
 
 ::
 
