@@ -1,7 +1,7 @@
 .. index:
 
-cover page
-**********
+document viewer
+***************
 
 .. toctree::
    :maxdepth: 1

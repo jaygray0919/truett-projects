@@ -1,7 +1,7 @@
 .. index:
 
-vocabulary definitions
-**********************
+attachment |emd| vocabulary definitions
+***************************************
 
 .. toctree::
    :maxdepth: 1

@@ -34,5 +34,4 @@ Structure |emd| Story
    attachment/index.rst
    doc-viewer/index.rst
 
-   list-mustache
 
