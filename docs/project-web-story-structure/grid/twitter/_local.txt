@@ -8,8 +8,6 @@
 
 .. highlight:: css
 
-Guidance about basic grid.
-
 ::
 
    .parent {

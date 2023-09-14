@@ -1,12 +1,12 @@
 
 .. describe:: grid for Knowledge Graph
 
-   item
-
    alt: grid-template-rows: fit-content(40%);
 
 
 .. highlight:: css
+
+::
 
    .grid-knowledge-graph {
      display: grid;
@@ -47,4 +47,3 @@
      padding-left: 32px;
      padding-bottom: 18px;
    }
-
