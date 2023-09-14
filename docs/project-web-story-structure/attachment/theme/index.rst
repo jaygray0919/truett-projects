@@ -1,7 +1,7 @@
 .. index:
 
-attachment |emd| theme
-**********************
+attachment |emd| theme, dark
+****************************
 
 
 .. include:: _local.txt

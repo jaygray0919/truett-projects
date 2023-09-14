@@ -1,0 +1,53 @@
+
+.. describe:: attachment - vocabulary CSS
+
+   item
+
+
+.. highlight:: css
+
+::
+
+   section {
+     padding-left: 1rem;
+   }
+   p {
+     display: inline-block;
+     border: none;
+   }
+   ul {
+     display: block;
+     margin: 0 auto;
+     max-width: 1160px;
+     padding: 30px;
+   }
+   dt {
+     margin-top: 0.2em;
+     margin-bottom: 0.2em;
+   }
+   dd {
+     text-indent: -1.8em;
+     padding-left: 1.8em;
+   }
+   dd:last-of-type {
+     margin-bottom: 1em;
+   }
+   .chartlegend span {
+     display: inline-block;
+     height: 0.65rem;
+     width:  0.65rem;
+     border-radius: 0.25rem;
+   }
+   .av {
+     font-family: NotoSerif-Regular-400;
+     font-size: 1.4em;
+     font-weight: 400;
+     color: var(--on-130f30);
+     border: none;
+   }
+   .p-s {
+     padding-left: 1em;
+   }
+   .mr-s {
+     margin-right: 1rem;
+   }

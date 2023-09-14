@@ -1,7 +1,5 @@
 
-.. describe:: attachment theme
-
-   item
+.. describe:: attachment theme, dark
 
    item
 
@@ -10,3 +8,10 @@
 
 ::
 
+   <amp-story-page-attachment
+     layout="nodisplay"
+     theme="dark"
+     cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg"
+     cta-text=""
+     data-title=""
+   >

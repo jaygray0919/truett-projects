@@ -1,0 +1,101 @@
+
+.. describe:: Google doc viewer - HTML
+
+   item
+
+
+.. highlight:: html
+
+::
+
+   <!-- @format -->
+   <div class="container">
+     <section>
+       <h2>
+         <i>Knowledge Graphs and Ontologies</i>
+       </h2>
+       <h3>Harald Sach</h3>
+       <amp-google-document-embed
+         src="https://afdsi.com/___tmp-5/Harald-Sack-ontology-english.pdf"
+         height="300"
+         layout="fixed-height"
+       ></amp-google-document-embed>
+     </section>
+   
+     <hr
+       style="height: 2px; border-width: 0; color: gray; background-color: gray"
+     />
+   
+     <section>
+       <h2>
+         <i>Knowledge Graph associations between chemicals and diseases</i>
+       </h2>
+       <h3>
+         Maxime Delmas, Olivier Filangi, Nils Paulhe, Florence Vinson, Christophe
+         Duperier, William Garrier, Paul-Emeric Saunier, Yoann Pitarch, Fabien
+         Jourdan, Franck Giacomoni and Clément Frainay
+       </h3>
+       <amp-google-document-embed
+         src="https://afdsi.com/___tmp-5/knowledge-graph-chemicals-disease.pdf"
+         height="290"
+         layout="fixed-height"
+       ></amp-google-document-embed>
+     </section>
+   
+     <hr
+       style="height: 2px; border-width: 0; color: gray; background-color: gray"
+     />
+   
+     <section>
+       <h2>
+         <i>Knowledge Graphs</i>
+       </h2>
+       <h3>
+         Aidan Hogan, Eva Blomqvist, Michael Cochez, Claudia D’Amato, Gerard De
+         Melo, Claudio Gutierrez, José Emilio Labra Gayo, Sabrina Kirrane,
+         Sebastian Neumaier, Axel Polleres, Roberto Navigli, Axel-Cyrille Ngonga
+         Ngomo, Sabbir M. Rashid, Anisa Rula, Lukas Schmelzeisen, Juan Sequeda,
+         Steffen Staab, Antoine Zimmermann
+       </h3>
+       <amp-google-document-embed
+         src="https://afdsi.com/___tmp-5/knowledge-graphs-detailed.pdf"
+         height="220"
+         layout="fixed-height"
+       ></amp-google-document-embed>
+     </section>
+   
+     <hr
+       style="height: 2px; border-width: 0; color: gray; background-color: gray"
+     />
+   
+     <section>
+       <h2>
+         <i>SPARQL graphs</i>
+       </h2>
+       <amp-google-document-embed
+         src="https://afdsi.com/___tmp-5/SPARQL-graphs.pdf"
+         height="300"
+         layout="fixed-height"
+       ></amp-google-document-embed>
+     </section>
+   
+     <hr
+       style="height: 2px; border-width: 0; color: gray; background-color: gray"
+     />
+   
+     <section>
+       <h2>
+         <i>Wikidata's SPARQL introduction for beginners</i>
+       </h2>
+       <h3>Lucie-Aimée Kaffee</h3>
+       <amp-google-document-embed
+         src="https://afdsi.com/___tmp-5/Wikidata-SPARQL-introduction.pdf"
+         height="300"
+         layout="fixed-height"
+       ></amp-google-document-embed>
+     </section>
+   
+     <hr
+       style="height: 2px; border-width: 0; color: gray; background-color: gray"
+     />
+   </div>

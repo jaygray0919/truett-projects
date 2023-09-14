@@ -1,6 +1,6 @@
 .. index:
 
-attachment |emd| basic
+vocabulary |emd| color
 **********************
 
 

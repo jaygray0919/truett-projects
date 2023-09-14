@@ -1,7 +1,0 @@
-
-.. describe:: Google doc reader
-
-   item
-
-   item
-

@@ -1,7 +1,5 @@
 
-.. describe:: attachment basic
-
-   item
+.. describe:: attachment - vocabulary HTML
 
    item
 

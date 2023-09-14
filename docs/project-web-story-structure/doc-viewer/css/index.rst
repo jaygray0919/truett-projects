@@ -1,7 +1,7 @@
 .. index:
 
-doc reader
-**********
+doc viewer CSS
+**************
 
 
 .. include:: _local.txt

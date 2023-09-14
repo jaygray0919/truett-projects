@@ -32,7 +32,7 @@ Structure |emd| Story
 
    outlink/index.rst
    attachment/index.rst
-   doc-reader/index.rst
+   doc-viewer/index.rst
 
    list-mustache
 
