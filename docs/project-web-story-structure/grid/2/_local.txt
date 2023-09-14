@@ -3,15 +3,10 @@
 
    item
 
-   item
+   alt: grid-template-rows: fit-content(40%);
 
 
 .. highlight:: css
-
-   /**
-    *  alt
-    *    grid-template-rows: fit-content(40%);
-    */
 
    .grid-knowledge-graph {
      display: grid;
@@ -47,7 +42,6 @@
      grid-column-start: 7;
      grid-column-end: 12;
    }
-   
    .box-1 {
      background-color: var(--on-1f64ff);
      padding-left: 32px;

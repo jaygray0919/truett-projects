@@ -8,11 +8,6 @@
 
 .. highlight:: css
 
-   /**
-    *  verbose
-    *    '.grid-pc' set grid type
-    */
-
    .grid-pc {
      display: grid;
      grid-auto-flow: column;
@@ -21,14 +16,12 @@
      grid-column-gap: 1.5em;
      grid-row-gap: 1em;
    }
-
    .g-d {
      grid-column-start: 4;
      grid-column-end: 8;
      grid-row-start: 1;
      grid-row-end: 6;
    }
-
    .g-1-1 {
      text-align: right;
      grid-column-start: 1;
@@ -36,7 +29,6 @@
      grid-row-start: 1;
      grid-row-end: 2;
    }
-
    .g-2-1 {
      text-align: right;
      grid-column-start: 1;
@@ -72,7 +64,6 @@
      grid-row-start: 6;
      grid-row-end: 7;
    }
-
    .g-1-4 {
      grid-column-start: 9;
      grid-column-end: 12;
