@@ -1,14 +1,9 @@
 
-.. describe:: font-link Noto Sans
+.. describe:: symbols
 
-   truetype font
+   CSS element definitions
 
-.. attention::
-   Only use links and fonts actually used in a Web Story.
-
-.. highlight:: html
+.. highlight:: css
 
 ::
 
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Black.ttf"/>

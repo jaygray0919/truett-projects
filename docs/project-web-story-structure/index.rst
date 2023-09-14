@@ -8,7 +8,6 @@ Structure |emd| Story
    :maxdepth: 1
    :numbered:
 
-   _test/index.rst
 
    head/index.rst
    root-color/index.rst

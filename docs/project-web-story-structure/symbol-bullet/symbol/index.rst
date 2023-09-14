@@ -1,9 +1,7 @@
 .. index:
 
-*************************
-font-link |emd| Noto Sans
-*************************
+symbols
+*******
 
 
 .. include:: _local.txt
-

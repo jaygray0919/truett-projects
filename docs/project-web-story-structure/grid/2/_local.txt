@@ -1,0 +1,56 @@
+
+.. describe:: grid for Knowledge Graph
+
+   item
+
+   item
+
+
+.. highlight:: css
+
+   /**
+    *  alt
+    *    grid-template-rows: fit-content(40%);
+    */
+
+   .grid-knowledge-graph {
+     display: grid;
+     grid-auto-flow: column;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: auto minmax(min-content, auto) minmax(min-content, auto) minmax(
+         min-content,
+         auto
+       );
+     row-gap: 3em;
+     position: fixed;
+     top: 30px;
+   }
+   .row-1 {
+     grid-column-start: 1;
+     grid-column-end: 12;
+   }
+   .row-left {
+     grid-column-start: 2;
+     grid-column-end: 6;
+     color: var(--on-ffffff);
+     text-align: right;
+   }
+   .row-middle {
+     grid-column-start: 6;
+     grid-column-end: 6;
+     color: var(--on-ffffff);
+     font-size: 3.5em;
+     text-align: center;
+     padding-top: 12px;
+   }
+   .row-right {
+     grid-column-start: 7;
+     grid-column-end: 12;
+   }
+   
+   .box-1 {
+     background-color: var(--on-1f64ff);
+     padding-left: 32px;
+     padding-bottom: 18px;
+   }
+

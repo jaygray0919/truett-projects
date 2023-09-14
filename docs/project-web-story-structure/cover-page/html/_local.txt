@@ -1,0 +1,36 @@
+
+.. describe:: cover page HTML
+
+   item
+
+   item
+
+
+.. attention::
+   Change hgroup for each Web Story instance.
+   Change author for each Web Story instance.
+   Note dependence on CSS color variables.
+   CSS cover-[value] depends on title width
+   CSS w-[value] depends on title width
+
+
+.. highlight:: html
+
+::
+
+      <amp-story-grid-layer class="noedge c-bottom mb" template="vertical">
+        <div class="paper co-s bg-w cover-70 d-flex">
+          <div class="flex-fill pt pb">
+            <hgroup class="ml-s">
+              <div class="Poppins-Regular-400 fs-14 co-p">
+                part of education series: connecting the dots
+              </div>
+              <h1 class="Poppins-ExtraBoldItalic-800 fs-20 co-h1">
+                Solve Problems with Knowledge Graphs
+              </h1>
+            </hgroup>
+            <div class="Poppins-Medium-500 fs-16 w-80 mx-a">by Paula Perez</div>
+          </div>
+          <div class="sep-v"></div>
+        </div>
+      </amp-story-grid-layer>

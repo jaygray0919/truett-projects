@@ -10,5 +10,23 @@
 
 ::
 
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/xxx.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Light.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-LightItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Regular.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Italic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Medium.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-MediumItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-SemiBold.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Bold.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-BoldItalic.ttf"/>

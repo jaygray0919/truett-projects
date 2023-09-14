@@ -1,5 +1,5 @@
 
-.. describe:: iframe
+.. describe:: iframe-1
 
    item
 
@@ -11,8 +11,6 @@
 
 
 .. highlight:: html
-
-Guidance about iframe.
 
 ::
 

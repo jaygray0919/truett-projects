@@ -1,6 +1,5 @@
 .. index:
 
-*****************
 font combinations
 *****************
 
@@ -13,3 +12,5 @@ font combinations
    recursive/index.rst
    world-of-water/index.rst
    zilla-slab/index.rst
+
+   _example/index.rst

@@ -1,0 +1,25 @@
+
+.. describe:: grid for two column image
+
+   item
+
+   item
+
+
+.. highlight:: css
+
+   /**
+    *  source
+    *  https://medium.com/@mandy.michael/you-dont-need-a-media-query-for-that-2-responsive-columns-2582c6ea8700
+    *  https://codepen.io/mandymichael/pen/XWJPdoo
+    *  Mobile responsive
+    */
+
+   .grid-block-group {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-gap: 9px;
+   }
+   .grid-block-group div {
+     height: 200px;
+   }

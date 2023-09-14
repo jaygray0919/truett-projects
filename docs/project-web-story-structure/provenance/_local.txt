@@ -12,8 +12,6 @@
 
 .. highlight:: css
 
-Guidance about provenance CSS for Web Story
-
 ::
 
    /** @format */

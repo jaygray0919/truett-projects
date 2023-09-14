@@ -1,0 +1,123 @@
+
+.. describe:: grid for PubChem
+
+   item
+
+   item
+
+
+.. highlight:: css
+
+   /**
+    *  verbose
+    *    '.grid-pc' set grid type
+    */
+   
+   /* change element name */
+   /* move size to body */
+   /* move color to body */
+   .recursive-casual {
+     font-family: Poppins-400-Normal;
+     font-size: calc(2 * var(--story-page-vw));
+     color: var(--on-ffffff);
+     margin-top: 1em;
+     border: none;
+   }
+
+   .grid-pc {
+     display: grid;
+     grid-auto-flow: column;
+     grid-template-columns: repeat(11, 1fr);
+     grid-template-rows: repeat(6, 1fr);
+     grid-column-gap: 1.5em;
+     grid-row-gap: 1em;
+   }
+
+   .g-d {
+     grid-column-start: 4;
+     grid-column-end: 8;
+     grid-row-start: 1;
+     grid-row-end: 6;
+   }
+
+   .g-1-1 {
+     text-align: right;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 2;
+   }
+
+   .g-2-1 {
+     text-align: right;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 3;
+   }
+   .g-3-1 {
+     text-align: right;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 3;
+     grid-row-end: 4;
+   }
+   .g-4-1 {
+     text-align: right;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 4;
+     grid-row-end: 5;
+   }
+   .g-5-1 {
+     text-align: right;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 5;
+     grid-row-end: 6;
+   }
+   .g-6-1 {
+     text-align: right;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     grid-row-start: 6;
+     grid-row-end: 7;
+   }
+
+   .g-1-4 {
+     grid-column-start: 9;
+     grid-column-end: 12;
+     grid-row-start: 1;
+     grid-row-end: 2;
+   }
+   .g-2-4 {
+     grid-column-start: 9;
+     grid-column-end: 12;
+     grid-row-start: 2;
+     grid-row-end: 3;
+   }
+   .g-3-4 {
+     grid-column-start: 9;
+     grid-column-end: 12;
+     grid-row-start: 3;
+     grid-row-end: 4;
+   }
+   .g-4-4 {
+     grid-column-start: 9;
+     grid-column-end: 12;
+     grid-row-start: 4;
+     grid-row-end: 5;
+   }
+   .g-5-4 {
+     grid-column-start: 9;
+     grid-column-end: 12;
+     grid-row-start: 5;
+     grid-row-end: 6;
+   }
+   .g-6-4 {
+     grid-column-start: 9;
+     grid-column-end: 12;
+     grid-row-start: 6;
+     grid-row-end: 7;
+   }
+

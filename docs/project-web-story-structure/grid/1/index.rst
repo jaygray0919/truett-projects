@@ -1,7 +1,6 @@
 .. index:
 
-****
-grid
+grid |emd| Twitter
 ****
 
 

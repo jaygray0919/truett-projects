@@ -139,6 +139,7 @@ html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
 html_extra_path = [
     '_files/fonts/font-face-amstelvar.html',
     '_files/color/sequence-by-group.html',
+    '_files/bullet-color/color-bullet-23-07-04.html'
     ]
 
 html_static_path = [

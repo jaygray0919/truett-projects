@@ -1,0 +1,66 @@
+
+.. describe:: attachment basic
+
+   item
+
+   item
+
+
+.. highlight:: html
+
+::
+
+   <amp-story-page-attachment
+     layout="nodisplay"
+     theme="dark"
+     cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg"
+     cta-text="Vocabulary Definitions"
+     data-title="Vocabulary terms and meaning"
+   >
+     <section class="p-s">
+       <dl class="chartlegend">
+         <div class="NotoSans-Regular-400 fs-16 lh-18 av">
+           Logic Concepts
+         </div>
+         <dt class="NotoSerif-Regular-400 fs-14 lh-14">Existential graph</dt>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-11 mr-s"></span>
+           Intro text
+         </dd>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-12 mr-s"></span>
+           Bridges
+         </dd>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-13 mr-s"></span>
+           Humor about Bridges
+         </dd>
+         <dt class="NotoSerif-Regular-400 fs-14 lh-14">First order logic</dt>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-11 mr-s"></span>
+           Intro text
+         </dd>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-12 mr-s"></span>
+           Bridges
+         </dd>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-13 mr-s"></span>
+           Humor about Bridges
+         </dd>
+         <dt class="NotoSerif-Regular-400 fs-14 lh-14">Common logic</dt>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-11 mr-s"></span>
+           Intro text
+         </dd>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-12 mr-s"></span>
+           Bridges
+         </dd>
+         <dd class="NotoSans-Regular-400 fs-12 lh-10">
+           <span class="c-13 mr-s"></span>
+           Humor about Bridges
+         </dd>
+       </dl>
+     </section>
+   </amp-story-page-attachment>

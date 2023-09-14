@@ -10,5 +10,39 @@
 
 ::
 
-   <link crossorigin rel="preload" as="font" type="font/ttf" 
-     href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Black.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Thin.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-ThinItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-ExtraLight.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-ExtraLightItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Light.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-LightItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Regular.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Italic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Medium.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-MediumItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-SemiBold.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-SemiBoldItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Bold.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-BoldItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-ExtraBold.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-ExtraBoldItalic.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+     href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-Black.ttf"/>
+   <link crossorigin rel="preload" as="font" type="font/ttf"
+    href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/NotoSans-BlackItalic.ttf"/>

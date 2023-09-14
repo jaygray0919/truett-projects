@@ -1,6 +1,5 @@
 .. index:
 
-*********************
 symbols |emd| bullets
 *********************
 
@@ -8,7 +7,8 @@ symbols |emd| bullets
 .. toctree::
    :maxdepth: 1
 
-   bullet-color/index.rst
+   bullet/index.rst
    symbol/index.rst
-   example-bullet/index.rst
-   example-symbol/index.rst
+
+   _example-symbol/index.rst
+   _example-bullet-color/index.rst

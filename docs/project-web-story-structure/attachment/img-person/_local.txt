@@ -1,0 +1,12 @@
+
+.. describe:: attachment for image of a person
+
+   item
+
+   item
+
+
+.. highlight:: html
+
+::
+
