@@ -1,0 +1,10 @@
+
+<amp-story-grid-layer template="vertical">
+  <h2>
+    <span data-text-background-color="crimson">
+      Cat ipsum dolor sit amet, sleeps on my head, but lounge in doorway so if
+      human is on laptop sit on the keyboard
+    </span>
+  </h2>
+</amp-story-grid-layer>
+

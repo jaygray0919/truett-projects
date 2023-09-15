@@ -1,0 +1,501 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-0.1.js"></script>
+<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+<title>
+Plato amp-story
+</title>
+<link rel="canonical" href="https://ontomatica.io/plato/" />
+<link rel="shortcut icon" itemprop="image" href="https://ontomatica.io/static/image/onto_symb_w421_h421.png"/>
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/fcd1ee5ff4.css"/>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+h1 {
+	font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+
+h2 {
+	font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+
+body {
+	font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+
+amp-story-page h1 {
+	color: white;
+	font-size: 40px;
+	font-family: Georgia, serif;
+	padding-bottom: 10px;
+	text-align: left;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+	line-height: 42px;
+	padding-top: 5px
+}
+
+[desktop] amp-story-page h1 {
+	font-size: 30px;
+	line-height: 36px
+}
+
+amp-story-page h2 {
+	text-align: center
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	color: white;
+	font-size: 19px;
+	letter-spacing: .005em;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+	line-height: 1.45em;
+	text-align: left
+}
+
+@media (max-width: 325px) {
+	p {
+		font-size: 16px
+	}
+}
+
+p.byline {
+	padding: 0 0 10px;
+	color: #aaa;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 16px;
+	display: inline-block
+}
+
+[desktop] p.byline {
+	font-size: 13px
+}
+
+[desktop] p {
+	font-size: 17px
+}
+
+p.credit {
+	color: rgba(222, 222, 222, 0.8);
+	font-size: 10px;
+	padding: 0 5px 5px 0;
+	text-transform: uppercase;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: right
+}
+
+.tagline,
+amp-story-page h2 {
+	padding-bottom: 5px;
+	font-size: 16px;
+	text-shadow: none;
+	font-family: Helvetica, Arial, sans-serif;
+	text-transform: uppercase
+}
+
+.tagline span,
+amp-story-page h2 span {
+	background: white;
+	padding: 2px 10px;
+	color: #333;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone
+}
+
+[desktop] .tagline,
+[desktop] amp-story-page h2,
+amp-story-page [desktop] h2 {
+	font-size: 12px;
+	font-weight: 900;
+}
+
+.background {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 5px 10px
+}
+
+amp-story-page {
+	background-color: #000
+}
+
+.logo {
+	justify-self: center
+}
+
+.gradient--bottom {
+	background: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.5) 60%, #000)
+}
+
+.gradient--top {
+	background: linear-gradient(to top, transparent, transparent 50%, rgba(0, 0, 0, 0.5) 60%, #000)
+}
+
+.gradient--top-light {
+	background: linear-gradient(to top, transparent, transparent 50%, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.8))
+}
+
+amp-story-grid-layer.top {
+	-ms-flex-align: start;
+	align-items: start
+}
+
+amp-story-grid-layer.center {
+	-ms-flex-align: center;
+	align-items: center
+}
+
+amp-story-grid-layer.bottom {
+	-ms-flex-align: end;
+	align-items: end
+}
+
+amp-story-grid-layer[template="vertical"].top {
+	-ms-flex-line-pack: start;
+	align-content: start
+}
+
+amp-story-grid-layer[template="vertical"].center {
+	-ms-flex-line-pack: center;
+	align-content: center
+}
+
+amp-story-grid-layer[template="vertical"].bottom {
+	-ms-flex-line-pack: end;
+	align-content: end
+}
+
+.self-top {
+	-ms-flex-item-align: start;
+	-ms-grid-row-align: start;
+	align-self: start
+}
+
+.self-center {
+	justify-self: center
+}
+
+.self-bottom {
+	-ms-flex-item-align: end;
+	-ms-grid-row-align: end;
+	align-self: end
+}
+
+.text-right {
+	text-align: right
+}
+
+.text-center {
+	text-align: center
+}
+
+.text-slide {
+	-ms-flex-line-pack: center;
+	align-content: center
+}
+
+.text-slide--background {
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+.darken .text-slide {
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+.ui-button {
+	text-align: center
+}
+
+.ui-button span {
+	color: #aaa;
+	border-radius: 4px;
+	padding: 8px;
+	display: inline-block
+}
+
+.ui-button span:before {
+	font-family: "FontAwesome";
+	content: "\f0a6";
+	margin-right: 5px
+}
+
+.date {
+	font-size: 13px;
+	color: #AAAAAA;
+	opacity: 0.8;
+	text-shadow: none;
+	display: inline-block
+}
+
+.borderless {
+	padding: 0
+}
+
+.quote {
+	color: white;
+	font-family: Georgia, serif;
+	font-size: 26px;
+	line-height: 32px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7)
+}
+
+[desktop] .quote {
+	font-size: 22px;
+	line-height: 26px
+}
+
+.attribution {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+	padding-top: 10px
+}
+
+[desktop] .attribution {
+	font-size: 13px
+}
+
+.bold {
+	font-family: Helvetica, Arial, sans-serif
+}
+
+p.event-date {
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center
+}
+
+[desktop] p.event-date {
+	font-size: 13px
+}
+</style>
+<script type="application/ld+json"></script>
+</head>
+
+<body>
+<amp-story standalone bookend-config-src="data.json">
+<amp-story-page id="slide_01">
+<amp-story-grid-layer template="fill">
+<amp-img src="layer_09_10_w1080_h1920.svg" width="1080" height="1920">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="gradient--top top" template="vertical">
+<amp-img src="onto_logo_letter_white_back_black_w757_w131.svg" class="logo" width="379" height="66">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="gradient--bottom bottom" template="vertical">
+<div>
+<p class="tagline">
+<span>Platform for Ontologies</span>
+</p>
+<h1>The story of Plato</h1>
+<p class="byline">By author-name, <span class="byline">April 2018</span>
+</p>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+<amp-story-page id="slide_02">
+<amp-story-grid-layer template="vertical">
+<amp-img src="layer_01_02_w1080_h1920.svg" layout="fill" width="1080" height="1920">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="head" grid-area="upper-third" animate-in="fly-in-left" animate-in-duration="0.7s">
+<div animate-in="fade-in">
+<!-- <p>1. Ontomatica core technology platform is LAMP: Linux operating system; Apache web server; MySQL database management system; PHP, Perl &amp; Python scripting languages. Transport (&#97;&#46;&#107;&#46;&#97;&#46; data exchange) is implemented using Hypertext Transfer Protocol (HTTPS). Identification (&#97;&#46;&#107;&#46;&#97;&#46; web address) is implemented using uniform resource identifier (URI). In the near future, we will support internationalized resource identifier (IRI) &amp; Unicode. Ontomatica triple store is implemented in RDF::Trine &amp; complementary Perl&#45;based tools.</p> -->
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="desc" grid-area="lower-third" animate-in="fly-in-right" animate-in-duration="0.7s" animate-in-delay="0.3s" animate-in-after="head">
+<div animate-in="fade-in">
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>2. Ontomatica application content is coded in RDF. Application content is exposed as RDFa on web pages. Web page content may be harvested in Turtle and/or JSON&#45;LD format. For example, application content on this site is published in RDFa &amp; harvested in both Turtle &amp; JSON&#45;LD format.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="borderless bottom" template="vertical">
+<p class="credit">Image: Author/Organization</p>
+</amp-story-grid-layer>
+</amp-story-page>
+<amp-story-page id="slide_03" >
+<amp-story-grid-layer template="vertical">
+<amp-img src="layer_03_04_w1080_h1920.svg" layout="fill" width="1080" height="1920">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="head" grid-area="upper-third" animate-in="fly-in-left" animate-in-duration="0.7s">
+<div animate-in="fade-in">
+<p>3. Ontomatica knowledge representations (&#97;&#46;&#107;&#46;&#97;&#46; application content) are coded in RDF.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="desc" grid-area="lower-third" animate-in="fly-in-right" animate-in-duration="0.7s" animate-in-delay="0.3s" animate-in-after="head">
+<div animate-in="fade-in">
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>4. Many instances of Ontomatica application content are published as graphs (Directed Acyclic Graphs). Graphs serve as a form of Proof about logical integrity of application design. For example, several graphs are published on this site to demonstrate scope &amp; completeness of an application model. Graphs are generated from knowledge representations &amp; published in Scalable Vector Graphics (SVG) format.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="borderless bottom" template="vertical">
+<p class="credit">Image: Author/Organization</p>
+</amp-story-grid-layer>
+</amp-story-page>
+<amp-story-page id="slide_04" >
+<amp-story-grid-layer template="vertical">
+<amp-img src="layer_05_06_w1080_h1920.svg" layout="fill" width="1080" height="1920">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="head" grid-area="upper-third" animate-in="fly-in-left" animate-in-duration="0.7s">
+<div animate-in="fade-in">
+<!-- <p>5. Ontomatica applications are written in Web Ontology Language (OWL) version 2 (OWL 2). One purpose in using OWL 2 is to clearly express relationships among object classes. Those relationships are exposed to Ontomatica customers &amp; users on our faceted classification &amp; faceted search platform. Another purpose is to easily import ontologies written in OWL from other sources. Ontomatica OWL implementations are coded in RDF.</p> -->
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="desc" grid-area="lower-third" animate-in="fly-in-right" animate-in-duration="0.7s" animate-in-delay="0.3s" animate-in-after="head">
+<div animate-in="fade-in">
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>6. Ontomatica uses applications &amp; services that implement Rule Interchange Format (RIF). For example, using RIF, a services accepts an OWL file as input &amp; produces a new output file. Examples on this site are OWL&#45;coded ontologies, including Ontomatica ontologies, generated in human&#45;readable format.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="borderless bottom" template="vertical">
+<p class="credit">Image: Author/Organization</p>
+</amp-story-grid-layer>
+</amp-story-page>
+<amp-story-page id="slide_05">
+<amp-story-grid-layer template="vertical">
+<amp-img src="layer_07_08_w1080_h1920.svg" layout="fill" width="1080" height="1920">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="head" grid-area="upper-third" animate-in="fly-in-left" animate-in-duration="0.7s">
+<div animate-in="fade-in">
+<!-- <p>7. Ontomatica uses Pellet &amp; HermiT reasoners as part of a Prot&eacute;g&eacute; development environment. For example, a Descriptive Logic reasoner (HermiT) solved Einstein Riddle featured on this site.</p> -->
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="desc" grid-area="lower-third" animate-in="fly-in-right" animate-in-duration="0.7s" animate-in-delay="0.3s" animate-in-after="head">
+<div animate-in="fade-in">
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>8. Ontomatica uses the PROV ontology to document provenance of information used in our applications. Provenance often is prominently featured in production applications (see header in faceted search applications as examples). Also, we use PROV to establish provenance for methods &amp; complementary chemical, food &amp; drug terms &mdash; often encoded in OWL files.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="borderless bottom" template="vertical">
+<p class="credit">Image: Author/Organization</p>
+</amp-story-grid-layer>
+</amp-story-page>
+<amp-story-page id="slide_06">
+<amp-story-grid-layer template="vertical">
+<amp-img src="layer_09_10_w1080_h1920.svg" layout="fill" width="1080" height="1920">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="head" grid-area="upper-third" animate-in="fly-in-left" animate-in-duration="0.7s">
+<div animate-in="fade-in">
+<!-- <p>9. At this time, Ontomatica application content is published on its faceted search platform. In the near future, Ontomatica will publish content on its triple store. That content will be accessible via SPARQL. In addition, we use SPARQL to systematically maintain content in Ontomatica applications that is imported from other ontology platforms. Examples are DBpedia &amp; UniProt.</p> -->
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="desc" grid-area="lower-third" animate-in="fly-in-right" animate-in-duration="0.7s" animate-in-delay="0.3s" animate-in-after="head">
+<div animate-in="fade-in">
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>10. 15 Ontomatica applications are in production. Those applications use technologies, methods &amp; services featured in this diagram.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="borderless bottom" template="vertical">
+<p class="credit">Image: Author/Organization</p>
+</amp-story-grid-layer>
+</amp-story-page>
+<amp-story-page id="slide_07" >
+<amp-story-grid-layer template="vertical">
+<amp-img src="page_perimeter_w1591_h2247.svg" layout="fill" width="1591" height="2247">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="head" grid-area="upper-third" animate-in="fly-in-left" animate-in-duration="0.7s">
+<div animate-in="fade-in">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="desc" grid-area="lower-third" animate-in="fly-in-right" animate-in-duration="0.7s" animate-in-delay="0.3s" animate-in-after="head">
+<div animate-in="fade-in">
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="borderless bottom" template="vertical">
+<p class="credit">Image: Author/Organization</p>
+</amp-story-grid-layer>
+</amp-story-page>
+<amp-story-page id="slide_08" >
+<amp-story-grid-layer template="vertical">
+<amp-img src="page_center_w1591_h2247.svg" layout="fill" width="1591" height="2247">
+</amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="head" grid-area="upper-third" animate-in="fly-in-left" animate-in-duration="0.7s">
+<div animate-in="fade-in">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="" template="thirds">
+<div id="desc" grid-area="lower-third" animate-in="fly-in-right" animate-in-duration="0.7s" animate-in-delay="0.3s" animate-in-after="head">
+<div animate-in="fade-in">
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer class="borderless bottom" template="vertical">
+<p class="credit">Image: Author/Organization</p>
+</amp-story-grid-layer>
+</amp-story-page>
+</body>
+
+</html>

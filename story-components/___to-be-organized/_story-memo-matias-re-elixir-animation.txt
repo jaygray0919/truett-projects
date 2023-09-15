@@ -1,0 +1,25 @@
+Hello Matias
+I know from the Story concalls and other sources that you folks have many competing priorities
+And I'm sure you are tracking the competitve landscape for challengers to Web Stories
+Some challengers are dedicated to the mobile platform like: https://signal.org/blog/introducing-stories/
+
+But my organization sees Web Stories as a superior way "to do Powerpoint" - a combination of diagrams and text for "Presentations"
+The amp-story-page-grid and attachments (with iframes and other interactive services) is very powerful
+And we plan to lay in an audio script so the Presentation has a virtual Presenter
+
+You've helped us with Story Player - a navigator thru a Presentation
+I'd like to share a Story Player use-case that I just found:
+  https://markm208.github.io/exbook/
+  https://markm208.github.io/exbook/chapter1/01/index.html
+
+In simple terms: we want to do that with Web Stories!
+
+Google priorities may be in a different direction.
+But, if the "Presentation space" (vs "the Mobile-Story space") is/will be a priority, we'd like to work with you to deliver something like the Animated Introduction to Elixir
+While I just stumbled on this site, I've never seen anything quite like it.
+
+Hoping Google has the interest, time and budget to evolve Web Stories deeper into the Presentation/Education space as illustrated by the Elixir Animated Introduction
+
+Am available for discussion on this if appropriate
+
+/jay

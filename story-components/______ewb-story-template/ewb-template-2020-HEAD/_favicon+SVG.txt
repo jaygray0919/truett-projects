@@ -1,0 +1,11 @@
+
+source:
+	https://dark-mode-favicon.glitch.me/
+
+https://dark-mode-favicon.glitch.me/icon.svg
+
+<link rel="icon" href="/icon.svg">
+
+also see animation techniques (subtle)
+
+

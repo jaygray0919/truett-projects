@@ -3,5 +3,10 @@
 amp-img
 *******
 
+.. toctree::
+   :maxdepth: 1
 
-.. include:: _local.txt
+   html/index.rst
+   css/index.rst
+   
+   _example/index.rst

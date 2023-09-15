@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DBpedia Classes PieChart</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/examples.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="../javascript/sgvizler.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() { sgvizler.containerDrawAll(); });
+</script>
+</head>
+<body>
+<h2>DBpedia Classes</h2>
+<h4><code>google.visualization.PieChart</code></h4>
+<div id="sgvizler-example"
+  data-sgvizler-endpoint="http:dbpedia.org/sparql"
+  data-sgvizler-query=
+    " SELECT ?class (COUNT(?instance) AS ?noOfInstances)
+      WHERE { ?instance a ?class }
+      GROUP BY ?class
+      ORDER BY ?class
+    "
+  data-sgvizler-chart="google.visualization.PieChart"
+  style="width:1000px; height:600px;">
+</div>
+</body>
+</html>

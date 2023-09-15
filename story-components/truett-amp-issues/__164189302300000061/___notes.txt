@@ -1,0 +1,17 @@
+
+amp-html
+companion to test amp-story-attachment using <amp-img>
+
+https://afdsi.com/164189302300000061/
+
+
+
+old libs
+
+<script async
+	src="https://amp-infinite-scroll.glitch.me/dist/amp.js"></script>
+<script async custom-element="amp-list"
+	src="https://amp-infinite-scroll.glitch.me/dist/amp-list-0.1.js"></script>
+<script async custom-template="amp-mustache"
+	src="https://amp-infinite-scroll.glitch.me/dist/amp-mustache-latest.js"></script>
+

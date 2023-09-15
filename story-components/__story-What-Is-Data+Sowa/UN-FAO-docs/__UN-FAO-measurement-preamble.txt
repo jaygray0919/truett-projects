@@ -1,0 +1,75 @@
+Background
+
+	Conversion of food data is done in the areas of nutrition (i.e. food composition and dietary assessment) and food safety (exposure assessment), and when reporting analytical data, including their publication in scientific articles.
+
+	Food composition data are expressed in a variety of ways, depending on national conventions, practices of various institutions and journals requirements. However, to aggregate or compare data from diverse sources, it is often necessary to convert them.
+
+	A common source of error in the use of compositional data is their conversions from one unit, denominator or expression to another.
+
+	As there are no comprehensive guidelines available on this topic, FAO/INFOODS decided to develop such guidelines.
+
+Objectives
+
+	With the goal to increase the quality of compositional data, the guidelines have the following objectives:
+
+		to provide a comprehensive list of possible conversions;
+		to standardize component conversions regarding units (e.g. g, mg, or /.ig), denominators (e.g. per 100 g edible portion) and expressions used in food composition, dietary assessment and exposure assessment;
+		to promote the publication, e.g. in scientific journals, of all necessary data to be able to convert them into edible portion on fresh weight bases. For example, to provide water, fat or protein content if data are expressed per dry weight, % of total fatty or amino acid, respectively;
+		to motivate researchers and compilers to always accompany their compositional data with explicit units, denominators and expressions to ensure their correct use;
+		to motivate users to pay more attention to units, denominators and expressions of compositional data; and
+		to make users aware of some unusual conversions (e.g. the use of the Sheppard factors for converting fatty acid methyl ester into fatty acids)
+
+	The document is split into two parts, where the first one contains conversions of units and denominators (Section 3).
+
+	The second part describes specific conversions for certain nutrients and components, for which conversions are frequently done.
+
+	To express figures, the Anglophonic use of "," and "." is applied in the entire document, i.e. 10,000 means ten thousand, and 1.000 is equal to 1 with 3 decimal places.
+
+Changing denominators and units
+
+	In general, for food composition purposes it is recommended to use a metric unit (g, mg or microg).
+	As food is typically consumed on the fresh weight basis and only the edible portion is eaten, food composition data are usually reported as 'per 100 g edible portion on fresh weight basis (EP)'.
+	On the other hand, scientific articles often report data as 'per 100 g dry matter (DM)' which is useful for scientific purposes to easily compare food contents in a standardized way without the influence of the changing water content.
+	However, in order to be useful for food composition purposes, the water content is needed so that the values can be converted to EP.
+
+	Denominators are also called base unit or matrix unit
+
+	Some denominators should be avoided, for example 'individual amino acid (AA) as g per 100 g' because it is not obvious if they refer to, for example, 'per 100 g edible portion' or 'per 100 g protein' or to 'per 100 g dry matter'.
+
+	To avoid ambiguity, it is therefore recommended to always provide a precise description of the denominator.
+	Examples are:
+		per 100 g edible portion on fresh weight basis (preferred expression in food composition)
+		per 100 g dry matter of edible food
+		per g total protein of edible portion on fresh weight basis
+		per g total protein of edible portion on dry matter basis
+		per g total lipid of edible portion on dry matter basis
+		per g total lipid of edible food on fresh weight basis
+		per 100 g total food (edible and inedible parts of the food) on fresh weight basis
+		per 100 g total food (edible and inedible parts of the food) on dry matter basis
+		per g total lipid of total food (edible and inedible food) on fresh weight basis
+
+	In food safety 'per kg food' is the preferred expression in compositional data, sometimes without specifically indicating if total food or edible portion is meant, or if it is on fresh or dry matter basis.
+
+
+	If data are not expressed as 'per 100 g edible portion on fresh weight basis (EP)', additional data should be provided so that values can be calculated as 'per 100 g EP':
+		An edible coefficient needs to be reported if data are expressed as 'per total food'.
+		Water (or dry matter) content in 100 g EP needs to be reported if data are expressed as 'per percentage or g dry matter of the edible portion'.
+		Lipid content in 100 g fresh food needs to be reported if data are expressed as 'per percentage or g fat/total lipid of the edible portion', or as 'per total fatty acids (FA) of the edible portion'.
+		Protein content in 100 g fresh food needs to be reported if data are expressed as 'per percentage or g protein of the edible portion'.
+		Density needs to be reported if data are expressed per volume, e.g. as 'per 100 mL' or 'per L' (see FAO/INFOODS Density database 2.0 (FAO, 2012)).
+
+	The use of some units should be avoided such as ppm (parts per million), ppb (parts per billion), % and International Units (IU); it is better to use true metric units where the unit and the denominator are well defined such as mg/kg or microg/g (while well defining the denominators - see above).
+
+	In INFOODS, all units are metric units and equivalents are considered nutrient definitions and not units.
+
+	EuroFIR on the other hand, considers equivalents as units and accompanies them by metric units, e.g. retinol equivalent (RE) as microg,(or other vitamin equivalents), or 'monosaccharide equivalent' as g (Moller et al., 2008).
+
+	In INFOODS this should be avoided.
+
+	In the following tables, formulas and examples are given of how to convert different units and denominators to each other.
+
+	If appropriate, INFOODS tagnames are used for component identification.
+
+transtion to amino acids
+
+then transition to reverse engineering

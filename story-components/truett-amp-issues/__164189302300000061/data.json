@@ -1,0 +1,303 @@
+{
+	"items": [{
+		"title": "Item 94",
+		"imageUrl": "https://picsum.photos/200?49",
+		"price": 5.99
+	},
+	{
+		"title": "Item 95",
+		"imageUrl": "https://picsum.photos/200?13",
+		"price": 7.99
+	},
+	{
+		"title": "Item 89",
+		"imageUrl": "https://picsum.photos/200?26",
+		"price": 1.99
+	},
+	{
+		"title": "Item 53",
+		"imageUrl": "https://picsum.photos/200?26",
+		"price": 6.99
+	},
+	{
+		"title": "Item 19",
+		"imageUrl": "https://picsum.photos/200?45",
+		"price": 3.99
+	},
+	{
+		"title": "Item 17",
+		"imageUrl": "https://picsum.photos/200?32",
+		"price": 0.99
+	},
+	{
+		"title": "Item 81",
+		"imageUrl": "https://picsum.photos/200?26",
+		"price": 7.99
+	},
+	{
+		"title": "Item 76",
+		"imageUrl": "https://picsum.photos/200?16",
+		"price": 6.99
+	},
+	{
+		"title": "Item 79",
+		"imageUrl": "https://picsum.photos/200?38",
+		"price": 5.99
+	},
+	{
+		"title": "Item 48",
+		"imageUrl": "https://picsum.photos/200?5",
+		"price": 0.99
+	},
+	{
+		"title": "Item 13",
+		"imageUrl": "https://picsum.photos/200?6",
+		"price": 5.99
+	},
+	{
+		"title": "Item 56",
+		"imageUrl": "https://picsum.photos/200?23",
+		"price": 4.99
+	},
+	{
+		"title": "Item 66",
+		"imageUrl": "https://picsum.photos/200?12",
+		"price": 7.99
+	},
+	{
+		"title": "Item 3",
+		"imageUrl": "https://picsum.photos/200?39",
+		"price": 4.99
+	},
+	{
+		"title": "Item 37",
+		"imageUrl": "https://picsum.photos/200?39",
+		"price": 5.99
+	},
+	{
+		"title": "Item 91",
+		"imageUrl": "https://picsum.photos/200?2",
+		"price": 4.99
+	},
+	{
+		"title": "Item 3",
+		"imageUrl": "https://picsum.photos/200?0",
+		"price": 0.99
+	},
+	{
+		"title": "Item 36",
+		"imageUrl": "https://picsum.photos/200?38",
+		"price": 7.99
+	},
+	{
+		"title": "Item 67",
+		"imageUrl": "https://picsum.photos/200?27",
+		"price": 3.99
+	},
+	{
+		"title": "Item 81",
+		"imageUrl": "https://picsum.photos/200?17",
+		"price": 7.99
+	},
+	{
+		"title": "Item 25",
+		"imageUrl": "https://picsum.photos/200?40",
+		"price": 5.99
+	},
+	{
+		"title": "Item 77",
+		"imageUrl": "https://picsum.photos/200?42",
+		"price": 1.99
+	},
+	{
+		"title": "Item 91",
+		"imageUrl": "https://picsum.photos/200?43",
+		"price": 6.99
+	},
+	{
+		"title": "Item 8",
+		"imageUrl": "https://picsum.photos/200?2",
+		"price": 0.99
+	},
+	{
+		"title": "Item 94",
+		"imageUrl": "https://picsum.photos/200?12",
+		"price": 1.99
+	},
+	{
+		"title": "Item 35",
+		"imageUrl": "https://picsum.photos/200?31",
+		"price": 3.99
+	},
+	{
+		"title": "Item 76",
+		"imageUrl": "https://picsum.photos/200?49",
+		"price": 0.99
+	},
+	{
+		"title": "Item 70",
+		"imageUrl": "https://picsum.photos/200?47",
+		"price": 2.99
+	},
+	{
+		"title": "Item 36",
+		"imageUrl": "https://picsum.photos/200?40",
+		"price": 7.99
+	},
+	{
+		"title": "Item 71",
+		"imageUrl": "https://picsum.photos/200?49",
+		"price": 6.99
+	},
+	{
+		"title": "Item 24",
+		"imageUrl": "https://picsum.photos/200?0",
+		"price": 6.99
+	},
+	{
+		"title": "Item 61",
+		"imageUrl": "https://picsum.photos/200?20",
+		"price": 4.99
+	},
+	{
+		"title": "Item 73",
+		"imageUrl": "https://picsum.photos/200?20",
+		"price": 7.99
+	},
+	{
+		"title": "Item 14",
+		"imageUrl": "https://picsum.photos/200?34",
+		"price": 6.99
+	},
+	{
+		"title": "Item 69",
+		"imageUrl": "https://picsum.photos/200?12",
+		"price": 6.99
+	},
+	{
+		"title": "Item 89",
+		"imageUrl": "https://picsum.photos/200?42",
+		"price": 6.99
+	},
+	{
+		"title": "Item 5",
+		"imageUrl": "https://picsum.photos/200?49",
+		"price": 7.99
+	},
+	{
+		"title": "Item 94",
+		"imageUrl": "https://picsum.photos/200?20",
+		"price": 5.99
+	},
+	{
+		"title": "Item 5",
+		"imageUrl": "https://picsum.photos/200?19",
+		"price": 6.99
+	},
+	{
+		"title": "Item 38",
+		"imageUrl": "https://picsum.photos/200?38",
+		"price": 6.99
+	},
+	{
+		"title": "Item 50",
+		"imageUrl": "https://picsum.photos/200?4",
+		"price": 0.99
+	},
+	{
+		"title": "Item 72",
+		"imageUrl": "https://picsum.photos/200?18",
+		"price": 5.99
+	},
+	{
+		"title": "Item 42",
+		"imageUrl": "https://picsum.photos/200?13",
+		"price": 3.99
+	},
+	{
+		"title": "Item 59",
+		"imageUrl": "https://picsum.photos/200?22",
+		"price": 3.99
+	},
+	{
+		"title": "Item 18",
+		"imageUrl": "https://picsum.photos/200?32",
+		"price": 0.99
+	},
+	{
+		"title": "Item 22",
+		"imageUrl": "https://picsum.photos/200?39",
+		"price": 3.99
+	},
+	{
+		"title": "Item 98",
+		"imageUrl": "https://picsum.photos/200?9",
+		"price": 2.99
+	},
+	{
+		"title": "Item 63",
+		"imageUrl": "https://picsum.photos/200?33",
+		"price": 1.99
+	},
+	{
+		"title": "Item 13",
+		"imageUrl": "https://picsum.photos/200?31",
+		"price": 1.99
+	},
+	{
+		"title": "Item 53",
+		"imageUrl": "https://picsum.photos/200?1",
+		"price": 2.99
+	},
+	{
+		"title": "Item 98",
+		"imageUrl": "https://picsum.photos/200?14",
+		"price": 3.99
+	},
+	{
+		"title": "Item 90",
+		"imageUrl": "https://picsum.photos/200?23",
+		"price": 4.99
+	},
+	{
+		"title": "Item 58",
+		"imageUrl": "https://picsum.photos/200?10",
+		"price": 3.99
+	},
+	{
+		"title": "Item 18",
+		"imageUrl": "https://picsum.photos/200?38",
+		"price": 0.99
+	},
+	{
+		"title": "Item 85",
+		"imageUrl": "https://picsum.photos/200?9",
+		"price": 7.99
+	},
+	{
+		"title": "Item 66",
+		"imageUrl": "https://picsum.photos/200?18",
+		"price": 4.99
+	},
+	{
+		"title": "Item 62",
+		"imageUrl": "https://picsum.photos/200?18",
+		"price": 3.99
+	},
+	{
+		"title": "Item 93",
+		"imageUrl": "https://picsum.photos/200?14",
+		"price": 2.99
+	},
+	{
+		"title": "Item 83",
+		"imageUrl": "https://picsum.photos/200?6",
+		"price": 7.99
+	},
+	{
+		"title": "Item 75",
+		"imageUrl": "https://picsum.photos/200?13",
+		"price": 7.99
+	}],
+	"next": "https://amp-infinite-scroll.glitch.me/generate?items=60&left=199&latency=0"
+}

@@ -1,0 +1,15 @@
+
+RDFa
+
+valid AMP
+
+reset links to local file, not file in russia
+	<div class="property-object" rel="owl:hasValue"><a class="uline" href="http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#red" title="Browse http://persons.iis.nsk.su/files/persons/pages/einsteins_riddle.owl#red">red</a></div>
+
+
+uses
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") 
+
+update
+Created: February 5, 2010 Updated for compliance: November 4, 2013
+

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+Knowledge Graph
+</title>
+<link rel="canonical" href="index.html" />
+<link rel="preload" as="script"            href="https://cdn.ampproject.org/v0.js"/>
+<script async                               src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story"    src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<!-- <script async custom-element="amp-twitter"  src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script> -->
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri.woff" crossorigin />
+
+<style amp-custom>
+
+@font-face {
+	font-family: Recursive-2019;
+	src: url(https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf)
+	format("truetype");
+	font-display: swap;
+	text-align: initial;
+	font-weight: 100 600;
+	font-stretch: 25% 151%;
+}
+@font-face {
+	font-family: ZillaSlab;
+	src: url(https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2)
+	format("woff2");
+	font-display: swap;
+	text-align: initial;
+	font-style: normal;
+	font-weight: 100 600;
+}
+@font-face {
+	font-family: NotoSerif;
+	src: url(https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2)
+	format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: optional;
+}
+
+@font-face{
+	font-family: NotoSans;
+	src: url(https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2)
+	format("woff2");
+	font-style: normal;
+	font-weight: regular;
+	font-display: optional;
+}
+
+:root {
+	--MONO: 0;
+	--CASL: 0;
+	--slnt: 0;
+	--CRSV: 0.5;
+}
+*,
+:after,
+:before {
+	font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL),
+	"slnt" var(--slnt), "CRSV" var(--CRSV);
+}
+
+/**********
+	from WaPo
+*/
+amp-story-grid-layer[template="vertical"] {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+h1 {
+	font-family: ZillaSlab;
+	font-size: calc(3.125 * var(--story-page-vw));
+	font-weight: 100;
+	color: #440044; /* set to background SVG color */
+	border: none;
+}
+
+h2 {
+	font-family: ZillaSlab;
+	font-size: calc(4 * var(--story-page-vw));
+	font-weight: 100;
+	display: inline-block;
+	color: #ffffff;
+	border: none;
+}
+
+h3 {
+	font-family: ZillaSlab;
+	font-size: calc(2.6 * var(--story-page-vw));
+	font-weight: 300;
+	line-height: 1.2em;
+	color: #ffffff;
+	border: none;
+}
+
+h4 {
+	font-family: Recursive-2019;
+	font-size: calc(2 * var(--story-page-vw));
+	font-weight: 300;
+	--CASL: 1;
+	--slnt: 0;
+	--MONO: 0;
+	font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+	margin-top: 1em;
+	color: #ffffff;
+	border: none;
+	transition: 1s;
+}
+
+h4:hover {
+	font-weight: 800;
+	--CRSV: 0;
+	transition: 1s;
+}
+
+h5 {
+	font-family: Recursive-2019;
+	font-size: calc(2 * var(--story-page-vw));
+	font-weight: 300;
+	--CASL: 1;
+	--slnt: 0;
+	--MONO: 0;
+	font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+	margin-bottom: 0.8em;
+	color: #ffffff;
+	border: none;
+	transition: 1s;
+}
+
+h5:hover {
+	font-weight: 800;
+	--CRSV: 0;
+	transition: 1s;
+}
+
+.title-centered {
+	text-align: center;
+}
+
+
+
+/***************
+*	PubChem grid
+*	.parent sets typography
+*	.parent-pc set grid
+*/
+
+.parent {
+	font-family: Recursive-2019;
+	font-size: calc(2 * var(--story-page-vw));
+	color: #ffffff;
+	font-weight: 300;
+	--CASL: 1;
+	--slnt: 0;
+	--MONO: 0;
+	font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+	margin-top: 1em;
+	border: none;
+	transition: 1s;
+}
+
+.g-1-1:hover, .g-2-1:hover, .g-3-1:hover, .g-4-1:hover, .g-5-1:hover, .g-6-1:hover, .g-1-4:hover, .g-2-4:hover, .g-3-4:hover, .g-4-4:hover, .g-5-4:hover, .g-6-4:hover {
+	font-weight: 800;
+	--CRSV: 0;
+	transition: 1s;
+}
+
+.parent-pc {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(11, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-column-gap: 1.5em;
+	grid-row-gap: 1em;
+}
+
+.g-d {
+	grid-column-start: 4;
+	grid-column-end: 8;
+	grid-row-start: 1;
+	grid-row-end: 6;
+}
+
+.g-1-1 {
+	text-align: right;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.g-2-1 {
+	text-align: right;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.g-3-1 {
+	text-align: right;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.g-4-1 {
+	text-align: right;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.g-5-1 {
+	text-align: right;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.g-6-1 {
+	text-align: right;
+	grid-row-start: 6;
+	grid-row-end: 7;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.g-1-4 {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 9;
+	grid-column-end: 12;
+}
+.g-2-4 {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 9;
+	grid-column-end: 12;
+}
+.g-3-4 {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 9;
+	grid-column-end: 12;
+}
+.g-4-4 {
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 9;
+	grid-column-end: 12;
+}
+.g-5-4 {
+	grid-row-start: 5;
+	grid-row-end: 6;
+	grid-column-start: 9;
+	grid-column-end: 12;
+}
+.g-6-4 {
+	grid-row-start: 6;
+	grid-row-end: 7;
+	grid-column-start: 9;
+	grid-column-end: 12;
+}
+
+/*************
+*	Truett
+*	update -moz
+*/
+
+#myContainer {
+	zoom: 0.53;
+	-moz-transform: scale(0.53);
+}
+
+
+/*************
+*	cover page
+*/
+
+.bg-w {
+	background-color: #fff;
+}
+
+.c-bottom {
+	align-content: end;
+}
+
+.color-p {
+	color: #ff0000;
+}
+
+.color-s {
+	color: #6c757d;
+}
+
+.cover-f {
+	width: 70%;
+}
+
+.d-flex {
+	display: flex;
+	display: -ms-flexbox;
+}
+
+.flex-fill {
+	flex: 1 1 auto;
+}
+
+.mb {
+	margin-bottom: 1em;
+}
+
+.ml-s {
+	margin-left: 0.5em;
+}
+
+.mx-a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.noedge {
+	padding: 0;
+}
+
+.paper {
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+	    0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+	    0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+	    0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pb {
+	color: #440044;
+	padding-bottom: 1em;
+}
+
+.pt {
+	padding-top: 1em;
+}
+
+.sep-v {
+	border-left: 24px solid #ff0000;
+}
+
+.text-fatty {
+	font-family: Recursive-2019;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-80 {
+	width: 80%;
+}
+/* end cover */
+
+
+/* source: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+
+blockquote {
+	font-family: NotoSerif;
+	line-height: 1.4em;
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+a {
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #1aa3ff;
+}
+
+/****************
+*   SDL additions
+*/
+
+.uline {
+	text-decoration: none;
+	position: relative;
+}
+
+.uline::before {
+	position: absolute;
+	content: "";
+	height: 2px;
+	bottom: -4px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 50%;
+	background: #e6e6e6;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.uline:hover::before {
+	width: 70%;
+	background: #1f64ff;
+}
+
+
+</style>
+
+</head>
+<body>
+<amp-story
+  standalone
+  title="Template"
+  publisher=""
+  publisher-logo-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-portrait-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-square-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-landscape-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  supports-landscape
+>
+
+<amp-story-page id="kg-item-10" data-page-no="00" data-item-label="title-page" data-item-source="ontomatica">
+<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-neural-network-440044-FFE1FFW" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-neural-network-440044-FFE1FFW-w400-h371.svg" width="400" height="371" layout="responsive"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer class="noedge c-bottom mb" template="vertical"><div class="paper color-s bg-w cover-f d-flex"><div class="flex-fill pt pb"><hgroup class="ml-s"><div class="text-fatty color-p">connecting the dots</div><h1>Solve Problems with Knowledge Graphs</h1></hgroup><div class="w-80 mx-a text-fatty">by Paula Perez</div></div><div class="sep-v"></div></div></amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="kg-item-30" data-page-no="20" data-item-label="identify-unique-item-by-label-and-measurement-value" data-item-source="US NIH NLM NCBI PubChem">
+<amp-story-grid-layer template="vertical">
+
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Identify a unique item
+</h2>
+</div>
+
+<div class="parent parent-pc">
+
+<div class="g-d" animate-in="fade-in" animate-in-delay="1s">
+
+<div style="width:120%; height:120%;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 631.641 211.152" xml:space="preserve" color-interpolation-filters="sRGB" style="fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3">
+		<style>
+		.st1,.st2{fill:#1f64ff;stroke:none;stroke-linecap:butt;stroke-width:.739845}
+		.st2{fill:none;stroke-width:.75}
+		.st3{fill:#000;font-family:Symbol;font-size:1.5em}
+		.st4,.st5,.st6{font-size:1em}
+		.st5,.st6{font-family:Noto Sans}
+		.st6{fill:#fff;font-size:1.5em}
+		</style>
+<g id="shape1-1" transform="translate(330.087 -72.74)">
+<path 	class="st1" d="M0 154.48h300.522v56.672H0z"/></g>
+<g id="shape2-3" transform="translate(330.228 -.74)">
+<path 	class="st1" d="M0 154.48h300.522v56.672H0z"/></g>
+<g id="shape3-5" transform="translate(330.228 -153.74)">
+<path 	class="st1" d="M0 154.48h300.522v56.672H0z"/></g>
+<g id="shape4-7" transform="translate(.75 -155.076)">
+<path 	class="st2" d="M0 157.152h270v54H0z"/>
+<text y="173.71" 	class="st3">
+<tspan 	class="st4">·</tspan> 
+<tspan 	class="st5">Make things (articles, genes,  </tspan>
+<tspan x="18" dy="1.207em" 	class="st5">antibodies, etc.) easier to find </tspan> </text></g>
+<g id="shape5-13" transform="translate(.75 -83.076)">
+<path 	class="st2" d="M0 175.152h270v36H0z"/>
+<text y="198.67" 	class="st3">
+<tspan 	class="st4">·</tspan> 
+<tspan 	class="st5">Answer questions </tspan> </text></g>
+<g id="shape6-18" transform="translate(.75 -11.076)">
+<path 	class="st2" d="M0 175.152h270v36H0z"/>
+<text y="198.67" 	class="st3">
+<tspan 	class="st4">·</tspan> 
+<tspan 	class="st5">Generate hypotheses </tspan> </text></g>
+<g id="shape7-23" transform="translate(345.837 -155.076)">
+<path 	class="st2" d="M0 157.152h285.053v54H0z"/>
+<text y="178.75" 	class="st6">controlled vocabularies (MeSH) 
+<tspan x="0" dy="1.2em" 	class="st4">ontologies (Gene Ontology)</tspan> </text></g>
+<g id="shape8-27" transform="translate(345.837 -71.826)">
+<path 	class="st2" d="M0 152.652h273.803v58.5H0z"/>
+<text y="176.5" 	class="st6">knowledge graphs on the Web: 
+<tspan x="0" dy="1.2em" 	class="st4">the SPARQL query language</tspan></text></g>
+<g id="shape9-31" transform="translate(345.837 -2.076)">
+<path 	class="st2" d="M0 157.152h269.303v54H0z"/>
+<text y="178.75" 	class="st6">knowledge plus computation =
+<tspan style="fill:#000;font-size:1em"> </tspan>
+<tspan x="0" dy="1.2em" 	class="st4">inference, the ABC model</tspan> </text></g>
+</svg>
+</div>
+
+</div>
+
+<div class="g-1-1" animate-in="fade-in" animate-in-delay="2.0s">Atorvastatin (CID60823)</div>
+<div class="g-2-1" animate-in="fade-in" animate-in-delay="2.5s">identified by InChIKey XUKUURHRXDUEBC-KAYWLYCHSA-N</div>
+<div class="g-3-1" animate-in="fade-in" animate-in-delay="3.0s"></div>
+
+<div class="g-1-4" animate-in="fade-in" animate-in-delay="4.0s">as defined by molar mass unit (obo:UO_0000055)</div>
+<div class="g-2-4" animate-in="fade-in" animate-in-delay="4.5s">expressed as double floating point</div>
+<div class="g-3-4" animate-in="fade-in" animate-in-delay="5.0s">also identified in ChEBI (SID103554720)</div>
+
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+
+</body>
+</html>

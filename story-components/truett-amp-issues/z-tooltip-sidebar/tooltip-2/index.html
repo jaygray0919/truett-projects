@@ -1,0 +1,184 @@
+<!--
+todo
+    replace fa symbols with national flags
+-->
+
+<!doctype html><html ⚡ lang="en-us" prefix="schema: http://schema.org/ og: http://ogp.me/ns#"><head property="schema:WebPage"><meta charset="utf-8"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<title property="schema:name">
+Tabs v4-1
+</title>
+
+<link rel="canonical"     property="schema:url"   href="https://ontomatica.io/canonical.html"/>
+<link rel="shortcut icon" property="schema:image" href="https://ontomatica.io/static/img/onto_symb_w421_h421.png"/>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<!-- <link rel="stylesheet" href="style-tabs.css"> -->
+
+<style amp-custom>
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #eee;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+}
+
+</style>
+</head><body>
+
+<h1>
+Responsive Tabs v4-1
+</h1>
+
+<amp-list
+  width="auto"
+  height="200"
+  layout="fixed-height"
+  src="https://afdsi.com/test/_amp-list-modal-41/data.json"
+>
+<div placeholder>Loading ...</div>
+<div fallback>Failed to load data.</div>
+
+<template type="amp-mustache">
+
+<main>
+<input id="tab1" type="radio" name="tabs" checked>
+<label for="tab1"><i class="fa fa-code"></i><span>Code</span></label>
+
+<input id="tab2" type="radio" name="tabs">
+<label for="tab2"><i class="fa fa-pencil-square-o"></i><span>About</span></label>
+
+<input id="tab3" type="radio" name="tabs">
+<label for="tab3"><i class="fa fa-bar-chart-o"></i><span>Services</span></label>
+
+<input id="tab4" type="radio" name="tabs">
+<label for="tab4"><i class="fa fa-folder-open-o"></i><span>Portfolio</span></label>
+
+<input id="tab5" type="radio" name="tabs">
+<label for="tab5"><i class="fa fa-envelope-o"></i><span>Contact</span></label>
+
+<section id="content1">
+<h3>
+{{name-11}}
+</h3>
+<p>
+{{name-12}}
+</p>
+</section>
+
+<section id="content2">
+<h3>
+{{name-13}}
+</h3>
+<p>
+{{name-14}}
+</p>
+</section>
+
+<section id="content3">
+<h3>
+{{name-15}}
+</h3>
+<p>
+{{name-16}}
+</p>
+</section>
+
+<section id="content4">
+<h3>
+{{name-17}}
+</h3>
+<p>
+{{name-18}}
+</p>
+</section>
+
+<section id="content5">
+<h3>
+{{name-19}}
+</h3>
+<p>
+{{name-20}}
+</p>
+</section>
+</main>
+
+</template>
+</amp-list>
+
+<p class="no_wrap">
+Paragraph with no wrap
+</p>
+
+</body></html>

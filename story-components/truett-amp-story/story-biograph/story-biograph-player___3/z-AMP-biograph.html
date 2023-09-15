@@ -1,0 +1,578 @@
+<!--
+issues:
+	update and use S3 fonts
+	update amp-story with sidebar
+-->
+
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" /> 
+
+<!-- switch to S3 -->
+<link rel="preload" as="font" crossorigin href="https://amp.dev/static/fonts/poppins-v5-latin-700.woff2" />
+<link rel="preload" as="font" crossorigin href="https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff2" />
+
+<link rel="canonical" href="index.html" />
+
+<title>
+Biograph v3
+</title>
+
+<script async="" crossorigin="anonymous" src="https://cdn.ampproject.org/v0.js"></script>
+<script async="" crossorigin="anonymous" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"         custom-element="amp-bind"></script>
+<script async="" crossorigin="anonymous" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"       custom-element="amp-iframe"></script>
+<script async="" crossorigin="anonymous" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"         custom-element="amp-list"></script>
+<script async="" crossorigin="anonymous" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"    custom-template="amp-mustache"></script>
+<script async="" crossorigin="anonymous" src="https://cdn.ampproject.org/v0/amp-story-player-0.1.js" custom-element="amp-story-player"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+@font-face{font-family:system;font-style:normal;font-weight:300;src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI 	Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma")}@font-face{font-family:system;font-style:italic;font-weight:300;src:local(".SFNSText-LightItalic"),local(".HelveticaNeueDeskInterface-Italic"),local(".LucidaGrandeUI"),local("Ubuntu Light Italic"),local("Segoe UI Light Italic"),local("Roboto-LightItalic"),local("DroidSans"),local("Tahoma")}@font-face{font-family:system;font-style:normal;font-weight:400;src:local(".SFNSText-Regular"),local(".HelveticaNeueDeskInterface-Regular"),local(".LucidaGrandeUI"),local("Ubuntu"),local("Segoe UI"),local("Roboto-Regular"),local("DroidSans"),local("Tahoma")}@font-face{font-family:system;font-style:italic;font-weight:400;src:local(".SFNSText-Italic"),local(".HelveticaNeueDeskInterface-Italic"),local(".LucidaGrandeUI"),local("Ubuntu Italic"),local("Segoe UI Italic"),local("Roboto-Italic"),local("DroidSans"),local("Tahoma")}@font-face{font-family:system;font-style:normal;font-weight:500;src:local(".SFNSText-Medium"),local(".HelveticaNeueDeskInterface-MediumP4"),local(".LucidaGrandeUI"),local("Ubuntu Medium"),local("Segoe UI Semibold"),local("Roboto-Medium"),local("DroidSans-Bold"),local("Tahoma Bold")}@font-face{font-family:system;font-style:italic;font-weight:500;src:local(".SFNSText-MediumItalic"),local(".HelveticaNeueDeskInterface-MediumItalicP4"),local(".LucidaGrandeUI"),local("Ubuntu Medium Italic"),local("Segoe UI Semibold Italic"),local("Roboto-MediumItalic"),local("DroidSans-Bold"),local("Tahoma Bold")}@font-face{font-family:system;font-style:normal;font-weight:700;src:local(".SFNSText-Bold"),local(".HelveticaNeueDeskInterface-Bold"),local(".LucidaGrandeUI"),local("Ubuntu Bold"),local("Roboto-Bold"),local("DroidSans-Bold"),local("Segoe UI Bold"),local("Tahoma Bold")}@font-face{font-family:system;font-style:italic;font-weight:700;src:local(".SFNSText-BoldItalic"),local(".HelveticaNeueDeskInterface-BoldItalic"),local(".LucidaGrandeUI"),local("Ubuntu Bold Italic"),local("Roboto-BoldItalic"),local("DroidSans-Bold"),local("Segoe UI Bold Italic"),local("Tahoma Bold")}
+
+@font-face{font-family:Noto Sans;font-style:normal;font-weight:400;font-display:optional;src:local("Noto Sans"),local("NotoSans"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff2) format("woff2"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-regular.woff) format("woff")}
+
+@font-face{font-family:Noto Sans;font-style:normal;font-weight:700;font-display:optional;src:local("Noto Sans Bold"),local("NotoSans-Bold"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff2) format("woff2"),url(https://amp.dev/static/fonts/noto-sans-v7-latin-700.woff) format("woff")}
+
+@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:optional;src:local("Poppins Bold"),local("Poppins-Bold"),url(https://amp.dev/static/fonts/poppins-v5-latin-700.woff2) format("woff2"),url(https://amp.dev/static/fonts/poppins-v5-latin-700.woff) format("woff")}
+
+@font-face{font-family:Fira Mono;font-style:normal;font-weight:400;font-display:optional;src:local("Fira Mono"),local("FiraMono"),url(https://amp.dev/static/fonts/fira-mono-v7-latin-500.woff2) format("woff2"),url(https://amp.dev/static/fonts/fira-mono-v7-latin-500.woff) format("woff")}
+
+*{box-sizing:border-box}
+body,html{padding:0;margin:0;min-width:240px;color:#48525c;background-color:#fff;font-size:16px;font-family:Noto Sans,system;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;touch-action:manipulation}
+@media(max-width:240px){body,html{font-size:14px}}
+:target:before{content:"";display:block;visibility:hidden;height:120px;margin-top:-120px}
+
+@media(min-width:1024px){h1:target:before{height:75px;margin-top:-75px}
+h2:target:before{height:81px;margin-top:-81px}}
+
+h1,h2{margin-top:1.5rem;margin-bottom:.75em;font-family:Poppins,system;font-weight:700;line-height:1.2em;color:#20202a}
+h1{font-size:2.2rem;margin-top:3rem}
+h2{font-size:1.8rem;margin-top:2rem}
+
+a{font-weight:700;text-decoration:none;color:#005af0}
+a code{display:inline;padding:2px 4px;font-family:'Fira Mono',monospace;font-weight:500;word-break:normal;color:#000;background-color:#e2e5e6;font-size:.9em;color:#005af0}
+
+.ap-a-ico-g{display:flex;box-sizing:initial;justify-content:center;}
+
+.ap-m-copy{margin-bottom:3em}
+.ap-m-copy p{line-height:1.6rem;font-weight:400;color:#48525c}
+.ap-m-copy-left-small{grid-column:4/13}
+.ap-m-copy-right-small{grid-column:11/20}
+.ap-m-copy-center-small{grid-column:6/19;text-align:left}
+
+.ap-m-jumbo{grid-column:6/20;margin-bottom:1.5em;text-align:center}
+@media(min-width:768px){.ap-m-jumbo{margin-bottom:3em}}
+.ap-m-jumbo .ap-a-ico{width:4em;height:4em;margin:0 auto .5em}
+.ap-m-jumbo-headline{font-size:2.5rem;margin:0}
+@media(min-width:768px){.ap-m-jumbo-headline{font-size:3.5rem}}
+.ap-m-jumbo-copy{line-height:1.6rem;font-weight:400;color:#48525c}
+
+.-ta{display:flex;overflow-x:auto;margin:1.1rem 0 0;padding:0 1em;color:#fff;line-height:1.3em;background:#20202a;font-size:.9em}
+.-ta:after{content:"     ";-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.-ta::-webkit-scrollbar{width:6px;height:6px}
+.-ta::-webkit-scrollbar-thumb{border-radius:3px;background-color:#91979d}
+.-ta::-webkit-scrollbar-corner{background-color:transparent}
+.-ta::-webkit-scrollbar-thumb{border-radius:0}
+@media(min-width:768px){.-ta{max-width:100%;margin-right:-30px}}
+.-ta code,.-ta pre{font-family:Fira Mono,monospace;font-weight:500;white-space:pre;font-size:.9rem;padding:unset;word-break:normal;color:inherit;background:0 0}
+.-ta .o{color:#f15a5a}
+.-ta .p{color:#f8f8f2}
+.-ta .s{color:#e6db74}
+.-ta .na{color:#a6e22e}
+.-ta .nt{color:#f15a5a}
+.ap--main>.-rl:first-child{padding-top:54px;padding-bottom:3rem}
+
+/**
+  * background gradient
+  */
+
+/* .-sg{top:0; left:0; background-repeat:no-repeat; background-size:100% auto;background-position:100% 0; background-attachment:fixed; background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768"><defs><linearGradient id="a" x1="239.67" y1="855.23" x2="606.28" y2="-152.04" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%23fff" stop-opacity="0"/><stop offset="1" stop-color="%23EDEDF1"/></linearGradient></defs><g><path fill="url(%23a)" d="M0 0h1024v214L786.37 768H0V0z"/></g></svg>')} */
+
+.-sg section{margin-bottom:50px}
+.-sg section:last-child{margin-bottom:0}
+.-sg .-rl{position:relative;display:flex;flex-wrap:wrap;width:100%;max-width:1440px;padding:0 20px;margin-left:auto;margin-right:auto}
+@media(max-width:767px){.-sg .-rl{padding:0 15px}.-sg .-rl>div{min-width:0}}
+@media(min-width:768px){.-sg .-rl{display:grid;grid-gap:30px;grid-template-columns:repeat(24,minmax(0,1fr));padding:0 30px}}
+
+/**
+  * iframe
+  */
+
+.-n{display:flex; align-items:center; text-decoration:none; padding:0 0 1.5em; margin:0}
+.-i,.-r{transition:transform .3s cubic-bezier(.25,.1,.25,1)}
+.-r{line-height:1.6rem; font-size:.875rem; font-weight:700; color:#005af0; line-height:1.3}
+.-i{fill:#005af0; padding:.438em 0; margin-bottom:auto; margin-right:.625em; box-sizing:initial}
+.-n:hover .-i,.-n:hover .-r{transform:translateX(10px)}
+
+.ap-a-ico{display:flex;font-size:initial;box-sizing:initial;justify-content:center;width:1em;height:1em}
+.ap--sampler{margin-bottom:7em}
+@media (max-width:320px){.ap--sampler{display:none}}
+@media (min-width:768px){.ap--sampler{margin-bottom:8vw}}
+
+.ap-o-sampler{grid-column:3/-1;width:100%;max-width:1024px;padding-left:20px}
+@media (min-width:1680px){.ap-o-sampler{grid-column:5/-3;padding-left:0}}
+
+.ap-o-sampler-tab-bar{display:flex;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;background:#29323c}
+.ap-o-sampler-tab{cursor:pointer;padding:1.125em 1.75em;border-right:1px solid #3d444d;background:#29323c}
+.ap-o-sampler-tab.active{background:#3d444d}
+.ap-o-sampler-tab.active span{opacity:1}
+.ap-o-sampler-tab-title{font-size:.8125rem;font-family:Poppins,sans-serif;font-weight:700;color:#fff;opacity:.5}
+.ap-o-sampler-iframe{width:100%;height:auto;background:#e6e6fa;box-shadow:0 15px 50px 0 rgba(0,0,0,.4)}
+.ap-o-sampler-iframe [placeholder]{display:flex}
+[placeholder] .ap-o-sampler-iframe-source{width:calc(50% - 4px)}
+.ap-o-sampler-link{margin-top:1em;display:inline-block}
+.ap-o-sampler-link{margin-top:1em;display:inline-block}
+
+.-on{display:flex;align-items:center}
+.-on{padding:0 0 14px;border:0;background:0 0}
+.-on:focus~.-oi,.-on:hover~.-oi{opacity:1;pointer-events:all;transition:opacity .2s cubic-bezier(.25,.1,.25,1)}
+
+/**
+  * color bullets
+  */
+
+.bg-w {background-color:white}
+.chartlegend span {display:inline-block; height:.65rem; width:.65rem; border-radius:.25rem}
+.color-s {color:#6c757d}
+.ml-s {margin-left:.5rem}
+.mr-s {margin-right:.5rem}
+.p-s {padding:.5rem}
+.p {padding:1rem}
+.text-center {text-align:center}
+.text-justify {text-align:justify}
+.text-left {text-align:left}
+
+.c-c0334d{background-color:#c0334d}
+.c-f3d480{background-color:#f3d480}
+.c-f1931b{background-color:#f1931b}
+.c-8f715b{background-color:#8f715b}
+.c-78d68c{background-color:#78d68c}
+.c-720017{background-color:#720017}
+.c-d8d583{background-color:#d8d583}
+.c-d98c2a{background-color:#d98c2a}
+.c-36688d{background-color:#36688d}
+.c-a3586d{background-color:#a3586d}
+.c-aba6bf{background-color:#aba6bf}
+.c-595775{background-color:#595775}
+.c-84a45a{background-color:#84a45a}
+.c-583e2e{background-color:#583e2e}
+.c-bf988f{background-color:#bf988f}
+.c-a7414a{background-color:#a7414a}
+.c-6a8a82{background-color:#6a8a82}
+.c-a37c27{background-color:#a37c27}
+.c-4fd993{background-color:#4fd993}
+.c-704404{background-color:#704404}
+.c-4e7ba7{background-color:#4e7ba7}
+.c-d28f1b{background-color:#d28f1b}
+.c-1ecfd6{background-color:#1ecfd6}
+.c-edd179{background-color:#edd179}
+.c-c05640{background-color:#c05640}
+.c-728ca3{background-color:#728ca3}
+.c-73c0f4{background-color:#73c0f4}
+.c-f3e46c{background-color:#f3e46c}
+.c-582a20{background-color:#582a20}
+.c-9499a6{background-color:#9499a6}
+.c-c59cdb{background-color:#c59cdb}
+.c-a67b04{background-color:#a67b04}
+.c-525b56{background-color:#525b56}
+.c-93a806{background-color:#93a806}
+.c-f08b33{background-color:#f08b33}
+.c-d75404{background-color:#d75404}
+.c-8a2c02{background-color:#8a2c02}
+.c-d75b66{background-color:#d75b66}
+.c-23345c{background-color:#23345c}
+.c-bfafa0{background-color:#bfafa0}
+.c-515b51{background-color:#515b51}
+.c-8c7547{background-color:#8c7547}
+.c-efa747{background-color:#efa747}
+.c-52733b{background-color:#52733b}
+.c-bda728{background-color:#bda728}
+.c-704307{background-color:#704307}
+.c-f7b178{background-color:#f7b178}
+.c-253f5b{background-color:#253f5b}
+.c-4f728e{background-color:#4f728e}
+
+amp-story-player{position:relative;display:block}
+
+amp-story-player a:first-of-type{width:100%;height:100%;background:var(--story-player-poster,#d3d3d3);background-size:100% 100%;display:block}
+
+amp-story-player.amp-story-player-loaded a{display:none}
+
+amp-story-player:after{
+  content:" ";
+  position:absolute;
+  box-sizing:border-box;
+  top:calc(50% - 32px);
+  left:calc(50% - 32px);
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  border-color:#fff transparent;
+  border-style:solid;
+  border-width:6px;
+  filter:drop-shadow(0px 1px 3px rgba(0,0,0,0.25));
+  animation-name:amp-story-player-spinner;
+  animation-duration:4400ms;
+  animation-timing-function:cubic-bezier(0.4,0,0.2,1);
+  animation-iteration-count:infinite;
+}
+
+@keyframes amp-story-player-spinner{12.5%{transform:rotate(135deg)}25%{transform:rotate(270deg)}37.5%{transform:rotate(405deg)}50%{transform:rotate(540deg)}62.5%{transform:rotate(675deg)}75%{transform:rotate(810deg)}87.5%{transform:rotate(945deg)}to{transform:rotate(1080deg)}}
+
+.amp-story-player-loaded:after{visibility:hidden}
+
+.st1{fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:.75}
+</style>
+</head>
+
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<!-- update text placement; modify class -->
+<svg id="intake-outcome" width="240" height="107" viewBox="0 0 423.75 144.75" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+<g id="shape1-1" transform="translate(9.375 -54.375)"><path class="st1" d="M0 54.75h414v90H0z"/><text x="4" y="121.35" fill="#1f64ff" font-family="Russo One" font-size="6em">b<tspan font-size=".5em"> </tspan>I/O<tspan font-size=".333em"> </tspan>graph</text>
+</g>
+<g id="shape2-6" transform="translate(.375 -.375)"><path class="st1" d="M0 72.75h414v72H0z"/>
+<text fill="#7f7f7f" font-family="Calibri" font-size="2.333em">
+<tspan x="19.4" y="112">Graph technology for monitoring</tspan>
+<tspan x="16.01" dy="1em">biochemical intake and outcomes</tspan>
+</text>
+</g>
+</svg>
+
+<!-- <svg id="intake-outcome" width="240" height="107" viewBox="0 0 433 107" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" overflow="visible" stroke-linecap="square" stroke-miterlimit="3"><g transform="translate(.375 -.375)"><path d="M0 .75h432v106.125H0z"/><text x="4" y="75.41" fill="#1f64ff" font-family="Russo One" font-size="6em">b<tspan font-size=".5em"> </tspan>I/O<tspan font-size=".333em"> </tspan>graph</text></g></svg> -->
+
+<svg id="internal" viewBox="0 0 64 64" ><path d="M43.16 10.18c-0.881-0.881-2.322-0.881-3.203 0s-0.881 2.322 0 3.203l16.335 16.335h-54.051c-1.281 0-2.242 1.041-2.242 2.242 0 1.281 0.961 2.322 2.242 2.322h54.051l-16.415 16.335c-0.881 0.881-0.881 2.322 0 3.203s2.322 0.881 3.203 0l20.259-20.259c0.881-0.881 0.881-2.322 0-3.203l-20.179-20.179z"></path></svg>
+
+<!-- <svg id="intake-outcome" viewBox="0 0 195 138" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" overflow="visible" stroke-linecap="square" stroke-miterlimit="3"><g transform="translate(3.221 -23.514)"><path d="M0 137.75h46.79V44.17H0v93.58z" style="fill:#1f64ff;stroke:none;stroke-linecap:butt;stroke-width:3.22105;"/></g><g transform="translate(95.237 -21.955)"><path d="M48.35 41.05C21.65 41.05 0 62.7 0 89.4c0 26.7 21.65 48.35 48.35 48.35 26.7 0 48.35-21.65 48.35-48.35 0-26.7-21.65-48.35-48.35-48.35z" style="fill:#1f64ff;stroke:none;stroke-linecap:butt;stroke-width:3.22105;"/></g><g id="shape3-5" transform="translate(58.752 -3.221)"><path d="M6.62 137.75L0 136.31 28.23 6.44l6.63 1.44L6.62 137.75z" style="fill:#1f64ff;stroke:none;stroke-linecap:butt;stroke-width:3.22105;"/></g></svg> -->
+
+</defs>
+</svg>
+
+<main class="ap--main -sg">
+
+<section class="-rl">
+
+<div data-title="Take Control" class="ap-m-jumbo">
+<div class="ap-a-ico-g">
+<svg><use xlink:href="#intake-outcome"/></svg>
+</div>
+<h1 class="ap-m-jumbo-headline">Take Control</h1>
+<p class="ap-m-jumbo-copy">We are surrounded by advice about how to live our lives.</p>
+
+<amp-story-player data-title="" layout="fixed" width="600px" height="480px">
+<a href="https://afdsi.com/_ankita/amp-story-player/index.html">
+<!-- <span class="title"></span> -->
+</a>
+</amp-story-player>
+
+</div>
+<div data-title="Problems with printed advice" class="ap-m-copy ap-m-copy-left-small">
+<h2 class="">Problems with printed advice</h2>
+<p class="">But there are problems with this approach.</p>
+<p class="">Instructions are generalized for many; not customized for a person with special needs.</p>
+<p class="">We have no easy way to store information printed on a label or insert.</p>
+<p class="">And what about intake and exposure data over days, weeks, months or years?</p>
+</div>
+
+<div data-title="Opportunity" class="ap-m-copy ap-m-copy-right-small">
+<h2 class="">Opportunity</h2>
+<p class="">Our opportunity is to combine a useful concept ("advice from experts") with real data related to advice.</p>
+<p class="">If we systematically capture and organize intake and exposure data, experts (our doctors, trainers, nutritionists) can analyze our data over time.</p>
+<p class="">Then life style changes - ones we choose or are proposed by advisers - are based on a personalized baseline.</p>
+<p class="">It's not just what we do (or don't do) on a given day; it's what we have done (or haven't done) over time.</p>
+</div>
+<div data-title="Biograph" class="ap-m-copy ap-m-copy-center-small">
+<h2 class="">Biograph</h2>
+<p class="">To meet the opportunity Ontomatica developed Biograph.</p>
+<p class="">Biograph collects data about food and drugs you consume, and chemicals in cosmetics and personal care products you use.</p>
+<p class="">It stores data over days, weeks, months, and years.</p>
+<p class="">It is your electronic biography of intake and exposure during your lifetime.</p>
+<p class="">Like your health records, it's data your advisers study to personalize their advice and care.</p>
+<p class="">Biograph builds on two technologies. The first is Ontomatica's Graph Kits.</p>
+<section class="text-justify p bg-w color-s">
+<dl class="chartlegend text-left">
+<dt></dt>
+<dd class=" p-s ml-s">
+<span class="mr-s c-f3d480"></span>
+Graph Kits define "things" (items; their properties; their relationships with other items).
+</dd>
+<dd class="p-s ml-s">
+<span class="mr-s c-8f715b"></span>
+Graph Kits are "collections of things" in foods, drugs, supplements, herbal medicines, cosmetics, personal care products, and household chemicals.
+</dd>
+</dl>
+</section>
+<p class="">Biograph then uses W3C standards and technology from Solid 'link' to track "things".</p>
+</div>
+<div data-title="Solid left" class="ap-m-copy ap-m-copy-left-small">
+<h2 class="">Solid</h2>
+<p class="">Solid offers a new way of building applications (apps).</p>
+<p class="">Rather than storing your data inside an app that requests it, you store data in your own personal data pod.</p>
+<p class="">Here's a way to think about it.</p>
+<p class="">The JPG standard makes it possible to create, modify, share and store images.</p>
+<p class="">It's your asset; you control its details; you decide who can see it.</p>
+<p class="">Solid aims to implement the JPG model for documents, and for data inside documents.</p>
+</div>
+<div data-title="Solid right" class="ap-m-copy ap-m-copy-right-small">
+<h2 class="">Solid and Biograph</h2>
+<p class="">So when you give an app permission to access data in your Biograph, the app will reuse data fields such as:</p>
+<section class="text-justify p bg-w color-s">
+<dl class="chartlegend text-left">
+<dt></dt>
+<dd class="p-s ml-s">
+<span class="mr-s c-f3d480"></span>
+your name
+</dd>
+<dd class="p-s ml-s">
+<span class="mr-s c-8f715b"></span>
+food consumed (item)
+</dd>
+<dd class=" p-s ml-s">
+<span class="mr-s c-edd179"></span>
+drug consumed (item)
+</dd>
+<dd class=" p-s ml-s">
+<span class="mr-s c-c05640"></span>
+calendar (date/time) when you consumed an item
+</dd>
+<dd class=" p-s ml-s">
+<span class="mr-s c-728ca3"></span>
+place where you consumed an item
+</dd>
+<dd class=" p-s ml-s">
+<span class="mr-s c-73c0f4"></span>
+link to consumed item that shares biology, chemistry, composition, and formulation data about the item
+</dd>
+<dd class=" p-s ml-s">
+<span class="mr-s c-f3e46c"></span>
+link to consumed item that shares origin, preparation and packaging data about the item
+</dd>
+<dd class=" p-s ml-s">
+<span class="mr-s c-582a20"></span>
+link to consumed item that shares route-of-administration data about the drug item
+</dd>
+<dd class=" p-s ml-s">
+<span class="mr-s c-9499a6"></span>
+and more
+</dd>
+</dl>
+</section>
+<p class="">Linked Data from Graph Kits is the staring point.</p>
+<p class="">Biograph then integrates three complementary technologies from Solid.</p>
+</div>
+<div data-title="Solid Story" class="ap-m-copy ap-m-copy-center-small">
+<h2 class="">Solid Story</h2>
+<p class="">Solid offers a new way of building applications (apps).</p>
+<p class="">Rather than storing your data inside an app that requests it, you store data in your own personal data pod.</p>
+<p class="">Transition text</p>
+
+<!-- insert placeholder -->
+<amp-story-player data-title="Solid Story player" layout="fixed" width="600px" height="480px">
+<a href="placeholder-solid.html">
+<span class="title">Solid Story</span>
+</a>
+</amp-story-player>
+
+<p class="">Exit text</p>
+</div>
+<div data-title="Diabetes Story" class="ap-m-copy ap-m-copy-left-small">
+<h2 class="">Diabetes</h2>
+<p class="">Entry text</p>
+
+<!-- insert placeholder -->
+<amp-story-player data-title="Diabetes Story plaer" layout="fixed" width="600px" height="480px">
+<a href="placeholder-diabetes.html">
+<span class="title">Diabetes Story</span>
+</a>
+</amp-story-player>
+
+<p class="">Exit text</p>
+</div>
+<div data-title="Observations Story" class="ap-m-copy ap-m-copy-right-small">
+<h2 class="">Observations</h2>
+<p class="">Entry text</p>
+
+<!-- insert placeholder -->
+<amp-story-player data-title="Observations Story player" layout="fixed" width="600px" height="480px">
+<a href="placeholder-observations.html">
+<span class="title">Observations story</span>
+</a>
+</amp-story-player>
+
+<p class="">Exit text</p>
+</div>
+<div data-title="Monitor and Report Story" class="ap-m-copy ap-m-copy-left-small">
+<h2 class="">Monitor and Report</h2>
+<p class="">Entry text</p>
+
+<!-- insert placeholder -->
+<amp-story-player data-title="Monitor and Report Story player" layout="fixed" width="600px" height="480px">
+<a href="placeholder-monitor-report.html">
+<span class="title">Monitor and Report Story</span>
+</a>
+</amp-story-player>
+
+<p class="">Exit text</p>
+</div>
+<div data-title="Electronic Label Story" class="ap-m-copy ap-m-copy-right-small">
+<h2 class="">Electronic Label</h2>
+<p class="">Entry text</p>
+
+<!-- insert placeholder -->
+<amp-story-player data-title="Electronic Label Story player" layout="fixed" width="600px" height="480px">
+<a href="placeholder-electronic-label.html">
+<span class="title">Electronic Label Story</span>
+</a>
+</amp-story-player>
+
+<p class="">Exit text</p>
+</div>
+
+<div data-title="Take Action Story" class="ap-m-copy ap-m-copy-center-small">
+<h2 class="">Take Action</h2>
+<p class="">Entry text</p>
+<p class="">Reference Library and PDF iframe</p>
+
+<section class="ap--sampler">
+
+<amp-state id="sampler">
+<script type="application/json">
+[{"title":"Reference Library","url":"https://wedge.ontomatica.io/","embedUrl":"https://wedge.ontomatica.io/Reference-Library_-_19-02-06/Wedge?q=facet_07_NAL_Food_Nutri:549/facet_11_NAL_Health:267","standaloneUrl":"https://wedge.ontomatica.io/Reference-Library_-_19-02-06/Wedge?q=facet_07_NAL_Food_Nutri:549/facet_11_NAL_Health:267"},
+{"title":"antibacterial-properties-of-ceratonia-siliqua","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antibacterial-properties-of-ceratonia-siliqua.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antibacterial-properties-of-ceratonia-siliqua.pdf"},
+{"title":"antidiabetic-compounds-on-glucose-metabolism","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-compounds-on-glucose-metabolism.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-compounds-on-glucose-metabolism.pdf"},
+{"title":"antidiabetic-effect-of-andrographis-lineata","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-effect-of-andrographis-lineata.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-effect-of-andrographis-lineata.pdf"},
+{"title":"antidiabetic-effects-bitter-melon","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-effects-bitter-melon.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-effects-bitter-melon.pdf"},
+{"title":"antidiabetic-effects-black-plum","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-effects-black-plum.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-effects-black-plum.pdf"},
+{"title":"antidiabetic-herbs-india","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-herbs-india.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-herbs-india.pdf"},
+{"title":"antidiabetic-medicinal-plants-bangladesh","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-medicinal-plants-bangladesh.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-medicinal-plants-bangladesh.pdf"},
+{"title":"antidiabetic-medicinal-plants-review","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-medicinal-plants-review.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-medicinal-plants-review.pdf"},
+{"title":"antidiabetic-plants-active-ingredients","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-plants-active-ingredients.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-plants-active-ingredients.pdf"},
+{"title":"antidiabetic-plants-and-phytochemicals","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-plants-and-phytochemicals.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-plants-and-phytochemicals.pdf"},
+{"title":"antidiabetic-potency-medicinal-plants-bangladesh","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-potency-medicinal-plants-bangladesh.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-potency-medicinal-plants-bangladesh.pdf"},
+{"title":"antidiabetic-potential-medicinal-plants","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-potential-medicinal-plants.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-potential-medicinal-plants.pdf"},
+{"title":"antidiabetic-potential-of-medicinal-plan","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-potential-of-medicinal-plan.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-potential-of-medicinal-plan.pdf"},
+{"title":"antidiabetic-properties-of-carica-papaya","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-properties-of-carica-papaya.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-properties-of-carica-papaya.pdf"},
+{"title":"antidiabetic-properties-of-plants","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-properties-of-plants.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antidiabetic-properties-of-plants.pdf"},
+{"title":"antihyperglycemic-plant-medicines-mgmt-diabetes","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antihyperglycemic-plant-medicines-mgmt-diabetes.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/antihyperglycemic-plant-medicines-mgmt-diabetes.pdf"},
+{"title":"diabetes-mellitus-and-herbs-treatment-india","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/diabetes-mellitus-and-herbs-treatment-india.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/diabetes-mellitus-and-herbs-treatment-india.pdf"},
+{"title":"diabetes-mellitus-and-medicinal-plants","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/diabetes-mellitus-and-medicinal-plants.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/diabetes-mellitus-and-medicinal-plants.pdf"},
+{"title":"diabetes-mellitus-therapy-using-medicinal-plants","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/diabetes-mellitus-therapy-using-medicinal-plants.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/diabetes-mellitus-therapy-using-medicinal-plants.pdf"},
+{"title":"herbal-medicines-for-diabetes-mellitus","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/herbal-medicines-for-diabetes-mellitus.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/herbal-medicines-for-diabetes-mellitus.pdf"},
+{"title":"hypoglycemic-agents-from-plants","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/hypoglycemic-agents-from-plants.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/hypoglycemic-agents-from-plants.pdf"},
+{"title":"hypoglycemic-effect-bitter-melon","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/hypoglycemic-effect-bitter-melon.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/hypoglycemic-effect-bitter-melon.pdf"},
+{"title":"managing-diabetes-mellitus-with-natural-products","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/managing-diabetes-mellitus-with-natural-products.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/managing-diabetes-mellitus-with-natural-products.pdf"},
+{"title":"managing-diabetes-mellitus-with-pramehahara-dravyas","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/managing-diabetes-mellitus-with-pramehahara-dravyas.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/managing-diabetes-mellitus-with-pramehahara-dravyas.pdf"},
+{"title":"managing-diabetes-mellitus-with-saponins","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/managing-diabetes-mellitus-with-saponins.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/managing-diabetes-mellitus-with-saponins.pdf"},
+{"title":"mechanism-of-action-natural-products-diabetes-treatment","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/mechanism-of-action-natural-products-diabetes-treatment.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/mechanism-of-action-natural-products-diabetes-treatment.pdf"},
+{"title":"medicinal-plants-hypoglycemic-potential-india","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-hypoglycemic-potential-india.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-hypoglycemic-potential-india.pdf"},
+{"title":"medicinal-plants-in-treatment-of-diabetes-jordan","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-in-treatment-of-diabetes-jordan.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-in-treatment-of-diabetes-jordan.pdf"},
+{"title":"medicinal-plants-management-diabetes-mellitus","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-management-diabetes-mellitus.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-management-diabetes-mellitus.pdf"},
+{"title":"medicinal-plants-treatment-diabetes","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-treatment-diabetes.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-treatment-diabetes.pdf"},
+{"title":"medicinal-plants-with-antidiabetic-activity","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-with-antidiabetic-activity.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-with-antidiabetic-activity.pdf"},
+{"title":"medicinal-plants-with-antidiabetic-potentials-india","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-with-antidiabetic-potentials-india.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/medicinal-plants-with-antidiabetic-potentials-india.pdf"},
+{"title":"nanotechnological-and-herbal-drugs-diabetes-treatment","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/nanotechnological-and-herbal-drugs-diabetes-treatment.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/nanotechnological-and-herbal-drugs-diabetes-treatment.pdf"},
+{"title":"natural-medicines-from-plant-source-diabetes-treatment","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/natural-medicines-from-plant-source-diabetes-treatment.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/natural-medicines-from-plant-source-diabetes-treatment.pdf"},
+{"title":"pharmacology-of-antidibetic-plants","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/pharmacology-of-antidibetic-plants.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/pharmacology-of-antidibetic-plants.pdf"},
+{"title":"phytochemicals-in-antidiabetic-drug-discovery","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/phytochemicals-in-antidiabetic-drug-discovery.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/phytochemicals-in-antidiabetic-drug-discovery.pdf"},
+{"title":"phytotherapy-management-of-diabetes-mellitus","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/phytotherapy-management-of-diabetes-mellitus.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/phytotherapy-management-of-diabetes-mellitus.pdf"},
+{"title":"plant-food-materials-to-manage-diabetes-mellitus","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/plant-food-materials-to-manage-diabetes-mellitus.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/plant-food-materials-to-manage-diabetes-mellitus.pdf"},
+{"title":"plants-and-antidiabetic-treatment","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/plants-and-antidiabetic-treatment.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/plants-and-antidiabetic-treatment.pdf"},
+{"title":"plants-with-antidiabetic-activity-and-medicinal-values","url":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/","embedUrl":"https://docs.google.com/viewerng/viewer?url=https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/plants-with-antidiabetic-activity-and-medicinal-values.pdf&embedded=true","standaloneUrl":"https://s3.amazonaws.com/benetta.net/doc/subject/diabetes/plants-with-antidiabetic-activity-and-medicinal-values.pdf"}]
+</script>
+</amp-state>
+
+<amp-state id="activeSample">
+<script type="application/json">0</script>
+</amp-state>
+
+<div class="ap-o-sampler">
+<div class="ap-o-sampler-iframe">
+<amp-iframe height="450px" layout="fixed-height" scrolling="yes" sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation" allow="fullscreen" frameborder="0" src="https://wedge.ontomatica.io/Reference-Library_-_19-02-06/Wedge?q=facet_07_NAL_Food_Nutri:549/facet_11_NAL_Health:267" [src]="sampler[activeSample].embedUrl" title="Wedge">
+<div overflow="" tabindex="0" role="button" aria-label="Show everything">Show everything</div>
+<div placeholder="" class="ap-o-sampler-iframe-source"></div>
+</amp-iframe>
+</div>
+<div class="ap-o-sampler-tab-bar">
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-0 active" [class]="activeSample == '0' ? 'ap-o-sampler-tab ap-o-sampler-tab-0 active' : 'ap-o-sampler-tab ap-o-sampler-tab-0'" on="tap:AMP.setState({activeSample: '0'})"><span class="ap-o-sampler-tab-title">Reference Library</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-1" [class]="activeSample == '1' ? 'ap-o-sampler-tab ap-o-sampler-tab-1' : 'ap-o-sampler-tab ap-o-sampler-tab-1'" on="tap:AMP.setState({activeSample: '1'})"><span class="ap-o-sampler-tab-title">AA</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-2" [class]="activeSample == '2' ? 'ap-o-sampler-tab ap-o-sampler-tab-2' : 'ap-o-sampler-tab ap-o-sampler-tab-2'" on="tap:AMP.setState({activeSample: '2'})"><span class="ap-o-sampler-tab-title">AB</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-3" [class]="activeSample == '3' ? 'ap-o-sampler-tab ap-o-sampler-tab-3' : 'ap-o-sampler-tab ap-o-sampler-tab-3'" on="tap:AMP.setState({activeSample: '3'})"><span class="ap-o-sampler-tab-title">AC</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-4" [class]="activeSample == '4' ? 'ap-o-sampler-tab ap-o-sampler-tab-4' : 'ap-o-sampler-tab ap-o-sampler-tab-4'" on="tap:AMP.setState({activeSample: '4'})"><span class="ap-o-sampler-tab-title">AD</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-5" [class]="activeSample == '5' ? 'ap-o-sampler-tab ap-o-sampler-tab-5' : 'ap-o-sampler-tab ap-o-sampler-tab-5'" on="tap:AMP.setState({activeSample: '5'})"><span class="ap-o-sampler-tab-title">AE</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-6" [class]="activeSample == '6' ? 'ap-o-sampler-tab ap-o-sampler-tab-6' : 'ap-o-sampler-tab ap-o-sampler-tab-6'" on="tap:AMP.setState({activeSample: '6'})"><span class="ap-o-sampler-tab-title">AF</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-7" [class]="activeSample == '7' ? 'ap-o-sampler-tab ap-o-sampler-tab-7' : 'ap-o-sampler-tab ap-o-sampler-tab-7'" on="tap:AMP.setState({activeSample: '7'})"><span class="ap-o-sampler-tab-title">AG</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-8" [class]="activeSample == '8' ? 'ap-o-sampler-tab ap-o-sampler-tab-8' : 'ap-o-sampler-tab ap-o-sampler-tab-8'" on="tap:AMP.setState({activeSample: '8'})"><span class="ap-o-sampler-tab-title">AH</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-9" [class]="activeSample == '9' ? 'ap-o-sampler-tab ap-o-sampler-tab-9' : 'ap-o-sampler-tab ap-o-sampler-tab-9'" on="tap:AMP.setState({activeSample: '9'})"><span class="ap-o-sampler-tab-title">AI</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-10" [class]="activeSample == '10' ? 'ap-o-sampler-tab ap-o-sampler-tab-10' : 'ap-o-sampler-tab ap-o-sampler-tab-10'" on="tap:AMP.setState({activeSample: '10'})"><span class="ap-o-sampler-tab-title">AJ</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-11" [class]="activeSample == '11' ? 'ap-o-sampler-tab ap-o-sampler-tab-11' : 'ap-o-sampler-tab ap-o-sampler-tab-11'" on="tap:AMP.setState({activeSample: '11'})"><span class="ap-o-sampler-tab-title">AK</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-12" [class]="activeSample == '12' ? 'ap-o-sampler-tab ap-o-sampler-tab-12' : 'ap-o-sampler-tab ap-o-sampler-tab-12'" on="tap:AMP.setState({activeSample: '12'})"><span class="ap-o-sampler-tab-title">AL</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-13" [class]="activeSample == '13' ? 'ap-o-sampler-tab ap-o-sampler-tab-13' : 'ap-o-sampler-tab ap-o-sampler-tab-13'" on="tap:AMP.setState({activeSample: '13'})"><span class="ap-o-sampler-tab-title">AM</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-14" [class]="activeSample == '14' ? 'ap-o-sampler-tab ap-o-sampler-tab-14' : 'ap-o-sampler-tab ap-o-sampler-tab-14'" on="tap:AMP.setState({activeSample: '14'})"><span class="ap-o-sampler-tab-title">AN</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-15" [class]="activeSample == '15' ? 'ap-o-sampler-tab ap-o-sampler-tab-15' : 'ap-o-sampler-tab ap-o-sampler-tab-15'" on="tap:AMP.setState({activeSample: '15'})"><span class="ap-o-sampler-tab-title">AO</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-16" [class]="activeSample == '16' ? 'ap-o-sampler-tab ap-o-sampler-tab-16' : 'ap-o-sampler-tab ap-o-sampler-tab-16'" on="tap:AMP.setState({activeSample: '16'})"><span class="ap-o-sampler-tab-title">AP</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-17" [class]="activeSample == '17' ? 'ap-o-sampler-tab ap-o-sampler-tab-17' : 'ap-o-sampler-tab ap-o-sampler-tab-17'" on="tap:AMP.setState({activeSample: '17'})"><span class="ap-o-sampler-tab-title">AQ</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-18" [class]="activeSample == '18' ? 'ap-o-sampler-tab ap-o-sampler-tab-18' : 'ap-o-sampler-tab ap-o-sampler-tab-18'" on="tap:AMP.setState({activeSample: '18'})"><span class="ap-o-sampler-tab-title">AR</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-19" [class]="activeSample == '19' ? 'ap-o-sampler-tab ap-o-sampler-tab-19' : 'ap-o-sampler-tab ap-o-sampler-tab-19'" on="tap:AMP.setState({activeSample: '19'})"><span class="ap-o-sampler-tab-title">AS</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-20" [class]="activeSample == '20' ? 'ap-o-sampler-tab ap-o-sampler-tab-20' : 'ap-o-sampler-tab ap-o-sampler-tab-20'" on="tap:AMP.setState({activeSample: '20'})"><span class="ap-o-sampler-tab-title">AT</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-21" [class]="activeSample == '21' ? 'ap-o-sampler-tab ap-o-sampler-tab-21' : 'ap-o-sampler-tab ap-o-sampler-tab-21'" on="tap:AMP.setState({activeSample: '21'})"><span class="ap-o-sampler-tab-title">AU</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-22" [class]="activeSample == '22' ? 'ap-o-sampler-tab ap-o-sampler-tab-22' : 'ap-o-sampler-tab ap-o-sampler-tab-22'" on="tap:AMP.setState({activeSample: '22'})"><span class="ap-o-sampler-tab-title">AV</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-23" [class]="activeSample == '23' ? 'ap-o-sampler-tab ap-o-sampler-tab-23' : 'ap-o-sampler-tab ap-o-sampler-tab-23'" on="tap:AMP.setState({activeSample: '23'})"><span class="ap-o-sampler-tab-title">AW</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-24" [class]="activeSample == '24' ? 'ap-o-sampler-tab ap-o-sampler-tab-24' : 'ap-o-sampler-tab ap-o-sampler-tab-24'" on="tap:AMP.setState({activeSample: '24'})"><span class="ap-o-sampler-tab-title">AX</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-25" [class]="activeSample == '25' ? 'ap-o-sampler-tab ap-o-sampler-tab-25' : 'ap-o-sampler-tab ap-o-sampler-tab-25'" on="tap:AMP.setState({activeSample: '25'})"><span class="ap-o-sampler-tab-title">AY</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-26" [class]="activeSample == '26' ? 'ap-o-sampler-tab ap-o-sampler-tab-26' : 'ap-o-sampler-tab ap-o-sampler-tab-26'" on="tap:AMP.setState({activeSample: '26'})"><span class="ap-o-sampler-tab-title">AZ</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-27" [class]="activeSample == '27' ? 'ap-o-sampler-tab ap-o-sampler-tab-27' : 'ap-o-sampler-tab ap-o-sampler-tab-27'" on="tap:AMP.setState({activeSample: '27'})"><span class="ap-o-sampler-tab-title">BA</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-28" [class]="activeSample == '28' ? 'ap-o-sampler-tab ap-o-sampler-tab-28' : 'ap-o-sampler-tab ap-o-sampler-tab-28'" on="tap:AMP.setState({activeSample: '28'})"><span class="ap-o-sampler-tab-title">BB</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-29" [class]="activeSample == '29' ? 'ap-o-sampler-tab ap-o-sampler-tab-29' : 'ap-o-sampler-tab ap-o-sampler-tab-29'" on="tap:AMP.setState({activeSample: '29'})"><span class="ap-o-sampler-tab-title">BC</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-30" [class]="activeSample == '30' ? 'ap-o-sampler-tab ap-o-sampler-tab-30' : 'ap-o-sampler-tab ap-o-sampler-tab-30'" on="tap:AMP.setState({activeSample: '30'})"><span class="ap-o-sampler-tab-title">BD</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-31" [class]="activeSample == '31' ? 'ap-o-sampler-tab ap-o-sampler-tab-31' : 'ap-o-sampler-tab ap-o-sampler-tab-31'" on="tap:AMP.setState({activeSample: '31'})"><span class="ap-o-sampler-tab-title">BE</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-32" [class]="activeSample == '32' ? 'ap-o-sampler-tab ap-o-sampler-tab-32' : 'ap-o-sampler-tab ap-o-sampler-tab-32'" on="tap:AMP.setState({activeSample: '32'})"><span class="ap-o-sampler-tab-title">BF</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-33" [class]="activeSample == '33' ? 'ap-o-sampler-tab ap-o-sampler-tab-33' : 'ap-o-sampler-tab ap-o-sampler-tab-33'" on="tap:AMP.setState({activeSample: '33'})"><span class="ap-o-sampler-tab-title">BG</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-34" [class]="activeSample == '34' ? 'ap-o-sampler-tab ap-o-sampler-tab-34' : 'ap-o-sampler-tab ap-o-sampler-tab-34'" on="tap:AMP.setState({activeSample: '34'})"><span class="ap-o-sampler-tab-title">BH</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-35" [class]="activeSample == '35' ? 'ap-o-sampler-tab ap-o-sampler-tab-35' : 'ap-o-sampler-tab ap-o-sampler-tab-35'" on="tap:AMP.setState({activeSample: '35'})"><span class="ap-o-sampler-tab-title">BI</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-36" [class]="activeSample == '36' ? 'ap-o-sampler-tab ap-o-sampler-tab-36' : 'ap-o-sampler-tab ap-o-sampler-tab-36'" on="tap:AMP.setState({activeSample: '36'})"><span class="ap-o-sampler-tab-title">BJ</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-37" [class]="activeSample == '37' ? 'ap-o-sampler-tab ap-o-sampler-tab-37' : 'ap-o-sampler-tab ap-o-sampler-tab-37'" on="tap:AMP.setState({activeSample: '37'})"><span class="ap-o-sampler-tab-title">BK</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-38" [class]="activeSample == '38' ? 'ap-o-sampler-tab ap-o-sampler-tab-38' : 'ap-o-sampler-tab ap-o-sampler-tab-38'" on="tap:AMP.setState({activeSample: '38'})"><span class="ap-o-sampler-tab-title">BL</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-39" [class]="activeSample == '39' ? 'ap-o-sampler-tab ap-o-sampler-tab-39' : 'ap-o-sampler-tab ap-o-sampler-tab-39'" on="tap:AMP.setState({activeSample: '39'})"><span class="ap-o-sampler-tab-title">BM</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-40" [class]="activeSample == '40' ? 'ap-o-sampler-tab ap-o-sampler-tab-40' : 'ap-o-sampler-tab ap-o-sampler-tab-40'" on="tap:AMP.setState({activeSample: '40'})"><span class="ap-o-sampler-tab-title">BN</span></div>
+</div>
+<div class="ap-o-sampler-link">
+<a href="https://wedge.ontomatica.io/Reference-Library_-_19-02-06/Wedge?q=facet_07_NAL_Food_Nutri:549/facet_11_NAL_Health:267" class="-n">
+<div  class="ap-a-ico -i"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#internal"></use></svg></div>
+<span class="-r">Open target page</span>
+</a>
+</div>
+</div>
+</section>
+
+
+</div>
+<div data-title="Summary" class="ap-m-jumbo">
+<h1 class="ap-m-jumbo-headline">Summary</h1>
+<p class="">Ontologies define facts about things and relationships among things.</p>
+<p class="">Graph Kits use ontologies to define things that are closely related.</p>
+<p class="">Products and product components are defined using Graph Kits and presented using Electronic Labels.</p>
+<p class="">Electronic Labels provide intake data for your Biograph.</p>
+<p class="">Biograph uses Shapes to link intake data with outcome data (sensor or monitor data).</p>
+<p class="">Biograph uses Forms to present intake and outcome data to users and advisers.</p>
+<p class="">Biograph uses Footprints to store data in a pod that you control.</p>
+<p class="">Using that data, you adjust your lifestyles based on your personal choices or expert advice.</p>
+<p class="">But you control the data and share it on your terms.</p>
+<p class="">Biograph puts you in charge of making data intensive decisions and sharing your data with apps and people you trust.</p>
+</div>
+
+</section>
+
+</main>
+</body>
+</html>

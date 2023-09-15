@@ -1,0 +1,925 @@
+<svg width="100%" height="100%" viewBox="0 0 11436 2016" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2012.2)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-2012.2 11431.8,-2012.2 11431.8,4 -4,4"/>
+<text text-anchor="middle" x="5713.92" y="-82.8" font-family="Times,serif" font-size="14.00">Namespaces:</text>
+<text text-anchor="middle" x="5713.92" y="-67.8" font-family="Times,serif" font-size="14.00">fhir: http://hl7.org/fhir/</text>
+<text text-anchor="middle" x="5713.92" y="-52.8" font-family="Times,serif" font-size="14.00">loinc: http://loinc.org/rdf#</text>
+<text text-anchor="middle" x="5713.92" y="-37.8" font-family="Times,serif" font-size="14.00">owl: http://www.w3.org/2002/07/owl#</text>
+<text text-anchor="middle" x="5713.92" y="-22.8" font-family="Times,serif" font-size="14.00">rdfs: http://www.w3.org/2000/01/rdf-schema#</text>
+<text text-anchor="middle" x="5713.92" y="-7.8" font-family="Times,serif" font-size="14.00">xsd: http://www.w3.org/2001/XMLSchema#</text>
+<!-- B_:genid1 -->
+<g id="node1" class="node"><title>B_:genid1</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-1828.2" rx="18" ry="18"/>
+</g>
+<!-- Lf001 -->
+<g id="node2" class="node"><title>Lf001</title>
+<polygon fill="none" stroke="black" points="5654.34,-1838.2 5654.34,-1874.2 5708.34,-1874.2 5708.34,-1838.2 5654.34,-1838.2"/>
+<text text-anchor="middle" x="5681.34" y="-1852.5" font-family="Times,serif" font-size="14.00">f001</text>
+</g>
+<!-- B_:genid1&#45;&gt;Lf001 -->
+<g id="edge1" class="edge"><title>B_:genid1-&gt;Lf001</title>
+<path fill="none" stroke="black" d="M857.608,-1828.3C1153.79,-1830.01 5215.43,-1853.51 5643.85,-1855.99"/>
+<polygon fill="black" stroke="black" points="5644.09,-1859.49 5654.11,-1856.04 5644.13,-1852.49 5644.09,-1859.49"/>
+<text text-anchor="middle" x="1189.84" y="-1835" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid2 -->
+<g id="node3" class="node"><title>B_:genid2</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-1801.2" rx="18" ry="18"/>
+</g>
+<!-- Lgenerated -->
+<g id="node4" class="node"><title>Lgenerated</title>
+<polygon fill="none" stroke="black" points="10569.3,-1808.2 10569.3,-1844.2 10658.3,-1844.2 10658.3,-1808.2 10569.3,-1808.2"/>
+<text text-anchor="middle" x="10613.8" y="-1822.5" font-family="Times,serif" font-size="14.00">generated</text>
+</g>
+<!-- B_:genid2&#45;&gt;Lgenerated -->
+<g id="edge2" class="edge"><title>B_:genid2-&gt;Lgenerated</title>
+<path fill="none" stroke="black" d="M5699.71,-1801.28C5997.95,-1802.8 10043.8,-1823.31 10559,-1825.92"/>
+<polygon fill="black" stroke="black" points="10559.1,-1829.42 10569.1,-1825.98 10559.2,-1822.42 10559.1,-1829.42"/>
+<text text-anchor="middle" x="10216.3" y="-1829" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid3 -->
+<g id="node5" class="node"><title>B_:genid3</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-1746.2" rx="18" ry="18"/>
+</g>
+<!-- B_:genid3&#45;&gt;B_:genid2 -->
+<g id="edge3" class="edge"><title>B_:genid3-&gt;B_:genid2</title>
+<path fill="none" stroke="black" d="M857.675,-1748.08C893.842,-1751.98 980.733,-1760.94 1053.84,-1765.2 1182.56,-1772.7 1214.92,-1771 1343.84,-1773.2 3150.85,-1803.95 5381.94,-1801.65 5652.98,-1801.24"/>
+<polygon fill="black" stroke="black" points="5653.12,-1804.74 5663.11,-1801.23 5653.1,-1797.74 5653.12,-1804.74"/>
+<text text-anchor="middle" x="1189.84" y="-1777" font-family="Times,serif" font-size="14.00">fhir:Narrative.status</text>
+</g>
+<!-- L&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: f001&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 6323 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Glucose [Moles/volume] in Blood &lt;span&gt;(Details : \{LOINC code &#39;15074&#45;8&#39; = &#39;Glucose [Moles/volume] in Blood&#39;, given as &#39;Glucose [Moles/volume] in Blood&#39;\})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a&gt;P. van de Heuvel&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 02/04/2013 9:30:10 AM &#45;&#45;&gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: 03/04/2013 3:30:10 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a&gt;A. Langeveld&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 6.3 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = &#39;mmol/L&#39;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: High &lt;span&gt;(Details : \{http://terminology.hl7.org/CodeSystem/v3&#45;ObservationInterpretation code &#39;H&#39; = &#39;High&#39;, given as &#39;High&#39;\})&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&#45;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;3.1 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = &#39;mmol/L&#39;)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;6.2 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = &#39;mmol/L&#39;)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt; -->
+<g id="node6" class="node"><title>L&lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: f001&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 6323 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Glucose [Moles/volume] in Blood &lt;span&gt;(Details : \{LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'\})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a&gt;P. van de Heuvel&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 02/04/2013 9:30:10 AM --&gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: 03/04/2013 3:30:10 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a&gt;A. Langeveld&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 6.3 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: High &lt;span&gt;(Details : \{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'\})&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;3.1 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;6.2 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</title>
+<polygon fill="none" stroke="black" points="1343.84,-1728.2 1343.84,-1764.2 10018.8,-1764.2 10018.8,-1728.2 1343.84,-1728.2"/>
+<text text-anchor="middle" x="5681.34" y="-1742.5" font-family="Times,serif" font-size="14.00">L&lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: f001&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 6323 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Glucose [Moles/volume] in Blood &lt;span&gt;(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a&gt;P. van de Heuvel&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 02/04/2013 9:30:10 AM --&gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: 03/04/2013 3:30:10 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a&gt;A. Langeveld&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 6.3 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: High &lt;span&gt;(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;3.1 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;6.2 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</text>
+</g>
+<!-- B_:genid3&#45;&gt;L&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: f001&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 6323 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Glucose [Moles/volume] in Blood &lt;span&gt;(Details : \{LOINC code &#39;15074&#45;8&#39; = &#39;Glucose [Moles/volume] in Blood&#39;, given as &#39;Glucose [Moles/volume] in Blood&#39;\})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a&gt;P. van de Heuvel&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 02/04/2013 9:30:10 AM &#45;&#45;&gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: 03/04/2013 3:30:10 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a&gt;A. Langeveld&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 6.3 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = &#39;mmol/L&#39;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: High &lt;span&gt;(Details : \{http://terminology.hl7.org/CodeSystem/v3&#45;ObservationInterpretation code &#39;H&#39; = &#39;High&#39;, given as &#39;High&#39;\})&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&#45;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;3.1 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = &#39;mmol/L&#39;)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;6.2 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = &#39;mmol/L&#39;)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt; -->
+<g id="edge4" class="edge"><title>B_:genid3-&gt;L&lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: f001&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 6323 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Glucose [Moles/volume] in Blood &lt;span&gt;(Details : \{LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'\})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a&gt;P. van de Heuvel&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 02/04/2013 9:30:10 AM --&gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: 03/04/2013 3:30:10 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a&gt;A. Langeveld&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 6.3 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;interpretation&lt;/b&gt;: High &lt;span&gt;(Details : \{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'\})&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Low&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;High&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;3.1 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;td&gt;6.2 mmol/l&lt;span&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</title>
+<path fill="none" stroke="black" d="M857.608,-1746.2C910.438,-1746.2 1083.07,-1746.2 1333.52,-1746.2"/>
+<polygon fill="black" stroke="black" points="1333.6,-1749.7 1343.6,-1746.2 1333.6,-1742.7 1333.6,-1749.7"/>
+<text text-anchor="middle" x="1189.84" y="-1750" font-family="Times,serif" font-size="14.00">fhir:Narrative.div</text>
+</g>
+<!-- B_:genid4 -->
+<g id="node7" class="node"><title>B_:genid4</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-1691.2" rx="18" ry="18"/>
+</g>
+<!-- Lofficial -->
+<g id="node8" class="node"><title>Lofficial</title>
+<polygon fill="none" stroke="black" points="10581.3,-1753.2 10581.3,-1789.2 10646.3,-1789.2 10646.3,-1753.2 10581.3,-1753.2"/>
+<text text-anchor="middle" x="10613.8" y="-1767.5" font-family="Times,serif" font-size="14.00">official</text>
+</g>
+<!-- B_:genid4&#45;&gt;Lofficial -->
+<g id="edge5" class="edge"><title>B_:genid4-&gt;Lofficial</title>
+<path fill="none" stroke="black" d="M5699.37,-1690.92C5986.3,-1686.25 9806.13,-1625.92 10018.8,-1718.2 10029.5,-1722.83 10026.3,-1732.29 10036.8,-1737.2 10220.2,-1822.55 10472.6,-1794.42 10571.1,-1778.72"/>
+<polygon fill="black" stroke="black" points="10571.9,-1782.13 10581.2,-1777.06 10570.8,-1775.22 10571.9,-1782.13"/>
+<text text-anchor="middle" x="10216.3" y="-1800" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid5 -->
+<g id="node9" class="node"><title>B_:genid5</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-1637.2" rx="18" ry="18"/>
+</g>
+<!-- Lhttp://www.bmc.nl/zorgportal/identifiers/observations -->
+<g id="node10" class="node"><title>Lhttp://www.bmc.nl/zorgportal/identifiers/observations</title>
+<polygon fill="none" stroke="black" points="10413.8,-1698.2 10413.8,-1734.2 10813.8,-1734.2 10813.8,-1698.2 10413.8,-1698.2"/>
+<text text-anchor="middle" x="10613.8" y="-1712.5" font-family="Times,serif" font-size="14.00">http://www.bmc.nl/zorgportal/identifiers/observations</text>
+</g>
+<!-- B_:genid5&#45;&gt;Lhttp://www.bmc.nl/zorgportal/identifiers/observations -->
+<g id="edge6" class="edge"><title>B_:genid5-&gt;Lhttp://www.bmc.nl/zorgportal/identifiers/observations</title>
+<path fill="none" stroke="black" d="M5699.36,-1636.94C5986.12,-1632.7 9803.65,-1577.86 10018.8,-1664.2 10029.1,-1668.29 10026.7,-1676.82 10036.8,-1681.2 10101,-1708.97 10266.3,-1716.87 10403.4,-1718.31"/>
+<polygon fill="black" stroke="black" points="10403.6,-1721.81 10413.7,-1718.4 10403.7,-1714.81 10403.6,-1721.81"/>
+<text text-anchor="middle" x="10216.3" y="-1722" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid6 -->
+<g id="node11" class="node"><title>B_:genid6</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-1583.2" rx="18" ry="18"/>
+</g>
+<!-- L6323 -->
+<g id="node12" class="node"><title>L6323</title>
+<polygon fill="none" stroke="black" points="10586.8,-1643.2 10586.8,-1679.2 10640.8,-1679.2 10640.8,-1643.2 10586.8,-1643.2"/>
+<text text-anchor="middle" x="10613.8" y="-1657.5" font-family="Times,serif" font-size="14.00">6323</text>
+</g>
+<!-- B_:genid6&#45;&gt;L6323 -->
+<g id="edge7" class="edge"><title>B_:genid6-&gt;L6323</title>
+<path fill="none" stroke="black" d="M5699.35,-1582.97C5985.92,-1579.2 9801.08,-1530.59 10018.8,-1610.2 10028.6,-1613.77 10027.2,-1621.35 10036.8,-1625.2 10135.5,-1664.44 10465.6,-1663.38 10576.3,-1661.85"/>
+<polygon fill="black" stroke="black" points="10576.7,-1665.35 10586.6,-1661.7 10576.6,-1658.35 10576.7,-1665.35"/>
+<text text-anchor="middle" x="10216.3" y="-1666" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid7 -->
+<g id="node13" class="node"><title>B_:genid7</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-1583.2" rx="18" ry="18"/>
+</g>
+<!-- B_:genid7&#45;&gt;B_:genid4 -->
+<g id="edge9" class="edge"><title>B_:genid7-&gt;B_:genid4</title>
+<path fill="none" stroke="black" d="M857.324,-1587.37C893.18,-1596.16 980.063,-1616.82 1053.84,-1629.2 1181.88,-1650.68 1214.28,-1656 1343.84,-1664.2 2254.89,-1721.82 5331.11,-1694.5 5653.04,-1691.46"/>
+<polygon fill="black" stroke="black" points="5653.35,-1694.96 5663.32,-1691.36 5653.28,-1687.96 5653.35,-1694.96"/>
+<text text-anchor="middle" x="1189.84" y="-1667" font-family="Times,serif" font-size="14.00">fhir:Identifier.use</text>
+</g>
+<!-- B_:genid7&#45;&gt;B_:genid5 -->
+<g id="edge10" class="edge"><title>B_:genid7-&gt;B_:genid5</title>
+<path fill="none" stroke="black" d="M857.675,-1585.08C893.842,-1588.98 980.733,-1597.94 1053.84,-1602.2 1182.56,-1609.7 1214.92,-1608.02 1343.84,-1610.2 3150.85,-1640.74 5381.94,-1637.74 5652.98,-1637.25"/>
+<polygon fill="black" stroke="black" points="5653.12,-1640.75 5663.11,-1637.23 5653.1,-1633.75 5653.12,-1640.75"/>
+<text text-anchor="middle" x="1189.84" y="-1614" font-family="Times,serif" font-size="14.00">fhir:Identifier.system</text>
+</g>
+<!-- B_:genid7&#45;&gt;B_:genid6 -->
+<g id="edge11" class="edge"><title>B_:genid7-&gt;B_:genid6</title>
+<path fill="none" stroke="black" d="M857.608,-1583.2C1156,-1583.2 5276.19,-1583.2 5652.82,-1583.2"/>
+<polygon fill="black" stroke="black" points="5653.09,-1586.7 5663.09,-1583.2 5653.09,-1579.7 5653.09,-1586.7"/>
+<text text-anchor="middle" x="1189.84" y="-1587" font-family="Times,serif" font-size="14.00">fhir:Identifier.value</text>
+</g>
+<!-- L0|Datatype: xsd:integer -->
+<g id="node14" class="node"><title>L0|Datatype: xsd:integer</title>
+<polygon fill="none" stroke="black" points="10527.8,-1361.2 10527.8,-1407.2 10699.8,-1407.2 10699.8,-1361.2 10527.8,-1361.2"/>
+<text text-anchor="middle" x="10613.8" y="-1392" font-family="Times,serif" font-size="14.00">0</text>
+<polyline fill="none" stroke="black" points="10527.8,-1384.2 10699.8,-1384.2 "/>
+<text text-anchor="middle" x="10613.8" y="-1369" font-family="Times,serif" font-size="14.00">Datatype: xsd:integer</text>
+</g>
+<!-- B_:genid7&#45;&gt;L0|Datatype: xsd:integer -->
+<g id="edge8" class="edge"><title>B_:genid7-&gt;L0|Datatype: xsd:integer</title>
+<path fill="none" stroke="black" d="M856.814,-1577.79C919.034,-1557.39 1148.41,-1485.12 1343.84,-1461.2 1822.23,-1402.64 9537.05,-1423.53 10018.8,-1411.2 10195.1,-1406.69 10400.5,-1396.18 10517.8,-1389.68"/>
+<polygon fill="black" stroke="black" points="10518,-1393.17 10527.8,-1389.12 10517.6,-1386.18 10518,-1393.17"/>
+<text text-anchor="middle" x="5681.34" y="-1465" font-family="Times,serif" font-size="14.00">fhir:index</text>
+</g>
+<!-- B_:genid8 -->
+<g id="node15" class="node"><title>B_:genid8</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-648.197" rx="18" ry="18"/>
+</g>
+<!-- Lfinal -->
+<g id="node16" class="node"><title>Lfinal</title>
+<polygon fill="none" stroke="black" points="5654.34,-546.197 5654.34,-582.197 5708.34,-582.197 5708.34,-546.197 5654.34,-546.197"/>
+<text text-anchor="middle" x="5681.34" y="-560.497" font-family="Times,serif" font-size="14.00">final</text>
+</g>
+<!-- B_:genid8&#45;&gt;Lfinal -->
+<g id="edge12" class="edge"><title>B_:genid8-&gt;Lfinal</title>
+<path fill="none" stroke="black" d="M857.45,-645.668C921.027,-636.29 1152.08,-603.454 1343.84,-592.197 2247.17,-539.169 5277.52,-561.038 5643.97,-563.904"/>
+<polygon fill="black" stroke="black" points="5644,-567.405 5654.03,-563.984 5644.05,-560.405 5644,-567.405"/>
+<text text-anchor="middle" x="1189.84" y="-622.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid9 -->
+<g id="node17" class="node"><title>B_:genid9</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-1552.2" rx="18" ry="18"/>
+</g>
+<!-- Lhttp://loinc.org -->
+<g id="node18" class="node"><title>Lhttp://loinc.org</title>
+<polygon fill="none" stroke="black" points="11111.8,-1535.2 11111.8,-1571.2 11234.8,-1571.2 11234.8,-1535.2 11111.8,-1535.2"/>
+<text text-anchor="middle" x="11173.3" y="-1549.5" font-family="Times,serif" font-size="14.00">http://loinc.org</text>
+</g>
+<!-- B_:genid9&#45;&gt;Lhttp://loinc.org -->
+<g id="edge13" class="edge"><title>B_:genid9-&gt;Lhttp://loinc.org</title>
+<path fill="none" stroke="black" d="M10632.1,-1552.23C10702.7,-1552.35 10971.4,-1552.84 11101.3,-1553.07"/>
+<polygon fill="black" stroke="black" points="11101.5,-1556.57 11111.5,-1553.09 11101.5,-1549.57 11101.5,-1556.57"/>
+<text text-anchor="middle" x="10866.3" y="-1557" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid10 -->
+<g id="node19" class="node"><title>B_:genid10</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-1498.2" rx="18" ry="18"/>
+</g>
+<!-- L15074&#45;8 -->
+<g id="node20" class="node"><title>L15074-8</title>
+<polygon fill="none" stroke="black" points="11135.8,-1480.2 11135.8,-1516.2 11210.8,-1516.2 11210.8,-1480.2 11135.8,-1480.2"/>
+<text text-anchor="middle" x="11173.3" y="-1494.5" font-family="Times,serif" font-size="14.00">15074-8</text>
+</g>
+<!-- B_:genid10&#45;&gt;L15074&#45;8 -->
+<g id="edge14" class="edge"><title>B_:genid10-&gt;L15074-8</title>
+<path fill="none" stroke="black" d="M10632.1,-1498.2C10707.5,-1498.2 11008.7,-1498.2 11125.6,-1498.2"/>
+<polygon fill="black" stroke="black" points="11125.7,-1501.7 11135.7,-1498.2 11125.7,-1494.7 11125.7,-1501.7"/>
+<text text-anchor="middle" x="10866.3" y="-1502" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid11 -->
+<g id="node21" class="node"><title>B_:genid11</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-1444.2" rx="18" ry="18"/>
+</g>
+<!-- LGlucose [Moles/volume] in Blood -->
+<g id="node22" class="node"><title>LGlucose [Moles/volume] in Blood</title>
+<polygon fill="none" stroke="black" points="11047.8,-1425.2 11047.8,-1461.2 11298.8,-1461.2 11298.8,-1425.2 11047.8,-1425.2"/>
+<text text-anchor="middle" x="11173.3" y="-1439.5" font-family="Times,serif" font-size="14.00">Glucose [Moles/volume] in Blood</text>
+</g>
+<!-- B_:genid11&#45;&gt;LGlucose [Moles/volume] in Blood -->
+<g id="edge15" class="edge"><title>B_:genid11-&gt;LGlucose [Moles/volume] in Blood</title>
+<path fill="none" stroke="black" d="M10632.1,-1444.17C10692.5,-1444.06 10897.8,-1443.69 11037.2,-1443.44"/>
+<polygon fill="black" stroke="black" points="11037.6,-1446.94 11047.6,-1443.42 11037.5,-1439.94 11037.6,-1446.94"/>
+<text text-anchor="middle" x="10866.3" y="-1448" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid12 -->
+<g id="node23" class="node"><title>B_:genid12</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-1503.2" rx="18" ry="18"/>
+</g>
+<!-- B_:genid12&#45;&gt;L0|Datatype: xsd:integer -->
+<g id="edge16" class="edge"><title>B_:genid12-&gt;L0|Datatype: xsd:integer</title>
+<path fill="none" stroke="black" d="M5699.38,-1503.43C5986.5,-1507.24 9808.69,-1556.18 10018.8,-1458.2 10030,-1453 10025.8,-1442.63 10036.8,-1437.2 10072.7,-1419.55 10356.1,-1422.35 10395.8,-1418.2 10436,-1414 10480,-1407.47 10517.8,-1401.24"/>
+<polygon fill="black" stroke="black" points="10518.5,-1404.68 10527.8,-1399.59 10517.4,-1397.77 10518.5,-1404.68"/>
+<text text-anchor="middle" x="10216.3" y="-1441" font-family="Times,serif" font-size="14.00">fhir:index</text>
+</g>
+<!-- B_:genid12&#45;&gt;B_:genid9 -->
+<g id="edge18" class="edge"><title>B_:genid12-&gt;B_:genid9</title>
+<path fill="none" stroke="black" d="M5699.71,-1503.37C6003.92,-1506.39 10207.4,-1548.17 10585.7,-1551.93"/>
+<polygon fill="black" stroke="black" points="10585.7,-1555.43 10595.7,-1552.03 10585.8,-1548.43 10585.7,-1555.43"/>
+<text text-anchor="middle" x="10216.3" y="-1554" font-family="Times,serif" font-size="14.00">fhir:Coding.system</text>
+</g>
+<!-- B_:genid12&#45;&gt;B_:genid10 -->
+<g id="edge19" class="edge"><title>B_:genid12-&gt;B_:genid10</title>
+<path fill="none" stroke="black" d="M5699.71,-1503.18C6003.92,-1502.87 10207.4,-1498.61 10585.7,-1498.22"/>
+<polygon fill="black" stroke="black" points="10585.7,-1501.72 10595.7,-1498.21 10585.7,-1494.72 10585.7,-1501.72"/>
+<text text-anchor="middle" x="10216.3" y="-1503" font-family="Times,serif" font-size="14.00">fhir:Coding.code</text>
+</g>
+<!-- B_:genid12&#45;&gt;B_:genid11 -->
+<g id="edge20" class="edge"><title>B_:genid12-&gt;B_:genid11</title>
+<path fill="none" stroke="black" d="M5699.64,-1503.33C5929.31,-1505.01 8401.14,-1521.26 10395.8,-1456.2 10464.2,-1453.97 10544.6,-1448.88 10585.7,-1446.1"/>
+<polygon fill="black" stroke="black" points="10586,-1449.58 10595.7,-1445.41 10585.5,-1442.6 10586,-1449.58"/>
+<text text-anchor="middle" x="10216.3" y="-1471" font-family="Times,serif" font-size="14.00">fhir:Coding.display</text>
+</g>
+<!-- Rloinc:15074&#45;8 -->
+<g id="node24" class="node"><title>Rloinc:15074-8</title>
+<ellipse fill="none" stroke="blue" cx="10613.8" cy="-1606.2" rx="74.187" ry="18"/>
+<text text-anchor="middle" x="10613.8" y="-1602.5" font-family="Times,serif" font-size="14.00">loinc:15074-8</text>
+</g>
+<!-- B_:genid12&#45;&gt;Rloinc:15074&#45;8 -->
+<g id="edge17" class="edge"><title>B_:genid12-&gt;Rloinc:15074-8</title>
+<path fill="none" stroke="black" d="M5699.66,-1502.77C5980.16,-1495.92 9579.14,-1411.04 10018.8,-1556.2 10028.2,-1559.29 10027.6,-1565.86 10036.8,-1569.2 10125.1,-1600.9 10392.3,-1606.02 10529.5,-1606.49"/>
+<polygon fill="black" stroke="black" points="10529.5,-1609.99 10539.6,-1606.51 10529.6,-1602.99 10529.5,-1609.99"/>
+<text text-anchor="middle" x="10216.3" y="-1609" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- B_:genid13 -->
+<g id="node25" class="node"><title>B_:genid13</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-1411.2" rx="18" ry="18"/>
+</g>
+<!-- B_:genid13&#45;&gt;B_:genid12 -->
+<g id="edge21" class="edge"><title>B_:genid13-&gt;B_:genid12</title>
+<path fill="none" stroke="black" d="M857.468,-1413.29C921.107,-1421.05 1152.35,-1448.28 1343.84,-1458.2 3148.75,-1551.68 5381.67,-1509.41 5652.95,-1503.78"/>
+<polygon fill="black" stroke="black" points="5653.17,-1507.28 5663.09,-1503.57 5653.02,-1500.28 5653.17,-1507.28"/>
+<text text-anchor="middle" x="1189.84" y="-1461" font-family="Times,serif" font-size="14.00">fhir:CodeableConcept.coding</text>
+</g>
+<!-- B_:genid14 -->
+<g id="node26" class="node"><title>B_:genid14</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-509.197" rx="18" ry="18"/>
+</g>
+<!-- LPatient/f001 -->
+<g id="node27" class="node"><title>LPatient/f001</title>
+<polygon fill="none" stroke="black" points="10561.8,-330.197 10561.8,-366.197 10665.8,-366.197 10665.8,-330.197 10561.8,-330.197"/>
+<text text-anchor="middle" x="10613.8" y="-344.497" font-family="Times,serif" font-size="14.00">Patient/f001</text>
+</g>
+<!-- B_:genid14&#45;&gt;LPatient/f001 -->
+<g id="edge22" class="edge"><title>B_:genid14-&gt;LPatient/f001</title>
+<path fill="none" stroke="black" d="M5699.45,-509.394C5991.59,-512.722 9929.53,-556.199 10018.8,-482.197 10050.9,-455.615 10005.7,-417.831 10036.8,-390.197 10111.6,-323.923 10419.1,-335.386 10551.6,-343.713"/>
+<polygon fill="black" stroke="black" points="10551.4,-347.207 10561.6,-344.356 10551.9,-340.221 10551.4,-347.207"/>
+<text text-anchor="middle" x="10216.3" y="-393.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid15 -->
+<g id="node28" class="node"><title>B_:genid15</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-455.197" rx="18" ry="18"/>
+</g>
+<!-- LP. van de Heuvel -->
+<g id="node29" class="node"><title>LP. van de Heuvel</title>
+<polygon fill="none" stroke="black" points="10546.3,-275.197 10546.3,-311.197 10681.3,-311.197 10681.3,-275.197 10546.3,-275.197"/>
+<text text-anchor="middle" x="10613.8" y="-289.497" font-family="Times,serif" font-size="14.00">P. van de Heuvel</text>
+</g>
+<!-- B_:genid15&#45;&gt;LP. van de Heuvel -->
+<g id="edge23" class="edge"><title>B_:genid15-&gt;LP. van de Heuvel</title>
+<path fill="none" stroke="black" d="M5699.45,-455.399C5991.67,-458.82 9930.63,-503.511 10018.8,-428.197 10056.2,-396.315 10000.1,-351.798 10036.8,-319.197 10108.6,-255.448 10396.2,-272.637 10535.9,-285.261"/>
+<polygon fill="black" stroke="black" points="10535.9,-288.769 10546.1,-286.199 10536.5,-281.798 10535.9,-288.769"/>
+<text text-anchor="middle" x="10216.3" y="-322.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid16 -->
+<g id="node30" class="node"><title>B_:genid16</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-513.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid16&#45;&gt;B_:genid14 -->
+<g id="edge25" class="edge"><title>B_:genid16-&gt;B_:genid14</title>
+<path fill="none" stroke="black" d="M857.608,-513.183C1156,-512.936 5276.19,-509.531 5652.82,-509.219"/>
+<polygon fill="black" stroke="black" points="5653.09,-512.719 5663.09,-509.211 5653.09,-505.719 5653.09,-512.719"/>
+<text text-anchor="middle" x="1189.84" y="-516.997" font-family="Times,serif" font-size="14.00">fhir:Reference.reference</text>
+</g>
+<!-- B_:genid16&#45;&gt;B_:genid15 -->
+<g id="edge26" class="edge"><title>B_:genid16-&gt;B_:genid15</title>
+<path fill="none" stroke="black" d="M857.68,-511.393C893.857,-507.644 980.764,-498.961 1053.84,-494.197 1182.57,-485.804 1214.88,-485.265 1343.84,-482.197 3150.6,-439.204 5381.9,-453.099 5652.97,-454.997"/>
+<polygon fill="black" stroke="black" points="5653.08,-458.498 5663.11,-455.069 5653.13,-451.498 5653.08,-458.498"/>
+<text text-anchor="middle" x="1189.84" y="-497.997" font-family="Times,serif" font-size="14.00">fhir:Reference.display</text>
+</g>
+<!-- Rfhir:Patient/f001 -->
+<g id="node31" class="node"><title>Rfhir:Patient/f001</title>
+<ellipse fill="none" stroke="blue" cx="5681.34" cy="-401.197" rx="87.1846" ry="18"/>
+<text text-anchor="middle" x="5681.34" y="-397.497" font-family="Times,serif" font-size="14.00">fhir:Patient/f001</text>
+</g>
+<!-- B_:genid16&#45;&gt;Rfhir:Patient/f001 -->
+<g id="edge24" class="edge"><title>B_:genid16-&gt;Rfhir:Patient/f001</title>
+<path fill="none" stroke="black" d="M857.527,-514.812C893.096,-517.391 977.039,-519.184 1035.84,-486.197 1046.86,-480.016 1042.78,-470.301 1053.84,-464.197 1167.55,-401.442 1214.24,-436.615 1343.84,-428.197 2208.86,-372.008 5026.41,-395.057 5583.97,-400.257"/>
+<polygon fill="black" stroke="black" points="5583.95,-403.757 5593.98,-400.351 5584.02,-396.758 5583.95,-403.757"/>
+<text text-anchor="middle" x="1189.84" y="-467.997" font-family="Times,serif" font-size="14.00">fhir:link</text>
+</g>
+<!-- Rfhir:Patient -->
+<g id="node76" class="node"><title>Rfhir:Patient</title>
+<ellipse fill="none" stroke="blue" cx="10613.8" cy="-238.197" rx="63.8893" ry="18"/>
+<text text-anchor="middle" x="10613.8" y="-234.497" font-family="Times,serif" font-size="14.00">fhir:Patient</text>
+</g>
+<!-- Rfhir:Patient/f001&#45;&gt;Rfhir:Patient -->
+<g id="edge86" class="edge"><title>Rfhir:Patient/f001-&gt;Rfhir:Patient</title>
+<path fill="none" stroke="black" d="M5768.64,-402.202C6371.84,-409.041 9935.48,-446.353 10018.8,-374.197 10059.3,-339.19 9996.81,-290.672 10036.8,-255.197 10110.2,-190.209 10408.6,-214.726 10544.6,-229.821"/>
+<polygon fill="black" stroke="black" points="10544.6,-233.34 10554.9,-230.98 10545.4,-226.384 10544.6,-233.34"/>
+<text text-anchor="middle" x="10216.3" y="-258.997" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- B_:genid17 -->
+<g id="node32" class="node"><title>B_:genid17</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-347.197" rx="18" ry="18"/>
+</g>
+<!-- L2013&#45;04&#45;02T09:30:10+01:00|Datatype: xsd:dateTime -->
+<g id="node33" class="node"><title>L2013-04-02T09:30:10+01:00|Datatype: xsd:dateTime</title>
+<polygon fill="none" stroke="black" points="10502.8,-155.197 10502.8,-201.197 10724.8,-201.197 10724.8,-155.197 10502.8,-155.197"/>
+<text text-anchor="middle" x="10613.8" y="-185.997" font-family="Times,serif" font-size="14.00">2013-04-02T09:30:10+01:00</text>
+<polyline fill="none" stroke="black" points="10502.8,-178.197 10724.8,-178.197 "/>
+<text text-anchor="middle" x="10613.8" y="-162.997" font-family="Times,serif" font-size="14.00">Datatype: xsd:dateTime</text>
+</g>
+<!-- B_:genid17&#45;&gt;L2013&#45;04&#45;02T09:30:10+01:00|Datatype: xsd:dateTime -->
+<g id="edge27" class="edge"><title>B_:genid17-&gt;L2013-04-02T09:30:10+01:00|Datatype: xsd:dateTime</title>
+<path fill="none" stroke="black" d="M5699.45,-347.399C5991.73,-350.815 9931.42,-395.427 10018.8,-319.197 10061.1,-282.308 9994.93,-231.534 10036.8,-194.197 10174.3,-71.7398 10411.8,-117.063 10534.4,-152.234"/>
+<polygon fill="black" stroke="black" points="10533.6,-155.626 10544.1,-155.066 10535.5,-148.906 10533.6,-155.626"/>
+<text text-anchor="middle" x="10216.3" y="-197.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid18 -->
+<g id="node34" class="node"><title>B_:genid18</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-459.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid18&#45;&gt;B_:genid17 -->
+<g id="edge28" class="edge"><title>B_:genid18-&gt;B_:genid17</title>
+<path fill="none" stroke="black" d="M857.694,-461.098C893.578,-464.22 978.085,-466.982 1035.84,-432.197 1047.57,-425.133 1042.03,-414.119 1053.84,-407.197 1165.76,-341.614 1214.35,-381.945 1343.84,-374.197 2255.08,-319.671 5331.13,-344.218 5653.04,-346.959"/>
+<polygon fill="black" stroke="black" points="5653.29,-350.461 5663.32,-347.047 5653.35,-343.462 5653.29,-350.461"/>
+<text text-anchor="middle" x="1189.84" y="-410.997" font-family="Times,serif" font-size="14.00">fhir:Period.start</text>
+</g>
+<!-- B_:genid19 -->
+<g id="node35" class="node"><title>B_:genid19</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-405.197" rx="18" ry="18"/>
+</g>
+<!-- L2013&#45;04&#45;03T15:30:10+01:00|Datatype: xsd:dateTime -->
+<g id="node36" class="node"><title>L2013-04-03T15:30:10+01:00|Datatype: xsd:dateTime</title>
+<polygon fill="none" stroke="black" points="5570.34,-264.197 5570.34,-310.197 5792.34,-310.197 5792.34,-264.197 5570.34,-264.197"/>
+<text text-anchor="middle" x="5681.34" y="-294.997" font-family="Times,serif" font-size="14.00">2013-04-03T15:30:10+01:00</text>
+<polyline fill="none" stroke="black" points="5570.34,-287.197 5792.34,-287.197 "/>
+<text text-anchor="middle" x="5681.34" y="-271.997" font-family="Times,serif" font-size="14.00">Datatype: xsd:dateTime</text>
+</g>
+<!-- B_:genid19&#45;&gt;L2013&#45;04&#45;03T15:30:10+01:00|Datatype: xsd:dateTime -->
+<g id="edge29" class="edge"><title>B_:genid19-&gt;L2013-04-03T15:30:10+01:00|Datatype: xsd:dateTime</title>
+<path fill="none" stroke="black" d="M857.568,-407.312C893.578,-410.897 978.877,-414.584 1035.84,-378.197 1048.31,-370.233 1041.24,-357.945 1053.84,-350.197 1164.22,-282.328 1214.46,-327.364 1343.84,-320.197 3012.95,-227.724 5048.87,-270.834 5559.73,-283.902"/>
+<polygon fill="black" stroke="black" points="5559.98,-287.409 5570.06,-284.167 5560.16,-280.411 5559.98,-287.409"/>
+<text text-anchor="middle" x="1189.84" y="-353.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid20 -->
+<g id="node37" class="node"><title>B_:genid20</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-1109.2" rx="18" ry="18"/>
+</g>
+<!-- LPractitioner/f005 -->
+<g id="node38" class="node"><title>LPractitioner/f005</title>
+<polygon fill="none" stroke="black" points="10543.8,-1089.2 10543.8,-1125.2 10683.8,-1125.2 10683.8,-1089.2 10543.8,-1089.2"/>
+<text text-anchor="middle" x="10613.8" y="-1103.5" font-family="Times,serif" font-size="14.00">Practitioner/f005</text>
+</g>
+<!-- B_:genid20&#45;&gt;LPractitioner/f005 -->
+<g id="edge30" class="edge"><title>B_:genid20-&gt;LPractitioner/f005</title>
+<path fill="none" stroke="black" d="M5699.71,-1109.19C5993.52,-1109.07 9924.51,-1107.48 10533.8,-1107.23"/>
+<polygon fill="black" stroke="black" points="10533.8,-1110.73 10543.8,-1107.22 10533.8,-1103.73 10533.8,-1110.73"/>
+<text text-anchor="middle" x="10216.3" y="-1112" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid21 -->
+<g id="node39" class="node"><title>B_:genid21</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-1053.2" rx="18" ry="18"/>
+</g>
+<!-- LA. Langeveld -->
+<g id="node40" class="node"><title>LA. Langeveld</title>
+<polygon fill="none" stroke="black" points="10558.8,-1034.2 10558.8,-1070.2 10668.8,-1070.2 10668.8,-1034.2 10558.8,-1034.2"/>
+<text text-anchor="middle" x="10613.8" y="-1048.5" font-family="Times,serif" font-size="14.00">A. Langeveld</text>
+</g>
+<!-- B_:genid21&#45;&gt;LA. Langeveld -->
+<g id="edge31" class="edge"><title>B_:genid21-&gt;LA. Langeveld</title>
+<path fill="none" stroke="black" d="M5699.71,-1053.19C5996.01,-1053.13 9991.36,-1052.32 10548.5,-1052.21"/>
+<polygon fill="black" stroke="black" points="10548.8,-1055.71 10558.8,-1052.21 10548.8,-1048.71 10548.8,-1055.71"/>
+<text text-anchor="middle" x="10216.3" y="-1057" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid22 -->
+<g id="node41" class="node"><title>B_:genid22</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-1218.2" rx="18" ry="18"/>
+</g>
+<!-- B_:genid22&#45;&gt;L0|Datatype: xsd:integer -->
+<g id="edge32" class="edge"><title>B_:genid22-&gt;L0|Datatype: xsd:integer</title>
+<path fill="none" stroke="black" d="M855.778,-1226.27C889.989,-1243.91 976.076,-1285.51 1053.84,-1300.2 1298.55,-1346.42 9769.89,-1350.75 10018.8,-1357.2 10195.1,-1361.76 10400.5,-1372.25 10517.8,-1378.73"/>
+<polygon fill="black" stroke="black" points="10517.6,-1382.23 10527.8,-1379.29 10518,-1375.24 10517.6,-1382.23"/>
+<text text-anchor="middle" x="5681.34" y="-1361" font-family="Times,serif" font-size="14.00">fhir:index</text>
+</g>
+<!-- B_:genid22&#45;&gt;B_:genid20 -->
+<g id="edge34" class="edge"><title>B_:genid22-&gt;B_:genid20</title>
+<path fill="none" stroke="black" d="M857.401,-1214.71C920.803,-1201.79 1151.32,-1156.55 1343.84,-1141.2 2253.82,-1068.61 5331,-1104.83 5653.03,-1108.85"/>
+<polygon fill="black" stroke="black" points="5653.27,-1112.35 5663.31,-1108.98 5653.36,-1105.35 5653.27,-1112.35"/>
+<text text-anchor="middle" x="1189.84" y="-1182" font-family="Times,serif" font-size="14.00">fhir:Reference.reference</text>
+</g>
+<!-- B_:genid22&#45;&gt;B_:genid21 -->
+<g id="edge35" class="edge"><title>B_:genid22-&gt;B_:genid21</title>
+<path fill="none" stroke="black" d="M855.821,-1209.85C890.121,-1191.48 976.375,-1147.41 1053.84,-1125.2 1179.1,-1089.29 1213.93,-1092.21 1343.84,-1082.2 3145.77,-943.273 5381.3,-1039.38 5652.92,-1051.9"/>
+<polygon fill="black" stroke="black" points="5652.92,-1055.41 5663.07,-1052.37 5653.25,-1048.41 5652.92,-1055.41"/>
+<text text-anchor="middle" x="1189.84" y="-1129" font-family="Times,serif" font-size="14.00">fhir:Reference.display</text>
+</g>
+<!-- Rfhir:Practitioner/f005 -->
+<g id="node42" class="node"><title>Rfhir:Practitioner/f005</title>
+<ellipse fill="none" stroke="blue" cx="5681.34" cy="-1168.2" rx="110.48" ry="18"/>
+<text text-anchor="middle" x="5681.34" y="-1164.5" font-family="Times,serif" font-size="14.00">fhir:Practitioner/f005</text>
+</g>
+<!-- B_:genid22&#45;&gt;Rfhir:Practitioner/f005 -->
+<g id="edge33" class="edge"><title>B_:genid22-&gt;Rfhir:Practitioner/f005</title>
+<path fill="none" stroke="black" d="M856.815,-1224.62C921.814,-1249.18 1167.18,-1331.02 1325.84,-1234.2 1340.77,-1225.09 1328.94,-1208.36 1343.84,-1199.2 1436.14,-1142.42 4871.27,-1162.7 5560.61,-1167.35"/>
+<polygon fill="black" stroke="black" points="5560.78,-1170.85 5570.8,-1167.42 5560.83,-1163.85 5560.78,-1170.85"/>
+<text text-anchor="middle" x="1189.84" y="-1285" font-family="Times,serif" font-size="14.00">fhir:link</text>
+</g>
+<!-- Rfhir:Practitioner -->
+<g id="node77" class="node"><title>Rfhir:Practitioner</title>
+<ellipse fill="none" stroke="blue" cx="10613.8" cy="-1162.2" rx="86.3847" ry="18"/>
+<text text-anchor="middle" x="10613.8" y="-1158.5" font-family="Times,serif" font-size="14.00">fhir:Practitioner</text>
+</g>
+<!-- Rfhir:Practitioner/f005&#45;&gt;Rfhir:Practitioner -->
+<g id="edge87" class="edge"><title>Rfhir:Practitioner/f005-&gt;Rfhir:Practitioner</title>
+<path fill="none" stroke="black" d="M5792.13,-1167.61C6285.33,-1165.01 8345.78,-1154.5 10036.8,-1151.2 10196.4,-1150.89 10236.3,-1147.16 10395.8,-1151.2 10436.9,-1152.24 10482.2,-1154.38 10520.8,-1156.5"/>
+<polygon fill="black" stroke="black" points="10520.8,-1160 10531,-1157.07 10521.2,-1153.01 10520.8,-1160"/>
+<text text-anchor="middle" x="10216.3" y="-1155" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- B_:genid23 -->
+<g id="node43" class="node"><title>B_:genid23</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-403.197" rx="18" ry="18"/>
+</g>
+<!-- L6.3|Datatype: xsd:decimal -->
+<g id="node44" class="node"><title>L6.3|Datatype: xsd:decimal</title>
+<polygon fill="none" stroke="black" points="11085.3,-380.197 11085.3,-426.197 11261.3,-426.197 11261.3,-380.197 11085.3,-380.197"/>
+<text text-anchor="middle" x="11173.3" y="-410.997" font-family="Times,serif" font-size="14.00">6.3</text>
+<polyline fill="none" stroke="black" points="11085.3,-403.197 11261.3,-403.197 "/>
+<text text-anchor="middle" x="11173.3" y="-387.997" font-family="Times,serif" font-size="14.00">Datatype: xsd:decimal</text>
+</g>
+<!-- B_:genid23&#45;&gt;L6.3|Datatype: xsd:decimal -->
+<g id="edge36" class="edge"><title>B_:genid23-&gt;L6.3|Datatype: xsd:decimal</title>
+<path fill="none" stroke="black" d="M10632.1,-403.197C10698.3,-403.197 10938.5,-403.197 11075.3,-403.197"/>
+<polygon fill="black" stroke="black" points="11075.3,-406.697 11085.3,-403.197 11075.3,-399.697 11075.3,-406.697"/>
+<text text-anchor="middle" x="10866.3" y="-406.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid24 -->
+<g id="node45" class="node"><title>B_:genid24</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-619.197" rx="18" ry="18"/>
+</g>
+<!-- Lmmol/l -->
+<g id="node46" class="node"><title>Lmmol/l</title>
+<polygon fill="none" stroke="black" points="11140.8,-763.197 11140.8,-799.197 11205.8,-799.197 11205.8,-763.197 11140.8,-763.197"/>
+<text text-anchor="middle" x="11173.3" y="-777.497" font-family="Times,serif" font-size="14.00">mmol/l</text>
+</g>
+<!-- B_:genid24&#45;&gt;Lmmol/l -->
+<g id="edge37" class="edge"><title>B_:genid24-&gt;Lmmol/l</title>
+<path fill="none" stroke="black" d="M10631.9,-621.112C10666.4,-625.067 10746.8,-634.732 10813.8,-646.197 10852.8,-652.855 10871.6,-637.661 10900.8,-664.197 10920.8,-682.335 10899.1,-703.813 10918.8,-722.197 10977,-776.265 11074.7,-783.91 11130.3,-783.385"/>
+<polygon fill="black" stroke="black" points="11130.6,-786.88 11140.5,-783.192 11130.4,-779.882 11130.6,-786.88"/>
+<text text-anchor="middle" x="10866.3" y="-667.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid25 -->
+<g id="node47" class="node"><title>B_:genid25</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-511.197" rx="18" ry="18"/>
+</g>
+<!-- Lhttp://unitsofmeasure.org -->
+<g id="node48" class="node"><title>Lhttp://unitsofmeasure.org</title>
+<polygon fill="none" stroke="black" points="11073.3,-677.197 11073.3,-713.197 11273.3,-713.197 11273.3,-677.197 11073.3,-677.197"/>
+<text text-anchor="middle" x="11173.3" y="-691.497" font-family="Times,serif" font-size="14.00">http://unitsofmeasure.org</text>
+</g>
+<!-- B_:genid25&#45;&gt;Lhttp://unitsofmeasure.org -->
+<g id="edge38" class="edge"><title>B_:genid25-&gt;Lhttp://unitsofmeasure.org</title>
+<path fill="none" stroke="black" d="M10631.6,-508.022C10669.1,-501.953 10760.7,-493.021 10813.8,-538.197 10834.7,-555.958 10812.3,-577.966 10831.8,-597.197 10850.2,-615.299 10990.8,-651.779 11085.5,-674.765"/>
+<polygon fill="black" stroke="black" points="11084.8,-678.203 11095.4,-677.153 11086.5,-671.4 11084.8,-678.203"/>
+<text text-anchor="middle" x="10866.3" y="-626.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid26 -->
+<g id="node49" class="node"><title>B_:genid26</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-457.197" rx="18" ry="18"/>
+</g>
+<!-- Lmmol/L -->
+<g id="node50" class="node"><title>Lmmol/L</title>
+<polygon fill="none" stroke="black" points="11137.8,-525.197 11137.8,-561.197 11208.8,-561.197 11208.8,-525.197 11137.8,-525.197"/>
+<text text-anchor="middle" x="11173.3" y="-539.497" font-family="Times,serif" font-size="14.00">mmol/L</text>
+</g>
+<!-- B_:genid26&#45;&gt;Lmmol/L -->
+<g id="edge39" class="edge"><title>B_:genid26-&gt;Lmmol/L</title>
+<path fill="none" stroke="black" d="M10631.9,-459.346C10666.3,-463.722 10746.6,-474.105 10813.8,-484.197 10927.2,-501.206 11060.2,-523.787 11127.9,-535.466"/>
+<polygon fill="black" stroke="black" points="11127.3,-538.922 11137.8,-537.176 11128.5,-532.024 11127.3,-538.922"/>
+<text text-anchor="middle" x="10866.3" y="-500.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid27 -->
+<g id="node51" class="node"><title>B_:genid27</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-619.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid27&#45;&gt;B_:genid23 -->
+<g id="edge40" class="edge"><title>B_:genid27-&gt;B_:genid23</title>
+<path fill="none" stroke="black" d="M5699.54,-619.738C5989.33,-628.787 9846.41,-746.21 10018.8,-591.197 10071.7,-543.65 9985.01,-480.891 10036.8,-432.197 10057.1,-413.205 10474,-405.362 10585.6,-403.598"/>
+<polygon fill="black" stroke="black" points="10585.7,-407.096 10595.7,-403.441 10585.6,-400.097 10585.7,-407.096"/>
+<text text-anchor="middle" x="10216.3" y="-435.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.value</text>
+</g>
+<!-- B_:genid27&#45;&gt;B_:genid24 -->
+<g id="edge41" class="edge"><title>B_:genid27-&gt;B_:genid24</title>
+<path fill="none" stroke="black" d="M5699.71,-619.197C6003.92,-619.197 10207.4,-619.197 10585.7,-619.197"/>
+<polygon fill="black" stroke="black" points="10585.7,-622.697 10595.7,-619.197 10585.7,-615.697 10585.7,-622.697"/>
+<text text-anchor="middle" x="10216.3" y="-622.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.unit</text>
+</g>
+<!-- B_:genid27&#45;&gt;B_:genid25 -->
+<g id="edge42" class="edge"><title>B_:genid27-&gt;B_:genid25</title>
+<path fill="none" stroke="black" d="M5699.48,-619.661C5988.21,-627.409 9831.56,-727.888 10018.8,-591.197 10039.6,-576.034 10016.4,-551.741 10036.8,-536.197 10124.2,-469.953 10483.7,-498.759 10585.7,-508.464"/>
+<polygon fill="black" stroke="black" points="10585.5,-511.962 10595.8,-509.443 10586.2,-504.995 10585.5,-511.962"/>
+<text text-anchor="middle" x="10216.3" y="-539.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.system</text>
+</g>
+<!-- B_:genid27&#45;&gt;B_:genid26 -->
+<g id="edge43" class="edge"><title>B_:genid27-&gt;B_:genid26</title>
+<path fill="none" stroke="black" d="M5699.53,-619.723C5989.09,-628.517 9843.26,-742.624 10018.8,-591.197 10058.4,-557.123 9997.76,-509.757 10036.8,-475.197 10078.2,-438.594 10477.1,-451.759 10585.7,-456.056"/>
+<polygon fill="black" stroke="black" points="10585.7,-459.558 10595.8,-456.465 10586,-452.564 10585.7,-459.558"/>
+<text text-anchor="middle" x="10216.3" y="-478.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.code</text>
+</g>
+<!-- B_:genid28 -->
+<g id="node52" class="node"><title>B_:genid28</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-1270.2" rx="18" ry="18"/>
+</g>
+<!-- Lhttp://terminology.hl7.org/CodeSystem/v3&#45;ObservationInterpretation -->
+<g id="node53" class="node"><title>Lhttp://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</title>
+<polygon fill="none" stroke="black" points="10918.8,-1252.2 10918.8,-1288.2 11427.8,-1288.2 11427.8,-1252.2 10918.8,-1252.2"/>
+<text text-anchor="middle" x="11173.3" y="-1266.5" font-family="Times,serif" font-size="14.00">http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</text>
+</g>
+<!-- B_:genid28&#45;&gt;Lhttp://terminology.hl7.org/CodeSystem/v3&#45;ObservationInterpretation -->
+<g id="edge44" class="edge"><title>B_:genid28-&gt;Lhttp://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</title>
+<path fill="none" stroke="black" d="M10632.1,-1270.2C10675.5,-1270.2 10793.8,-1270.2 10908.6,-1270.2"/>
+<polygon fill="black" stroke="black" points="10908.7,-1273.7 10918.7,-1270.2 10908.7,-1266.7 10908.7,-1273.7"/>
+<text text-anchor="middle" x="10866.3" y="-1274" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid29 -->
+<g id="node54" class="node"><title>B_:genid29</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-1216.2" rx="18" ry="18"/>
+</g>
+<!-- LH -->
+<g id="node55" class="node"><title>LH</title>
+<polygon fill="none" stroke="black" points="11146.3,-1197.2 11146.3,-1233.2 11200.3,-1233.2 11200.3,-1197.2 11146.3,-1197.2"/>
+<text text-anchor="middle" x="11173.3" y="-1211.5" font-family="Times,serif" font-size="14.00">H</text>
+</g>
+<!-- B_:genid29&#45;&gt;LH -->
+<g id="edge45" class="edge"><title>B_:genid29-&gt;LH</title>
+<path fill="none" stroke="black" d="M10632.1,-1216.17C10709.9,-1216.03 11027.8,-1215.46 11136,-1215.26"/>
+<polygon fill="black" stroke="black" points="11136.1,-1218.76 11146.1,-1215.24 11136.1,-1211.76 11136.1,-1218.76"/>
+<text text-anchor="middle" x="10866.3" y="-1220" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid30 -->
+<g id="node56" class="node"><title>B_:genid30</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-1324.2" rx="18" ry="18"/>
+</g>
+<!-- LHigh -->
+<g id="node57" class="node"><title>LHigh</title>
+<polygon fill="none" stroke="black" points="11146.3,-1307.2 11146.3,-1343.2 11200.3,-1343.2 11200.3,-1307.2 11146.3,-1307.2"/>
+<text text-anchor="middle" x="11173.3" y="-1321.5" font-family="Times,serif" font-size="14.00">High</text>
+</g>
+<!-- B_:genid30&#45;&gt;LHigh -->
+<g id="edge46" class="edge"><title>B_:genid30-&gt;LHigh</title>
+<path fill="none" stroke="black" d="M10632.1,-1324.23C10709.9,-1324.37 11027.8,-1324.94 11136,-1325.13"/>
+<polygon fill="black" stroke="black" points="11136.1,-1328.63 11146.1,-1325.15 11136.1,-1321.63 11136.1,-1328.63"/>
+<text text-anchor="middle" x="10866.3" y="-1329" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid31 -->
+<g id="node58" class="node"><title>B_:genid31</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-1226.2" rx="18" ry="18"/>
+</g>
+<!-- B_:genid31&#45;&gt;L0|Datatype: xsd:integer -->
+<g id="edge47" class="edge"><title>B_:genid31-&gt;L0|Datatype: xsd:integer</title>
+<path fill="none" stroke="black" d="M5699.39,-1225.9C5986.57,-1221.03 9809.68,-1158.13 10018.8,-1258.2 10030.2,-1263.65 10025.6,-1274.42 10036.8,-1280.2 10108,-1316.72 10331.6,-1255.58 10395.8,-1303.2 10414.1,-1316.77 10396.2,-1336.73 10413.8,-1351.2 10442.5,-1374.78 10481.6,-1384.49 10517.5,-1387.77"/>
+<polygon fill="black" stroke="black" points="10517.3,-1391.27 10527.5,-1388.53 10517.8,-1384.29 10517.3,-1391.27"/>
+<text text-anchor="middle" x="10216.3" y="-1307" font-family="Times,serif" font-size="14.00">fhir:index</text>
+</g>
+<!-- B_:genid31&#45;&gt;B_:genid28 -->
+<g id="edge48" class="edge"><title>B_:genid31-&gt;B_:genid28</title>
+<path fill="none" stroke="black" d="M5699.43,-1226.03C6003.96,-1223.07 10277.8,-1182.31 10395.8,-1227.2 10405.8,-1231 10404.1,-1238.73 10413.8,-1243.2 10470.7,-1269.34 10545.8,-1272.09 10585.5,-1271.4"/>
+<polygon fill="black" stroke="black" points="10585.8,-1274.9 10595.7,-1271.13 10585.6,-1267.9 10585.8,-1274.9"/>
+<text text-anchor="middle" x="10216.3" y="-1231" font-family="Times,serif" font-size="14.00">fhir:Coding.system</text>
+</g>
+<!-- B_:genid31&#45;&gt;B_:genid29 -->
+<g id="edge49" class="edge"><title>B_:genid31-&gt;B_:genid29</title>
+<path fill="none" stroke="black" d="M5699.59,-1226.41C5978.83,-1229.74 9562.07,-1271 10018.8,-1195.2 10027.2,-1193.82 10028.5,-1190.55 10036.8,-1189.2 10194.3,-1163.64 10236.6,-1179.33 10395.8,-1189.2 10464.7,-1193.46 10545.2,-1205.28 10586.1,-1211.78"/>
+<polygon fill="black" stroke="black" points="10585.6,-1215.25 10596,-1213.38 10586.7,-1208.34 10585.6,-1215.25"/>
+<text text-anchor="middle" x="10216.3" y="-1193" font-family="Times,serif" font-size="14.00">fhir:Coding.code</text>
+</g>
+<!-- B_:genid31&#45;&gt;B_:genid30 -->
+<g id="edge50" class="edge"><title>B_:genid31-&gt;B_:genid30</title>
+<path fill="none" stroke="black" d="M5699.58,-1226.25C5918.8,-1226.93 8186.66,-1234.43 10018.8,-1258.2 10102.6,-1259.28 10323.9,-1222.22 10395.8,-1265.2 10409.9,-1273.57 10400.3,-1288.03 10413.8,-1297.2 10466.4,-1332.89 10545,-1331.45 10585.9,-1327.66"/>
+<polygon fill="black" stroke="black" points="10586.3,-1331.13 10595.9,-1326.61 10585.6,-1324.17 10586.3,-1331.13"/>
+<text text-anchor="middle" x="10216.3" y="-1269" font-family="Times,serif" font-size="14.00">fhir:Coding.display</text>
+</g>
+<!-- B_:genid32 -->
+<g id="node59" class="node"><title>B_:genid32</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-1352.2" rx="18" ry="18"/>
+</g>
+<!-- B_:genid32&#45;&gt;L0|Datatype: xsd:integer -->
+<g id="edge51" class="edge"><title>B_:genid32-&gt;L0|Datatype: xsd:integer</title>
+<path fill="none" stroke="black" d="M857.677,-1353.91C893.849,-1357.43 980.746,-1365.4 1053.84,-1368.2 2049.07,-1406.31 9583.15,-1387.01 10517.8,-1384.46"/>
+<polygon fill="black" stroke="black" points="10517.8,-1387.96 10527.8,-1384.43 10517.8,-1380.96 10517.8,-1387.96"/>
+<text text-anchor="middle" x="5681.34" y="-1396" font-family="Times,serif" font-size="14.00">fhir:index</text>
+</g>
+<!-- B_:genid32&#45;&gt;B_:genid31 -->
+<g id="edge52" class="edge"><title>B_:genid32-&gt;B_:genid31</title>
+<path fill="none" stroke="black" d="M857.576,-1352.6C934.515,-1354.1 1249.43,-1356.65 1325.84,-1300.2 1342.18,-1288.13 1326.93,-1269.44 1343.84,-1258.2 1439.45,-1194.65 5291.42,-1223.16 5653.16,-1225.98"/>
+<polygon fill="black" stroke="black" points="5653.24,-1229.48 5663.27,-1226.06 5653.3,-1222.48 5653.24,-1229.48"/>
+<text text-anchor="middle" x="1189.84" y="-1354" font-family="Times,serif" font-size="14.00">fhir:CodeableConcept.coding</text>
+</g>
+<!-- B_:genid33 -->
+<g id="node60" class="node"><title>B_:genid33</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-943.197" rx="18" ry="18"/>
+</g>
+<!-- L3.1|Datatype: xsd:decimal -->
+<g id="node61" class="node"><title>L3.1|Datatype: xsd:decimal</title>
+<polygon fill="none" stroke="black" points="11085.3,-914.197 11085.3,-960.197 11261.3,-960.197 11261.3,-914.197 11085.3,-914.197"/>
+<text text-anchor="middle" x="11173.3" y="-944.997" font-family="Times,serif" font-size="14.00">3.1</text>
+<polyline fill="none" stroke="black" points="11085.3,-937.197 11261.3,-937.197 "/>
+<text text-anchor="middle" x="11173.3" y="-921.997" font-family="Times,serif" font-size="14.00">Datatype: xsd:decimal</text>
+</g>
+<!-- B_:genid33&#45;&gt;L3.1|Datatype: xsd:decimal -->
+<g id="edge53" class="edge"><title>B_:genid33-&gt;L3.1|Datatype: xsd:decimal</title>
+<path fill="none" stroke="black" d="M10632.1,-943.011C10698.3,-942.298 10938.5,-939.714 11075.3,-938.241"/>
+<polygon fill="black" stroke="black" points="11075.4,-941.741 11085.3,-938.133 11075.3,-934.741 11075.4,-941.741"/>
+<text text-anchor="middle" x="10866.3" y="-944.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid34 -->
+<g id="node62" class="node"><title>B_:genid34</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-781.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid34&#45;&gt;Lmmol/l -->
+<g id="edge54" class="edge"><title>B_:genid34-&gt;Lmmol/l</title>
+<path fill="none" stroke="black" d="M10632.1,-781.197C10708.6,-781.197 11017.4,-781.197 11130.6,-781.197"/>
+<polygon fill="black" stroke="black" points="11130.6,-784.697 11140.6,-781.197 11130.6,-777.697 11130.6,-784.697"/>
+<text text-anchor="middle" x="10866.3" y="-784.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid35 -->
+<g id="node63" class="node"><title>B_:genid35</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-673.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid35&#45;&gt;Lhttp://unitsofmeasure.org -->
+<g id="edge55" class="edge"><title>B_:genid35-&gt;Lhttp://unitsofmeasure.org</title>
+<path fill="none" stroke="black" d="M10631.8,-673.867C10695.6,-676.384 10924.2,-685.404 11062.8,-690.876"/>
+<polygon fill="black" stroke="black" points="11062.9,-694.382 11073.1,-691.28 11063.2,-687.388 11062.9,-694.382"/>
+<text text-anchor="middle" x="10866.3" y="-687.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid36 -->
+<g id="node64" class="node"><title>B_:genid36</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-565.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid36&#45;&gt;Lmmol/L -->
+<g id="edge56" class="edge"><title>B_:genid36-&gt;Lmmol/L</title>
+<path fill="none" stroke="black" d="M10632,-562.99C10668.6,-558.393 10757.2,-547.911 10831.8,-544.197 10937.5,-538.938 11061.9,-540.546 11127.2,-541.988"/>
+<polygon fill="black" stroke="black" points="11127.4,-545.494 11137.5,-542.226 11127.6,-538.496 11127.4,-545.494"/>
+<text text-anchor="middle" x="10866.3" y="-547.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid37 -->
+<g id="node65" class="node"><title>B_:genid37</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-735.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid37&#45;&gt;B_:genid33 -->
+<g id="edge57" class="edge"><title>B_:genid37-&gt;B_:genid33</title>
+<path fill="none" stroke="black" d="M5699.7,-735.167C6009.01,-734.653 10348.7,-728.2 10395.8,-770.197 10444.7,-813.688 10367.9,-869.685 10413.8,-916.197 10459.2,-962.156 10543.2,-955.729 10586.1,-948.673"/>
+<polygon fill="black" stroke="black" points="10586.8,-952.096 10596.1,-946.897 10585.6,-945.204 10586.8,-952.096"/>
+<text text-anchor="middle" x="10216.3" y="-773.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.value</text>
+</g>
+<!-- B_:genid37&#45;&gt;B_:genid34 -->
+<g id="edge58" class="edge"><title>B_:genid37-&gt;B_:genid34</title>
+<path fill="none" stroke="black" d="M5699.45,-734.822C5999.96,-728.286 10162.7,-639.583 10395.8,-736.197 10406.3,-740.527 10403.7,-749.173 10413.8,-754.197 10470.2,-782.135 10546,-784.102 10585.8,-782.83"/>
+<polygon fill="black" stroke="black" points="10586,-786.326 10595.8,-782.415 10585.7,-779.332 10586,-786.326"/>
+<text text-anchor="middle" x="10216.3" y="-739.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.unit</text>
+</g>
+<!-- B_:genid37&#45;&gt;B_:genid35 -->
+<g id="edge59" class="edge"><title>B_:genid37-&gt;B_:genid35</title>
+<path fill="none" stroke="black" d="M5699.71,-734.978C6003.92,-731.153 10207.4,-678.294 10585.7,-673.538"/>
+<polygon fill="black" stroke="black" points="10585.8,-677.037 10595.7,-673.412 10585.7,-670.038 10585.8,-677.037"/>
+<text text-anchor="middle" x="10216.3" y="-684.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.system</text>
+</g>
+<!-- B_:genid37&#45;&gt;B_:genid36 -->
+<g id="edge60" class="edge"><title>B_:genid37-&gt;B_:genid36</title>
+<path fill="none" stroke="black" d="M5699.51,-735.993C5981.13,-748.916 9638.84,-911.314 10018.8,-646.197 10036.8,-633.635 10019.1,-613.117 10036.8,-600.197 10125.5,-535.627 10484.1,-555.923 10585.8,-563.135"/>
+<polygon fill="black" stroke="black" points="10585.7,-566.632 10595.9,-563.866 10586.2,-559.651 10585.7,-566.632"/>
+<text text-anchor="middle" x="10216.3" y="-603.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.code</text>
+</g>
+<!-- B_:genid38 -->
+<g id="node66" class="node"><title>B_:genid38</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-997.197" rx="18" ry="18"/>
+</g>
+<!-- L6.2|Datatype: xsd:decimal -->
+<g id="node67" class="node"><title>L6.2|Datatype: xsd:decimal</title>
+<polygon fill="none" stroke="black" points="11085.3,-979.197 11085.3,-1025.2 11261.3,-1025.2 11261.3,-979.197 11085.3,-979.197"/>
+<text text-anchor="middle" x="11173.3" y="-1010" font-family="Times,serif" font-size="14.00">6.2</text>
+<polyline fill="none" stroke="black" points="11085.3,-1002.2 11261.3,-1002.2 "/>
+<text text-anchor="middle" x="11173.3" y="-986.997" font-family="Times,serif" font-size="14.00">Datatype: xsd:decimal</text>
+</g>
+<!-- B_:genid38&#45;&gt;L6.2|Datatype: xsd:decimal -->
+<g id="edge61" class="edge"><title>B_:genid38-&gt;L6.2|Datatype: xsd:decimal</title>
+<path fill="none" stroke="black" d="M10632.1,-997.352C10698.3,-997.945 10938.5,-1000.1 11075.3,-1001.33"/>
+<polygon fill="black" stroke="black" points="11075.3,-1004.83 11085.3,-1001.42 11075.4,-997.827 11075.3,-1004.83"/>
+<text text-anchor="middle" x="10866.3" y="-1004" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid39 -->
+<g id="node68" class="node"><title>B_:genid39</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-889.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid39&#45;&gt;Lmmol/l -->
+<g id="edge62" class="edge"><title>B_:genid39-&gt;Lmmol/l</title>
+<path fill="none" stroke="black" d="M10631.9,-887.155C10666.4,-882.972 10746.7,-872.918 10813.8,-862.197 10929.8,-843.676 11064.3,-809.918 11130.8,-792.406"/>
+<polygon fill="black" stroke="black" points="11131.7,-795.784 11140.5,-789.841 11129.9,-789.018 11131.7,-795.784"/>
+<text text-anchor="middle" x="10866.3" y="-862.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid40 -->
+<g id="node69" class="node"><title>B_:genid40</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-835.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid40&#45;&gt;Lhttp://unitsofmeasure.org -->
+<g id="edge63" class="edge"><title>B_:genid40-&gt;Lhttp://unitsofmeasure.org</title>
+<path fill="none" stroke="black" d="M10632,-835.341C10687.2,-835.47 10858.7,-833.158 10900.8,-800.197 10918.5,-786.422 10902,-767.862 10918.8,-753.197 10958.3,-718.929 11013.9,-703.793 11063,-697.494"/>
+<polygon fill="black" stroke="black" points="11063.5,-700.957 11073.1,-696.314 11062.7,-694.004 11063.5,-700.957"/>
+<text text-anchor="middle" x="10866.3" y="-825.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid41 -->
+<g id="node70" class="node"><title>B_:genid41</title>
+<ellipse fill="none" stroke="green" cx="10613.8" cy="-727.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid41&#45;&gt;Lmmol/L -->
+<g id="edge64" class="edge"><title>B_:genid41-&gt;Lmmol/L</title>
+<path fill="none" stroke="black" d="M10631.6,-730.815C10669.7,-738.01 10764,-749.461 10813.8,-700.197 10852.8,-661.667 10792.2,-616.09 10831.8,-578.197 10852.8,-558.136 11040,-548.313 11127.5,-544.783"/>
+<polygon fill="black" stroke="black" points="11127.9,-548.273 11137.7,-544.383 11127.6,-541.279 11127.9,-548.273"/>
+<text text-anchor="middle" x="10866.3" y="-581.997" font-family="Times,serif" font-size="14.00">fhir:value</text>
+</g>
+<!-- B_:genid42 -->
+<g id="node71" class="node"><title>B_:genid42</title>
+<ellipse fill="none" stroke="green" cx="5681.34" cy="-849.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid42&#45;&gt;B_:genid38 -->
+<g id="edge65" class="edge"><title>B_:genid42-&gt;B_:genid38</title>
+<path fill="none" stroke="black" d="M5699.71,-849.718C6003.92,-858.85 10207.4,-985.028 10585.7,-996.381"/>
+<polygon fill="black" stroke="black" points="10585.6,-999.881 10595.7,-996.683 10585.8,-992.884 10585.6,-999.881"/>
+<text text-anchor="middle" x="10216.3" y="-994.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.value</text>
+</g>
+<!-- B_:genid42&#45;&gt;B_:genid39 -->
+<g id="edge66" class="edge"><title>B_:genid42-&gt;B_:genid39</title>
+<path fill="none" stroke="black" d="M5699.71,-849.338C6003.92,-851.806 10207.4,-885.908 10585.7,-888.976"/>
+<polygon fill="black" stroke="black" points="10585.7,-892.476 10595.7,-889.058 10585.8,-885.477 10585.7,-892.476"/>
+<text text-anchor="middle" x="10216.3" y="-891.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.unit</text>
+</g>
+<!-- B_:genid42&#45;&gt;B_:genid40 -->
+<g id="edge67" class="edge"><title>B_:genid42-&gt;B_:genid40</title>
+<path fill="none" stroke="black" d="M5699.71,-849.147C6003.92,-848.284 10207.4,-836.348 10585.7,-835.274"/>
+<polygon fill="black" stroke="black" points="10585.7,-838.774 10595.7,-835.245 10585.7,-831.774 10585.7,-838.774"/>
+<text text-anchor="middle" x="10216.3" y="-840.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.system</text>
+</g>
+<!-- B_:genid42&#45;&gt;B_:genid41 -->
+<g id="edge68" class="edge"><title>B_:genid42-&gt;B_:genid41</title>
+<path fill="none" stroke="black" d="M5699.47,-849.227C6004.72,-849.733 10288.5,-855.656 10395.8,-789.197 10410.7,-779.99 10399.6,-764.293 10413.8,-754.197 10465.7,-717.526 10544.6,-719.379 10585.7,-723.494"/>
+<polygon fill="black" stroke="black" points="10585.5,-726.988 10595.8,-724.625 10586.2,-720.031 10585.5,-726.988"/>
+<text text-anchor="middle" x="10216.3" y="-817.997" font-family="Times,serif" font-size="14.00">fhir:Quantity.code</text>
+</g>
+<!-- B_:genid43 -->
+<g id="node72" class="node"><title>B_:genid43</title>
+<ellipse fill="none" stroke="green" cx="839.561" cy="-820.197" rx="18" ry="18"/>
+</g>
+<!-- B_:genid43&#45;&gt;L0|Datatype: xsd:integer -->
+<g id="edge69" class="edge"><title>B_:genid43-&gt;L0|Datatype: xsd:integer</title>
+<path fill="none" stroke="black" d="M846.256,-836.984C865.617,-891.319 934.419,-1063.53 1053.84,-1144.2 1156.05,-1213.23 1233.47,-1117.47 1325.84,-1199.2 1344.79,-1215.96 1323.36,-1238.36 1343.84,-1253.2 1441.42,-1323.88 9911.2,-1240.06 10018.8,-1294.2 10030.8,-1300.19 10025.2,-1311.65 10036.8,-1318.2 10106.7,-1357.59 10316.2,-1344.7 10395.8,-1354.2 10435.8,-1358.96 10479.8,-1364.91 10517.7,-1370.25"/>
+<polygon fill="black" stroke="black" points="10517.3,-1373.73 10527.7,-1371.67 10518.2,-1366.8 10517.3,-1373.73"/>
+<text text-anchor="middle" x="5681.34" y="-1298" font-family="Times,serif" font-size="14.00">fhir:index</text>
+</g>
+<!-- B_:genid43&#45;&gt;B_:genid37 -->
+<g id="edge70" class="edge"><title>B_:genid43-&gt;B_:genid37</title>
+<path fill="none" stroke="black" d="M857.677,-818.453C893.849,-814.852 980.747,-806.643 1053.84,-803.197 2983.92,-712.188 5371.47,-732.169 5652.87,-734.915"/>
+<polygon fill="black" stroke="black" points="5652.98,-738.416 5663.01,-735.015 5653.05,-731.416 5652.98,-738.416"/>
+<text text-anchor="middle" x="1189.84" y="-806.997" font-family="Times,serif" font-size="14.00">fhir:Observation.referenceRange.low</text>
+</g>
+<!-- B_:genid43&#45;&gt;B_:genid42 -->
+<g id="edge71" class="edge"><title>B_:genid43-&gt;B_:genid42</title>
+<path fill="none" stroke="black" d="M857.608,-820.299C1156,-822.087 5276.19,-846.775 5652.82,-849.032"/>
+<polygon fill="black" stroke="black" points="5653.07,-852.533 5663.09,-849.093 5653.11,-845.533 5653.07,-852.533"/>
+<text text-anchor="middle" x="1189.84" y="-826.997" font-family="Times,serif" font-size="14.00">fhir:Observation.referenceRange.high</text>
+</g>
+<!-- Rfhir:Observation/f001 -->
+<g id="node73" class="node"><title>Rfhir:Observation/f001</title>
+<ellipse fill="none" stroke="blue" cx="124.139" cy="-769.197" rx="110.48" ry="18"/>
+<text text-anchor="middle" x="124.139" y="-765.497" font-family="Times,serif" font-size="14.00">fhir:Observation/f001</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid1 -->
+<g id="edge74" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid1</title>
+<path fill="none" stroke="black" d="M124.655,-787.205C123.23,-870.236 126.065,-1222.1 266.278,-1457.2 378.265,-1644.97 449.969,-1671.06 643.278,-1773.2 699.072,-1802.68 772.415,-1817.83 811.419,-1824.27"/>
+<polygon fill="black" stroke="black" points="811.042,-1827.76 821.466,-1825.86 812.137,-1820.84 811.042,-1827.76"/>
+<text text-anchor="middle" x="445.778" y="-1766" font-family="Times,serif" font-size="14.00">fhir:Resource.id</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid3 -->
+<g id="edge75" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid3</title>
+<path fill="none" stroke="black" d="M127.655,-787.367C139.681,-871.856 193.73,-1225.59 266.278,-1306.2 380.421,-1433.01 520.977,-1307.17 625.278,-1442.2 671.183,-1501.63 605.018,-1545.58 643.278,-1610.2 682.838,-1677.01 769.557,-1719.02 812.876,-1736.64"/>
+<polygon fill="black" stroke="black" points="811.824,-1739.98 822.41,-1740.4 814.396,-1733.47 811.824,-1739.98"/>
+<text text-anchor="middle" x="445.778" y="-1446" font-family="Times,serif" font-size="14.00">fhir:DomainResource.text</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid7 -->
+<g id="edge76" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid7</title>
+<path fill="none" stroke="black" d="M124.949,-787.278C125.284,-854.655 135.973,-1093.34 266.278,-1212.2 386.981,-1322.29 515.357,-1170.33 625.278,-1291.2 669.564,-1339.89 610.175,-1381.31 643.278,-1438.2 683.372,-1507.1 770.538,-1553.24 813.541,-1572.71"/>
+<polygon fill="black" stroke="black" points="812.181,-1575.94 822.743,-1576.77 815.009,-1569.53 812.181,-1575.94"/>
+<text text-anchor="middle" x="445.778" y="-1295" font-family="Times,serif" font-size="14.00">fhir:Observation.identifier</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid8 -->
+<g id="edge77" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid8</title>
+<path fill="none" stroke="black" d="M161.149,-752.192C189.182,-739.691 229.396,-723.348 266.278,-714.197 471.585,-663.257 728.279,-651.438 811.311,-648.869"/>
+<polygon fill="black" stroke="black" points="811.529,-652.364 821.424,-648.576 811.327,-645.367 811.529,-652.364"/>
+<text text-anchor="middle" x="445.778" y="-717.997" font-family="Times,serif" font-size="14.00">fhir:Observation.status</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid13 -->
+<g id="edge78" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid13</title>
+<path fill="none" stroke="black" d="M125.803,-787.435C129.116,-849.199 148.871,-1051.87 266.278,-1146.2 391.909,-1247.14 513.772,-1080.84 625.278,-1197.2 653.398,-1226.54 615.472,-1349.56 643.278,-1379.2 686.724,-1425.51 769.235,-1421.63 811.751,-1415.89"/>
+<polygon fill="black" stroke="black" points="812.272,-1419.35 821.65,-1414.42 811.245,-1412.43 812.272,-1419.35"/>
+<text text-anchor="middle" x="445.778" y="-1201" font-family="Times,serif" font-size="14.00">fhir:Observation.code</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid16 -->
+<g id="edge79" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid16</title>
+<path fill="none" stroke="black" d="M139.567,-751.321C163.06,-723.475 212.402,-670.054 266.278,-642.197 458.252,-542.932 725.173,-519.596 810.893,-514.516"/>
+<polygon fill="black" stroke="black" points="811.309,-517.998 821.099,-513.948 810.92,-511.009 811.309,-517.998"/>
+<text text-anchor="middle" x="445.778" y="-645.997" font-family="Times,serif" font-size="14.00">fhir:Observation.subject</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid18 -->
+<g id="edge80" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid18</title>
+<path fill="none" stroke="black" d="M129.104,-751.215C140.673,-703.476 179.226,-573.306 266.278,-516.197 357.509,-456.346 710.084,-457.143 811.269,-458.657"/>
+<polygon fill="black" stroke="black" points="811.505,-462.161 821.562,-458.827 811.621,-455.162 811.505,-462.161"/>
+<text text-anchor="middle" x="445.778" y="-519.997" font-family="Times,serif" font-size="14.00">fhir:Observation.effectivePeriod</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid19 -->
+<g id="edge81" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid19</title>
+<path fill="none" stroke="black" d="M126.636,-751.041C132.406,-694.06 158.625,-518.072 266.278,-442.197 355.299,-379.454 710.129,-396.929 811.43,-403.337"/>
+<polygon fill="black" stroke="black" points="811.262,-406.833 821.468,-403.989 811.716,-399.848 811.262,-406.833"/>
+<text text-anchor="middle" x="445.778" y="-445.997" font-family="Times,serif" font-size="14.00">fhir:Observation.issued</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid22 -->
+<g id="edge82" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid22</title>
+<path fill="none" stroke="black" d="M169.016,-785.661C259.102,-820.551 469.536,-907.698 625.278,-1016.2 705.756,-1072.26 785.688,-1158.09 820.474,-1197.33"/>
+<polygon fill="black" stroke="black" points="817.961,-1199.77 827.196,-1204.96 823.216,-1195.14 817.961,-1199.77"/>
+<text text-anchor="middle" x="445.778" y="-1020" font-family="Times,serif" font-size="14.00">fhir:Observation.performer</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid27 -->
+<g id="edge83" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid27</title>
+<path fill="none" stroke="black" d="M228.217,-763.009C438.098,-750.638 930.207,-722.79 1343.84,-708.197 3150.33,-644.463 5381.87,-622 5652.97,-619.448"/>
+<polygon fill="black" stroke="black" points="5653.14,-622.947 5663.11,-619.353 5653.07,-615.947 5653.14,-622.947"/>
+<text text-anchor="middle" x="839.561" y="-743.997" font-family="Times,serif" font-size="14.00">fhir:Observation.valueQuantity</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid32 -->
+<g id="edge84" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid32</title>
+<path fill="none" stroke="black" d="M129.58,-787.325C142.21,-834.965 182.928,-964.595 266.278,-1031.2 395.672,-1134.59 515.088,-1007.54 625.278,-1131.2 659.403,-1169.49 613.764,-1203.24 643.278,-1245.2 684.685,-1304.05 769.13,-1333.89 812.128,-1345.79"/>
+<polygon fill="black" stroke="black" points="811.308,-1349.2 821.871,-1348.38 813.103,-1342.43 811.308,-1349.2"/>
+<text text-anchor="middle" x="445.778" y="-1135" font-family="Times,serif" font-size="14.00">fhir:Observation.interpretation</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;B_:genid43 -->
+<g id="edge85" class="edge"><title>Rfhir:Observation/f001-&gt;B_:genid43</title>
+<path fill="none" stroke="black" d="M225.842,-776.396C392.269,-788.293 715.839,-811.424 811.378,-818.253"/>
+<polygon fill="black" stroke="black" points="811.162,-821.747 821.386,-818.969 811.661,-814.765 811.162,-821.747"/>
+<text text-anchor="middle" x="445.778" y="-807.997" font-family="Times,serif" font-size="14.00">fhir:Observation.referenceRange</text>
+</g>
+<!-- Rfhir:Observation -->
+<g id="node74" class="node"><title>Rfhir:Observation</title>
+<ellipse fill="none" stroke="blue" cx="839.561" cy="-351.197" rx="87.1846" ry="18"/>
+<text text-anchor="middle" x="839.561" y="-347.497" font-family="Times,serif" font-size="14.00">fhir:Observation</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;Rfhir:Observation -->
+<g id="edge72" class="edge"><title>Rfhir:Observation/f001-&gt;Rfhir:Observation</title>
+<path fill="none" stroke="black" d="M125.172,-751.161C126.373,-687.237 139.941,-470.34 266.278,-377.197 340.422,-322.533 606.904,-333.364 748.556,-343.529"/>
+<polygon fill="black" stroke="black" points="748.722,-347.05 758.951,-344.289 749.233,-340.069 748.722,-347.05"/>
+<text text-anchor="middle" x="445.778" y="-380.997" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- Rfhir:treeRoot -->
+<g id="node75" class="node"><title>Rfhir:treeRoot</title>
+<ellipse fill="none" stroke="blue" cx="839.561" cy="-297.197" rx="70.6878" ry="18"/>
+<text text-anchor="middle" x="839.561" y="-293.497" font-family="Times,serif" font-size="14.00">fhir:treeRoot</text>
+</g>
+<!-- Rfhir:Observation/f001&#45;&gt;Rfhir:treeRoot -->
+<g id="edge73" class="edge"><title>Rfhir:Observation/f001-&gt;Rfhir:treeRoot</title>
+<path fill="none" stroke="black" d="M127.979,-751.112C140.509,-673.831 193.474,-372.719 266.278,-317.197 421.126,-199.105 674.07,-250.025 784.326,-280.452"/>
+<polygon fill="black" stroke="black" points="783.653,-283.898 794.227,-283.236 785.548,-277.159 783.653,-283.898"/>
+<text text-anchor="middle" x="445.778" y="-320.997" font-family="Times,serif" font-size="14.00">fhir:nodeRole</text>
+</g>
+<!-- Rfhir:Observation/f001.ttl -->
+<g id="node78" class="node"><title>Rfhir:Observation/f001.ttl</title>
+<ellipse fill="none" stroke="blue" cx="124.139" cy="-1936.2" rx="124.278" ry="18"/>
+<text text-anchor="middle" x="124.139" y="-1932.5" font-family="Times,serif" font-size="14.00">fhir:Observation/f001.ttl</text>
+</g>
+<!-- Rowl:Ontology -->
+<g id="node79" class="node"><title>Rowl:Ontology</title>
+<ellipse fill="none" stroke="blue" cx="839.561" cy="-1990.2" rx="71.4873" ry="18"/>
+<text text-anchor="middle" x="839.561" y="-1986.5" font-family="Times,serif" font-size="14.00">owl:Ontology</text>
+</g>
+<!-- Rfhir:Observation/f001.ttl&#45;&gt;Rowl:Ontology -->
+<g id="edge88" class="edge"><title>Rfhir:Observation/f001.ttl-&gt;Rowl:Ontology</title>
+<path fill="none" stroke="black" d="M212.359,-1948.95C230.171,-1951.27 248.807,-1953.49 266.278,-1955.2 441.363,-1972.31 647.454,-1982.48 758.294,-1987.13"/>
+<polygon fill="black" stroke="black" points="758.256,-1990.63 768.393,-1987.55 758.547,-1983.64 758.256,-1990.63"/>
+<text text-anchor="middle" x="445.778" y="-1985" font-family="Times,serif" font-size="14.00">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</text>
+</g>
+<!-- Rfhir:fhir.ttl -->
+<g id="node80" class="node"><title>Rfhir:fhir.ttl</title>
+<ellipse fill="none" stroke="blue" cx="839.561" cy="-1936.2" rx="59.5901" ry="18"/>
+<text text-anchor="middle" x="839.561" y="-1932.5" font-family="Times,serif" font-size="14.00">fhir:fhir.ttl</text>
+</g>
+<!-- Rfhir:Observation/f001.ttl&#45;&gt;Rfhir:fhir.ttl -->
+<g id="edge89" class="edge"><title>Rfhir:Observation/f001.ttl-&gt;Rfhir:fhir.ttl</title>
+<path fill="none" stroke="black" d="M248.593,-1936.2C399.336,-1936.2 649.047,-1936.2 769.442,-1936.2"/>
+<polygon fill="black" stroke="black" points="769.634,-1939.7 779.634,-1936.2 769.634,-1932.7 769.634,-1939.7"/>
+<text text-anchor="middle" x="445.778" y="-1940" font-family="Times,serif" font-size="14.00">owl:imports</text>
+</g>
+<!-- Rhttp://build.fhir.org/Observation/f001.ttl -->
+<g id="node81" class="node"><title>Rhttp://build.fhir.org/Observation/f001.ttl</title>
+<ellipse fill="none" stroke="blue" cx="839.561" cy="-1882.2" rx="196.065" ry="18"/>
+<text text-anchor="middle" x="839.561" y="-1878.5" font-family="Times,serif" font-size="14.00">http://build.fhir.org/Observation/f001.ttl</text>
+</g>
+<!-- Rfhir:Observation/f001.ttl&#45;&gt;Rhttp://build.fhir.org/Observation/f001.ttl -->
+<g id="edge90" class="edge"><title>Rfhir:Observation/f001.ttl-&gt;Rhttp://build.fhir.org/Observation/f001.ttl</title>
+<path fill="none" stroke="black" d="M212.359,-1923.45C230.171,-1921.13 248.807,-1918.9 266.278,-1917.2 394.419,-1904.67 539.167,-1895.87 651.028,-1890.22"/>
+<polygon fill="black" stroke="black" points="651.252,-1893.72 661.065,-1889.72 650.902,-1886.72 651.252,-1893.72"/>
+<text text-anchor="middle" x="445.778" y="-1921" font-family="Times,serif" font-size="14.00">owl:versionIRI</text>
+</g>
+</g>
+</svg>

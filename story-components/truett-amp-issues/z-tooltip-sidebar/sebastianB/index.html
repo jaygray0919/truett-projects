@@ -1,0 +1,523 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2"  crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v9-latin-regular.woff2" crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/fira-mono/fira-mono-v7-latin-500.woff2" crossorigin />
+<title>
+SebastianB memo
+</title>
+<link rel="canonical" href="https://ontomatica.io/canonical.html"/>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+@font-face {font-family:"Noto Sans"; font-style:normal; font-weight:regular; font-display:optional; src:local("Noto Sans"),url(https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2) format("woff2");}
+
+@font-face {font-family:"Noto Serif"; font-style:normal; font-weight:regular; font-display:optional; src:local("Noto Serif"),url(https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v9-latin-regular.woff2) format("woff2");}
+
+@font-face {font-family:"Fira Mono"; font-style:normal; font-weight:400; font-display:optional; src:local("Fira Mono"),url(https://s3.amazonaws.com/benetta.net/fonts/fira-mono/fira-mono-v7-latin-500.woff2) format("woff2");}
+
+@font-face {font-family:"system"; font-style:normal; font-weight:300; src:local(".SFNSText-Light"),(".HelveticaNeueDeskInterface-Light"),(".LucidaGrandeUI"),("Ubuntu Light"),("Segoe UI Light"),("Roboto-Light"),("DroidSans"),("Tahoma")}
+@font-face {font-family:"system"; font-style:italic; font-weight:300; src:local(".SFNSText-Light"),(".HelveticaNeueDeskInterface-Light"),(".LucidaGrandeUI"),("Ubuntu Light"),("Segoe UI Light"),("Roboto-Light"),("DroidSans"),("Tahoma")}
+@font-face {font-family:"system"; font-style:normal; font-weight:400; src:local(".SFNSText-Light"),(".HelveticaNeueDeskInterface-Light"),(".LucidaGrandeUI"),("Ubuntu Light"),("Segoe UI Light"),("Roboto-Light"),("DroidSans"),("Tahoma")}
+@font-face {font-family:"system"; font-style:italic; font-weight:400; src:local(".SFNSText-Light"),(".HelveticaNeueDeskInterface-Light"),(".LucidaGrandeUI"),("Ubuntu Light"),("Segoe UI Light"),("Roboto-Light"),("DroidSans"),("Tahoma")}
+@font-face {font-family:"system"; font-style:normal; font-weight:500; src:local(".SFNSText-Light"),(".HelveticaNeueDeskInterface-Light"),(".LucidaGrandeUI"),("Ubuntu Light"),("Segoe UI Light"),("Roboto-Light"),("DroidSans"),("Tahoma")}
+@font-face {font-family:"system"; font-style:italic; font-weight:500; src:local(".SFNSText-Light"),(".HelveticaNeueDeskInterface-Light"),(".LucidaGrandeUI"),("Ubuntu Light"),("Segoe UI Light"),("Roboto-Light"),("DroidSans"),("Tahoma")}
+@font-face {font-family:"system"; font-style:normal; font-weight:700; src:local(".SFNSText-Light"),(".HelveticaNeueDeskInterface-Light"),(".LucidaGrandeUI"),("Ubuntu Light"),("Segoe UI Light"),("Roboto-Light"),("DroidSans"),("Tahoma")}
+
+html{
+  padding-left:  2vw;
+  padding-right: 2vw;
+}
+
+h1{
+  font-family:"Noto Sans",sans-serif;
+}
+
+h2{
+  font-family:"Noto Serif",serif;
+
+}
+
+dt{
+  font-family:"Noto Serif",serif;
+  font-weight:800;
+}
+
+dd{
+  font-family:"Noto Sans",sans-serif;
+  font-size:1em;
+  font-weight:400;
+}
+
+p{
+  font-family:"Noto Sans",sans-serif;
+}
+
+.mono{
+  font-family:"Fira Mono",monospace,serif;
+  margin-bottom:10px;
+  overflow:auto;
+  width:auto;
+  padding:5px;
+  background-color:#eee;
+}
+
+a[href^="http://"]:after, a[href^="https://"]:after {
+  content:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -14 36 36' width='24' height='24'><path stroke='lightgray' d='M10 6v2H5v11h11v-5h2v6a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'/></svg>");
+  font-style:normal;
+  display:inline-block;
+  text-decoration:none;
+  padding-left:3px;
+}
+
+.status{
+  padding-left:2.6vw;
+  font-weight:800;
+}
+
+.s-val{
+  padding-left:2.6vw;
+  font-weight:400;
+  font-style:italic;
+}
+
+</style>
+</head>
+
+<body>
+<h1>
+Scenarios: implementing amp-tooltip
+</h1>
+<h2>
+Differences between desktop and mobile devices dictate different techniques
+</h2>
+
+<dl>
+<dt>
+Scenario 1
+</dt>
+<dd>
+Mouseover SVG items (not mobile-friendly)
+</dd>
+<dd>
+<a href="https://afdsi.com/graph-kit-symbols/" target="_blank">https://afdsi.com/graph-kit-symbols/</a>
+</dd>
+<dd>
+<pre class="mono">
+#component       .tooltip {visibility:hidden;}
+#component:hover .tooltip {visibility:visible;}
+.tooltip text {font-size:11px;}
+.tooltip rect {fill:yellow; stroke:blue;}
+tspan {font-size:100%; font-smooth:always; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;}
+.tooltip text {font-size:11px;}
+.tooltip rect {fill:yellow; stroke:blue;}
+</pre>
+</dd>
+<dd>
+<pre class="mono">
+&lt;text&gt;&lt;tspan x="42%" y="10%" dominant-baseline="middle" text-anchor="middle"&gt;Plant health&lt;/tspan&gt;&lt;/text&gt;
+</pre>
+</dd>
+<p class="status">
+Status
+</p>
+<p class="s-val">
+Works well for simple tooltip information for desktop
+</p>
+</dl>
+
+<hr>
+<dl>
+<dt>
+Scenario 2
+</dt>
+<dd>
+<ul>
+<li>
+selector-based design for tooltip
+</li>
+<li>
+one amp-state avec hierarchical JSON
+</li>
+<li>
+one amp-mustache template
+</li>
+<li>
+amp-lightbox for each data item
+</li>
+</ul>
+</dd>
+<dd>
+<a href="https://afdsi.com/__amp-issues/tooltip-1/" target="_blank">https://afdsi.com/__amp-issues/tooltip-1/</a>
+</dd>
+<dd>
+<pre class="mono">
+&lt;amp-list
+      src="amp-state:localState"
+    width="auto"
+   height="200"
+   layout="fixed-height"
+&gt;
+&lt;amp-state
+  class="m1"
+     id="localState"
+&gt;
+&lt;script type="application/json"&gt;
+{"items": [{"wd-Q89": {}},{"wd-Q177": {}}]}
+&lt;/script&gt;
+&lt;/amp-state&gt;
+
+---
+
+{{#wd-Q89}}
+&lt;div class="p-span keep-together"&gt;
+
+&lt;span&gt;
+The European languages are members of the same family.
+&lt;/span&gt;
+
+&lt;span class=""&gt;
+&lt;sup&gt;
+&lt;button
+        class="button-o button-o1"
+           on="tap:my-lightbox-{{lightbox-id}}"
+         role="button"
+     tabindex="{{button-tabindex}}"
+&gt;
+{{button-label}}
+&lt;/button&gt;
+&lt;/sup&gt;
+&lt;/span&gt;
+
+&lt;amp-lightbox scrollable
+      id="my-lightbox-{{lightbox-id}}"
+  layout="nodisplay"
+&gt;
+
+</pre>
+</dd>
+<p class="status">
+Status
+</p>
+<p class="s-val">
+Hierarchical JSON and item selector work well. Can have 2+ items in a single paragraph.
+</p>
+</dl>
+
+<hr>
+<dl>
+<dt>
+Scenario 3
+</dt>
+<dd>
+<ul>
+<li>
+multiple amp-list avec single-item
+</li>
+<li>
+multiple amp-state-json
+</li>
+<li>
+multiple amp-mustache templates
+</li>
+<li>
+amp-lightbox for each data item
+</li>
+<li>
+FAILS: .keep-together {display:inline;}
+</li>
+<li>
+amp-template injects trailing line-break
+</li>
+</ul>
+</dd>
+<dd>
+<a href="https://afdsi.com/__amp-issues/list-samouri/v6-40/" target="_blank">https://afdsi.com/__amp-issues/list-samouri/v6-40/</a>
+</dd>
+<dd>
+<pre class="mono">
+&lt;template
+    id="mst-1"
+  type="amp-mustache"
+ class="keep-together"
+&gt;
+
+---
+
+&lt;template
+    id="mst-2"
+  type="amp-mustache"
+ class="keep-together"
+&gt;
+
+---
+
+&lt;amp-state
+     id="localState-1"
+&gt;
+&lt;script type="application/json"&gt;
+{"items": {}
+&lt;/script&gt;
+&lt;/amp-state&gt;
+
+&lt;amp-state
+     id="localState-2"
+&gt;
+&lt;script type="application/json"&gt;
+{"items": {}
+&lt;/script&gt;
+&lt;/amp-state&gt;
+
+&lt;amp-list
+      src="amp-state:localState-1"
+ template="mst-1"
+    width="auto"
+   height="100"
+   layout="fixed-height"
+   single-item
+&gt;
+&lt;/amp-list&gt;
+
+&lt;amp-list
+      src="amp-state:localState-2"
+ template="mst-2"
+    width="auto"
+   height="200"
+   layout="fixed-height"
+   single-item
+&gt;
+&lt;/amp-list&gt;
+</pre>
+</dd>
+<p class="status">
+Status
+</p>
+<p class="s-val">
+Template cannot be used for &lt;p&gt;&lt;span&gt;item-1&lt;/span&gt;&lt;span&gt;item-2&lt;/span&gt;&lt;/p&gt; becasue &lt;template&gt; is a block-level element.
+</p>
+</dl>
+
+<hr>
+<dl>
+<dt>
+Scenario 4
+</dt>
+<dd>
+Flavonoid SVG, building on amp-seatmap example
+</dd>
+<dd>
+<a href="https://afdsi.com/flavonoids/" target="_blank">https://afdsi.com/flavonoids/</a>
+</dd>
+<p class="status">
+Status
+</p>
+<p class="s-val">
+Works well
+</p>
+</dl>
+<hr>
+<dl>
+<dt>
+Scenario 5
+</dt>
+<dd>
+simple SVG
+</dd>
+<dd>
+<a href="https://afdsi.com/__amp-issues/tooltip-0/" target="_blank">https://afdsi.com/__amp-issues/tooltip-0/</a>
+</dd>
+<dd>
+<pre class="mono">
+&lt;amp-selector multiple
+          on="select:AMP.setState({selectedTab: event.targetOption})"
+  [selected]="selectedTab"
+        role="tablist"
+      layout="container"
+&gt;
+
+&lt;svg viewBox="100 0 432 339" xmlns="http://www.w3.org/2000/svg"&gt;
+&lt;g id="graph0" class="graph" transform="scale(0.44 0.44) rotate(0) translate(4 760)"&gt;
+
+&lt;g id="node1"&gt;
+&lt;ellipse
+    fill="beige"
+  stroke="sienna"
+      cx="511.25"
+      cy="-738"
+      rx="50.09"
+      ry="18"
+/&gt;
+&lt;rect
+   option="{{button-label}}"
+     fill="yellow"
+     role="button"
+ tabindex="0"
+        x="500"
+        y="-750"
+    width="25"
+   height="25"
+       rx="6"
+       ry="6"
+       on="tap:my-lightbox-{{lightbox-id}}"
+/&gt;
+&lt;!-- &lt;text class="button-o button-o1" x="508" y="-732"&gt;{{button-label}}&lt;/text&gt; --&gt;
+&lt;text class="" x="508" y="-732"&gt;{{button-label}}&lt;/text&gt;
+&lt;/g&gt;</pre>
+</dd>
+<p class="status">
+Status
+</p>
+<p class="s-val">
+Works well
+</p>
+</dl>
+
+<hr>
+<dl>
+<dt>
+Scenario 6
+</dt>
+<dd>
+complex SVG - IDMP
+</dd>
+<dd>
+<a href="https://afdsi.com/__amp-issues/idmp/" target="_blank">https://afdsi.com/__amp-issues/idmp/</a>
+</dd>
+<dd>
+<pre class="mono">
+{{#items}}
+&lt;text class="cls-173" transform="translate(58.74 21.88)"&gt;&lt;tspan xml:space="preserve"&gt;{{be}}&lt;/tspan&gt;&lt;/text&gt;
+&lt;text class="cls-9" transform="translate(9.13 56.45)"&gt;{{bf}}&lt;/text&gt;
+&lt;rect
+       option="{{button-label}}"
+         fill="#04a4dc"
+         role="button"
+     tabindex="0"
+            x="55"
+            y="64"
+        width="8"
+       height="8"
+           rx="1"
+           ry="1"
+           on="tap:my-lightbox-{{lightbox-id}}"
+/&gt;
+&lt;!-- hack --&gt;
+&lt;text class="cls-9"   transform="translate(68 71)"&gt;{{button-label}}&lt;/text&gt;
+
+&lt;text class="cls-9"   transform="translate(9.13 71)"&gt;{{bk}}&lt;/text&gt;
+&lt;text class="cls-173" transform="translate(59.43 287.1)"&gt;&lt;tspan xml:space="preserve"&gt;{{bg}}&lt;/tspan&gt;&lt;/text&gt;
+&lt;text class="cls-174" transform="translate(18.99 299.43)"&gt;{{bh}}&lt;/text&gt;
+&lt;text class="cls-175" transform="translate(10.84 323.24)"&gt;{{bi}}&lt;/text&gt;
+&lt;text class="cls-174" transform="translate(20.91 35.78)"&gt;{{bj}}&lt;/text&gt;
+{{/items}}
+
+---
+
+&lt;amp-list single-item
+	items="."
+	template="SVG-template"
+	width="auto"
+	height="10"
+	layout="fixed-height"
+	src="amp-state:localState"
+	binding="no"
+>
+&lt;amp-state id="localState">
+&lt;script type="application/json">
+{"items":[
+{"bk":"Read more"},
+{"button-label": "1"}
+]}
+&lt;/script>
+&lt;/amp-state>
+&lt;/amp-list>
+
+</pre>
+</dd>
+<p class="status">
+Status
+</p>
+<p class="s-val">
+Cannot assign button-label to SVG selector (blue rectangle)
+</p>
+</dl>
+
+<hr>
+<dl>
+<dt>
+Issues Summary
+</dt>
+<dd>
+<ol>
+<li>
+Cannot have multiple single item templates in a paragraph
+</li>
+<li>
+Cannot link an item identifier to a selected rectangle (Scenario 6)
+</li>
+<li>
+Cannot initialize amp-lightbox-id using {{#items}}{{amp-lightbox-id}}{{/items}}. Therefore, may not be able to have 2+ lightbox-id on same page (have not tested this yet)
+</li>
+<li>
+Irregular use of {{#items}}{{reference}}{{/items}}
+</li>
+<dl>
+<dt></dt>
+<dd>
+<pre class="mono">
+&lt;amp-img
+       src="{{#items}}{{image-source}}{{/items}}"
+     width="{{#items}}{{image-width}}{{/items}}"
+    height="{{#items}}{{image-height}}{{/items}}"
+    layout="{{#items}}{{image-control}}{{/items}}"
+       alt="{{#items}}{{image-alt-text}}{{/items}}"
+&gt;&lt;/amp-img&gt;
+</pre>
+</dd>
+<p>
+vs.
+</p>
+<dd>
+<pre class="mono">
+<div role="tabpanel" class="tabContent">
+{{#items}}
+&lt;dl&gt;
+&lt;dt  class="{{dt-en-us}}"&gt;{{lex-en-us-label}}&lt;/dt&gt;
+&lt;dd  class="{{dd-en-us}}"&gt;{{lex-en-us-description}}&lt;/dd&gt;
+&lt;/dl&gt;
+{{/items}}
+</pre>
+</dd>
+</dl>
+</ol>
+</dd>
+</dl>
+
+<hr>
+<dl>
+<dt>
+Request
+</dt>
+<dd>
+<ol>
+<li>
+Allow use of foreignObject in SVG
+</li>
+<li>
+Change &lt;template&gt; from block to inline element
+</li>
+</ol>
+</dd>
+</dl>
+<hr>
+<hr>
+</body>
+</html>

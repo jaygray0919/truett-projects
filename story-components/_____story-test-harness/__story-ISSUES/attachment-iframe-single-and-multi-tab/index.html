@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+issue: amp-story-attachment and amp-selector
+</title>
+<link rel="canonical" href="http://afdsi.com/___supplier/paula-perez/story-22-04-03/index.html" />
+
+<link rel="preload" as="script"                       href="https://cdn.ampproject.org/v0.js" />
+<link rel="preload" as="script"                       href="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
+
+<link rel="preload" as="font" type="font/ttf"   href="https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="https://s3.amazonaws.com/benetta.net/fonts/robotoflex-woff2/RobotoFlex.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2" crossorigin />
+
+<script  async                                            src="https://cdn.ampproject.org/v0.js"></script>
+<script  async custom-element="amp-bind"                  src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script  async custom-element="amp-form"                  src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script  async custom-element="amp-iframe"                src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<script  async custom-element="amp-list"                  src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script  async custom-element="amp-selector"              src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<script  async custom-element="amp-story"                 src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-template="amp-mustache"              src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
+<style amp-custom="">
+
+/***************************
+*   Font: Recursive Variable
+*   Recursive-VF.ttf
+*/
+
+@font-face {
+    font-family: Recursive-2019;
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") format("truetype");
+    font-display: swap;
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+}
+
+/*******************
+*   Font: Zilla Slab
+*/
+
+@font-face {
+    font-family: ZillaSlab;
+    src:url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2') format('woff2');
+    font-display: swap;
+    text-align: initial;
+    font-style: normal;
+    font-weight: 100 600;
+}
+
+/****************************
+*   Font: Roboto Flex Regular
+*/
+
+@font-face {
+    font-family: RobotoFlex;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/robotoflex-woff2/RobotoFlex.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+/****************************
+*   Font: Noto Serif
+*/
+@font-face {
+    font-family: NotoSerif;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/***********************
+*   Font: World of Water
+*/
+
+@font-face {
+    font-family: world-of-water;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {font-family:system; font-style:normal; font-weight:300; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:italic; font-weight:300; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:normal; font-weight:400; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:italic; font-weight:400; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:normal; font-weight:500; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:italic; font-weight:500; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:normal; font-weight:700; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face {font-family:system; font-style:italic; font-weight:700; src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+
+/* used by recursive */
+:root {
+    --MONO: 0;   /* Monospace    */
+    --CASL: 0;   /* Casual       */
+    --slnt: 0;   /* Upright      */
+    --CRSV: 0.5; /* Auto Cursive */
+}
+
+*,
+*:before,
+*:after {
+    font-variation-settings: 
+        "MONO" var(--MONO),
+        "CASL" var(--CASL),
+        "slnt" var(--slnt),
+        "CRSV" var(--CRSV);
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    color: #440044; /* set to background SVG color */
+    border: none;
+}
+
+h2 {
+    font-family: ZillaSlab;
+    font-size: calc(4 * var(--story-page-vw));
+    font-weight: 100;
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+}
+
+/* re-calibrate font-size for question and solution headers */
+.h2-q1 {
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    background-color: #808080;
+    opacity: 0.7;
+    padding: 2px 18px 2px 18px;
+}
+.h2-q2 {
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    background-color: #808080;
+    opacity: 0.7;
+    padding: 6px 18px 6px 18px;
+}
+.h2-q3 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+    background-color: #808080;
+    opacity: 0.7;
+    padding: 6px 18px 6px 18px;
+}
+
+.h2-s1 {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 400;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0.5;
+    padding: 0px 30px 15px 30px;
+}
+.h2-s2 {
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0.5;
+    padding: 0px 30px 15px 30px;
+}
+.h2-s3 {
+    display: inline-block;
+    font-weight: 400;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0.5;
+    padding: 0px 30px 15px 30px;
+}
+
+.h2-components {
+    display: inline-block;
+    font-size: 0.8em;
+    border: none;
+    color: #ffffff;
+}
+.h2-rid-set {
+    display: inline-block;
+    font-size: 0.9em;
+    border: none;
+    color: #ffffff;
+}
+
+/*
+    font-family: Amstelvar-Roman;
+    font-family: ZillaSlab;
+*/
+
+h3 {
+    font-family: ZillaSlab;
+    font-size: calc(2.6 * var(--story-page-vw));
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #ffffff;
+    border: none;
+}
+
+h4 {
+    font-family: Recursive-2019;
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-top: 1em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h4:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+h5 {
+    font-family: Recursive-2019;
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-bottom: 0.8em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h5:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+li {
+    font-family: Recursive-2019;
+    font-size: calc(1.2 * var(--story-page-vw));
+    font-weight: 300;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-bottom: 0.6em;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+li:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+.symbol {
+    font-size: 2em;
+    line-height: 0.5em;
+}
+
+/****************
+*   SDL additions
+*/
+
+.title-centered {
+    text-align: center;
+}
+
+.uline {
+    text-decoration: none;
+    position: relative;
+}
+
+.uline::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: #e6e6e6;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.uline:hover::before {
+    width: 70%;
+    background: #1f64ff;
+}
+
+.opacity3 {
+    opacity: 0.3;
+}
+.opacity6 {
+    opacity: 0.6;
+}
+.opacity9 {
+    opacity: 0.3;
+}
+
+/*************
+*   cover page
+*/
+
+.bg-w {
+    background-color: #fff;
+}
+
+.c-bottom {
+    align-content: end;
+}
+
+.color-p {
+    color: #ff0000;
+}
+
+.color-s {
+    color: #6c757d;
+}
+
+.cover-f {
+    width: 70%;
+}
+
+.d-flex {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+/* test change to em */
+.mb {
+    /* margin-bottom: 1rem; */
+    margin-bottom: 1em;
+}
+
+.ml-s {
+    /* margin-left: 0.5rem; */
+    margin-left: 0.5em;
+}
+
+.mx-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noedge {
+    padding: 0;
+}
+
+.paper {
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pb {
+    color: #440044;
+    /* padding-bottom: 1rem; */
+    padding-bottom: 1em;
+}
+
+.pt {
+    /* padding-top: 1rem; */
+    padding-top: 1em;
+}
+
+.sep-v {
+    border-left: 24px solid #ff0000;
+}
+
+.text-fatty {
+    font-family: Recursive-2019;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+/* end cover */
+
+
+/********************
+*   Attachment iFrame
+*/
+
+/* open target page */
+/* test switch to em */
+
+/*
+:target::before{content:'';display:block;visibility:hidden;height:120px;margin-top:-120px}
+
+.-on{display:flex;align-items:center}
+.-on{padding:0 0 14px;border:0;background:0 0}
+.-on:focus~.-oi,.-on:hover~.-oi{opacity:1;pointer-events:all;transition:opacity .2s cubic-bezier(.25,.1,.25,1)}
+*/
+.-n {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 0 1.5em;
+    margin: 0;
+}
+.-i,
+.-r {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.-r {
+    font-family: Recursive-2019;
+    line-height: 1.6rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #1f64ff;
+    line-height: 1.3;
+}
+.-i {
+    fill: #1f64ff;
+    padding: 0.438em 0;
+    margin-bottom: auto;
+    margin-right: 0.625em;
+    box-sizing: initial;
+}
+.-n:hover .-i,
+.-n:hover .-r {
+    transform: translateX(10px);
+}
+
+.ap-a-ico-g {
+    display: flex;
+    box-sizing: initial;
+    justify-content: center;
+}
+.ap-a-ico {
+    display: flex;
+    font-size: initial;
+    box-sizing: initial;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+}
+
+/* .ap--sampler{margin-bottom:7em} */
+.ap--sampler {
+    margin: 0px 0px 0px -15px;
+}
+@media (max-width: 320px) {
+    .ap--sampler {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .ap--sampler {
+        margin-bottom: 8vw;
+    }
+}
+
+/* no grid in amp-story */
+.ap-o-sampler {
+    grid-column: 3/-1;
+    width: 100%;
+    max-width: 1024px;
+    padding-left: 20px;
+}
+@media (min-width: 1680px) {
+    .ap-o-sampler {
+        grid-column: 5/-3;
+        padding-left: 0;
+    }
+}
+
+.ap-o-sampler-tab-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    background: #29323c;
+}
+.ap-o-sampler-tab {
+    cursor: pointer;
+    padding: 1.125em 1.75em;
+    border-right: 1px solid #3d444d;
+    background: #29323c;
+}
+.ap-o-sampler-tab.active {
+    background: #3d444d;
+}
+.ap-o-sampler-tab.active span {
+    opacity: 1;
+}
+.ap-o-sampler-tab-title {
+    font-size: 0.8125rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    opacity: 0.5;
+}
+.ap-o-sampler-iframe {
+    width: 100%;
+    height: auto;
+    background: #e6e6fa;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.4);
+}
+.ap-o-sampler-iframe [placeholder] {
+    display: flex;
+}
+[placeholder] .ap-o-sampler-iframe-source {
+    width: calc(50% - 4px);
+}
+.ap-o-sampler-link {
+    margin-top: 1em;
+    display: inline-block;
+}
+.ap-o-sampler-link {
+    margin-top: 1em;
+    display: inline-block;
+}
+
+
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+</head>
+<body>
+<amp-story
+    standalone
+    supports-landscape
+    title="Connect the Dots"
+    publisher="Ontomatica"
+    publisher-logo-src="https://example.com/logo/1x1.png"
+    poster-portrait-src="https://example.com/my-story/poster/3x4.jpg"
+>
+
+<amp-story-page id="item-11" data-item-label="title-page">
+<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-neural-network-440044-FFE1FFW" src="https://afdsi.com/___supplier/paula-perez/reference/background-neural-network-440044-FFE1FFW-w400-h371.svg" width="400" height="371" layout="responsive"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer class="noedge c-bottom mb" template="vertical"><div class="paper color-s bg-w cover-f d-flex"><div class="flex-fill pt pb"><hgroup class="ml-s"><div class="text-fatty color-p">connecting the dots</div><h1>Solve Problems with Machine Reasoning</h1></hgroup><div class="w-80 mx-a text-fatty">by Paula Perez</div></div><div class="sep-v"></div></div></amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="item-13" data-item-label="attachment-iframe">
+<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-440044-constellation" src="https://afdsi.com/___supplier/paula-perez/reference/background-440044-constellation-w997-h997.svg" width="997" height="997" layout="responsive"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer template="thirds" aspect-ratio="6:4">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>Attachment iFrame</h2>
+</div>
+</div>
+<div grid-area="middle-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<h3>attachment iFrame is single Wedge instance</h3>
+<h3>selectors work as expected</h3>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-page-attachment layout="nodisplay" cta-image="https://afdsi.com/___supplier/paula-perez/reference/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="iFrame in Attachment" data-title="iFrame in Attachment"><section class="ap--sampler"><div class="ap-o-sampler"><div class="ap-o-sampler-iframe"><amp-iframe height="650px" layout="fixed-height" scrolling="yes" sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation" allow="fullscreen" frameborder="0" src="https://wedge.ontomatica.io/Nobel-Prize-Winners_-_19-09-05/Wedge" [src]="sampler[activeSample].embedUrl" title="Wedge"><div overflow="" tabindex="0" role="button" aria-label="Show everything">Show everything</div><div class="ap-o-sampler-iframe-source" placeholder=""></div></amp-iframe></div><div class="ap-o-sampler-link"><a class="-n" href="https://wedge.ontomatica.io/Nobel-Prize-Winners_-_19-09-05/Wedge"><div class="ap-a-ico -i"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#internal"></use></svg></div><span class="-r">Open target page</span></a></div></div></section></amp-story-page-attachment>
+</amp-story-page>
+
+<amp-story-page id="item-14" data-item-label="attachment-iframe-tabs">
+<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-440044-constellation" src="https://afdsi.com/___supplier/paula-perez/reference/background-440044-constellation-w997-h997.svg" width="997" height="997" layout="responsive"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer template="thirds" aspect-ratio="6:4">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>Attachment iFrame</h2>
+</div>
+</div>
+<div grid-area="middle-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<h3>attachment iFrame has multiple Wedge instances assigned to tabs</h3>
+<h3>selectors fail</h3>
+</div>
+</div>
+</amp-story-grid-layer>
+
+<!--
+using:
+  amp-state
+  amp-iframe
+-->
+
+<amp-story-page-attachment layout="nodisplay" cta-image="https://afdsi.com/___supplier/paula-perez/reference/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="iFrame in Attachment" data-title="iFrame in Attachment">
+
+<section class="ap--sampler">
+
+<amp-state id="sampler">
+<script type="application/json">
+[
+{"title":"Nobel Prize Winners","url":"https://wedge.ontomatica.io/","embedUrl":"https://wedge.ontomatica.io/Nobel-Prize-Winners_-_19-09-05/Wedge","standaloneUrl":"https://wedge.ontomatica.io/Nobel-Prize-Winners_-_19-09-05/Wedge"},
+{"title":"Ontologies","url":"https://wedge.ontomatica.io/","embedUrl":"https://wedge.ontomatica.io/Ontologies_-_19-02-06/Wedge","standaloneUrl":"https://wedge.ontomatica.io/Ontologies_-_19-02-06/Wedge"},
+{"title":"Homeopathic Remedies","url":"https://wedge.ontomatica.io/","embedUrl":"https://wedge.ontomatica.io/Homeopathic-Remedies_-_19-09-05/Wedge","standaloneUrl":"https://wedge.ontomatica.io/Homeopathic-Remedies_-_19-09-05/Wedge"},
+{"title":"ChEFS","url":"https://wedge.ontomatica.io/","embedUrl":"https://wedge.ontomatica.io/ChEFS_-_19-09-06/Wedge","standaloneUrl":"https://wedge.ontomatica.io/ChEFS_-_19-09-06/Wedge"},
+{"title":"ChEMATIC","url":"https://wedge.ontomatica.io/","embedUrl":"https://wedge.ontomatica.io/ChEMATIC_-_19-09-06/Wedge","standaloneUrl":"https://wedge.ontomatica.io/ChEMATIC_-_19-09-06/Wedge"},
+{"title":"Natural Language Glossary","url":"https://wedge.ontomatica.io/","embedUrl":"https://afdsi.com/wedge-client-glossary/","standaloneUrl":"https://afdsi.com/wedge-client-glossary/"}
+]
+</script>
+</amp-state>
+
+<amp-state id="activeSample">
+<script type="application/json">0</script>
+</amp-state>
+
+<div class="ap-o-sampler">
+
+<br>
+<div class="ap-o-sampler-iframe">
+
+<amp-iframe
+	height="450px"
+	layout="fixed-height"
+	scrolling="yes"
+	sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
+	allow="fullscreen"
+	frameborder="0"
+	src="https://wedge.ontomatica.io/Nobel-Prize-Winners_-_19-09-05/Wedge"
+	[src]="sampler[activeSample].embedUrl"
+	title="wedge"
+	style="height:450px;"
+>
+<div overflow="" tabindex="0" role="button" aria-label="Show everything">Show everything</div>
+<div placeholder="">
+<div class="ap-o-sampler-iframe-source"></div>
+</div>
+</amp-iframe>
+</div>
+
+<div class="ap-o-sampler-tab-bar">
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-0 active" [class]="activeSample == '0' ? 'ap-o-sampler-tab ap-o-sampler-tab-0 active' : 'ap-o-sampler-tab ap-o-sampler-tab-0'" on="tap:AMP.setState({activeSample: '0'})"><span class="ap-o-sampler-tab-title">Nobel Prize Winners</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-1" [class]="activeSample == '1' ? 'ap-o-sampler-tab ap-o-sampler-tab-1' : 'ap-o-sampler-tab ap-o-sampler-tab-1'" on="tap:AMP.setState({activeSample: '1'})"><span class="ap-o-sampler-tab-title">Ontologies</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-2" [class]="activeSample == '2' ? 'ap-o-sampler-tab ap-o-sampler-tab-2' : 'ap-o-sampler-tab ap-o-sampler-tab-2'" on="tap:AMP.setState({activeSample: '2'})"><span class="ap-o-sampler-tab-title">Homeopathic Remedies</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-3" [class]="activeSample == '3' ? 'ap-o-sampler-tab ap-o-sampler-tab-3' : 'ap-o-sampler-tab ap-o-sampler-tab-3'" on="tap:AMP.setState({activeSample: '3'})"><span class="ap-o-sampler-tab-title">ChEFS</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-4" [class]="activeSample == '4' ? 'ap-o-sampler-tab ap-o-sampler-tab-4' : 'ap-o-sampler-tab ap-o-sampler-tab-4'" on="tap:AMP.setState({activeSample: '4'})"><span class="ap-o-sampler-tab-title">ChEMATIC</span></div>
+<div tabindex="0" role="button" class="ap-o-sampler-tab ap-o-sampler-tab-5" [class]="activeSample == '5' ? 'ap-o-sampler-tab ap-o-sampler-tab-5' : 'ap-o-sampler-tab ap-o-sampler-tab-5'" on="tap:AMP.setState({activeSample: '5'})"><span class="ap-o-sampler-tab-title">Natural Language Glossary</span></div>
+</div>
+
+<div class="ap-o-sampler-link">
+<a href="https://wedge.ontomatica.io/" [href]="sampler[activeSample].standaloneUrl" class="-n">
+<div class="ap-a-ico -i">
+<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#internal"></use></svg>
+</div>
+<span class="-r">Open Wedge application page</span>
+</a>
+<svg style="position:absolute;width:0;height:0;overflow:hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="internal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M43.16 10.18c-0.881-0.881-2.322-0.881-3.203 0s-0.881 2.322 0 3.203l16.335 16.335h-54.051c-1.281 0-2.242 1.041-2.242 2.242 0 1.281 0.961 2.322 2.242 2.322h54.051l-16.415 16.335c-0.881 0.881-0.881 2.322 0 3.203s2.322 0.881 3.203 0l20.259-20.259c0.881-0.881 0.881-2.322 0-3.203l-20.179-20.179z"></path></symbol>
+<symbol id="angle-down-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z"></path></symbol>
+</defs>
+</svg>
+</div>
+
+</div>
+</section>
+
+</amp-story-page-attachment>
+</amp-story-page>
+
+</amp-story>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Revenue: computer companies ColumnChart</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/examples.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="../javascript/sgvizler.js"></script>
+<script type="text/javascript">
+   sgvizler.prefix('dbo', 'http://dbpedia.org/ontology/');
+   sgvizler.prefix('dct', 'http://purl.org/dc/terms/');
+   sgvizler.prefix('rdfs', 'http://www.w3.org/2000/01/rdf-schema#');
+   sgvizler.prefix('xsd', 'http://www.w3.org/2001/XMLSchema#');
+   $(document).ready(function() { sgvizler.containerDrawAll(); });
+</script>
+</head>
+<body>
+<h2>Revenue &amp; Operating Income of US Computer Companies (revenue > $5B)</h2>
+<h4><code>google.visualization.ColumnChart</code></h4>
+<p></p>
+<div id="sgvzl_example_query"
+   data-sgvizler-endpoint="http://dbpedia.org/sparql"
+   data-sgvizler-query="
+     SELECT ?name ?revenue ?operatingIncome
+     WHERE {
+       ?company rdfs:label ?taggedName ;
+           dct:subject &lt;http://dbpedia.org/resource/Category:Computer_companies_of_the_United_States> ;
+           dbo:revenue ?revenueFloat ;
+           dbo:operatingIncome ?opIncomeFloat .
+        BIND(xsd:integer(?revenueFloat) AS ?revenue) .
+        BIND(xsd:integer(?opIncomeFloat) AS ?operatingIncome) .
+        BIND(str(?taggedName)AS ?name)
+        FILTER(?revenue > 5000000000)
+        FILTER(lang(?taggedName) = 'en')
+     }
+     ORDER BY ?revenue"
+   data-sgvizler-chart="google.visualization.ColumnChart"
+   data-sgvizler-loglevel="1"
+   style="width:800px; height:400px;"
+>
+</div>
+<h3>Element that draw the above chart:</h3>
+<pre id="sgvzl_example_pre">
+  &lt;div id="sgvzl_example_query" 
+   data-sgvizler-endpoint="http://dbpedia.org/sparql"
+   data-sgvizler-query="
+     SELECT ?name ?revenue ?operatingIncome
+     WHERE
+      {
+        ?company rdfs:label ?taggedName ;
+           dct:subject &lt;http://dbpedia.org/resource/Category:Computer_companies_of_the_United_States> ;
+           dbo:revenue ?revenueFloat ;
+           dbo:operatingIncome ?opIncomeFloat .
+         BIND(xsd:integer(?revenueFloat) AS ?revenue) .
+         BIND(xsd:integer(?opIncomeFloat) AS ?operatingIncome) .
+         BIND(str(?taggedName)AS ?name)
+         FILTER(?revenue > 5000000000)
+         FILTER(lang(?taggedName) = 'en')
+      }
+      ORDER BY ?revenue"
+   data-sgvizler-chart="google.visualization.ColumnChart"
+   data-sgvizler-loglevel="2"
+   style="width:800px; height:400px;"/&gt;
+</pre>
+<h3>Results of query in table form</h3>
+<div id="sgvzl_example_table"
+   data-sgvizler-endpoint="http://dbpedia.org/sparql"
+   data-sgvizler-query="
+     SELECT ?name ?revenue ?operatingIncome
+     WHERE {
+       ?company rdfs:label ?taggedName ;
+           dct:subject &lt;http://dbpedia.org/resource/Category:Computer_companies_of_the_United_States> ;
+           dbo:revenue ?revenueFloat ;
+           dbo:operatingIncome ?opIncomeFloat .
+        BIND(xsd:integer(?revenueFloat) AS ?revenue) .
+        BIND(xsd:integer(?opIncomeFloat) AS ?operatingIncome) .
+        BIND(str(?taggedName)AS ?name)
+        FILTER(?revenue > 5000000000)
+        FILTER(lang(?taggedName) = 'en')
+     }
+     ORDER BY ?revenue
+     "
+   data-sgvizler-chart="google.visualization.Table"
+   data-sgvizler-loglevel="2"
+   style="width:800px; height:400px;"
+>
+</div>
+</body>
+</html>

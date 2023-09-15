@@ -1,0 +1,14 @@
+
+this is a Page, not a Story
+Page will include
+    tooltip sidebar
+    amino acid mathML
+    maybe iFrame
+
+
+include amino acids calc
+
+include reverse engineering
+
+see treatment in Sphinx Nutrients
+    some form currently exists

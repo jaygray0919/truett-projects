@@ -1,0 +1,342 @@
+:root {
+	--onto-logo:#1F64FF;
+
+	--on-000000:#000000;
+	--on-0000ff:#0000ff;
+	--on-0003ff:#0003ff;
+	--on-005001:#005001;
+	--on-007f7f:#007f7f;
+	--on-007fb2:#007fb2;
+	--on-00ffff:#00ffff;
+	--on-07a1e1:#07a1e1;
+	--on-0b87a3:#0b87a3;
+	--on-0bda9b:#0bda9b;
+	--on-1275ac:#1275ac;
+	--on-130f30:#130f30;
+	--on-151515:#151515;
+	--on-191919:#191919;
+	--on-1aa3ff:#1aa3ff;
+	--on-1b88cd:#1b88cd;
+	--on-1f64ff:#1f64ff;
+	--on-262162:#262162;
+	--on-29323c:#29323c;
+	--on-2a794a:#2a794a;
+	--on-2f9f4b:#2f9f4b;
+	--on-32935d:#32935d;
+	--on-333333:#333333;
+	--on-33945e:#33945e;
+	--on-3ba7e5:#3ba7e5;
+	--on-3d3d3d:#3d3d3d;
+	--on-3d444d:#3d444d;
+	--on-3e3898:#3e3898;
+	--on-4151a6:#4151a6;
+	--on-440044:#440044;
+	--on-550a1e:#550a1e;
+	--on-6baf40:#6baf40;
+	--on-6c757d:#6c757d;
+	--on-6caf42:#6caf42;
+	--on-6db5a7:#6db5a7;
+	--on-6fa08b:#6fa08b;
+	--on-74b341:#74b341;
+	--on-763517:#763517;
+	--on-7d420a:#7d420a;
+	--on-7eba98:#7eba98;
+	--on-7f0000:#7f0000;
+	--on-7f142e:#7f142e;
+	--on-7f4100:#7f4100;
+	--on-83c803:#83c803;
+	--on-87331b:#87331b;
+	--on-8abc43:#8abc43;
+	--on-8e1421:#8e1421;
+	--on-92c4cb:#92c4cb;
+	--on-971328:#971328;
+	--on-a4a4a4:#a4a4a4;
+	--on-a71520:#a71520;
+	--on-a9c937:#a9c937;
+	--on-b51d34:#b51d34;
+	--on-b69d7e:#b69d7e;
+	--on-b9b9b9:#b9b9b9;
+	--on-bbc871:#bbc871;
+	--on-bf0000:#bf0000;
+	--on-bf6200:#bf6200;
+	--on-c2dbce:#c2dbce;
+	--on-c41622:#c41622;
+	--on-c51431:#c51431;
+	--on-c52433:#c52433;
+	--on-c5ae8c:#c5ae8c;
+	--on-c70000:#c70000;
+	--on-cb5b2d:#cb5b2d;
+	--on-cccccc:#cccccc;
+	--on-ced146:#ced146;
+	--on-d2b373:#d2b373;
+	--on-d5bd97:#d5bd97;
+	--on-dba171:#dba171;
+	--on-dcaa7d:#dcaa7d;
+	--on-ddcaa9:#ddcaa9;
+	--on-dedede:#dedede;
+	--on-dfe0e2:#dfe0e2;
+	--on-e1ffad:#e1ffad;
+	--on-e4b992:#e4b992;
+	--on-e5e5e5:#e5e5e5;
+	--on-e5e5e5:#e5e5e5;
+	--on-e6e6e6:#e6e6e6;
+	--on-e6e6fa:#e6e6fa;
+	--on-e6e7e9:#e6e7e9;
+	--on-e9ebeb:#e9ebeb;
+	--on-ecf4f7:#ecf4f7;
+	--on-ededed:#ededed;
+	--on-edeef0:#edeef0;
+	--on-efd520:#efd520;
+	--on-f1c9a5:#f1c9a5;
+	--on-f3f4a8:#f3f4a8;
+	--on-f4f044:#f4f044;
+	--on-f5e43c:#f5e43c;
+	--on-f9f9f9:#f9f9f9;
+	--on-ff0000:#ff0000;
+	--on-ff69b4:#ff69b4;
+	--on-ffd700:#ffd700;
+	--on-fffe7f:#fffe7f;
+	--on-ffffff:#ffffff;
+/*******************
+ *	bullets DL/DT/DD
+ */
+	--on-c0334d:#c0334d;
+	--on-f3d480:#f3d480;
+	--on-f1931b:#f1931b;
+	--on-8f715b:#8f715b;
+	--on-78d68c:#78d68c;
+	--on-720017:#720017;
+	--on-d8d583:#d8d583;
+	--on-d98c2a:#d98c2a;
+	--on-36688d:#36688d;
+	--on-a3586d:#a3586d;
+	--on-aba6bf:#aba6bf;
+	--on-595775:#595775;
+	--on-84a45a:#84a45a;
+	--on-583e2e:#583e2e;
+	--on-bf988f:#bf988f;
+	--on-a7414a:#a7414a;
+	--on-6a8a82:#6a8a82;
+	--on-a37c27:#a37c27;
+	--on-4fd993:#4fd993;
+	--on-704404:#704404;
+	--on-4e7ba7:#4e7ba7;
+	--on-d28f1b:#d28f1b;
+	--on-1ecfd6:#1ecfd6;
+	--on-edd179:#edd179;
+	--on-c05640:#c05640;
+	--on-728ca3:#728ca3;
+	--on-73c0f4:#73c0f4;
+	--on-f3e46c:#f3e46c;
+	--on-582a20:#582a20;
+	--on-9499a6:#9499a6;
+	--on-c59cdb:#c59cdb;
+	--on-a67b04:#a67b04;
+	--on-525b56:#525b56;
+	--on-93a806:#93a806;
+	--on-f08b33:#f08b33;
+	--on-d75404:#d75404;
+	--on-8a2c02:#8a2c02;
+	--on-d75b66:#d75b66;
+	--on-23345c:#23345c;
+	--on-bfafa0:#bfafa0;
+	--on-515b51:#515b51;
+	--on-8c7547:#8c7547;
+	--on-efa747:#efa747;
+	--on-52733b:#52733b;
+	--on-bda728:#bda728;
+	--on-704307:#704307;
+	--on-f7b178:#f7b178;
+	--on-253f5b:#253f5b;
+	--on-4f728e:#4f728e;
+
+	--space-1: 0.5em;   /* 8px */
+	--space-2: 1.0em;   /* 16px */
+	--space-3: 1.5em;   /* 24px */
+	--space-4: 2.0em;   /* 32px */
+}
+
+/******************
+ *	Font: Noto Sans
+ */
+
+@font-face{
+	font-family: NotoSans;
+	src:
+		url('https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v21-latin-regular.ttf')
+			format('truetype'),
+		url('https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v21-latin-regular.woff2')
+			format('woff2');
+	font-display: swap;
+	font-style: normal;
+	font-weight: regular;
+}
+
+/*******************
+ *	Font: Noto Serif
+ */
+
+@font-face {
+	font-family: NotoSerif;
+	src:
+		url('https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf')
+			format('truetype'),
+		url('https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2')
+			format('woff2');
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/****************
+ *	Font: Poppins
+ */
+
+@font-face {
+	font-family: Poppins;
+	src:
+		url('https://s3.amazonaws.com/benetta.net/fonts/poppins/poppins-v15-latin-500.woff2')
+			format('woff2'),
+		url('https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Regular.ttf')
+			format('truetype');
+	font-display: swap;
+	font-style: normal;
+}
+
+/******************
+ *	Font: Recursive
+ */
+
+@font-face {
+	font-family: Recursive;
+	src:
+		url('https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf')
+			format('truetype'),
+		url('https://s3.amazonaws.com/benetta.net/fonts/recursive/recursive-2019_11_22-20_38.woff2')
+			format('woff2-variations');
+	font-display: swap;
+	text-align: initial;
+	font-weight: 100 600;
+	font-stretch: 25% 151%;
+}
+
+/********************
+ *   Font: Zilla Slab
+ */
+
+@font-face {
+	font-family: ZillaSlab;
+	src:
+		url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Regular.ttf')
+			format('truetype'),
+		url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2')
+			format('woff2');
+	font-display: swap;
+	font-style: normal;
+	text-align: initial;
+	font-weight: 100 600;
+}
+
+@font-face{font-family:system;font-style:normal;font-weight:300;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:italic;font-weight:300;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:normal;font-weight:400;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:italic;font-weight:400;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:normal;font-weight:500;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:italic;font-weight:500;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:normal;font-weight:700;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:italic;font-weight:700;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+
+h1 {
+	font-family: ZillaSlab;
+	font-size: calc(3.125 * var(--story-page-vw));
+	font-weight: 100;
+	color: #440044; /* set to background SVG color */
+	border: none;
+}
+
+h2 {
+	font-family: Poppins;
+	font-size: calc(3.125 * var(--story-page-vw));
+	font-weight: 100;
+	display: inline-block;
+	color: #ffffff;
+	border: none;
+	text-shadow: 0px 4px 4px rgb(0 0 0 / .95);
+}
+
+h3 {
+	font-family: Poppins;
+	font-size: calc(2.6 * var(--story-page-vw));
+	font-weight: 300;
+	line-height: 1.2em;
+	color: #ffffff;
+	border: none;
+	text-shadow: 0px 4px 4px rgb(0 0 0 / .95);
+}
+
+h4 {
+	font-family: Recursive;
+	font-size: calc(2 * var(--story-page-vw));
+	font-weight: 300;
+	--CASL: 1;
+	--slnt: 0;
+	--MONO: 0;
+	font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+	margin-top: 1em;
+	color: #ffffff;
+	border: none;
+	transition: 1s;
+	text-shadow: 0px 4px 4px rgb(0 0 0 / .95);
+}
+
+h4:hover {
+	font-weight: 800;
+	--CRSV: 0;
+	transition: 1s;
+}
+
+h5 {
+	font-family: Recursive;
+	font-size: calc(2 * var(--story-page-vw));
+	font-weight: 300;
+	--CASL: 1;
+	--slnt: 0;
+	--MONO: 0;
+	font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+	margin-bottom: 0.8em;
+	color: #ffffff;
+	border: none;
+	transition: 1s;
+	text-shadow: 0px 4px 4px rgb(0 0 0 / .95);
+}
+
+h5:hover {
+	font-weight: 800;
+	--CRSV: 0;
+	transition: 1s;
+}
+
+/* set color for different backgrounds */
+.h1-c1,
+.h2-c1,
+.h3-c1,
+.h4-c1,
+.h5-c1,
+.h6-c1 {
+	color: var(--on-value)
+}
+
+.h1-c2,
+.h2-c2,
+.h3-c2,
+.h4-c2,
+.h5-c2,
+.h6-c2 {
+	color: var(--on-value)
+}
+
+.ta-l {text-align: left;}
+.ta-c {text-align: center;}
+.ta-r {text-align: right;}
+
+.shadow-text {text-shadow: 0px 4px 4px rgb(0 0 0 / .95);}

@@ -1,0 +1,622 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2"  crossorigin />
+<link rel="preload" as="font" href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v9-latin-regular.woff2" crossorigin />
+
+<title>
+tooltip-single
+</title>
+<link rel="canonical" href="https://ontomatica.io/canonical.html"/>
+
+<script  async                               src="https://cdn.ampproject.org/v0.js"></script>
+<script  async custom-element="amp-bind"     src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script  async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script  async custom-element="amp-list"     src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script  async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+html {
+  padding-left:  2vw;
+  padding-right: 2vw;
+}
+
+svg {
+  font-family: "Noto Sans", sans-serif;
+}
+
+dt.dt__ar {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  text-align: right;
+  direction: rtl;
+}
+
+dd.dd__ar {
+  font-family: "Noto Serif", serif;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: right;
+  direction: rtl;
+}
+
+dt.dt__zh {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+dd.dd__zh {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+dt.dt__en-us {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  text-align: left;
+  direction: ltr;
+}
+
+dd.dd__en-us {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-size: 0.6rem;
+  line-height: 1.25;
+  text-align: left;
+  direction: ltr;
+}
+
+dt.dt__en-gb {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: left;
+  direction: ltr;
+}
+
+dd.dd__en-gb {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: left;
+  direction: ltr;
+}
+
+dt.dt__es {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  text-align: left;
+  direction: ltr;
+}
+
+dd.dd__es {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  text-align: left;
+  direction: ltr;
+}
+
+.show-yes  { visibility: visible; }
+.show-no   { display: none; }
+.show-hide { visibility: hidden; }
+
+.clearfix:after,.clearfix:before {display: table; content: ""; line-height: 0;}
+.clearfix:after {clear:both;}
+
+[class*=col-]{margin-bottom: 30px;}
+.container-fluid {padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;}
+.row {margin-right: -15px; margin-left: -15px;}
+.row:after,.row:before {display: table; content: " ";}
+.row:after {clear: both;}
+.container-full,.container-full [class*=col-] {padding-left: 0; padding-right: 0;}
+.container-full .row {margin-left: 0; margin-right: 0;}
+.no-gap [class*=col-] {padding-right: 0; padding-left: 0; margin-bottom: 0;}
+.no-gap.row {margin-right: 0; margin-left: 0;}
+.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {position:relative;min-height:1px;padding-right:15px;padding-left:15px;}
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {float:left;}
+.col-xs-12 {width: 100%;}
+.col-xs-11 {width: 91.66666667%;}
+.col-xs-10 {width: 83.33333333%;}
+.col-xs-9  {width: 75%;}
+.col-xs-8  {width: 66.66666667%;}
+.col-xs-7  {width: 58.33333333%;}
+.col-xs-6  {width: 50%;}
+.col-xs-5  {width: 41.66666667%;}
+.col-xs-4  {width: 33.33333333%;}
+.col-xs-3  {width: 25%;}
+.col-xs-2  {width: 16.66666667%;}
+.col-xs-1  {width: 8.33333333%;}
+
+@media(min-width:768px){.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{float:left;}.col-sm-12{width:100%;}.col-sm-11{width:91.66666667%;}.col-sm-10{width:83.33333333%;}.col-sm-9{width:75%;}.col-sm-8{width:66.66666667%;}.col-sm-7{width:58.33333333%;}.col-sm-6{width:50%;}.col-sm-5{width:41.66666667%;}.col-sm-4{width:33.33333333%;}.col-sm-3{width:25%;}.col-sm-2{width:16.66666667%;}.col-sm-1{width:8.33333333%;}}
+
+.bordered-title {border-bottom: 1px solid rgba(0,0,0,.12); margin: 0 -15px; padding: 0 15px 8px;}
+.bordered-title h3 {margin: 0; line-height: 1.4;}
+.bordered-title h5 {opacity: 0.54; margin: 0;}
+
+/* critical -- background: rgba(0,0,0,0.8); */
+
+amp-lightbox #my-lightbox-* {align-items:center; position:relative; background:rgba(0,0,0,.8); max-width:600px; margin:100px auto 0;}
+
+.lightbox-background {background: #FFFFCC; margin: 100px auto 0; border: 2px solid red;}
+
+/* .flag__ar { */
+  /* display: block; */
+  /* background-image: url("Flag_Saudi_Arabia_w750_h500.svg"); */
+  /* background-size: 0.9em 0.9em; */
+  /* background-repeat: no-repeat; */
+/* } */
+
+.lang_spacer {
+  padding-left: 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+h1,h2,h3,h4,p {font-family: "Noto Serif", serif; color: #595B5A;}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.button-o {
+  font-family: "Noto Sans", sans-serif;
+  padding-left: 0.05em;
+  padding-right: 0.15em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.button-o1 {
+  font-family: "Noto Sans", sans-serif;
+  background-color: rgba(232,232,232,1);
+  color: #0379C4;
+  border: 2px solid rgba(216,216,216,1);
+}
+
+.m2 {margin:0.5rem;}
+.close-gallery-button {z-index:1; position:absolute; right:0;}
+.ampstart-btn,.nowrap,.truncate {white-space:nowrap;}
+.ampstart-btn,.ampstart-btn:visited {color:#b60845;}
+
+.ampstart-btn {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: inherit;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  padding: 0.7em 0.8em;
+  text-decoration: none;
+  word-wrap: normal;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #b60845;
+}
+
+.ampTabContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabButton[selected] {
+  outline: none;
+  background: #f1f1da;
+}
+
+.tabButton {
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tabContent {
+  display: none;
+  width: 100%;
+  order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+  border: 1px solid #ccc;
+}
+
+.tabButton[selected]+.tabContent {
+  display: block;
+}
+
+.itemCustom {
+/*  border: 1px solid #000;*/
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+amp-selector {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+amp-list {
+  display: contents;
+}
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+  padding-left: 0.25em;
+}
+
+p {
+  text-align: left;
+  color: #595B5A;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height:1.4;
+}
+
+.css-11 {
+  font-family:"Noto Serif", serif;
+}
+
+/* section { */
+  /* font-size: calc(16.4px + 0.175vw); */
+  /* line-height: calc(1.5em + 0.3333vw); */
+  /* font-family: "Noto Serif", serif; */
+/* } */
+
+.list-overflow[overflow] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+:root {
+  --color-primary: #005AF0;
+  --color-text-light: #fff;
+
+  --space-1: .5rem;  /* 8px */
+  --space-2: 1rem;   /* 16px */
+}
+.sample-selector:not([disabled]) svg[option][selected]:not([disabled]) {
+  outline-color: var(--color-primary);
+  outline-width: 4px;
+}
+.sample-selector svg,
+.sample-selector .divider {
+  margin-right: var(--space-2);
+}
+/* disables build-in browser highlights */
+.sample-selector *:focus {
+  outline: none;
+}
+.sample-selector[disabled],
+.sample-selector [disabled] {
+  opacity: 0.5;
+}
+.sample-selector,
+.sample-selector ~ div {
+  padding: var(--space-2);
+}
+.sample-selector ~ button {
+  margin: var(--space-2);
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h2>
+AMP tooltip single
+</h2>
+</header>
+<hr>
+
+<template
+  type="amp-mustache"
+    id="mst-1"
+>
+
+<p class="">
+Here is a tooltip using &lt;amp-mustache&gt; and &lt;amp-state&gt;.
+<sup>
+<button
+     class="button-o button-o1"
+        on="tap:my-lightbox-{{lightbox-id}}"
+      role="button"
+  tabindex="{{button-tabindex}}"
+>
+{{button-label}}
+</button>
+</sup>
+</p>
+
+<!--
+reference:
+https://github.com/ampproject/amphtml/issues/4343#issuecomment-492164394
+-->
+
+<!--
+       class="ampTabContainer"
+-->
+<amp-selector multiple
+          on="select:AMP.setState({selectedTab: event.targetOption})"
+  [selected]="selectedTab"
+        role="tablist"
+      layout="container"
+>
+
+<svg viewBox="100 0 432 339" xmlns="http://www.w3.org/2000/svg">
+<g id="graph0" class="graph" transform="scale(0.44 0.44) rotate(0) translate(4 760)">
+
+<g id="node1">
+<ellipse
+    fill="beige"
+  stroke="sienna"
+      cx="511.25"
+      cy="-738"
+      rx="50.09"
+      ry="18"
+/>
+<rect
+   option="{{button-label}}"
+     fill="yellow"
+     role="button"
+ tabindex="0"
+        x="500"
+        y="-750"
+    width="25"
+   height="25"
+       rx="6"
+       ry="6"
+       on="tap:my-lightbox-{{lightbox-id}}"
+/>
+<!-- <text class="button-o button-o1" x="508" y="-732">{{button-label}}</text> -->
+<text class="" x="508" y="-732">{{button-label}}</text>
+</g>
+
+<g id="node2" class="">
+<ellipse
+	fill="beige"
+	stroke="sienna"
+	cx="415.25"
+	cy="-666"
+	rx="50.09"
+	ry="18"
+/>
+<text text-anchor="middle" x="415.25" y="-662.3">node 2</text>
+</g>
+
+<g id="edge1" class="edge">
+<path fill="none" stroke="sienna" d="M489.94,-721.46C476.64,-711.77 459.34,-699.15 444.73,-688.5"/>
+<polygon fill="sienna" stroke="sienna" points="446.64,-685.56 436.49,-682.49 442.51,-691.21 446.64,-685.56"/>
+</g>
+<g id="node3" class="">
+<ellipse fill="beige" stroke="sienna" cx="667.25" cy="-666" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="667.25" y="-662.3">node 3</text>
+</g>
+<g id="edge2" class="edge">
+<path fill="none" stroke="sienna" d="M541.33,-723.5C566.43,-712.24 602.35,-696.12 629.41,-683.98"/>
+<polygon fill="sienna" stroke="sienna" points="630.89,-687.15 638.58,-679.86 628.02,-680.77 630.89,-687.15"/>
+</g>
+<g id="node4" class="">
+<ellipse fill="beige" stroke="sienna" cx="577.25" cy="-594" rx="27.9" ry="18"/>
+<text text-anchor="middle" x="577.25" y="-590.3">4</text>
+</g>
+<g id="edge3" class="edge">
+<path fill="none" stroke="sienna" d="M446.69,-651.97C472.04,-641.4 508.55,-626 540.25,-612 542.04,-611.21 543.88,-610.39 545.74,-609.55"/>
+<polygon fill="sienna" stroke="sienna" points="547.33,-612.67 554.99,-605.36 544.44,-606.3 547.33,-612.67"/>
+</g>
+<g id="node6" class="">
+<ellipse fill="beige" stroke="sienna" cx="355.25" cy="-594" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="355.25" y="-590.3">node 6</text>
+</g>
+<g id="edge5" class="edge">
+<path fill="none" stroke="sienna" d="M401.03,-648.41C393.56,-639.69 384.26,-628.85 376,-619.21"/>
+<polygon fill="sienna" stroke="sienna" points="378.53,-616.78 369.36,-611.47 373.22,-621.34 378.53,-616.78"/>
+</g>
+</g>
+</svg>
+
+</amp-selector>
+
+<amp-lightbox
+      id="my-lightbox-{{lightbox-id}}"
+  layout="nodisplay"
+  scrollable
+>
+
+<div class="container-fluid">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 lightbox-background">
+
+<button
+  class="ampstart-btn caps m2 close-gallery-button"
+   role="button"
+     on="tap:my-lightbox-{{lightbox-id}}.close"
+>
+Close
+</button>
+
+<h3 class="{{css-11}}">{{topic-label}}</h3>
+
+<div class="{{status-yes}}">
+<amp-img
+       src="{{image-source}}"
+     width="{{image-width}}"
+    height="{{image-height}}"
+    layout="{{image-control}}"
+       alt="{{image-alt-text}}"
+></amp-img>
+</div>
+
+<amp-selector
+       class="ampTabContainer"
+          on="select:AMP.setState({selectedTab: event.targetOption})"
+  [selected]="selectedTab"
+        role="tablist"
+      layout="container"
+>
+<div role="tab" class="tabButton itemCustom" selected option="a">
+<amp-img
+	src="flag-United-States-w1235-h650.svg"
+	width="48"
+	height="36"
+	layout="fixed"
+	title="{{lang-en-us}}"
+></amp-img>
+</div>
+
+<div role="tabpanel" class="tabContent">
+<dl>
+<dt  class="{{dt-en-us}}">{{lex-en-us-label}}</dt>
+<dd  class="{{dd-en-us}}">{{lex-en-us-description}}</dd>
+</dl>
+</div>
+
+<div role="tab" class="tabButton itemCustom" option="b">
+<amp-img
+	src="flag-Saudi-Arabia-w750-h500.svg"
+	width="48"
+	height="36"
+	layout="fixed"
+></amp-img>
+</div>
+
+<div role="tabpanel" class="tabContent">
+<dl>
+<dt  class="{{dt-ar}}">{{lex-ar-label}}</dt>
+<dd  class="{{dd-ar}}">{{lex-ar-description}}</dd>
+</dl>
+</div>
+
+<div role="tab" class="tabButton itemCustom" option="c">
+<amp-img
+	src="flag-Spain-w750-h500.svg"
+	width="48"
+	height="36"
+	layout="fixed"
+></amp-img>
+</div>
+
+<div role="tabpanel" class="tabContent">
+<dt  class="{{dt-es}}">{{lex-es-label}}</dt>
+<dd  class="{{dd-es}}">{{lex-es-description}}</dd>
+</div>
+
+<div role="tab" class="tabButton itemCustom" option="d">
+<amp-img
+	src="flag-Peoples-Republic-of-China-w900-h600.svg"
+	width="48"
+	height="36"
+	layout="fixed"
+></amp-img>
+</div>
+<div role="tabpanel" class="tabContent">
+<dt  class="{{dt-zh}}">{{lex-zh-label}}</dt>
+<dd  class="{{dd-zh}}">{{lex-zh-description}}</dd>
+</div>
+
+<div role="tab" class="tabButton itemCustom" option="e">
+<amp-img
+	src="flag-Great-Britain-w1000-h600.svg"
+	width="48"
+	height="36"
+	layout="fixed"
+></amp-img>
+</div>
+<div role="tabpanel" class="tabContent">
+<dl>
+<dt  class="{{dt-en-gb}}">{{lex-en-gb-label}}</dt>
+<dd  class="{{dd-en-gb}}">{{lex-en-gb-description}}</dd>
+</dl>
+</div>
+
+</amp-selector>
+
+<button
+  class=""
+   role="button"
+     on="tap:my-lightbox-{{lightbox-id}}.close"
+>
+Close
+</button>
+
+</div>
+<div class="col-sm-4"></div>
+</div>
+</amp-lightbox>
+
+</template>
+
+</div>
+</body>
+
+<amp-list
+       src="amp-state:localState-1"
+     width="auto"
+    height="1"
+    layout="fixed-height"
+   binding="no"
+  template="mst-1"
+>
+<div overflow class="list-overflow"></div>
+<div placeholder>Loading ...</div>
+<div fallback>Failed to load data.</div>
+
+<amp-state id="localState-1">
+<script type="application/json">
+{
+"items": [{"topic-label": "Apple","topic-prov": "Provenance","topic-date-pub": "Date published","topic-date-mod": "Date modified","topic-prime-source": "Primary source","label-date-pub": "2021-03-14","label-date-mod": "2021-06-10","topic-resp-person": "Responsible person","label-resp-person": "Toby Barberry","label-prime-source": "Wikidata","flag-en-us": "flag-_en-us","flag-ar": "flag-_ar","flag-es": "flag-_es","flag-zh": "flag-_zh","flag-en-gb": "flag-_en-gb","lang-en-us": "English\u2013United States","lang-ar": "Arabic \u0627\u0644\u0639\u064e\u0631\u064e\u0628\u0650\u064a\u064e\u0651\u0629","lang-es": "Spanish \u0065\u0073\u0070\u0061\u00f1\u006f\u006c","lang-zh": "Chinese \u6c49\u8bed","lang-en-gb": "English\u2013Great Britain","dt-en-us": "dt__en-us","dt-ar": "dt__ar","dt-es": "dt__es","dt-zh": "dt__zh","dt-en-gb": "dt__en-gb","dd-en-us": "dd__en-us","dd-ar": "dd__ar","dd-es": "dd__es","dd-en-gb": "dd__en-gb","lex-en-us-label": "Apple","lex-en-us-description": "The apple tree \u0028Malus pumila, commonly and erroneously called Malus domestica\u0029 is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek and European Christian traditions. Apple trees are large if grown from seed. Generally apple varieties are propagated by grafting onto rootstocks, which control the size of the resulting tree. There are more than 7,500 known cultivars of apples, resulting in a range of desired characteristics. Different cultivars are bred for various tastes and uses, including cooking, eating raw and cider production. Trees and fruit are prone to a number of fungal, bacterial and pest problems, which can be controlled by a number of organic and non\u2010organic means. In 2010, the fruit's genome was sequenced as part of research on disease control and selective breeding in apple production. Worldwide production of apples in 2013 was 80.8 million tons, with China accounting for 49\u0025 of the total.","lex-ar-label": "\u062A\u0641\u0627\u062D","lex-ar-description": "\u0627\u0644\u062A\u0641\u0627\u062D \u0627\u0644\u0645\u0633\u062A\u0623\u0646\u0633 \u0623\u0648 \u0627\u0644\u062A\u0641\u0627\u062D \u0627\u0644\u0634\u0627\u0626\u0639 \u0028\u0627\u0644\u0627\u0633\u0645 \u0627\u0644\u0639\u0644\u0645\u064A\u003AMalus domestica \u0029 \u0647\u0648 \u0646\u0648\u0639 \u0646\u0628\u0627\u062A\u064A \u064A\u062A\u0628\u0639 \u062C\u0646\u0633 \u0627\u0644\u062A\u0641\u0627\u062D \u0648\u0647\u0648 \u0645\u0646 \u0627\u0644\u0641\u0648\u0627\u0643\u0647 \u0644\u0627\u0646\u0647 \u064A\u062D\u062A\u0648\u064A \u0628\u0630\u0648\u0631 \u0645\u0646 \u0627\u0644\u0641\u0635\u064A\u0644\u0629 \u0627\u0644\u0648\u0631\u062F\u064A\u0629.  . \u0645\u0641\u0631\u062F\u0647\u0627 \u062A\u064F\u0641\u064E\u0651\u0627\u062D\u0629 \u0648 \u062C\u0645\u0639\u0647\u0627 \u062A\u064E\u0641\u0627\u062D \u0648 \u064A\u064F\u0639\u062A\u064E\u0635\u0631 \u0645\u0646 \u0628\u0639\u0636 \u0627\u0644\u0627\u0635\u0646\u0627\u0641 \u0634\u0631\u0627\u0628 \u064A\u0633\u0645\u0649 \u0022 \u0633\u064A\u062F\u0631 \u0022, \u0648 \u0647\u064A \u0648\u0627\u062D\u062F\u0629 \u0645\u0646 \u0623\u0643\u062B\u0631 \u0623\u0634\u062C\u0627\u0631 \u0627\u0644\u0641\u0627\u0643\u0647\u0629 \u0645\u0646 \u062D\u064A\u062B \u0627\u0644\u0632\u0631\u0627\u0639\u0629. \u0634\u062C\u0631\u0629 \u0627\u0644\u062A\u0641\u0627\u062D \u0635\u063A\u064A\u0631\u0629 \u0648\u0646\u0641\u0636\u064A\u0629\u060C \u064A\u062A\u0631\u0627\u0648\u062D \u0637\u0648\u0644\u0647\u0627 \u0645\u0646 3 \u0625\u0644\u0649 12 \u0645\u062A\u0631\u060C \u0648\u0644\u0647\u0627 \u062A\u0627\u062C \u0648\u0631\u0642\u064A \u0648\u0627\u0633\u0639 \u0648\u0643\u062B\u064A\u0641 \u0627\u0644\u0623\u0634\u0648\u0627\u0643. \u0648\u0631\u0642 \u0634\u062C\u0631\u0629 \u0627\u0644\u062A\u0641\u0627\u062D \u0645\u0631\u062A\u0628 \u0628\u0627\u0644\u062A\u0646\u0627\u0648\u0628 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0627\u0647\u0644\u064A\u0644\u064A\u062C\u0627\u062A \u0628\u0633\u064A\u0637\u0629\u060C \u064A\u0635\u0644 \u0637\u0648\u0644\u0647\u0627 \u0645\u0646 5 \u0625\u0644\u0649 12 \u0633\u0645\u060C \u0648\u0639\u0631\u0636\u0647\u0627 3-6 \u0633\u0646\u062A\u064A\u0645\u062A\u0631\u0627\u062A \u0639\u0644\u0649 \u0633\u0648\u064A\u0642\u0627\u062A \u0630\u0627\u062A \u0637\u0648\u0644 \u0645\u0646 2 \u0625\u0644\u0649 5 \u0633\u0646\u062A\u064A\u0645\u062A\u0631\u0627\u062A \u0628\u0631\u0623\u0633 \u0645\u062F\u0628\u0628\u0629\u060C \u0648\u0647\u0627\u0645\u0634 \u0645\u0633\u0646\u0646\u060C \u0648\u062C\u0627\u0646\u0628 \u0633\u0641\u0644\u064A \u0646\u0627\u0639\u0645. \u064A\u062D\u062F\u062B \u0627\u0644\u0625\u0632\u0647\u0627\u0631 \u0641\u064A \u0627\u0644\u0631\u0628\u064A\u0639 \u0641\u064A \u0646\u0641\u0633 \u0648\u0642\u062A \u0646\u0634\u0648\u0621 \u0627\u0644\u0623\u0648\u0631\u0627\u0642\u060C \u0648\u0632\u0647\u0648\u0631 \u0627\u0644\u0634\u062C\u0631\u0629 \u0628\u064A\u0636\u0627\u0621 \u0645\u0639 \u0645\u0633\u062D\u0629 \u0648\u0631\u062F\u064A\u0629 \u062A\u0632\u0648\u0644 \u062A\u062F\u0631\u064A\u062C\u064A\u0627\u060C \u0648\u0644\u0647\u0627 \u062E\u0645\u0633\u0629 \u0628\u062A\u0644\u0627\u062A\u060C \u0648\u0642\u0637\u0631\u0647\u0627 \u0645\u0646 2.5 \u0625\u0644\u0649 3.5 \u0633\u0646\u062A\u064A\u0645\u062A\u0631\u0627\u062A. \u064A\u0646\u0636\u062C \u0627\u0644\u062B\u0645\u0631 \u0641\u064A \u0641\u0635\u0644 \u0627\u0644\u062E\u0631\u064A\u0641\u060C \u0648\u0639\u0627\u062F\u0629 \u0645\u0627 \u064A\u0643\u0648\u0646 \u0642\u0637\u0631 \u0627\u0644\u062B\u0645\u0631\u0629 \u0645\u0646 5 \u0625\u0644\u0649 9 \u0633\u0646\u062A\u064A\u0645\u062A\u0631\u0627\u062A. \u064A\u062D\u062A\u0648\u064A \u0648\u0633\u0637 \u0627\u0644\u0641\u0627\u0643\u0647\u0629 \u0639\u0644\u0649 \u062E\u0645\u0633\u0629 \u0623\u062E\u0628\u064A\u0629 \u0645\u0631\u062A\u0628\u0629 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0646\u062C\u0645\u0629 \u062E\u0645\u0627\u0633\u064A\u0629\u060C \u0648\u064A\u062D\u062A\u0648\u064A \u0643\u0644 \u062E\u0628\u0627\u0621 \u0639\u0644\u0649 \u0648\u0627\u062D\u062F\u0629 \u0625\u0644\u0649 \u062B\u0644\u0627\u062B \u0628\u0630\u0648\u0631. \u0628\u062F\u0623\u062A \u0646\u0634\u0623\u0629 \u0627\u0644\u0634\u062C\u0631\u0629 \u0641\u064A \u0622\u0633\u064A\u0627 \u0627\u0644\u0648\u0633\u0637\u0649\u060C \u062D\u064A\u062B \u0645\u0627 \u0632\u0644\u0646\u0627 \u0646\u062C\u062F \u0633\u0644\u0641\u0647\u0627 \u0627\u0644\u0628\u0631\u064A \u0625\u0644\u0649 \u0627\u0644\u064A\u0648\u0645.\u0647\u0646\u0627\u0643 \u0623\u0643\u062B\u0631 \u0645\u0646 7500 \u0645\u064F\u0633\u0646\u0628\u062A\u064C \u0645\u0639\u0631\u0648\u0641 \u0644\u0644\u062A\u0641\u0627\u062D\u060C \u0645\u0645\u0627 \u0623\u062F\u0649 \u0625\u0644\u0649 \u0627\u0645\u062A\u0644\u0627\u0643 \u0627\u0644\u062A\u0641\u0627\u062D \u0637\u0627\u0626\u0641\u0629 \u0645\u0646 \u0627\u0644\u062E\u0635\u0627\u0626\u0635 \u0627\u0644\u0645\u0631\u063A\u0648\u0628\u0629. \u064A\u062E\u062A\u0644\u0641 \u0627\u0644\u0645\u0633\u062A\u0646\u0628\u062A\u0648\u0646 \u0641\u064A \u062D\u062C\u0645 \u0645\u062D\u0627\u0635\u064A\u0644\u0647\u0645 \u0648\u0627\u0644\u062D\u062C\u0645 \u0627\u0644\u0646\u0647\u0627\u0626\u064A \u0644\u0644\u0634\u062C\u0631\u0629 \u0644\u062F\u064A\u0647\u0645\u060C \u062D\u062A\u0649 \u0639\u0646\u062F\u0645\u0627 \u062A\u064F\u0632\u0631\u0639 \u0627\u0644\u0634\u062C\u0631\u0629 \u0639\u0644\u0649 \u0627\u0644\u062C\u0630\u0631 \u0646\u0641\u0633\u0647. \u0632\u0631\u0639 \u0645\u0627 \u0644\u0627 \u064A\u0642\u0644 \u0639\u0646 55 \u0645\u0644\u064A\u0648\u0646 \u0637\u0646 \u0645\u0646 \u0627\u0644\u062A\u0641\u0627\u062D \u0641\u064A \u062C\u0645\u064A\u0639 \u0623\u0646\u062D\u0627\u0621 \u0627\u0644\u0639\u0627\u0644\u0645 \u0641\u064A \u0639\u0627\u0645 2005\u060C \u0628\u0642\u064A\u0645\u0629 \u062A\u0628\u0644\u063A \u0646\u062D\u0648 10 \u0645\u0644\u064A\u0627\u0631\u0627\u062A \u062F\u0648\u0644\u0627\u0631. \u0623\u0646\u062A\u062C\u062A \u0627\u0644\u0635\u064A\u0646 \u0646\u062D\u0648 35\u0025 \u0645\u0646 \u0647\u0630\u0627 \u0627\u0644\u0645\u062C\u0645\u0648\u0639 \u0627\u0644\u0643\u0644\u064A. \u0648 \u0627\u0644\u0648\u0644\u0627\u064A\u0627\u062A \u0627\u0644\u0645\u062A\u062D\u062F\u0629 \u0647\u064A \u0627\u0644\u0645\u0646\u062A\u062C \u0627\u0644\u0631\u0626\u064A\u0633\u064A \u0627\u0644\u062B\u0627\u0646\u064A\u060C \u0628\u0645\u0627 \u064A\u0632\u064A\u062F \u0639\u0646 7.5 \u0025 \u0645\u0646 \u0627\u0644\u0625\u0646\u062A\u0627\u062C \u0627\u0644\u0639\u0627\u0644\u0645\u064A. \u0648 \u062A\u0631\u0643\u064A\u0627 \u0648 \u0641\u0631\u0646\u0633\u0627 \u0648 \u0625\u064A\u0637\u0627\u0644\u064A\u0627 \u0648 \u0625\u064A\u0631\u0627\u0646 \u0623\u064A\u0636\u0627 \u0645\u0646 \u0628\u064A\u0646 \u0627\u0644\u062F\u0648\u0644 \u0627\u0644\u0631\u0627\u0626\u062F\u0629 \u0641\u064A \u062A\u0635\u062F\u064A\u0631 \u0627\u0644\u062A\u0641\u0627\u062D.","lex-es-label": "Manzana","lex-es-description": "La manzana es una fruta pom\u00E1cea comestible, fruto del manzano dom\u00E9stico \u0028Malus domestica\u0029, otros manzanos \u0028especies del g\u00E9nero Malus\u0029 o h\u00EDbridos de aquel. En algunas zonas de Espa\u00F1a se le suele llamar pero cuando tiene forma alargada, aunque en muchas partes de Andaluc\u00EDa se llama indistintamente \u201Cpero\u201D a la manzana.","lex-zh-label": "\u82F9\u679C","lex-zh-description": "\u82F9\u679C\uFF08\u5B66\u540D\uFF1AMalus pumila\uFF09\u662F\u8537\u8587\u79D1\u82F9\u679C\u4E9A\u79D1\u82F9\u679C\u5C5E\u690D\u7269\uFF0C\u5176\u6A39\u70BA\u843D\u53F6\u4E54\u6728\u3002\u82F9\u679C\u7684\u679C\u5B9E\u5BCC\u542B\u77FF\u7269\u8D28\u548C\u7EF4\u751F\u7D20\uFF0C\u662F\u4EBA\u4EEC\u6700\u5E38\u98DF\u7528\u7684\u6C34\u679C\u4E4B\u4E00\u3002","lex-en-gb-label": "Apple","lex-en-gb-description": "The apple tree \u0028Malus pumila, commonly and erroneously called Malus domestica\u0029 is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek and European Christian traditions. Apple trees are large if grown from seed. Generally apple varieties are propagated by grafting onto rootstocks, which control the size of the resulting tree. There are more than 7,500 known cultivars of apples, resulting in a range of desired characteristics. Different cultivars are bred for various tastes and uses, including cooking, eating raw and cider production. Trees and fruit are prone to a number of fungal, bacterial and pest problems, which can be controlled by a number of organic and non\u2010organic means. In 2010, the fruit's genome was sequenced as part of research on disease control and selective breeding in apple production. Worldwide production of apples in 2013 was 80.8 million tonnes, with China accounting for 49\u0025 of the total.","status-yes": "show-yes","status-no": "show-no","status-hide": "show-hide","image-source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apples.jpg/320px-Apples.jpg","image-width": "320","image-height": "480","image-position": "center","image-control": "responsive","image-alt-text": "Image of an apple","button-label": "1","button-tabindex": "1","lightbox-id": "Q89","lightbox-background": "12","lightbox-position": "13","lightbox-align-item": "14","lightbox-max-width": "15","lightbox-margin": "16","lightbox-border": "17","css-11": "css__11","css-12": "css__12","css-13": "css__13","css-14": "css__14","css-15": "css__15","css-16": "css__16"}]
+}
+</script>
+</amp-state>
+</amp-list>
+
+</html>

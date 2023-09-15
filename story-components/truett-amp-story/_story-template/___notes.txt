@@ -1,0 +1,6 @@
+
+has grid
+
+SVG inline
+
+multiple objects including Night Sky

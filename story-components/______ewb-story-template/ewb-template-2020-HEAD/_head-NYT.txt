@@ -1,0 +1,60 @@
+<html
+  xmlns:og="http://opengraphprotocol.org/schema/"
+>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title >Which Democrats</title>
+
+<meta itemprop="inLanguage" content="en-US"/>
+
+<meta property="article:published" itemprop="datePublished dateCreated" content="2019-06-14T09:00:08.000Z"/>
+<meta property="article:modified" itemprop="dateModified" content="2020-02-10T17:47:02.777Z"/>
+
+<meta http-equiv="Content-Language" content="en"/>
+
+<meta name="robots" content="noarchive"/>
+<meta name="articleid" itemprop="identifier" content="100000006553456"/>
+<meta name="nyt_uri" itemprop="identifier" content="nyt://interactive/8e9c3861-1b2b-55e3-929f-30a94f25fde0"/>
+<meta name="pubp_event_id" itemprop="identifier" content="pubp://event/9690199e1fb846b199e4a9983670eb87"/>
+<meta name="description" itemprop="description" content="There are 11 Democrats."/>
+<meta name="image" itemprop="image" content="https://static01.nyt.com/images/jumbo-v25.png"/>
+<meta name="byl" content="By Jasmine C. Lee"/>
+<meta name="thumbnail" itemprop="thumbnailUrl" content="https://static01.nyt.com/images/thumbStandard-v20.png"/>
+
+<meta name="news_keywords" content="2020 Election,Joe Biden"/>
+<meta name="pdate" content="20190614"/>
+
+<meta property="og:url" content="https://www.nytimes.com/interactive/2020/us/elections/democratic-polls.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Which Democrats?"/>
+<meta property="og:image" content="https://static01.nyt.com/images/jumbo-v25.png"/>
+<meta property="og:image:alt" content=""/>
+<meta property="og:description" content="There are 11 Democrats."/>
+<meta property="twitter:url" content="https://www.nytimes.com/interactive/2020/us/elections/democratic-polls.html"/>
+<meta property="twitter:title" content="Which Democrats"/>
+<meta property="twitter:description" content="There are 11 Democrats."/>
+<meta property="twitter:image" content="https://static01.nyt.com/images/videoSixteenByNineJumbo1600-v29.png"/>
+<meta property="twitter:image:alt" content=""/>
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="article:section" itemprop="articleSection" content="U.S."/>
+<meta property="article:tag" content="Presidential Election of 2020"/>
+<meta property="article:tag" content="Biden, Joseph R Jr"/>
+<meta property="article:tag" content="Sanders, Bernard"/>
+<meta property="article:opinion" content="false"/>
+<meta property="article:content_tier" content="metered"/>
+
+<meta name="CG" content="us"/>
+<meta name="SCG" content="elections"/>
+<meta name="CN" content="2020-election"/>
+<meta name="CT" content="news-event"/>
+
+<meta property="fb:app_id" content="9869919170" />
+<meta name="twitter:site" value="@nytimes" />
+
+<link rel="canonical" href="https://www.nytimes.com/interactive/2020/us/elections/democratic-polls.html"/>
+
+<link rel="alternate" itemprop="mainEntityOfPage" hrefLang="en-US" href="https://www.nytimes.com/interactive/democratic-polls.html"/>
+

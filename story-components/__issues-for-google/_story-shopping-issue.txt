@@ -1,0 +1,14 @@
+
+For shopping:
+  https://amp.dev/documentation/components/amp-story-shopping
+would you consider a small change:
+  change price and currency fields from mandatory to optional (allowing null values for those fields)
+
+Null values would allow us to generalize "shopping" for different purposes.
+We are very keen to link a shopping-selector (for an image) to an item in an attachment carousel.
+
+
+
+Very nice.
+This will allow us to 'voice over' a presentation (e.g. a sales preso) without the need to have an online presenter.
+Is the red bar the voice timeline (showing how much time is left ...)

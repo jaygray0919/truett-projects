@@ -1,0 +1,4 @@
+Sitemap: https://intelligence.weforum.org/sitemap.xml
+
+User-agent: *
+Allow: /

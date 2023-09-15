@@ -1,0 +1,36 @@
+<!--
+see:
+	https://htmlhead.dev/
+	https://github.com/joshbuchea/head
+-->
+
+<link
+	rel="webmentions"
+	href="reference-url"
+>
+
+<link
+	charset="utf8"
+	href=""
+	rel="stylesheet"
+	type="text/css"
+>
+
+<!-- LIMITS -->
+<meta description="150 WORDS">
+
+<meta
+	itemprop="schema property label"
+	content=""
+>
+
+<link
+	rel="author"
+	href="file.txt"
+>
+
+<link
+	rel="license"
+	href="copyright.html"
+>
+

@@ -1,7 +1,7 @@
 .. index:
 
-iframe-1
-********
+iframe |emd| home
+*****************
 
 
 .. include:: _local.txt

@@ -1,0 +1,26 @@
+
+/* source: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+
+:root {
+    --on-f9f9f9:#f9f9f9;
+    --on-cccccc:#cccccc;
+}
+
+blockquote {
+    font-family: NotoSerif;
+    line-height: 1.4em;
+    background: var(--on-f9f9f9);
+    border-left: 10px solid var(--on-cccccc);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: var(--on-cccccc);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}

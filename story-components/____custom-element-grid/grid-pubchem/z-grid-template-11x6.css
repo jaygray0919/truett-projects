@@ -1,0 +1,108 @@
+/*****************
+	pubchem 11 x 6
+*/
+
+.parent-pc {
+    font-family: NotoSerif;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    color: #fff;
+}
+
+.g-d {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.g-1-1 {
+    font-size: 1.6em;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.g-2-1 {
+    font-size: 1.6em;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.g-3-1 {
+    font-size: 1.6em;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.g-4-1 {
+    font-size: 1.6em;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.g-5-1 {
+    font-size: 1.6em;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.g-6-1 {
+    font-size: 1.6em;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+.g-1-4 {
+    font-size: 1.6em;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+.g-2-4 {
+    font-size: 1.6em;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+.g-3-4 {
+    font-size: 1.6em;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+.g-4-4 {
+    font-size: 1.6em;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+.g-5-4 {
+    font-size: 1.6em;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+.g-6-4 {
+    font-size: 1.6em;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}

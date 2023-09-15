@@ -1,0 +1,5 @@
+
+on desktop cannot use arrow keys to move carousel items
+
+would like to use this feature but not be limited to mandatory values
+will still use the buttons and their position, but will use different labels

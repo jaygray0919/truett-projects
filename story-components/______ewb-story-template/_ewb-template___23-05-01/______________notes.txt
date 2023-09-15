@@ -1,0 +1,2 @@
+build a sample Story featuring all Story objects
+

@@ -1,0 +1,20 @@
+
+Here is a Story page with CSS-only tabs and <img>
+
+https://afdsi.com/__amp-issues/attachment-tabs-sans-amp-selector/
+
+It works but using <img> is invalid
+
+https://validator.ampproject.org/#url=https%3A%2F%2Fafdsi.com%2F__amp-issues%2Fattachment-tabs-sans-amp-selector%2F
+
+---
+
+here is a Story page with CSS-only tabs and <amp-img>
+
+https://afdsi.com/__amp-issues/attachment-tabs-avec-amp-img/
+
+Using <amp-img> is valid but images fail to load (tab selection works)
+
+https://validator.ampproject.org/#url=https%3A%2F%2Fafdsi.com%2F__amp-issues%2Fattachment-tabs-avec-amp-img%2F
+
+Note the absence of any error messages

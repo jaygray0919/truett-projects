@@ -1,0 +1,788 @@
+<!doctype html>
+<html ⚡ lang="en-us" prefix="schema: http://schema.org/">
+<head property="schema:WebPage">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title property="schema:name">
+Structured Data&#x003A; 1976 &#x2013; 2020
+</title>
+<link rel="canonical" href="https://ontomatica.io/canonical.html"/>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script  async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+<script  async custom-element="amp-date-display" src="https://cdn.ampproject.org/v0/amp-date-display-0.1.js"></script>
+<script  async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script src="d3.v2.min.js" type="application/javascript"></script>
+<script src="timeknots.js" type="application/javascript"></script>
+
+<style amp-custom>
+
+@font-face {
+  font-family:"Noto Sans";font-style:normal;
+  src:
+       url(https://benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2) format("woff2"),
+       url(https://benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff) format("woff"),
+       url(https://benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.eot) format(""),
+       url(https://benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.svg) format("SVG"),
+       url(https://benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.ttf) format("TrueType");
+}
+
+@font-face {
+  font-family:"Noto Serif";font-style:normal;
+  src:
+       url(https://benetta.net/fonts/noto-serif/noto-serif-v9-latin-regular.woff2) format("woff2"),
+       url(https://benetta.net/fonts/noto-serif/noto-serif-v9-latin-regular.woff) format("woff"),
+       url(https://benetta.net/fonts/noto-serif/noto-serif-v9-latin-regular.eot) format(""),
+       url(https://benetta.net/fonts/noto-serif/noto-serif-v9-latin-regular.svg) format("SVG"),
+       url(https://benetta.net/fonts/noto-serif/noto-serif-v9-latin-regular.ttf) format("TrueType");
+}
+
+.single-page {}
+
+html {font-size: 62.5%; box-sizing: border-box;}
+html {font-weight: 300;}
+body {font-size: 1.3rem; -webkit-font-smoothing: antialiased;}
+
+h1 {letter-spacing: 0.3px; word-spacing: 0.6px; line-height: 2.5rem; margin-left: -1rem; margin-top: -0.5rem; padding-left: 1.5rem; padding-top: 1.5rem; padding-bottom: 1.5rem; font-size: 2.3rem; background: linear-gradient(to right, #1F64FF, #0389ff, #0dd3ff); color: #fff;}
+
+section {font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif; margin-left: 1rem;}
+
+section {font-family:"Noto Sans"; margin-left: 1rem;}
+
+header {position: relative; min-height: 55px; padding: 0 5px; background: #FFF;}
+/*
+header .fa {color: #0379C4; opacity: .87; font-size: 17px; line-height: 56px; height: 55px; padding: 0 15px; margin: 0;}
+*/
+
+#logo {padding-top: 5px; padding-left: 8px; height: 45px;line-height: 61px;display: inline-block;}
+
+.bordered-title {border-bottom: 1px solid rgba(0,0,0,.12); margin: 0 -15px; padding: 0 15px 8px;}
+.bordered-title h3 {margin: 0; line-height: 1.4;}
+.bordered-title h5 {opacity: .54; margin: 0;}
+
+table {font-family:"Noto Sans"; border-spacing:0; border-collapse:collapse; width:100%; max-width:100%; margin-bottom:1rem; background-color:transparent;}
+td,th {padding: 0;}
+th {text-align: left;}
+table td,table th {padding: .75rem;line-height: 1.5;vertical-align: top;border-top: 1px solid #eceeef;}
+table thead th {vertical-align:bottom; border-bottom: 2px solid #eceeef;}
+.thead-default th {color:#55595c; background-color:#eceeef;}
+
+/*
+works well
+add an SVG symbol
+*/
+.scrollToTop {color: #fafafa; font-size: 1.4em; box-shadow: 0 1px 1.5px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24); width: 50px; height: 50px; border-radius: 100px; border: none; outline: none; background: #1F64FF; z-index: 9999; bottom: 10px; right: 10px; position: fixed; opacity: 0; visibility: hidden;}
+
+#marker {position: absolute; top: 100px; width: 0px; height: 0px;}
+
+</style>
+</head>
+
+<body class="single-page" dir="ltr">
+<div id="top-page"></div>
+<header>
+
+<a id="logo" href="/">
+  <!-- width="651" -->
+ <!-- height="98" -->
+ <!-- 30% -->
+<amp-img
+    src="https://ontomatica.io/static/image/logo/onto-logo-text-blue-w325-h60.svg"
+  width="325"
+ height="60"
+ layout="fixed"
+></amp-img>
+</a>
+</header>
+
+<section id="blue-top">
+<h1 class="h1-color" property="schema:headline">
+History of Structured Data&#x003A; 1976 &#x2014; 2020
+</h1>
+</section>
+
+<section>
+
+<h2>Seminal Developments: 1976 &#x2014; 1997</h2>
+<div id="seminal"></div>
+
+<h2>Significant Developments: 1998 &#x2014; 2020</h2>
+<table class="table table-bordered table-hover">
+<thead>
+<tr>
+<td style="width:4vw; text-align: center; vertical-align: middle">
+<span>Legend</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Standards, Technology</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Standards, Commerce</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Standards, Science</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>schema.org</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Datasets</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Vendors</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Tools &#x0026; Apps</span>
+</td>
+<td style="width:20vw;">
+<span></span>
+</td>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>
+<span id="legend"></span>
+</td>
+<td>
+<span id="std-tech"></span>
+</td>
+<td>
+<span id="std-commerce"></span>
+</td>
+<td>
+<span id="std-science"></span>
+</td>
+<td>
+<span id="schema"></span>
+</td>
+<td>
+<span id="datasets"></span>
+</td>
+<td>
+<span id="vendors"></span>
+</td>
+<td>
+<span id="tools"></span>
+</td>
+<td>
+<span></span>
+</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td style="width:4vw; text-align: center; vertical-align: middle">
+<span>Legend</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Standards, Technology</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Standards, Commerce</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Standards, Science</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>schema.org</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Datasets</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Vendors</span>
+</td>
+<td style="width:4vw; text-align: center; vertical-align: middle;">
+<span>Tools &#x0026; Apps</span>
+</td>
+<td style="width:20vw;">
+<span></span>
+</td>
+</tr>
+</tfoot>
+</table>
+</section>
+
+<section>
+<h2>
+Structured Data History last modified (schema:dateModified)
+</h2>
+<amp-date-display datetime="now" locale="iso" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">iso: {{year}}-{{monthTwoDigit}}-{{dayTwoDigit}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="ar" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">ar: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="cs" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">cs: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="de" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">de: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="en-GB" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">en-GB: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="en-US" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">en-US: {{dayName}} {{monthName}} {{day}}, {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="es" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">es: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="fr" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">fr: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="hi" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">hi: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="it" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">it: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="ja" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">ja: {{dayName}} {{year}}.{{monthTwoDigit}}.{{dayTwoDigit}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="ko" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">ko: {{dayName}} {{year}}.{{monthTwoDigit}}.{{dayTwoDigit}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="pl" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">pl: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="pt-BR" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">pt: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="ru" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">ru: {{dayName}} {{day}} {{monthName}} {{year}}</div></template></amp-date-display>
+<amp-date-display datetime="now" locale="zh-CN" layout="fixed" width=20vw height=1.3em><template type="amp-mustache"><div class="noto-sans-date medium">zh: {{dayName}} {{year}}.{{monthTwoDigit}}.{{dayTwoDigit}}</div></template></amp-date-display>
+</section>
+
+<section>
+<h2>
+Credits and Provenance (schema:citation)
+</h2>
+<p>
+Special thanks to <a href="https://graves.cl/projects/">Alvaro Graves</a> for <a href="https://d3js.org/">Data Driven Documents</a> templates.
+</p>
+<br><br>
+</section>
+
+<amp-animation
+     id="showAnim"
+ layout="nodisplay"
+>
+<script type="application/json">
+{"duration": "200ms",
+    "fill": "both",
+    "iterations": "1",
+    "direction": "alternate",
+    "animations": [{"selector": "#scrollToTopButton",
+        "keyframes": [{"opacity": "1",
+          "visibility": "visible"
+        }]
+    }]}
+</script>
+</amp-animation>
+<amp-animation
+     id="hideAnim"
+ layout="nodisplay"
+>
+<script type="application/json">
+{"duration": "200ms",
+    "fill": "both",
+    "iterations": "1",
+    "direction": "alternate",
+    "animations": [{"selector": "#scrollToTopButton",
+        "keyframes": [{"opacity": "0",
+          "visibility": "hidden"
+        }]
+    }]}
+</script>
+</amp-animation>
+<div id="marker">
+<amp-position-observer
+     on="enter:hideAnim.start; exit:showAnim.start"
+ layout="nodisplay"
+></amp-position-observer>
+</div>
+<button
+     id="scrollToTopButton"
+     on="tap:top-page.scrollTo(duration=200)"
+  class="scrollToTop"
+>
+⌃
+</button>
+
+</body>
+
+<script type="text/javascript">
+
+var seminal = [
+
+{"name":"[pre-1976] Leonhard Euler presents graph theory\u003A \u201CSeven Bridges of K\u00F6nigsberg\u201D [1736]","date":"1976-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png"},
+{"name":"[pre-1976] Bell Labs introduces Unix nroff/troff text\u2010formatting program for printers \u0026 terminals\u003B precursor to HTML \u0026 SGML [June 12, 1972]","date":"1976-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/6e/UNIX_logo.svg"},
+{"name":"John F. Sowa presents a graphic notation for logic \u0026 natural language\u003A \u201CConceptual graphs for a data base interface\u201D in IBM Journal of Research \u0026 Development","date":"1976-12-01","img":"https://www.knowledgegraph.tech/wp-content/uploads/2020/03/speaker_johnSowa-e1585897784183.jpg"},
+{"name":"X12 launched\u003B standards for health care\u002C insurance\u002C government\u002C transportation\u002C finance \u0026 other industries","date":"1979-06-01","img":"https://x12.org/themes/x12/images/x12_logo.svg"},
+{"name":"Cycorp Cyc ontology \u0026 knowledge base\u003B rules about how the world works","date":"1984-07-01","img":"https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png"},
+{"name":"Princeton University launches WordNet lexical reference system for nouns, verbs, adjectives \u0026 adverbs\u003B organizes words that are synonymous into synsets","date":"1985-06-01","img":"https://www.cs.princeton.edu/courses/archive/fall19/cos226/images/assignment-logos/600-by-400/wordnet.png"},
+{"name":"Newick data format represents biological information as a tree \u0028an undirected graph in which any two vertices are connected by exactly one path\u0029 with edge lengths using parentheses and commas","date":"1986-06-24","img":"https://afdsi.com/d3-timeknots/newick-data-format.svg"},
+{"name":"ISO 8879 standard for defining documents using a generalized markup language \u0028SGML\u0029","date":"1986-10-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"World Wide Web Proposal\u003B Tim Berners\u2010Lee\u002C CERN","date":"1989-03-01","img":"https://upload.wikimedia.org/wikipedia/en/a/ae/CERN_logo.svg"},
+{"name":"Society for Worldwide Interbank Financial Telecommunication \u0028SWIFT\u0029 launches Electronic Interbank Transfer","date":"1992-06-01","img":"https://afdsi.com/d3-timeknots/swift-logo.svg"},
+{"name":"Society for Worldwide Interbank Financial Telecommunication \u0028SWIFT\u0029\u003B Banking telecommunication messages","date":"1994-06-01","img":"https://afdsi.com/d3-timeknots/swift-logo.svg"},
+{"name":"ISO 15022 standard for electronic data interchange between financial institutions","date":"1995-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"Apple introduces Meta Content Framework","date":"1996-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/f/ff/Vectorized_Apple_gray_logo.svg"},
+{"name":"Netscape presents Meta Content Framework 0.95 to W3C","date":"1997-06-06","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Netscape_logo.svg"},
+{"name":"Nexus data format represents biological information such as taxa\u002C morphological and molecular characters\u002C distances\u002C genetic codes\u002C assumptions\u002C sets\u002C and trees","date":"1997-12-01","img":"https://afdsi.com/d3-timeknots/nexus-data-format-w586-h537.jpg"}
+
+];
+TimeKnots.draw("#seminal", seminal,
+{dateFormat: "%B %Y", color: "#1F64FF", height:120, width: 1200, showLabels: true, labelFormat: "%Y"}
+);
+
+var legend = [
+{"name":"1997","date":"1997-12-31","img":""},
+{"name":"1998","date":"1998-12-31","img":""},
+{"name":"1999","date":"1999-12-31","img":""},
+{"name":"2000","date":"2000-12-31","img":""},
+{"name":"2001","date":"2001-12-31","img":""},
+{"name":"2002","date":"2002-12-31","img":""},
+{"name":"2003","date":"2003-12-31","img":""},
+{"name":"2004","date":"2004-12-31","img":""},
+{"name":"2005","date":"2005-12-31","img":""},
+{"name":"2006","date":"2006-12-31","img":""},
+{"name":"2007","date":"2007-12-31","img":""},
+{"name":"2008","date":"2008-12-31","img":""},
+{"name":"2009","date":"2009-12-31","img":""},
+{"name":"2010","date":"2010-12-31","img":""},
+{"name":"2011","date":"2011-12-31","img":""},
+{"name":"2012","date":"2012-12-31","img":""},
+{"name":"2013","date":"2013-12-31","img":""},
+{"name":"2014","date":"2014-12-31","img":""},
+{"name":"2015","date":"2015-12-31","img":""},
+{"name":"2016","date":"2016-12-31","img":""},
+{"name":"2017","date":"2017-12-31","img":""},
+{"name":"2018","date":"2018-12-31","img":""},
+{"name":"2019","date":"2019-12-31","img":""},
+{"name":"2020","date":"2020-12-31","img":""}
+];
+TimeKnots.draw("#legend", legend,
+{horizontalLayout: false, dateFormat: "%B %Y", color: "darkgray", width: 120, showLabels: true, labelFormat: "%Y"}
+);
+
+var stdtech = [
+{"name":"1997","date":"1997-12-31","img":""},
+
+{"name":"XML\u003B W3C Recommendation","date":"1998-02-10","img":"https://afdsi.com/d3-timeknots/w3c-xml-logo.svg"},
+{"name":"Namespaces in XML\u003B W3C Recommendation","date":"1998-07-10","img":"https://afdsi.com/d3-timeknots/w3c-xml-logo.svg"},
+{"name":"Dublin Core version 2","date":"1998-08-30","img":"https://upload.wikimedia.org/wikipedia/commons/7/7e/DCMI-logo.svg"},
+{"name":"Resource Description Framework Schema\u003B W3C Working Draft","date":"1998-09-09","img":"https://afdsi.com/d3-timeknots/w3c-rdf-logo.svg"},
+{"name":"Platform for Internet Content Selection 1.0\u003B W3C Working Draft","date":"1998-10-22","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"Resource Description Framework\u003B Model \u0026 Syntax Specification\u003B W3C Working Draft","date":"1998-11-08","img":"https://afdsi.com/d3-timeknots/w3c-rdf-logo.svg"},
+{"name":"Resource Description Framework\u003B Namespace","date":"1999-02-22","img":"https://afdsi.com/d3-timeknots/w3c-rdf-logo.svg"},
+{"name":"Dublin Core version 3","date":"2000-07-16","img":"https://upload.wikimedia.org/wikipedia/commons/7/7e/DCMI-logo.svg"},
+{"name":"DARPA Agent Markup Language \u0028DAML\u0029","date":"2000-08-01","img":"https://upload.wikimedia.org/wikipedia/commons/c/ce/DARPA_Logo_2010.png"},
+{"name":"DAML\u002BOIL\u003B based on RDFS with formal semantics using Description Logic","date":"2001-01-11","img":"https://upload.wikimedia.org/wikipedia/commons/c/ce/DARPA_Logo_2010.png"},
+{"name":"Dublin Core version 4","date":"2001-04-12","img":"https://upload.wikimedia.org/wikipedia/commons/7/7e/DCMI-logo.svg"},
+{"name":"XML Schema\u003B W3C Recommendation","date":"2001-05-02","img":"https://afdsi.com/d3-timeknots/w3c-xml-logo.svg"},
+{"name":"YAML data format representing configuration files \u0026 applications where data is being stored or transmitted\u003B version 1.0","date":"2001-05-11","img":"https://upload.wikimedia.org/wikipedia/commons/f/f8/YAML_Logo.svg"},
+{"name":"SVG 1.0\u003B W3C Recommendation","date":"2001-09-04","img":"https://afdsi.com/d3-timeknots/w3c-svg-logo.svg"},
+{"name":"OWL Web Ontology Language\u003B Namespace assigned","date":"2002-07-10","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"Dublin Core version 5","date":"2003-08-26","img":"https://upload.wikimedia.org/wikipedia/commons/7/7e/DCMI-logo.svg"},
+{"name":"Resource Description Framework 1.0\u003B Concepts \u0026 Abstract Syntax\u003B W3C Recommendation","date":"2004-02-10","img":"https://afdsi.com/d3-timeknots/w3c-rdf-logo.svg"},
+{"name":"Resource Description Framework Schema 1.0\u003B W3C Recommendation","date":"2004-02-10","img":"https://afdsi.com/d3-timeknots/w3c-rdf-logo.svg"},
+{"name":"OWL Web Ontology Language\u003B W3C Recommendation","date":"2004-02-10","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"ISO publishes ISO 20022 standard for electronic data interchange between financial institutions","date":"2004-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"SKOS Core Guide\u003B W3C Working Draft","date":"2005-05-10","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"Dublin Core version 6","date":"2005-08-15","img":"https://upload.wikimedia.org/wikipedia/commons/7/7e/DCMI-logo.svg"},
+{"name":"SKOS Core Vocabulary Specification\u003B W3C Working Draft","date":"2005-11-02","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"Linked Data Design\u003B W3C Draft \u0028Tim Berners\u2010Lee\u0029","date":"2006-07-27","img":"https://afdsi.com/d3-timeknots/w3c-semantic-web-logo.svg"},
+{"name":"Namespaces in XML\u003B W3C Recommendation","date":"2006-08-16","img":"https://afdsi.com/d3-timeknots/w3c-xml-logo.svg"},
+{"name":"SPARQL Query Language for RDF\u003B W3C Recommendation","date":"2008-01-15","img":"https://afdsi.com/d3-timeknots/w3c-sparql-logo.svg"},
+{"name":"RDFa in XHTML version 1.0\u003B W3C Recommendation","date":"2008-10-14","img":"https://afdsi.com/d3-timeknots/w3c-rdfa-logo.svg"},
+{"name":"SKOS Simple Knowledge Organization System\u003B W3C Recommendation","date":"2009-08-18","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"YAML data format representing configuration files \u0026 applications where data is being stored or transmitted\u003B version 1.2","date":"2009-10-01","img":"https://upload.wikimedia.org/wikipedia/commons/f/f8/YAML_Logo.svg"},
+{"name":"Namespaces in XML\u003B W3C Recommendation","date":"2009-12-08","img":"https://afdsi.com/d3-timeknots/w3c-xml-logo.svg"},
+{"name":"OGC GeoSPARQL \u2014 Geographic Query Language for RDF Data","date":"2011-07-07","img":"https://upload.wikimedia.org/wikipedia/commons/6/6a/Open_Geospatial_Consortium_logo.svg"},
+{"name":"SVG 1.1\u003B W3C Recommendation","date":"2011-08-16","img":"https://afdsi.com/d3-timeknots/w3c-svg-logo.svg"},
+{"name":"XML Schema 1.1\u003B W3C Recommendation","date":"2012-04-01","img":"https://afdsi.com/d3-timeknots/w3c-xml-logo.svg"},
+{"name":"SPARQL 1.1 Query Language\u003B W3C Recommendation","date":"2012-07-24","img":"https://afdsi.com/d3-timeknots/w3c-sparql-logo.svg"},
+{"name":"OWL 2 Web Ontology Language\u003B W3C Recommendation","date":"2012-12-11","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"JSON data format standard by Ecma International","date":"2013-10-01","img":"https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg"},
+{"name":"JSON\u2013LD 1.0\u003B W3C Recommendation","date":"2014-01-16","img":"https://afdsi.com/d3-timeknots/w3c-json-ld-logo.svg"},
+{"name":"Resource Description Framework 1.1\u003B Concepts \u0026 Abstract Syntax\u003B W3C Recommendation","date":"2014-02-25","img":"https://afdsi.com/d3-timeknots/w3c-rdf-logo.svg"},
+{"name":"Resource Description Framework Schema 1.1\u003B W3C Recommendation","date":"2014-02-25","img":"https://afdsi.com/d3-timeknots/w3c-rdf-logo.svg"},
+{"name":"Turtle\u003B W3C Recommendation","date":"2014-02-25","img":"https://afdsi.com/d3-timeknots/w3c-turtle-logo.svg"},
+{"name":"Linked Data Platform 1.0\u003B W3C Recommendation","date":"2015-02-26","img":"https://afdsi.com/d3-timeknots/w3c-semantic-web-logo.svg"},
+{"name":"RDFa in XHTML version 1.1\u003B W3C Recommendation","date":"2015-03-17","img":"https://afdsi.com/d3-timeknots/w3c-rdfa-logo.svg"},
+{"name":"Shapes Constraint Language\u003B W3C Recommendation","date":"2017-07-20","img":"https://afdsi.com/d3-timeknots/w3c-shacl-logo.svg"},
+{"name":"JSON data format standard by ISO","date":"2017-11-01","img":"https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg"},
+{"name":"SVG 2\u003B W3C Candidate Recommendation","date":"2018-10-04","img":"https://afdsi.com/d3-timeknots/w3c-svg-logo.svg"},
+{"name":"JSON\u2013LD 1.1\u003B W3C Recommendation","date":"2020-07-16","img":"https://afdsi.com/d3-timeknots/w3c-json-ld-logo.svg"},
+
+{"name":"2020","date":"2020-12-31","img":""}
+];
+TimeKnots.draw("#std-tech", stdtech,
+{horizontalLayout: false, dateFormat: "%B %Y", color: "#f3d480", width: 140, showLabels: true, labelFormat: "%Y"}
+);
+
+var stdcommerce = [
+{"name":"1997","date":"1997-12-31","img":""},
+
+{"name":"eXtensible Business Reporting Language \u0028XBRL\u0029 launch","date":"1998-06-01","img":"https://upload.wikimedia.org/wikipedia/en/0/0d/XBRL.svg"},
+{"name":"Society for Worldwide Interbank Financial Telecommunication \u0028SWIFT\u0029\u003B Securities message scheme","date":"1999-06-01","img":"https://afdsi.com/d3-timeknots/swift-logo.svg"},
+{"name":"USDA introduces National Agricultural Library Thesaurus","date":"2002-12-31","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"USDA National Agricultural Library Thesaurus version 2003","date":"2003-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"Society for Worldwide Interbank Financial Telecommunication \u0028SWIFT\u0029\u003B Securities \u0026 related financial instruments","date":"2003-06-01","img":"https://afdsi.com/d3-timeknots/swift-logo.svg"},
+{"name":"USDA National Agricultural Library Thesaurus version 2004","date":"2004-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"Society for Worldwide Interbank Financial Telecommunication \u0028SWIFT\u0029\u003B Financial Industry message scheme","date":"2004-06-01","img":"https://afdsi.com/d3-timeknots/swift-logo.svg"},
+{"name":"International Air Transport Association \u0028IATA\u0029 Electronic Ticket","date":"2004-07-01","img":"https://upload.wikimedia.org/wikipedia/commons/f/f7/IATAlogo.svg"},
+{"name":"XML Schema specifies how to describe elements in an XML document\u003B release 1.0\u002C W3C Recommendation","date":"2004-10-28","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"USDA National Agricultural Library Thesaurus version 2005","date":"2005-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"US Securities \u0026 Exchange Commission establishes voluntary XBRL corporate financial statement program","date":"2005-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/1/1c/Seal_of_the_United_States_Securities_and_Exchange_Commission.svg"},
+{"name":"USDA National Agricultural Library Thesaurus version 2006","date":"2006-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2007","date":"2007-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2008","date":"2008-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"US Securities \u0026 Exchange Commission issues final XBRL corporate financial statement rules","date":"2009-01-30","img":"https://upload.wikimedia.org/wikipedia/commons/1/1c/Seal_of_the_United_States_Securities_and_Exchange_Commission.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2009","date":"2009-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"US Library of Congress introduces Authorities \u0026 Vocabularies Service","date":"2009-05-05","img":"https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_of_the_United_States_Library_of_Congress.png"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2010","date":"2010-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"US Library of Congress releases Metadata Authority Description Schema in RDF \u0028MADS/RDF\u0029","date":"2010-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_of_the_United_States_Library_of_Congress.png"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2011","date":"2011-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2012","date":"2012-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"XML Schema specifies how to describe elements in an XML document\u003B release 1.1\u002C W3C Recommendation","date":"2012-04-05","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2013","date":"2013-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"ISO 11179 standard to make metadata understandable \u0026 shareable\u003B edition 3 based on OWL\u002C RDF \u0026 SPARQL","date":"2013-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2014","date":"2014-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"ISO 9735 EDIFACT \u0028electronic data interchange for administration\u002C commerce \u0026 transport\u0029\u003B version 2","date":"2014-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2015","date":"2015-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2016","date":"2016-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2017","date":"2017-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"UN FAO Agris: 9\u002C025\u002C192 AgroVoc\u2013coded items","date":"2017-09-30","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2018","date":"2018-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"UN FAO Agris: 9\u002C257\u002C858 AgroVoc\u2013coded items","date":"2018-11-30","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2019","date":"2019-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"UN FAO Agris: 10\u002C924\u002C047 AgroVoc\u2013coded items","date":"2019-11-30","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"USDA NALT \u0028SKOS format\u0029 version 2020","date":"2020-02-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/61/US-NationalAgriculturalLibrary-Logo.svg"},
+{"name":"UN FAO Agris: 12\u002C099\u002C175 AgroVoc\u2013coded items","date":"2020-11-30","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+
+{"name":"2020","date":"2020-12-31","img":""}
+];
+TimeKnots.draw("#std-commerce", stdcommerce,
+{horizontalLayout: false, dateFormat: "%B %Y", color: "#8f715b", width: 140, showLabels: true, labelFormat: "%Y"}
+);
+
+var stdscience = [
+{"name":"1997","date":"1997-12-31","img":""},
+
+{"name":"MathML for describing mathematical notations\u002C structures \u0026 content\u003B version 1","date":"1998-04-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"US NIH National Cancer Institute publishes NCI Thesaurus in OWL Description Logic format","date":"2003-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"MathML for describing mathematical notations\u002C structures \u0026 content\u003B version 2","date":"2003-10-02","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"US NIH NCI Thesaurus release 04.11A","date":"2004-12-03","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NCI Thesaurus release 05.11f","date":"2005-12-08","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NCI Thesaurus release 06.12d","date":"2006-03-07","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH FDA launches electroninc Substance Registration System for prescription medicine","date":"2006-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/4/43/Logo_of_the_United_States_Food_and_Drug_Administration.svg"},
+{"name":"US NIH NCI Thesaurus release 07.10d","date":"2007-12-06","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NCI Thesaurus release 08.09d","date":"2008-11-20","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH launches National Center for Biomedical Ontology \u0028NCBO\u0029","date":"2009-02-05","img":"https://upload.wikimedia.org/wikipedia/commons/4/43/NIH_logo.svg"},
+{"name":"PhyloXML for describing phylogenetic trees \u0026 associated data","date":"2009-10-27","img":""},
+{"name":"US NIH NCI Thesaurus release 09.10d","date":"2009-12-28","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"MathML for describing mathematical notations\u002C structures \u0026 content\u003B version 3","date":"2010-06-03","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"US NIH NCI Thesaurus release 10.10a","date":"2010-11-16","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NCI Thesaurus release 11.09d","date":"2011-10-20","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"ISO 11238 standard for identification \u0026 exchange of regulated information on substances\u003B version 1","date":"2012-04-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"ISO 11239 standard for pharmaceutical dose forms\u002C units of presentation\u002C routes of administration \u0026 packaging items related to medicinal products","date":"2012-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"ISO 11240 standard for units of measurement","date":"2012-08-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"ISO 11615 standard for identification \u0026 exchange of regulated medicinal product information\u003B version 1","date":"2012-10-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"US NIH NCI Thesaurus release 12.09d","date":"2012-11-30","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"ISO 11616 standard for identification \u0026 exchange of regulated pharmaceutical product information\u003B version 1","date":"2012-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"US NIH NCI Thesaurus release 13.11d","date":"2013-12-13","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NCBI PubChem introduces RDF support","date":"2014-01-30","img":"https://upload.wikimedia.org/wikipedia/commons/b/b6/PubChem_logo.svg"},
+{"name":"US NIH National Library of Medicine \u0028NLM\u0029 publishes Medical Subject Headings \u0028MeSH\u0029 in RDF format","date":"2014-11-17","img":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Medical_Subject_Headings_logo.jpg"},
+{"name":"US NIH NCI Thesaurus release 14.11d","date":"2014-12-15","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NLM launches MeSH SPARQL Endpoint","date":"2015-08-10","img":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Medical_Subject_Headings_logo.jpg"},
+{"name":"US NIH NLM MeSH update","date":"2015-11-19","img":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Medical_Subject_Headings_logo.jpg"},
+{"name":"US NIH NCI Thesaurus release 15.11e","date":"2015-12-09","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NLM MeSH update","date":"2016-11-21","img":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Medical_Subject_Headings_logo.jpg"},
+{"name":"US NIH NCI Thesaurus release 16.11d","date":"2016-11-28","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"ISO 11615 standard for identification \u0026 exchange of regulated medicinal product information\u003B version 2","date":"2017-09-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"US NIH NLM MeSH update","date":"2017-09-13","img":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Medical_Subject_Headings_logo.jpg"},
+{"name":"ISO 11616 standard for identification \u0026 exchange of regulated pharmaceutical product information\u003B version 2","date":"2017-10-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"US NIH NCI Thesaurus release 17.11d","date":"2017-11-28","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"ISO 11238 standard for identification \u0026 exchange of regulated information on substances\u003B version 2","date":"2018-07-01","img":"https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_Logo_%28Red_square%29.svg"},
+{"name":"US NIH NLM MeSH update","date":"2018-11-21","img":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Medical_Subject_Headings_logo.jpg"},
+{"name":"US NIH NCI Thesaurus release 18.11d","date":"2018-12-18","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NLM MeSH update","date":"2019-11-09","img":"https://upload.wikimedia.org/wikipedia/commons/c/c3/Medical_Subject_Headings_logo.jpg"},
+{"name":"US NIH NCI Thesaurus release 19.11d","date":"2019-12-09","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+{"name":"US NIH NCI Thesaurus release 20.11e","date":"2020-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/0/0b/NCI_Stacked_COLOR.png"},
+
+{"name":"2020","date":"2020-12-31","img":""}
+];
+TimeKnots.draw("#std-science", stdscience,
+{horizontalLayout: false, dateFormat: "%B %Y", color: "#36688d", width: 140, showLabels: true, labelFormat: "%Y"}
+);
+
+var schema = [
+{"name":"1997","date":"1997-12-31","img":""},
+
+{"name":"schema.org launch","date":"2011-06-02","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.91 release","date":"2012-02-21","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.92 release","date":"2012-03-21","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.93 release","date":"2012-04-04","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.94 release","date":"2012-05-05","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.95 release","date":"2012-06-26","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.96 release","date":"2012-07-18","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.97 release","date":"2012-07-26","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.98 release","date":"2012-10-18","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 0.99 release","date":"2012-11-08","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.0a release","date":"2013-04-05","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.0b release","date":"2013-07-24","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.0c release","date":"2013-08-07","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.0d release","date":"2013-11-21","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.0e release","date":"2013-12-04","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.2 release","date":"2014-04-16","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.3 release","date":"2014-05-01","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.1 release","date":"2014-05-04","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.4 release","date":"2014-05-16","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.5 release","date":"2014-05-27","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.6 release","date":"2014-06-16","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.7 release","date":"2014-07-08","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.8 release","date":"2014-07-28","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.9 release","date":"2014-08-18","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.91 release","date":"2014-09-12","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.92 release","date":"2014-12-11","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 1.93 release","date":"2015-02-04","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 2.0 release","date":"2015-05-12","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 2.1 release","date":"2015-08-06","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"auto.schema.org launch","date":"2015-08-07","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"bib.schema.org launch","date":"2015-08-08","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 2.2 release","date":"2015-11-05","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.0 release","date":"2016-05-04","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.1 release","date":"2016-08-09","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.2 release","date":"2017-03-23","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.3 release","date":"2017-08-14","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.4 release","date":"2018-06-14","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.4 release","date":"2018-06-15","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.5 release","date":"2019-04-01","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.6 release","date":"2019-05-01","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.7 release","date":"2019-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.8 release","date":"2019-07-01","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 3.9 release","date":"2019-08-01","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 4.0 release","date":"2019-10-15","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 5.0 release","date":"2019-12-31","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 6.0 release","date":"2020-01-21","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 7.0 release","date":"2020-03-17","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 7.01 release","date":"2020-03-22","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 7.02 release","date":"2020-03-31","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 7.03 release","date":"2020-04-02","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 8.0 release","date":"2020-05-01","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 9.0 release","date":"2020-07-21","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 10.0 release","date":"2020-09-07","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+{"name":"schema.org version 11.0 release","date":"2020-11-30","img":"https://upload.wikimedia.org/wikipedia/commons/d/d0/Schema.org-Logo.svg"},
+
+{"name":"2020","date":"2020-12-31","img":""}
+];
+TimeKnots.draw("#schema", schema,
+{horizontalLayout: false, dateFormat: "%B %Y", color: "#990000", width: 140, showLabels: true, labelFormat: "%Y"}
+);
+
+var datasets = [
+{"name":"1997","date":"1997-12-31","img":""},
+
+{"name":"Systematized Nomenclature of Medicine \u2010 Clinical Terms","date":"2002-12-31","img":"https://afdsi.com/d3-timeknots/snomed-logo-white-w2054-h384.png"},
+{"name":"Microformats version 1 launch","date":"2005-05-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/60/Microformat-logo.png"},
+{"name":"Friend of a Friend ontology launch","date":"2005-06-03","img":"https://upload.wikimedia.org/wikipedia/commons/b/b1/FoafLogo.svg"},
+{"name":"DBpedia release","date":"2007-01-10","img":"https://upload.wikimedia.org/wikipedia/commons/7/73/DBpediaLogo.svg"},
+{"name":"Freebase launch","date":"2007-03-03","img":"https://upload.wikimedia.org/wikipedia/commons/f/f9/Freebase_Logo_optimised.svg"},
+{"name":"Chemical Entities of Biological Interest release 001 \u2014 OWL","date":"2007-10-11","img":"https://upload.wikimedia.org/wikipedia/en/3/35/ChEBI_logo.png"},
+{"name":"Ontobee released","date":"2008-07-01","img":"https://afdsi.com/d3-timeknots/ontobee-logo-w280-h49.gif"},
+{"name":"Open Graph introduced by Facebook","date":"2010-04-02","img":"https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_Logo_Mini.svg"},
+{"name":"Microformats version 2 launch","date":"2010-05-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/60/Microformat-logo.png"},
+{"name":"Semanticscience Integrated Ontology release 0.8","date":"2010-09-17","img":"https://afdsi.com/d3-timeknots/maastricht-university-logo-w182-h122.png"},
+{"name":"Wikidata items: 367","date":"2011-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Systematized Nomenclature of Medicine \u2010 Clinical Terms using Description Logic","date":"2011-12-31","img":"https://afdsi.com/d3-timeknots/snomed-logo-white-w2054-h384.png"},
+{"name":"Wikidata launch","date":"2012-02-07","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Gene Ontology first release","date":"2012-10-20","img":"https://afdsi.com/d3-timeknots/gene-ontology-logo-w7522-h1938.png"},
+{"name":"Wikidata items: 2\u002C017\u002C932 \u0028\u002B2\u002C017\u002C565\u0029","date":"2012-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Plant Ontology release 19","date":"2012-12-31","img":"https://afdsi.com/d3-timeknots/plant-ontology-logo-w225-h225.jpg"},
+{"name":"Wikidata items: 13\u002C183\u002C964 \u0028\u002B11\u002C166\u002C032\u0029","date":"2013-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Wikidata items: 15\u002C727\u002C542 \u0028\u002B2\u002C543\u002C578\u0029","date":"2014-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Freebase goes into read\u2010only mode","date":"2014-12-16","img":"https://upload.wikimedia.org/wikipedia/commons/f/f9/Freebase_Logo_optimised.svg"},
+{"name":"UniProt OWL launch","date":"2015-03-05","img":"https://upload.wikimedia.org/wikipedia/en/e/e5/UniProt_%28logo%29.png"},
+{"name":"Wikidata items: 18\u002C521\u002C653 \u0028\u002B2\u002C794\u002C111\u0029","date":"2015-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Web Data Commons Corpus 2015","date":"2016-04-25","img":"https://upload.wikimedia.org/wikipedia/commons/0/04/University_of_Mannheim.svg"},
+{"name":"Wikidata items: 23\u002C920\u002C185 \u0028\u002B5\u002C398\u002C532\u0029","date":"2016-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Web Data Commons Corpus 2016","date":"2017-01-17","img":"https://upload.wikimedia.org/wikipedia/commons/0/04/University_of_Mannheim.svg"},
+{"name":"Wikidata items: 41\u002C567\u002C541 \u0028\u002B17\u002C647\u002C356\u0029","date":"2017-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Web Data Commons Corpus 2017","date":"2018-01-08","img":"https://upload.wikimedia.org/wikipedia/commons/0/04/University_of_Mannheim.svg"},
+{"name":"Wikidata items: 53\u002C302\u002C916 \u0028\u002B11\u002C735\u002C375\u0029","date":"2018-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Web Data Commons Corpus 2018","date":"2019-01-17","img":"https://upload.wikimedia.org/wikipedia/commons/0/04/University_of_Mannheim.svg"},
+{"name":"Wikidata items: 72\u002C464\u002C809 \u0028\u002B19\u002C161\u002C893\u0029","date":"2019-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Chemical Entities of Biological Interest release 194 \u0028\u002B193 since 2007-10-11\u0029","date":"2020-02-01","img":"https://upload.wikimedia.org/wikipedia/en/3/35/ChEBI_logo.png"},
+{"name":"UniProt OWL current release","date":"2020-03-05","img":"https://upload.wikimedia.org/wikipedia/en/e/e5/UniProt_%28logo%29.png"},
+{"name":"Plant Ontology current release \u0028\u002B14 since 2012-12-31\u0029","date":"2020-08-20","img":"https://afdsi.com/d3-timeknots/plant-ontology-logo-w225-h225.jpg"},
+{"name":"Web Data Commons Corpus 2020","date":"2020-09-01","img":"https://upload.wikimedia.org/wikipedia/commons/0/04/University_of_Mannheim.svg"},
+{"name":"Wikidata items: 92\u002C226\u002C699 \u0028\u002B19\u002C761\u002C890\u0029","date":"2020-12-01","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"Semanticscience Integrated Ontology release 1.48","date":"2020-12-03","img":"https://afdsi.com/d3-timeknots/maastricht-university-logo-w182-h122.png"},
+{"name":"Gene Ontology current release \u0028\u002B23 since 2012-10-20\u0029","date":"2020-12-08","img":"https://afdsi.com/d3-timeknots/gene-ontology-logo-w7522-h1938.png"},
+
+{"name":"2020","date":"2020-12-31","img":""}
+];
+TimeKnots.draw("#datasets", datasets,
+{horizontalLayout: false, dateFormat: "%B %Y", color: "#1BBC9B", width: 140, showLabels: true, labelFormat: "%Y"}
+);
+
+var vendors = [
+{"name":"1997","date":"1997-12-31","img":""},
+
+{"name":"Google introduces rich snippets","date":"2009-05-12","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces (Rich Snippets) Structured Data Testing Tool","date":"2009-10-26","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces event rich snippets","date":"2010-01-22","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds microdata support for rich snippets","date":"2010-03-11","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces recipe rich snippets","date":"2010-04-13","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces music rich snippets","date":"2010-08-18","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces product rich snippets","date":"2010-11-02","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces authorship markup","date":"2011-06-07","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces application rich snippets","date":"2011-09-14","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Knowledge Graph launch","date":"2012-02-16","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Structured Data Testing Tool update","date":"2012-09-20","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Knowledge Graph supports organization logos","date":"2013-05-15","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Yandex Structured Data Validator supports JSON\u2013LD","date":"2013-12-02","img":"https://upload.wikimedia.org/wikipedia/commons/9/91/Yandex_logo_en.svg"},
+{"name":"Google search include local business logos\u002C contact information\u002C social accounts","date":"2014-04-08","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google search includes sitelinks search box","date":"2014-09-05","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Organization logos in Google search results \u2014 JSON\u2013LD","date":"2014-10-21","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Knowledge Graph supports social profiles","date":"2015-01-15","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Structured Data Testing Tool update with JSON\u2013LD support","date":"2015-01-15","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Facebook introduces Instant Articles","date":"2015-05-12","img":"https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_Logo_Mini.svg"},
+{"name":"Apple introduces Apple News","date":"2015-06-08","img":"https://upload.wikimedia.org/wikipedia/commons/f/ff/Vectorized_Apple_gray_logo.svg"},
+{"name":"Recipe rich snippets in Google search results \u2014 JSON\u2013LD","date":"2015-07-24","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Shopping requires GTIN\u002C Brand for 50 brands","date":"2015-09-08","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Apple releases App Search Programming Guide for iOS 9","date":"2015-09-15","img":"https://upload.wikimedia.org/wikipedia/commons/f/ff/Vectorized_Apple_gray_logo.svg"},
+{"name":"Google introduces Accelerated Mobile Pages","date":"2015-10-07","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google releases Live Blog carousel markup","date":"2015-11-18","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Structured Data Testing Tool update for schema.org version 2.2","date":"2015-11-20","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google search include local business information \u0026 place actions","date":"2015-11-24","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Tourism Structured Data Community Group launch","date":"2015-12-08","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"Google changes \u0040Article Rich Snippets specifications","date":"2015-12-11","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Knowledge Graph Search API launch","date":"2015-12-16","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Facebook adds Audience Optimization tags for Instant Articles","date":"2016-01-21","img":"https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_Logo_Mini.svg"},
+{"name":"Google changes image property use for \u0040BreadcrumbList from \u0022required\u0022 to \u0022optional\u0022","date":"2016-01-26","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Product rich snippets in Google search results \u2014 JSON\u2013LD","date":"2016-02-03","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Review rich snippets in Google search results \u2014 JSON\u2013LD","date":"2016-02-03","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Shopping requires GTIN\u002C Brand for all products","date":"2016-02-08","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"GS1 Smart Search \u0026 GS1 Web Vocabulary launch","date":"2016-02-22","img":"https://upload.wikimedia.org/wikipedia/commons/e/e4/Logo_GS1.svg"},
+{"name":"Pinterest movie rich pins update","date":"2016-02-23","img":"https://upload.wikimedia.org/wikipedia/commons/3/35/Pinterest_Logo.svg"},
+{"name":"Pinterest recipe rich pins update","date":"2016-02-23","img":"https://upload.wikimedia.org/wikipedia/commons/3/35/Pinterest_Logo.svg"},
+{"name":"Google launches \u0022Top Stories with AMP\u0022","date":"2016-02-24","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Twitter adds image alt support for cards","date":"2016-03-26","img":"https://upload.wikimedia.org/wikipedia/commons/5/51/Twitter_logo.svg"},
+{"name":"Google Structured Data Testing Tool update","date":"2016-05-12","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google rich cards \u0026 rich results launch","date":"2016-05-17","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google enumerates data types eligible for review rich features","date":"2016-08-04","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces Top Places Lists","date":"2016-08-04","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google removes structured data requirements for AMP","date":"2016-08-04","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google restores critic reviews; expands to include local businesses","date":"2016-08-04","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds JSON\u2013LD support for breadcrumbs","date":"2016-08-12","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces search live coverage carousel","date":"2016-08-29","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces aggregated user reviews\u002C critic reviews in local Knowlege Panel","date":"2016-09-07","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Bing improves suggestions for academic papers \u0026 movies","date":"2016-09-09","img":"https://upload.wikimedia.org/wikipedia/commons/e/e9/Bing_logo.svg"},
+{"name":"Google introduces rich snippets for courses","date":"2016-09-12","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google pilots support for dataset metadata","date":"2016-09-23","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google News introduces the \u0022Fact check\u0022 label","date":"2016-10-13","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google drops image markup requirement for recipe \u0026 movie rich cards","date":"2016-10-14","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google extends rich card support to online courses\u002C local restaurants","date":"2016-11-16","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google makes AMP a requirement for host\u2010specific lists","date":"2016-11-16","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google separates AMP \u0026 non\u2010AMP structured data requirements for articles","date":"2016-11-17","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google pilots support for AMP host\u2010specific lists for restaurants","date":"2016-11-21","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports \u0022buy e\u2010book\u0022 links in book Knowledge Graph cards","date":"2016-12-03","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports display of product information in image search","date":"2016-12-13","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google says \u0022profanity \u0026 vulgar language\u0022 in reviews are \u0022prohibited\u0022","date":"2016-12-15","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google says \u0022profanity \u0026 vulgar language\u0022 in reviews are \u0022discouraged\u0022","date":"2016-12-22","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Structured Data Testing Tool adds support for multi\u2010typed entities","date":"2017-02-03","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google renames \u0022Science Datasets\u0022 data type to \u0022Datasets\u0022","date":"2017-02-23","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces rich results for podcasts","date":"2017-03-22","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Merchant Center adds JSON\u2013LD support","date":"2017-03-28","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces structured data guidelines for data type \u0022Fact Check\u0022","date":"2017-04-06","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google announces Fact Check is available globally","date":"2017-04-07","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces \u0022Similar items\u0022 in Image Search","date":"2017-04-10","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google broadens range of author property for \u0040Article to include\u0040 Organization","date":"2017-04-24","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces \u0022enriched search results\u0022","date":"2017-06-20","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces job listings enriched search results","date":"2017-06-20","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces \u0022badges\u0022 for image search on \u0026roid \u0026 mobile results","date":"2017-08-01","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Bing supports for Fact Check using \u0040ClaimReview","date":"2017-09-14","img":"https://upload.wikimedia.org/wikipedia/commons/e/e9/Bing_logo.svg"},
+{"name":"Google introduces structured data for paywalled content","date":"2017-10-01","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google Merchant Center augments structured data with advanced data extractors for automatic item updates","date":"2017-10-27","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google enhances \u0040JobPostings with more detailed salary\u002C location \u0026 application information","date":"2017-11-15","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports information about occupations","date":"2017-11-15","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports trust indicator labels for news organizations","date":"2017-11-16","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google allows third\u2010party job sites to specify a hiring organization\u2019s logo","date":"2017-11-29","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google releases new structured data testing tool in beta\u002C Rich Results Test","date":"2017-12-19","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Bing supports image specified by og:image in Bing News results","date":"2017-12-27","img":"https://upload.wikimedia.org/wikipedia/commons/e/e9/Bing_logo.svg"},
+{"name":"Google Assistant supports podcasts\u002C recipes \u0026 news","date":"2018-01-09","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds \u0040JobPosting markup for jobs that can be performed remotely","date":"2018-02-07","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google increases minimum recommended size for AMP articles","date":"2018-02-07","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Bing supports for JSON\u2013LD","date":"2018-03-02","img":"https://upload.wikimedia.org/wikipedia/commons/e/e9/Bing_logo.svg"},
+{"name":"Google removes page on \u0022Search live coverage carousel (BETA)\u0022","date":"2018-03-02","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google releases preview tool for podcasts","date":"2018-04-25","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports employer aggregate rating","date":"2018-06-04","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google introduces Media Actions \u0026 supporting JSON\u2013LD data feed for Media Actions","date":"2018-06-12","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds recipe support to \u0040JobPostings status report\u002C now \u201CRich Result Status Report\u201D","date":"2018-06-25","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google releases Indexing API for job posting pages that include \u0040JobPosting structured data","date":"2018-06-26","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds beta support for tabular datasets","date":"2018-07-11","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google announces beta program for Google News publishers to mark up speakable content","date":"2018-07-24","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google enhances \u0040Events rich results in US","date":"2018-07-26","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds recommendation to include datePublished \u0026 dateModified to non\u2010AMP articles","date":"2018-07-31","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google announces support for information from datasets in its search results","date":"2018-07-31","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Bing markup validator adds support for JSON\u2013LD","date":"2018-08-02","img":"https://upload.wikimedia.org/wikipedia/commons/e/e9/Bing_logo.svg"},
+{"name":"Google launches Dataset Search","date":"2018-09-05","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds AMP story metadata requirements for AMP articles","date":"2018-09-20","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports access\u2010rights related image metadata in Google Images","date":"2018-09-27","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google releases beta version of the Fact Check Markup Tool","date":"2018-10-02","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Facebook supports ecommerce catalog using schema.org","date":"2018-11-20","img":"https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_Logo_Mini.svg"},
+{"name":"Google supports for Q\u0026A Pages","date":"2018-12-03","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google expands \u0040JobPosting with properties applicantLocationRequirements \u0026 jobLocationType","date":"2018-12-04","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports livestream videos","date":"2018-12-05","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports FAQs \u0026 how\u2010to content","date":"2019-05-08","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports job training \u0026 education programs in search results","date":"2019-08-28","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports movie rich result mobile carousels","date":"2019-09-05","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google supports video segments\u002C ItemList\u2010facilitated video carousels","date":"2019-09-17","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds reports for review snippets in Search Console","date":"2020-02-10","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds properties for virtual\u002C postponed\u002C \u0026 canceled events","date":"2020-03-17","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google adds reports for Guided Recipes on Assistant in Search Console","date":"2020-05-19","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google announces Rich Results Test is out of beta","date":"2020-07-07","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google announces support for schema.org retailer shipping data","date":"2020-09-22","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+{"name":"Google announces transition of Structured Data Testing Tool to new domain serving schema.org community","date":"2020-12-15","img":"https://upload.wikimedia.org/wikipedia/commons/2/20/Google-Logo.svg"},
+
+{"name":"2020","date":"2020-12-31","img":""}
+];
+TimeKnots.draw("#vendors", vendors,
+{horizontalLayout: false, dateFormat: "%B %Y", color: "#a67b04", width: 140, showLabels: true, labelFormat: "%Y"}
+);
+
+var tools = [
+{"name":"1997","date":"1997-12-31","img":""},
+
+{"name":"RDF4J workbench launch","date":"1999-06-01","img":"https://upload.wikimedia.org/wikipedia/en/a/a1/RDF4J_logo.png"},
+{"name":"\u0050\u0072\u006f\u0074\u00e9\u0067\u00e9 version 1.1","date":"1999-11-11","img":"https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Stanford_University_School_of_Medicine_logo.svg/330px-Stanford_University_School_of_Medicine_logo.svg.png"},
+{"name":"Jena Semantic Web framework for Java version 1","date":"2000-08-28","img":"https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Apache_Jena_Logo.svg/320px-Apache_Jena_Logo.svg.png"},
+{"name":"UN FAO AgroVoc Agricultural Ontology Server","date":"2001-05-01","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"RedLand RDF Libraries launch","date":"2001-06-01","img":""},
+{"name":"UN FAO AgroVoc Agricultural Ontology Service \u2014 OWL implementation","date":"2003-05-01","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"Franz AllegroGraph launch","date":"2003-06-01","img":"https://franz.com/images/logo.png"},
+{"name":"Jena Semantic Web framework for Java version 2","date":"2003-08-28","img":"https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Apache_Jena_Logo.svg/320px-Apache_Jena_Logo.svg.png"},
+{"name":"\u0050\u0072\u006f\u0074\u00e9\u0067\u00e9 version 2.0","date":"2004-02-04","img":"https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Stanford_University_School_of_Medicine_logo.svg/330px-Stanford_University_School_of_Medicine_logo.svg.png"},
+{"name":"\u0050\u0072\u006f\u0074\u00e9\u0067\u00e9 version 3.0","date":"2005-02-05","img":"https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Stanford_University_School_of_Medicine_logo.svg/330px-Stanford_University_School_of_Medicine_logo.svg.png"},
+{"name":"GoodRelations launch","date":"2005-11-02","img":"https://afdsi.com/d3-timeknots/goodrelations-logo-w206-h52.png"},
+{"name":"OpenLink Virtuoso launch","date":"2006-06-01","img":"https://upload.wikimedia.org/wikipedia/commons/3/3f/Virtuoso-logo-sm.png"},
+{"name":"TopQuadrant TopBraid Composer launch","date":"2006-06-01","img":"https://www.topquadrant.com/wp-content/uploads/2019/03/TQ_logo_C_2009_SM_print.jpg"},
+{"name":"UN FAO VocBench version 1","date":"2008-05-21","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"Blazegraph launch","date":"2008-06-01","img":"https://upload.wikimedia.org/wikipedia/en/d/d3/Blazegraph_parallelogram_logo.png"},
+{"name":"Yahoo SearchMonkey supports GoodRelations","date":"2008-10-10","img":"https://afdsi.com/d3-timeknots/goodrelations-logo-w206-h52.png"},
+{"name":"Rhizomik RDF2HTML \u0026 RDF2SVG launch","date":"2009-06-01","img":"https://afdsi.com/d3-timeknots/rhizomik-logo.svg"},
+{"name":"\u0050\u0072\u006f\u0074\u00e9\u0067\u00e9 version 4.0","date":"2009-06-16","img":"https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Stanford_University_School_of_Medicine_logo.svg/330px-Stanford_University_School_of_Medicine_logo.svg.png"},
+{"name":"Google RDFa for Rich Snippets supports GoodRelations","date":"2010-11-02","img":"https://afdsi.com/d3-timeknots/goodrelations-logo-w206-h52.png"},
+{"name":"Bing/Microsoft support GoodRelations ","date":"2011-05-06","img":"https://afdsi.com/d3-timeknots/goodrelations-logo-w206-h52.png"},
+{"name":"RDFa Distiller \u0026 Validator version 1.1 launch","date":"2011-05-31","img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/W3C%C2%AE_Icon.svg"},
+{"name":"Structured Data Linter version 0.1","date":"2011-08-19","img":"https://afdsi.com/d3-timeknots/structured-data-linter-logo-w380-h141.png"},
+{"name":"JSON\u2013LD Playground launch","date":"2012-03-26","img":"https://json-ld.org/images/json-ld-logo.svg"},
+{"name":"UN FAO VocBench version 2","date":"2013-05-21","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"Live OWL Documentation Environment launch","date":"2013-07-01","img":"https://essepuntato.it/assets/img/lode/logo.png"},
+{"name":"Structured Data Linter version 1.1","date":"2013-07-28","img":"https://afdsi.com/d3-timeknots/structured-data-linter-logo-w380-h141.png"},
+{"name":"\u0050\u0072\u006f\u0074\u00e9\u0067\u00e9 version 5.0","date":"2014-06-09","img":"https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Stanford_University_School_of_Medicine_logo.svg/330px-Stanford_University_School_of_Medicine_logo.svg.png"},
+{"name":"Structured Data Linter version 2.0","date":"2014-12-12","img":"https://afdsi.com/d3-timeknots/structured-data-linter-logo-w380-h141.png"},
+{"name":"Jena Semantic Web framework for Java version 3","date":"2015-07-29","img":"https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Apache_Jena_Logo.svg/320px-Apache_Jena_Logo.svg.png"},
+{"name":"Wikidata Query Service launch","date":"2015-09-07","img":"https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg"},
+{"name":"OpenLink Structured Data Sniffer on Chrome Store","date":"2015-12-16","img":"https://upload.wikimedia.org/wikipedia/commons/3/3f/Virtuoso-logo-sm.png"},
+{"name":"UN FAO VocBench version 3","date":"2017-09-01","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"Amazon Web Services Neptune launch","date":"2018-05-30","img":"https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2019/09/06/Neptune.png"},
+{"name":"Structured Data Linter version 3.5","date":"2018-06-15","img":"https://afdsi.com/d3-timeknots/structured-data-linter-logo-w380-h141.png"},
+{"name":"\u0050\u0072\u006f\u0074\u00e9\u0067\u00e9 version 5.5.0","date":"2019-03-15","img":"https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Stanford_University_School_of_Medicine_logo.svg/330px-Stanford_University_School_of_Medicine_logo.svg.png"},
+{"name":"Jena Semantic Web framework for Java version 3.15","date":"2020-05-15","img":"https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Apache_Jena_Logo.svg/320px-Apache_Jena_Logo.svg.png"},
+{"name":"UN FAO VocBench version 3.7","date":"2020-06-26","img":"https://afdsi.com/d3-timeknots/un-fao-logo.svg"},
+{"name":"Structured Data Linter version 3.10","date":"2020-11-07","img":"https://afdsi.com/d3-timeknots/structured-data-linter-logo-w380-h141.png"},
+
+{"name":"2020","date":"2020-12-31","img":""}
+];
+TimeKnots.draw("#tools", tools,
+{horizontalLayout: false, dateFormat: "%B %Y", color: "#5398d9", width: 140, showLabels: true, labelFormat: "%Y"}
+);
+
+</script>
+
+</html>

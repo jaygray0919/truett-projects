@@ -1,0 +1,23 @@
+
+source:
+
+https://fivethirtyeight.com/features/how-do-you-like-these-rectangles/amp/
+
+
+.amp-formula{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
+.amp-formula amp-mathml{vertical-align:middle}
+
+<p>
+For No. 1: Call the lengths of the three pieces 
+<span class="amp-formula"><amp-mathml inline="" layout="container" data-formula="\[x\]"></amp-mathml></span>, 
+<span class="amp-formula"><amp-mathml inline="" layout="container" data-formula="\[y\]"></amp-mathml></span> and 
+<span class="amp-formula"><amp-mathml inline="" layout="container" data-formula="\[z\]"></amp-mathml></span> They form a triangle if the sum of any two sides are larger than the third side (
+<span class="amp-formula"><amp-mathml inline="" layout="container" data-formula="\[x+y&gt;z\]"></amp-mathml></span>, 
+<span class="amp-formula"><amp-mathml inline="" layout="container" data-formula="\[y+z&gt;x\]"></amp-mathml></span> and 
+<span class="amp-formula"><amp-mathml inline="" layout="container" data-formula="\[x+z&gt;y\]"></amp-mathml></span>
+). This is called the <a href="https://en.wikipedia.org/wiki/Triangle_inequality">triangle inequality</a>!
+</p>
+
+data-formula="\[x\]"
+
+<span class="amp-formula"><amp-mathml inline="" layout="container" data-formula="\[x\]"></amp-mathml></span>

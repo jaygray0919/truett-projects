@@ -1,0 +1,123 @@
+<amp-story-page
+ id="item-19"
+ data-item-label="nutritionist"
+>
+<amp-story-grid-layer
+ id="background"
+ template="fill"
+>
+<amp-story-grid-layer template="fill"><amp-img id="constellation-440044" data-item-role="background" data-item-type="static" data-item-label="background-440044-constellation" src="https://afdsi.com/___supplier/paula-perez/reference/background-440044-constellation-w997-h997.svg" width="997" height="997" layout="responsive"></amp-img></amp-story-grid-layer>
+</amp-story-grid-layer>
+<amp-story-grid-layer
+ id="svg-persona-nutritionist"
+ template="fill"
+>
+<div
+ class="poa-10-05"
+ animate-in="fade-in"
+ animate-in-duration="2s"
+>
+<svg id="persona-nutritionist" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 -305.637 223.456 305.637" width="40%" height="40%" stroke-width="0.5" overflow="visible"><defs></defs><g transform="scale(1 -1)"><svg id="face" stroke-width="0.0"><svg id="face-left"><path fill="var(--f1c9a5)" d="M 111.728,57.58 C 135.658,57.58 157.838,65.115 176.023,77.94 C 171.279,109.355 167.997,123.432 158.177,131.643 C 152.738,136.268 145.332,138.577 134.373,141.767 C 131.521,142.596 126.711,143.982 124.277,144.51 L 124.278,157.903 C 132.054,162.221 138.002,170.432 140.407,180.443 C 145.044,180.721 147.083,182.158 149.096,185.514 C 150.676,188.148 151.954,192.542 150.754,195.8 C 149.682,198.711 147.022,201.832 143.663,201.832 C 142.799,201.832 141.959,201.638 141.183,201.288 C 138.882,218.286 126.521,231.276 111.728,231.276 C 96.935,231.276 84.574,218.286 82.273,201.288 C 81.497,201.638 80.657,201.832 79.793,201.832 C 76.434,201.832 73.774,198.711 72.702,195.8 C 71.502,192.542 72.78,188.148 74.36,185.514 C 76.373,182.158 78.412,180.721 83.049,180.443 C 85.454,170.432 91.402,162.221 99.178,157.903 L 99.179,144.51 C 96.745,143.982 91.935,142.596 89.083,141.767 C 78.124,138.577 70.718,136.268 65.279,131.643 C 55.459,123.432 52.177,109.355 47.433,77.94 C 65.618,65.115 87.798,57.58 111.728,57.58 Z" marker-start="none" marker-end="none"/></svg><svg id="face-right"><path fill="var(--e4b992)" d="M 111.728,57.58 C 135.658,57.58 157.838,65.115 176.023,77.94 C 171.279,109.355 167.997,123.432 158.177,131.643 C 152.738,136.268 145.332,138.577 134.373,141.767 C 131.521,142.596 126.711,143.982 124.277,144.51 L 124.278,157.903 C 132.054,162.221 138.002,170.432 140.407,180.443 C 145.044,180.721 147.083,182.158 149.096,185.514 C 150.676,188.148 151.954,192.542 150.754,195.8 C 149.682,198.711 147.022,201.832 143.663,201.832 C 142.799,201.832 141.959,201.638 141.183,201.288 C 138.882,218.286 126.521,231.276 111.728,231.276 L 111.728,57.58 Z" marker-start="none" marker-end="none"/></svg></svg><svg id="female-clothing-blouse"><path fill="var(--0000FF)" d="M 47.433,77.94 C 52.231,109.707 55.735,123.631 65.81,131.805 C 79.407,124.226 95.065,119.908 111.727,114.237 C 128.387,119.908 144.046,124.226 157.643,131.806 C 167.718,123.632 171.223,109.708 176.022,77.94 C 157.837,65.115 135.657,57.58 111.728,57.58 C 87.798,57.58 65.618,65.115 47.433,77.94 Z" marker-start="none" marker-end="none" stroke-linejoin="miter" stroke-linecap="round" stroke-width="0.5"/></svg><svg id="female-hair"><path fill="var(--7d420a)" d="M 111.728,275.623 C 141.035,275.74 155.361,247.447 147.715,227.295 C 150.02,217.629 148.867,208.491 145.898,201.096 C 145.199,201.396 144.45,201.568 143.663,201.568 C 142.744,201.568 141.852,201.348 141.036,200.956 C 138.759,217.987 126.54,230.089 111.728,230.089 C 96.916,230.089 84.697,217.987 82.42,200.956 C 81.604,201.348 80.712,201.568 79.793,201.568 C 79.006,201.568 78.257,201.396 77.558,201.096 C 74.589,208.491 73.436,217.629 75.741,227.295 C 68.095,247.447 82.421,275.74 111.728,275.623 Z" marker-start="none" marker-end="none" stroke="none" stroke-linejoin="miter"/></svg><svg id="female-hair-band"><path fill="var(--0000FF)" d="M 74.739,230.444 C 81.103,248.298 96.095,254.232 111.728,254.439 C 127.276,254.232 142.352,248.298 148.716,230.444 C 148.439,229.376 148.105,228.325 147.715,227.295 C 139.571,246.067 119.906,248.725 111.728,248.725 C 103.465,248.725 83.885,246.067 75.741,227.295 C 75.35,228.325 75.016,229.376 74.739,230.444 Z" marker-start="none" marker-end="none" stroke="none" stroke-linejoin="miter" stroke-width="0.0"/></svg><svg id="female-accessories-earrings"><g fill="var(--0000FF)" stroke="none" stroke-linejoin="miter" stroke-linecap="round" stroke-width="0.5"><ellipse rx="3.6" ry="3.6" transform="translate(81.263 180.246) rotate(-90)"/><ellipse rx="3.6" ry="3.6" transform="translate(145.028 180.246) rotate(-90)"/></g></svg></g></svg>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer
+ id="page-heading"
+ template="fill"
+>
+<div
+ class="title-centered"
+ animate-in="fade-in"
+ animate-in-duration="2s"
+>
+<h2
+ class="pdt-50"
+>
+Nutritionist
+</h2>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer
+ id="svg-primo-nutritionist"
+ template="fill"
+>
+<div
+ class="mtl-30-30"
+ animate-in="fade-in"
+ animate-in-duration="2s"
+ animate-in-delay="0s"
+>
+<svg id="nutritionist" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" viewBox="0 0 502 368"><g id="ntr-12" transform="translate(4.506 -4.506)"><g id="ntr-14" transform="translate(98.672 -.761)"><path class="ntr-st1" d="M0 278.756h98.145v89.17H0z"/></g><g id="ntr-15" transform="translate(197.344 -.761)"><path class="ntr-st1" d="M0 278.76h98.15v89.17H0v-89.17Z"/></g><g id="ntr-16" transform="translate(296.039 -.761)"><path class="ntr-st1" d="M0 278.756h98.147v89.17H0z"/></g><g id="ntr-17" transform="translate(394.711 -.761)"><path class="ntr-st1" d="M0 278.756h98.147v89.17H0z"/></g><g id="ntr-18" transform="translate(98.672 -180.083)"><path class="ntr-st1" d="M0 278.756h98.145v89.17H0z"/></g><g id="ntr-19" transform="translate(197.344 -180.083)"><path class="ntr-st1" d="M0 278.76h98.15v89.17H0v-89.17Z"/></g><g id="ntr-20" transform="translate(296.039 -180.083)"><path class="ntr-st1" d="M0 278.756h98.147v89.17H0z"/></g><g id="ntr-21" transform="translate(394.711 -180.083)"><path class="ntr-st1" d="M0 278.756h98.147v89.17H0z"/></g><g id="ntr-22" transform="translate(98.672 -90.422)"><path class="ntr-st1" d="M0 278.756h98.145v89.17H0z"/></g><g id="ntr-23" transform="translate(197.344 -90.422)"><path class="ntr-st1" d="M0 278.76h98.15v89.17H0v-89.17Z"/></g><g id="ntr-24" transform="translate(296.039 -90.422)"><path class="ntr-st1" d="M0 278.756h98.147v89.17H0z"/></g><g id="ntr-25" transform="translate(394.711 -90.422)"><path class="ntr-st1" d="M0 278.756h98.147v89.17H0z"/></g><g id="ntr-26" transform="translate(98.807 -.676)"><path class="ntr-st3" d="M0 9.69v358.24V9.69Z"/><path class="ntr-st4" d="M0 9.69v358.24"/></g><g id="ntr-28" transform="translate(197.322 -.676)"><path class="ntr-st3" d="M0 9.69v358.24V9.69Z"/><path class="ntr-st4" d="M0 9.69v358.24"/></g><g id="ntr-30" transform="translate(295.836 -.676)"><path class="ntr-st3" d="M0 9.69v358.24V9.69Z"/><path class="ntr-st4" d="M0 9.69v358.24"/></g><g id="ntr-32" transform="translate(394.351)"><path class="ntr-st3" d="M0 9.69v358.24V9.69Z"/><path class="ntr-st4" d="M0 9.69v358.24"/></g><g id="ntr-34" transform="translate(0 -90.832)"><path class="ntr-st3" d="M492.87 367.93H0h492.87Z"/><path class="ntr-st4" d="M492.87 367.93H0"/></g><g id="ntr-36" transform="translate(0 -269.479)"><path class="ntr-st3" d="M492.87 367.93H0h492.87Z"/><path class="ntr-st4" d="M492.87 367.93H0"/></g><g id="ntr-38" transform="translate(0 -180.268)"><path class="ntr-st3" d="M492.87 367.93H0h492.87Z"/><path class="ntr-st4" d="M492.87 367.93H0"/></g><g id="ntr-40" transform="translate(116.379 -323.945)"><path class="ntr-st5" d="M0 353.682h65.187v14.244H0z"/></g><g id="ntr-41" transform="translate(116.379 -304.571)"><path class="ntr-st5" d="M0 353.682h32.51v14.244H0z"/></g><g id="ntr-42" transform="translate(116.379 -284.971)"><path class="ntr-st5" d="M0 353.682h46.419v14.244H0z"/></g><g id="ntr-43" transform="translate(215.997 -323.945)"><path class="ntr-st6" d="M0 353.682h48.124v14.244H0z"/></g><g id="ntr-44" transform="translate(215.997 -304.571)"><path class="ntr-st6" d="M0 353.682h63.317v14.244H0z"/></g><g id="ntr-45" transform="translate(215.997 -284.971)"><path class="ntr-st6" d="M0 353.682h42.627v14.244H0z"/></g><g id="ntr-46" transform="translate(315.616 -323.945)"><path class="ntr-st7" d="M0 353.682h40.066v14.244H0z"/></g><g id="ntr-47" transform="translate(315.616 -304.571)"><path class="ntr-st7" d="M0 353.682h64.502v14.244H0z"/></g><g id="ntr-48" transform="translate(415.211 -323.945)"><path class="ntr-st8" d="M0 353.682h65.187v14.244H0z"/></g><g id="ntr-49" transform="translate(415.211 -304.571)"><path class="ntr-st8" d="M0 353.682h32.51v14.244H0z"/></g><g id="ntr-50" transform="translate(415.211 -284.971)"><path class="ntr-st8" d="M0 353.68h46.42v14.25H0v-14.25Z"/></g><g id="ntr-51" transform="translate(16.828 -238.564)"><path class="ntr-st9" d="M0 353.68h65.19v14.25H0v-14.25Z"/></g><g id="ntr-52" transform="translate(16.828 -219.19)"><path class="ntr-st9" d="M0 353.68h32.51v14.25H0v-14.25Z"/></g><g id="ntr-53" transform="translate(16.828 -199.816)"><path class="ntr-st9" d="M0 353.682h46.419v14.244H0z"/></g><g id="ntr-54" transform="translate(16.828 -147.101)"><path class="ntr-st9" d="M0 353.68h63.19v14.25H0v-14.25Z"/></g><g id="ntr-55" transform="translate(16.828 -127.727)"><path class="ntr-st9" d="M0 353.682h31.323v14.244H0z"/></g><g id="ntr-56" transform="translate(16.828 -55.412)"><path class="ntr-st9" d="M0 353.68h45.92v14.25H0v-14.25Z"/></g><g id="ntr-57" transform="translate(16.828 -36.038)"><path class="ntr-st9" d="M0 353.682h31.001v14.244H0z"/></g><g id="ntr-58" transform="translate(16.828 -16.439)"><path class="ntr-st9" d="M0 353.681h45.245v14.244H0z"/></g><g id="ntr-59" transform="translate(117.461 -195.975)"><path class="ntr-st10" d="M0 317.749h125.492v50.177H0z"/><text class="ntr-st11" y="355.38">0.2</text></g><g id="ntr-61" transform="translate(117.87 -108.165)"><path class="ntr-st10" d="M0 317.749h125.492v50.177H0z"/><text class="ntr-st11" y="355.38">4.2</text></g><g id="ntr-63" transform="translate(135.735 -15.664)"><path class="ntr-st10" d="M0 317.749h41.864v50.177H0z"/><text class="ntr-st11" y="355.38">0</text></g><g id="ntr-65" transform="translate(234.66 -195.975)"><path class="ntr-st10" d="M0 317.749h41.864v50.177H0z"/><text class="ntr-st11" y="355.38">7</text></g><g id="ntr-67" transform="translate(215.917 -108.165)"><path class="ntr-st10" d="M0 317.749h125.492v50.177H0z"/><text class="ntr-st11" y="355.38">0.4</text></g><g id="ntr-69" transform="translate(207.158 -15.664)"><path class="ntr-st10" d="M0 317.749h167.306v50.177H0z"/><text class="ntr-st11" y="355.38">0.11</text></g><g id="ntr-71" transform="translate(333.094 -195.975)"><path class="ntr-st10" d="M0 317.749h41.864v50.177H0z"/><text class="ntr-st11" y="355.38">0</text></g><g id="ntr-73" transform="translate(314.759 -108.165)"><path class="ntr-st10" d="M0 317.749h125.492v50.177H0z"/><text class="ntr-st11" y="355.38">0.6</text></g><g id="ntr-75" transform="translate(333.166 -15.664)"><path class="ntr-st10" d="M0 317.749h41.864v50.177H0z"/><text class="ntr-st11" y="355.38">2</text></g><g id="ntr-77" transform="translate(416.522 -195.975)"><path class="ntr-st10" d="M0 317.749h76.228v50.177H0z"/><text class="ntr-st11" y="355.38">0.1</text></g><g id="ntr-79" transform="translate(413.99 -108.165)"><path class="ntr-st10" d="M0 317.749h72.01v50.177H0z"/><text class="ntr-st11" y="355.38">4.7</text></g><g id="ntr-81" transform="translate(413.755 -15.664)"><path class="ntr-st10" d="M0 317.749h78.995v50.177H0z"/><text class="ntr-st11" y="355.38">2.2</text></g></g></svg>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer
+ id="page-text"
+ template="fill"
+>
+<div
+ animate-in="fade-in"
+ animate-in-duration="2s"
+ animate-in-delay="1s"
+>
+<table
+ class="por-40-10"
+>
+<tr>
+<td
+ class="txa-r"
+>
+<h4>
+Cooking methods
+</h4>
+</td>
+</tr>
+<tr>
+<td
+ class="txa-r"
+>
+<h4>
+Dishes
+</h4>
+</td>
+</tr>
+</table>
+</div>
+<div
+ animate-in="fade-in"
+ animate-in-duration="2s"
+ animate-in-delay="2s"
+>
+<table
+ class="por-37-63"
+>
+<tr>
+<td
+ class="txa-l"
+>
+<h4>
+Quality
+</h4>
+</td>
+</tr>
+<tr>
+<td
+ class="txa-l"
+>
+<h5>
+Sugar content
+</h5>
+</td>
+</tr>
+<tr>
+<td
+ class="txa-l"
+>
+<h5>
+Protein intake
+</h5>
+</td>
+</tr>
+</table>
+</div>
+</amp-story-grid-layer>
+<amp-story-page-attachment layout="nodisplay" theme="custom" cta-image="https://afdsi.com/___supplier/paula-perez/reference/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="More information" data-title="Sample DL-DT-DD for attachment"><section class="p-s"><dl class="chartlegend"><div class="av">Abbervail Dream</div><dt>Blue Diamonds</dt><dd><span class="c-c0334d mr-s"></span>Bright amazing and wonderful</dd><dd><span class="c-f3d480 mr-s"></span>Dancing around the flames</dd><dd><span class="c-f1931b mr-s"></span>Everybody knows bird is word</dd><div class="av">Caramel Sensation</div><dt>Dairy Cream</dt><dd><span class="c-8f715b mr-s"></span>Frosty the snowman is a boss</dd><dd><span class="c-78d68c mr-s"></span>Girls just want to have fun</dd><dd><span class="c-720017 mr-s"></span>Got some popsicles in the cellar</dd><div class="av">Elusive Enchantment</div><dt>Fat Chance Cinnamon</dt><dd><span class="c-d8d583 mr-s"></span>Insomnia gives me time to</dd><dd><span class="c-d98c2a mr-s"></span>Inspiration slaps me in the face</dd><dd><span class="c-36688d mr-s"></span>Last chance for one last dance</dd><div class="av">Good Luck Charm</div><dt>Hershey's Kiss</dt><dd><span class="c-a3586d mr-s"></span>Laugh all day for no reason</dd><dd><span class="c-aba6bf mr-s"></span>Life is a box of chocolates</dd><dd><span class="c-595775 mr-s"></span>Live like there is no tomorrow</dd><div class="av">Ice Cream Mix</div><dt>Jack Daniels</dt><dd><span class="c-84a45a mr-s"></span>Make it up as you go</dd><dd><span class="c-583e2e mr-s"></span>Moms cookies make everything</dd><dd><span class="c-bf988f mr-s"></span>My room is an organized mess</dd><div class="av">Kitty Hawk</div><dt>Last Man Standing</dt><dd><span class="c-a7414a mr-s"></span>Pluto is still a planet</dd><dd><span class="c-6a8a82 mr-s"></span>Six words can mean the world</dd><dd><span class="c-a37c27 mr-s"></span>Sleeping with a giant bear</dd><div class="av">Made You Look</div><dt>Nabisco Cracker</dt><dd><span class="c-4fd993 mr-s"></span>Sour candy makes me twitch</dd><dd><span class="c-704404 mr-s"></span>The sky is not the limit</dd><dd><span class="c-4e7ba7 mr-s"></span>There always gonna be another</dd><div class="av">One in a Million</div><dt>Peach Blossom</dt><dd><span class="c-d28f1b mr-s"></span>There no place like grandmas</dd><dd><span class="c-1ecfd6 mr-s"></span>Why whisper what you shout</dd><dd><span class="c-edd179 mr-s"></span>Your the apple to my pie</dd></dl></section><hr></amp-story-page-attachment>
+</amp-story-page>

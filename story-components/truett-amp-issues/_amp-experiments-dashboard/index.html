@@ -1,0 +1,1802 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>
+AMP Experiments Dashboard
+</title>
+<link rel="canonical"
+	href="https://ontomatica.io/canonical.html"/>
+<link rel="icon"
+	href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+
+<link rel="preload" as="font"
+	href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2" crossorigin />
+<link rel="preload" as="font"
+	href="https://s3.amazonaws.com/benetta.net/fonts/fira-mono/fira-mono-v7-latin-500.woff2" crossorigin />
+<link rel="preload" as="script"
+	href="https://cdn.ampproject.org/v0.js">
+
+<script async
+	src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-bind"
+	src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-element="amp-list"
+	src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-template="amp-mustache"
+	src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+@font-face{font-family:system;font-style:normal;font-weight:300;src:local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma")}
+@font-face{font-family:system;font-style:italic;font-weight:300;src:local(".SFNSText-LightItalic"),local(".HelveticaNeueDeskInterface-Italic"),local(".LucidaGrandeUI"),local("Ubuntu Light Italic"),local("Segoe UI Light Italic"),local("Roboto-LightItalic"),local("DroidSans"),local("Tahoma")}
+@font-face{font-family:system;font-style:normal;font-weight:400;src:local(".SFNSText-Regular"),local(".HelveticaNeueDeskInterface-Regular"),local(".LucidaGrandeUI"),local("Ubuntu"),local("Segoe UI"),local("Roboto-Regular"),local("DroidSans"),local("Tahoma")}
+@font-face{font-family:system;font-style:italic;font-weight:400;src:local(".SFNSText-Italic"),local(".HelveticaNeueDeskInterface-Italic"),local(".LucidaGrandeUI"),local("Ubuntu Italic"),local("Segoe UI Italic"),local("Roboto-Italic"),local("DroidSans"),local("Tahoma")}
+@font-face{font-family:system;font-style:normal;font-weight:500;src:local(".SFNSText-Medium"),local(".HelveticaNeueDeskInterface-MediumP4"),local(".LucidaGrandeUI"),local("Ubuntu Medium"),local("Segoe UI Semibold"),local("Roboto-Medium"),local("DroidSans-Bold"),local("Tahoma Bold")}
+@font-face{font-family:system;font-style:italic;font-weight:500;src:local(".SFNSText-MediumItalic"),local(".HelveticaNeueDeskInterface-MediumItalicP4"),local(".LucidaGrandeUI"),local("Ubuntu Medium Italic"),local("Segoe UI Semibold Italic"),local("Roboto-MediumItalic"),local("DroidSans-Bold"),local("Tahoma Bold")}
+@font-face{font-family:system;font-style:normal;font-weight:700;src:local(".SFNSText-Bold"),local(".HelveticaNeueDeskInterface-Bold"),local(".LucidaGrandeUI"),local("Ubuntu Bold"),local("Roboto-Bold"),local("DroidSans-Bold"),local("Segoe UI Bold"),local("Tahoma Bold")}
+@font-face{font-family:system;font-style:italic;font-weight:700;src:local(".SFNSText-BoldItalic"),local(".HelveticaNeueDeskInterface-BoldItalic"),local(".LucidaGrandeUI"),local("Ubuntu Bold Italic"),local("Roboto-BoldItalic"),local("DroidSans-Bold"),local("Segoe UI Bold Italic"),local("Tahoma Bold")}
+
+@font-face{font-family:Noto Sans;font-style:normal;font-weight:400;font-display:optional;src:local("Noto Sans"),local("NotoSans"),url(https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2) format("woff2")}
+@font-face{font-family:Fira Mono;font-style:normal;font-weight:400;font-display:optional;src:local("Fira Mono"),local("FiraMono"),url(https://s3.amazonaws.com/benetta.net/fonts/fira-mono/fira-mono-v7-latin-500.woff2) format("woff2")}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+:after,
+:before {
+  --tw-content: "";
+}
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family: Noto Sans, sans-serif;
+}
+body {
+  margin: 0;
+  line-height: inherit;
+}
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: Fira Mono, monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+:-moz-focusring {
+  outline: auto;
+}
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+progress {
+  vertical-align: baseline;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+summary {
+  display: list-item;
+}
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+fieldset {
+  margin: 0;
+}
+fieldset,
+legend {
+  padding: 0;
+}
+menu,
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+[role="button"],
+button {
+  cursor: pointer;
+}
+:disabled {
+  cursor: default;
+}
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+  vertical-align: middle;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+[hidden] {
+  display: none;
+}
+*,
+:after,
+:before {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-blur: var(--tw-empty, /*!*/ /*!*/);
+  --tw-brightness: var(--tw-empty, /*!*/ /*!*/);
+  --tw-contrast: var(--tw-empty, /*!*/ /*!*/);
+  --tw-grayscale: var(--tw-empty, /*!*/ /*!*/);
+  --tw-hue-rotate: var(--tw-empty, /*!*/ /*!*/);
+  --tw-invert: var(--tw-empty, /*!*/ /*!*/);
+  --tw-saturate: var(--tw-empty, /*!*/ /*!*/);
+  --tw-sepia: var(--tw-empty, /*!*/ /*!*/);
+  --tw-drop-shadow: var(--tw-empty, /*!*/ /*!*/);
+  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.flex {
+  display: flex;
+}
+.table {
+  display: table;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-7xl {
+  max-width: 80rem;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.table-auto {
+  table-layout: auto;
+}
+.border-collapse {
+  border-collapse: collapse;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.pl-5 {
+  padding-left: 1.25rem;
+}
+.pr-5 {
+  padding-right: 1.25rem;
+}
+.pr-8 {
+  padding-right: 2rem;
+}
+.pl-0 {
+  padding-left: 0;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.font-mono {
+  font-family: Fira Mono, monospace;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
+}
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.filter {
+  filter: var(--tw-filter);
+}
+.circle-chart-circle {
+  animation: circle-chart-fill 2s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+@-webkit-keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+.focus\:text-blue-600:focus,
+.hover\:text-blue-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+@media (min-width: 640px) {
+  .sm\:w-full {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <template type="amp-mustache" id="tmpl-11">
+    <div class="flex flex-col py-2 items-center justify-center min-h-screen">
+      <main class="flex flex-col flex-1 px-20 items-center w-full text-center">
+        <h1 class="font-bold text-6xl">{{item-10}}</h1>
+        <div
+          class="
+            flex flex-wrap
+            mt-6
+            items-center
+            justify-around
+            max-w-7xl
+            sm:w-full
+          "
+        >
+          <div class="p-6 pl-0 mb-4 w-full text-left">
+            <h2 class="font-bold text-6xl text-2xl">{{item-11}}</h2>
+          </div>
+          <table class="border-collapse table-auto w-full text-xl">
+            <thead>
+              <tr class="font-medium bg-gray-300">
+                <th class="border-b p-3 pl-5 text-gray-900 text-left">
+                  {{item-12}}
+                </th>
+                <th class="border-b p-3 text-gray-900 text-left">
+                  {{item-13}}
+                </th>
+                <th class="border-b p-3 pl-5 text-gray-900 text-right">
+                  {{item-14}}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-20}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-20}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-20}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-20}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-20}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-21}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-21}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-21}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-21}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-21}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-22}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-22}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-22}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-22}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-22}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-23}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-23}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-23}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-23}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-23}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-24}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-24}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-24}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-24}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-24}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-25}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-25}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-25}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-25}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-25}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-26}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-26}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-26}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-26}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-26}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="p-6 pl-0 mb-4 w-full text-left">
+            <h2 class="font-bold text-6xl text-2xl">{{item-31}}</h2>
+          </div>
+          <table class="border-collapse table-auto w-full text-xl">
+            <thead>
+              <tr class="font-medium bg-gray-300">
+                <th class="border-b p-3 pl-5 text-gray-900 text-left">
+                  {{item-32}}
+                </th>
+                <th class="border-b p-3 text-gray-900 text-left">
+                  {{item-33}}
+                </th>
+                <th class="border-b p-3 pl-5 text-gray-900 text-right">
+                  {{item-34}}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-40}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-40}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-40}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-40}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-40}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-41}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-41}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-41}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-41}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-41}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-42}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-42}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-42}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-42}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-42}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-43}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-43}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-43}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-43}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-43}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-44}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-44}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-44}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-44}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-44}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-45}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-45}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-45}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-45}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-45}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-46}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-46}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-46}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-46}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-46}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-47}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-47}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-47}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-47}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-47}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-48}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-48}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-48}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-48}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-48}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-49}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-49}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-49}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-49}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-49}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-50}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-50}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-50}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-50}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-50}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-51}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-51}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-51}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-51}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-51}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr
+                class="
+                  border-b border-gray-100
+                  p-4
+                  pr-8
+                  bg-gray-100
+                  text-gray-500
+                "
+              >
+                <td class="p-3 pl-5 font-mono text-left">{{item-52}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-52}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-52}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-52}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-52}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+
+              <tr class="border-b border-gray-100 p-4 pr-8 text-gray-500">
+                <td class="p-3 pl-5 font-mono text-left">{{item-53}}</td>
+                <td class="p-3 text-left">
+                  <a
+                    class="hover:text-blue-600 focus:text-blue-600"
+                    href="{{link-53}}"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{desc-53}}</a
+                  >
+                </td>
+                <td class="p-3 items-right justify-right text-right">
+                  <svg
+                    viewBox="0 0 33.83098862 33.83098862"
+                    width="100"
+                    height="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      stroke="#efefef"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart-circle"
+                      stroke="#1C5FEC"
+                      stroke-width="2"
+                      stroke-dasharray="{{valu-53}},100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g>
+                      <text
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="8"
+                      >
+                        {{prct-53}}
+                      </text>
+                    </g>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </template>
+</body>
+
+
+<amp-list template="tmpl-11" src="amp-state:localState-11" width="auto" height="400" layout="fixed-height" binding="no">
+<div overflow>
+</div>
+<amp-state id="localState-11">
+<script type="application/json">
+{
+  "items": [
+    {
+      "item-10": "AMP Experiments Dashboard",
+      "item-11": "Client-side Experiments",
+      "item-12": "Experiment",
+      "item-13": "Description",
+      "item-14": "Rollout",
+      "item-20": "flexible-bitrate",
+      "link-20": "https://github.com/ampproject/amphtml/projects/111",
+      "desc-20": "Adaptive bitrate algorithm for videos on documents from the AMPProject CDN",
+      "valu-20": "10",
+      "prct-20": "10%",
+      "item-21": "amp-story-desktop-one-panel",
+      "link-21": "https://github.com/ampproject/amphtml/projects/128",
+      "desc-21": "New desktop one-panel UI with background blur for stories.",
+      "valu-21": "100",
+      "prct-21": "100%",
+      "item-22": "amp-story-first-page-max-bitrate",
+      "link-22": "",
+      "desc-22": "",
+      "valu-22": "30",
+      "prct-22": "30%",
+      "item-23": "story-disable-animations-first-page",
+      "link-23": "",
+      "desc-23": "",
+      "valu-23": "100",
+      "prct-23": "100%",
+      "item-24": "story-load-first-page-only",
+      "link-24": "",
+      "desc-24": "",
+      "valu-24": "100",
+      "prct-24": "100%",
+      "item-25": "story-load-inactive-outside-viewport",
+      "link-25": "",
+      "desc-25": "",
+      "valu-25": "100",
+      "prct-25": "100%",
+      "item-26": "story-ad-page-outlink",
+      "link-26": "https://github.com/ampproject/amphtml/pull/35867",
+      "desc-26": "Story ad CTA page outlink",
+      "valu-26": "2",
+      "prct-26": "2%",
+      "item-31": "Prod Experiments",
+      "item-32": "Experiment",
+      "item-33": "Description",
+      "item-34": "Rollout",
+      "item-40": "canary",
+      "link-40": "",
+      "desc-40": "",
+      "valu-40": "0",
+      "prct-40": "0%",
+      "item-41": "a4aProfilingRate",
+      "link-41": "",
+      "desc-41": "",
+      "valu-41": "1",
+      "prct-41": "1%",
+      "item-42": "doubleclickSraExp",
+      "link-42": "",
+      "desc-42": "",
+      "valu-42": "1",
+      "prct-42": "1%",
+      "item-43": "doubleclickSraReportExcludedBlock",
+      "link-43": "",
+      "desc-43": "",
+      "valu-43": "10",
+      "prct-43": "10%",
+      "item-44": "flexAdSlots",
+      "link-44": "",
+      "desc-44": "",
+      "valu-44": "5",
+      "prct-44": "5%",
+      "item-45": "flexible-bitrate",
+      "link-45": "https://github.com/ampproject/amphtml/projects/111",
+      "desc-45": "Adaptive bitrate algorithm for videos on documents from the AMPProject CDN",
+      "valu-45": "10",
+      "prct-45": "10%",
+      "item-46": "ios-fixed-no-transfer",
+      "link-46": "https://github.com/ampproject/amphtml/issues/22220",
+      "desc-46": "Remove fixed transfer from iOS 12.2 and up",
+      "valu-46": "0",
+      "prct-46": "0%",
+      "item-47": "disable-a4a-non-sd",
+      "link-47": "",
+      "desc-47": "",
+      "valu-47": "100",
+      "prct-47": "100%",
+      "item-48": "amp-cid-backup",
+      "link-48": "https://github.com/ampproject/amphtml/issues/29484",
+      "desc-48": "Backup AMP-generated CIDs to Storage.",
+      "valu-48": "8",
+      "prct-48": "8%",
+      "item-49": "story-ad-placements",
+      "link-49": "https://github.com/ampproject/amphtml/issues/33147",
+      "desc-49": "Optimization of story ad placements",
+      "valu-49": "1",
+      "prct-49": "1%",
+      "item-50": "story-disable-animations-first-page",
+      "link-50": "",
+      "desc-50": "",
+      "valu-50": "100",
+      "prct-50": "100%",
+      "item-51": "story-load-first-page-only",
+      "link-51": "",
+      "desc-51": "",
+      "valu-51": "100",
+      "prct-51": "100%",
+      "item-52": "story-load-inactive-outside-viewport",
+      "link-52": "",
+      "desc-52": "",
+      "valu-52": "100",
+      "prct-52": "100%",
+      "item-53": "amp-sticky-ad-to-amp-ad-v4",
+      "link-53": "",
+      "desc-53": "",
+      "valu-53": "0",
+      "prct-53": "0%"
+    }
+  ]
+}
+</script>
+</amp-state>
+</amp-list>
+
+</html>

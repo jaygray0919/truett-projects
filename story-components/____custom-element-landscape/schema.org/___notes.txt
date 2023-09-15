@@ -1,0 +1,12 @@
+
+font detail
+<div class="rcsv-sans-casual rcsv-ss01 rcsv-ss02 rcsv-ss08 hcolor-dark" animate-in="fade-in" animate-in-duration="4s">
+
+using
+<amp-img
+	src="schema-w1438-h1131.png"
+	width="1438"
+	height="1131"
+	layout="responsive"
+></amp-img>
+

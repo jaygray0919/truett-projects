@@ -1,0 +1,11 @@
+
+consider for inclusion:
+
+types of SPARQL queries
+
+John F Sowa symbolic logic notation
+
+find Unicode codepoints for logic symbols
+	or
+use with MathML
+

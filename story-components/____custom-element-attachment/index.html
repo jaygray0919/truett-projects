@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon" href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+Additional custom-elements
+</title>
+<link rel="canonical" href="index.html" />
+<script async
+    src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story"
+    src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-element="amp-iframe"
+    src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<script async custom-element="amp-google-document-embed"
+    src="https://cdn.ampproject.org/v0/amp-google-document-embed-0.1.js"></script>
+<script async custom-element="amp-bind"
+    src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<link crossorigin rel="preload" as="font" type="font/woff2"
+    href="https://s3.amazonaws.com/benetta.net/fonts/poppins/poppins-v15-latin-500.woff2"/>
+<link crossorigin rel="preload" as="font" type="font/ttf"
+    href="https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Regular.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/woff2"
+    href="https://s3.amazonaws.com/benetta.net/fonts/recursive/recursive-2019_11_22-20_38.woff2"/>
+<link crossorigin rel="preload" as="font" type="font/ttf"
+    href="https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/woff2"
+    href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2"/>
+<link crossorigin rel="preload" as="font" type="font/ttf"
+    href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Regular.ttf"/>
+<link crossorigin rel="preload" as="font" type="font/woff"
+    href="https://s3.amazonaws.com/benetta.net/fonts/calibri/Calibri.woff"/>
+
+<style amp-custom>
+
+:root {
+    --on-000000:#000000;
+    --on-0000ff:#0000ff;
+    --on-0003ff:#0003ff;
+    --on-005001:#005001;
+    --on-007f7f:#007f7f;
+    --on-007fb2:#007fb2;
+    --on-00ffff:#00ffff;
+    --on-07a1e1:#07a1e1;
+    --on-0b87a3:#0b87a3;
+    --on-0bda9b:#0bda9b;
+    --on-1275ac:#1275ac;
+    --on-130f30:#130f30;
+    --on-151515:#151515;
+    --on-191919:#191919;
+    --on-1aa3ff:#1aa3ff;
+    --on-1b88cd:#1b88cd;
+    --on-1f64ff:#1f64ff;
+    --on-262162:#262162;
+    --on-29323c:#29323c;
+    --on-2a794a:#2a794a;
+    --on-2f9f4b:#2f9f4b;
+    --on-32935d:#32935d;
+    --on-333333:#333333;
+    --on-33945e:#33945e;
+    --on-3ba7e5:#3ba7e5;
+    --on-3d3d3d:#3d3d3d;
+    --on-3d444d:#3d444d;
+    --on-3e3898:#3e3898;
+    --on-4151a6:#4151a6;
+    --on-440044:#440044;
+    --on-550a1e:#550a1e;
+    --on-6baf40:#6baf40;
+    --on-6c757d:#6c757d;
+    --on-6caf42:#6caf42;
+    --on-6db5a7:#6db5a7;
+    --on-6fa08b:#6fa08b;
+    --on-74b341:#74b341;
+    --on-763517:#763517;
+    --on-7d420a:#7d420a;
+    --on-7eba98:#7eba98;
+    --on-7f0000:#7f0000;
+    --on-7f142e:#7f142e;
+    --on-7f4100:#7f4100;
+    --on-83c803:#83c803;
+    --on-87331b:#87331b;
+    --on-8abc43:#8abc43;
+    --on-8e1421:#8e1421;
+    --on-92c4cb:#92c4cb;
+    --on-971328:#971328;
+    --on-a4a4a4:#a4a4a4;
+    --on-a71520:#a71520;
+    --on-a9c937:#a9c937;
+    --on-b51d34:#b51d34;
+    --on-b69d7e:#b69d7e;
+    --on-b9b9b9:#b9b9b9;
+    --on-bbc871:#bbc871;
+    --on-bf0000:#bf0000;
+    --on-bf6200:#bf6200;
+    --on-c2dbce:#c2dbce;
+    --on-c41622:#c41622;
+    --on-c51431:#c51431;
+    --on-c52433:#c52433;
+    --on-c5ae8c:#c5ae8c;
+    --on-c70000:#c70000;
+    --on-cb5b2d:#cb5b2d;
+    --on-cccccc:#cccccc;
+    --on-ced146:#ced146;
+    --on-d2b373:#d2b373;
+    --on-d5bd97:#d5bd97;
+    --on-dba171:#dba171;
+    --on-dcaa7d:#dcaa7d;
+    --on-ddcaa9:#ddcaa9;
+    --on-dedede:#dedede;
+    --on-dfe0e2:#dfe0e2;
+    --on-e1ffad:#e1ffad;
+    --on-e4b992:#e4b992;
+    --on-e5e5e5:#e5e5e5;
+    --on-e6e6e6:#e6e6e6;
+    --on-e6e6fa:#e6e6fa;
+    --on-e6e7e9:#e6e7e9;
+    --on-e9ebeb:#e9ebeb;
+    --on-ecf4f7:#ecf4f7;
+    --on-ededed:#ededed;
+    --on-edeef0:#edeef0;
+    --on-efd520:#efd520;
+    --on-f1c9a5:#f1c9a5;
+    --on-f3f4a8:#f3f4a8;
+    --on-f4f044:#f4f044;
+    --on-f5e43c:#f5e43c;
+    --on-f9f9f9:#f9f9f9;
+    --on-ff0000:#ff0000;
+    --on-ff69b4:#ff69b4;
+    --on-ffd700:#ffd700;
+    --on-fffe7f:#fffe7f;
+    --on-ffffff:#ffffff;
+
+/* attachment, generic; colored bullets */
+    --on-00ff00:#00ff00;
+    --on-32cd32:#32cd32;
+    --on-ffd700:#ffd700;
+    --on-ff6961:#ff6961;
+    --on-191970:#191970;
+    --on-ffa500:#ffa500;
+    --on-add8e6:#add8e6;
+    --on-77dd77:#77dd77;
+    --on-7df9ff:#7df9ff;
+    --on-ff00ff:#ff00ff;
+    --on-aec6cf:#aec6cf;
+    --on-d2691e:#d2691e;
+    --on-228b22:#228b22;
+    --on-8d918d:#8d918d;
+    --on-964b00:#964b00;
+    --on-45b08c:#45b08c;
+    --on-8f00ff:#8f00ff;
+    --on-dcae96:#dcae96;
+    --on-dc143c:#dc143c;
+    --on-8c92ac:#8c92ac;
+    --on-006d5b:#006d5b;
+    --on-0d98ba:#0d98ba;
+    --on-555d50:#555d50;
+    --on-0a0a0a:#0a0a0a;
+}
+
+:root {
+    --space-xxxxs: calc(0.125 * var(--space-unit)); 
+    --space-xxxs:  calc(0.25 * var(--space-unit));
+    --space-xxs:   calc(0.375 * var(--space-unit));
+    --space-xs:    calc(0.5 * var(--space-unit));
+    --space-sm:    calc(0.75 * var(--space-unit));
+    --space-md:    calc(1.25 * var(--space-unit));
+    --space-lg:    calc(2 * var(--space-unit));
+    --space-xl:    calc(3.25 * var(--space-unit));
+    --space-xxl:   calc(5.25 * var(--space-unit));
+    --space-xxxl:  calc(8.5 * var(--space-unit));
+    --space-xxxxl: calc(13.75 * var(--space-unit));
+}
+
+/* spacers, vertical */
+.sp1 {height: var(--space-sm)}
+.sp2 {height: var(--space-md)}
+.sp3 {height: var(--space-lg)}
+.sp4 {height: var(--space-xl)}
+.sp5 {height: var(--space-xxl)}
+.sp6 {height: var(--space-xxxl)}
+.sp7 {height: var(--space-xxxxl)}
+
+
+/* used by attachment generic */
+.c-00ff00{background-color:var(--on-00ff00)}
+.c-32cd32{background-color:var(--on-32cd32)}
+.c-ffd700{background-color:var(--on-ffd700)}
+.c-ff6961{background-color:var(--on-ff6961)}
+.c-191970{background-color:var(--on-191970)}
+.c-ffa500{background-color:var(--on-ffa500)}
+.c-add8e6{background-color:var(--on-add8e6)}
+.c-77dd77{background-color:var(--on-77dd77)}
+.c-7df9ff{background-color:var(--on-7df9ff)}
+.c-ff00ff{background-color:var(--on-ff00ff)}
+.c-aec6cf{background-color:var(--on-aec6cf)}
+.c-d2691e{background-color:var(--on-d2691e)}
+.c-228b22{background-color:var(--on-228b22)}
+.c-8d918d{background-color:var(--on-8d918d)}
+.c-964b00{background-color:var(--on-964b00)}
+.c-45b08c{background-color:var(--on-45b08c)}
+.c-8f00ff{background-color:var(--on-8f00ff)}
+.c-dcae96{background-color:var(--on-dcae96)}
+.c-dc143c{background-color:var(--on-dc143c)}
+.c-8c92ac{background-color:var(--on-8c92ac)}
+.c-006d5b{background-color:var(--on-006d5b)}
+.c-0d98ba{background-color:var(--on-0d98ba)}
+.c-555d50{background-color:var(--on-555d50)}
+.c-0a0a0a{background-color:var(--on-0a0a0a)}
+
+/* use mnemonic for target/theme color */
+.c-white {color:var(--on-ffffff)}
+.on-logo {color:var(--on-1f64ff)}
+
+
+/*******************
+ *  Font: Noto Serif
+ *  400 only; add more weights
+ */
+
+@font-face {
+    font-family: NotoSerif;
+    src:
+        url('https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf')
+            format('truetype'),
+        url('https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2')
+            format('woff2');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/****************
+ *  Font: Poppins
+ *  500 only; add more weights
+ */
+
+@font-face {
+    font-family: Poppins;
+    src:
+        url('https://s3.amazonaws.com/benetta.net/fonts/poppins/poppins-v15-latin-500.woff2')
+            format('woff2'),
+        url('https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-Regular.ttf')
+            format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/******************
+ *  Font: Recursive
+ */
+
+@font-face {
+    font-family: Recursive;
+    src:
+        url('https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf')
+            format('truetype'),
+        url('https://s3.amazonaws.com/benetta.net/fonts/recursive/recursive-2019_11_22-20_38.woff2')
+            format('woff2-variations');
+    font-display: swap;
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+}
+
+/* If class is applied, update custom property */
+.rcsv-pnum{--rcsv-pnum:"pnum" on}.rcsv-ss01{--rcsv-ss01:"ss01" on}.rcsv-ss02{--rcsv-ss02:"ss02" on}.rcsv-ss03{--rcsv-ss03:"ss03" on}.rcsv-ss04{--rcsv-ss04:"ss04" on}.rcsv-ss05{--rcsv-ss05:"ss05" on}.rcsv-ss06{--rcsv-ss06:"ss06" on}.rcsv-ss07{--rcsv-ss07:"ss07" on}.rcsv-ss08{--rcsv-ss08:"ss08" on}.rcsv-ss09{--rcsv-ss09:"ss09" on}.rcsv-ss10{--rcsv-ss10:"ss10" on}.rcsv-ss11{--rcsv-ss11:"ss11" on}.rcsv-ss20{--rcsv-ss20:"ss20" on}
+
+/* Apply current state of all custom properties when a class is applied */
+.rcsv-pnum,.rcsv-ss01,.rcsv-ss02,.rcsv-ss03,.rcsv-ss04,.rcsv-ss05,.rcsv-ss06,.rcsv-ss07,.rcsv-ss08,.rcsv-ss09,.rcsv-ss10,.rcsv-ss11,
+.rcsv-ss20 {font-feature-settings:var(--rcsv-pnum), var(--rcsv-ss01), var(--rcsv-ss02), var(--rcsv-ss03), var(--rcsv-ss04), var(--rcsv-ss05), var(--rcsv-ss06), var(--rcsv-ss07), var(--rcsv-ss08), var(--rcsv-ss09), var(--rcsv-ss10), var(--rcsv-ss11), var(--rcsv-ss20);}
+
+/* Options by style */
+.rcsv-sans-casual{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"slnt" 0,"ital" 0.5;}
+.rcsv-sans-casual-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"slnt" -15,"ital" 1;}
+
+.rcsv-sans-linear{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"slnt" 0,"ital" 0.5;}
+.rcsv-sans-linear-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"slnt" -15,"ital" 1;}
+
+.rcsv-mono-casual-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"slnt" -15,"ital" 1;}
+.rcsv-mono-casual{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"slnt" 0,"ital" 0.5;}
+
+.rcsv-mono-linear-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"slnt" -15,"ital" 1;}
+.rcsv-mono-linear{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"slnt" 0,"ital" 0.5;}
+
+
+/*******************
+ *  Font: Zilla Slab
+ *  weight 500 only; add more weights in the range
+ */
+
+@font-face {
+    font-family: ZillaSlab;
+    src:
+        url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Regular.ttf')
+            format('truetype'),
+        url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2')
+            format('woff2');
+    font-display: swap;
+    font-style: normal;
+    text-align: initial;
+    font-weight: 100 600;
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    color: var(--on-440044);
+    border: none;
+}
+
+/* for background, dark */
+.hcolor-light {
+    color: var(--on-ffffff);
+}
+/* for background, light */
+.hcolor-dark {
+    color: var(--on-595775);
+}
+/* constellation original */
+.shadow-text {
+    text-shadow: 0px 4px 4px rgb(0 0 0 / .95);
+}
+
+/* for background, light: shadow-text-back-light - stbl */
+.stbl {
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+}
+/* for background, dark: shadow-text-back-dark - stbd */
+.stbd {
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.symbol {
+    font-size: 3em;
+}
+
+
+/*
+ *  updated to new structure
+    text-shadow: 0px 4px 4px rgb(0 0 0 / .95);
+ *  Poppins
+ */
+
+h2 {
+    font-family: Poppins;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    display: inline-block;
+    border: none;
+}
+
+h3 {
+    font-family: Poppins;
+    font-size: calc(2.6 * var(--story-page-vw));
+    font-weight: 300;
+    line-height: 1.2em;
+    border: none;
+}
+
+/***************************
+ *  updated to new structure
+ *  rcsv-sans-casual rcsv-ss01 rcsv-ss02 rcsv-ss08
+ */
+
+h4 {
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    margin-top: 1em;
+    border: none;
+    transition: 1s;
+}
+
+h4:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+/***************************
+ *  updated to new structure
+ *  rcsv-sans-casual-italic rcsv-ss01 rcsv-ss02 rcsv-ss08
+ */
+
+h5 {
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    margin-bottom: 0.8em;
+    border: none;
+    transition: 1s;
+}
+
+h5:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+p {
+    font-family: Recursive;
+    font-size: calc(1.4 * var(--story-page-vw));
+    font-weight: 400;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on; /* move inline */
+}
+
+dt {
+    font-family: NotoSerif;
+    font-size: calc(1.4 * var(--story-page-vw));
+    font-weight: 400;
+    line-height: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-left: 1em;
+    border: none;
+}
+
+dd {
+    font-family: NotoSerif;
+    font-size: calc(1.4 * var(--story-page-vw));
+    font-weight: 300;
+    line-height: 1.4em;
+    margin-left: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: none;
+}
+
+.li {
+    font-family: NotoSerif;
+    font-size: calc(1.4 * var(--story-page-vw));
+    font-weight: 300;
+    line-height: 1.4em;
+    margin-left: 3.6em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    border: none;
+}
+
+/* source: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+
+blockquote {
+    font-family: NotoSerif;
+    line-height: 1.4em;
+    background: var(--on-f9f9f9);
+    border-left: 10px solid var(--on-cccccc);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D";
+}
+
+blockquote:before {
+    color: var(--on-cccccc);
+    content: open-quote;
+    font-size: 4em; /* update to use var(--story-page-vw) */
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+.title-centered {text-align:center;}
+
+/**********************
+ *  attachment DL-DT-DD
+ *  cross check with base reference
+ */
+
+section {margin-left: 10px;}
+
+.chartlegend span {
+    display: inline-block;
+    height: 0.65em;
+    width: 0.65em;
+    border-radius: 0.25em;
+}
+
+.av {
+    font-family: NotoSerif;
+    font-size: calc(1.625 * var(--story-page-vw));
+    font-weight: 400;
+    color: #130f30;
+    border: none;
+}
+
+.mr-s {margin-right: 1em;}
+.p-s  {padding-left: 1em;}
+
+
+/*********
+ *  iframe
+ *  use CSS color var
+ */
+
+.-n {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 0 1.5em;
+    margin: 0;
+}
+.-i,
+.-r {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.-r {
+    line-height: 1.6rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #1f64ff;
+    line-height: 1.3;
+}
+.-i {
+    fill: #1f64ff;
+    padding: 0.438em 0;
+    margin-bottom: auto;
+    margin-right: 0.625em;
+    box-sizing: initial;
+}
+.-n:hover .-i,
+.-n:hover .-r {
+    transform: translateX(10px);
+}
+
+a {color: #1f64ff;}
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.ap-a-ico {
+    display: flex;
+    font-size: initial;
+    box-sizing: initial;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+}
+
+.ap-o-sampler {
+    grid-column: 3/-1;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.ap-o-sampler-iframe {
+    width: 100%;
+    height: auto;
+    background: #e6e6fa;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.4);
+}
+.ap-o-sampler-iframe [placeholder] {
+    display: flex;
+}
+[placeholder] .ap-o-sampler-iframe-source {
+    width: calc(50% - 4px);
+}
+.ap-o-sampler-link {
+    font-family: Poppins, sans-serif;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.-on {
+    display: flex;
+    align-items: center;
+}
+.-on {
+    padding: 0 0 14px;
+    border: 0;
+    background: 0 0;
+}
+.-on:focus ~ .-oi,
+.-on:hover ~ .-oi {
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+</style>
+
+</head>
+<body>
+<amp-story
+  standalone
+  title="Template"
+  publisher="https://ontomatica.io"
+  publisher-logo-src="https://ontomatica.io"
+  poster-portrait-src="https://ontomatica.io"
+  poster-square-src="https://ontomatica.io"
+  poster-landscape-src="https://ontomatica.io"
+  supports-landscape
+>
+
+<amp-story-page id="kg-item-51" data-page-no="51" data-item-label="attachment iframe wedge" data-item-source="paula perez">
+<amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+<div grid-area="upper-third">
+<div class="title-centered hcolor-light" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Attachment: Web Enabled Directed Graph Engine (WEDGE) in amp-iframe
+</h2>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="Wedge iframe" data-title="Web Enabled Directed Graph Engine (WEDGE)">
+
+<section class="ap--sampler">
+
+<!-- amp-state marked as invalid; look for an alt method -->
+<amp-state id="sampler">
+<script type="application/json">
+[
+{"title":"Nobel Prize Winners","url":"https://wedge.ontomatica.io/","embedUrl":"https://wedge.ontomatica.io/Nobel-Prize-Winners_-_19-09-05/Wedge","standaloneUrl":"https://wedge.ontomatica.io/Nobel-Prize-Winners_-_19-09-05/Wedge"}
+]
+</script>
+</amp-state>
+
+<amp-state id="activeSample">
+<script type="application/json">0</script>
+</amp-state>
+
+<div class="ap-o-sampler">
+
+<div class="ap-o-sampler-iframe">
+<amp-iframe
+    height="750"
+    layout="fixed-height"
+    scrolling="yes"
+    sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox allow-presentation allow-top-navigation"
+    allow="fullscreen"
+    frameborder="0"
+    src="https://wedge.ontomatica.io/Nobel-Prize-Winners_-_19-09-05/Wedge"
+    title="wedge"
+>
+<div overflow="" tabindex="0" role="button" aria-label="Show everything">Show everything</div>
+<div placeholder="">
+<div class="ap-o-sampler-iframe-source"></div>
+</div>
+</amp-iframe>
+</div>
+
+<div class="ap-o-sampler-link">
+<a href="https://wedge.ontomatica.io/" [href]="sampler[activeSample].standaloneUrl" class="-n">
+<div class="ap-a-ico -i">
+<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#internal"></use></svg>
+</div>
+<span class="-r">Open Wedge application page</span>
+</a>
+</div>
+
+</div>
+<svg style="position:absolute;width:0;height:0;overflow:hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="internal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M43.16 10.18c-0.881-0.881-2.322-0.881-3.203 0s-0.881 2.322 0 3.203l16.335 16.335h-54.051c-1.281 0-2.242 1.041-2.242 2.242 0 1.281 0.961 2.322 2.242 2.322h54.051l-16.415 16.335c-0.881 0.881-0.881 2.322 0 3.203s2.322 0.881 3.203 0l20.259-20.259c0.881-0.881 0.881-2.322 0-3.203l-20.179-20.179z"></path></symbol>
+<symbol id="angle-down-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z"></path></symbol>
+</defs>
+</svg>
+</section>
+</amp-story-page-attachment>
+
+</amp-story-page>
+
+<amp-story-page id="kg-item-52" data-page-no="52" data-item-label="attachment generic" data-item-source="paula perez">
+<amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+<div grid-area="upper-third">
+<div class="title-centered hcolor-light" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Attachment: generic with colored bullets
+</h2>
+</div>
+</div>
+</amp-story-grid-layer>
+
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="Generic Attachment" data-title="Generic Attachment">
+<section>
+<dl class="chartlegend">
+<div class="av">Abbervail Dream</div>
+<dt>Blue Diamonds</dt>
+<dd>
+<span class="c-00ff00 mr-s"></span>Bright amazing and wonderful</dd>
+<dd>
+<span class="c-32cd32 mr-s"></span>Dancing around the flames</dd>
+<dd>
+<span class="c-ffd700 mr-s"></span>Everybody knows bird is word</dd>
+<div class="av">Caramel Sensation</div>
+<dt>Dairy Cream</dt>
+<dd>
+<span class="c-ff6961 mr-s"></span>Frosty the snowman is a boss</dd>
+<dd>
+<span class="c-191970 mr-s"></span>Girls just want to have fun</dd>
+<dd>
+<span class="c-ffa500 mr-s"></span>Got some popsicles in the cellar</dd>
+<div class="av">Elusive Enchantment</div>
+<dt>Fat Chance Cinnamon</dt>
+<dd>
+<span class="c-add8e6 mr-s"></span>Insomnia gives me time to</dd>
+<dd>
+<span class="c-77dd77 mr-s"></span>Inspiration slaps me in the face</dd>
+<dd>
+<span class="c-7df9ff mr-s"></span>Last chance for one last dance</dd>
+<div class="av">Good Luck Charm</div>
+<dt>Hershey's Kiss</dt>
+<dd>
+<span class="c-ff00ff mr-s"></span>Laugh all day for no reason</dd>
+<dd>
+<span class="c-aec6cf mr-s"></span>Life is a box of chocolates</dd>
+<dd>
+<span class="c-d2691e mr-s"></span>Live like there is no tomorrow</dd>
+<div class="av">Ice Cream Mix</div>
+<dt>Jack Daniels</dt>
+<dd>
+<span class="c-228b22 mr-s"></span>Make it up as you go</dd>
+<dd>
+<span class="c-8d918d mr-s"></span>Moms cookies make everything</dd>
+<dd>
+<span class="c-964b00 mr-s"></span>My room is an organized mess</dd>
+<div class="av">Kitty Hawk</div>
+<dt>Last Man Standing</dt>
+<dd>
+<span class="c-45b08c mr-s"></span>Pluto is still a planet</dd>
+<dd>
+<span class="c-8f00ff mr-s"></span>Six words can mean the world</dd>
+<dd>
+<span class="c-dcae96 mr-s"></span>Sleeping with a giant bear</dd>
+<div class="av">Made You Look</div>
+<dt>Nabisco Cracker</dt>
+<dd>
+<span class="c-dc143c mr-s"></span>Sour candy makes me twitch</dd>
+<dd>
+<span class="c-8c92ac mr-s"></span>The sky is not the limit</dd>
+<dd>
+<span class="c-006d5b mr-s"></span>There always gonna be another</dd>
+<div class="av">One in a Million</div>
+<dt>Peach Blossom</dt>
+<dd>
+<span class="c-0d98ba mr-s"></span>There no place like grandmas</dd>
+<dd>
+<span class="c-555d50 mr-s"></span>Why whisper what you shout</dd>
+<dd>
+<span class="c-0a0a0a mr-s"></span>Your the apple to my pie</dd>
+</dl>
+
+</section>
+</amp-story-page-attachment>
+
+</amp-story-page>
+
+<amp-story-page id="kg-item-53" data-page-no="53" data-item-label="attachment amp-img" data-item-source="paula perez">
+<amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+<div grid-area="upper-third">
+<div class="title-centered hcolor-light" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Attachment: amp-img
+</h2>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="&#x201C;How to know &#x2026;&#x201D;" data-title="More about &#x201C;How to know &#x2026;&#x201D;">
+<section class="p-s">
+<dl class="chartlegend">
+<div class="av">Have you ever wondered whether the drugs you consume daily, such as blood pressure medications and antihistamines, interact with one another&#x003F;</div>
+<dt></dt>
+<dd>
+<span class="c-00ff00 mr-s"></span>Drug, supplement or food affect how medication stays in the body, often by stimulating or inhibiting the production of specific enzymes in the liver or intestine.</dd>
+<dd>
+<span class="c-32cd32 mr-s"></span>Enzymes play an important role in metabolizing drugs and interactions can make a drug more powerful, whereby a standard dose can become an overdose or it can be rendered less potent or ineffective.</dd>
+<dd>
+<span class="c-ffd700 mr-s"></span>Several foods can also block or stimulate the enzymes that break down drugs.</dd>
+<dd>
+<span class="c-ff6961 mr-s"></span>The human body also breaks down drugs differently.</dd>
+<div class="av">How to organize information so we can determine whether chemical interactions (drugs, supplements, flavors) are what we want &#x2014; or what we don&#x0027;t want&#x003F;</div>
+<dt></dt>
+<dd>
+<span class="c-191970 mr-s"></span>In this graph, biomedical concepts such as drugs, diseases, and side effects are represented as entities, while the edges in the graph denote their respective relationships.</dd>
+<dd>
+<span class="c-ffa500 mr-s"></span>For example, an edge between two drug entities might indicate a potential drug&#x2013;to&#x2013;drug interaction, while an edge between a drug and a disease entity might describe a treatment.</dd>
+
+<amp-img id="" data-item-role="attachment" data-item-type="static" data-item-label="drug-drug-interaction" src="https://s3.amazonaws.com/benetta/16418920171000000061/reference/drug-drug-interaction-w1200-h769.jpg" width="1200" height="769" layout="responsive" srcset="https://s3.amazonaws.com/benetta/16418920171000000061/reference/drug-drug-interaction-w200.jpg 200w,https://s3.amazonaws.com/benetta/16418920171000000061/reference/drug-drug-interaction-w693.jpg 693w,https://s3.amazonaws.com/benetta/16418920171000000061/reference/drug-drug-interaction-w1200.jpg 1200w"></amp-img>
+
+<div class="av">We organize data into similar graphs to &#x201C;connect the dots&#x201D;.</div>
+</dl>
+</section>
+<hr><hr>
+</amp-story-page-attachment>
+</amp-story-page>
+
+<amp-story-page id="kg-item-54" data-page-no="54" data-item-label="attachment google doc viewer" data-item-source="paula perez">
+<amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+<div grid-area="upper-third">
+<div class="title-centered hcolor-light" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Attachment: Google Doc PDF viewer
+</h2>
+</div>
+</div>
+</amp-story-grid-layer>
+
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="Similar solutions" data-title="Other problems that find solutions based on the Einstein Riddle solution">
+<section class="p-s">
+<dl class="chartlegend">
+<div class="av">A challenge common to many construction projects&#x003A;</div>
+<dt></dt>
+<dd>
+<span class="c-c0334d mr-s"></span>determine the optimal allocation of construction machines for different projects, or in the same project but at different locations.</dd>
+<div class="av">In the example below, the challenge is to allocate three loaders and three trucks on three different construction sites.</div>
+<dd>
+<span class="c-f3d480 mr-s"></span>The optimization objective is to minimize the total hourly expenses of the assigned machines and to maximize the loaders&#x2019; utilization.</dd>
+<dd>
+<span class="c-f1931b mr-s"></span>Even in relatively small&#x2013;scale problems the number of feasible combinations and parameters exceeds human imagination and experience.</dd>
+<div class="av">This paper uses the Constraint Satisfaction Problem (CSP) properties of the Einstein Riddle to solve a combinatorial optimization tasks in the field of construction.</div>
+</dl>
+<amp-google-document-embed width="1" height="1" layout="responsive" src="https://s3.amazonaws.com/benetta/16418920171000000061/reference/solving-construction-machine-allocation-problems.pdf"></amp-google-document-embed>
+</section>
+</amp-story-page-attachment>
+</amp-story-page>
+
+<amp-story-page id="kg-item-55" data-page-no="55" data-item-label="attachment text-using .li" data-item-source="paula perez">
+<amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+<div grid-area="upper-third">
+<div class="title-centered hcolor-light" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Attachment: Paula ontology text
+</h2>
+</div>
+</div>
+</amp-story-grid-layer>
+
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="More about Ontology" data-title="Purpose and Function of Ontologies">
+<section class="p-s">
+<dl class="chartlegend">
+<div class="av">What is an Ontology&#x003F;</div>
+<dt></dt>
+<dd>
+<span class="c-00ff00 mr-s"></span>Data is how we express our observations about fine art, scientific experiments, government policies or food and drugs, and is effectively mankind's most powerful tool. As humans, we use text and numbers to communicate this data in a way that other people would understand.</dd>
+<dd>
+<span class="c-32cd32 mr-s"></span>Machine use a different language to express data. They use lists of entities, their properties and their relationships in order to understand human observations. A way to encode this knowledge in a machine&#x2013;readable way is called an ontology.</dd>
+<dd>
+<span class="c-ffd700 mr-s"></span>Tom Gruber authored a widely accepted definition for ontology&#x003A;</dd>
+<blockquote class="">In the context of knowledge sharing, I use the term ontology to mean a specification of a conceptualization. That is, an ontology is a description &#x0028;like a formal specification of a program&#x0029; of the concepts and relationships that can exist for an agent or a community of agents.</blockquote>
+<div class="av">How is information stored in an ontology&#x003F;</div>
+<dt></dt>
+<dd>
+<span class="c-ff6961 mr-s"></span>As human beings, we put objects into categories.</dd>
+<dd>
+<span class="c-191970 mr-s"></span>Similarly, ontologies use classes to store objects. Objects in classes can be related to each other.</dd>
+<dd>
+<span class="c-ffa500 mr-s"></span>There are also subclasses, when each and every member of one class is also a member of another class. There can be more than one subclass for any given class.</dd>
+<dd>
+<span class="c-add8e6 mr-s"></span>When two classes do not have any element in common, they are called <em>disjoint</em>. A goal of ontology engineering is to keep sibling classes pairwise disjoint.</dd>
+<div class="av">How are objects&#x2019; relationships stored&#x003F;</div>
+<dt></dt>
+<dd>
+<span class="c-77dd77 mr-s"></span>Objects can be related to each other by different types of relationships.</dd>
+<dd>
+<span class="c-7df9ff mr-s"></span>Other relationships describe how one object <em>develops into,</em> or is <em>transformed into</em> another object while retaining its identity.</dd>
+<dd>
+<span class="c-ff00ff mr-s"></span>One type is the <em>part of</em> relationship. <em>Part of</em> is used to describe how objects are parts of, components of, or regions of other objects.</dd>
+<dd>
+<span class="c-aec6cf mr-s"></span>Another relationship is the <em>derive from</em>. The <em>derive from</em> relationship describes how one object changes into another object with a change of identity.</dd>
+<dd>
+<span class="c-d2691e mr-s"></span>Another relationship describes how a discrete object can <em>participate in</em> a process object.</dd>
+<dd>
+<span class="c-228b22 mr-s"></span>These relationships give structure to descriptions of a world of objects.</dd>
+<div class="av">How to describe an object or class&#x003F;</div>
+<dt></dt>
+<dd>
+<span class="c-8d918d mr-s"></span>We also need to make statements about classes. For example, Helium was discovered in 1894.</dd>
+<dd>
+<span class="c-964b00 mr-s"></span>When describing the elemental form of an atom such as Helium, statements about the discovery date and industrial uses are about the class &#x2014; not about the objects in the class.</dd>
+<div class="av">How to recognize an object or class&#x003F;</div>
+<dt></dt>
+<dd>
+<span class="c-45b08c mr-s"></span>We also need to agree about how to recognize members of a class &#x2014; inclusion conditions &#x0028;rules&#x0029;.</dd>
+<dd>
+<span class="c-8f00ff mr-s"></span>We are concerned about two types&#x003A;</dd>
+<div class="li">1. Necessary Conditions. These are conditions that an object must fulfill. But fulfilling this condition is not enough to recognize an object as being a member of a particular class.</div>
+<div class="li">2. Necessary and Sufficient Conditions. These are conditions that an object must fulfill <em>and</em> are sufficient to recognize an object as being a member of a particular class.</div>
+<dd>
+<span class="c-dcae96 mr-s"></span>For example, each and every organic molecule of alcohol must have a hydroxyl group.</dd>
+<dd>
+<span class="c-dc143c mr-s"></span>However, an organic molecule described as having a hydroxyl substituent is not sufficient to classify that molecule as an alcohol.</dd>
+<dd>
+<span class="c-8c92ac mr-s"></span>But an organic molecule with a saturated backbone <strong>and</strong> a hydroxyl substituent on that backbone <strong><em>is included</em></strong> in the alcohol class &#x0028;according to the IUPAC &#x201C;Gold Book&#x201D;&#x0029;.</dd>
+<dd>
+<span class="c-006d5b mr-s"></span>When defining an object, an ontology makes distinctions.</dd>
+<dd>
+<span class="c-0d98ba mr-s"></span>That is why a formal ontology needs to make distinctions <strong>rigorously</strong>.</dd>
+</dl>
+</section>
+<hr>
+</amp-story-page-attachment>
+</amp-story-page>
+
+<amp-story-page id="kg-item-56" data-page-no="56" data-item-label="attachment ShEx code" data-item-source="paula perez">
+<amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+<div grid-area="upper-third">
+<div class="title-centered hcolor-light" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Attachment: ShEx code as SVG
+</h2>
+</div>
+</div>
+</amp-story-grid-layer>
+
+<amp-story-page-attachment layout="nodisplay" cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg" cta-text="Code for Shape Graph" data-title="ShEx code in TTL format">
+<section>
+<dl>
+<dt>
+Opening line
+</dt>
+</dl>
+<amp-img width="2048" height="24054" layout="responsive" src="https://benetta.io/iframe/shapes-use-case-diabetes/ShEx-blood-glucose/__observation-shex-subset-ttl-w2048-h24054_.svg"></amp-img>
+</section>
+</amp-story-page-attachment>
+
+</amp-story-page>
+
+</amp-story>
+</body>
+</html>

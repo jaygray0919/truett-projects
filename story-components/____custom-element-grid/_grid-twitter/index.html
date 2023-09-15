@@ -1,0 +1,392 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon"      href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<title>
+Structured Data Linter project
+</title>
+<link rel="canonical" href="index.html">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async                                            src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-bind"                  src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-element="amp-gist"                  src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
+<script async custom-element="amp-story"                 src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-element="amp-twitter"               src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+<script async custom-element="amp-iframe"                src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<script async custom-element="amp-google-document-embed" src="https://cdn.ampproject.org/v0/amp-google-document-embed-0.1.js"></script>
+<style amp-custom>
+
+/***************************
+*   Font: Recursive Variable
+*   Recursive-VF.ttf
+*/
+
+@font-face {
+    font-family: Recursive-2019;
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") format("truetype");
+    font-display: swap;
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+}
+
+/*******************
+*   Font: Zilla Slab
+*/
+
+@font-face {
+    font-family: ZillaSlab;
+    src:url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2') format('woff2');
+    font-display: swap;
+    text-align: initial;
+    font-style: normal;
+    font-weight: 100 600;
+}
+
+/****************************
+*   Font: Roboto Flex Regular
+*/
+
+@font-face {
+    font-family: RobotoFlex;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/robotoflex-woff2/RobotoFlex.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+/****************************
+*   Font: Noto Serif
+*/
+@font-face {
+    font-family: NotoSerif;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/***********************
+*   Font: World of Water
+*/
+
+@font-face {
+    font-family: world-of-water;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{font-family:"Noto Sans";font-style:normal;font-weight:regular;font-display:optional;src:local("Noto Sans"),local(NotoSans),url(https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2) format("woff2");}
+
+@font-face{font-family:system;font-style:normal;font-weight:300;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:italic;font-weight:300;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:normal;font-weight:400;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:italic;font-weight:400;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:normal;font-weight:500;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:italic;font-weight:500;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:normal;font-weight:700;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+@font-face{font-family:system;font-style:italic;font-weight:700;src:local(".SFNSText-Light"),local(.HelveticaNeueDeskInterface-Light),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");}
+
+/* used by recursive */
+:root {
+    --MONO: 0;   /* Monospace    */
+    --CASL: 0;   /* Casual       */
+    --slnt: 0;   /* Upright      */
+    --CRSV: 0.5; /* Auto Cursive */
+}
+
+*,
+*:before,
+*:after {
+    font-variation-settings: 
+        "MONO" var(--MONO),
+        "CASL" var(--CASL),
+        "slnt" var(--slnt),
+        "CRSV" var(--CRSV);
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    color: #440044; /* set to background SVG color */
+    border: none;
+}
+
+h2 {
+    font-family: ZillaSlab;
+    font-size: calc(4 * var(--story-page-vw));
+    font-weight: 100;
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+}
+
+h3 {
+    font-family: ZillaSlab;
+    font-size: calc(2.6 * var(--story-page-vw));
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #ffffff;
+    border: none;
+}
+
+h4 {
+    font-family: Recursive-2019;
+    font-size: calc(1.9 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-top: 1em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h4:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+h5 {
+    font-family: Recursive-2019;
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-bottom: 0.8em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h5:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+/*************
+*   cover page
+*/
+
+.cover{width:90%}
+.p-s{padding:.5rem}
+.p{padding:1rem}
+
+.bg-w {
+    background-color: #fff;
+}
+
+.c-bottom {
+    align-content: end;
+}
+
+.color-p {
+    color: #ff0000;
+}
+
+.color-s {
+    color: #6c757d;
+}
+
+.cover-f {
+    width: 70%;
+}
+
+.d-flex {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+/* test change to em */
+.mb {
+    /* margin-bottom: 1rem; */
+    margin-bottom: 1em;
+}
+
+.ml-s {
+    /* margin-left: 0.5rem; */
+    margin-left: 0.5em;
+}
+.mr-s{margin-right:.5rem}
+
+.mx-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noedge {
+    padding: 0;
+}
+
+.paper {
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pb {
+    color: #440044;
+    /* padding-bottom: 1rem; */
+    padding-bottom: 1em;
+}
+
+.pt {
+    /* padding-top: 1rem; */
+    padding-top: 1em;
+}
+
+/* .sep-v{border-left:24px solid #ff8b8b} */
+.sep-v {
+    border-left: 24px solid #ff0000;
+}
+
+.text-fatty {
+    font-family: Recursive-2019;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-80 {
+    width: 80%;
+}
+/* end cover */
+
+.text-center{text-align:center}
+.text-justify{text-align:justify}
+.text-left{text-align:left}
+
+amp-story{color:#fff;border:none}
+
+.titles {text-align:center}
+@media screen and (max-width:1024px)
+{
+.titles{text-align:center;position:static}
+}
+
+
+/*******
+	grid
+	source
+	https://medium.com/@mandy.michael/you-dont-need-a-media-query-for-that-2-responsive-columns-2582c6ea8700
+	https://codepen.io/mandymichael/pen/XWJPdoo
+*/
+
+.block-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 9px;
+}
+.block-group div {
+  height: 200px;
+}
+
+
+</style>
+</head>
+
+<body>
+<svg style="position:absolute; width:0; height:0; overflow:hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="internal" viewBox="0 0 64 64"><path d="M43.16 10.18c-0.881-0.881-2.322-0.881-3.203 0s-0.881 2.322 0 3.203l16.335 16.335h-54.051c-1.281 0-2.242 1.041-2.242 2.242 0 1.281 0.961 2.322 2.242 2.322h54.051l-16.415 16.335c-0.881 0.881-0.881 2.322 0 3.203s2.322 0.881 3.203 0l20.259-20.259c0.881-0.881 0.881-2.322 0-3.203l-20.179-20.179z"></path></symbol>
+<symbol id="angle-down-solid" viewBox="0 0 64 64"><path d="M56.293 16.003c1.761-1.645 4.553-1.645 6.314 0 1.857 1.734 1.857 4.623 0 6.357l-27.45 25.638c-1.761 1.645-4.553 1.645-6.314 0l-27.45-25.638c-0.899-0.839-1.393-1.963-1.393-3.178s0.494-2.339 1.393-3.178c1.761-1.645 4.553-1.645 6.314 0l24.293 22.689 24.293-22.689z"></path></symbol>
+</defs>
+</svg>
+
+<amp-story
+  standalone
+                 title="Structured Data Linter Project"
+             publisher="Ontomatica"
+    publisher-logo-src="https://place-hold.it/260x58?text=Ontomatica-logo&bold&fontsize=23"
+   poster-portrait-src="https://place-hold.it/300x400?text=Structured Data Linter&bold&fontsize=23"
+     poster-square-src="https://place-hold.it/300x300?text=Structured Data Linter&bold&fontsize=23"
+  poster-landscape-src="https://place-hold.it/400x300?text=Structured Data Linter&bold&fontsize=23"
+  supports-landscape
+>
+
+<amp-story-page id="item-11" data-item-label="Title Page">
+
+<amp-story-grid-layer template="fill"><amp-img id="background-circuit-board" data-item-role="background" data-item-type="static" data-item-label="background-circuit-board" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-circuit-board-w1440-h560.svg" width="1440" height="560" layout="responsive"></amp-img></amp-story-grid-layer>
+
+<amp-story-grid-layer class="noedge c-bottom mb" template="vertical"><div class="paper color-s bg-w cover-f d-flex"><div class="flex-fill pt pb"><hgroup class="ml-s"><div class="color-p"><span style="font-family:RobotoFlex; font-weight:600;">Project to enhance</span></div><h1>Structured Data Linter</h1></hgroup><div class="w-50 mx-a"><span style="font-family:RobotoFlex; font-weight:600;">by Ankita Dhandha</span></div></div><div class="sep-v"></div></div></amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page id="item-13" data-item-label="SDL Announcements">
+
+<amp-story-grid-layer template="fill"><amp-img id="background-network-black" data-item-role="background" data-item-type="static" data-item-label="background-network-gray" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-1F2022-w800-h800.svg" width="800" height="800" layout="responsive"></amp-img></amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical">
+
+<div class="titles" animate-in="fade-in" animate-in-duration="4s">
+<h2>SDL Announcements</h2>
+</div>
+
+<div class="block-group">
+
+<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<amp-twitter width="560" height="80" data-tweetid="104617719307055104" data-tooltip-icon="https://afdsi.com/static/logo/onto_sym_white_black_back_w421_h421_.png" data-tooltip-text="Expand tweet" role="link"></amp-twitter>
+</div>
+
+<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="4s">
+<amp-twitter width="720" height="80" data-tweetid="1325211019640152066" data-tooltip-icon="https://afdsi.com/static/logo/onto_sym_white_black_back_w421_h421_.png" data-tooltip-text="Expand tweet" role="link"></amp-twitter>
+</div>
+
+</div> 
+
+</amp-story-grid-layer>
+
+
+</amp-story-page>
+
+<amp-story-page id="item-58" data-item-label="Twitter: ShEx SHACL Announcements">
+
+<amp-story-grid-layer template="fill"><amp-img id="background-network-black" data-item-role="background" data-item-type="static" data-item-label="background-network-black" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg" width="800" height="800" layout="responsive"></amp-img></amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical">
+
+<div class="titles" animate-in="fade-in" animate-in-duration="4s">
+<h2>Twitter: ShEx SHACL Announcements</h2>
+</div>
+
+<div class="block-group">
+
+<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<amp-twitter width="560" height="80" data-tweetid="1011495002441179136" data-tooltip-icon="https://afdsi.com/static/logo/onto_sym_white_black_back_w421_h421_.png" data-tooltip-text="Expand tweet" role="link"></amp-twitter>
+</div>
+
+<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="4s">
+<amp-twitter width="720" height="80" data-tweetid="1262397755491790855" data-tooltip-icon="https://afdsi.com/static/logo/onto_sym_white_black_back_w421_h421_.png" data-tooltip-text="Expand tweet" role="link"></amp-twitter>
+</div>
+
+</div> 
+
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+</amp-story>
+</body>
+</html>

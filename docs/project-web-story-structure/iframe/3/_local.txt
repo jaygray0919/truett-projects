@@ -1,7 +1,5 @@
 
-.. describe:: iframe-3
-
-   item
+.. describe:: iframe additional
 
    item
 
@@ -10,3 +8,8 @@
 
 ::
 
+   <section class="ap--sampler">
+   <amp-state id="sampler">
+   <script type="application/json">
+   </script>
+   </amp-state>

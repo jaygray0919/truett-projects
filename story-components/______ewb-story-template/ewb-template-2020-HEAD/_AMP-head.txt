@@ -1,0 +1,12 @@
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Page Experience">
+<meta name="twitter:creator" content="@ampproject">
+<meta name="twitter:site" content="@ampproject">
+<meta name="twitter:image" content="https://amp.dev/static/img/sharing/default-600x314.png">
+
+<meta property="og:title" content="Page Experience">
+<meta property="og:url" content="https://amp.dev/about/page-experience/">
+<meta property="og:image" content="https://amp.dev/static/img/sharing/default-600x314.png">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="314">

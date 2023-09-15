@@ -1,0 +1,7 @@
+
+data ecosystems
+    https://afdsi.com/_svg-projects/personas-data/
+
+refine using
+    updated Roles
+    workflows

@@ -1,0 +1,13 @@
+:root {
+
+    --space-1: 0.5rem;   /* 8px */
+    --space-2: 1.0rem;   /* 16px */
+    --space-3: 1.5rem;   /* 24px */
+    --space-4: 2.0rem;   /* 32px */
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}

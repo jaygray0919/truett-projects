@@ -1,16 +1,10 @@
 
-.. describe:: iframe-1
+.. describe:: iframe CSS
 
    item
 
-   item
 
-
-.. attention::
-   Notes about iframe.
-
-
-.. highlight:: html
+.. highlight:: css
 
 ::
 

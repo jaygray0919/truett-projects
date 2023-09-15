@@ -1,0 +1,256 @@
+<!doctype html>
+<html amp>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon"
+	href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+Vignette: white text on black back
+</title>
+<link rel="canonical" href="navigation.html">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async
+	src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story"
+	src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-element="amp-story-panning-media"
+	src="https://cdn.ampproject.org/v0/amp-story-panning-media-0.1.js"></script>
+<!-- Poppins; 500,600,700 -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;display=swap">
+
+<style type="text/css" amp-custom>
+/*******************
+ *  Font: Zilla Slab
+ */
+
+@font-face {
+    font-family: ZillaSlab;
+    src:url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2') format('woff2');
+    font-display: swap;
+    text-align: initial;
+    font-style: normal;
+    font-weight: 100 600;
+}
+
+/***************************
+ *  Font: Recursive Variable
+ *  Recursive-VF.ttf
+ */
+
+@font-face {
+    font-family: Recursive-2019;
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") format("truetype");
+    font-display: swap;
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    color: #440044; /* set to background SVG color */
+    border: none;
+}
+
+/*************
+ *   cover page
+ */
+
+.bg-w {
+    background-color: #fff;
+}
+
+.c-bottom {
+    align-content: end;
+}
+
+.color-p {
+    color: #ff0000;
+}
+
+.color-s {
+    color: #6c757d;
+}
+
+.cover-f {
+    width: 70%;
+}
+
+.d-flex {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.mb {
+    margin-bottom: 1em;
+}
+
+.ml-s {
+    margin-left: 0.5em;
+}
+
+.mx-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noedge {
+    padding: 0;
+}
+
+.paper {
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pb {
+    color: #440044;
+    padding-bottom: 1em;
+}
+
+.pt {
+    padding-top: 1em;
+}
+
+.sep-v {
+    border-left: 24px solid #ff0000;
+}
+
+.text-fatty {
+    font-family: Recursive-2019;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+/* end cover */
+
+
+/******************
+ *  dims top-bottom
+ */
+
+/*
+.vignette {
+    background: radial-gradient(
+        120% 50% at 50% 35%,
+        rgb(0 0 0 / 0) 25.5%,
+        rgb(0 0 0 / 0.96) 100%
+    );
+}
+*/
+
+.vignette {
+    background: radial-gradient(
+        120% 50% at 50% 66%,
+        rgb(0 0 0 / 0)    60%,
+        rgb(0 0 0 / 0.96) 100%
+    );
+}
+
+.content-wrapper {
+    font-size: calc(2.2 * var(--story-page-vw));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 0.95);
+    position: absolute;
+    top: 20px;
+}
+
+.sub-heading {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 1.07em;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    line-height: 1.8em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.main-heading {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 2.84em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.2em;
+    margin-bottom: 17px;
+}
+
+.body-text {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+</style>
+</head>
+<body>
+<amp-story
+    standalone
+    supports-landscape
+    title="The Northern Sky Constellations"
+    publisher=""
+    publisher-logo-src="https://wsdemos.uc.r.appspot.com/constellations/assets/poster.jpg"
+    poster-portrait-src="https://wsdemos.uc.r.appspot.com/constellations/assets/poster.jpg"
+>
+
+<!-- replace with standard intro -->
+<amp-story-page id="item-11" data-item-label="title-page">
+<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-neural-network-440044-FFE1FFW" src="https://s3.amazonaws.com/benetta/16418920171000000061/reference/background-neural-network-440044-FFE1FFW-w400-h371.svg" width="400" height="371" layout="responsive"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer class="noedge c-bottom mb" template="vertical"><div class="paper color-s bg-w cover-f d-flex"><div class="flex-fill pt pb"><hgroup class="ml-s"><div class="text-fatty color-p">connecting the dots</div><h1>Solve Problems with Machine Reasoning</h1></hgroup><div class="w-80 mx-a text-fatty">by Paula Perez</div></div><div class="sep-v"></div></div></amp-story-grid-layer>
+</amp-story-page>
+
+
+<amp-story-page id="ursa-major">
+<amp-story-grid-layer template="fill" style="background-color:#151515;">
+
+<amp-story-panning-media layout="fill" data-x="-3%" data-y="-28%" data-zoom=2>
+<amp-img layout="fill" src="causative-w4433-h8063.png" width="4433" height="8063"></amp-img>
+</amp-story-panning-media>
+
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="fill">
+<div class="vignette" animate-in="scale-fade-down"></div>
+</amp-story-grid-layer>
+
+<amp-story-grid-layer template="fill">
+
+<div animate-in="fade-in" animate-in-duration="4s">
+<div class="content-wrapper">
+<!-- <span class="sub-heading">The big bear</span> -->
+<span class="main-heading">Relationship Title</span>
+<span class="body-text">Information about the Relationship</span>
+</div>
+</div>
+
+</amp-story-grid-layer> 
+</amp-story-page>
+
+</amp-story>
+</body>
+</html>

@@ -1,0 +1,1012 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<title>Finding a Job in the Cayman Islands</title>
+<link rel="canonical" href="https://staging.caymanmag.com/work/finding-a-job">
+
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
+  
+<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900%7CMaterial+Icons" rel="stylesheet">
+
+<style amp-custom>
+.jobs-search__no-results{padding:1rem}
+.job-result__item-company{font-size:.8rem}
+.job-result__item-list{font-weight:700}
+#job-search-form{box-sizing:border-box;position:relative}
+#job-search-form input{box-sizing:border-box;height:42px}
+a.job-result__item-link{color:inherit;text-decoration:none;padding:.5rem 1rem;display:block;white-space:normal}
+a.job-result__item-link:hover{background:#eee}
+.jobs-nav__items{display:flex;justify-content:space-between;max-width:900px;margin:0 auto;padding:.9rem 1rem;align-items:center;font-size:1rem}
+.jobs-nav{background:#304455}
+.jobs-nav__items ul li{display:inline-block;margin-right:2rem;color:#fff;font-weight:600}
+a.post-job{text-decoration:none;border:1px solid #43c1b4;border-radius:4px;padding:8px 12px;background:#fff;font-weight:600;line-height:1;color:#43c1b4}
+.jobs-lightbox{background:#fff;padding:2rem;position:relative;max-width:70%}
+.jobs-lightbox h3{margin-top:0}
+.jobs-lightbox button{position:absolute;top:0;right:0;background:0 0;border:0;outline:0;padding:1rem}
+.job-type__pricing{display:flex;flex-wrap:wrap}
+.job-company-area{display:block}
+.job-comany__name span{font-weight:600}
+.job-company__area i{vertical-align:middle}
+.job-comany__name{line-height:1}
+.job-company__area{font-size:1rem;margin-top:.6rem}
+.date-posted{display:flex}
+.date-posted i{margin-right:5px}
+a.post-job.pricing{position:absolute;top:30px;right:70px}
+.job-type__column{padding:1rem;width:100%;box-sizing:border-box}
+.job-type__features i{vertical-align:middle;color:#43c1b4}
+.job-type__features{font-size:.9rem;margin-top:.5rem}
+.job-type__column p{font-size:1rem;color:#777;text-align:center}
+.job-type__column h3{text-align:center;margin:0}
+.job-type__price{font-size:2.5rem;text-align:center;font-weight:700}
+.jobs-lightbox button:after{content:'close';font-family:"Material Icons";font-size:24px}
+.jobs-results__container{max-width:900px;margin:0 auto}
+#jobs .flex-list,#doctors .flex-list{flex-wrap:nowrap}
+#jobs .flex-list__item,#doctors .flex-list__item{flex:1 0 14rem;margin:1rem 0 1.5rem;padding-right:1rem}
+#jobs .flex-card,#doctors .flex-card{position:relative}
+#jobs .flex-card__headline,#doctors .flex-card__headline{position:absolute;bottom:0;margin:0;padding:1.3rem;width:100%;box-sizing:border-box;color:#fff;line-height:1.4;border-radius:0 0 4px 4px;background:-webkit-linear-gradient(top,rgba(76,76,76,0) 0,rgba(19,19,19,.5) 100%);background:linear-gradient(to bottom,rgba(76,76,76,0) 0,rgba(19,19,19,.5) 100%);text-shadow:0 2px 10px rgba(0,0,0,.5)}
+#jobs h1,#doctors h1{font-size:2rem;margin:0 0 .5rem;line-height:1.3}
+#jobs h2,#doctors h2{margin:0;font-weight:300;font-size:1.1rem}
+.jobs-intro{width:660px;margin:0 auto;font-size:1rem}
+.job-filters{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;margin:2rem 0 1rem}
+.filters-select{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:flex-end}
+.job-search__box input{width:100%;border:1px solid #ccc;cursor:text;border-radius:4px;padding:.5rem 1rem .5rem 2.5rem;outline:none;transition:all .2s ease;background:#fff url(/images/search.svg) .75rem .75rem no-repeat;background-size:1rem}
+.job-listing{display:flex;flex-direction:column;position:relative;text-decoration:none;color:inherit;margin:1rem .1rem;border-radius:4px;box-sizing:border-box;background:#fff;box-shadow:0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)}
+.job-listing.featured__true{background:#fff9d9}
+.job-listing__header{display:flex;align-items:center;padding:1rem 1rem 0}
+.job-listing__logo{flex-basis:25%;margin-right:4%}
+.job-listing__logo img{object-fit:contain}
+.job-listing__details{font-size:1rem;padding:0 1rem}
+.job-listing__title h3{margin-bottom:.3rem}
+.job-details__company span{font-weight:600}
+.job-listing__footer{flex-wrap:wrap;display:flex;align-items:center;justify-content:space-between;padding:.7rem 1rem;font-size:.9rem;border-top:1px solid #e9e9e9}
+.job-listing__footer i{vertical-align:middle}
+.job-listing__footer-industry{border:1px solid #43c1b4;padding:.4rem .8rem;border-radius:25px;font-size:.85rem;line-height:1;color:#43c1b4;font-weight:600}
+.jobs-wrap.grid .job-listing__header{flex-direction:column}
+.jobs-wrap.grid .job-listing__logo{width:80px}
+.jobs-wrap.grid .job-listing__title h3{margin-top:.8rem;font-size:1.2rem}
+.jobs-wrap.grid .job-listing__footer>div{margin-top:1rem}
+.select-css{display:block;font-size:1rem;font-weight:600;line-height:1.3;padding:.4rem 2rem .4rem .8rem;width:100%;max-width:100%;box-sizing:border-box;margin:0;border:1px solid #ccc;border-radius:4px;-moz-appearance:none;-webkit-appearance:none;appearance:none;background-color:#fff;background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),linear-gradient(to bottom,#fff 0%,#e5e5e5 100%);background-repeat:no-repeat,repeat;background-position:right .7em top 50%,0 0;background-size:.65em auto,100%}
+.select-css::-ms-expand{display:none}
+.select-css:hover{border-color:#888}
+.select-css:focus{border-color:#aaa;box-shadow:0 0 1px 3px rgba(59,153,252,.7);box-shadow:0 0 0 3px -moz-mac-focusring;color:#222;outline:none}
+.select-css option{font-weight:400}
+.job-filters__select{order:2;width:100%;margin-top:1rem}
+.filter-item:first-of-type{width:100%}
+.filter-item{margin-bottom:1rem;width:32%}
+.filter-item label{font-size:1rem;font-weight:300;margin-bottom:.25rem;display:block}
+.job-search__box{display:flex;align-items:center;justify-content:space-between;order:1;width:100%}
+.view-toggle__button{display:none}
+.job-search__box form,amp-autocomplete{width:100%}
+.jobs-wrap.grid div[role=listitem]{display:flex;flex-wrap:wrap;flex:1 1 auto}
+.jobs-wrap.grid .job-listing .job-logo{max-width:100px;margin:0 auto}
+.jobs-wrap.grid .job-listing{width:calc(50% - 10px);margin-right:1rem;display:block}
+.jobs-wrap.grid .job-listing:nth-child(2n){margin-right:0}
+.view-toggle__button button{border-radius:4px;font-size:1rem;border:1px solid #ccc;background:#fff;overflow:visible;color:inherit;display:inline-block;padding:1.2rem;position:relative;outline:0;height:42px;cursor:pointer}
+.view-toggle__button button.grid:after{content:"view_module";font-family:"Material Icons";font-size:26px;vertical-align:middle;position:absolute;top:6px;right:6px}
+.view-toggle__button button.list:after{content:"list";font-family:"Material Icons";font-size:26px;vertical-align:middle;position:absolute;top:6px;right:6px}
+.job-type{position:absolute;top:0;right:0;background:#43c1b4;padding:.2rem .8rem;color:#fff;font-weight:600;border-radius:0 4px;font-size:.9rem}
+#jobs amp-autocomplete div:first-of-type{width:100%}
+amp-sticky-ad{z-index:99999}
+.hide-search__results{display:none}
+.srch-wrap{position:relative}
+.clear-icon{display:none}
+.srch-x{fill:#777;position:absolute;right:0;line-height:1;padding:.5rem;outline:0;z-index:2}
+.autosuggest-container{position:absolute;width:calc(100vw - 2rem);z-index:999;right:0}
+.search-list__results{width:100%;max-width:400px;margin-top:.5rem;border-radius:4px;overflow-y:auto;overflow-x:hidden;background-color:#fff;border:1px solid #ccc;box-sizing:border-box}
+a.job-result__item-link{color:inherit;text-decoration:none;padding:.5rem 1rem;display:block;white-space:normal}
+.amp-mode-mouse a.job-result__item-link:hover{background:#eee}
+.search__no-results{padding:1rem}
+.job-result__item-company{font-size:.8rem}
+.job-result__item-list{font-weight:700}
+html{line-height:1.15;-webkit-text-size-adjust:100%}
+body{margin:0}
+main{display:block}
+hr{box-sizing:content-box;height:0;overflow:visible}
+pre{font-family:monospace,monospace;font-size:1em}
+a{background-color:transparent}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}
+code,kbd,samp{font-family:monospace,monospace;font-size:1em}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-.25em}
+sup{top:-.5em}
+img{border-style:none}
+button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}
+button,input{overflow:visible}
+button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{padding:.35em .75em .625em}
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}
+progress{vertical-align:baseline}
+textarea{overflow:auto}
+[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+html{box-sizing:border-box}
+*,*:before,*:after{box-sizing:inherit}
+body{font-family:"Source Sans Pro","Helvetica Neue",Arial,sans-serif;font-size:1.1rem;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#304455;background-color:#fafafc;margin:0}
+a{color:#43c1b4}
+img{max-width:100%}
+ul{margin:0;padding:0;list-style:none}
+textarea,input.text,input[type=text],input[type=button],input[type=submit],.input-checkbox{-webkit-appearance:none}
+.spacer{flex-grow:1}
+.navbar{z-index:20;right:0;height:3.6rem;background-color:#fff;border-bottom:1px solid #eaecef;padding:.7rem 2.5rem;display:flex;justify-content:space-between;align-items:center;position:relative}
+#navbar{width:100vw;transform:translate3d(0,0,0);transition:.1s all ease-out;z-index:50;position:sticky;position:-webkit-sticky;top:0}
+#navbar.hidden-navbar{box-shadow:none;transform:translate3d(0,-100%,0)}
+.nav-open #navbar{height:100vh}
+amp-autocomplete div:first-of-type{width:320px;right:0;max-height:60vh;color:#304455}
+.drawer-content__sidebar{background:#fff;border-right:1px solid rgba(0,0,0,.12);bottom:0;font-size:14px;overflow-y:auto;padding:72px 0 40px;position:fixed;top:58px;transform:translateX(-100%);transition:transform .15s cubic-bezier(.4,0,.2,1);width:100%;z-index:5}
+svg.icon.closed{display:none}
+.sidebar-button.open svg.icon.open{display:none}
+.sidebar-button svg.icon.close{display:none}
+.sidebar-button.open svg.icon.close{display:block}
+.sidebar-button.open svg.icon.closed{display:block}
+.sidebar-button{width:1.2rem;height:1.2rem;position:absolute;top:1.1rem;left:1.2rem;cursor:pointer}
+.navbar .site-name,.site-name__bold{font-size:1.3rem;font-weight:300;position:relative;text-transform:uppercase}
+.navbar .site-name__bold{font-weight:600}
+.navbar .links{padding:0 0 0 1rem;background-color:#fff;white-space:nowrap;font-size:.9rem;position:absolute;right:1rem;top:.7rem;display:flex}
+.navbar .links .search-box{flex:0 0 auto;vertical-align:top}
+.search-box input{cursor:text;width:13rem;color:#777;display:inline-block;border:1px solid #cfd4db;border-radius:2rem;font-size:1rem;line-height:2rem;padding:0 .5rem 0 2rem;outline:none;transition:all .2s ease;background:#fff url(/images/search.svg) .6rem .5rem no-repeat;background-size:1rem}
+.amp-mode-mouse .nav-item:hover>.mega-menu{opacity:1;height:auto}
+.amp-mode-mouse .nav-item:hover .nav-link{border-bottom:2px solid}
+.mega-menu{position:absolute;width:50vw;top:42px;background:#fff;right:-1.3rem;text-align:left;opacity:0;height:0;transition:.5s;overflow:hidden;box-shadow:0 5px 10px rgba(0,0,0,.3);border-radius:0 0 4px 4px}
+.mega-menu__row{padding:2rem}
+.search-box input:focus{cursor:auto;border-color:#43c1b4}
+a.list-group-item{font-size:1rem;padding:.6rem 1rem;text-decoration:none;line-height:1.4;white-space:normal;transition:.3s}
+.amp-mode-mouse a.list-group-item:hover{background-color:#f7f7f7}
+.search-result__entry-type{font-size:.8rem;color:#9e9e9e}
+.navbar .links .nav-links{flex:1}
+.nav-links{display:inline-block}
+.nav-links .nav-item{display:inline-block;position:relative;margin-left:1.3rem;line-height:19px;text-transform:uppercase;text-align:center}
+a.nav-link{color:#43c1b4;display:inline-block;text-decoration:none;font-weight:700;font-size:.9rem;padding-bottom:1px;transition:.2s}
+a.nav-link.active{border-bottom:2px solid}
+.amp-mode-mouse a.nav-link:hover{border-bottom:2px solid}
+a.nav-link span{color:#777;font-weight:400;display:block;font-size:.7rem}
+.header{display:flex;justify-content:space-between;align-items:center;padding:16px;box-shadow:0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);position:relative}
+.header-logo,.header-nav__items{margin:0 32px}
+.search-box .srch-x{padding:.3rem}
+a.logo{font-size:1.7rem;text-transform:uppercase;text-decoration:none;font-weight:900;display:block}
+span.logo-thin{font-weight:400;margin-right:-7px;color:#43c1b4cf}
+.header-nav__items ul{display:flex;text-transform:uppercase;font-weight:600}
+.header-nav__items ul li{padding:1rem 1.5rem;text-align:center}
+.header-nav__items ul li span{display:block}
+a.nav-item__link{text-decoration:none;color:inherit;line-height:1.5}
+span.site-name__subtle{font-weight:300;color:#43c1b4;text-transform:uppercase}
+span.site-name__highlight{font-weight:600;color:#43c1b4;text-transform:uppercase}
+.header button{border:0;background-color:transparent;outline:0}
+.drawer-sidebar{width:320px;background:#fff;padding:1rem}
+amp-sidebar amp-img{max-width:75%;margin-top:5px}
+amp-sidebar button{position:absolute;right:0;background:#fff;outline:0;border:0}
+nav.drawer-navigation{display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;padding:3.6rem 1.2rem 5rem;z-index:16;background-color:#fff;box-sizing:border-box}
+.drawer-navigation.mainmenuopen{display:block;z-index:40;overflow-y:auto}
+nav.drawer-navigation.mainmenuopen~.app{max-width:100vw;overflow-x:hidden;max-height:calc(100vh - 58px - 54px)}
+.drawer-navigation li a{font-size:1rem;text-decoration:none;font-weight:500;color:inherit}
+.drawer-navigation li{margin-top:1rem;outline:0;font-size:1.2rem}
+.drawer-navigation li.drawer-item__sub{font-size:1rem}
+.drawer-navigation li.drawer-item ul.drawer-children{display:none}
+.drawer-navigation li.drawer-item.open>ul.drawer-children{display:block;padding-left:1.3rem}
+.drawer-navigation .drawer-item__sub.open>ul.drawer-children{display:block;padding-left:1.3rem}
+nav.drawer-navigation header{font-weight:700;margin-top:1.5rem}
+ul.drawer-children{display:flex;flex-direction:row;flex-wrap:wrap;border-bottom:1px solid #eee;padding-bottom:1.5rem}
+.drawer-navigation li.drawer-item__sub{font-size:1rem;width:50%;box-sizing:border-box;line-height:1.4}
+.drawer-navigation li.drawer-item>span{display:inline-block;padding:8px 0;width:100%;outline:0}
+.drawer-navigation li.drawer-item__sub>span{display:inline-block;width:100%;outline:0}
+.drawer-navigation li.drawer-item>span:after{content:"expand_more";font-family:"Material Icons";font-size:16px;margin-left:1rem;vertical-align:middle}
+.drawer-navigation li.drawer-item.open>span:after{content:"expand_less";font-family:"Material Icons";font-size:16px;margin-left:1rem;vertical-align:middle}
+.drawer-navigation li.drawer-item__sub>span:after{content:"expand_more";font-family:"Material Icons";font-size:16px;margin-left:1rem;vertical-align:middle}
+.drawer-navigation li.drawer-item__sub.open>span:after{content:"expand_less";font-family:"Material Icons";font-size:16px;margin-left:1rem;vertical-align:middle}
+a.drawer-sub__title{text-transform:uppercase}
+#app{background:#f9f9f9}
+.group-banner{margin:.6rem 0 1.2rem}
+.dfp-ad{text-align:center;margin:0 auto}
+body.nav-open{bottom:0;left:0;position:fixed;right:0;top:0}
+#homepage .hero-image{min-height:360px}
+.hero-image{min-height:360px;position:relative;z-index:1;background:linear-gradient(0deg,#89c5bf,#43c1b4 100%)}
+.hero-image img{object-fit:cover}
+.hero-image__container:after{content:'';position:absolute;top:0;left:0;bottom:0;right:0;z-index:1;background:linear-gradient(to top,rgba(23,23,23,.7) 0,rgba(23,23,23,0) 70%)}
+#homepage .hero-text{bottom:3%}
+.hero-text{color:#fff;left:1%;right:3%;bottom:1%;position:absolute;display:inline-block;padding:1rem;z-index:50}
+#homepage .hero-text h1{line-height:1}
+.hero-text h1{color:#fff;font-weight:800;text-shadow:0 2px 10px rgba(0,0,0,.5);margin:0;font-size:2rem;line-height:1.4}
+span.title-thin{display:block;font-size:1rem;text-transform:uppercase;margin-bottom:1rem;font-weight:600}
+span.title-bold{font-weight:900}
+#homepage .row h2{font-size:22px;display:inline-block;border-bottom:2px solid #43c1b4;margin:0}
+.heading-row{display:flex;justify-content:space-between;align-items:center;margin-top:.5rem}
+.heading-row a{display:flex;align-items:center;text-decoration:none}
+.heading-row a i{margin-left:5px}
+.flex-list{overflow-x:scroll;-webkit-overflow-scrolling:touch;display:flex;flex-wrap:nowrap;width:auto}
+#pages .flex-list__item{flex:1 0 9rem;margin:.1rem 0 1rem}
+.flex-list__item{flex:1 0 20rem;display:block;padding:0 1.5rem 0 .1rem;margin:2rem 0 2.5rem;transition:transform .3s cubic-bezier(.25,.1,.25,1);text-decoration:none;color:inherit}
+a.flex-list__item .flex-card{display:flex;flex-direction:column;height:100%;background:#fff;position:relative;border-radius:4px;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);transition:box-shadow .3s cubic-bezier(.25,.1,.25,1)}
+.flex-card__image{overflow:hidden;border-radius:4px 4px 0 0}
+.flex-card__image img{object-fit:cover;border-radius:4px 4px 0 0;vertical-align:top;transition:.5s ease}
+.flex-card__headline{padding:0 1.5rem;margin:1rem 0}
+a.flex-list__item .flex-card:after{content:'';position:absolute;bottom:0;left:0;width:0;height:4px;background:#43c1b4;transition:width .3s ease-in-out;z-index:9999}
+.amp-mode-mouse a.flex-list__item .flex-card:hover:after{width:100%}
+.amp-mode-mouse a.flex-list__item .flex-card:hover img{transform:scale(1.2)}
+.hero-text p{font-size:1.1rem;text-shadow:0 2px 10px rgba(0,0,0,.5);font-weight:600;margin-top:.5rem}
+#pages .breadcrumbs,#camps .breadcrumbs{box-shadow:0 10px 25px 0 rgba(0,0,0,.04)}
+.breadcrumb{margin-bottom:.6rem}
+#jobs .breadcrumb{margin-bottom:0}
+.breadcrumb-container{max-width:1200px;margin:0 auto;padding:1.1rem 1rem;display:flex;flex-wrap:wrap;flex-direction:column;justify-content:space-between;color:#777;font-size:1rem;box-sizing:border-box}
+.breadcrumb ul{display:flex;align-items:center;flex-wrap:wrap}
+.breadcrumb ul li a{text-decoration:none}
+.breadcrumb-item+.breadcrumb-item:before{display:inline-block;padding-right:.5rem;padding-left:.5rem;color:#6c757d;content:"/"}
+#profile .breadcrumbs{border-bottom:0}
+.wrapper{margin:0 auto;max-width:1200px}
+.segment{padding:16px}
+.segment.flush{padding-top:0}
+.container{max-width:1200px;margin:0 auto}
+.main-content__sidebar{display:flex;flex-direction:column}
+.col__main{order:2}
+.col__sidebar{order:3}
+.flex-row{display:flex;flex-wrap:wrap;margin-top:1rem}
+.lightbox{background:rgba(0,0,0,.8);width:100%;height:100%;position:absolute;display:flex;align-items:flex-start;justify-content:center;overflow-x:hidden;overflow-y:auto;z-index:99;padding:3rem 0}
+.page-content__image{position:relative}
+.overlay-text{color:#fff;position:absolute;right:0;bottom:0;padding:.5rem .9rem;border-radius:4px;margin:1rem;background:#43c1b4b0;cursor:pointer;display:flex;align-items:center;z-index:1}
+.overlay-text span{margin-left:8px;font-weight:700}
+amp-carousel{background:#ccc}
+span.results-item__type{display:block;font-weight:300;font-size:.6rem;text-transform:uppercase}
+span.results-item__title{display:block;font-weight:600;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;word-break:break-all;overflow-wrap:break-word}
+.flex{display:flex;flex-wrap:wrap}
+footer .feedback-container{padding:1rem;background-color:#f7f7f7;border-top:1px solid #e7e7e8;border-bottom:1px solid #e7e7e8;line-height:1em;font-weight:400}
+.feedback-container__content{display:flex;justify-content:space-between;flex-direction:column;max-width:400px;margin:0 auto}
+button#feedback-modal{text-decoration:underline;border:0;background-color:transparent;font-size:.9rem;padding:.6rem 0;color:#43c1b4;font-weight:700;border-radius:5px;outline:0;cursor:pointer}
+.footer-middle{background:#43c1b4}
+.footer-middle__container{border-bottom:1px solid #e7e7e8}
+.footer-middle__links a{color:#fff;text-decoration:none}
+.footer-middle__links{max-width:300px;margin:0 auto;display:flex;justify-content:space-around;padding:16px 0}
+.newsletter-container{margin:0 auto;max-width:600px;text-align:center;padding:1.5rem 1rem;color:#fff}
+.newsletter-container .title{text-transform:uppercase;font-weight:900;font-size:26px}
+div#mc_embed_signup{max-width:600px;margin:0 auto;padding:0 1rem 1.8rem}
+div#mc_embed_signup_scroll{width:100%;display:flex;align-items:center}
+input#mce-EMAIL{font-size:1rem;color:#7e7e7e;margin:0;width:70%;padding:.9rem;border-radius:4px 0 0 4px;border:0;outline:0;box-sizing:border-box}
+input#mc-embedded-subscribe{width:30%;border:none;background:#dadada;box-sizing:border-box;padding:.9rem 2rem;font-size:1rem;border-radius:0 4px 4px 0;outline:0;cursor:pointer}
+.footer-bottom{background:#304455}
+.footer-bottom .flex{display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:1.5rem 1rem}
+.footer-bottom__left{align-items:center}
+.footer-bottom__left a{display:block;line-height:1;width:300px}
+.site-logo__footer{max-width:300px}
+.footer .copyright{color:#fff;text-align:center;margin:6px 0 12px}
+.footer-bottom__right a{display:flex;align-items:center;color:#fff;text-decoration:none;padding:8px;border:1px solid #fff;border-radius:4px}
+.footer-bottom__right{display:flex;align-items:center}
+.facebook-logo__footer{width:28px;margin-right:12px}
+@media (min-width:480px){.sidebar-button{display:none}
+span.title-thin{font-size:1.15rem}
+.hero-text{left:3%;max-width:80%}
+.filters-select{flex-wrap:nowrap}
+.filter-item{margin-right:1rem}
+.filter-item:last-of-type{margin-right:0}
+.job-listing__footer>div:last-of-type{margin-top:0}
+}
+@media (min-width:600px){.navbar .links{padding:0 2rem}
+.autosuggest-container{position:absolute;width:400px;z-index:999;right:0;left:0}
+.col__sidebar{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:0;flex-shrink:0;-ms-flex-preferred-size:300px;flex-basis:300px;min-width:0;order:3}
+.more-in__nav{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:0;flex-shrink:0;-ms-flex-preferred-size:300px;min-width:210px;box-sizing:border-box;order:1}
+.footer-bottom .flex{flex-direction:row}
+.footer-bottom__left{margin-bottom:0}
+.flex{flex-wrap:nowrap}
+.view-toggle__button{display:block;margin-right:1rem}
+.job-company-area{display:flex;align-items:center}
+.job-company__area i{vertical-align:middle;padding-left:.5rem}
+.job-company__area{margin-top:0}
+.job-comany__name{padding-right:.7rem;border-right:2px solid #ccc}
+.job-listing__logo{flex-basis:10%;margin-right:4%}
+.job-listing__title h3{margin:0 0 .3rem;font-size:1.4rem}
+}
+@media (min-width:880px){a.logo{font-size:2.1rem}
+a.nav-link{font-size:1rem}
+.nav-links .nav-item{margin-left:1.8rem}
+.carousel img{height:400px}
+.breadcrumb-container{flex-direction:row;align-items:center}
+.breadcrumb{margin-bottom:0}
+.main-content__sidebar{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap}
+.col__main{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:1;flex-shrink:1;-ms-flex-preferred-size:0;min-width:0;order:2}
+.profile__main{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:1;flex-shrink:1;-ms-flex-preferred-size:0;min-width:0;order:3}
+.main-content__sidebar>:nth-child(2){margin-left:1.2rem}
+.main-content__sidebar>:nth-child(3){margin-left:1.2rem}
+#homepage .hero-image{min-height:420px}
+#homepage .hero-text{bottom:8%;left:5%}
+.hero-text h1{font-size:3rem}
+#articles h1{font-size:2.5rem}
+#articles p.lead{font-size:1.2rem}
+#homepage .hero-text h1{font-size:4rem}
+.hero-text p{font-size:1.5rem}
+.profile-header__image{flex-basis:15%}
+.profile-header__content h1{font-size:3rem}
+.more-in__nav{border-right:1px solid #ccc;background:#fafafc;border-top:0;border-bottom:0;max-width:210px;padding:.5rem .5rem 0 0;margin:0}
+.more-in__nav-heading{display:flex;align-items:center;justify-content:flex-start;text-align:left;line-height:1.4}
+.more-in__subnav{display:block}
+.has-children .subnav-collapse:after{display:none}
+.has-children.open .subnav-collapse:after{display:none}
+.more-in__nav-heading:after{display:none}
+.more-in__subnav .has-children ul.children{display:block}
+.has-children button:after{display:none}
+.has-children button.open:after{display:none}
+.flex-list{overflow-x:hidden;flex-wrap:wrap}
+#pages .flex-list{overflow-x:scroll;flex-wrap:nowrap}
+#profile .flex-list__item{width:calc(33% - 23px);flex:none}
+.flex-list__item{flex-basis:calc(25% - 20px);flex:1}
+.flex-list__item:last-of-type{padding-right:.1rem}
+.pages-block{margin-right:1rem}
+.pages-block.two-column{width:calc(50% - 8px)}
+.pages-block.two-column:nth-child(2n){margin-right:0}
+.pages-block.three-column{width:calc(33.3% - 11px)}
+.pages-block.three-column:nth-child(3n){margin-right:0}
+.pages-block.four-column{width:calc(25% - 12px)}
+.pages-block.four-column:nth-child(4n){margin-right:0}
+.profile-list__item-main{align-items:start}
+.footer-bottom__left{display:flex}
+.footer-bottom__left a{margin-right:1rem}
+.footer .copyright{margin:0}
+.job-type__column{width:33.33%}
+#jobs .group-banner{margin:0;padding:.4rem 0}
+#jobs h1,#doctors h1{font-size:3rem;text-align:center}
+#jobs h2,#doctors h2{font-size:1.5rem;text-align:center}
+#jobs .flex-list__item,#doctors .flex-list__item{flex:1 0 13rem}
+#jobs .flex-card__headline,#doctors .flex-card__headline{padding:1rem}
+.jobs-wrap.grid .job-listing{width:calc(33.33% - 13px)}
+.jobs-wrap.grid .job-listing:nth-child(2n){margin-right:1rem}
+.jobs-wrap.grid .job-listing:nth-child(3n){margin-right:0}
+}
+@media (max-width:719px){.navbar .can-hide{display:none}
+.navbar{padding-left:4rem}
+}
+@media (max-width:1024px){.search-box input{cursor:pointer;width:0;border-color:transparent;position:relative}
+.search-box input:focus{cursor:text;left:0;width:12rem}
+}
+@media (min-width:600px) and (max-width:879px){.pages-block.three-column{width:calc(50% - 8px);margin-right:1rem}
+.pages-block.three-column:nth-child(2n){margin-right:0}
+}
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#43c1b4">
+<meta name="msapplication-TileColor" content="#eeeeee">
+<meta name="theme-color" content="#43c1b4">
+</head>
+<body>
+
+<header id="navbar">
+<div class="navbar">
+
+<!--
+<div class="sidebar-button" [class]="mainmenuopen ? 'sidebar-button open' : 'sidebar-button closed'" role=button tabindex="" on="tap:AMP.setState({mainmenuopen: !mainmenuopen, noScrollState: !noScrollState})">
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon open"><path fill="#aaaaaa" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="icon close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+</div>
+-->
+
+<a href="" class="logo">
+<span class="logo-thin">Cayman</span>
+<span>Resident</span>
+</a>
+
+<div class="links">
+<div class="search-box">
+
+<form
+   action="/search"
+   class=""
+   id="main-search-form"
+   method="get"
+   target="_top">
+<div class="srch-wrap" [class]="search_active ? 'srch-wrap srch--show' : 'srch-wrap'">
+<div role="button" aria-label="Clear Search" on="tap:AMP.setState({search_active: false, searchQuery: null})" class="clear-icon"
+   [class]="searchQuery ? 'srch-x xs-mt1 xs-p1 xs-r0 xs-t0 xs-z2 xs-text-right xs-absolute' : 'clear-icon'" tabindex=3>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+</div>
+<input
+   type="text"
+   name="q"
+   placeholder="Search"
+   on="input-debounced:AMP.setState({
+   searchQuery: event.value,
+   showDropdown: event.value,
+   search_active: !!event.value
+   }), navAutosuggest-list.show;
+   tap: AMP.setState({
+   searchQuery: searchQuery == null ? '' : searchQuery,
+   showDropdown: 'true'
+   }), navAutosuggest-list.show"
+   [value]="searchQuery || ''"
+   value=""
+   autocomplete="off"
+   class="search-box srch-input"
+   [class]="searchQuery ? 'search-box srch-input-words' : 'search-box srch-input'">
+</div>
+
+<div class="hide-search__results" [class]="(showDropdown && searchQuery) ? 'autosuggest-container' : 'hide-search__results'">
+
+<amp-list
+  id="navAutosuggest-list"
+  noloading
+  single-item
+  items="."
+  class="autosuggest-box"
+  layout="fixed-height"
+  binding="refresh"
+  height="500"
+  src="https://afdsi.com/164189302200000061/data.json"
+  [src]="navAutosuggest.endpoint + searchQuery"
+>
+
+<template type="amp-mustache">
+<amp-selector id="autosuggest-selector"
+  keyboard-select-mode="select"
+  class="autosuggest-selector"
+  layout="container"
+  on="select: AMP.setState({
+  searchQuery: event.targetOption,
+  showDropdown: false
+  }), navAutosuggest-list.hide">
+<div class="search-list__results">
+  {{#items}}
+<div class="select-option" role="option" tabindex="0" on="tap: navAutosuggest-list.hide" option="{{title}}">
+<a class="job-result__item-link" href="{{url}}">
+<div class="job-result__item-company">{{type}}</div>
+<div class="job-result__item-list">{{title}}</div>
+</a>
+</div>
+  {{/items}}
+  {{^items}}
+<div class="search__no-results">No results founds.</div>
+  {{/items}}
+</div>
+</amp-selector>
+</template>
+</amp-list>
+</div>
+<amp-state id="navAutosuggest">
+<script type="application/json">
+  {
+  "endpoint": "https://afdsi.com/164189302200000061/search?q=",
+  "showDropdown": false,
+  "searchQuery": ""
+  }
+</script>
+</amp-state>
+</form>
+  
+</div>
+<nav class="nav-links can-hide">
+<div class="nav-item">
+<a href="/about" class="nav-link ">About<span>Cayman</span></a>
+<div class="mega-menu">
+<div class="mega-menu__row">
+<div class="mega-menu__col">
+  Test 1
+</div>
+<div class="mega-menu__col">
+  Test 2
+</div>
+<div class="mega-menu__col">
+  Test 3
+</div>
+<div class="mega-menu__col">
+  Test 4
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item">
+<a href="/move" class="nav-link ">Moving<span>To Cayman</span></a>
+<div class="mega-menu">
+<div class="mega-menu__row">
+<div class="mega-menu__col">
+  Test 1
+</div>
+<div class="mega-menu__col">
+  Test 2
+</div>
+<div class="mega-menu__col">
+  Test 3
+</div>
+<div class="mega-menu__col">
+  Test 4
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item">
+<a href="/work" class="nav-link active">Working<span>In Cayman</span></a>
+<div class="mega-menu">
+<div class="mega-menu__row">
+<div class="mega-menu__col">
+  Test 1
+</div>
+<div class="mega-menu__col">
+  Test 2
+</div>
+<div class="mega-menu__col">
+  Test 3
+</div>
+<div class="mega-menu__col">
+  Test 4
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item">
+<a href="/live" class="nav-link ">Living<span>In Cayman</span></a>
+<div class="mega-menu">
+<div class="mega-menu__row">
+<div class="mega-menu__col">
+  Test 1
+</div>
+<div class="mega-menu__col">
+  Test 2
+</div>
+<div class="mega-menu__col">
+  Test 3
+</div>
+<div class="mega-menu__col">
+  Test 4
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item">
+<a href="/business" class="nav-link ">Business<span> in Cayman</span></a>
+<div class="mega-menu">
+<div class="mega-menu__row">
+<div class="mega-menu__col">
+  Test 1
+</div>
+<div class="mega-menu__col">
+  Test 2
+</div>
+<div class="mega-menu__col">
+  Test 3
+</div>
+<div class="mega-menu__col">
+  Test 4
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</header>
+
+<div class="app">
+<div id="jobs">
+
+<div class="jobs-nav">
+<div class="jobs-nav__items">
+<ul>
+<li on="tap:about-lightbox" role="button" tabindex="0">About</li>
+<li on="tap:pricing-lightbox" role="button" tabindex="0">Pricing</li>
+<li on="tap:faq-lightbox" role="button" tabindex="0">FAQ</li>
+</ul>
+<!-- <a href="#" class="post-job">Post a Job</a> -->
+</div>
+</div>
+
+<amp-lightbox id="about-lightbox" layout="nodisplay">
+<div class="lightbox" on="tap:about-lightbox.close" role="button" tabindex="0">
+<div class="jobs-lightbox">
+<h3>Welcome to Cayman Resident Jobs<br /></h3><p>Thousands of new residents and jobs seekers visit CaymanResident daily to find jobs in the Cayman Islands and learn more about relocation.</p><p>Cayman Resident Jobs allows employers to post open job listings and showcase their organization through a custom profile.</p><p>Take your recruitment to the next level by getting your jobs directly in front of the best candidates looking to move to the Cayman Islands!</p>
+<a href="#" class="post-job">Post a Job</a>
+<button on="tap:about-lightbox.close" role="button" tabindex="0"></button>
+</div>
+</div>
+</amp-lightbox>
+
+<amp-lightbox scrollable id="pricing-lightbox" layout="nodisplay">
+<div class="lightbox" on="tap:pricing-lightbox.close" role="button" tabindex="0">
+<div class="jobs-lightbox">
+<button on="tap:pricing-lightbox.close" role="button" tabindex="0"></button>
+  
+<div class="job-type__pricing">
+<div class="job-type__column">
+<h3>Standard Posting</h3>
+<div class="job-type__price">$49</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Normal job listing for 45 days.</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Get applicants right in your inbox or custom link.</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> All users get notified about the new opening.</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Posted in our social channels.</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Listed in our weekly newsletter.</div>
+</div>
+<div class="job-type__column">
+<h3>Featured Posting</h3>
+<div class="job-type__price">$99</div>
+<p>Everything in Standard Posting plus:</p>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Highlighted listing for 60 days.</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Advanced sharing and featured in our social channels .</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Promoted in our weekly newsletter.</div>
+</div>
+<div class="job-type__column">
+<h3>Boosted Posting</h3>
+<div class="job-type__price">$299</div>
+<p>Everything in Featured Posting plus:</p>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Highlighted listing for 60 days.</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Featured position on the sidebar with rotating display.</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Boosted sharing in our social channels.</div>
+<div class="job-type__features"><i class="material-icons">check_circle_outline</i> Remarketing with Google Ads on Jobs related content.</div>
+</div>
+</div>
+</div>
+</div>
+</amp-lightbox>
+
+<amp-lightbox id="faq-lightbox" layout="nodisplay">
+<div class="lightbox" on="tap:faq-lightbox.close" role="button" tabindex="0">
+<div class="jobs-lightbox">
+<h3>FAQ</h3>
+<p>Test goes here.</p>
+<button on="tap:faq-lightbox.close" role="button" tabindex="0"></button>
+</div>
+</div>
+</amp-lightbox>
+
+<!--
+<div class="wrapper">
+<div class="segment">
+<div class="flex-list">
+<a class="flex-list__item" href="https://staging.caymanmag.com/work/finding-a-job/applying-for-a-job">
+<div class="flex-card">
+<div class="flex-card__image">
+
+<amp-img
+  src="https://staging.caymanmag.com/images/_landingFeature/CaymanResidentHomepageBackground.jpg"
+  alt="Cayman Resident Homepage Background"
+  width="600"
+  height="338"
+  layout="responsive"
+  />
+</div>
+<h4 class="flex-card__headline">Applying for a Job</h4>
+<div class="flex-card__date">
+</div>
+</div>
+</a>
+<a class="flex-list__item" href="https://staging.caymanmag.com/work/employment-opportunities-rules">
+<div class="flex-card">
+<div class="flex-card__image">
+
+<amp-img
+  src="https://staging.caymanmag.com/images/_landingFeature/How-to-Work-in-Cayman.jpeg"
+  alt="How to Work in Cayman"
+  width="600"
+  height="338"
+  layout="responsive"
+  />
+</div>
+<h4 class="flex-card__headline">Employment Opportunities &amp; Rules</h4>
+<div class="flex-card__date">
+</div>
+</div>
+</a>
+<a class="flex-list__item" href="https://staging.caymanmag.com/work/recruitment-employment-agencies">
+<div class="flex-card">
+<div class="flex-card__image">
+
+<amp-img
+  src="https://staging.caymanmag.com/images/_landingFeature/Recruitment-Employment-Agencies-in-Cayman.jpeg"
+  alt="Recruitment Employment Agencies in Cayman"
+  width="600"
+  height="338"
+  layout="responsive"
+  />
+</div>
+<h4 class="flex-card__headline">Recruitment &amp; Employment Agencies</h4>
+<div class="flex-card__date">
+</div>
+</div>
+</a>
+<a class="flex-list__item" href="https://staging.caymanmag.com/work/finding-a-job/financial-services-jobs">
+<div class="flex-card">
+<div class="flex-card__image">
+
+<amp-img
+  src="https://staging.caymanmag.com/images/_landingFeature/Employee-Entitlements-in-Cayman.jpeg"
+  alt="Employee Entitlements in Cayman"
+  width="600"
+  height="338"
+  layout="responsive"
+  />
+</div>
+<h4 class="flex-card__headline">Financial Services Jobs</h4>
+<div class="flex-card__date">
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+-->
+
+<div class="wrapper">
+<div class="segment flush">
+<div class="jobs-results__container">
+<h1>Finding a Job in the Cayman Islands</h1>
+<h2>Read on for some helpful hints on how to get a job in Cayman plus we make recommendations on how to put your resume into the right hands.</h2>
+
+<amp-state id="jobs">
+<script type="application/json">
+  {
+  "jobOrder": "postDate%20desc",
+  "view": "list",
+  "salaryRange": "",
+  "searchJobs": "",
+  "jobType": "",
+  "jobIndustry": "",
+  "listSrc": "https://afdsi.com/164189302200000061/data.json?order=postDate%20desc"
+  }
+</script>
+</amp-state>
+
+<div class="job-filters">
+<div class="job-filters__select">
+<div class="filters-select">
+<div class="filter-item">
+<label for="jobIndustry">Industry</label>
+<select class="select-css"
+  on="change:AMP.setState({
+  jobs: {
+  jobIndustry: event.value,
+  listSrc: 'https://afdsi.com/164189302200000061/data.json?industry='+ event.value +'&type='+ jobs.jobType +'&order='+ jobs.jobOrder +'&salary='+ jobs.salaryRange +''
+  }
+  }),jobsList.changeToLayoutContainer()">
+<option value="">All</option>
+<option value="accounting-finance">Accounting & Finance</option>
+<option value="admin">Admin & Office</option>
+<option value="advertising-marketing">Advertising & Marketing</option>
+<option value="construction">Construction</option>
+<option value="education">Education</option>
+<option value="government">Government</option>
+<option value="healthcare">Healthcare</option>
+<option value="hospitality">Hospitality</option>
+<option value="human-resources">Human Resources</option>
+<option value="insurance">Insurance</option>
+<option value="tech">IT</option>
+<option value="legal">Legal</option>
+<option value="real-estate">Real Estate</option>
+<option value="sales-retail">Sales & Retail</option>
+</select>
+</div>
+
+<div class="filter-item">
+<label for="salaryRange">Salary Range</label>
+<select class="select-css"
+  on="change:AMP.setState({
+  jobs: {
+  salaryRange: event.value,
+  listSrc: 'https://afdsi.com/164189302200000061/data.json?salary='+ event.value +'&type='+ jobs.jobType +'&industry='+ jobs.jobIndustry +'&order='+ jobs.jobOrder +''
+  }
+  }),jobsList.changeToLayoutContainer()">
+<option value="">All</option>
+<option value="lessThan20000">Less than $20,000</option>
+<option value="20000">$20,000+</option>
+<option value="35000">$35,000+</option>
+<option value="50000">$50,000+</option>
+<option value="75000">$75,000+</option>
+<option value="95000">$95,000+</option>
+</select>
+</div>
+
+<div class="filter-item">
+<label for="jobType">Job Type</label>
+<select class="select-css"
+  on="change:AMP.setState({
+  jobs: {
+  jobType: event.value,
+  listSrc: 'https://afdsi.com/164189302200000061/data.json?type='+ event.value +'&industry='+ jobs.jobIndustry +'&order='+ jobs.jobOrder +'&salary='+ jobs.salaryRange +''
+  }
+  }),jobsList.changeToLayoutContainer()">
+<option value="">All</option>
+<option value="full-time">Full-time</option>
+<option value="part-time">Part-time</option>
+<option value="contract">Contract</option>
+<option value="commission">Commission</option>
+</select>
+</div>
+
+<div class="filter-item">
+<label for="jobtype">Date Posted</label>
+<select class="select-css"
+  on="change:AMP.setState({
+  jobs: {
+  jobOrder: event.value,
+  listSrc: 'https://afdsi.com/164189302200000061/data.json?order='+ event.value +'&industry='+ jobs.jobIndustry +'&type='+ jobs.jobType +'&salary='+ jobs.salaryRange +''
+  }
+  }),jobsList.changeToLayoutContainer()">
+<option value="postDate%20desc">Newest</option>
+<option value="postDate%20asc">Oldest</option>
+</select>
+</div>
+
+</div>
+</div>
+
+<div class="job-search__box">
+<div class="view-toggle__button">
+<button on="tap:AMP.setState({
+  jobs: {
+  view: (jobs.view == 'list' ? 'grid' : 'list')
+  }
+  }),jobsList.changeToLayoutContainer()"
+  class="view-toggle grid" [class]="jobs.view == 'list' ? 'view-toggle grid' : 'view-toggle list'">
+</button>
+</div>
+  
+<form
+   action="/search"
+   class=""
+   id="job-search-form"
+   method="get"
+   target="_top"
+   >
+<div
+  class="srch-wrap"
+  [class]="search_active ? 'srch-wrap srch--show' : 'srch-wrap'"
+  >
+<div role="button" aria-label="Clear Search" on="tap:AMP.setState({search_active: false, query: null})" class="clear-icon"
+  [class]="query ? 'srch-x xs-mt1 xs-p1 xs-r0 xs-t0 xs-z2 xs-text-right xs-absolute' : 'clear-icon'" tabindex=3>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+</div>
+<input
+  type="text"
+  name="q"
+  placeholder="Search by job title or company name"
+  on="input-debounced:AMP.setState({
+  query: event.value,
+  showDropdown: event.value,
+  search_active: !!event.value
+  }), autosuggest-list.show;
+   tap: AMP.setState({
+  query: query == null ? '' : query,
+  showDropdown: 'true'
+  }), autosuggest-list.show"
+  [value]="query || ''"
+  value=""
+  autocomplete="off"
+  class="search-box srch-input"
+  [class]="query ? 'search-box srch-input-words' : 'search-box srch-input'">
+</div>
+
+<div class="hide-search__results" [class]="(showDropdown && query) ? 'autosuggest-container' : 'hide-search__results'">
+<amp-list
+  id="autosuggest-list"
+  noloading
+  single-item
+  items="."
+  class="autosuggest-box"
+  layout="fixed-height"
+  binding="refresh"
+  height="300"
+  src="https://afdsi.com/164189302200000061/data.json"
+  [src]="autosuggest.endpoint + query">
+<template type="amp-mustache">
+<amp-selector id="autosuggest-selector"
+  keyboard-select-mode="select"
+  class="autosuggest-selector"
+  layout="container"
+  on="select: AMP.setState({
+  query: event.targetOption,
+  showDropdown: false
+  }), autosuggest-list.hide">
+<div class="search-list__results">
+  {{#items}}
+<div class="select-option" role="option" tabindex="0" on="tap: autosuggest-list.hide" option="{{title}}">
+<a class="job-result__item-link" href="{{url}}">
+<div class="job-result__item-company">{{companyName}}</div>
+<div class="job-result__item-list">{{title}}</div>
+</a>
+</div>
+  {{/items}}
+  {{^items}}
+<div class="jobs-search__no-results">No results founds.</div>
+  {{/items}}
+</div>
+</amp-selector>
+</template>
+</amp-list>
+</div>
+
+<amp-state id="autosuggest">
+<script type="application/json">
+  {
+  "endpoint": "https://afdsi.com/164189302200000061/search?q=",
+  "showDropdown": false,
+  "query": ""
+  }
+</script>
+</amp-state>
+</form>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+<div class="segment flush">
+<div class="main-content__sidebar">
+<section class="col__main">
+<div class="jobs-wrap list" [class]="jobs.view == 'list' ? 'jobs-wrap list' : 'jobs-wrap grid'">
+  
+<amp-list id="jobsList"
+  single-item
+  load-more-bookmark="meta.pagination.links.next"
+  load-more="auto"
+  items="."
+  reset-on-refresh="always"
+  layout="fixed-height"
+  height="1000"
+  src="https://afdsi.com/164189302200000061/data.json?order=postDate%20desc"
+  [src]="jobs.listSrc"
+  binding="no">
+<template type="amp-mustache">
+<strong>{{meta.pagination.total}}</strong> jobs
+  {{#items}}
+<a class="job-listing featured__{{featured}}" href= {{url}} id="job-{{id}}">
+<div class="job-listing__header">
+<div class="job-listing__logo">
+<amp-img
+  src="{{companyLogo}}"
+  alt="{{companyName}}"
+  width="200"
+  height="200"
+  layout="responsive">
+</amp-img>
+</div>
+<div class="job-listing__title">
+<h3>{{title}}</h3>
+<div class="job-company-area">
+<div class="job-comany__name">
+  at<span>{{companyName}}</span>
+</div>
+<div class="job-company__area">
+<i class="material-icons">place</i> {{area}}
+</div>
+</div>
+</div>
+</div>
+<div class="job-listing__details">
+<div class="job-type">{{type}}</div>
+<p>{{shortDescription}}</p>
+</div>
+<div class="job-listing__footer">
+<div class="job-listing__footer-industry">{{industry}}</div>
+<div class="date-posted"><i class="material-icons">access_time</i><amp-timeago height="24" datetime="{{posted}}">Posted</amp-timeago></div>
+</div>
+</a>
+  {{/items}}
+</template>
+</amp-list>
+  
+</div>
+</section>
+</div>
+</div>
+</div>
+  
+</div>
+</div>
+
+</body>
+</html>

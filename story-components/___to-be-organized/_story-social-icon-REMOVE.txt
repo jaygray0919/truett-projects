@@ -1,0 +1,7 @@
+/*
+	https://ampforwp.com/tutorials/article/how-to-remove-the-social-icon-from-amp/
+*/
+
+.amp-comment-button {
+    display: none;
+}

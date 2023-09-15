@@ -1,0 +1,8 @@
+
+uses
+	amp-selector
+	amp-bind
+
+source
+https://ampbyexample.com/advanced/tab_panels_with_amp-selector/
+

@@ -1,0 +1,18 @@
+
+17:29 3/13/2023
+now using <amp-img>
+and WEBP
+
+
+13:14 2/16/2023
+___ewb-inject-svg-function.xlsx
+this ewb was constructed to support inline SVG and prevent CSS collision
+no longer in use
+===============
+
+issue
+trader
+svg-primo
+  container top
+
+

@@ -1,0 +1,7 @@
+
+first generation Story
+
+has Plato build
+
+misplaced:
+  data.json

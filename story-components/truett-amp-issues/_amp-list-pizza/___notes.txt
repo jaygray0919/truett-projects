@@ -1,0 +1,137 @@
+
+pizza_1_2.html
+
+<amp-list
+	template="SVG-template"
+	src="amp-state:localState"
+	width="auto"
+	height="100"
+	layout="fixed-height"
+	single-item
+	items="."
+	binding="no"
+>
+<div
+	overflow
+	class="list-overflow"
+>
+</div>
+<amp-state
+	id="localState"
+>
+<script type="application/json">
+{"items":[
+{"101":"Federico"},
+{"102":"dealer of Mozzarella, Italian"},
+{"103":"delivery from"},
+{"104":"is in"},
+{"105":"Grigoris"},
+{"106":"Dealer of Greek Olives Kalamata"},
+{"107":"Tomato, chopped"},
+{"108":"Italy"},
+{"109":"Athens"},
+{"110":"Greece"},
+{"111":"Dough"},
+{"112":"ingredient"},
+{"113":"quantity: 300; measure: gram"},
+{"114":"quantity: 50; measure: milliliters"},
+{"115":"quantity: 100; measure: gram"},
+{"116":"quantity: 2; measure: gram"},
+{"117":"Lazio"},
+{"118":"Olive Oil"},
+{"119":"Mozzarella"},
+{"120":"Basil"},
+{"121":"Kalamata"}
+]
+}
+</script>
+</amp-state>
+
+=====
+
+pizza_2_2.html
+
+<amp-list
+	template="SVG-template"
+	src="amp-state:localState"
+	width="auto"
+	height="200"
+	layout="fixed-height"
+	single-item
+	items="."
+	binding="no"
+>
+<div
+	overflow
+	class="list-overflow"
+>
+</div>
+<amp-state
+	id="localState"
+>
+<script type="application/json">
+{"items":[
+{"101":"Recipes"},
+{"102":"People"},
+{"103":"Despina"},
+{"104":"Grandmother of Federico, Grigoris"},
+{"105":"Federico"},
+{"106":"Cousin"},
+{"107":"son of"},
+{"108":"Maria"},
+{"109":"daughter of"},
+{"110":"is in"},
+{"111":"Lazio"},
+{"112":"is in"},
+{"113":"Italy"},
+{"114":"Grigoris"},
+{"115":"is in"},
+{"116":"Athens"},
+{"117":"is in"},
+{"118":"Greece"},
+{"119":"Cousin"},
+{"120":"son of"},
+{"121":"Haralambos"},
+{"122":"son of"},
+{"123":"Dough"},
+{"124":"ingredient"},
+{"125":"Olive Oil"},
+{"126":"ingredient"},
+{"127":"Basil"},
+{"128":"ingredient"},
+{"129":"product"},
+{"130":"quantity"},
+{"131":"measure"},
+{"132":"basil"},
+{"133":"2"},
+{"134":"grams"},
+{"135":"Olives"},
+{"136":"ingredient"},
+{"137":"type"},
+{"138":"Kalamata"},
+{"139":"delivery from"},
+{"140":"tomato, chopped"},
+{"141":"ingredient"},
+{"142":"product"},
+{"143":"quantity"},
+{"144":"measure"},
+{"145":"tomato, chopped"},
+{"146":"100"},
+{"147":"grams"},
+{"148":"Mozzarella"},
+{"149":"ingredient"},
+{"150":"delivery from"},
+{"151":"type"},
+{"152":"Cheese"},
+{"153":"sub-class"},
+{"154":"Milk Product"},
+{"155":"sub-class"},
+{"156":"Animal Product"},
+{"157":"causes"},
+{"158":"Milk Alergy"},
+{"159":"broader"},
+{"160":"Food Alergy"},
+{"161":"Animals"}
+]}
+</script>
+</amp-state>

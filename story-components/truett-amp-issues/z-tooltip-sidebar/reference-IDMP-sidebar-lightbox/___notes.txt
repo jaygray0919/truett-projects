@@ -1,0 +1,8 @@
+
+has two buttons
+
+one activates amp-sidebar
+  Read more gray button
+
+one activates amp-lightbox
+  Read more blue button

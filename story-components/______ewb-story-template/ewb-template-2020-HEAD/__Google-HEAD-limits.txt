@@ -1,0 +1,26 @@
+
+04:39 10/25/2019
+
+Google advice:
+https://support.google.com/webmasters/answer/35624
+
+Logo tips
+https://medium.com/relay-media/amp-logo-best-practices-b096933dbc19
+logo must fit in a 60 x 600 pixel box
+
+https://developers.google.com/search/docs/data-types/article#logo-guidelines
+
+AMP logo guidelines
+The following guidelines apply to logos for all AMP pages, including AMP stories.
+    The file must be a raster file, such as .jpg, .png, or .gif.
+    Don't use vector files, such as .svg or .eps.
+    Don't use animation.
+    The graphic part of the logo should be legible on the background color.
+
+The logo should fit in a 60x600px rectangle, and either be exactly 60px high (preferred), or exactly 600px wide.
+For example, 450x45px would not be acceptable, even though it fits within the 600x60px rectangle. 
+
+
+consider:
+left arrow
+<title>CSS Grid Layout: The Fr Unit &larr; Alligator.io</title>

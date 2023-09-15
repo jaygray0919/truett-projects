@@ -1,0 +1,6 @@
+
+collect target files
+
+existing BASE64
+existing PNG
+existing JPG

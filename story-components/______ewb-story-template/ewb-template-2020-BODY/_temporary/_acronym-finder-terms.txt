@@ -1,0 +1,54 @@
+﻿-----
+AFDSI
+-----
+Vocal
+	Vocabularium Alimentarum
+	Vocabulary of Food
+
+Vocabularium Alimentarum
+	Vocabulary of food
+Vocabularium Alimentari
+	Food lexicon
+
+Vocabularum Alimentarum
+	term food
+Vocabularum Alimentaria
+	Food names
+
+
+
+EFL
+	Electronic Food Label
+
+EPL
+	Electronic Product Label
+
+EFR
+	Electronic Food Record
+
+EDR
+	Electronic Diet Record
+
+SML
+	Substance Markup Language
+
+----------
+Ontomatica
+----------
+EFB
+	Electronic Food Biography
+
+ChEFS
+	Chemical Entities of Food Significance
+
+ChEMATIC
+	Chemical Entities with Medical Applications, Therapeutic Indications and Consequences
+
+Plato
+	Platform for Ontologies
+
+PyThing
+	Semantic Things for Python
+
+WEDGE
+	Web Enabled Directed Graph Engine

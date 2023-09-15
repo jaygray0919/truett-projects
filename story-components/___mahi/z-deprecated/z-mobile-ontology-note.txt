@@ -1,0 +1,13 @@
+
+change
+    circle
+        from
+            CongressionalDistrict
+        to
+            District
+    predicate (on line)
+        from
+            isSeenInCongressionalDistrict
+        to
+            isSeenInDistrict
+

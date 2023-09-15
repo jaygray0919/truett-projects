@@ -1,0 +1,189 @@
+
+NOTES
+Keep one SVG
+    all links
+then
+    for an edge node, switch the positions
+
+
+
+Project:
+    Modify an existing HTML/JavaScript application (App) to enable customization
+
+Modify this App to work with new data:
+    https://intelligence.weforum.org/topics/a1Gb00000015MIVEA2
+
+App has three levels:
+    Level 1 - selected item
+    Level 2 - groups (collections, sets) related to level 1
+    Level 3 - selectable items (instances)
+
+How App is used:
+    Selecting an item from Level 3 brings the instance into view
+    Item detail is features in detail window (right)
+
+Project:
+    Produce a version that can be customized
+
+Customized means:
+    use new terms for level 2 and level 3
+    set new relationships: link level 2 item to level 3 items
+    bring selection (level 3) into view in center image (level 1)
+    bring selection (level 3) into view in detail panel (right)
+
+Attachments:
+    PNG
+    SVG
+
+Text for:
+==============================
+Agriculture, Food and Beverage
+==============================
+
+------------------------------
+Food Technology and Innovation
+------------------------------
+Agile Governance
+Public Finance and Social Protection
+Internet of Things
+Biotechnology
+The Digital Economy
+Innovation
+Chemical and Materials Industry
+Artificial Intelligence
+Social Innovation
+
+-----------------------------------
+Demographic Changes and Agriculture
+-----------------------------------
+Internet of Things
+Advanced Manufacturing and Production
+Future of Food
+Cities and Urbanization
+Ageing and Longevity
+Youth Perspectives
+Future of Consumption
+Sustainable Development
+
+-------------------
+Global Food Systems
+-------------------
+Future of Food
+Biotechnology
+Youth Perspectives
+Geo-economics
+Climate Indicators
+Trade and Investment
+Economic Progress
+Corporate Governance
+Climate Change
+Water
+
+-------------------
+Health and Wellness
+-------------------
+Future of Food
+Ageing and Longevity
+Sustainable Development
+Behavioural Sciences
+Fourth Industrial Revolution
+Global Health
+
+-----------------------
+Sustainable Consumption
+-----------------------
+Innovation
+Youth Perspectives
+Sustainable Development
+Climate Change
+Behavioural Sciences
+Retail, Consumer Goods and Lifestyle
+Circular Economy
+Plastics and the Environment
+Green New Deals
+
+-------------------
+Empowered Consumers
+-------------------
+The Digital Economy
+Social Innovation
+Corporate Governance
+Retail, Consumer Goods and Lifestyle
+Justice and Law
+Values
+Civic Participation
+
+-----------------------
+Resource Sustainability
+-----------------------
+The Ocean
+Forests
+COVID-19
+Green New Deals
+Circular Economy
+Climate Change
+Water
+
+
+
+++++++++++++++
+OTHER VERSIONS
+++++++++++++++
+
+Chemical and Materials Industry
+https://intelligence.weforum.org/topics/a1Gb0000000pTDfEAM
+
+Blockchain
+https://intelligence.weforum.org/topics/a1Gb00000038qmPEAQ
+
+Education, Skills and Learning
+https://intelligence.weforum.org/topics/a1Gb0000000LPFfEAO
+
+Artificial Intelligence
+https://intelligence.weforum.org/topics/a1Gb0000000pTDREA2
+
+The Digital Economy
+https://intelligence.weforum.org/topics/a1Gb0000001SH21EAG
+
+Digital Identity
+https://intelligence.weforum.org/topics/a1G0X000005JJGcUAO
+
+Supply Chain and Transport
+https://intelligence.weforum.org/topics/a1Gb0000000pTDoEAM
+
+Risk and Resilience
+https://intelligence.weforum.org/topics/a1Gb0000000pTDXEA2
+
+Sustainable Development
+https://intelligence.weforum.org/topics/a1Gb0000000LHN7EAO
+
+Future of Food
+https://intelligence.weforum.org/topics/a1Gb0000000pTDPEA2
+
+Biotechnology
+https://intelligence.weforum.org/topics/a1Gb0000001j9vlEAA
+
+Biodiversity
+https://intelligence.weforum.org/topics/a1G0X0000062jZ3UAI
+
+Health and Healthcare
+https://intelligence.weforum.org/topics/a1Gb00000038u3nEAA
+
+Data Science
+https://intelligence.weforum.org/topics/a1G680000004C9hEAE
+
+Science
+https://intelligence.weforum.org/topics/a1G0X000006DO7RUAW
+
+Advanced Manufacturing and Production
+https://intelligence.weforum.org/topics/a1Gb00000038nzfEAA
+
+Digital Communications
+https://intelligence.weforum.org/topics/a1Gb0000000pTDlEAM
+
+Supply Chain and Transport
+https://intelligence.weforum.org/topics/a1Gb0000000pTDoEAM
+
+Internet of Things
+https://intelligence.weforum.org/topics/a1Gb0000005LWrfEAG
+

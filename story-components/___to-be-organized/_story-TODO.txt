@@ -1,0 +1,20 @@
+
+listing
+E:\content\PROJECTS\__amp-story\story-next
+
+for each slide
+    list + template for all text
+    JSON for NL
+    inject
+
+JSON-LD
+    CTD
+    SDL
+    use MRID
+
+Content
+    attachment
+        preso notes
+
+@media
+    Truett

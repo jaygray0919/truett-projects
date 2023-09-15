@@ -1,0 +1,11 @@
+
+slides
+	9
+
+uses local PNG
+
+vignette
+	bottom
+	background black
+	text white
+

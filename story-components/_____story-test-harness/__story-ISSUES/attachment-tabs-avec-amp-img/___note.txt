@@ -1,0 +1,9 @@
+
+works
+but <img> is not amp-valid
+
+however, when using <amp-img>, the structure fails
+
+request
+  for attachment, allow <img> as valid
+

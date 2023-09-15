@@ -1,0 +1,848 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="description" content="This is an interactive story with quizzes.">
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-story-1.0.js">
+<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+<script async custom-element="amp-story-interactive" src="https://cdn.ampproject.org/v0/amp-story-interactive-0.1.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+<style amp-custom>
+body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.cover-content,
+.quiz-content {
+    padding: 6em 2em 2em 2em;
+}
+
+.results-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6em 2em 6em 2em;
+}
+
+.cover-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em 6em 2em;
+}
+
+#cover-publisher {
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    text-align: left;
+    width: 100%;
+}
+
+.dyk-content {
+    display: flex;
+    flex-direction: column;
+    padding: 6em 2em;
+    justify-content: space-evenly;
+}
+
+#cover-title {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+}
+
+.quiz-btn.start {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.quiz-btn.start svg {
+    margin-left: 10px;
+    animation: start-btn-anim 0.7s ease-in-out 0s infinite alternate;
+}
+
+.quiz-lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 2em 2em;
+}
+
+.quiz-lower.docs {
+    justify-content: flex-end;
+}
+
+.quiz-progress {
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.quiz-btn {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 27px;
+    border: 2px solid white;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+amp-story-interactive-quiz,
+.quiz-fact {
+    margin-bottom: 4em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.274);
+    border-radius: 32px;
+}
+
+amp-story-interactive-quiz,
+amp-story-interactive-results {
+    --gradient1: linear-gradient(131.02deg, #907eff, #b67cff 66%);
+    --accent1: #8a58f3;
+    --gradient2: linear-gradient(130deg, #ffc329, #ff9647 66%);
+    --accent2: #ff6600;
+    --gradient3: linear-gradient(120deg, #0084ff, #00c3ff);
+    --accent3: #00c3ff;
+    --gradient4: linear-gradient(135deg, #ff8087 -0.62%, #ec697e 66.93%);
+    --accent4: #cc6268;
+    font-size: 0.2em;
+}
+
+.cool-grad-0 {
+    background: linear-gradient(#48985ecc, #0a6032cc);
+}
+
+.cool-grad-1 {
+    background: linear-gradient(
+        150deg,
+        #7560ffaa 10%,
+        #2a0a84aa 40%,
+        #2a0a84aa 60%,
+        #8f7ff8aa 90%
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s linear infinite alternate;
+}
+
+.cool-grad-exp-1 {
+    background: linear-gradient(180deg, #985ffc 0%, #3a30be 100%);
+}
+
+.cool-grad-2 {
+    background: linear-gradient(
+        150deg,
+        #f1a749aa 10%,
+        #e27532aa 40%,
+        #e27532aa 60%,
+        #f1a749aa 90%
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s linear infinite alternate;
+}
+
+.cool-grad-exp-2 {
+    background: linear-gradient(180deg, #f2ad4c 0%, #e06f2f 100%);
+}
+
+.cool-grad-3 {
+    background: linear-gradient(
+        150deg,
+        #6cc3ddaa 10%,
+        #335f96aa 40%,
+        #335f96aa 60%,
+        #6cc3ddaa 90%
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s linear infinite alternate;
+}
+
+.cool-grad-exp-3 {
+    background: linear-gradient(180deg, #7ab9cd 0%, #436996 100%);
+}
+
+.cool-grad-4 {
+    background: linear-gradient(
+        150deg,
+        #ec617baa 10%,
+        #bd3232aa 40%,
+        #bd3232aa 60%,
+        #ec617baa 90%
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s linear infinite alternate;
+}
+
+.cool-grad-exp-4 {
+    background: linear-gradient(180deg, #e7756c 0%, #cd2759 100%);
+}
+
+.cool-grad-5 {
+    background: linear-gradient(180deg, #7ba4ea 0%, #005af0 100%);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes start-btn-anim {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(4px);
+    }
+}
+
+.space-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 4em 2em;
+}
+
+.quiz-timer {
+    position: relative;
+    height: 54px;
+}
+
+.quiz-timer svg {
+    width: 54px;
+    height: 54px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+amp-story-page[active] .quiz-timer circle:first-child {
+    animation: countdown 12s linear 1 forwards;
+}
+
+.quiz-timer circle:first-child {
+    stroke-dasharray: 169px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: white;
+    fill: transparent;
+}
+
+.quiz-timer circle:nth-child(2) {
+    stroke: rgba(255, 255, 255, 0.4);
+    stroke-width: 1px;
+    fill: transparent;
+}
+
+.quiz-timer-nums {
+    height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 1px;
+    text-align: center;
+    font-weight: bold;
+}
+
+amp-story-page[active] .quiz-timer-nums div {
+    animation: countdown-nums 11s cubic-bezier(1, 0.1, 0, 0.9) 1 forwards;
+    text-align: center;
+}
+
+.quiz-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.quiz-title::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+}
+
+.music-on {
+    width: 100%;
+    line-height: 0.9em;
+    opacity: 0.5;
+}
+
+.music-on span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7em;
+    letter-spacing: 4px;
+}
+
+amp-story:not([muted]) .music-on {
+    opacity: 0;
+}
+
+amp-story-cta-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.docs-btn {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    align-self: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes bounce {
+    from {
+        transform: rotate(30deg) scale(0.95);
+    }
+    to {
+        transform: rotate(32deg) scale(1);
+    }
+}
+
+@keyframes countdown {
+    from {
+        stroke-dashoffset: 169px;
+    }
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes countdown-nums {
+    0% {
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(-30px);
+    }
+    20% {
+        transform: translateY(-60px);
+    }
+    30% {
+        transform: translateY(-90px);
+    }
+    40% {
+        transform: translateY(-120px);
+    }
+    50% {
+        transform: translateY(-150px);
+    }
+    60% {
+        transform: translateY(-180px);
+    }
+    70% {
+        transform: translateY(-210px);
+    }
+    80% {
+        transform: translateY(-240px);
+    }
+    90% {
+        transform: translateY(-270px);
+    }
+    100% {
+        transform: translateY(-300px);
+    }
+}
+
+.dyk {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.dyk::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: -15px;
+    left: 0px;
+}
+
+.painting {
+    margin: -20px;
+}
+
+.eq {
+    margin-top: 15px;
+}
+
+.eq-line {
+    width: 3px;
+    height: 20px;
+    background: white;
+    border-radius: 3px;
+    display: inline-block;
+    animation: 1.5s ease-in-out infinite running eq-anim;
+}
+
+.eq-line:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.eq-line:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.eq-line:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes eq-anim {
+    0% {
+        transform: scaleY(1);
+    }
+    10% {
+        transform: scaleY(0.7);
+    }
+    20% {
+        transform: scaleY(0.8);
+    }
+    30% {
+        transform: scaleY(0.4);
+    }
+    40% {
+        transform: scaleY(0.6);
+    }
+    50% {
+        transform: scaleY(0.8);
+    }
+    60% {
+        transform: scaleY(0.2);
+    }
+    70% {
+        transform: scaleY(0.6);
+    }
+    80% {
+        transform: scaleY(0.9);
+    }
+    90% {
+        transform: scaleY(0.6);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<link rel="canonical" href=".">
+<title>Name that artist</title>
+</head>
+<body>
+<amp-story
+    standalone
+    publisher="Stories Format"
+    title="Name that artist"
+    poster-portrait-src="https://webstoriesinteractivity-beta.web.app/last_supper.jpg"
+    publisher-logo-src="https://amp.dev/static/img/icons/icon-512x512.png"
+    background-audio="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes/Inspiring__Upbeat_Music/Scott_Holmes_-_04_-_Upbeat_Party.mp3"
+>
+<amp-story-page id="cover">
+<amp-story-grid-layer template="fill">
+<amp-video layout="responsive" loop>
+<source src="https://webstoriesinteractivity-beta.web.app/imgs/bg.mp4">
+</amp-video>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="fill">
+<div class="cover-content">
+<div class="music-on">
+<span><br>Sound on<br>before start</span>
+<div class="eq">
+<span class="eq-line"></span>
+<span class="eq-line"></span>
+<span class="eq-line"></span>
+<span class="eq-line"></span>
+</div>
+</div>
+<div>
+<h3 id="cover-publisher">VISUAL ARTS QUIZ</h3>
+<h1 id="cover-title">NAME THAT ARTIST</h1>
+</div>
+<div class="quiz-lower docs">
+<div class="quiz-btn start" style="color: #005a2a">
+<span>Start</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#005a2a" width="18px" height="18px" stroke="#005a2a">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-1">
+<amp-story-grid-layer template="fill">
+<div style="position: absolute">
+<amp-img class="quiz-img"
+    animate-in="pan-left"
+    animate-in-duration="60s"
+    object-position="100% 100%"
+    layout="fixed" width="1340" height="1140"
+    src="https://webstoriesinteractivity-beta.web.app/imgs/q1.jpg"
+/>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="fill" class="cool-grad-1">
+<div class="quiz-content space-center">
+<div class="quiz-upper">
+<div class="quiz-title">
+     Florentine<br>painting
+</div>
+<div class="quiz-timer">
+<svg><circle r="25" cx="27" cy="27"></circle><circle r="25" cx="27" cy="27"></circle></svg>
+<div class="quiz-timer-nums">
+<div>10<br>9<br>8<br>7<br>6<br>5<br>4<br>3<br>2<br>1<br>0</div>
+</div>
+</div>
+</div>
+<div class="quiz-lower">
+<div class="quiz-progress">1 / 4</div>
+<div class="quiz-btn next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#5F4ED0" width="18px" height="18px" stroke="#5F4ED0">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="fill">
+<div class="quiz-content space-center">
+<amp-story-interactive-quiz
+    animate-in="scale-fade-up"
+    id="quiz-1"
+    style="--interactive-prompt-background: var(--gradient1); --interactive-accent-color: var(--accent1)"
+    prompt-text="Who was the artist that created the famous painting &quot;The Last Supper&quot;?"
+    prompt-size="small"
+    endpoint="https://webstoriesinteractivity-beta.web.app/api/response2.json"
+    option-1-text="Michelangelo"
+    option-2-text="Leonardo da Vinci" option-2-correct option-2-confetti="🎨"
+    option-3-text="Raphael"
+    option-4-text="Sandro Boticelli"
+></amp-story-interactive-quiz>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-1-exp">
+<amp-story-grid-layer template="fill" class="cool-grad-exp-1">
+<div class="dyk-content">
+<div class="dyk">Do you<br>know</div>
+<div class="painting">
+<amp-img src="https://webstoriesinteractivity-beta.web.app/imgs/1.png" layout="responsive" width="688" height="448">
+</div>
+<div class="dyk-fact">The Last Supper was one of Leonardo da Vinci's most famous paintings, but did you know that the actual size of the painting is <b>12 x 29 ft</b>?</div>
+<div class="quiz-lower">
+<div class="quiz-progress">1 / 4</div>
+<div class="quiz-btn next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#5F4ED0" width="18px" height="18px" stroke="#5F4ED0">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-2" auto-advance-after="12s">
+<amp-story-grid-layer template="fill">
+<amp-img class="quiz-img"
+    animate-in="pan-right"
+    animate-in-duration="60s"
+    object-position="53% 50%"
+    layout="fixed" width="1340" height="1340"
+    src="https://webstoriesinteractivity-beta.web.app/imgs/q2.jpg"
+/>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="fill" class="cool-grad-2">
+<div class="quiz-content space-center">
+<div class="quiz-upper">
+<div class="quiz-title">
+     Post-<br>impressionism
+</div>
+<div class="quiz-timer">
+<svg><circle r="25" cx="27" cy="27"></circle><circle r="25" cx="27" cy="27"></circle></svg>
+<div class="quiz-timer-nums">
+<div>10<br>9<br>8<br>7<br>6<br>5<br>4<br>3<br>2<br>1<br>0</div>
+</div>
+</div>
+</div>
+<div class="quiz-lower">
+<div class="quiz-progress">2 / 4</div>
+<div class="quiz-btn next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E37633" width="18px" height="18px" stroke="#E37633">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+<amp-story-interactive-quiz
+    animate-in="scale-fade-up"
+    id="quiz-2"
+    style="--interactive-prompt-background: var(--gradient2); --interactive-accent-color: var(--accent2)"
+    prompt-text="How many paintings did Vincent Van Gogh sell in his life?"
+    endpoint="https://webstoriesinteractivity-beta.web.app/api/response1.json"
+    option-1-text="1 painting" option-1-correct option-1-confetti="💰"
+    option-2-text="7 paintings"
+    option-3-text="21 paintings"
+    option-4-text="78 paintings"
+></amp-story-interactive-quiz>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-2-exp">
+<amp-story-grid-layer template="fill" class="cool-grad-exp-2">
+<div class="dyk-content">
+<div class="dyk">Do you<br>know</div>
+<div class="painting">
+<amp-img src="https://webstoriesinteractivity-beta.web.app/imgs/2.png" layout="responsive" width="600" height="498"></amp-img>
+</div>
+<div class="dyk-fact">Van Gogh only sold "The Red Vineyard" for 400 Franks (around to 2000 USD today) in his life, but other paintings of him were valued for dozens of millions of dollars</div>
+<div class="quiz-lower">
+<div class="quiz-progress">2 / 4</div>
+<div class="quiz-btn next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E37633" width="18px" height="18px" stroke="#E37633">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-3" auto-advance-after="12s">
+<amp-story-grid-layer template="fill">
+<amp-img class="quiz-img"
+    animate-in="pan-left"
+    animate-in-duration="60s"
+    object-position="50% 50%"
+    layout="responsive" width="1340" height="1340"
+    src="https://webstoriesinteractivity-beta.web.app/imgs/q3.jpg"
+/>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="fill" class="cool-grad-3">
+<div class="quiz-content space-center">
+<div class="quiz-upper">
+<div class="quiz-title">
+     Surrealism<br>style
+</div>
+<div class="quiz-timer">
+<svg><circle r="25" cx="27" cy="27"></circle><circle r="25" cx="27" cy="27"></circle></svg>
+<div class="quiz-timer-nums">
+<div>10<br>9<br>8<br>7<br>6<br>5<br>4<br>3<br>2<br>1<br>0</div>
+</div>
+</div>
+</div>
+<div class="quiz-lower">
+<div class="quiz-progress">3 / 4</div>
+<div class="quiz-btn next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#49729C" width="18px" height="18px" stroke="#49729C">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+<amp-story-interactive-quiz
+    animate-in="scale-fade-up"
+    id="quiz-3"
+    style="--interactive-prompt-background: var(--gradient3); --interactive-accent-color: var(--accent3)"
+    endpoint="https://webstoriesinteractivity-beta.web.app/api/response4.json"
+    prompt-text="Who painted the surrealist artwork &quot;The Persistence of Memory&quot;?"
+    option-1-text="Pablo Picasso"
+    option-2-text="Rene Magritte"
+    option-3-text="Monet"
+    option-4-text="Salvador Dali" option-4-correct option-4-confetti="⏰"
+></amp-story-interactive-quiz>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-3-exp">
+<amp-story-grid-layer template="fill" class="cool-grad-exp-3">
+<div class="dyk-content">
+<div class="dyk">Do you<br>know</div>
+<div class="painting">
+<amp-img src="https://webstoriesinteractivity-beta.web.app/imgs/3.png" layout="responsive" width="595" height="508">
+</div>
+<div class="dyk-fact">
+    Even though his paintings are renowned surrealist examples, the surrealists of his time did not approve of him
+</div>
+<div class="quiz-lower">
+<div class="quiz-progress">3 / 4</div>
+<div class="quiz-btn next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#49729C" width="18px" height="18px" stroke="#49729C">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-4" auto-advance-after="12s">
+<amp-story-grid-layer template="fill">
+<amp-img class="quiz-img"
+    animate-in="pan-right"
+    animate-in-duration="60s"
+    layout="fixed" width="800" height="1000"
+    src="https://webstoriesinteractivity-beta.web.app/imgs/q4.jpg"
+/>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="fill" class="cool-grad-4">
+<div class="quiz-content space-center">
+<div class="quiz-upper">
+<div class="quiz-title">
+     Pop<br>art
+</div>
+<div class="quiz-timer">
+<svg><circle r="25" cx="27" cy="27"></circle><circle r="25" cx="27" cy="27"></circle></svg>
+<div class="quiz-timer-nums">
+<div>10<br>9<br>8<br>7<br>6<br>5<br>4<br>3<br>2<br>1<br>0</div>
+</div>
+</div>
+</div>
+<div class="quiz-lower">
+<div class="quiz-progress">4 / 4</div>
+<div class="quiz-btn next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#D02F5B" width="18px" height="18px" stroke="#D02F5B">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+<amp-story-interactive-quiz
+    id="quiz-4"
+    animate-in="scale-fade-up"
+    style="--interactive-prompt-background: var(--gradient4); --interactive-accent-color: var(--accent4)"
+    endpoint="https://webstoriesinteractivity-beta.web.app/api/response3.json"
+    prompt-text="Who first introduced pop art?"
+    option-1-text="David Hockney"
+    option-2-text="Keith Haring"
+    option-3-text="Andy Warhol" option-3-correct option-3-confetti="🖍️"
+    option-4-text="Richard Hamilton"
+></amp-story-interactive-quiz>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-4-exp">
+<amp-story-grid-layer template="fill" class="cool-grad-exp-4">
+<div class="dyk-content">
+<div class="dyk">Do you<br>know</div>
+<div class="painting">
+<amp-img src="https://webstoriesinteractivity-beta.web.app/imgs/4.png" layout="responsive" width="595" height="508">
+</div>
+<div class="dyk-fact">
+    Despite his unique art style, Andy Warhol was a classically-trained artist, but professors in Carnegie Institute of Technology didn't approve his style
+</div>
+<div class="quiz-lower">
+<div class="quiz-progress">4 / 4</div>
+<div class="quiz-btn next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#D02F5B" width="18px" height="18px" stroke="#D02F5B">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</div>
+</div>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="quiz-result">
+<amp-story-grid-layer template="fill">
+<amp-img class="quiz-img"
+    animate-in="pan-right"
+    animate-in-duration="60s"
+    layout="fixed" width="800" height="1000"
+    src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80"/>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="fill">
+<div class="results-content">
+<amp-story-interactive-results
+    animate-in="scale-fade-up"
+    prompt-text="Your level"
+    style="--interactive-accent-color: #005AF0;"
+    option-1-results-category="Connoisseur" option-1-results-threshold="100" option-1-text="Great job! You have amazing knowledge in art, guided by your dedication and focus to learn"
+    option-1-image="https://images.unsplash.com/photo-1441471349424-351990746ff4?auto=format&w=200&q=80"
+    option-2-results-category="Art Master" option-2-results-threshold="75" option-2-text="Keep up the good job! There's always more to learn about art, but your dedication is admirable"
+    option-2-image="https://images.unsplash.com/photo-1536243696867-c8cec3c7d5d4?auto=format&w=200&q=80"
+    option-3-results-category="Senior Artist" option-3-results-threshold="50" option-3-text="You got this! While not perfect, your results show your talent and improvement is the goal"
+    option-3-image="https://images.unsplash.com/photo-1483380011777-35c78117be19?auto=format&w=200&q=80"
+    option-4-results-category="Beginner" option-4-results-threshold="0" option-4-text="Nothing to worry about! The best artists also started from scratch and worked their way up"
+    option-4-image="https://images.unsplash.com/photo-1520207588543-1e545b20c19e?auto=format&w=200&q=80">
+</amp-story-interactive-results>
+</div>
+</amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="end">
+<amp-story-grid-layer template="fill" class="cool-grad-5">
+<div class="dyk-content">
+<div class="dyk">Do you<br>like it?</div>
+<div class="painting">
+<amp-img src="https://webstoriesinteractivity-beta.web.app/imgs/lastpage.png" layout="responsive" width="595" height="508">
+</div>
+<div class="dyk-fact">
+    This story shows the capabilities of the new interactive components, now you can use them too!
+</div>
+</div>
+</amp-story-grid-layer>
+<amp-story-cta-layer template="fill">
+<div class="quiz-lower docs">
+<a class="quiz-btn start" href="https://github.com/ampproject/amphtml/tree/master/extensions/amp-story-interactive" style="color:#005AF0">
+    Learn more
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#005AF0" width="18px" height="18px" stroke="#005AF0">
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+</svg>
+</a>
+</div>
+</amp-story-cta-layer>
+</amp-story-page>
+
+</amp-story>
+</body>
+</html>

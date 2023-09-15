@@ -1,0 +1,10 @@
+fonts
+    Microsoft Sans Serif
+    Helvetica Neue
+
+
+delete casandra and cache (highlighted)
+
+delete the logo for MySQL
+
+create one "data store" object (cylinder) that approximately is the same width as "Algorithm Service" and "UI Client"

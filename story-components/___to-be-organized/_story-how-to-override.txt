@@ -1,0 +1,12 @@
+
+how to over ride
+
+.i-amphtml-story-page-attachment-label, .i-amphtml-story-page-open-attachment-label {
+    font-family: Roboto,sans-serif!important;
+    font-size: 16px!important;
+    font-weight: 700!important;
+    letter-spacing: 0.3px;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important;
+}

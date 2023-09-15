@@ -1,0 +1,263 @@
+<!--
+need title page for animation
+-->
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon"
+    href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<title>
+Structured Data Linter project
+</title>
+<link rel="canonical" href="index.html">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async
+    src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story"
+    src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-element="amp-twitter"
+    src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+
+<style amp-custom>
+
+/***************************
+*   Font: Recursive Variable
+*   Recursive-VF.ttf
+*/
+
+@font-face {
+    font-family: Recursive-2019;
+    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") format("truetype");
+    font-display: swap;
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+}
+
+
+/* used by recursive */
+:root {
+    --MONO: 0;   /* Monospace    */
+    --CASL: 0;   /* Casual       */
+    --slnt: 0;   /* Upright      */
+    --CRSV: 0.5; /* Auto Cursive */
+}
+
+*,
+*:before,
+*:after {
+    font-variation-settings: 
+        "MONO" var(--MONO),
+        "CASL" var(--CASL),
+        "slnt" var(--slnt),
+        "CRSV" var(--CRSV);
+}
+
+/*******************
+*   Font: Zilla Slab
+*/
+
+@font-face {
+    font-family: ZillaSlab;
+    src:url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2') format('woff2');
+    font-display: swap;
+    text-align: initial;
+    font-style: normal;
+    font-weight: 100 600;
+}
+
+/****************************
+*   Font: Roboto Flex Regular
+*/
+
+@font-face {
+    font-family: RobotoFlex;
+    src: url("https://s3.amazonaws.com/benetta.net/fonts/robotoflex-woff2/RobotoFlex.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    color: #440044; /* set to background SVG color */
+    border: none;
+}
+
+h2 {
+    font-family: ZillaSlab;
+    font-size: calc(4 * var(--story-page-vw));
+    font-weight: 100;
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+}
+
+
+/*************
+*   cover page
+*/
+
+.cover{width:90%}
+.p-s{padding:.5rem}
+.p{padding:1rem}
+
+.bg-w {
+    background-color: #fff;
+}
+
+.c-bottom {
+    align-content: end;
+}
+
+.color-p {
+    color: #ff0000;
+}
+
+.color-s {
+    color: #6c757d;
+}
+
+.cover-f {
+    width: 70%;
+}
+
+.d-flex {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+/* test change to em */
+.mb {
+    /* margin-bottom: 1rem; */
+    margin-bottom: 1em;
+}
+
+.ml-s {
+    /* margin-left: 0.5rem; */
+    margin-left: 0.5em;
+}
+.mr-s{margin-right:.5rem}
+
+.mx-a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noedge {
+    padding: 0;
+}
+
+.paper {
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2), 0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pb {
+    color: #440044;
+    /* padding-bottom: 1rem; */
+    padding-bottom: 1em;
+}
+
+.pt {
+    /* padding-top: 1rem; */
+    padding-top: 1em;
+}
+
+/* .sep-v{border-left:24px solid #ff8b8b} */
+.sep-v {
+    border-left: 24px solid #ff0000;
+}
+
+.text-fatty {
+    font-family: Recursive-2019;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-80 {
+    width: 80%;
+}
+/* end cover */
+
+
+/*******
+ *  grid
+ */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+
+</style>
+</head>
+<body>
+<amp-story
+  standalone
+                 title="Structured Data Linter Project"
+             publisher="Ontomatica"
+    publisher-logo-src="https://place-hold.it/260x58?text=Ontomatica-logo&bold&fontsize=23"
+   poster-portrait-src="https://place-hold.it/300x400?text=Structured Data Linter&bold&fontsize=23"
+     poster-square-src="https://place-hold.it/300x300?text=Structured Data Linter&bold&fontsize=23"
+  poster-landscape-src="https://place-hold.it/400x300?text=Structured Data Linter&bold&fontsize=23"
+  supports-landscape
+>
+
+<amp-story-page id="item-11" data-item-label="Title Page">
+
+<amp-story-grid-layer template="fill"><amp-img id="background-circuit-board" data-item-role="background" data-item-type="static" data-item-label="background-circuit-board" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-circuit-board-w1440-h560.svg" width="1440" height="560" layout="responsive"></amp-img></amp-story-grid-layer>
+
+<amp-story-grid-layer class="noedge c-bottom mb" template="vertical"><div class="paper color-s bg-w cover-f d-flex"><div class="flex-fill pt pb"><hgroup class="ml-s"><div class="color-p"><span style="font-family:RobotoFlex; font-weight:600;">Project to enhance</span></div><h1>Structured Data Linter</h1></hgroup><div class="w-50 mx-a"><span style="font-family:RobotoFlex; font-weight:600;">by Ankita Dhandha</span></div></div><div class="sep-v"></div></div></amp-story-grid-layer>
+
+</amp-story-page>
+
+<!-- AS IS -->
+<amp-story-page id="item-58" data-item-label="Twitter: ShEx SHACL Announcements">
+
+<amp-story-grid-layer template="fill"><amp-img id="background-network-black" data-item-role="background" data-item-type="static" data-item-label="background-network-black" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-network-000000-w800-h800.svg" width="800" height="800" layout="responsive"></amp-img></amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical">
+
+<div class="" animate-in="fade-in" animate-in-duration="4s">
+<h2>Twitter: ShEx SHACL Announcements</h2>
+</div>
+
+<div class="parent">
+
+<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<amp-twitter width="560" height="80" data-tweetid="1011495002441179136" data-tooltip-icon="https://afdsi.com/static/logo/onto_sym_white_black_back_w421_h421_.png" data-tooltip-text="Expand tweet" role="link"></amp-twitter>
+</div>
+
+<div animate-in="fade-in" animate-in-duration="4s" animate-in-delay="4s">
+<amp-twitter width="720" height="80" data-tweetid="1262397755491790855" data-tooltip-icon="https://afdsi.com/static/logo/onto_sym_white_black_back_w421_h421_.png" data-tooltip-text="Expand tweet" role="link"></amp-twitter>
+</div>
+
+</div> 
+</amp-story-grid-layer>
+</amp-story-page>
+
+</amp-story>
+</body>
+</html>

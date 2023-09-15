@@ -1,0 +1,1228 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<defs>
+<style id="styles">
+.transformation-map
+ {
+  color: #5a5a5a;
+  transition: transform 500ms ease;
+  /*
+        Apply text-shadow in all directions 5 times to increase strength
+        to use as a line-background
+    */
+  /* When considering large screens (height is greater than 900px), 
+start using vmin units for scaling text size */
+}
+.transformation-map circle.invisible-holder-ring {
+  opacity: 0;
+}
+.transformation-map circle.holder-ring {
+  stroke-width: 2px;
+}
+.transformation-map .drop-target-container circle.holder-ring {
+  stroke-width: 2px;
+}
+.transformation-map .marker {
+  stroke-width: 1.5px;
+}
+.transformation-map .text-container {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.transformation-map circle.holder-ring.insight-area,
+.transformation-map .marker.insight-area,
+.transformation-map circle.holder-ring.key-issue,
+.transformation-map .marker.key-issue {
+  stroke-width: 1px;
+}
+.transformation-map .marker.insight-area.view {
+  stroke-width: 0.25px;
+}
+.transformation-map circle.holder-ring {
+  fill: none;
+  stroke: #aaaaaa;
+}
+.transformation-map .view circle.holder-ring {
+  fill: #dddddd;
+}
+.transformation-map .insight-areas-circle circle {
+  stroke-dasharray: 3 3;
+}
+.transformation-map .drop-target-container circle {
+  stroke-dasharray: 13 5;
+}
+.transformation-map .drop-target-container.view circle {
+  stroke: #437def;
+}
+.transformation-map #map-image image {
+  transition: filter 500ms ease;
+}
+.transformation-map .key-issues,
+.transformation-map .key-issues &gt; div,
+.transformation-map .map-icon-text,
+.transformation-map .map-icon-text &gt; div {
+  transition: opacity 500ms ease;
+}
+.transformation-map .key-issues,
+.transformation-map .key-issues &gt; div {
+  font-size: 12px;
+}
+.transformation-map .map-icon-text,
+.transformation-map .map-icon-text &gt; div {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #437def;
+}
+.transformation-map .map-icon-text &gt; div {
+  letter-spacing: -0.4px;
+}
+.transformation-map .key-issues &gt; div,
+.transformation-map .insight-areas &gt; div,
+.transformation-map .map-icon-text &gt; div {
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.transformation-map .key-issues.view,
+.transformation-map .key-issues.view &gt; div {
+  font-size: 13px;
+}
+.transformation-map .key-issues &gt; div {
+  transition: text-shadow 500ms ease;
+  text-shadow: 1px 1px 3px white, -1px 1px 3px white, 1px -1px 3px 
+white, -1px -1px 3px white, 1px 1px 3px white, -1px 1px 3px white, 1px 
+-1px 3px white, -1px -1px 3px white, 1px 1px 3px white, -1px 1px 3px 
+white, 1px -1px 3px white, -1px -1px 3px white, 1px 1px 3px white, -1px 
+1px 3px white, 1px -1px 3px white, -1px -1px 3px white, 1px 1px 3px 
+white, -1px 1px 3px white, 1px -1px 3px white, -1px -1px 3px white;
+}
+.transformation-map .key-issues.view &gt; div {
+  text-shadow: 1px 1px 3px #dddddd, -1px 1px 3px #dddddd, 1px -1px 3px 
+#dddddd, -1px -1px 3px #dddddd, 1px 1px 3px #dddddd, -1px 1px 3px 
+#dddddd, 1px -1px 3px #dddddd, -1px -1px 3px #dddddd, 1px 1px 3px 
+#dddddd, -1px 1px 3px #dddddd, 1px -1px 3px #dddddd, -1px -1px 3px 
+#dddddd, 1px 1px 3px #dddddd, -1px 1px 3px #dddddd, 1px -1px 3px 
+#dddddd, -1px -1px 3px #dddddd, 1px 1px 3px #dddddd, -1px 1px 3px 
+#dddddd, 1px -1px 3px #dddddd, -1px -1px 3px #dddddd;
+}
+.transformation-map .insight-areas,
+.transformation-map .insight-areas &gt; div {
+  font-size: 6px;
+  font-weight: bold;
+  transition: opacity 500ms ease;
+}
+.transformation-map .key-issues div,
+.transformation-map .insight-areas div {
+  padding: 9px;
+  border-radius: 2px;
+}
+.transformation-map .key-issues.view div,
+.transformation-map .insight-areas.view div {
+  padding: 0px;
+}
+.transformation-map .insight-areas.view,
+.transformation-map .insight-areas.view &gt; div {
+  font-size: 8px;
+}
+.transformation-map .custom-map-mention-text {
+  font-size: 8px;
+  fill: white;
+}
+.transformation-map text.key-issues.view,
+.transformation-map text.insight-areas.view {
+  opacity: 0.75;
+}
+.transformation-map text tspan.line-background {
+  stroke: #dddddd;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  fill: none;
+}
+.transformation-map .key-issues,
+.transformation-map .insight-areas,
+.transformation-map .map-icon-text {
+  overflow: visible;
+}
+.transformation-map foreignobject &gt; div {
+  width: 100%;
+}
+.transformation-map .map-icon-text tspan.line-background {
+  opacity: 0.94;
+  stroke: white;
+  stroke-width: 3px;
+}
+@media (min-height: 900px) {
+  .transformation-map .key-issues,
+.transformation-map .key-issues &gt; div {
+    font-size: 1.6vmin;
+  }
+  .transformation-map .key-issues.view,
+.transformation-map .key-issues.view &gt; div {
+    font-size: 1.8vmin;
+  }
+  .transformation-map .map-icon-text,
+.transformation-map .map-icon-text &gt; div {
+    font-size: 1.9vmin;
+  }
+  .transformation-map .insight-areas,
+.transformation-map .insight-areas &gt; div {
+    font-size: 0.8vmin;
+  }
+  .transformation-map .insight-areas.view,
+.transformation-map .insight-areas.view &gt; div {
+    font-size: 1vmin;
+  }
+  .transformation-map .custom-map-mention-text {
+    font-size: 0.9vmin;
+  }
+  .transformation-map circle.holder-ring {
+    stroke-width: 0.15vmin;
+  }
+  .transformation-map .drop-target-container circle.holder-ring {
+    stroke-width: 0.2vmin;
+  }
+  .transformation-map .key-issues div,
+.transformation-map .insight-areas div {
+    padding: 0.7vmin;
+    border-radius: 0.2vmin;
+  }
+  .transformation-map .key-issues.view div,
+.transformation-map .insight-areas.view div {
+    padding: 0px;
+  }
+  .transformation-map .insight-areas-circle circle {
+    stroke-dasharray: 0.3vmin 0.3vmin;
+  }
+  .transformation-map .drop-target-container circle {
+    stroke-dasharray: 1.3vmin 0.5vmin;
+  }
+}
+.transformation-map .marker {
+  fill: white;
+  stroke: #aaaaaa;
+  transition: fill 300ms ease;
+}
+.transformation-map .marker.text-box {
+  stroke: #cccccc;
+}
+.transformation-map .marker.map-icon {
+  fill: white;
+  stroke: white;
+  opacity: 0.94;
+  stroke-width: 0;
+}
+.transformation-map .bounce {
+  transition: transform 0.375s ease, fill 300ms ease;
+  transform: scale(1);
+}
+.transformation-map .bounce:hover {
+  transform: scale(1.1);
+  transition: transform 0.375s cubic-bezier(0.095, 2, 0.555, 1.475), 
+fill 300ms ease;
+}
+.transformation-map .bounce.bounce-insight-areas:hover {
+  transform: scale(1.25);
+}
+.transformation-map .marker.view.highlight,
+.transformation-map .marker.view:hover,
+.transformation-map .map-icon-container.highlight .map-icon,
+.transformation-map .map-icon-container:hover .map-icon {
+  stroke: #437def;
+  fill: #437def;
+}
+.transformation-map .map-icon-container .map-icon-text,
+.transformation-map .map-icon-container .map-icon-text &gt; div {
+  fill: white;
+  color: white;
+}
+.transformation-map path.link {
+  fill: none;
+  stroke: #dddddd;
+  stroke-width: 0.125vmin;
+  transition: opacity 300ms ease;
+}
+@supports (-ms-ime-align: auto) {
+  .transformation-map path.link {
+    stroke-width: 1.5px;
+  }
+}
+.transformation-map path.link.view {
+  stroke: white;
+}
+.transformation-map path.link.highlight,
+.transformation-map path.link:hover {
+  stroke: #999999;
+}
+.transformation-map path.link.view.highlight,
+.transformation-map path.link.view:hover {
+  stroke: #437def;
+}
+.transformation-map .insight-areas.view.highlight,
+.transformation-map .insight-areas.view:hover,
+.transformation-map .key-issues.view.highlight,
+.transformation-map .key-issues.view:hover,
+.transformation-map path.link.highlight,
+.transformation-map path.link:hover {
+  opacity: 1;
+}
+
+.wave-chart .waveAxis {
+  fill: transparent;
+  stroke: #eeeeee;
+}
+.wave-chart .wavePath {
+  fill: white;
+  fill-opacity: 0.35;
+  stroke: white;
+}
+.wave-chart .waveAxisLabel {
+  font-size: 12px;
+  fill: #999999;
+}
+@media (min-height: 900px) {
+  .wave-chart .waveAxisLabel {
+    font-size: 1vh;
+  }
+}
+
+.transformation-map .insight-areas {
+  cursor: pointer;
+}
+
+.transformation-map .insight-area.marker {
+  cursor: pointer;
+}
+
+.transformation-map .key-issue.marker,
+.remove-cross {
+  cursor: pointer;
+}
+
+.transformation-map .key-issue.marker {
+  cursor: pointer;
+  stroke: #437def;
+}
+
+.transformation-map .marker.insight-area.highlightAsEvidence {
+  fill: #437def;
+}
+.transformation-map 
+.marker.insight-area.highlightAsEvidence[data-entity-type="Key Issue"] {
+  fill: #17b05c;
+}
+.transformation-map 
+.marker.insight-area.highlightAsEvidence[data-entity-type="Sub topic"] {
+  fill: #227fbb;
+}
+.transformation-map 
+.marker.insight-area.highlightAsEvidence[data-entity-type=Influencer] {
+  fill: #be3a21;
+}
+.transformation-map 
+.marker.insight-area.highlightAsEvidence[data-entity-type="Decision 
+Maker"] {
+  fill: #f59d00;
+}
+.transformation-map 
+.marker.insight-area.highlightAsEvidence[data-entity-type="Thought 
+Leader"] {
+  fill: #f59d00;
+}
+.transformation-map 
+.marker.insight-area.highlightAsEvidence[data-entity-type=Author] {
+  fill: #52247f;
+}
+
+.transformation-map path.link.highlightAsEvidence {
+  stroke: #437def;
+}
+.transformation-map path.link.highlightAsEvidence[data-entity-type="Key 
+Issue"] {
+  stroke: #17b05c;
+}
+.transformation-map path.link.highlightAsEvidence[data-entity-type="Sub 
+topic"] {
+  stroke: #227fbb;
+}
+.transformation-map 
+path.link.highlightAsEvidence[data-entity-type=Influencer] {
+  stroke: #be3a21;
+}
+.transformation-map 
+path.link.highlightAsEvidence[data-entity-type="Decision Maker"] {
+  stroke: #f59d00;
+}
+.transformation-map 
+path.link.highlightAsEvidence[data-entity-type="Thought Leader"] {
+  stroke: #f59d00;
+}
+.transformation-map 
+path.link.highlightAsEvidence[data-entity-type=Author] {
+  stroke: #52247f;
+}
+
+.transformation-map .marker.key-issue.highlightAsEvidence {
+  stroke: #437def;
+  fill: #437def;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type="Key Issue"] {
+  stroke: #17b05c;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type="Sub topic"] {
+  stroke: #227fbb;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type=Influencer] {
+  stroke: #be3a21;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type="Decision Maker"]
+ {
+  stroke: #f59d00;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type="Thought Leader"]
+ {
+  stroke: #f59d00;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type=Author] {
+  stroke: #52247f;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type="Key Issue"] {
+  fill: #17b05c;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type="Sub topic"] {
+  fill: #227fbb;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type=Influencer] {
+  fill: #be3a21;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type="Decision Maker"]
+ {
+  fill: #f59d00;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type="Thought Leader"]
+ {
+  fill: #f59d00;
+}
+.transformation-map 
+.marker.key-issue.highlightAsEvidence[data-entity-type=Author] {
+  fill: #52247f;
+}
+
+.transformation-map .marker {
+  stroke: #437def;
+}
+.transformation-map .marker[data-entity-type="Key Issue"] {
+  stroke: #17b05c;
+}
+.transformation-map .marker[data-entity-type="Sub topic"] {
+  stroke: #227fbb;
+}
+.transformation-map .marker[data-entity-type=Influencer] {
+  stroke: #be3a21;
+}
+.transformation-map .marker[data-entity-type="Decision Maker"] {
+  stroke: #f59d00;
+}
+.transformation-map .marker[data-entity-type="Thought Leader"] {
+  stroke: #f59d00;
+}
+.transformation-map .marker[data-entity-type=Author] {
+  stroke: #52247f;
+}
+</style>
+        <filter id="map-image-darken-highlighted">
+            <feDiffuseLighting in="SourceGraphic" result="light" lighting-color="white">
+                <feDistantLight azimuth="240" elevation="20"></feDistantLight>
+            </feDiffuseLighting>
+            <feComposite in="SourceGraphic" in2="light" operator="arithmetic" k1="1" k2="0" k3="0" k4="0"></feComposite>
+        </filter>
+        <filter id="map-image-darken-unhighlighted">
+            <feDiffuseLighting in="SourceGraphic" result="light" lighting-color="white">
+                <feDistantLight azimuth="240" elevation="10"></feDistantLight>
+            </feDiffuseLighting>
+            <feComposite in="SourceGraphic" in2="light" operator="arithmetic" k1="1" k2="0" k3="0" k4="0"></feComposite>
+        </filter>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="2.5" result="coloredBlur"></feGaussianBlur>
+            <feMerge>
+                <feMergeNode in="coloredBlur"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+</defs>
+
+
+<g class="transformation-map" transform="translate(343.6000061035156, 291.6000061035156)">
+<g class="map-node">
+<g class="insight-areas-circle view">
+<circle r="212.07273171164772" class="holder-ring">
+</circle>
+</g>
+<g class="drop-target-container view">
+<circle r="94.79381841341704" class="holder-ring">
+</circle>
+</g>
+</g>
+<g class="links-container">
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb0000000pTDoEAM view" d="M55.42451584575099,-76.28530156095974 C16.688026290026826,-158.77596414496398 -59.878143103824485,-134.488511364289 -86.25775098431038 -193.73808074503376" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb00000015MIVEA2 view" d="M55.42451584575099,-76.28530156095974 C31.70507653831046,-156.47071653609626 -33.34394892457742,-143.3901418531265 -48.033788191839534 -206.5613679456592" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb0000000LHN7EAO view" d="M55.42451584575099,-76.28530156095974 C46.43500070381018,-152.7484458881879 -5.604617554384712,-147.10927901602145 -8.073759143301373 -211.91898911833377" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1G0X000005JLTqUAO view" d="M55.42451584575099,-76.28530156095974 C60.744402312298725,-147.642861660634 22.33727929691229,-145.51150354578948 32.17807659665029 -209.6173058747312" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb00000038poVEAQ view" d="M55.42451584575099,-76.28530156095974 C74.50369320694357,-141.20020081481877 49.47184867520512,-138.65456321088814 71.26691280923788 -199.7395070442525" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb00000038oN6EAI view" d="M55.42451584575099,-76.28530156095974 C87.58826711872403,-133.4788090850325 74.81837654473173,-126.78628570060448 107.77997710876966 -182.6426020129849" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb0000000pTDaEAM view" d="M55.42451584575099,-76.28530156095974 C99.87962812009874,-124.54861259046724 97.46077334855289,-110.33562148665574 140.397592217599 -158.94451747431017" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb0000000pjsvEAA view" d="M55.42451584575099,-76.28530156095974 C111.2664637424747,-114.49048457345299 116.58068387198932,-89.89714043552141 167.94087254132594 -129.50176394821278" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb0000000LGrIEAW view" d="M55.42451584575099,-76.28530156095974 C121.64565303916068,-103.39551299885143 131.48706473228287,-66.20954250433262 189.41433216573378 -95.37847925947227" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb00000038nzfEAA view" d="M55.42451584575099,-76.28530156095974 C130.9232004646288,-91.36417564734077 141.64116048694612,-40.12895919975672 204.0418643114433 -57.8079678240904" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb0000000pTDZEA2 view" d="M55.42451584575099,-76.28530156095974 C139.01508711272993,-78.50543017307542 146.67597565916708,-12.59801075471825 211.29479185504516 -18.148125814354845" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19qEAC link-a1Gb0000000LHN2EAO view" d="M55.42451584575099,-76.28530156095974 C145.84803160491944,-64.9357273662961 146.40953891053866,15.38826262279247 210.91097509779522 22.1676367467919" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000001hXcwEAE view" d="M89.67875044843221,29.138392354251206 C152.2994706507774,47.88703635758326 140.85147995935057,42.81836409538827 202.90428617732536 61.68220315869539" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000001RIhBEAW view" d="M89.67875044843221,29.138392354251206 C147.0578946538771,62.14718522659497 130.20268153747998,68.70089832741739 187.56410769244573 98.96741403703106" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000000LGqtEAG view" d="M89.67875044843221,29.138392354251206 C140.48453959051284,75.84451956246507 114.84801896506697,92.10040309544897 165.44487366204513 132.67568471498623" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000000LOdREAW view" d="M89.67875044843221,29.138392354251206 C132.63893478204784,88.85499418436294 95.34244975366181,112.17115933035123 137.34603083508458 161.58871046421686" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1G0X000006DIDZUA4 view" d="M89.67875044843221,29.138392354251206 C123.59213124054948,101.060784219391 72.39095599582947,128.18775760794964 104.28314460215115 184.66149920199214" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000000LJQ4EAO view" d="M89.67875044843221,29.138392354251206 C113.42605821982161,112.3513521428788 46.82306447551144,139.5713163356521 67.45119381621252 201.0601402277643" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb00000038pHMEAY view" d="M89.67875044843221,29.138392354251206 C102.23278125139552,122.62444882332328 19.562865408744166,145.91040404146625 28.18138114338509 210.19194392861914" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000000pTDhEAM view" d="M89.67875044843221,29.138392354251206 C90.113668384819,131.7870395063581 -8.404386584443815,146.97590957937217 -12.106980069836709 211.7268631261255" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000000LrSOEA0 view" d="M89.67875044843221,29.138392354251206 C77.17847218290277,139.75614635189544 -36.067882149054334,142.7293228030824 -51.95776347890572 205.60942184129257" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000000pTDoEAM view" d="M89.67875044843221,29.138392354251206 C-64.93572736629609,-145.84803160491944 -59.878143103824485,-134.488511364289 -86.25775098431038 -193.73808074503376" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb00000038nzfEAA view" d="M89.67875044843221,29.138392354251206 C159.62160916720873,3.0395556402834427 141.64116048694612,-40.12895919975672 204.0418643114433 -57.8079678240904" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb0000000pjsvEAA view" d="M89.67875044843221,29.138392354251206 C157.31227843176052,-27.223961251584416 116.58068387198932,-89.89714043552141 167.94087254132594 -129.50176394821278" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R19lEAC link-a1Gb00000038poVEAQ view" d="M89.67875044843221,29.138392354251206 C143.2701496078008,-70.44118995997935 49.47184867520512,-138.65456321088814 71.26691280923788 -199.7395070442525" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb00000015LbsEAE view" d="M5.773831144968647e-15,94.29381841341704 C-34.6783453277724,155.83872874528745 -62.42779047884768,133.32412642306593 -89.93065794121472 192.06072034099202" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000000LPFfEAO view" d="M5.773831144968647e-15,94.29381841341704 C-49.33473204317187,151.83669262022255 -86.53139580671416,119.1002487414965 -124.6532241134848 171.57044399824184" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000001SH21EAG view" d="M5.773831144968647e-15,94.29381841341704 C-63.54433578551599,146.45959989429545 -107.50753103477301,100.57177775773822 -154.8704979854856 144.8791647869638" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000000pTDlEAM view" d="M5.773831144968647e-15,94.29381841341704 C-77.1784721829026,139.75614635189555 -124.59806398309523,78.40838068860418 -179.49034854914433 112.95157508130289" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000000LGrDEAW view" d="M5.773831144968647e-15,94.29381841341704 C-90.11366838481898,131.7870395063581 -137.18529826197926,53.41110045034049 -197.62295025869543 76.94162115974494" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000000LFX9EAO view" d="M5.773831144968647e-15,94.29381841341704 C-102.23278125139551,122.62444882332328 -144.81429842886692,26.483403880536915 -208.61294364432246 38.150796580035646" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000000pTDXEA2 view" d="M5.773831144968647e-15,94.29381841341704 C-159.64331203546857,-1.5198466914560602 -147.20933254056106,-1.4014719073450348 -212.06312171092063 -2.018897189007073" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000001SG51EAG view" d="M5.773831144968647e-15,94.29381841341704 C-156.4707165360963,-31.705076538310397 -144.28383782406448,-29.235694848996417 -207.8487860338117 -42.11562275345422" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb00000038oN6EAI view" d="M5.773831144968647e-15,94.29381841341704 C81.13788186239313,-137.49524042127368 74.81837654473173,-126.78628570060448 107.77997710876966 -182.6426020129849" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb00000038poVEAQ view" d="M5.773831144968647e-15,94.29381841341704 C53.650469292435226,-150.3659674139098 49.47184867520512,-138.65456321088814 71.26691280923788 -199.7395070442525" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000000pTDaEAM view" d="M5.773831144968647e-15,94.29381841341704 C105.6927599791548,-119.65507719945815 97.46077334855289,-110.33562148665574 140.397592217599 -158.94451747431017" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18zEAC link-a1Gb0000000pjsvEAA view" d="M5.773831144968647e-15,94.29381841341704 C126.42762637046992,-97.49026772939119 116.58068387198932,-89.89714043552141 167.94087254132594 -129.50176394821278" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1G0X000006NuouUAC view" d="M-89.67875044843221,29.138392354251216 C-159.53480752856905,-6.078009414433998 -136.1435492807336,-56.01326360594456 -196.12225368471118 -80.69017998040594" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1Gb0000001jJm3EAE view" d="M-89.67875044843221,29.138392354251216 C-158.23467004168995,-21.215235290164106 -123.08267814783903,-80.76636707503957 -177.30735209589707 -116.34838386665324" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1G0X000006NvAbUAK view" d="M-89.67875044843221,29.138392354251216 C-155.50153487966853,-36.16033270984576 -105.57327833789178,-102.6003636033255 -152.0841008325376 -147.80145401720193" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1Gb0000000pTDlEAM view" d="M-89.67875044843221,29.138392354251216 C-144.58529733873505,67.70072972346078 -124.59806398309523,78.40838068860418 -179.49034854914433 112.95157508130289" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1Gb0000000LGqtEAG view" d="M-89.67875044843221,29.138392354251216 C124.5486125904672,99.87962812009877 114.84801896506697,92.10040309544897 165.44487366204513 132.67568471498623" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1Gb00000015LbsEAE view" d="M-89.67875044843221,29.138392354251216 C-119.65507719945802,105.69275997915494 -62.42779047884768,133.32412642306593 -89.93065794121472 192.06072034099202" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1Gb0000000LGrIEAW view" d="M-89.67875044843221,29.138392354251216 C142.59306894078853,-71.80190597516923 131.48706473228287,-66.20954250433262 189.41433216573378 -95.37847925947227" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1Gb0000001hXcwEAE view" d="M-89.67875044843221,29.138392354251216 C152.74844588818792,46.43500070381014 140.85147995935057,42.81836409538827 202.90428617732536 61.68220315869539" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1Gb0000000pjsvEAA view" d="M-89.67875044843221,29.138392354251216 C126.42762637046992,-97.49026772939119 116.58068387198932,-89.89714043552141 167.94087254132594 -129.50176394821278" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18aEAC link-a1Gb00000038oN6EAI view" d="M-89.67875044843221,29.138392354251216 C81.13788186239313,-137.49524042127368 74.81837654473173,-126.78628570060448 107.77997710876966 -182.6426020129849" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1G0X000004Q9aRUAS view highlight" d="M-55.424515845750996,-76.28530156095972 C-92.60640263934141,-130.04749594598005 -84.2481851803194,-120.72611566834735 -121.36413391383044 -173.9125945266367" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000000LGrIEAW view highlight" d="M-55.424515845750996,-76.28530156095972 C142.59306894078853,-71.80190597516923 131.48706473228287,-66.20954250433262 189.41433216573378 -95.37847925947227" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000000LPFfEAO view highlight" d="M-55.424515845750996,-76.28530156095972 C-93.84023677866784,129.16000531489254 -86.53139580671416,119.1002487414965 -124.6532241134848 171.57044399824184" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000000pjsvEAA view highlight" d="M-55.424515845750996,-76.28530156095972 C126.42762637046992,-97.49026772939119 116.58068387198932,-89.89714043552141 167.94087254132594 -129.50176394821278" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000000pTDhEAM view highlight" d="M-55.424515845750996,-76.28530156095972 C-9.114259855755991,159.3901730938933 -8.404386584443815,146.97590957937217 -12.106980069836709 211.7268631261255" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000001jJm3EAE view highlight" d="M-55.424515845750996,-76.28530156095972 C-115.54453473556624,-110.17149134127685 -123.08267814783903,-80.76636707503957 -177.30735209589707 -116.34838386665324" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000001RIhBEAW view highlight" d="M-55.424515845750996,-76.28530156095972 C141.20020081481877,74.50369320694357 130.20268153747998,68.70089832741739 187.56410769244573 98.96741403703106" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000000LGrDEAW view highlight" d="M-55.424515845750996,-76.28530156095972 C-153.1835776421462,-44.978756678815415 -137.18529826197926,53.41110045034049 -197.62295025869543 76.94162115974494" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000000pTDZEA2 view highlight" d="M-55.424515845750996,-76.28530156095972 C159.06490537080154,-13.662096874106362 146.67597565916708,-12.59801075471825 211.29479185504516 -18.148125814354845" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb0000001SH21EAG view highlight" d="M-55.424515845750996,-76.28530156095972 C-116.5881131783418,109.06653417585835 -107.50753103477301,100.57177775773822 -154.8704979854856 144.8791647869638" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1G0X000005JLTqUAO view highlight" d="M-55.424515845750996,-76.28530156095972 C24.223988977314566,-157.80207656950037 22.33727929691229,-145.51150354578948 32.17807659665029 -209.6173058747312" stroke-dasharray="" stroke-dashoffset="">
+</path>
+<path class="link link-a1Gb0000005R18LEAS link-a1Gb00000015LbsEAE view highlight" d="M-55.424515845750996,-76.28530156095972 C-67.70072972346044,144.58529733873524 -62.42779047884768,133.32412642306593 -89.93065794121472 192.06072034099202" stroke-dasharray="" stroke-dashoffset="">
+</path>
+</g>
+<g class="image-node">
+<circle class="main-image view" style="fill: url(&quot;#map-image&quot;);" r="77.11735698605372">
+</circle>
+</g>
+<g class="node-container">
+<g class="node highlight" transform="translate(187.56411743164062, 98.96741485595703) rotate(27.81818238421889) skewX(3.180554733660381e-15) scale(0.9999999835887546,0.9999999835887546)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000001RIhBEAW view insight-area highlight" transform="rotate(-27.81818238421889) skewX(-3.180554733660381e-15) scale(0.9999999835887546,0.9999999835887546)">
+<title>Fourth Industrial Revolution</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-14.5" height="29" width="85">
+<foreignObject class="node-text node-text-a1Gb0000001RIhBEAW view insight-areas" width="55.007273934104234" transform="" x="0" y="-14.5" height="29">
+<div style="text-align: left;" title="Fourth Industrial Revolution" lang="en">Fourth Industrial Revolution</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(189.41433715820312, -95.37847900390625) rotate(-26.72727261699248) scale(1.000000011075317,1.000000011075317)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LGrIEAW insight-area view highlight" transform="rotate(26.72727261699248) scale(1.000000011075317,1.000000011075317)">
+<title>Justice and Law</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000LGrIEAW view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Justice and Law" lang="en">Justice and Law</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-197.6229705810547, 76.94159698486328) rotate(158.72727937613274) scale(1.0000000123408328,1.0000000123408328)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LGrDEAW insight-area view highlight" transform="rotate(-158.72727937613274) scale(1.0000000123408328,1.0000000123408328)">
+<title>Values</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-5" height="10">
+<foreignObject class="node-text node-text-a1Gb0000000LGrDEAW view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-5" height="10">
+<div style="text-align: right;" title="Values" lang="en">Values</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(90) translate(94.79381841341704)" style="opacity: 1;">
+<g class="bounce">
+<circle r="14px" class="marker key-issue node-a1Gb0000005R18zEAC view" transform="scale(1)">
+<title>Safety, Security and the IoT</title>
+</circle>
+</g>
+<g class="text-container" transform="rotate(90)">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-15" height="30">
+<foreignObject class="node-text node-text-a1Gb0000005R18zEAC view key-issues" width="155.43662444554954" transform="translate(77.71831222277477) rotate(180) translate(-77.71831222277477)" x="0" y="-15" height="30">
+<div style="text-align: right;" title="Safety, Security and the IoT" lang="en">Safety, Security and the IoT</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-89.93067169189453, 192.0607147216797) rotate(115.09091225080603) skewX(-3.180554675202701e-15) scale(1.0000000019684667,1.0000000019684667)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb00000015LbsEAE insight-area view highlight" transform="rotate(-115.09091225080603) skewX(3.180554675202701e-15) scale(1.0000000019684667,1.0000000019684667)">
+<title>Cybersecurity</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-5" height="10">
+<foreignObject class="node-text node-text-a1Gb00000015LbsEAE view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-5" height="10">
+<div style="text-align: right;" title="Cybersecurity" lang="en">Cybersecurity</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(82.36363636363637) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb00000038pHMEAY insight-area view" transform="rotate(-82.36363636363637) scale(1)">
+<title>Healthcare Delivery</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb00000038pHMEAY view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Healthcare Delivery" lang="en">Healthcare Delivery</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(93.27272727272725) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000pTDhEAM insight-area view highlight" transform="rotate(-93.27272727272725) scale(1)">
+<title>Retail, Consumer Goods and Lifestyle</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-19" height="38">
+<foreignObject class="node-text node-text-a1Gb0000000pTDhEAM view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-19" height="38">
+<div style="text-align: right;" title="Retail, Consumer Goods and Lifestyle" lang="en">Retail, Consumer Goods and Lifestyle</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-51.95775604248047, 205.60943603515625) rotate(104.18181669136945) scale(0.9999999797461816,0.9999999797461816)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LrSOEA0 insight-area view" transform="rotate(-104.18181669136945) scale(0.9999999797461816,0.9999999797461816)">
+<title>Innovation</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-5" height="10">
+<foreignObject class="node-text node-text-a1Gb0000000LrSOEA0 view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-5" height="10">
+<div style="text-align: right;" title="Innovation" lang="en">Innovation</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node map-icon-container" transform="" style="opacity: 1;">
+<g class="">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000005LWrfEAG view map-icon" transform="scale(7.010668754577637,7.010668754577637)">
+<title>Internet of Things</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="">
+<g class="inner-inner-text" transform="translate(-42.414546342329544)" x="0" y="-17" height="34" width="85">
+<foreignObject class="node-text node-text-a1Gb0000005LWrfEAG view map-icon-text" width="85" transform="" x="0" y="-17" height="34">
+<div style="text-align: center;" title="Internet of Things" lang="en">Internet of Things</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(-70.36363636363637) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb00000038poVEAQ insight-area view" transform="rotate(70.36363636363637) scale(1)">
+<title>Future of Mobility</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb00000038poVEAQ view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Future of Mobility" lang="en">Future of Mobility</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(-59.45454545454544) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb00000038oN6EAI insight-area view" transform="rotate(59.45454545454544) scale(1)">
+<title>Future of Energy</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb00000038oN6EAI view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Future of Energy" lang="en">Future of Energy</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(140.39759826660156, -158.94451904296875) rotate(-48.545457697142446) scale(1.0000000031573268,1.0000000031573268)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000pTDaEAM insight-area view" transform="rotate(48.545457697142446) scale(1.0000000031573268,1.0000000031573268)">
+<title>Agile Governance</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000pTDaEAM view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Agile Governance" lang="en">Agile Governance</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-179.49034118652344, 112.95159912109375) rotate(147.81817696644623) scale(0.9999999954268066,0.9999999954268066)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000pTDlEAM insight-area view" transform="rotate(-147.81817696644623) scale(0.9999999954268066,0.9999999954268066)">
+<title>Digital Communications</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000pTDlEAM view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-9.5" height="19">
+<div style="text-align: right;" title="Digital Communications" lang="en">Digital Communications</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(32.17807388305664, -209.6173095703125) rotate(-81.27272819724122) scale(1.0000000206983601,1.0000000206983601)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1G0X000005JLTqUAO insight-area view highlight" transform="rotate(81.27272819724122) scale(1.0000000206983601,1.0000000206983601)">
+<title>Corporate Governance</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1G0X000005JLTqUAO view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Corporate Governance" lang="en">Corporate Governance</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(-4.909090909090878) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000pTDZEA2 insight-area view highlight" transform="rotate(4.909090909090878) scale(1)">
+<title>Civic Participation</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000pTDZEA2 view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Civic Participation" lang="en">Civic Participation</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(210.91098022460938, 22.16763687133789) rotate(5.999999940167531) skewX(7.9513865402756e-16) scale(1.0000000205477613,1.0000000205477613)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LHN2EAO insight-area view" transform="rotate(-5.999999940167531) skewX(-7.9513865402756e-16) scale(1.0000000205477613,1.0000000205477613)">
+<title>Global Governance</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000LHN2EAO view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Global Governance" lang="en">Global Governance</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-152.08409118652344, -147.8014678955078) rotate(-135.8181768524736) skewX(3.1805547278656137e-15) scale(0.9999999854106906,0.9999999854106906)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1G0X000006NvAbUAK insight-area view" transform="rotate(135.8181768524736) skewX(-3.1805547278656137e-15) scale(0.9999999854106906,0.9999999854106906)">
+<title>5G</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-5" height="10">
+<foreignObject class="node-text node-text-a1G0X000006NvAbUAK view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-5" height="10">
+<div style="text-align: right;" title="5G" lang="en">5G</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(18) translate(94.79381841341704)" style="opacity: 1;">
+<g class="bounce">
+<circle r="14px" class="marker key-issue node-a1Gb0000005R19lEAC view" transform="scale(1)">
+<title>IoT Value Creation and Business Models</title>
+</circle>
+</g>
+<g class="text-container" transform="rotate(-18)">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-30.5" height="61">
+<foreignObject class="node-text node-text-a1Gb0000005R19lEAC view key-issues" width="85.86266303422829" transform="" x="0" y="-30.5" height="61">
+<div style="text-align: left;" title="IoT Value Creation and Business Models" lang="en">IoT Value Creation and Business Models</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(202.904296875, 61.68220138549805) rotate(16.909089565347664) scale(0.9999999849986309,0.9999999849986309)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000001hXcwEAE insight-area view" transform="rotate(-16.909089565347664) scale(0.9999999849986309,0.9999999849986309)">
+<title>Future of Economic Progress</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-14.5" height="29">
+<foreignObject class="node-text node-text-a1Gb0000001hXcwEAE view insight-areas" width="55.007273934104234" transform="" x="0" y="-14.5" height="29">
+<div style="text-align: left;" title="Future of Economic Progress" lang="en">Future of Economic Progress</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(126) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LPFfEAO insight-area view highlight" transform="rotate(-126) scale(1)">
+<title>Education and Skills</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000LPFfEAO view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-9.5" height="19">
+<div style="text-align: right;" title="Education and Skills" lang="en">Education and Skills</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-154.87049865722656, 144.87918090820312) rotate(136.9090883948981) scale(0.9999999646575184,0.9999999646575184)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000001SH21EAG insight-area view highlight" transform="rotate(-136.9090883948981) scale(0.9999999646575184,0.9999999646575184)">
+<title>Digital Economy and New Value Creation</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-19" height="38">
+<foreignObject class="node-text node-text-a1Gb0000001SH21EAG view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-19" height="38">
+<div style="text-align: right;" title="Digital Economy and New Value Creation" lang="en">Digital Economy and New Value Creation</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(167.9408721923828, -129.50177001953125) rotate(-37.63636268198783) skewX(-3.1805547296709455e-15) scale(0.9999999848430753,0.9999999848430753)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000pjsvEAA insight-area view highlight" transform="rotate(37.63636268198783) skewX(3.1805547296709455e-15) scale(0.9999999848430753,0.9999999848430753)">
+<title>Internet Governance</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000pjsvEAA view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Internet Governance" lang="en">Internet Governance</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(49.636363636363626) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LOdREAW insight-area view" transform="rotate(-49.636363636363626) scale(1)">
+<title>Automotive Industry</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000LOdREAW view insight-areas" width="55.007273934104234" transform="" x="0" y="-9.5" height="19">
+<div style="text-align: left;" title="Automotive Industry" lang="en">Automotive Industry</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(60.545454545454504) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1G0X000006DIDZUA4 insight-area view" transform="rotate(-60.545454545454504) scale(1)">
+<title>The Digital Transformation of Business</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-14.5" height="29">
+<foreignObject class="node-text node-text-a1G0X000006DIDZUA4 view insight-areas" width="55.007273934104234" transform="" x="0" y="-14.5" height="29">
+<div style="text-align: left;" title="The Digital Transformation of Business" lang="en">The Digital Transformation of Business</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(67.45120239257812, 201.06015014648438) rotate(71.4545438345802) scale(0.9999999778121273,0.9999999778121273)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LJQ4EAO insight-area view" transform="rotate(-71.4545438345802) scale(0.9999999778121273,0.9999999778121273)">
+<title>Workforce and Employment</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-14.5" height="29">
+<foreignObject class="node-text node-text-a1Gb0000000LJQ4EAO view insight-areas" width="55.007273934104234" transform="" x="0" y="-14.5" height="29">
+<div style="text-align: left;" title="Workforce and Employment" lang="en">Workforce and Employment</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(169.63636363636363) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LFX9EAO insight-area view" transform="rotate(-169.63636363636363) scale(1)">
+<title>International Trade and Investment</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-14.5" height="29">
+<foreignObject class="node-text node-text-a1Gb0000000LFX9EAO view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-14.5" height="29">
+<div style="text-align: right;" title="International Trade and Investment" lang="en">International Trade and Investment</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-212.06312561035156, -2.01890230178833) rotate(-179.45454406791856) scale(1.0000000153468849,1.0000000153468849)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000pTDXEA2 insight-area view" transform="rotate(179.45454406791856) scale(1.0000000153468849,1.0000000153468849)">
+<title>Global Risks</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-5" height="10">
+<foreignObject class="node-text node-text-a1Gb0000000pTDXEA2 view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-5" height="10">
+<div style="text-align: right;" title="Global Risks" lang="en">Global Risks</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(-54) translate(94.79381841341704)" style="opacity: 1;">
+<g class="bounce">
+<circle r="14px" class="marker key-issue node-a1Gb0000005R19qEAC view" transform="scale(1)">
+<title>Making the Rules for a Beneficial IoT</title>
+</circle>
+</g>
+<g class="text-container" transform="rotate(54)">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-23" height="46">
+<foreignObject class="node-text node-text-a1Gb0000005R19qEAC view key-issues" width="107.93270901914332" transform="" x="0" y="-23" height="46">
+<div style="text-align: left;" title="Making the Rules for a Beneficial IoT" lang="en">Making the Rules for a Beneficial IoT</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(246) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000pTDoEAM insight-area view" transform="rotate(-246) scale(1)">
+<title>Supply Chain and Transport</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000pTDoEAM view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-9.5" height="19">
+<div style="text-align: right;" title="Supply Chain and Transport" lang="en">Supply Chain and Transport</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(256.90909090909093) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb00000015MIVEA2 insight-area view" transform="rotate(-256.90909090909093) scale(1)">
+<title>Agriculture, Food and Beverage</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-14.5" height="29">
+<foreignObject class="node-text node-text-a1Gb00000015MIVEA2 view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-14.5" height="29">
+<div style="text-align: right;" title="Agriculture, Food and Beverage" lang="en">Agriculture, Food and Beverage</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-8.073780059814453, -211.9189910888672) rotate(-92.18182377148706) scale(0.9999999846080766,0.9999999846080766)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LHN7EAO insight-area view" transform="rotate(92.18182377148706) scale(0.9999999846080766,0.9999999846080766)">
+<title>Sustainable Development</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000000LHN7EAO view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-9.5" height="19">
+<div style="text-align: right;" title="Sustainable Development" lang="en">Sustainable Development</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(165.44488525390625, 132.67568969726562) rotate(38.72727148010708) skewX(3.1805547092367305e-15) scale(0.9999999912678081,0.9999999912678081)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000000LGqtEAG insight-area view" transform="rotate(-38.72727148010708) skewX(-3.1805547092367305e-15) scale(0.9999999912678081,0.9999999912678081)">
+<title>Entrepreneurship</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-5" height="10">
+<foreignObject class="node-text node-text-a1Gb0000000LGqtEAG view insight-areas" width="55.007273934104234" transform="" x="0" y="-5" height="10">
+<div style="text-align: left;" title="Entrepreneurship" lang="en">Entrepreneurship</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(204.0418701171875, -57.8079719543457) rotate(-15.818181223440787) scale(1.0000000159360416,1.0000000159360416)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb00000038nzfEAA insight-area view" transform="rotate(15.818181223440787) scale(1.0000000159360416,1.0000000159360416)">
+<title>Advanced Manufacturing and Production</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-19" height="38">
+<foreignObject class="node-text node-text-a1Gb00000038nzfEAA view insight-areas" width="55.007273934104234" transform="" x="0" y="-19" height="38">
+<div style="text-align: left;" title="Advanced Manufacturing and Production" lang="en">Advanced Manufacturing and Production</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(191.4545454545455) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000001SG51EAG insight-area view" transform="rotate(-191.4545454545455) scale(1)">
+<title>International Security</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000001SG51EAG view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-9.5" height="19">
+<div style="text-align: right;" title="International Security" lang="en">International Security</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(162) translate(94.79381841341704)" style="opacity: 1;">
+<g class="bounce">
+<circle r="14px" class="marker key-issue node-a1Gb0000005R18aEAC view" transform="scale(1)">
+<title>Architecture and Standards</title>
+</circle>
+</g>
+<g class="text-container" transform="rotate(18)">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-15" height="30">
+<foreignObject class="node-text node-text-a1Gb0000005R18aEAC view key-issues" width="85.86266303422829" transform="translate(42.931331517114145) rotate(180) translate(-42.931331517114145)" x="0" y="-15" height="30">
+<div style="text-align: right;" title="Architecture and Standards" lang="en">Architecture and Standards</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(202.36363636363626) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1G0X000006NuouUAC insight-area view" transform="rotate(-202.36363636363626) scale(1)">
+<title>Batteries</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-5" height="10">
+<foreignObject class="node-text node-text-a1G0X000006NuouUAC view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-5" height="10">
+<div style="text-align: right;" title="Batteries" lang="en">Batteries</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="translate(-177.307373046875, -116.3483657836914) rotate(-146.7272802587041) scale(1.0000000200763457,1.0000000200763457)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1Gb0000001jJm3EAE insight-area view highlight" transform="rotate(146.7272802587041) scale(1.0000000200763457,1.0000000200763457)">
+<title>Future of Computing</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-9.5" height="19">
+<foreignObject class="node-text node-text-a1Gb0000001jJm3EAE view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-9.5" height="19">
+<div style="text-align: right;" title="Future of Computing" lang="en">Future of Computing</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(234) translate(94.79381841341704)" style="opacity: 1;">
+<g class="bounce">
+<circle r="14px" class="marker key-issue node-a1Gb0000005R18LEAS view highlight" transform="scale(1)">
+<title>Privacy and Trust on the IoT</title>
+</circle>
+</g>
+<g class="text-container" transform="rotate(-54)">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-15" height="30">
+<foreignObject class="node-text node-text-a1Gb0000005R18LEAS view key-issues highlight" width="107.93270901914332" transform="translate(53.96635450957166) rotate(180) translate(-53.96635450957166)" x="0" y="-15" height="30">
+<div style="text-align: right;" title="Privacy and Trust on the IoT" lang="en">Privacy and Trust on the IoT</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+<g class="node" transform="rotate(235.090909090909) translate(212.07273171164772)" style="opacity: 1;">
+<g class="bounce bounce-insight-areas">
+<path d="M-5.5,-8.5 h6 q6,0 6,6 v10 q0,1 -1,1 h-11 q-1,0 -1,-1 v-15 q0,-1 1,-1 Z" class="marker node-a1G0X000004Q9aRUAS insight-area view highlight" transform="rotate(-235.090909090909) scale(1)">
+<title>Leadership</title>
+</path>
+</g>
+<g class="text-container" transform="">
+<g class="inner-text-container" transform="translate(24.520000457763672)">
+<g class="inner-inner-text" transform="" x="0" y="-5" height="10">
+<foreignObject class="node-text node-text-a1G0X000004Q9aRUAS view insight-areas" width="55.007273934104234" transform="translate(27.503636967052117) rotate(180) translate(-27.503636967052117)" x="0" y="-5" height="10">
+<div style="text-align: right;" title="Leadership" lang="en">Leadership</div>
+</foreignObject>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

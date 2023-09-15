@@ -1,0 +1,38 @@
+<!--
+TODO: update this file
+-->
+
+amp-selector reference
+  E:\content\______collections\collection__page-standards-IDMP-GSRS-11238\_IDMP-illo\__IDMP-30-w742-h426^data-lang^sidebar.html
+uses amp-lightbox and amp-sidebar avec amp-list/state and amp-mustache
+
+then, show amp-story-attachment example that fails
+  selector fails
+  amp-list/state fails
+
+then show amp-story-attachment example sans amp-list/state/selector that works with <img> but fails with <amp-img>
+  show how selector work with cat example
+
+then show attachment avec amp-iframe single instance
+  success
+
+then show attachment with amp-iframe and amp-selector for wedge
+  selector fails
+
+then show shopping
+  ask for ability to override mandatory fields
+  from slide, select specific elements in amp-carousel
+  example: show IBMP in slide; navigate to a component in amp-attachment/amp-carousel
+
+request
+allow <img> in amp-story-attachment
+support amp-state and amp-selector in amp-story-attachment
+
+amp-shopping: allow overrride of mandatory fields with custom fields (reserve the "place" but support alternative data types)
+
+
+----
+
+show full story and story-avec-sidebar (story player)
+
+copy files to a specific google directory so they can be removed later

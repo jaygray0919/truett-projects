@@ -1,0 +1,19 @@
+
+https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df
+
+<link rel="icon" href="favicon.svg">
+(no size)
+
+
+Safari
+single colour on transparent background
+<link rel="mask-icon" href="mask-icon.svg" color="#000000">
+
+
+PNG
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+180x180
+
+theme-color required for Android’s Chrome browser colour
+<meta name="theme-color" content="#ffffff">
+

@@ -1,0 +1,375 @@
+<!--
+grid structure
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+-->
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon"
+    href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+PubChem
+</title>
+<link rel="canonical"
+    href="index.html" />
+<link rel="preload" as="script"
+    href="https://cdn.ampproject.org/v0.js"/>
+<script async
+    src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story"
+    src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<link rel="preload" as="font"
+    href="https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf" crossorigin />
+<link rel="preload" as="font"
+    href="https://s3.amazonaws.com/benetta.net/fonts/recursive/recursive-2019_11_22-20_38.woff2" crossorigin />
+<link rel="preload" as="font"
+    href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2" crossorigin />
+<link rel="preload" as="font"
+    href="https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2" crossorigin />
+
+<link rel="preload" as="font"
+    href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2" crossorigin />
+
+<style amp-custom>
+
+@font-face {
+    font-family: Recursive;
+    src:
+        url('https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf')                 format('truetype'),
+        url('https://s3.amazonaws.com/benetta.net/fonts/recursive/recursive-2019_11_22-20_38.woff2') format('woff2-variations');
+    font-display: swap;
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: ZillaSlab;
+    src:
+        url(https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2)
+    format("woff2");
+    font-display: swap;
+    text-align: initial;
+    font-style: normal;
+    font-weight: 100 600;
+}
+@font-face {
+    font-family: NotoSerif;
+    src:
+        url(https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2)
+    format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+}
+
+@font-face{
+    font-family: NotoSans;
+    src:
+        url(https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v11-latin-regular.woff2)
+    format("woff2");
+    font-style: normal;
+    font-weight: regular;
+    font-display: optional;
+}
+
+:root {
+    --on-1275ac:#1275ac;
+    --on-1aa3ff:#1aa3ff;
+    --on-1b88cd:#1b88cd;
+    --on-1f64ff:#1f64ff;
+    --on-3ba7e5:#3ba7e5;
+    --on-440044:#440044;
+    --on-6c757d:#6c757d;
+    --on-a71520:#a71520;
+    --on-a9c937:#a9c937;
+    --on-c41622:#c41622;
+    --on-c52433:#c52433;
+    --on-cccccc:#cccccc;
+    --on-e6e6e6:#e6e6e6;
+    --on-efd520:#efd520;
+    --on-f9f9f9:#f9f9f9;
+    --on-ff0000:#ff0000;
+    --on-ffffff:#ffffff;
+}
+
+:root {
+    --MONO: 0;
+    --CASL: 0;
+    --slnt: 0;
+    --CRSV: 0.5;
+}
+*,
+:after,
+:before {
+    font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL), "slnt" var(--slnt), "CRSV" var(--CRSV);
+}
+
+/**********
+ *    from WaPo
+ */
+
+amp-story-grid-layer[template="vertical"] {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    color: var(--on-440044); /* set to background SVG color */
+    border: none;
+}
+
+h2 {
+    font-family: ZillaSlab;
+    font-size: calc(4 * var(--story-page-vw));
+    font-weight: 100;
+    display: inline-block;
+    color: var(--on-ffffff);
+    border: none;
+}
+
+h3 {
+    font-family: ZillaSlab;
+    font-size: calc(2.6 * var(--story-page-vw));
+    font-weight: 300;
+    line-height: 1.2em;
+    color: var(--on-ffffff);
+    border: none;
+}
+
+h4 {
+    font-family: Recursive;
+    font-size: calc(1.8 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-top: 1em;
+    color: var(--on-ffffff);
+    border: none;
+    transition: 1s;
+}
+
+h4:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+h5 {
+    font-family: Recursive;
+    font-size: calc(1.6 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-bottom: 0.8em;
+    color: var(--on-ffffff);
+    border: none;
+    transition: 1s;
+}
+
+h5:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+.title-centered {
+    text-align: center;
+}
+
+/***************
+ *  10 x 11 grid
+ */
+
+.parent {
+    font-family: Recursive;
+    font-size: calc(2 * var(--story-page-vw));
+    color: var(--on-ffffff);
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    border: none;
+    transition: 1s;
+}
+
+.row-text {
+    font-size: 0.8em;
+}
+
+.parent-pc {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-row-gap: 0.1em;
+    color: var(--on-ffffff);
+}
+
+.heading-2 {
+    font-size: 1.6em;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.diagram-pc {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 11;
+}
+.diagram-pc {
+    width:  90%;
+    height: 90%;
+    padding-left: 10px;
+}
+
+.row-2-left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.row-2-right {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.row-3-left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.row-3-right {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.row-4-left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.row-4-right {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.row-5-left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.row-5-right {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.row-6-left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.row-6-right {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.row-7-left {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.row-7-right {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+/*************
+ *    cover page
+ */
+
+.bg-w{background-color:var(--on-ffffff);}
+.c-bottom{align-content:end;}
+.color-p{color:var(--on-ff0000);}
+.color-s{color:var(--on-6c757d);}
+.cover-f{width:70%;}
+.d-flex{display:flex;display:-ms-flexbox;}
+.flex-fill{flex:1 1 auto;}
+.mb{margin-bottom:1em;}
+.ml-s{margin-left:0.5em;}
+.mx-a{margin-left:auto;margin-right:auto;}
+.noedge{padding:0;}
+.paper{-webkit-box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.14),0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2),0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+-moz-box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.14),0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2),0 0 2.5px 0 rgba(0, 0, 0, 0.12);
+box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.14),0 1.5px 0.5px -1px rgba(0, 0, 0, 0.2),0 0 2.5px 0 rgba(0, 0, 0, 0.12);}
+.pb{color:var(--on-440044);padding-bottom:1em;}
+.pt{padding-top:1em;}
+.sep-v{border-left:24px solid var(--on-ff0000);}
+.text-fatty{font-family:Recursive;text-transform:uppercase;font-weight:700;}
+.w-50{width:50%;}
+.w-80{width:80%;}
+
+</style>
+</head>
+<body>
+<amp-story
+  standalone
+  title="Template"
+  publisher=""
+  publisher-logo-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-portrait-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-square-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-landscape-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  supports-landscape
+>
+
+<amp-story-page id="kg-item-10" data-page-no="00" data-item-label="title-page" data-item-source="ontomatica">
+<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-neural-network-440044-FFE1FFW" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-neural-network-440044-FFE1FFW-w400-h371.svg" width="400" height="371" layout="responsive"></amp-img></amp-story-grid-layer>
+<amp-story-grid-layer class="noedge c-bottom mb" template="vertical"><div class="paper color-s bg-w cover-f d-flex"><div class="flex-fill pt pb"><hgroup class="ml-s"><div class="text-fatty color-p">connecting the dots</div><h1>Solve Problems with Knowledge Graphs</h1></hgroup><div class="w-80 mx-a text-fatty">by Paula Perez</div></div><div class="sep-v"></div></div></amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="item-1015" data-item-label="template-container-main" data-item-source="ontomatica">
+
+<amp-story-grid-layer template="fill"><amp-img id="blue-texture-1F64FF" data-item-role="background" data-item-type="static" data-item-label="background-1F64FF" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-1F64FF-w1000-h1000.svg" width="1000" height="1000" layout="responsive"></amp-img></amp-story-grid-layer>
+
+<amp-story-grid-layer template="vertical"><div class="parent parent-pc"><div class="heading-2 title-centered" animate-in="fade-in" animate-in-delay=""><h2>PubChem Data Model</h2></div><div class="diagram-pc" animate-in="fade-in" animate-in-duration="4s" animate-in-delay=""><amp-img src="pc-item-28-w5975-h3013.jpg" width="478" height="241" layout="responsive"></amp-img></div><div class="row-2-left  row-text" animate-in="fade-in" animate-in-delay=""><h4>as defined by molar mass unit (obo:UO_0000055)</h4></div><div class="row-2-right row-text" animate-in="fade-in" animate-in-delay=""><h4>expressed as double floating point</h4></div><div class="row-3-left  row-text" animate-in="fade-in" animate-in-delay=""><h4>Candy canes cotton candy apple pie cake</h4></div><div class="row-3-right row-text" animate-in="fade-in" animate-in-delay=""><h4>Jelly jujubes marshmallow donut</h4></div><div class="row-4-left  row-text" animate-in="fade-in" animate-in-delay=""><h4>Wafer cheesecake lollipop fruitcake</h4></div><div class="row-4-right row-text" animate-in="fade-in" animate-in-delay=""><h4>Pudding croissant biscuit icing</h4></div><div class="row-5-left  row-text" animate-in="fade-in" animate-in-delay=""><h4>Gummi bears bonbon</h4></div><div class="row-5-right row-text" animate-in="fade-in" animate-in-delay=""><h4>Gingerbread biscuit gummies cupcake</h4></div><div class="row-6-left  row-text" animate-in="fade-in" animate-in-delay=""><h4>Plum chocolate cake chocolate cake cake</h4></div><div class="row-6-right row-text" animate-in="fade-in" animate-in-delay=""><h4>Marzipan brownie halvah</h4></div></div></amp-story-grid-layer>
+
+</amp-story-page>
+
+</amp-story>
+</body>
+</html>

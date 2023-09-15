@@ -1,0 +1,48 @@
+
+hello Matias
+
+quick progress report
+
+we are using the latest amp-story-page-attachment: 
+  <amp-story-page-attachment layout="nodisplay" theme="custom" cta-image="" cta-text="" data-title="">
+and amp-story-page-outlink:
+  <amp-story-page-outlink layout="nodisplay" theme="custom" cta-accent-color="" cta-accent-element="" cta-image=""><a href=""></a></amp-story-page-outlink>
+
+see:
+  https://afdsi.com/___supplier/paula-perez/story-22-04-03/#page=item-14
+  https://afdsi.com/___supplier/paula-perez/story-22-04-03/#page=item-15
+
+definite improvement!
+
+we're using preload for the PDFs to overcome the arbitrary loading by google doc viewer
+  <link rel="preload" as="fetch" type="application/pdf" href="file.pdf" crossorigin />
+
+we minimized our iframe code and it is now amp-valid:
+  https://afdsi.com/___supplier/paula-perez/story-22-04-03/#page=item-36
+
+we've added amp-shopping-attachment to our template:
+  https://afdsi.com/___supplier/paula-perez/story-22-04-03/#page=item-37
+in the future we will use it for component information about foods, drugs, cosmetics and textiles
+
+we are wrangling with the endpoint. here is a test link that fails:
+  https://afdsi.com/___supplier/paula-perez/reference/results/results.json
+what are doing wrong there?
+chrome dev pukes on these links
+
+our last issue is selectors in tabs. see:
+  https://afdsi.com/___supplier/paula-perez/story-22-04-03/#page=item-37
+the <img> tag is now valid for amp-html but fails for amp-story
+we tried to use <amp-img> but only the first image is displayed when using <amp-img> for all images
+but <img> works and should be valid in amp-story if it is valid for amp-html
+
+we have solved, but not yet implements our target @media directives
+our Story looks great on mobile and tablets, landscape and portrait
+
+here is the validator link that identifies issues:
+  https://validator.ampproject.org/#url=https%3A%2F%2Fafdsi.com%2F___supplier%2Fpaula-perez%2Fstory-22-04-03%2F
+
+would you consider relaxing those limits?
+
+our customers are very happy abou this template!
+thank you and your team for a great product.
+

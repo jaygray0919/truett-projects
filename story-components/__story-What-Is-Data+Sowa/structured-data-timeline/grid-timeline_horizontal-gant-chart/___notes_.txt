@@ -1,0 +1,18 @@
+
+source:
+https://codepen.io/ph1p/pen/JBBjNy
+
+cannot use !important with AMP CSS
+
+author
+https://codepen.io/ph1p/#
+
+
+CSS logo airbnb
+https://codepen.io/ph1p/pen/ygbKoQ
+
+CSS logo "space"
+https://codepen.io/ph1p/pen/LRjyPJ
+
+CSS buttons
+https://codepen.io/ph1p/pen/waLKbv

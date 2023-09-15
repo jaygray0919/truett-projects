@@ -1,0 +1,9 @@
+
+for solid colors use
+	background-color: #hex
+
+add
+	texture
+		Sowa
+
+can the SVG be transformed as WEBP and work using same properties

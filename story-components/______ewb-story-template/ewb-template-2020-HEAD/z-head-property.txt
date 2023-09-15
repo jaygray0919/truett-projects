@@ -1,0 +1,8 @@
+
+WordPress REST API Handbook
+
+<link
+  rel="https://api.w.org/"
+  href="https://practicalselfreliance.com/wp-json/"
+>
+

@@ -1,0 +1,8 @@
+
+mechanism:
+D3 relationship diagram with linked nodes
+
+include:
+http://aboutdata.org/
+https://en.wikipedia.org/wiki/DIKW_pyramid
+

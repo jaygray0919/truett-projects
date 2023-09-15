@@ -1,0 +1,5 @@
+
+
+lazy load pages
+
+https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading

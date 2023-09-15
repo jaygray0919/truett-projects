@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/fonts.css">
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/blocks/badge.css">
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/blocks/caption.css">
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/blocks/progress.css">
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/blocks/region.css">
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/shower/shower-list.css">
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/shower/shower-full.css">
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/shower/shower-grid.css">
+<link rel="stylesheet" href="https://technoogies.in/sdlpreso/shower/themes/ribbon/styles/shower/shower-print.css">
+
+<style>
+#cover h2 {margin:30px 0 0; color:white; text-align:center; font-size:70px;}
+#cover p {margin:10px 0 0; text-align:center; color:white; font-style:italic; font-size:20px;}
+#cover p a {color:white;}
+
+.shower {
+    --slide-gap: 100px;
+    --slide-ratio: calc(25 / 16);
+    /* --slide-ratio: calc(16 / 9); */
+    --slide-width: 1024px;
+    --slide-height: calc(var(--slide-width) / var(--slide-ratio));
+    --slide-side: 100px;
+    --color-blue: #4b86c2;
+    --color-blue-lighter: #6799cb;
+    --color-red: #cc0000;
+    --color-yellow: #fafaa2;
+    --color-grey: #585a5e;
+    --color-fill: rgba(88, 90, 94, 0.1);
+    --color-line: rgba(88, 90, 94, 0.5);
+    --ribbon-size: 50px;
+    --progress-size: 10px;
+
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+
+    margin: 0;
+    color: black;
+    counter-reset: slide;
+    font: 25px/2 'PT Sans', sans-serif;
+}
+</style>

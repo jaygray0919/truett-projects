@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>
+Structured Data Linter Presentation
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="icon" type="image/x-icon" href="./pictures/gxg_favicon_12-01-26.ico"/>
+<link rel="stylesheet" href="./styles/styles.css">
+<script src="./scripts/shower.js"></script>
+</head>
+
+<body class="shower list">
+
+<header class="caption">
+<h1>
+Structured Data Linter Presentation
+</h1>
+<p>
+Presenter: Ankita Dhandha
+</p>
+</header>
+
+<section class="slide">
+<h2><center>SDL Discussion</center></h2>
+<figure>
+<img class="cover" style="width:70%; height:auto;" src="https://technoogies.in/sdlpreso/pictures/coversdl.jpg" alt=""/>
+<figcaption class="copyright right white">
+<a href="https://afdsi.org">Ankita Dhandha</a>
+</figcaption>
+</figure>
+</section>
+
+<section class="slide">
+<h2>SDL discusson Points</h2>
+<ol>
+<li>
+SDL Proposed Design improvements
+<mark class="important">[fro:&lt;term_identifier&gt;]</mark>
+</li>
+<li>How we acheived new SDL Design</li>
+<li>SDL use case-1 and use case-2</li>
+<li>NALT and NCIT files processed by SDL</li>
+<li>SDL service from AWS Spot server</li>
+<li>Feedback</li>
+</ol>
+</section>
+
+<section class="slide">
+<h2><center>SDL Proposed Design</center></h2>
+<figure>
+<img class="cover" style="width:70%; height:auto;" src="https://technoogies.in/sdlpreso/pictures/proposedsdl.jpg"/>
+<figcaption class="copyright right white">
+<a href="https://ontomatica.io">Propsed by Ankita Dhandha</a>
+</figcaption>
+</figure>
+</section>
+
+<section class="slide">
+<h2>How we achieved SDL proposed design (1)</h2>
+<ul>
+<li>
+We needed to have different formats for input. We concluded that we can convert graph into different formats like, rdf/xml, rdfa, turtle, json-ld.
+</li>
+<li>
+Now we have all these formats, there is just a need to modify linter views.
+</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>
+How we achieved SDL proposed design (2)
+</h2>
+<ul>
+<li>
+As the implementation of views is in key/value paris like,
+<br/>
+<code>
+{"snippet": "...", "html": "...", "messages": [], "statistics": {"count": 9, "templates": []}}
+</code>
+<br/>
+We passed "rdf":"rdfformat", "rdfa": "rdfaformat", "ttl": "ttlformat", "jsonld": jsonldformat", "graph": graphformat".
+</li>
+<li>
+For graph, we currenly use http://www.ldf.fi/service/rdf-grapher API.
+</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>
+use case - 1
+</h2>
+<ul>
+<li>
+<a href="https://afdsi.com/sdl/language/language-graph.json" target="_blank">Click here</a> to view source code.
+This source code has @Class and is validated by GSDTT but not by GRRTT.
+</li>
+<li>
+To validate in GSDTT, <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fafdsi.com%2Fsdl%2Flanguage%2Flanguage-graph.json" target="_blank">Click Here</a>
+</li>
+<li>
+To validate in JSON-LD Playground, <a href="https://json-ld.org/playground/#startTab=tab-expanded&json-ld=https%3A%2F%2Fafdsi.com%2Fsdl%2Forganization%2Forganization-graph.json" target="_blank">Click Here</a>
+</li>
+<li>
+To view SDL output, please <a href="pictures/case-1/Structured Data Linter.html" target="_blank">Click Here</a>.
+</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>
+use case - 2
+</h2>
+<ul>
+<li>
+<a href="https://afdsi.com/sdl/organization/data.json" target="_blank">Click here</a> to view source code.
+This source code has @class and is validated by both GSDTT and RRT.
+</li>
+<li>
+To validate in GSDTT, <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fafdsi.com%2Fsdl%2Forganization%2Forganization-graph.json" target="_blank">Click Here</a>
+</li>
+<li>
+To validate in JSON-LD Playground, <a href="https://json-ld.org/playground/#startTab=tab-expanded&json-ld=https%3A%2F%2Fafdsi.com%2Fsdl%2Forganization%2Forganization-graph.json" target="_blank">Click Here</a>
+</li>
+<li>
+To view SDL output, please <a href="pictures/case-2/Structured Data Linter.html" target="_blank">Click Here</a>.
+</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>
+heading
+</h2>
+<ul>
+<li>
+<a href="https://afdsi.com/sdl/nalt/data.json">Click Here</a> to view source code. SDL processed 500k triples as shown in above image.
+</li>
+<li>To view these processed triples <a href="https://afdsi.com/sdl/nalt/index.html">Click Here</a>.</li>
+<li>Please note that we used AWS high end spot server to process this much bigger file.</li>
+<li>We also made minor changes to upload .zip file as it can not proceess normal file.</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>
+heading
+</h2>
+<figure>
+<img class="cover" style="width:80%; height:auto;" src="https://technoogies.in/sdlpreso/pictures/monster-1.jpg">
+</figure>
+</section>
+
+<section class="slide">
+<h2>
+heading
+</h2>
+<ul>
+<li>
+<a href="https://afdsi.com/sdl/ncit/data.json">Click Here</a> to view source code. SDL processed 900l triples as shown in above image.
+</li>
+<li>To view these processed triples <a href="https://afdsi.com/sdl/ncit/index.html">Click Here</a>.</li>
+<li>Please note that we used AWS high end spot server to process this much bigger file.</li>
+<li>We also made minor changes to upload .zip file as it can not proceess normal file.</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>
+heading
+</h2>
+<figure>
+<img class="cover" style="width:80%; height:auto;" src="https://technoogies.in/sdlpreso/pictures/monster-2.jpg">
+</figure>
+</section>
+
+<section class="slide">
+<h2>
+SDL as a service on AWS Lambda (1)
+</h2>
+<p>
+We have deployed SDL as a Service on AWS Lambda. To view our Lambda version, please <a href="https://5hw2bg5kz3.execute-api.us-east-1.amazonaws.com/Prod">Click Here</a>
+</p>
+</section>
+
+<section class="slide">
+<h2>
+SDL as a service on AWS Lambda (2)
+</h2>
+<p>
+SDL deployment with AWS Lambda has few limitations:
+</p>
+<ul>
+<li>
+AWS Lambda supports only deployment unzipped size of 250 MB, whereas our SDL software size is >333MB. We remove few unwanted examples, directories and make it to fit in lambda deployment.
+</li>
+<li>
+API Gateway Endpoint timeout is 29 seconds. After 29 seconds, it time out that means it listens to Lambda response only upto 29 seconds. It can process small amount of data currently.
+</li>
+</ul>
+</section>
+
+<section class="slide">
+<h2>
+Feedback
+</h2>
+</section>
+
+<footer class="badge">
+<a href="https://github.com/ankitadhandha/sdlpreso.git">Fork me on GitHub</a>
+</footer>
+
+<div class="progress"></div>
+
+</body></html>

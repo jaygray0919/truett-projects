@@ -1,0 +1,258 @@
+<!--
+grid test for Story
+-->
+
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon"
+    href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+Story grid: 23-05-25
+</title>
+
+<link rel="canonical"
+    href="index.html" />
+<link rel="preload" as="script"
+    href="https://cdn.ampproject.org/v0.js"/>
+<script async
+    src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story"
+    src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
+<link rel="preload" as="font"
+    href="https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf" crossorigin />
+<link rel="preload" as="font"
+    href="https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Regular.ttf" crossorigin />
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+@font-face {
+    font-family: Recursive;
+    src: url(https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf)
+    format("truetype");
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:ZillaSlab;
+    src:url('https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/ZillaSlab-Regular.ttf') format('truetype');
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: calc(3.125 * var(--story-page-vw));
+    font-weight: 100;
+    color: #440044;
+    border: none;
+}
+
+h2 {
+    font-family: ZillaSlab;
+    font-size: calc(4 * var(--story-page-vw));
+    font-weight: 100;
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+}
+
+h3 {
+    font-family: ZillaSlab;
+    font-size: calc(2.6 * var(--story-page-vw));
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #ffffff;
+    border: none;
+}
+
+h4 {
+    font-family: Recursive;
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-top: 1em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+/* fails */
+h4:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+h5 {
+    font-family: Recursive;
+    font-size: calc(2 * var(--story-page-vw));
+    font-weight: 300;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-bottom: 0.8em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+/* fails */
+h5:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+h6 {
+    font-family: Recursive;
+    font-size: calc(1.2 * var(--story-page-vw));
+    font-weight: 400;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    color: red;
+    border: none;
+    transition: 1s;
+}
+
+/* fails */
+h6:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
+}
+
+.title-centered {
+    text-align: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: repeat(12, [row] auto);
+    height: calc(100vh - 10px);
+    position: fixed;
+    top: 30px;
+    padding-left:  14px;
+    padding-right: 10px;
+}
+
+.grid-item {border: none;}
+
+.item-11 {grid-column: col 4  / span 6;  grid-row: row 1;         }
+.item-12 {grid-column: col 2  / span 3;  grid-row: row 1;         }
+.item-13 {grid-column: col 10 / span 2;  grid-row: row 1;         }
+.item-20 {grid-column: col 4  / span 6;  grid-row: row 2;         }
+.item-30 {grid-column: col 5  / span 4;  grid-row: row 2 / span 7;}
+.item-31 {grid-column: col 1  / span 4;  grid-row: row 3;         }
+.item-32 {grid-column: col 9  / span 4;  grid-row: row 3;         }
+.item-41 {grid-column: col 1  / span 4;  grid-row: row 4;         }
+.item-42 {grid-column: col 9  / span 4;  grid-row: row 4;         }
+.item-51 {grid-column: col 1  / span 4;  grid-row: row 5;         }
+.item-52 {grid-column: col 9  / span 4;  grid-row: row 5;         }
+.item-61 {grid-column: col 1  / span 4;  grid-row: row 6;         }
+.item-62 {grid-column: col 9  / span 4;  grid-row: row 6;         }
+
+
+.item-12-svg {
+  object-fit: cover;
+  width: 40%;
+  max-height: 40%;
+}
+
+.item-13 {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.item-30-svg {
+  display: grid;
+  width: 100%;
+  max-height: 60%;
+}
+
+</style>
+</head>
+<body>
+
+<amp-story
+  standalone
+  title="Template"
+  publisher=""
+  publisher-logo-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-portrait-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-square-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  poster-landscape-src="https://benetta.net/media/background-svg/background-sun-tornado-w2000-h1500.svg"
+  supports-landscape
+>
+
+<amp-story-page id="kg-item-10" data-page-no="00" data-item-label="title-page" data-item-source="ontomatica">
+<amp-story-grid-layer template="fill"><amp-img id="" data-item-role="background" data-item-type="static" data-item-label="background-neural-network-440044-FFE1FFW" src="https://s3.amazonaws.com/benetta.net/media/background-svg/background-neural-network-440044-FFE1FFW-w400-h371.svg" width="400" height="371" layout="responsive"></amp-img></amp-story-grid-layer>
+</amp-story-page>
+
+<amp-story-page id="kg-item-12" data-page-no="02" data-item-label="test-2" data-item-source="">
+<amp-story-grid-layer template="vertical">
+
+<div class="grid">
+
+<div class="grid-item item-11">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>Cotton candy pastry lemon drops chocolate.</h2>
+</div>
+</div>
+
+<div class="grid-item item-12 item-12-svg">
+<amp-img
+    src="svg-persona-biologist-w223-h305.svg"
+    width="223"
+    height="305"
+    layout="responsive"
+></amp-img>
+</div>
+
+<div class="grid-item item-13">
+<h6>Cookie topping chocolate cake chocolate topping biscuit caramels lollipop danish.</h6>
+</div>
+
+<div class="grid-item item-20">&nbsp;</div>
+
+<div class="grid-item item-30 item-30-svg">
+<amp-img
+    src="svg-function-biologist-w313-h840.svg"
+    width="313"
+    height="840"
+    layout="responsive"
+></amp-img>
+</div>
+
+<div class="grid-item item-31"><h4>col 1; row 3; Jelly jujubes marshmallow donut.</h4></div>
+<div class="grid-item item-32"><h4>col 9; row 3; Wafer cheesecake lollipop fruitcake.</h4></div>
+<div class="grid-item item-41"><h4>col 1; row 4; Pudding croissant biscuit icing.</h4></div>
+<div class="grid-item item-42"><h4>col 9; row 4; Gummi bears bonbon.</h4></div>
+<div class="grid-item item-51"><h4>col 1; row 5; Gingerbread biscuit gummies cupcake.</h4></div>
+<div class="grid-item item-52"><h4>col 9; row 5; Plum chocolate cake chocolate cake cake.</h4></div>
+<div class="grid-item item-61"><h4>col 1; row 6; Marzipan brownie halvah.</h4></div>
+<div class="grid-item item-62"><h4>col 9; row 6; Candy canes cotton candy apple pie cake.</h4></div></div>
+
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+</body>
+</html>

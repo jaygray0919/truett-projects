@@ -1,0 +1,68 @@
+
+/* source */
+/* https://codepen.io/julesforrest/pen/poEaMYM */
+/* calendar */
+/* 7 columns */
+/* 7 rows */
+
+:root {
+  font-family: "helvetica";
+  font-weight: 700;
+  font-size: 1vmin;
+  --large-text: 12em;
+  --small-text: calc(var(--large-text) / 3);
+}
+
+*,:after,:before {box-sizing: border-box;}
+
+html {height: 100%;}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	background-color: #ddd;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 2em;
+  margin: auto auto 1em auto;
+  background-color: white;
+  border-top: 4em solid black;
+  padding: 1em 2em 2em 1em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  border-top: 50px solid black;
+}
+
+.title,.labels,.days {
+  display: contents;
+}
+
+.year {
+  grid-column: 5 / 6;
+}
+
+.month {
+  grid-column: 6 / 8;
+}
+
+.month,.year {
+  font-size: var(--small-text);
+  padding-bottom: calc(var(--small-text) / 2);
+  letter-spacing: -0.05em;
+}
+
+.day-label,.day {
+  border-left: 1px solid #ddd;
+  padding-left: 2px;
+  letter-spacing: -0.1em;
+  line-height: calc(1em * 0.75);
+  font-size: var(--large-text);
+}
+

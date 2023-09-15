@@ -1,0 +1,22 @@
+
+https://meet.google.com/mdz-axok-ndz
+
+
+we'd like to use amp-story-shopping for non-shopping services.
+example: present a food or drug label with buttons at different positions.
+when a button is selected, move to a carousel item with a complementary image and a text caption ("detail" about the selected item).
+currently several fields enforce specific data types (e.g. price).
+can you relax data types for fields, but keep the field's postion in the attachment (i.e. allow us to hijack the field and its position)?
+
+
+
+
+the carousel in an amp-story-attachment for amp-story-shopping is irregular ...
+in this example, the carousel works: https://amp.dev/documentation/examples/components/amp-story-shopping/preview/?format=websites ...
+
+but - from desktop - the carousel cannot be selected here: https://wsdemos.uc.r.appspot.com/shopping ...
+in our desktop experiment, the horizontal scroll bar is not active ...
+
+out-of-focus items at the left/right edges can be selected, but a user would not clearly see how to do that ...
+also - from desktop - when using the cursor to target the carousel, left/right arrow keys advance the slide, not items in the carousel.
+

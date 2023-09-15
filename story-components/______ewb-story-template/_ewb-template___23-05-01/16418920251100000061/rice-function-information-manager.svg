@@ -1,0 +1,32 @@
+<svg id="svg-function-information-manager" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425 401" style="background-color:gray;">
+<defs>
+<style>
+:root{
+--on-ffffff:#ffffff;
+}
+@font-face{font-family:RobotoFlex;src:url('https://s3.amazonaws.com/benetta.net/fonts/robotoflex/RobotoFlex.woff2') format('woff2-variations'), url('https://s3.amazonaws.com/benetta.net/fonts/robotoflex/RobotoFlex-VariableFont.ttf') format('truetype');font-variation-settings:'wght' 400,'wdth'100,'opsz' 14,'GRAD' 0,'slnt' 0,'XTRA' 468,'XOPQ' 96,'YOPQ' 79,'YTLC' 514,'YTUC' 712,'YTAS' 750,'YTDE' -203,'YTFI' 738;font-display:swap;font-weight:100 1000;font-stretch:25% 151%;}
+.inm-st2{fill:var(--on-ffffff);stroke:none;stroke-linecap:butt;stroke-width:2.25;}
+.inm-st3{fill:none;}
+.inm-st4{fill:none;stroke:var(--on-ffffff);stroke-linecap:butt;stroke-width:5.63;}
+.inm-st5{fill:none;stroke:none;stroke-width:0.75;}
+.inm-st6{fill:var(--on-ffffff);font-family:RobotoFlex;font-size:2.25em;}
+</style>
+</defs>
+<g id="inm-25" transform="translate(110.487 -201.009)"><path class="inm-st2" d="M16.09 392.46a8.044 8.044 0 0 1-8.05 8.05A8.044 8.044 0 0 1 0 392.46a8.044 8.044 0 0 1 8.04-8.04 8.044 8.044 0 0 1 8.05 8.04Z"/></g>
+<g id="inm-26" transform="translate(168.789 -305.336)"><path class="inm-st2" d="M16.09 392.46a8.044 8.044 0 0 1-8.05 8.05A8.044 8.044 0 0 1 0 392.46a8.044 8.044 0 0 1 8.04-8.04 8.044 8.044 0 0 1 8.05 8.04Z"/></g>
+<g id="inm-27" transform="translate(168.789 -201.009)"><path class="inm-st2" d="M16.09 392.46a8.044 8.044 0 0 1-8.05 8.05A8.044 8.044 0 0 1 0 392.46a8.044 8.044 0 0 1 8.04-8.04 8.044 8.044 0 0 1 8.05 8.04Z"/></g>
+<g id="inm-28" transform="translate(168.789 -94.046)"><path class="inm-st2" d="M16.09 392.46a8.044 8.044 0 0 1-8.05 8.05A8.044 8.044 0 0 1 0 392.46a8.044 8.044 0 0 1 8.04-8.04 8.044 8.044 0 0 1 8.05 8.04Z"/></g>
+<g id="inm-29" transform="translate(147.482 -101.401)">
+<path class="inm-st4" d="M22.12 188.19H0v212.32h24.47"/></g>
+<g id="inm-31" transform="translate(117.135 -209.3)"><path class="inm-st3" d="M0 400.51h60.43H0Z"/>
+<path class="inm-st4" d="M0 400.51h60.43"/></g>
+<g id="inm-33" transform="translate(110.487 -201.009)"><path class="inm-st2" d="M16.09 392.46a8.044 8.044 0 0 1-8.05 8.05A8.044 8.044 0 0 1 0 392.46a8.044 8.044 0 0 1 8.04-8.04 8.044 8.044 0 0 1 8.05 8.04Z"/></g>
+<g id="inm-34" transform="translate(34.953 -190.724)"><path class="inm-st5" d="M0 368.065h108.184v32.44H0z"/>
+<text class="inm-st6" y="390.4">rice</text></g>
+<g id="inm-36" transform="translate(193.479 -296.631)"><path class="inm-st5" d="M0 368.065h157.524v32.44H0z"/>
+<text class="inm-st6" y="391.4">rice (crop)</text></g>
+<g id="inm-38" transform="translate(193.479 -190.461)"><path class="inm-st5" d="M0 368.065h168.774v32.44H0z"/>
+<text class="inm-st6" y="389.4">rice (plant)</text></g>
+<g id="inm-40" transform="translate(193.479 -81.447)"><path class="inm-st5" d="M0 368.065h168.774v32.44H0z"/>
+<text class="inm-st6" y="387.4">rice (food)</text></g>
+</svg>

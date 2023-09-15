@@ -1,0 +1,232 @@
+<!doctype html>
+<html
+	 amp
+	 lang="en-us"
+	 prefix="
+		 schema: http://schema.org/
+		 lcsh: http://id.loc.gov/authorities/subjects/
+		 dbp: http://dbpedia.org/resource/
+">
+<head property="schema:WebPage">
+<meta charset="utf-8">
+<title>
+Nutrition Math
+</title>
+<link rel="canonical" href="https://afdsi.org/test/amp_mathml_2/" />
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<link rel="shortcut icon" itemprop="image" href="https://ontomatica.io/static/image/onto_symb_w421_h421.png"/>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Merriweather|Ubuntu+Mono"/>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-mathml" src="https://cdn.ampproject.org/v0/amp-mathml-0.1.js"></script>
+<style amp-custom>
+
+.onto-logo {background-image:url("https://ontomatica.io/static/image/onto_logo_w325_h60.svg"); width:325px; height:60px; background-repeat:no-repeat;background-size:90%;}
+body {margin:0; padding:0; font-family:Roboto; font-size:18px; line-height:1.8}
+header {text-align: left; padding:10px 0px 10px 10px}
+article header {background:linear-gradient(to right, #1c79c0, #0389ff, #0dd3ff); text-align:left; color:#fff}
+.article-body {padding:0px 0px 20px 10px}
+
+h1,.my-container {max-width:98%; margin:0 auto}
+h2 {padding-left:10px; font-weight:700; color:#0379C4; }
+h3 {padding-left:10px; font-weight:400; font-size:14px; }
+h4 {padding-left:10px; font-weight:normal; font-size:18px; }
+
+table, td, th {
+	border: 1px solid black;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+th {
+	height: 50px;
+}
+.underline {
+	text-decoration: none;
+	border-bottom: 1px dotted; }
+p {font-family:Merriweather;}
+</style>
+
+</head><body>
+
+<header><div class="onto-logo"></div></header>
+
+<main role="main">
+<article>
+
+<header>
+<h1 itemprop="headline">
+Nutrition math
+</h1>
+</header>
+
+<div class="article-body" itemprop="articleBody">
+<div>
+<h2>
+Amino Acids
+</h2>
+</div>
+
+
+<div class="math">
+<amp-mathml
+	layout="container"
+	data-formula="
+		\[\begin{align}
+		AAE8=\sum_{1}^8(essential-amino-acids)
+		\end{align}\]
+	"
+></amp-mathml>
+</div>
+<p>Which reduces to:</p>
+<div class="math">
+<amp-mathml
+	layout="container"
+	data-formula="
+	\[\begin
+	{split}
+		\begin{align}
+			AAE8=[isoleucine]\\
+			+[leucine]\\
+			+[lysine]\\
+			+[methionine]\\
+			+[phenylalanine]\\
+			+[threonine]\\
+			+[tryptophan]\\
+			+[valine]
+		\end{align}
+	\end
+	{split}\]
+"></amp-mathml>
+</div>
+
+<p>
+Introducing semantic syntax in the form of a
+&#x0020;
+<a class="underline" href="http://en.wikipedia.org/wiki/CURIE">CURIE</a>
+&#x0020;
+where the
+&#x0020;
+<a class="underline" href="../10_dir/$_10-term-project.html#terms-authority"><em>authority</em></a>
+&#x0020;
+is &#8220;infoods&#8221; and the
+&#x0020;
+<a class="underline" href="http://en.wikipedia.org/wiki/Uniform_resource_identifier">Universal Resource Identifier</a>
+&#x0020;
+is the unique INFOODS &#8220;tag&#8221;:
+</p>
+
+<div class="math">
+<amp-mathml
+	layout="container"
+	data-formula="
+		\[\begin{split}
+			\begin{align}
+				[infoods:AAE8]=[infoods:ILE]\\
+				+[infoods:LEU]\\
+				+[infoods:LYS]\\
+				+[infoods:MET]\\
+				+[infoods:PHE]\\
+				+[infoods:THR]\\
+				+[infoods:TRP]\\
+				+[infoods:VAL]
+			\end{align}
+		\end{split}\]
+
+"></amp-mathml>
+</div>
+
+<p>
+Now replace the operator symbol &#8220;&#x002B;&#8221; with its equivalent semantic operator
+&#x0020;
+<span class="pre">[ncit:C64911]</span>.
+</p>
+
+<div class="math">
+<amp-mathml
+	layout="container"
+	data-formula="
+	\[\begin{split}
+		\begin{align}
+			[infoods:AAE8]=[infoods:ILE]\\
+			[ncit:C64911][infoods:LEU]\\
+			[ncit:C64911][infoods:LYS]\\
+			[ncit:C64911][infoods:MET]\\
+			[ncit:C64911][infoods:PHE]\\
+			[ncit:C64911][infoods:THR]\\
+			[ncit:C64911][infoods:TRP]\\
+			[ncit:C64911][infoods:VAL]
+		\end{align}
+	\end{split}\]
+"></amp-mathml>
+</div>
+
+<p>
+To be absolutely clear, the
+&#x0020;
+<span class="red">unit</span>
+&#x0020;
+to express a value for an amino acid is:
+</p>
+
+<dl>
+<dt></dt>
+<dd>
+&#8220;grams per 100 grams per edible portion&#8221;
+&#x0020;
+<span class="pre">[vocal:v62177]</span>:
+</dd>
+</dl>
+
+<div class="math">
+<amp-mathml
+	layout="container"
+	data-formula="
+		\[\begin{split}
+			\begin{align}
+			[infoods:AAE8]_{g-100-g-EP}=\\
+				([infoods:ILE][vocal:v62177])\\
+				[ncit:C64911]([infoods:LEU][vocal:v62177])\\
+				[ncit:C64911]([infoods:LYS][vocal:v62177])\\
+				[ncit:C64911]([infoods:MET][vocal:v62177])\\
+				[ncit:C64911]([infoods:PHE][vocal:v62177])\\
+				[ncit:C64911]([infoods:THR][vocal:v62177])\\
+				[ncit:C64911]([infoods:TRP][vocal:v62177])\\
+				[ncit:C64911]([infoods:VAL][vocal:v62177])
+			\end{align}
+		\end{split}\]
+"></amp-mathml>
+</div>
+
+<p>
+Each amino acid in a sample will have a &lt;value&gt; in the form of a floating point number
+&#x0020;
+<span class="pre">[xsd:float]</span>:
+</p>
+<div class="math">
+<amp-mathml
+	layout="container"
+	data-formula="
+		\[\begin{split}
+			\begin{align}
+			[infoods:AAE8]_{[vocal:v62177]}=\\
+			([infoods:ILE][vocal:v62177][xsd:float]&lt;value&gt;)\\
+			[ncit:C64911]([infoods:LEU][vocal:v62177][xsd:float]&lt;value&gt;)\\
+			[ncit:C64911]([infoods:LYS][vocal:v62177][xsd:float]&lt;value&gt;)\\
+			[ncit:C64911]([infoods:MET][vocal:v62177][xsd:float]&lt;value&gt;)\\
+			[ncit:C64911]([infoods:PHE][vocal:v62177][xsd:float]&lt;value&gt;)\\
+			[ncit:C64911]([infoods:THR][vocal:v62177][xsd:float]&lt;value&gt;)\\
+			[ncit:C64911]([infoods:TRP][vocal:v62177][xsd:float]&lt;value&gt;)\\
+			[ncit:C64911]([infoods:VAL][vocal:v62177][xsd:float]&lt;value&gt;)
+			\end{align}
+		\end{split}\]
+"></amp-mathml>
+</div>
+<br><br>
+
+</div>
+</article>
+</main>
+
+</body></html>

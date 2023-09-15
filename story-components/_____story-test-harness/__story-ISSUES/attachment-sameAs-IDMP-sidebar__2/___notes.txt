@@ -1,0 +1,27 @@
+
+16:04 7/26/2022
+why does amp-list fail?
+
+test: any list in amp-story-attachment
+
+https://afdsi.com/__amp-issues/attachment-sameAs-IDMP-sidebar/
+this version behaves correctly
+the local version is corrupt
+
+
+index-data-url.html
+  moved amp-state to amp-list
+
+link
+  https://afdsi.com/__amp-issues/amp-story-avec-list/data.json
+
+JSON is valid
+
+error
+[Action] "AMP.setState" is not allowlisted [].
+
+
+amp-list substitution fails
+  wikipedia image
+  text for tabs
+

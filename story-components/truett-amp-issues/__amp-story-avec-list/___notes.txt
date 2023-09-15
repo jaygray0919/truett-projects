@@ -1,0 +1,26 @@
+
+11:41 5/28/2023
+
+target:
+https://afdsi.com/_google/amp-story-avec-list/
+
+valid
+https://validator.ampproject.org/#url=https%3A%2F%2Fafdsi.com%2F_google%2Famp-story-avec-list%2F
+
+
+amp-img success here
+	https://afdsi.com/164189302300000061/
+
+when using amp-img and same source in amp-story
+	https://afdsi.com/164189302300000061/data.json
+images fail
+
+<amp-list
+      src="https://afdsi.com/164189302300000061/data.json"
+ template="mst-1"
+    width="auto"
+   height="900"
+   layout="fixed-height"
+  binding="no"
+>
+

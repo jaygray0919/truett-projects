@@ -1,0 +1,2720 @@
+FAO / INFOODS Guidelines
+Guidelines for Checking Food
+Composition Data prior to the publication
+of a Table/Database - Version 1.0
+
+FAO/INFOODS
+Guidelines
+for Checking Food Composition Data
+prior to the Publication of a User
+Table/Database
+Version 1.0
+
+Prepared by:
+
+U. Ruth Charrondiere, Barbara Stadlmayr, David Haytowitz, Marine Oseredczuk, Jayne Ireland,
+Petro Wolmarans, Doris Rittenschober, Barbara Selley, Prapasri Puwastien, Ólafur Reykdal, Adriana
+Blanco, Aida Aguinaldo, Henrietta Ene-Obong, Pamela Pehrsson, Christiant Pascal Kouebou, T.
+Longvah, Kamda Silapeux Aristide Guillaume, Catherine Champagne, Verena Nowak, Ramani
+Wijesena-Bettoni
+Cite as:
+FAO/INFOODS (2012). FAO/INFOODS Guidelines for Checking Food Composition Data prior
+to the Publication of a User Table/Database-Version 1.0. FAO, Rome.
+
+FAO, Rome 2012
+
+The designations employed and the presentation of material in this
+information product do not imply the expression of any opinion whatsoever
+on the part of the Food and Agriculture Organization of the United Nations
+(FAO) concerning the legal or development status of any country, territory, city
+or area or of its authorities, or concerning the delimitation of its frontiers or
+boundaries. The mention of specific companies or products of manufacturers,
+whether or not these have been patented, does not imply that these have
+been endorsed or recommended by FAO in preference to others of a similar
+nature that are not mentioned.
+The views expressed in this information product are those of the author(s) and
+do not necessarily reflect the views of FAO.
+
+E-ISBN 978-92-5-107368-1 (PDF)
+
+All rights reserved. FAO encourages reproduction and dissemination of
+material in this information product. Non-commercial uses will be authorized
+free of charge, upon request. Reproduction for resale or other commercial
+purposes, including educational purposes, may incur fees. Applications for
+permission to reproduce or disseminate FAO copyright materials, and all
+queries concerning rights and licences, should be addressed by e-mail to
+copyright@fao.org or to the Chief, Publishing Policy and Support Branch,
+Office of Knowledge Exchange, Research and Extension, FAO,
+Viale delle Terme di Caracalla, 00153 Rome, Italy.
+
+© FAO 2012
+
+Table of contents
+Acknowledgement ....................................................................................................................... iii
+List of abbreviations and symbols ............................................................................................... iv
+1. Background and objectives .......................................................................................................1
+2. General food composition issues...............................................................................................2
+2.1 Food identification ..............................................................................................................2
+2.1.1 Food names and description of foods ...........................................................................3
+2.1.2 Food groups ..................................................................................................................3
+2.1.3 Food codes....................................................................................................................4
+2.2 Component nomenclature, conventions and expressions ....................................................4
+2.2.1 Component identifiers ..................................................................................................5
+2.2.2 Component conventions and expressions ....................................................................6
+2.2.3 Extent and treatment of missing values........................................................................7
+2.2.4 Component selection ....................................................................................................7
+2.3 Recipes ................................................................................................................................7
+2.4 Documentation of user tables/DBs ......................................................................................8
+2.4.1 Introduction/general documentation ............................................................................8
+2.4.2 Documentation in the user table/DB ............................................................................9
+2.4.3 Food Index and Reference list ......................................................................................9
+2.5 Food Composition Database Management Systems (FCDBMS) .......................................9
+3. Checks .....................................................................................................................................11
+3.1 Checks on food identification ...........................................................................................11
+3.2 Checks on components ......................................................................................................13
+3.3 Checks on recipes ..............................................................................................................23
+3.4 Checks on data documentation ..........................................................................................24
+Annex 1 Extract of food components, recommended units and INFOODS tagnames ................26
+Annex 2 Units, significant figures and maximum decimal places ...............................................36
+Annex 3 Conversion factors.........................................................................................................37
+References ...................................................................................................................................41
+
+ii
+
+Acknowledgement
+We are grateful for the helpful comments of Hei Mei, Josephine Deeks, Robert Fungo, Josefa Rubio
+Mañas, Achu Mercy Bih Loh, Norma Samman, Peju Olapeju, Serge Nzali, Hettie Schönfeldt, Victor
+N. Enujiugha, Yasmine Probst, Marie Modestine Kana Sop, Harriet Kuhnlein.
+We thank Kristy Ebanks for the design of the cover and Ruth Charrondiere for providing the
+pictures.
+
+iii
+
+List of abbreviations and symbols
+
+Abbreviations
+DB
+DM
+EP
+FAO
+FCDB
+FCDBMS
+g
+INFOODS
+kcal
+kJ
+mcg
+mg
+mL
+NV
+RF
+SD
+SE
+YF
+
+Database
+Dry matter
+Edible portion on fresh weight basis
+Food and Agriculture Organization of the United Nations
+Food composition database
+Food composition database management system
+gram
+International Network of Food Data Systems
+kilocalories
+kilojoules
+microgram
+milligram
+milliliter
+Nutrient value
+Nutrient retention factor
+Standard deviation
+Standard error
+Yield factor
+
+Symbols
+<
+>
+≥
+=
+≈
++
+∑
+
+%
+
+less than
+less than or equal to
+greater than
+greater than or equal to
+equal to
+approximately equal to
+plus
+minus
+sum
+percentage
+
+iv
+
+1. Background and objectives
+Food composition data play an essential role in many sectors, including nutrition, health, agriculture,
+environment, food labelling and trade (Burlingame, 2004; Greenfield and Southgate, 2003;
+Pennington, 2008). Over the last 25 years, INFOODS has developed many international standards,
+guidelines and tools to obtain harmonized food composition data. They contain criteria for
+analytical data, guidelines on component identifiers, data compilation, food nomenclature,
+interchange and quality evaluation (; INFOODS, 2012a; Greenfield and Southgate, 2003; Klensin et
+al., 1989; Rand et al., 1991; Truswell et al., 1991). They were supplemented by guidelines from others
+such as EuroFIR (EuroFIR, 2012a; Westenbrink et al., 2009). However, as there are no guidelines on
+the validation/verification of data prior to publishing them in a user table/database (DB), INFOODS
+and FAO decided to develop such guidelines through the INFOODS network.
+The document was constructed on the assumption that the user table/DB was developed according
+to the criteria set by Greenfield and Southgate (2003, pp.14-15) as outlined in Figure 1. It reflects the
+different stages of food composition database management until the production of user tables/DBs.
+Checks should be performed at all levels of the food composition database (FCDB) and a final check
+is recommended before the release of a user table/DB. The checks described in this document are
+related to compiled/aggregated data before publication in user tables/DBs.
+
+Data flow in food composition database
+Data source
+
+Collection of data (paper, electronic)
+
+Evaluate data against a set of criteria and assign quality
+Archival database
+Original data
+
+Reference database
+
+Enter assembled data in archival DB incl.
+own analytical data
+Aggregation, calculation, estimation,
+comparison, evaluation, completion of
+missing data
+
+Selection of foods and components for user database
+User database
+
+Publish concise or comprehensive
+30
+user database or table – printed, electronic
+
+Figure 1. Different stages in food composition data DB management (Charrondiere, 2012a)
+The objective of this document is to outline comprehensively the internal checks to be carried out on
+the food composition data and documentation prior their publication in the user table/DB (section
+3). For those compilers not yet familiar with the compilation and publication procedures of food
+composition data, a section on general issues (section 2) was added to give a brief overview of
+important issues which are useful for a better understanding of the checks and for keeping the checks
+as short as possible, i.e. without the need for further explanations. Experienced compilers will
+probably not need to go through section 2 and are invited to go immediately to section 3, checks.
+
+1
+
+Additional information is found in the annexes which provide further useful information for those
+with less experience in database compilation.
+The development of the guidelines started in 2011 and took about one year of consultation over email to finalize the document. The proposed checks are based on the available literature (see
+reference list) and the experience of various compilers. These checks should at least be carried out at
+the end of the compilation process (i.e. prior to publishing in user table/DB) but many of them
+should already have been applied at all compilation steps (e.g. data entry, reference DB). This
+document is a “work in progress” which will be progressively extended and updated.
+
+2. General food composition issues
+This section reviews the most important aspects of general food composition issues including
+information on food identification, component nomenclature, recipes, documentation, food
+composition database management systems (FCDBMS) and issues related to user tables and DBs. For
+more information on these general aspects see Charrondiere et al. (2011ab) and Greenfield and
+Southgate (2003). This section is mainly targeted for less experienced compilers.More experienced
+compilers can skip this section and go immediately to section 3; p. 11.
+User table/DB
+Throughout the document, a distinction is made between a user table and database (DB), both
+being the end product of a compilation process which involves various levels of data and activities
+described in Figure 1 (p. 1). In general, the user table/DB is a subset of the reference DB. The main
+difference between a user table and DB is that the tables are 2 dimensional and often in printed
+formats (e.g. PDF) and the DBs are multi-dimensional in electronic format (e.g. Microsoft Access).
+Electronic forms are preferable to printed tables as they allow capturing a higher volume of data. In
+addition, they are easier to update and can reach wider distribution if they are made publicly
+available on the internet. They also enable programming personnel to incorporate the data into
+software programs allowing for easier nutrient analysis of dietary assessment instruments, such as
+food records kept by study participants. In some countries, however, e.g. developing countries,
+printed tables are important and often the best way for distribution (Charrondiere et al., 2011ab,
+Module 9; Charrondiere, 2012c).
+Different formats exist according to user´s needs, including:
+Comprehensive user DB which includes many foods, components and metadata
+Abbreviated/abridged user table/DB which represents a smaller set of foods and components,
+usually without metadata but general documentation
+Special user table/DB which covers specific components
+Complete user DB which is used for nutrient intake assessment and does not have any missing
+values
+
+2.1 Food identification
+Food identification includes food naming, food description, food classification and food coding.
+Accurate food names and descriptions of foods are mandatory because, without them, the food
+cannot be identified correctly. Food codes or food identification numbers are mandatory and critical
+in the different levels of a food composition database (FCDB) and are highly recommended to be
+
+2
+
+published in user tables/DBs. Food groups are optional but are useful e.g. for users to identify and
+retrieve foods in the user table/DB.
+2.1.1 Food names and description of foods
+Food name and descriptors should be comprehensive enough to allow for an unambiguous
+identification of the food and should include all characteristics that influence the nutrient contents.
+Two nutrients are important to check the food description: water for all foods and fat for foods
+where fat can vary substantially (e.g. meat, cheese, milk products).
+Characteristics that influence the nutrient content of foods include:
+Processing and preparation state
+Colour
+Maturity stage
+Part/source of the food
+Fortification/enrichment level
+Reduction of components (e.g. sodium, sugar for `light foods`)
+Biodiversity (different varieties, cultivars, breeds)
+Wild versus domesticated plants and animals
+Edible portion/refuse (even though edible portion considered as part of the food description, it is
+included in checks for components because in INFOODS, edible portion is treated as a
+component)
+It may be necessary to provide two or more entries for a single food in a user table/DB, where
+differences in composition are sufficient to justify separate food records, e.g. for different
+varieties/cultivars, fortified and unfortified food, etc. See also the FAO/INFOODS Guidelines for
+Food Matching (FAO/INFOODS, 2011).
+Sets of recommendations on food nomenclature exist. Many of them are national or regional and are
+based on standards (e.g. Codex Alimentarius), legislation and traditions. Descriptive terms can be
+included in the food name or provided in separate fields. Food description in separate fields should
+follow one of the two internationally recognised food description systems: INFOODS Guidelines
+for Describing Foods (Truswell et al., 1991) and LanguaL, the International Framework for Food
+Description (LanguaL, 2012). The INFOODS Food Description System uses free text in a faceted
+description, whereas LanguaL uses standardized vocabulary from a faceted, language-independent
+thesaurus (Pennington, 1996). An example of INFOODS facetted food description can be seen in the
+online New Zealand database (http://www.foodcomposition.co.nz), and examples of LanguaL food
+indexing can be downloaded from the LanguaL site (http://www.langual.org).
+Scientific names are essential for identifying the food more precisely and are particularly relevant for
+international interchange and use. To verify scientific names, authoritative sources should be
+consulted; links to many of these are available through SciName Finder (http://www.sciname.info/).
+2.1.2 Food groups
+No international agreement exists on a common food grouping in general nor specifically for food
+composition. Food grouping/classifications are purpose driven and therefore, many food
+classifications exist for different purposes/objectives (Ireland and Møller 2000) e.g. CIAA Food
+Categorization System for Food Additives, Codex Alimentarius Classification of Food and Feed
+Commodities.
+
+3
+
+However, food grouping for food composition is not as important as for other purposes, as foods are
+easily found through the food index, even if they are listed in different food groups among countries
+and regions. In some user tables/DBs, food groups are merged when only a few foods of several food
+groups are included (e.g. ‘Meat, poultry, fish and their products’). Moreover, countries often add
+specific food groups to reflect the level of importance of certain foods within their country (e.g. food
+group ‘Coconut products’ in the South Pacific region). Many user tables/DBs also use subgroups, e.g.
+‘Grains and flour’, ‘Breads’, ‘Pasta’, ‘Prepared foods’, ‘Tortillas’, ‘Cakes’, ‘Dough’, and ‘Breakfast
+cereals’ under ‘Cereals and their products’. Some examples of commonly used food groups in user
+tables/DBs can be found in Greenfield and Southgate (2003, pp. 36-39) or Charrondiere et al.,
+(2011ab, Module 3). Some of these examples are shown below:
+Examples of food groups
+Cereals and cereal products
+Starchy roots and tubers and their products
+Legumes and their products
+Vegetables and their products
+Fruits and their products
+Nuts and their products
+Sugar, sweets and syrup
+Meat and poultry and their products
+Eggs and their products
+Fish and their products
+Milk and their products
+Fat and oils
+Beverages
+Miscellaneous
+Examples of additional food groups
+Insects and wild animals and their products
+Coconut and their products e.g. in the South Pacific region
+2.1.3 Food codes
+Every food in a user table/DB must have a unique food code, which should be the same at all levels
+of the FCDB (e.g. archival, reference and user table/DB). This allows tracing the data throughout the
+FCDB. Food codes can be simple sequential numbers, or else composite codes, comprised of a food
+group identifier (and possibly subgroup identifier) and a unique identifier within the food group (e.g.
+“A0001”, “0101001”) (Charrondiere et al., 2011ab, Module 3).
+If a sequential food coding system is specially created for a user table/DB, a correspondence table
+needs to be prepared between the food codes in the FCDB and in the user table/DB linking the food
+code between the various tables, To assist users, foods should be listed alphabetically within each
+food group in a user table. In a user DB, foods can be sorted on food group, food name and/or food
+code
+
+2.2 Component nomenclature, conventions and expressions
+This section includes information on the importance of unambiguous food component
+identification. An extract of food components with recommended units and INFOODS tagnames as
+well as EuroFIR component identifiers is given in Annex 1 (p. 26) . In addition, this section and the
+
+4
+
+Annexes 2 (p. 36) and 3 (p. 37) cover information on data expressions (e.g. units, denominators,
+significant figures, maximum decimal places) and conversion factors. For more information see
+Charrondiere et al. (2011ab, Module 4 b and c) and Greenfield and Southgate (2003, pp.79-147; 163170; 179-181).
+2.2.1 Component identifiers
+The effective use of food composition data requires precise identification of the components.
+Common component names (e.g. vitamin A or carbohydrates) are often not sufficiently precise to
+identify components unambiguously. Many food components informally have the same name but
+vary because of differences in:
+expression (e.g. carbohydrates available: expressed in monosaccharide equivalents vs. by weight),
+definition (e.g. vitamin A: retinol activity equivalents vs. retinol equivalents) or
+analytical methods resulting in different values (e.g. fibre: AOAC-Prosky dietary vs. crude)
+Therefore, standardized systems of component identification are important in order to identify
+unambiguously components, units and methods, to document the data in the same way across
+countries, and to interchange data unambiguously.
+Different systems of component identifications exist. For use in FCDBs, the two widely used systems
+are:
+INFOODS food components identifiers also called Tagnames (INFOODS, 2012b, Klensin et
+al., 1989). Tagnames are abbreviated food component identifiers that make the unambiguous
+identification of all food components possible, to the extent the method of analysis allows.
+Information on methods, expression (e.g. carbohydrates available: expressed in monosaccharide
+equivalents vs. by weight) and definition (e.g. vitamin A: retinol activity equivalents vs. retinol
+equivalents) is included in the tagname. This comprehensive system allows a practical use of the
+INFOODS tagnames also in simple FCDBMS (such as the FAO/INFOODS Compilation Tool
+in Excel). Component values with the same tagname are comparable, whereas those with
+different tagnames are not. An extract of food components, recommended units and INFOODS
+tagnames is given in Annex 1 (p. 26). Originally, the unit and denominator were part of the
+tagnames but were separated in 2003 and are now listed as recommended units.
+EuroFIR component identifiers (EuroFIR, 2012b). EuroFIR component identifiers are based
+on INFOODS food component identifiers. The EuroFIR system for components can be
+regarded as a description system with thesauri and descriptors. In the EuroFIR component
+identification system, information on component identity, method and data expression is
+reported in separate fields. This means before knowing which components values can be
+aggregated different fields need to be consulted: the fields for component identifier, method,
+expression and unit (see Annex 1; p. 26).
+Components used in the user table/DB should be documented, including the food component
+identifiers, methods of analysis and unit of the single components. It is also important to document
+the conversion factors that were used for calculated components in the documentation of the user
+table/DB, and if possible also at value level (see also 2.4 Documentation, in the current document).
+Note:
+Values of different INFOODS tagnames cannot be compared or combined directly, because different
+analytical methods, definitions or expressions for these components yield significantly different
+values. When aggregating data in the reference DB it is important to combine only those values
+
+5
+
+which have the same tagname and keywords. Example: Among all dietary fibre definitions, the
+compiler decides that values for total dietary fibre (Prosky method) (FIBTG) will be displayed in the
+user table/DB. When calculating the mean/median for one food item from different data source, one
+has to excludeundesired fibre expressions (crude fibre (FIBC) and other dietary fibre definitions)
+when calculating the average for total dietary fibre (FIBTG).
+When the INFOODS component identifier system is used, the recommendation is to list all relevant
+taganmes for the different components in the archival and reference DB and to add a field
+`standardized nutrients` in the reference DB, which will contain the selected value to be published in
+the user table/DB.
+2.2.2 Component conventions and expressions
+Units and denominators
+Each compositional value is defined by a unit (how much of the specific component) and a
+denominator (in how much of a given quantity of foodstuff). The most common basis to present
+food composition data in a FCDB is per 100 g edible portion on fresh weight basis (EP), also for
+beverages (and not per 100 mL) - see also section below.
+Significant figures and maximal decimal places
+Data should not give a false impression of preciseness/accuracy. The last digit in the values should
+reflect the precision of the analysis. Significant figures are different from decimal places in a value.
+Example: 123, 12.3, 0.123 have all three significant figures, even though they have different numbers
+of decimal places. In the user table/DB the number of significant figures and maximal number of
+decimal places for each nutrient should be established. This will either require programming in a
+sophisticated FCDBMS for the output format of the user table/DB, or it needs to be done manually
+(in e.g. Microsoft Excel) as this application does not have this capability built-in to their formats.
+Regarding decimal places, no decimal places should be added but values with higher decimal places
+should be truncated to maximal number of decimal places (Greenfield and Southgate, 2003, pp.163166; Charrondiere et al., 2011ab, Module 4c).
+In most cases, three significant figures are the maximum required in a user table/DB. A table
+presenting the most widely used units, significant figures and maximal decimal places of food
+composition values in user tables/DBs is given in Annex 2 (p. 36)
+Rounding procedures
+Where values are being summed for statistical purposes, the conventional rounding rules are
+appropriate (0-4: round down and 6-9: round up), with even values in front of 5 being rounded down
+(e.g. 0.25 becomes 0.2) and uneven numbers in front rounded up (e.g. 0.55 becomes 0.6) to avoid
+significant bias. (Greenfield and Southgate, 2003, pp.163-166; Charrondiere et al., 2011ab, Module
+4c).
+Conversion factors
+Conversion factors are used to convert a quantity expressed in one set of units to another set of units,
+or to account for different nutrient activities. It is advisable to avoid copying calculated values from
+other sources (e.g. energy or vitamin equivalents). These values should always be calculated in one’s
+own DB based on the contributing values and the definition chosen. The use of data from other
+sources cannot assure that the value is really calculated according to the definition except when all
+contributing values and their conversion factors are listed and a recalculation is possible
+(Charrondiere et al., 2011ab, Module 4bc).
+
+6
+
+Energy and nitrogen to protein conversion factors are given in Annex 3 (p. 37). Conversion factors
+for vitamin A, vitamin E, vitamin D equivalents, folate equivalents and niacin equivalents are part of
+the component definition in INFOODS tagnames and are therefore included in Annex 1 (p. 26).
+When using EuroFIR component identifiers conversion factors should be documented in the
+appropriate method fields. For more information on conversions see the FAO/INFOODS
+Guidelines on conversions among different units, denominators and expressions (FAO/INFOODS,
+2012a).
+Liquid foods
+Liquid foods are frequently measured by volume and expressed per 100 g or 100 mL. However, in a
+user DB, in order to avoid confusion and errors, it is recommended that data for liquids also be
+expressed per 100 g. It is desirable to present density data of the liquid foods in order to allow
+appropriate conversion from mL to g and vice versa. For reference of density data see e.g. the
+FAO/INFOODS Density Database version 2 (FAO/INFOODS, 2012b) and the FAO/INFOODS
+Guidelines on Conversion among different units, denominators and expressions (FAO/INFOODS,
+2012a).
+2.2.3 Extent and treatment of missing values
+The aim is to have no missing values, or as few gaps as possible, because missing values lead to a bias
+of nutrient intake estimations. Missing values for foods, which are also ingredients of recipes, are
+especially critical as they lower the calculated nutrient values of the recipe. Methods to estimate
+missing nutrient values are provided by Charrondiere et al. (2011ab, Module 8), Schakel et al. (1997)
+and Greenfield and Southgate (2003, p.7-9).
+2.2.4 Component selection
+The minimal components suggested in a user table/DB are energy, water, fat, protein, carbohydrates,
+alcohol1, dietary fibre and ash if, carbohydrates are calculated by difference (Greenfield and
+Southgate, 2003). They are often listed together with nutrients of public health importance. Some
+user tables/DBs include over 100 components and list amino and fatty acids or phytochemicals.
+
+2.3 Recipes
+The nutrient values of recipes can be obtained through analysis or through calculations. The
+calculation of recipes is a cost-effective and good alternative to analysis, if the calculation is
+undertaken correctly. For recipe calculations, yield factors (YF) and nutrient retention factors (RF)
+must be applied.
+Yield factors (YF) are the percentage weight change in foods or recipes due to cooking.
+Nutrient retention factors (RF) are the percentage preservation of nutrients, especially of
+vitamins and minerals, in a food or dish after storage, preparation, processing, holding warm or
+reheating.
+YF and RF can be obtained in different ways: (1) weighting or analysing of the food/recipe before
+and after cooking, (2) calculating the YF of a recipe based on the YFs of its ingredients, or (3) by
+copying YF and RF from the literature. References for YF and RF include Bergström (1994); Bognár
+
+1
+
+If only few alcoholic beverages are present in the user table/DB the alcohol content can be part of the food name but, the
+values need to be included in the calculation of energy and carbohydrates calculated by difference
+
+7
+
+(2002); EuroFIR (2012d); Food Standards Agency (2002); Murphy et al. (1975); USDA (2007); USDA
+(1975).
+Different types of recipe calculation systems exist. They differ if and where yield factors (YF) and
+nutrient retention factors (RF) are applied (Charrondiere et al., 2011ab, Module 8):
+Ingredient method, i.e. YF and RF are applied at ingredient level
+Recipe method, i.e. YF and RF are applied at recipe level
+Mixed method, i.e. YF is applied at recipe level and RF at ingredient level
+Raw ingredient method: i.e. summing nutrient values of raw ingredients without applying any
+factors (not recommended except for raw dishes, e.g. fruit salad, sandwiches)
+Note:
+It is better to calculate nutrient values of foods with high YF (e.g. boiled rice) by adding the
+ingredient + water in the recipe calculation, in order to take the nutrient values of water into
+account, instead of applying the YF to the food. Moreover, it is preferable to use salt in the recipe
+calculation (e.g. boiled potatoes with salt) especially as salt intake is becoming more and more an
+issue in non-communicable diseases. If not, the salt intake is underestimated.
+Recipes may be named differently within countries even if they contain the same ingredients; or
+recipes may have the same name but contain different ingredients depending on the region. A
+solution to this would be to add the varying ingredients and/or region to the recipe name (and
+probably the synonym name). For more information on recipe calculation see Charrondiere et al.
+(2011ab, Module 8).
+
+2.4 Documentation of user tables/DBs
+
+Documentation is essential for data quality and data evaluation. Documentation should be
+comprehensive and complete. There are three parts of data documentation. The first part describes
+the overall DB which is usually handled in the introduction or the general documentation of the user
+table/DB. The second part refers to the documentation at value and/or food level in the table/DB as
+such. The third part comprises the food index and the reference list.
+If the primary language of the user table/DB is not English it is advisable to publish the general
+documentation and the index of food names in English, to facilitate international usage.
+2.4.1 Introduction/general documentation
+The introduction/general documentation of the user table/DB should include all essential
+information for users. It should include information on the total number of foods, the total number
+of components included, as well as the version number and year of the edition. Moreover, significant
+differences compared to the previous version should be reported. It is essential to provide
+information on food identification (see also section 2.1); component nomenclature (see also section
+2.2) and recipes (see also section 2.3). It is also recommended to explain the method of compilation
+and possibly to indicate which food composition database management system was used (see also
+section 2.5). The documentation for a user DB must include files formats and descriptions of all
+tables and fields.
+If relevant, information on the quality of the data and data evaluation should be documented.
+Quality assessment systems have been developed by EuroFIR (EuroFIR, 2009; Westenbrink et al.,
+2009) and USDA (Holden et al., 2002; Haytowitz, et al., 2009) including specific questions to make a
+
+8
+
+standardized and objective data assessment possible. For more general information on quality
+considerations see Charrondiere et al. (2011ab, Module 11) and Greenfield and Southgate (2003, pp.
+171-186).
+2.4.2 Documentation in the user table/DB
+Where possible, values should be documented with metadata in the user table/DB (e.g. numbers of
+food samples analyzed, the analytical methods used, sampling plan and any quality assurance
+procedures in place). However, these metadata are often only recorded in the unpublished reference
+database. Such documentation in the reference database should avoid the need to refer back to the
+original data sources if queries arise and would allow revision of quality assessment if their criteria
+evolve over time. Methods of analysis and calculation, sampling procedures and literature sources
+should be documented at value level in the user table/DB so the user can perform an independent
+evaluation or comparison with other data sources. Only documentation at the value level allows
+users to know the analytical method and/or definition for each value. If documentation at the value
+level is not possible, at least documentation should be given at the component level (e.g. usual
+analytical or calculation method) and/or on food level (e.g. whether food was borrowed, is a recipe
+or was analysed). For more information see Charrondiere et al. (2011ab, Module 10).
+2.4.3 Food Index and Reference list
+Food index
+The food index is only needed in user tables. It should include the food name in alphabetic order in
+the national language/languages (if several exist), the scientific name, food code, and page number. If
+different languages are used, there should be as many indexes as languages.
+Reference list
+The Reference List includes bibliographic references to sources of data, recipes and methods that are
+cited in the user table/DB. Data sources should ideally be documented at value level, or at least at
+food level. In both cases the entire bibliographic references should be reported in the reference list of
+the user table/DB, and it should be possible to cross check the single nutrient values or food entries
+with their references. Consistent reference style should be used in the Reference List. Protection of
+confidential data sources should be ensured (e.g. data obtained from an industry that does not want
+to give their exact source).
+
+2.5 Food Composition Database Management Systems (FCDBMS)
+
+As documentation is fundamental for food composition, the food composition database management
+system (FCDBMS) should be capable to handle this task. The use of computerized FCDBMS allows
+the compiler to store, document and manage large volumes of food composition data in a
+standardized way, and to extract food composition data for publication in a user table/DB.
+Many FCDBMS have been developed by national compilers, for example in the US (USDA, 2011)
+and in Europe (EuroFIR, 2012c). However, the development of national FCDBMS software is
+expensive, and many countries, in particular developing countries, lack the necessary financial
+resources for software development. Therefore, FAO/INFOODS developed the first publicly
+available compilation tool using internationally recognized standards and guidelines, allowing
+standardized compilation, documentation and management of food composition data (Charrondiere
+and Burlingame, 2011). The FAO/INFOODS Compilation tool in Microsoft Excel format is
+available at the INFOODS webpage (http://www.fao.org/infoods/software_en.stm), free of charge.
+For more information on Food composition database management systems and data interchange, see
+
+9
+
+Charrondiere et al. (2011ab, Module 9). In addition to this tool, there are some ongoing projects to
+develop FCBDMS for compilers, following EuroFIR standards (FoodCase, 2012).
+The FAO/INFOODS Compilation tool in excel format is available at the INFOODS webpage, free
+of charge http://www.fao.org/infoods/software_en.stm. For more information on Food
+composition database management systems and data interchange, see Charrondiere et al. (2011ab,
+Module 9).
+The FCDBMS determines which data management, documentation, quality assessment and checks
+can be carried out on the data and at which level (general, food, component and/or value level) and if
+they can be programmed and/or run automatically or manually. For example, a FCDBMS managing
+a relational database would automatically avoid double entries for food codes, food names, and food
+group codes or names. In Excel these checks need to be done manually. The choice of the FCDBMS
+and its capacities therefore has implications for checks that need to be done manually or
+automatically, but even with a sophisticated system, checks have to be defined and programmed in
+the application (e.g. if done on value, food, component level or throughout the database). Therefore,
+the list of checks in section 3 (p. 11) is useful for all FCDBMS. It should be noted that a FCDBMS is
+only a tool and that different FCDBMS following the same compilation method and using the same
+original data should give exactly the same results.
+
+10
+
+3. Checks
+As mentioned earlier, the data checks as outlined in this document are targeted mainly to the final
+step of compilation, e.g. prior to publication of the user table/DB. At this stage, the compiler needs
+to assure that all data checks have been carried out systematically throughout the whole compilation
+process, while other checks are only relevant for this final stage. The document will not explain in
+detail at which level of the compilation process the listed checks are relevant but it is understood that
+many checks are often relevant also at earlier stages of the compilation process (data entry, archival
+database and reference database – see figure 1 at page1).
+All data in the user table/DB should be checked for accuracy, consistency and completeness
+including checks on food identification, components, recipes and data documentation. Checks can be
+done on foods, on food groups, on components, and on metadata. The preparation of a user
+table/DB may require returning to the reference DB and/or to the archival DB (original data) when
+inconsistencies are discovered in the user table/DB. It is recommended that all data, especially those
+entered manually, be cross-checked by a second compiler and/or submitted to computerized
+validation tests.
+It is good practice to define and apply traceable procedures for validation. Ideally these should be
+computerized so that validation can be performed on the entire dataset or on a subset of data (for
+cross checking of correct manual data entry, for example). It is also advisable to establish an internal
+coding system to track checks that have been carried out per food, food group, component, or for
+the entire DB and flag matters for follow-up. The indication at these different levels could help the
+compiler to see which tasks still need to be completed before the user table/DB can be published. An
+example of a coding system (progress codes) that can be carried out in Microsoft Excel, for example,
+can
+be
+seen
+in
+the
+FAO/INFOODS
+Compilation
+Tool,
+version
+1.2.1
+(http://www.fao.org/infoods/software_en.stm).
+Consistency checks, however, should be carried out with an awareness of the natural variability in
+foods, so unusual data are not automatically excluded (Rand et al., 1991). Aspects such as differences
+in genetics e.g. variety/cultivars/breeds and differences, due to geography and environmental
+phenomena need to be carefully validated (Burlingame, 2004).
+The checks in this document are divided in the following sections:
+3.1 Checks on food identification
+3.2 Checks on components
+3.3 Checks on recipes
+3.4 Checks on data documentation
+
+3.1 Checks on food identification
+
+Precise and comprehensive food nomenclature is important to identify foods correctly. Checks
+should be carried out on food name and description, on food groups and on food codes. In the
+following, two examples are given demonstrating characteristics essential to unambiguous food
+description.
+Table 1. Checks on food identification
+Food identification
+
+11
+
+Food name
+and
+description
+
+Food
+
+Food name and description should be complete and unambiguous
+It is important to check that:
+The processing and preparation state of the food is specified in the food name
+o
+Is the food raw, fresh, dried, processed or prepared?
+o
+How is the food cooked?
+ Is it boiled, baked, micro-waved, fried, etc.?
+o
+Is the visible fat (meat) removed?
+o
+Is the peel/skin (vegetables/fruits/fish) removed?
+o
+Is the food salted?
+o
+Which oil/fat was used for frying?
+o
+Is the food canned/preserved in syrup, juice, brine, or oil?
+o
+What is the fat content of the food? (e.g. milk can be whole, partially skimmed,
+or skimmed; meat: can be lean, medium fat, or fatty)
+The colour of the food is specified if it effects composition
+o
+What is the colour of the food? This can be important for some vegetables and
+fruits
+o
+What is the intensity of the colour? E.g. is it dark green or pale green?
+The maturity stage is specified
+o
+Is the food ripe or unripe (e.g. mango, tomato)?
+o
+Is it an immature or mature form (e.g. beans)?
+o
+What is the age of the animal (e.g. veal versus beef)?
+The part/source of the food is specified
+o
+Which source of the animal/plant does the food entry represent? For meat
+specify: e.g. chicken, beef, mutton. For milk, specify: e.g. milk from cow, goat,
+buffalo.
+o
+Which meat cut? For meat e.g. chop, fillet, leg
+o
+Was the food farmed or wild? Is it a product of conventional or organic
+cultivation?
+Fortification/enrichment is specified, if applicable
+o
+Is the food fortified/enriched?
+o
+With what is the food fortified/enriched?
+o
+To which levels are components added? E.g. 25% of the recommended daily
+intake value, or exact amount.
+o
+Is the food imported from a country where the food is generally
+fortified/enriched?
+The relationship between the food description and the nutrient values makes sense.
+o
+Dried foods have lower water values, so foods with a water content of less than
+5 % are most likely powders or oils
+o
+Fortified foods have significantly higher contents for particular nutrients than
+non-fortified foods
+Food naming is consistent
+o
+E.g. ‘Bread, wheat, wholegrain’ instead of ‘Wholegrain wheat bread'
+o
+Consistent use of singular or plural , e.g. use `berry` or `berries`
+Scientific names are included and verified for each food when appropriate. To verify
+scientific names, consult authoritative sources; links to many of these are available
+through SciName Finder™ (http://www.sciname.info/
+Food names are translated correctly if several national languages exist.
+The food description of cooked foods includes whether salt was added or not (e.g.
+potatoes boiled, without salt)
+If a food description systems (e.g. LanguaL) is used all foods are indexed accordingly
+All foods are checked to confirm that their water and/or fat content are consistent with
+the food description
+It is important to check that:
+
+12
+
+groups
+
+Food codes
+
+Examples of
+unambiguo
+us food
+description
+
+All individual foods are assigned to an appropriate food group
+Within each food group, all foods are listed alphabetically (e.g.by the main language in
+the country). In user DBs, foods can be sorted by the food code, the food name and/or
+the food group code.
+The food grouping system is reported in the general documentation accompanying the
+user table/DB
+The food group codes reported in the introduction/general documentation correspond
+to those in the user table/DB
+It is documented if the database and categorisation system allows assignment of foods to
+more than one food group
+It is important to check that:
+No duplication of food codes exists in a user table/DB for different foods
+The food code once assigned for a given food is not modified
+The food code once assigned for a given food is not reassigned to another food item, if
+the original food item has been deleted
+The same food code is used when the data on the food entry is updated/revised
+The food codes presented in the food index/documentation correspond to those in the
+user table/DB
+Note:
+In relational FCDBMSs, food codes can be assigned automatically, in which case the
+above checks are unnecessary.
+Meat
+Specify the animal (e.g. chicken, beef, mutton)
+Type of the cut (e.g. chop, fillet, leg)
+Fat content (e.g. lean, medium fat, fatty – or better indicate % fat content in name)
+Type of cooking (e.g. boiled, fried, grilled)
+With or without edible fat
+Milk
+Specify the animal (e.g. cow, goat, buffalo)
+Processing type (e.g. dried, liquid, UHT, pasteurized, condensed, evaporated)
+Flavoured, sweetened
+Fat content (e.g. whole, partially skimmed, skimmed –and/or indicate % fat content in
+name)
+Fortification/enrichment, if relevant
+
+3.2 Checks on components
+
+Checks on components cover general checks for all components (component identification, units,
+denominators, simple mathematical checks) plus specific checks for individual
+components/component groups. In addition systematic checks can be conducted across the entire
+user table/DB and per food. In the following, it is assumed that INFOODS tagnames were used but
+most checks would also apply to EuroFIR component identifiers.
+Table 2. Checks on components
+Component
+name and
+expression
+
+It is important to check that:
+All values are expressed per 100 g edible portion on fresh weight basis (EP), unless
+otherwise stated
+The units, decimal places and significant figures indicated in the user table/DB are in
+concordance with the most widely used modes of expressions (see Annex 2; p. 36).
+The INFOODS food component identifiers presented in the documentation
+
+13
+
+Mathematical
+checks
+
+Comparability
+of components
+
+Edible
+portion/
+inedible
+part/refuse
+
+Proximates
+
+correspond to those in the user table/DB
+The component IDs given in the general documentation correspond to those in the
+user table/DB
+It is important to check that:
+All values for aggregated foods are included in the range (except for outliers)
+Minimum values ≤ representative value (mean/median)
+Maximum values ≥ representative value (mean/median)
+Standard deviation (SD) is calculated only if n is ≥ 3
+It is important to check that:
+For components for which different INFOODS tagnames exist, care was taken when
+aggregating values in the reference DB. Only those foods and their values were
+aggregated which had the same INFOODS tagname
+For components for which several INFOODS tagnames exist, it is clearly stated
+which tagname is used in the user table/DB
+If the compiler wishes to inform the user that different component tagnames are used
+depending on the food (e.g. FAT and FATCE), this should be clearly indicated. For
+example, if FAT is the standard expression in the user table , one can print FATCE
+values in parenthesis; in a user DB, one can list values for both tagnames (FAT and
+FATCE)
+It is important to check that:
+Values for edible or inedible portion/refuse, derived from different sources have been
+copied/converted correctly according to definitions given in the documentation
+The chosen definition (edible portion or refuse), or expressions (coefficient or
+percentage) is applied consistently throughout the entire user table/DB
+If the coefficient was chosen as expression, all values are within the range 0 – 1
+If the percentage (%) was chosen as expression, all values are between 0 – 100
+Ideally, if the refuse/waste is given the refuse should be described (e.g. Banana, 36 %
+waste: skin)
+If the edible or inedible portion/refuse values of cooked foods was calculated
+according to the formula, indicated in Annex 3 (p. 37) it has been applied correctly for
+all relevant foods and is reported in the documentation of the user table/DB
+It is important to check that:
+The sum of proximates (=∑of water + protein + fat + available carbohydrates +
+dietary fibre + alcohol + ash) is within the acceptable range set in one’s own DB.
+Preferable: 97 - 103 g (Greenfield and Southgate, 2003), acceptable: 95 - 105 g
+If the sum of the values falls outside these ranges, scrutinize:
+o
+Analytical values at the archival and data source level
+o
+The calculation of protein values (was the appropriate factor used?)
+o
+The expression of carbohydrates
+o
+Units and denominators of all proximates
+o
+The completeness of the proximate values. Check that all contributing values
+are included when applying the formula:
+ Water + protein + fat + available carbohydrates + dietary fibre +
+alcohol + ash ≈ 100 (fresh weight basis), or
+ Water + protein + fat + total carbohydrates + alcohol + ash ≈ 100
+(fresh weight basis)
+Note:
+The major determinant is how carbohydrates are handled. If available or total
+carbohydrates are calculated by difference, no discrepancies should exist. See
+exceptions below
+If available carbohydrates expressed in monosaccharide equivalents (CHOAVLM) are
+used in the DB, the sum of proximates often exceeds 100 due to the water included in
+
+14
+
+the carbohydrate values.
+
+Energy in kJ
+(kcal)
+
+Water/
+Moisture
+
+Protein,
+nitrogen
+components
+
+Exceptions:
+For insects the sum of proximates may exceed the acceptable range of 95 – 105 g/100 g
+EP, if fibre values are determined via acid detergent method (FIBAD) and even more
+so, if fibre is determined via neutral detergent method (FIBND). These methods
+capture the chitin content in insects and amino acids are double counted, once as fibre
+and once as protein. (Finke 2007; and personal observations)
+For some food groups, including meat and fish (except for offal (e.g. liver) and
+molluscs) carbohydrate values are assumed to be zero. In case of a calculated negative
+carbohydrate value but between 0 and -5 g/100 g EP, the carbohydrate value could be
+set at zero, if it is plausible that the food does not contain any carbohydrates, e.g. for
+meat and fish, except offal (e.g. liver) and molluscs. However, the data set should be
+revisited. If the calculated carbohydrate value for these foods is > 5 g/100 g or < -5
+g/100 g EP the entire food entry should be removed from the DB
+If protein is calculated as sum of hydrous amino acids (including water), the sum of
+proximates will exceed 100 due to hydration.
+It is important to check that:
+No energy values of the user table/DB were copied from other sources, but were
+calculated in the own DB
+kJ energy values were preferably not calculated from energy values in kcal
+All energy values were calculated correctly by applying the formula as defined in
+ones´ own DB/table (see Annex 3 (p. 37)for different ´metabolizable energy`
+conversion factors)
+All components used to calculate the energy content have a value in the user table/DB
+The applied formula is documented in the user table/DB for user information
+It is important to check that:
+Values for water content are given for every food in the user table/DB
+Water values are in accordance with the food description
+Only foods with similar water contents have been aggregated. If water contents of
+food items were significantly different, their nutrient values should have been adjusted
+before aggregation (e.g. check that values of raw and boiled rice were not aggregated,
+especially if values seem incoherent)
+Exception:
+It is sometimes appropriate to have aggregated foods in a user table/DB from products
+with different moisture content, e.g. “Fresh fruit” as a weighted average based on national
+consumption data because the consumption surveys asked for such generic foods for use in
+calculating nutrient intakes
+It is important to check that:
+Applicability of nitrogen to protein conversion factors (see Annex 3 (p. 37) for the
+Jones factors) (XN) has been verified when protein values were borrowed from other
+sources (check also for archival/reference DB)
+XN were correctly applied if protein was calculated from total nitrogen value (NT)
+multiplied by XN All values are present in the reference DB to allow own
+calculations, if possible
+Total protein calculated from nitrogen (PROT) can be < ∑ anhydrous amino acids (if
+all individual amino acids are given). If hydrous amino acids are used to build the sum,
+it is in general higher than PROT
+Note:
+If all individual amino acids were analysed, the sum of individual amino acids in
+hydrous form will be higher than the value for total protein calculated from nitrogen
+
+15
+
+Total fat, fatty
+acids, lipid
+components
+
+(PROT). This can be explained by the fact that through the peptide bond (amid bond)
+among single amino acids H20 is eliminated which leads to a lower molecular weight
+and subsequently lower protein value compared to the amino acids being summed
+individually. For further information see FAO/INFOODS Guidelines on Conversion
+among different units, denominators and expressions (FAO/INFOODS, 2012a)
+Total protein, calculated as sum of amino acids, anhydrous < ∑ of individual amino
+acids(normally expressed in hydrous form)
+Total protein, calculated as sum of amino acids, including water (hydrous) = ∑ of
+individual amino acids (normally expressed in hydrous form)
+For foods high in non-protein nitrogen (NNP) (e.g. many shellfish, crustacean, human
+breast milk):
+o
+True protein (total protein, calculated from protein nitrogen) (PROCNP)) =
+total nitrogen (NT) – non protein nitrogen (NNP) x XN
+Fat, total
+It is important to check that:
+If fat values derived from Soxhlet method (FATCE) were used, because no other fat
+values were available, the FATCE values should be marked differently in the user
+table e.g. in parenthesis or given under a specific tagname, to indicate lower quality.
+The Soxhlet method is inappropriate for foods with high amounts of polar and bound
+lipids
+If the value for total fat (FAT) is = 0 :
+o
+Fatty acids = 0
+o
+Cholesterol = 0
+Note:
+Since fatty acids are often reported to 3 decimal places and fat to 2 decimal places, it is
+possible for the fatty acids to have very small values, when total fat is reported to be zero;
+this can also be true for cholesterol, as the unit is often given in mg and the fat in g, it is
+possible that small values for cholesterol are given when the fat values are actually 0
+Fat, total (FAT) = animal fat + plant fat
+Fat, total (FAT) > cholesterol (CHOLE) or (CHOL) + total fatty acids (FACID)
+Total fat (FAT) > total saturated fatty acids (FASAT) + total monounsaturated fatty
+acids (cis) (FAMS) + total polyunsaturated fatty acids (cis) (FAPU) + trans-fatty acids
+(FATRN)
+Total fat (FAT) > total fatty acids (FACID)
+Fatty acids
+It is important to check that:
+If values for component groups are given e.g. for total saturated fatty acids (FASAT),
+or for total polyunsaturated fatty acids (FAPU) it should be documented which single
+fatty acids are included in these component groups
+Total fatty acids (FACID) = total saturated fatty acids (FASAT) + total
+monounsaturated fatty acids (cis) (FAMS) + total polyunsaturated fatty acids (cis)
+(FAPU) + trans-fatty acids (FATRN)
+Total fatty acids (FACID) > total fatty acids (cis) + total trans-fatty acids
+Total monounsaturated fatty acids (FAMS) ≥ any individual monounsaturated fatty
+acids
+Total polyunsaturated fatty acids (FAPU) ≥ any individual polyunsaturated fatty
+acids
+Total n-3 fatty acids (FAPUN3) ≥ any individual n-3 polyunsaturated fatty acid
+Total trans-fatty acids (FATRN) ≥ any individual trans-fatty acid
+
+16
+
+Carbohydrate
+s, starch,
+sugars
+
+Note:
+If cis form is analysed, report as cis fatty acids
+If trans form is analysed, report as trans fatty acids
+If cis is not part of the component name, it is assumed that it includes both cis and
+trans forms
+Carbohydrates
+It is important to check that:
+In case different carbohydrate definitions/expressions are used, it is clearly stated in
+the documentation and the values are marked accordingly in the user table, or assigned
+specific food component identifiers (tagnames) in the user DB
+If carbohydrates were calculated by difference, the correct formula was applied and
+none of the contributing values is missing:
+o
+Available carbohydrates, calculated by difference (CHOAVLDF): = 100 (weight in grams [water + protein + fat + ash + alcohol + dietary fibre] in
+100 g of food)
+o
+Total carbohydrates, calculated by difference (CHOCDF) = 100 - (weight in
+grams [water + protein + fat + ash + alcohol] in 100 g of food)
+Values for carbohydrates by difference have not been copied from other sources but
+were calculated in one’s own DB. Prior to the calculation, related components (see
+formula above) were defined and their values were checked
+Total carbohydrates by summation (CHOCSM) > any of the individual
+carbohydrate fractions (e.g. total sugars, total dietary fibre, starch)
+Note:
+According to FAO (2003), available carbohydrates are preferred to total carbohydrates.
+Total carbohydrates should be phased out. Available carbohydrates by weight (analytical
+values) are preferred over available carbohydrates by difference. The expression of ‘total
+available carbohydrates’ should be avoided as it creates confusion.
+
+Dietary fibre,
+crude fibre
+
+Ash, minerals
+
+Total sugars
+It is important to check that:
+Total sugars (SUGAR) ≥ ∑ individual mono- and disaccharides
+Total sugar (SUGAR) > added sugar (ADSUGAR)
+Total sugars (SUGAR) > any of the individual mono- and disaccharides. (e.g. sucrose,
+glucose, fructose, lactose, maltose and galactose)
+It is important to check that:
+When the mean/median for one food item from different data sources was calculated
+in the reference DB, undesired fibre expressions (e.g. crude fibre (FIBC) and other
+dietary fibre expressions) were excluded from the aggregated fibre value for the user
+table/DB, as much as possible
+If only crude fibre (FIBC) values were available, dietary fibre values were estimated
+from another food. If this was not possible, the crude fibre (FIBC) values should be
+clearly marked to indicate lower quality in the user DB, e.g. by putting values in
+parentheses, or by using different food components identifiers (tagnames)
+Wherever possible, indicate fibre method at value level
+Total dietary fibre (FIBTG), (FIBTS) ≥ ∑ soluble fibre (FIBSOL) + insoluble fibre
+(FIBINS)
+Ash
+It is important to check that:
+If carbohydrate values were calculated by difference, the ash value is reported in the
+user table/DB
+If an ash value is missing, a value should be borrowed from a similar food or estimated
+
+17
+
+from the sum of minerals.
+Ash values in g > ∑ of individual minerals (transformed from mg to g)
+Ash value (g/100 g EP)> (CA (mg) + FE (mg) + MG (mg)+ P (mg) + K (mg) + NA
+(mg) + ZN (mg)+ CU (mg) + MN (mg) + CL (mg))/1000
+o
+o
+
+Vitamins and
+pro-vitamins
+
+Minerals in mcg (e.g. selenium or iodine) have an insignificant contribution to
+ash and therefore do not need to be taken into account
+More investigations need to be carried out for the estimation of ash values
+from minerals (e.g. factors for oxidized forms of minerals)
+
+Minerals
+Not all minerals are necessarily reported in a user table/DB (e.g. chloride (CL) is often
+not reported). For CL, a possible solution to include its amount in the data check
+would be to multiply the sodium (NA) value x 2.5 to obtain NACL (assuming that all
+CL is coupled with NA)
+Total iron (FE) = heme (HAEM) + non heme iron (NHAEM)
+Vitamin A (VITA_RAE), Vitamin A (VITA)
+It is important to check that:
+The vitamin A values were calculated within one’s own DB and not copied from
+other sources
+The same definition/formula was applied throughout the entire DB
+The conversion factors were correctly applied (see Annex 1; p. 26) and described in the
+database documentation
+The definition/formula used is indicated in the documentation for user information
+No contributing values were missing to calculate vitamin A as retinol activity
+equivalent (VITA_RAE) or as retinol equivalent (VITA). Components needed to
+calculate Vitamin A values are retinol, β-carotene, α -carotene, β- cryptoxanthin and
+conversion factors
+Vitamin A; retinol activity equivalent (VITA_RAE) in mcg < Vitamin A; retinol
+equivalent (VITA) in mcg
+Vitamin A; retinol activity equivalent (VITA_RAE) in international units (IU) <
+Vitamin A; retinol equivalent (VITA) in IU (generally, the use of IU should be
+discontinued)
+β- carotene (CARTB), β- carotene equivalent (CARTBEQ)
+It is important to check that:
+If beta carotene equivalent (CARTBEQ) is reported, the values were calculated
+within one’s own DB and not copied from other sources
+No contributing values to calculate β- carotene equivalent (CARTBEQ) were missing
+If beta carotene equivalent (CARTBEQ) is reported, the correct conversion factors
+were applied (see Annex 1; p. 26)
+It is clearly stated which of the two expressions (CARTB or CARBTEQ) is used in
+the user table/DB. If CARBTEQ was used as standard expression, the values for βcarotene (CARTB) should be marked, e.g. by putting the values in parenthesis in the
+user tables, or by using different food components identifiers (tagnames) in the user
+DB
+In a comprehensive user table/DB, CARTBEQ is accompanied by values of α carotene (CARTA), β- carotene (CARTB) and β- cryptoxanthin (CRYPXB)
+Niacin
+It is important to check that:
+If total niacin equivalent (NIAEQ) is used, the values were calculated within one’s
+own DB and not copied from other sources
+
+18
+
+Either report niacin (NIA) or niacin equivalent (NIAEQ) should appear in the user
+table/DB. If both expressions are used, clearly identify in the user table/DB each one
+by e.g. putting values for (NIA) in parenthesis if NIAEQ is the standard expression, or
+by using different food components identifiers (tagnames
+Total niacin equivalents (NIAEQ) in mg = niacin, preformed (NIA) in mg +
+potential niacin from tryptophan (NIATRP) in mg usually equal to 1/60 tryptophan
+(TRP) (if tryptophan is expressed in g, check that the unit is adjusted accordingly for
+niacin equivalent normally in mg)
+Folate
+It is important to check that:
+If dietary folate equivalent (FOLDFE) is reported, the values were calculated within
+one’s own DB and not copied from other sources
+If FOLDFE was reported, the correct formula was applied and no value of the
+contributing components is missing
+Dietary folate equivalent (FOLDFE) = food folate (pteroylpolyglutamates)(FOLFD)
++ 1.7 x synthetic folic acid (pteroylmonoglutamic acid)(FOLAC)
+Folic acid (FOLAC) which is the synthetic form used in fortification, is not present in
+foods in their natural state
+Folic acid (FOLAC) is not used when folate (FOL) is meant
+It is clearly stated which folate definition/expression is reported in the user table/DB.
+If several expressions are used, clearly identify each one e.g. by placing values in
+parenthesis in the user table or use by using different food components identifiers
+(tagnames) in the user DB
+Vitamin E
+It is important to check that:
+If vitamin E, expressed as α - tocopherol equivalent (VITE) is used, the values were
+calculated within one’s own DB and not copied from other sources
+The same formula was used throughout the entire DB when calculating α -tocopherol
+equivalent (VITE) and no values for the contributing components were missing
+(formula see Annex 1; p. 26)
+Vitamin E (VITE) > α-tocopherol (TOCPHA)
+It is clearly stated which vitamin E definition is used in the user table/DB. If both
+expressions are used, this should be clearly indicated, e.g. by putting values for α tocopherol (TOCPHA) in parenthesis, or by using different food components
+identifiers (tagnames) in the user DB
+Note:
+The latest version of the DRI published by NAS/IOM states that α- tocopherol is the
+active form of vitamin E and that the use of α- tocopherol equivalents is to be
+discontinued.
+Vitamin D
+It is important to check that:
+If vitamin D equivalent (VITDEQ) is used, the values are calculated within one’s own
+DB and not copied from other sources
+The same formula was used throughout the entire DB when calculating vitamin D
+values and no values for the contributing components were missing (formula see
+Annex 1; p. 26)
+Vitamin D (VITD) ≥ vitamin D2 (ERGCAL) + vitamin D3 (CHOCAL)
+
+19
+
+Vitamin D equivalent (VITDEQ) = vitamin D3 (CHOCAL) + vitamin D2
+(ERGCAL) + 5 x 25-hydroxycholecaciferol (CHOCALOH)
+Vitamin D equivalent (VITDEQ) > vitamin D (VID) (in food rich in 25hydroxycholecalciferol, e.g. pork)
+1 IU vitamin D = 0.025 mcg vitamin D (VITD)/ cholecalciferol (CHOCAL)
+It is important to be consistent throughout the DB. If different expressions are used,
+clearly identify each one, either by putting the values in parenthesis in user tables, or
+by using different component identifiers in user DBs
+
+Systematic
+checks
+
+Missing values
+
+Vitamin C
+It is important to check that:
+VITC = L-ascorbic acid (ASCL) + plus L-dehydroascorbic acid (ASCDL)
+Vitamin C (VITC) > L-ascorbic acid (ASCL) (in particular for processed foods)
+If (VITC) and (ASCL) values are reported, put values for L-ascorbic acid (ASCL) for
+processed foods in parenthesis if VITC is the standard expression in the user table/DB
+or use different food components identifiers (tagnames) in user DB
+Foods should be sorted by ascending or descending values for a given component
+within a food group (graphs/statistics can also be used), in order to easily identify
+typing or unit errors. See also below: Specific checks within food groups.
+If a value of a component within a particular food group appears unreasonably high or
+low, the reason for this should be determined. As unreasonably high and low values
+are not defined internationally, internal guidelines should be agreed on between
+compilers of a given database and preferably be documented and accessible, e.g. as in a
+procedure:
+o
+Foods in one’s own DB can be compared with foods from external sources to
+evaluate/ensure that the values are comparable. For this comparison it is
+important that the foods have the same scientific name, same part analysed,
+same processing state, similar water and fat values, same fortification;
+moreover, the nutrient definition, unit and denominator should be the same)
+(For more information see FAO/INFOODS Guidelines for Food Matching,
+version 1.1 (FAO/INFOODS, 2011)
+o
+Compare values with the previous version of your own database (this is easy
+when food codes were not changed)
+When reviewing values, more attention should be given to frequently consumed
+foods, or those with high nutrient values for specific components, because they can be
+more critical for the assessment of nutrient intakes than rarely consumed foods. One
+way of doing is keeping the RDA in mind: 200% of RDI more of vitamin B12 in one
+food than in another one is maybe not so important if the level of vitamin B12 in these
+two foods corresponds to 0.001% of the RDA).
+When evaluating values, the natural and analytical variability should be taken into
+account
+If possible, nutrient intakes should be calculated using the food consumption data that
+were used with the former version of the user table/DB. Major changes should be
+identified and reasons for the changes investigated. If no national food consumption
+data exist, use your own food consumption record.
+It is important to check that:
+Missing values are as few as possible
+Missing values are never assigned a 0 value, unless evidence exists that the value can be
+presumed zero (see below: Absence of food components in specific food groups)
+In order to avoid missing values, data can be:
+Estimated from a similar food within one’s own user table/DB, or from other sources
+
+20
+
+Absence of
+components in
+specific food
+groups
+
+Specific checks
+within food
+groups
+
+Calculated through recipe calculation or other standard procedures
+Presumed as zero if the food is known not to contain the nutrient, e.g. vitamin C in
+oil ( see below Absence of components in food groups)
+For information on standardized procedures on how to estimate missing values, see
+Schakel et al. (1997) and Charrondiere et al. (2011ab, Module 8)
+Whenever missing values are filled in, it is critical that the technique used to determine
+the value is documented
+If no other ingredients are added, the foods in their natural form will not contain certain
+components, for example:
+Retinol, Vitamin B12, Cholesterol, heme iron = 0 in plant foods (exceptions for
+Vitamin B12 which can occur in fermented foods and mushrooms)
+Alcohol = 0 in all animal and plant foods unless fermented
+Dietary fibre = 0 in animal foods such as meat, poultry, fish, eggs, milk (except
+insects)
+Carbohydrates = 0 or trace in non-processed animal foods such as meat, poultry, fish,
+except in offals (e.g. liver, brain) or molluscs
+Starch = 0 in non-processed animal foods, e.g. meat, poultry, fish
+Vitamin D3 = 0 in plant foods
+Vitamin D2 = 0 in animal foods
+Vitamin K1 (phylloquinone) = 0 in animal foods
+Vitamin K2 (menaquinone) = 0 in plant foods
+Folic acid = 0 for all foods (except when fortified)
+Vitamin C = 0 in oils
+It is important to check that:
+Characteristic components for a food group are in an acceptable range within the food
+group. Examples for some food groups and their characteristic components are listed
+below. The list is not exhaustive and needs further improvement. Lists per food
+groups indicating common ranges have been developed (for raw, unfortified foods)
+and will be presented in separate FAO/INFOODS Guidelines on acceptable ranges
+among food groups
+Values indicated are for raw, unprocessed and unfortified, foods (unless otherwise
+stated) (expressed per 100 g edible portion of fresh weight (EP)
+Cereals (excluding pseudo cereals, e.g. quinoa, amaranth)
+Water values are ~ 7 g - 15 g/100 g EP
+Protein values are ~ 6 g - 14g/100 g EP
+Vitamin C and vitamin A values are very low (unless fortified)
+Starchy roots and tubers
+Water values are ~ 60 - 75 g/ 100 g EP
+Starch and carbohydrate values are ~ 20 - 40 g/100 g EP
+Fat values are low in raw, fresh starchy roots and tubers ~ 0.1 - 0.35 g/100 g EP
+Legumes and pulses
+Water values in dried legumes/mature seeds are ~ 7 g - 13 g/ 100 g EP
+Protein values in dried legumes/mature seeds are ~ 18 g - 35 g/ 100 g EP
+Vitamin C and vitamin A values are very low (unless added)
+Vegetables
+Fat values of raw vegetables should generally be below 1 g/100 g EP(with exceptions
+such as soybeans, if included in vegetable group)
+Fruits
+Fat values of should generally be below 1 g/100 g EP (with certain exceptions such as
+avocado)
+Nut
+
+21
+
+Examples on
+specific checks
+between foods
+due to
+different
+processing
+methods, or
+different
+colours
+
+Vitamin C and vitamin A values are very low (unless added)
+Milk
+Cholesterol in dairy products should be proportional to fat content
+Values of vitamins A, D, E in dairy products should be proportional to fat content
+(unless fortified)
+The major variation is in the fat and fat-soluble vitamins
+Calcium levels of milks (of same animal species/breed, same water content) should be
+similar (except when fortified)
+Dietary fibre values are zero
+Meat and poultry
+Protein levels of poultry rarely exceed 30 g/100 g EP
+The main cause of variation in animal products are the proportion of lean to fat tissues
+and the proportion of edible to inedible materials (e.g. bone)
+Vitamin B1 is low in all meat except pork
+Fish
+Protein levels of fresh fish rarely exceed 30 g/100 g EP
+Vitamin B1 is low and vitamin C is very low
+Example 1. Raw versus cooked
+Nutrient values of raw foods ≠ nutrient values of cooked foods because of yield and
+nutrient loss/gain
+When water content is absorbed in the cooking process, all other values for nutrients
+are lower in the boiled food (if no other ingredients were added in the cooking
+process)
+Exception: vitamin contents (carotenoids) can appear to increase due to cooking as it
+is easier to extract the carotenoids from the cooked food matrix than from the raw
+Values for fat and fat-soluble components in fried lean food are higher than values for
+fat and fat-soluble components in corresponding raw foods, due to added fat. Fatty
+foods might lose more fat and fat-soluble components than absorbed (e.g. meat fried in
+vegetable fat could contain less cholesterol or retinol than raw meat, except maybe
+through concentration because of moisture loss).
+Example 2. Raw versus dried
+Nutrient values of raw foods ≠ nutrient values of dried foods
+In dried foods, all values expect for water and heat-labile vitamins2 should be higher
+than the values in the corresponding raw food
+Generally, no values can be created, e.g. if in the raw state the food does not contain
+any vitamin C value, these values cannot be present in the dried state
+Note: This is true in particular for calculations/imputations for dried foods based on raw
+foods. There are, however, some cases where the nutrient content is below the level of
+determination/quantification in the raw food, but measurable in the dried food. There are
+no retention factors for dried foods and they should be developed in the future. It seems
+that some vitamins are highly decreased through drying.
+Example 3. Parts of the foods removed
+If a part of a food (e.g. the bran of a grain) is removed, values of components highly
+concentrated in this part (e.g. in bran: dietary fibre, minerals, vitamins) should be
+lower in the refined product than in the corresponding whole food
+Examples 4. Colour of the food
+Different colours of foods (yellow/orange/red/green) related to cultivar or stage of
+
+2
+
+Depending on the degree of destruction some heat-labile vitamins may also be higher
+
+22
+
+ripening often signal variations in e.g. carotenoids, phytochemicals or sugars. It is
+important that the food name reflects these differences
+For example, values for carotenes in mango pulp, deep orange > than values for
+carotenes in mango pulp, pale orange
+
+3.3 Checks on recipes
+The following checks include those before starting the recipe calculation, during and after the recipe
+calculation and recommendations on the documentation of recipes.
+Table 3. Checks on recipes
+Before
+starting the
+recipe
+calculation
+
+Recipe
+calculation
+
+Documenta
+tion
+
+It is important to check that:
+All ingredients from the recipes are entered in the DB and have a complete set of
+components which have been checked and validated
+Added water was not forgotten in the recipe calculation (e.g. water added in soups) as it is
+often not part of the ingredient list in cook books
+Added fat was not forgotten in the recipe calculation (e.g. fat absorbed during frying, butter
+added to potatoes) as it is often not part of the ingredient list in cook books
+The correct ingredients and same amounts of ingredients were used in the recipe calculation
+as stated in the reference recipe. No errors were introduced when the ingredients were
+transformed from household units (e.g. one big onion) to gram edible portion, e.g.
+forgetting to apply edible coefficient to an ingredient (if applicable) or choosing the wrong
+weight of food unit
+All nutrient values of all ingredients were completed and verified before starting the recipe
+calculation
+No values are missing for any significant ingredient used for the recipe calculation. It is
+acceptable to have missing values only if a missing value belongs to a minor ingredient, or if
+the missing value is expected to make only a small nutrient contribution to the recipe
+The correct ingredients from the DB were chosen for the recipe calculation and source is
+documented
+Appropriate yield factors (YF) and nutrient retention factors (RF) were chosen for the
+recipe calculation and sources are documented
+For all cooked foods/recipes the same recipe calculation system and the same set of YF and
+RF were selected. If different calculation systems were used, this should be documented
+That RFs for individual foods were used, if they exist for the specific food. In case they do
+not exist for the specific food the RF of the relevant (sub) group was chosen
+It is important to check that:
+All formulas in the recipe calculation were correctly applied
+Water or fat as ingredients in recipes were not confused with the components ‘water’ or ‘fat,
+total’ that are measured
+The calculated nutrients of single-ingredient recipes (e.g. potatoes boiled, without salt) are
+consistently different from the nutrient values of the corresponding raw food and they are
+in line with the YF and RF
+All steps in the recipe calculation were carried out correctly and that no errors occurred
+(e.g. no zero values or too low values were created in the recipe, because of missing values
+for some ingredients)
+If all ingredients have a missing value for a certain component, then the recipe should also
+have a missing value for this component and not a 0 value
+Calculated recipes were updated when the nutrient composition of any ingredient has been
+updated
+It is important to check that:
+The source of recipes, YF and RF are included in the documentation of the user table/DB
+The recipe calculation system used (if recipes were calculated) is documented in the user
+
+23
+
+table/DB
+The weight and dimensions of measured foods (e.g. one big onion, one tablespoon of oil) is
+given
+A description of the recipe preparation, the cooking method and YF is included per recipe
+in the documentation
+A list of recipes including all ingredients and their amounts is documented and published in
+the user table/DB
+The food description of cooked foods includes whether salt was added to the water or not
+(e.g. potatoes boiled, with salt)
+If recipes are named differently within countries or recipes have the same name but contain
+different ingredients depending on the region, the varying ingredients and/or region is
+added to the recipe name (and probably the synonym name)
+If a food code is assigned for the single recipes, the food code is also reported within the list
+of recipes in order to facilitate a cross checking of the recipe and its nutrient values
+
+3.4 Checks on data documentation
+
+Documentation is essential for data quality and data evaluation and should be comprehensive. The
+following checks are divided in three parts of data documentation. The first part is a check on the
+general documentation of the whole user table/DB. The second part is a check on the documentation
+included in the user table/DB and the third part includes checks to be carried out on the food index
+and the reference list.
+Table 4. Checks on data documentation
+Introduction
+/
+general
+documentati
+on
+
+It is important to check that:
+General information on the total number of foods and total number of components
+presented in the user table/DB is reported
+The publication year and number/version/release of the edition are given
+Differences/changes compared to previous versions are reported
+The overall method of compilation is indicated (including information on food
+composition database management system used, format of user table/DB available)
+The content of all DB files is explained
+Information on food identification is indicated including:
+o
+Food groups (if used)
+o
+Food codes
+o
+Food description systems (e.g. national, LanguaL, INFOODS)
+Information on component nomenclature is documented, including:
+o
+Information on component IDs, codes and names, method of analysis,
+definition, comments, units, denominators
+o
+A table with INFOODS tagnames used (or EuroFIR component identifiers)
+o
+All conversion factors used
+Documentation of cooked foods and recipes is included (see section 3.3, table 3)
+A list of all abbreviations and symbols used in the user table/DB is indicated (e.g. trace,
+ND)
+The quality of data is documented, including information on:
+o
+Quality assessment system used
+o
+How data were selected for the user table/DB (e.g. taken from one source or
+several sources) and aggregated (e.g. mean and/or median)
+o
+Tests for outliers (if used)
+o
+n (e.g. representing the number of individual analytical samples, or the number
+of data points) is defined
+A table of contents is included
+If the introduction is available in several languages, the translation was verified
+
+24
+
+Documentati
+on in the
+user
+table/DB
+
+Food Index
+and reference
+list
+
+It is important to check that:
+Comprehensive data documentation at value level (preferably), and/or at food level is
+given: source and calculation method (and if possible additionally analytical methods,
+sampling, n, etc)
+Variability of data is reported, e.g. through standard deviation (SD) or standard error
+(SE) and ranges (min and maximum values)
+n is indicated and defined (e.g. representing the number of individual analytical
+samples, or the number of individual data sources)
+The standard deviation (SD) or standard error (SE) was only calculated if 3 or more
+data entries were reported
+All nutrient values correspond with the definitions indicated in the introduction or
+documentation
+Data are expressed in uniform standard units and correspond with the units indicated
+in the introduction/documentation
+The components are clearly identified and coded, preferably by linking them to
+INFOODS food component identifiers (or EuroFIR component identifiers)
+Food name and description are complete and unambiguous
+If food description systems are used (e.g. LanguaL) all foods are indexed accordingly
+It is important to check that:
+In user tables, the food names are listed alphabetically in the food index in the national
+language(s) and English
+If different national languages exist, their translations are verified and are included in
+the food index (one food index per language)
+The scientific names are verified and are included in the food index
+The food index is included and that page numbers and/or food codes indicated in the
+food index correspond to those in the user table/DB
+All references (on value or food level) to sources of data are reported and are included
+in the reference list
+The same reference style has been used consistently throughout and no reference is
+missing
+
+25
+
+Annex 1 Extract of food components, recommended units and INFOODS tagnames
+The table below presents a selection of the INFOODS food components identifiers, also called tagnames. For more information and additional tagnames
+see INFOODS (2012b), Klensin et al. (1989), and Charrondiere et al. (2011ab, Module 4b).
+Table 5. Extract of food components, recommended units and INFOODS tagnames (and corresponding EuroFIR component identifiers plus
+additional fields needed to identify corresponding tagname)
+Component
+
+INFOODS tagnames
+
+Edible
+portion
+
+EDIBLE: edible portion coefficient
+
+3
+
+Unit3
+
+Comments
+It is recommended that values for the edible part (or the inedible part/refuse)
+are recorded in the user table/DB for each food entry (if information is
+available)
+These values are needed:
+o
+for a good food description
+o
+to transform the weight of foods as purchased to the edible parts of
+the food
+o
+to facilitate a correct food matching
+Different terms (e.g. edible portion, inedible portion/refuse) and modes of
+expression (e.g. percentage %, or coefficient) exist.
+Examples on how to calculate edible coefficients for cooked foods based on raw
+foods (for foods where the inedible part is not discarded e.g. meat and fish with
+bones) are given in Annex 3 (p. 37)
+
+Recommended unit
+
+26
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+EDIBLE
+
+Component
+
+INFOODS tagnames
+
+Unit3
+
+Comments
+
+Energy
+
+ENERC: energy, total metabolizable;
+calculated from the energy-producing food
+components
+
+kJ
+(kcal)
+
+Energy values of foods presented in the user table/DB should always be
+calculated in ones´ own DB, by applying the `metabolizable energy`
+conversion factors from Atwater. Different `metabolizable energy`
+conversion factors are listed in Annex 3 (p. 37). INFOODS recommends
+using the ´General Atwater factors including for dietary fibre´ for use in
+user tables/DB
+It is not advisable to calculate kJ energy values from energy values in kcal because
+this may introduce bias. Energy conversion factors in kJ are neither exactly 4.184
+nor 4.2 times higher than energy conversion factors in kcal; it may just give an
+indication
+
+g
+
+Values for water are required at all levels of data management including
+archival, reference and user table/DB. Water is the most important
+component to check and be published in user tables/DBs
+Water is required to calculate the nutrient values to per 100 g fresh weight of
+edible portion (EP) when, in the literature, nutrient values were reported on
+dry matter basis (DM)
+DM values are not published in user tables/DBs, but in the scientific
+literature nutrient values are often reported per 100 g DM. Values reported
+in DM can be recalculated to fresh weight, if the DM value or the water
+value of the fresh food is given. Example:
+Calculate values from per DM to per 100 g EP: Nutrient value (NV) (g/100 g EP)
+= NV(g/100 g DM) x (100-water)/100
+
+More tagnames exist, but are generally not
+used in user tables/DB
+
+Water
+
+WATER: water
+Synonyms: moisture
+
+27
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+ENERC
+
+WATER
+
+Component
+
+INFOODS tagnames
+
+Unit3
+
+Protein and
+nitrogen
+components
+
+PROT (formerly PROCNT): protein, total;
+calculated from total nitrogen
+XN: conversion factor for calculating total
+protein from total nitrogen
+NNP: non-protein nitrogen
+PROCNP: protein, total; calculated from
+protein nitrogen
+NT: nitrogen, total
+
+g
+
+Values for protein are required at all levels of the data system (archival,
+reference and user DB)
+Protein is usually a calculated value derived from total nitrogen value
+multiplied by nitrogen conversion factors
+Nitrogen to protein conversion factors (XN) are given in Annex 3 (p. 37).
+Nitrogen, total (NT) should be part of archival, reference and comprehensive
+user table/DB, but must not necessarily be part of a concise/abridged user
+table/DB.
+
+Total fat,
+fatty acids
+and lipid
+components
+
+FAT: fat, total. Sum of triglycerides,
+phospholipids, sterols and related
+compounds. The analytical method is a
+mixed solvent extraction.
+Synonym: total lipid
+FATCE: fat, total; derived by analysis using
+continuous extraction. The Soxhlet method
+has often been used to analyze for total fat
+using continuous extraction. This method
+tends to underestimate the total fat value of a
+food.
+FAMS: fatty acids, total monounsaturated
+FAPU: fatty acids, total polyunsaturated
+FASAT: fatty acids, total saturated
+FATRN: fatty acids, total trans
+FAPUN3: fatty acids, total n-3
+
+g
+
+Fat
+
+Comments
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+- PROT+MI
+-Conversion
+factors are Method
+Parameters
+-no correspondence
+for NNP
+- PROT+MI
+NT
+
+FAT+MI
+
+Fat values are required at all levels of the database management (archival,
+reference and user DB)
+Fat values are highly method depended
+o
+FAT is the preferred method
+o
+FATCE: fat, total, Soxhlet, should be avoided since it leads to
+incomplete extraction and therefore results in lower values in
+particular for foods with high amounts of polar and bound lipids
+Fat and water values are important to check the food description and the
+concordance between foods. Fat contents of foods need to be compared
+when estimating values for fat-soluble components (e.g. fat-soluble vitamins,
+fatty acids) from other sources. If the difference in fat values between the
+food in the own DB and in the referenced source is higher than 10 % the
+values for fat soluble components need to be adjusted.
+Fatty acids
+Individual fatty acids should be included in the reference DB. In concise user
+tables/DB the fatty acids may be grouped in total saturated, total
+monounsaturated and total polyunsaturated fatty acids.
+
+28
+
+FAT+MI
+
+FAMS
+FAPU
+FASAT
+FATRS
+FAPUN3
+FAPUN6
+
+Component
+
+INFOODS tagnames
+
+Unit3
+
+polyunsaturated
+FAPUN6: fatty acids, total n-6
+polyunsaturated
+
+Carbohydrate
+s
+
+CHOAVL: carbohydrates, available. This
+value includes the free sugars plus dextrins,
+starch, and glycogen
+CHOAVLM: carbohydrates, available;
+expressed in monosaccharide equivalents.
+This value includes the free sugars plus
+dextrin, starch and glycogen
+CHOAVLDF: carbohydrates, available;
+calculated by difference. This values is
+calculated:
+100 - (weight in grams [water + protein +
+fat + ash + alcohol + dietary fibre] in 100 g
+of food)
+CHOCDF: carbohydrates, total; calculated
+by difference. This value is calculated:
+100 - (weight in grams [water + protein +
+fat + ash + alcohol] in 100 g of food)
+CHOCSM: carbohydrates, total; calculated
+by summation. This values is the sum of the
+sugars, starches, oligosaccharide, and dietary
+fibre
+
+g
+
+Comments
+Fatty acid should be expressed in mg/100 g fresh weight of the edible portion
+(EP). In the literature fatty acids are often expressed differently including per g
+or 100 g fatty acids or fat. See the FAO/INFOODS Guidelines on Conversion
+among different units, denominators and expressions (FAO/INFOODS, 2012a)
+for further information.
+Carbohydrates
+Values for carbohydrates are required throughout the entire database system
+(archival, reference and user DB)
+The main difference in carbohydrates relates to:
+o
+whether or not fibre is included,
+o
+if it is analysed or calculated by difference,
+o
+if the value is expressed in anhydrous form or monosaccharide
+equivalents
+Generally, available carbohydrates are always preferred to total
+carbohydrates, because, available carbohydrates represent only the
+carbohydrates available to the human body
+The most recommended expression is available carbohydrates by summation
+(CHOAVL) This method however demands analytical values; in case
+analytical data are not available for most foods, it is recommended to use
+´carbohydrates, available by difference´ (CHOAVLDF) (FAO, 2003)
+Starch
+Starches including glycogen and polysaccharides should be part of a
+comprehensive user DB
+Oligosaccharides
+Are defined as carbohydrates with 3 to 9 monomeric units
+Some oligosaccharides can be included in dietary fibre, if they are resistant to
+digestion in the intestine
+
+29
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+
+CHO+MI
+
+CHO+MI+unit
+
+CHO+MI
+
+CHOT+MI
+
+CHOT+MI
+
+Component
+
+INFOODS tagnames
+
+Unit3
+
+Comments
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+
+In many foods oligosaccharides are in small amounts and are, therefore, not
+included in user tables/DB
+Sugars total
+In many user tables/DB sugars are defined as mono-and disaccharides
+Sugars should be part of a concise user table/DB and individual mono, di -and
+oligosaccharides as well as polyols should be part of a comprehensive user
+table/DB
+Fibre
+
+FIBTG: fibre, total dietary; determined
+gravimetrically by the AOAC total dietary
+fibre method. (Prosky method) Sum of the
+water-soluble
+components and the water-insoluble
+components of dietary fibre
+FIBTS: fibre, total dietary; sum of nonstarch polysaccharide components and lignin
+(Southgate method)
+PSACNS/NSP: non-starch polysaccharide,
+(Englyst fibre). This includes non-starch
+polysaccharides but excludes lignin, resistant
+starch and resistant oligosaccharides.
+FIBAD: fibre; determined by acid detergent
+method. Includes cellulose, lignin and some
+hemicellulose
+FIBADC: fibre, acid detergent method,
+Clancy modification
+FIBINS: fibre, water-insoluble. Sum of
+
+g
+
+Dietary fibre values are required at all levels of the database system (archival,
+reference and user DB)
+The values for fibre are method-depended and therefore need to be identified
+by the method used. Any calculation including fibre (e.g. sum of proximates,
+or carbohydrates calculated by difference) will be impacted by how the fibre
+content was determined
+New methods for dietary fibre have been developed which include all
+residual starch and resistant oligosaccharides. As these methods are still
+under development, it is suggested to wait for finalization before including
+those values in the FCDB. As Codex definition for dietary fibre may include
+resistant oligosaccharides they may have to be included in FCDB in future
+INFOODS recommends using total dietary fibre by AOAC Prosky (FAO,
+2003)
+Dietary fibre by Prosky (FIBTG) captures most completely the components
+with dietary fibre functions, followed by FIBTS and PSACNS/NSP.
+It would be best to phase out the use of FIBAD, FIBADC, FIBND and FIBC in
+favour of one of the other methods for determining total dietary fibre, such as
+FIBTG.
+New fibre methods are being developed including non-digestible oligosaccharides
+for which new tagnames will be needed, once fully approved and used in FCTs.
+
+30
+
+FIBT+MI
+
+FIBT+MI
+
+NSP+MI
+
+FIBT+MI
+
+FIBT+MI
+FIBINS+MI
+
+Component
+
+INFOODS tagnames
+
+Ash
+
+insoluble components from the AOAC total
+dietary fibre method; includes primarily
+lignin, cellulose, and most of the
+hemicelluloses
+FIBSOL: fibre, water-soluble
+FIBND: fibre; determined by neutral
+detergent method. Includes lignin, cellulose,
+and insoluble hemicellulose
+FIBC: fibre, crude
+ASH: ash
+
+Unit3
+
+Comments
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+
+FIBSOL+MI
+FIBT+MI
+
+FIBC+MI
+
+g
+
+Ash
+
+ASH
+Ash values are used in internal checks on the sum of proximates, in the
+calculation of available or total carbohydrates, by difference. Therefore, it
+should be part of the archival and reference DB but is often not included in a
+concise user table/DB. Ash values should be reported, if carbohydrates are
+calculated by difference. If no ash value is available an ash value needs to be
+estimated from a similar food.
+Ash values give an approximation of the total inorganic material.
+
+Vitamin A
+and
+pro-vitamins
+
+VITA_RAE: vitamin A; calculated by
+summation of the vitamin A activities of
+retinol and the active carotenoids.
+Total vitamin A activity expressed in mcg
+
+mcg
+
+Inorganic constitutes
+Sodium, potassium, calcium, magnesium, iron, zinc etc. should be part of a
+concise use table/DB. Iodine and selenium should be included if they are a public
+health concern.
+Vitamin A
+Total Vitamin A (VITA_RAE)), or total vitamin A (VITA) are the
+recommended definitions to be used in user tables/DB
+Vitamin A expressed in international units IU are obsolete and should not be
+used anymore; however, if IU are used, it must be explicitly stated
+
+31
+
+VITA+MI+unit
+
+Component
+
+INFOODS tagnames
+retinol activity equivalent (RAE) = mcg
+retinol + 1/12 mcg ß- carotene + 1/24 mcg
+other pro-vitamin A carotenoids
+(or RAE = mcg retinol + 1/12 mcg ßcarotene equivalent)
+VITA: vitamin A; calculated by summation
+of the vitamin A activities of retinol and the
+active carotenoids.
+Total vitamin A activity expressed in mcg
+retinol equivalent (RE) = mcg retinol + 1/6
+mcg ß- carotene + 1/12 mcg other provitamin A carotenoids
+(or RE = mcg retinol + 1/6 mcg ß- carotene
+equivalent)
+CARTA: alpha-carotene.
+All-trans alpha-carotene only.
+CARTB: beta-carotene.
+All-trans beta-carotene only.
+CRYPXB: beta-cryptoxanthin
+CARTBEQ: beta-carotene equivalents. This
+value is the sum of the beta-carotene + 1/2
+quantity of other carotenoids with vitamin
+A activity.
+β-carotene equivalent = 1 β-carotene + 0.5 αcarotene + 0.5 β-cryptoxanthin
+
+Unit3
+
+Comments
+For conversion from International Units (IU) to mcg retinol, β-carotene or
+other pro-vitamin A carotenoids and vitamin A in RE and RAE see
+FAO/INFOODS Guidelines on Conversion among different units,
+denominators and expressions (FAO/INFOODS, 2012a)
+Retinol
+In the United Kingdom, for retinol ‘All-trans retinol equivalent’ in mcg is
+used = mcg all-trans retinol + 0.75 mcg 13-cis retinol + 0.90 mcg
+retinaldehyde
+β- carotene/ β- carotene-equivalent
+It would be best to phase out β- carotene equivalents in favour for reporting
+individual carotenes and vitamin A
+In archival and reference DB, β- carotene equivalent should not be listed
+alone in the DB, but together with all contributing components
+In the user tables, (CARTBEQ) might be better to state, as it is more
+comprehensive and in user DB (CARTBEQ) should be accompanied by αcarotene, β-carotene and β- cryptoxanthin
+Components that are needed to calculate Vitamin A values: retinol, βcarotene, α-carotene, β- cryptoxanthin, their conversion factors to calculate
+VITA, VITA_RAE and CARTBEQ (β-carotene equivalent is not needed, if
+values for the single pro-vitamins are given in the DB)
+Lutein, lycopene and zeaxanthin do not have vitamin A activity
+
+32
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+
+VITA+MI+unit
+
+CARTA
+CARTB
+CRYPXB
+CARTBEQ
+
+Component
+
+INFOODS tagnames
+
+Unit3
+
+Vitamin D
+
+VITD: vitamin D; calculated by summation
+of ergocalciferol and cholecalciferol. This
+definition is mostly used
+VITDEQ: vitamin D; Vitamin D3 + D2 +
+5 x 25-hydroxycholecalciferol
+VITDA: vitamin D; determined by bioassay.
+The nutrient values are generally higher than
+the values determined chemically.
+ERGCAL: ergocalciferol (D2); occurs in
+plant foods
+CHOCAL: holecalciferol (D3); occurs in
+animal foods
+CHOCALOH: 25-hydroxycholecalciferol
+VITE: vitamin E; calculated by summation
+of the vitamin E activities of the active
+tocopherols and tocotrienols; expressed as αtocopherol equivalents
+= α-tocopherol + 0.4 ß-tocopherol + 0.1 γtocopherol+ 0.01 δ-tocopherol+ 0.3 αtocotrienol + 0.05 α-tocotrienol + 0.01 γtocotrienol (mostly used)
+= α-tocopherol + 0.5 ß-tocopherol + 0.1 γtocopherol+ 0.3 α-tocotrienol
+= α-tocopherol + 0.4 ß-tocopherol + 0.1 γtocopherol + 0.01 δ-tocopherol
+VITEA: vitamin E; determined by bioassay
+
+mcg
+
+Vitamin E
+
+Comments
+VITD is mostly used; some DBs also use VITDEQ (e.g. Danish or British
+food composition databases).
+Vitamin D expressed in IU is not preferred; however, if used IU must be
+explicitly stated
+IU divided by 40 should be the value for vitamin D reported in mcg (1 IU
+vitamin D
+= 0.025 mcg vitamin D (VITD)/vitamin D3 (CHOCAL). See
+also FAO/INFOODS Guidelines on Conversion among different units,
+denominators and expressions (FAO/INFOODS, 2012a)
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+VITD+MI
+
+VITD+MI
+VITD+MI
+
+ERGCAL
+CHOCAL
+
+mg
+
+Generally user tables/DB use VITE. However, some user tables/DB report
+TOCPHA (e.g. USDA)
+In archival and reference DB, vitamin E (VITE) should not be listed alone in the
+DB, but together with all contributing components
+
+CHOCALOH
+VITE+MI
+
+It should be noted that the latest version of the DRIs published by NAS/IOM
+state that α- tocopherol is the active form of vitamin E and that the use of αtocopherol equivalents is discontinued
+
+VITE+MI
+
+33
+
+Component
+
+INFOODS tagnames
+
+Unit3
+
+Comments
+
+TOCPHA: α-tocopherol
+Niacin
+
+VIT B6
+
+Folate
+
+NIA: niacin, preformed
+NIAEQ: niacin equivalents, total. Preformed
+niacin plus niacin equivalents from
+tryptophan
+NIATRP: niacin equivalents, from
+tryptophan. 1/60 x tryptophan
+VITB6C: vitamin B-6, total; calculated by
+summation. Pyridoxal plus pyridoxamine
+plus
+pyridoxine
+VITB6A: vitamin B-6, total;
+determined by analysis
+FOL: folate, total. Includes both conjugated
+and free folate (determined by
+microbiological assay). Folate, total: food
+folates + fortified folic acid (if any) in
+processed food.
+FOLSUM: folate, sum vitamers. It includes
+mostly tetrahydrofolate, 5methyltetrahydrofolate, 5formyltetrahydrofolate, 10-formylfolic acid,
+10-formyldihyrdofolate and folic acid
+(determined by HPLC).
+FOLAC: folic acid, synthetic folic acid used
+
+mg
+
+Total niacin equivalent (NIAEQ) = niacin preformed (NIA) + 1/60 tryptophan
+(TRP)
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+TOCPHA
+NIA
+NIAEQ+MI+unit
+
+NIATRP
+mg
+
+VITB6+MI
+
+VITB6+MI
+mcg
+
+FOL is the recommended expression and generally yields higher values than
+FOLSUM
+FOLFD is to be used if FOL, FOLAC and/or FOLDFE are also reported.
+This is to distinguish the folate content in the food from the fortificant
+amount
+
+FOL+MI
+
+FOL+MI
+
+FOLAC
+
+34
+
+Component
+
+INFOODS tagnames
+
+Unit3
+
+Comments
+
+in fortification
+FOLFD: folate food, naturally occurring
+food folates (determined by microbiological
+assay)
+FOLDFE: folate, dietary folate equivalents.
+= food folate + 1.7 x synthetic folic acid
+
+Vitamin C
+
+VITC: vitamin C. L-ascorbic acid plus Ldehydro-ascorbic acid. Usually analyzed by
+HPLC
+ASCL: L-ascorbic acid. Titrimetry can only
+analyze L-ascorbic acid
+ASCDL: L-dehydro-ascorbic acid (=
+oxidized form of VITC)
+
+EuroFIR
+component
+identifiers (MI=
+method indicator)
+FOL+MI
+FOL+MI
+
+mg
+
+VITC generally yields highest values. In fresh food however, VITC and
+ASCL should give comparable results, since the oxidized form of VITC, if
+existing, is very low.
+In fresh foods the reduced form (ASCL) is the major one present but the
+amount of the dehydro-form (ASCDL) increases during cooking and
+processing
+
+35
+
+VITC
+
+ASCL
+ASCDL
+
+Annex 2 Units, significant figures and maximum decimal places
+Adopted from Greenfield and Southgate (2003, p. 165) and the FAO/INFOODS Compilation Tool
+(available at http://www.fao.org/infoods/software_en.stm).
+In the user table/DB it is recommended that the maximal number of decimal places per nutrient
+and the significant figures are fixed. No decimal places should be added, but values with higher
+number of significant figures or decimal places should be rounded to the recommended number. It is
+recommended to report values with 2 or 3 significant figures (Greenfield and Southgate, 2003,
+pp.163-166; Charrondiere et al., 2011ab, Module 4c).
+Table 6. Units, significant figures and maximum decimal places
+Units, significant figures and maximum number of decimal places to be used for food
+composition values in user table/DB (per 100 g edible portion of food)
+Constituent
+Unit
+Number of
+Maximal number of decimal
+significant figures places
+
+Energy
+Major
+constituents
+(water,
+protein,
+fat,
+carbohydrates,
+dietary
+fibre, alcohol)
+Amino acids
+Fatty acids (sum)
+Individual fatty acids
+Cholesterol
+Inorganic constituents
+Zinc, Iron
+Copper, Manganese
+Calcium, Magnesium,
+Phosphorus, Potassium,
+Sodium
+Selenium, Iodine
+Vitamins
+Retinol
+Carotenes
+Vitamin D
+Tocopherols
+Vitamin K
+Thiamin
+Riboflavin
+Niacin
+Vitamin B6
+Pantothenic acid
+Biotin
+
+kJ (kcal)
+g
+
+3
+3
+
+0
+Water, dietary fibre, alcohol:
+1
+
+mg
+g
+g
+mg
+
+3
+3
+3
+3
+
+Others: 2
+0
+2
+3
+2
+
+mg
+mg
+
+3
+3
+
+2
+3
+
+mg
+mcg
+
+3
+2
+
+0
+2
+
+mcg
+mcg
+mcg
+mg
+mcg
+mg
+mg
+mg
+mg
+mg
+mcg
+
+3
+3
+2
+2
+2
+2
+2
+2
+2
+2
+2
+
+0
+0
+2
+2
+2
+3
+3
+3
+3
+3
+2
+
+36
+
+Vitamin B12
+Folates
+Vitamin C
+
+mcg
+mcg
+mg
+
+2
+2
+3
+
+2
+0
+2
+
+Annex 3 Conversion factors
+1. Edible portion coefficient/refuse values
+The edible portion coefficient (EDIBLE), also called refuse, should preferably be measured by
+weighing the edible and inedible parts of foods, including cooked foods.
+In case measuring is not possible, there are two different approaches of estimating EDIBLE for
+cooked foods when the inedible part is still part of the cooked food:
+1. If weight loses are similar between the edible portion (EP) and the inedible portion (IP), the
+EDIBLE is the same for the cooked as for the raw food. For example: The EDIBLE of a raw food
+with skin is 0.80, the EDIBLE of the same cooked foods would be 0.80 as well.
+2. If the inedible portion loses no or only an insignificant amount of weight (e.g. stones in fruits,
+bones in meat) meaning that all weight loss occurs in the edible portion, the following calculation
+can be applied:
+
+The calculation steps illustrated in Figure.... can be summarized in the following equation:
+
+Where: EDIBLE = edible portion coefficient
+EP = edible portion
+IP = inedible portion
+YFEP = weight yield factor applicable on the edible portion
+
+37
+
+Energy conversion factors in kJ (kcal/g)
+Food composition databases (FCDB) use the ‘metabolizable energy’ system that is based on the
+Atwater energy conversion factors. ‘Gross energy’ and ‘net metabolizable energy’ are generally
+not used in FCDBs.
+Individual countries may have additional factors defined within food regulations.
+The system of calculation chosen for energy should be clearly indicated.
+
+Table 7. Atwater Energy conversion factors in kJ (kcal/g)
+Components in
+kJ (kcal)/g
+Protein
+
+General
+Atwater
+factors
+17 (4.0)
+
+More extensive
+General Atwater
+factors
+17 (4.0)
+
+Carbohydrates4
+
+17 (4.0)
+
+Fat
+
+37 (9.0)
+
+17 (4.0) or
+16 (3.75)
+37 (9.0)
+
+Alcohol
+Dietary Fibre
+Organic acids
+Polyols
+
+29 (7.0)
+
+29 (7.0)
+8 (2.0)
+
+Specific Atwater
+factors
+3.8-18.2
+(0.91-4.36)
+10.4-17.2
+(2.48-4.16)
+35.0-37.7
+(8.37-9.02)
+29 (7.0)
+
+General Atwater factors
+as proposed by Codex for
+food labelling
+17 (4.0)
+17 (4.0)
+37 (9.0)
+29 (7.0)
+13 (3.0)
+
+Adapted from FAO (2003) and Codex Alimentarius (2007)
+General Atwater factors
+This system uses a single factor for each of the energy-yielding components, regardless of the food.
+More extensive General Atwater factors-These factors are those most recommended for use in FCDBs.
+A more extensive factor system has been derived by modifying, refining and making additions to the
+Atwater general factor system. Factors for available carbohydrates expressed as monosaccharide
+equivalent (16 kJ/g (3.75 kcal/g) and for dietary fibre (8kJ/g (2.0 kcal/g) were added.
+Specific Atwater factors
+This system includes the variability in combustion and digestibility of the energy yielding
+components. Consequently, energy conversion factors differ between foods. However, these factors
+are available for a small number of foods only. For more information see FAO (2003, p. 26) and
+Merrill and Watt (1975).
+General Atwater factors as proposed by Codex for food labelling
+The system uses the general Atwater factors and adds a factor for organic acids. Protein is defined as
+Total Kjeldahl Nitrogen × 6.25 (and 6.38 for milk).
+
+4
+
+When available carbohydrate, expressed as monosaccharide equivalents is reported in a user table/DB, the conversion
+factor of 16 kJ/g (3.75 kcal/g) should be used. When total carbohydrate or available carbohydrate expressed by difference
+or by weight is reported, the conversion factor of 17 kJ/g (4.0 kcal/g) should be used (FAO, 2003)
+
+38
+
+Nitrogen to protein conversion factors
+The nitrogen to protein conversion factors, also called Jones factors are used to convert the total
+nitrogen value to the protein value (see table 8 below).
+If a specific factor is not listed, 6.25 should be used until a more appropriate factor has been
+determined
+Nitrogen to protein conversion factors adapted from Jones (1941), unless indicated.
+Table 8. Nitrogen to protein conversion factors
+Foodstuff
+Animal products
+Meat and fish**
+Gelatin
+Milk
+Casein**
+Human milk **
+Eggs
+whole
+albumin**
+vitellin**
+
+Factor
+6.25
+5.55
+6.38
+6.40
+6.37
+6.25
+6.32
+6.12
+
+Plant products
+Wheat -whole kernel
+Wheat -bran
+Wheat -embryo
+Wheat -endosperm
+Rice
+Rye
+Barley
+Oats
+Millet#
+Maize (corn)
+Sorghum#
+Beans
+Soya
+Castor beans
+Beans: adzuki; jack; lima; mung; navy; velvet
+Mushrooms*
+Chocolate and cocoa*
+Yeast*
+Coffee*
+Nuts
+Almond
+Brazil
+Peanuts (groundnut)
+Others (butternuts; cashew; chestnut; coconut;
+hazelnut; hickory; pecans; pine nuts; pistachio;
+walnuts)#
+Seeds (cataloup; cottonseed; flaxseed; hempseed;
+
+5.83
+6.31
+5.80
+5.70
+5.95
+5.83
+5.83
+5.83
+5.83
+6.25
+6.25
+6.25
+5.71
+5.3
+6.25
+4.38
+4.74
+5.7
+5.3
+5.18
+5.46
+5.46
+5.30
+5.30
+
+39
+
+pumpkin; sesame; sunflower)
+* From USDA SR24 documentation. # From Merrill and Watt, 1973 (Merrill, A.L., and B.K. Watt. 1973.
+Energy Value of Foods: Basis and Derivation, revised. U.S. Department of Agriculture, Agriculture Handbook
+74). ** From Greenfield and Southgate (2003).
+
+40
+
+References
+Burlingame, B. (2004). Fostering quality data in food composition databases: visions for the future.
+Journal of Food Composition and Analysis, 17, 251-258.
+Burlingame, B., Monro J. (1991). Proceedings of the third OCEANIAFOODS Conference. Crop
+and Food Research. Auckland. New Zealand.
+Bergström, L. (1994). Nutrient Losses and Gains. Statens Livsmedelsverk, Uppsala. Available at
+http://www.slv.se/upload/dokument/rapporter/mat_naring/1994_32_Livsmedelsverket_nutrient_l
+osses_and_gains.pdf (Accessed May, 2012).
+Bognár, A. (2002). Tables of weight yield of food and retention factors of food constituents for the
+calculation of nutrition composition of cooked foods (dishes). Bundesforschungsanstalt für
+Ernährung, Karlsruhe. Available at
+http://www.mri.bund.de/fileadmin/Veroeffentlichungen/Archiv/Schriftenreihe_Berichte/bfe-r-0203.pdf (Accessed June 2012).
+Charrondiere, U.R. (2012a). Basic principles for assembling, management and updating of a food
+composition database. PowerPoint Presentation. Available at:
+ftp://ftp.fao.org/ag/agn/infoods/basic%20principles%20in%20assempling%20mangement%20updati
+ng.pdf (Accessed June, 2012).
+Charrondiere, U.R. (2012b). Food selection, nomenclature, classification and identification in
+databases. PowerPoint Presentation. Available at
+ftp://ftp.fao.org/ag/agn/infoods/food%20nomenclature.pdf (Accessed June, 2012).
+Charrondiere, U.R. (2012c). Food composition database management systems and interchange.
+PowerPoint Presentation. Available at: http://www.fao.org/infoods/presentations_en.stm (Accessed
+June, 2012).
+Charrondiere, U.R., Burlingame, B., Berman, S., Elmadfa, I. (2011a). Food Composition
+Study Guide. Questions and exercises (volume 1) – second revised edition. FAO, Rome.
+Available at http://www.fao.org/infoods/publications_en.stm (Accessed June, 2012).
+Charrondiere, U.R., Burlingame, B., Berman, S., Elmadfa, I. (2011b). Food Composition
+Study Guide. Questions, exercises and answers (volume 2) – second revised edition. FAO, Rome.
+Available at http://www.fao.org/infoods/publications_en.stm (Accessed June, 2012).
+Charrondiere U.R., Burlingame, B. (2011). Report on the FAO/INFOODS Compilation Tool: A
+simple system to manage food composition data. Journal of Food Composition and Analysis, 24,
+711-715.
+Codex Alimentarius (2007) Food Labelling. Fifth edition. FAO. Rome. Italy. Avaialble at:
+ftp://ftp.fao.org/docrep/fao/010/a1390e/a1390e00.pdf (Accessed July, 2007).
+EuroFIR (2012a). European Food Information Resource Network
+http://www.eurofir.net/food_information/quality_and_standards (Accessed May, 2012).
+EuroFIR (2012b). EuroFIR Component Thesaurus. Available at:
+http://www.eurofir.net/eurofir_aisbl/products/eurofir_thesauri/component_thesaurus (Accessed
+May, 2012).
+
+41
+
+EuroFIR (2012c). Food composition databases
+http://www.eurofir.net/eurofir_knowledge/european_databases (Accessed May, 2012).
+EuroFIR (2012d). Website on recipe calculation, including yield and retention factors.
+http://www.eurofir.org/?q=node/9 (Accessed May, 2012).
+EuroFIR (2009). EuroFIR Work package 1.3, Task group 4. Guidelines for quality index attribution
+to original data from scientific literature or reports for EuroFIR data interchange. October 2009.
+Available at
+http://www.eurofir.net/sites/default/files/Deliverables/EuroFIR_Quality_Index_Guidelines.pdf
+(Accessed June, 2012).
+FAO/INFOODS (2012a). FAO/INFOODS Guidelines on Conversion among different units,
+denominators and expressions. Soon available at http://www.fao.org/infoods/projects_en.stm
+FAO/INFOODS (2012b). FAO/INFOODS Density Database. Available at
+http://www.fao.org/infoods/projects_en.stm (AccessedOcotber, 2012).
+FAO/INFOODS (2011). FAO/INFOODS Guidelines of Food Matching. Version 1.1. FAO, Rome.
+Available at http://www.fao.org/infoods/projects_en.stm (Accessed June, 2012).
+FAO (2003). Food energy- methods of analysis and conversion factors. FAO, Rome. Available at
+http://www.fao.org/DOCREP/006/Y5022E/Y5022E00.HTM (Accessed June, 2012).
+Finke, M.D. (2007). Estimate of chitin in raw whole insects. Zoo Biology, 26(2), 105-115.
+FoodCase (2012). Available at: http://www.foodcase.ethz.ch/index_EN (Accessed June, 2012).
+Food Standards Agency (2002). McCance and Widdowson’s. The Composition of Foods integrated
+dataset (CoFIDS). Sixth summary edition. Cambridge: Royal Society of Chemistry. Available at
+http://tna.europarchive.org/20110116113217/http://www.food.gov.uk/science/dietarysurveys/diet
+surveys/(Accessed June, 2012).
+Greenfield, H., Southgate, D.A.T. (2003). Food composition data – production, management and
+use. FAO, Rome. Available at ftp://ftp.fao.org/docrep/fao/008/y4705e/y4705e00.pdf (Accessed
+June, 2012).
+Haytowitz, D.B., Lemar, L.E., Pehrsson, P.R. (2009). USDA’s Nutrient Databank System – A tool
+for handling data from diverse sources. Journal of Food Composition and Analysis, 22, 433–441.
+Holden, J.M., Bhagwat, S.A., Patterson, K.Y. (2002). Development of a multi-nutrient data quality
+evaluation system. Journal of Food Composition and Analysis, 15(4), 339–348.
+INFOODS (2012a). The International Network of Food Data Systems. Available at
+http://www.fao.org/infoods/index_en.stm (Accessed May, 2012).
+INFOODS (2012b). Tagnames for components. Available at
+http://www.fao.org/infoods/tagnames_en.stm (Accessed May, 2012).
+Ireland, J., Møller, A. (2000). Review of International Food Classification Description. Journal of
+Food Composition and Analysis, 13, 529-538.
+
+42
+
+Jones, D.B. (1941). Factors for Converting Percentages of Nitrogen in Foods and Feeds into
+Percentages of Protein. U.S. Department of Agriculture, Circular No. 183, Slightly revised edition
+1941 (Original version 1931).
+Klensin, J.C. (1992). INFOODS Food Composition Data Interchange Handbook. United Nations
+University, Tokyo. Available at
+http://archive.unu.edu/unupress/unupbooks/80774e/80774E00.htm#Contents (Accessed June,
+2012).
+Klensin, J.C., Feskanich, D., Lin, V., Truswell, A.S., Southgate, D.A.T. (1989). Identification of
+Food Components for INFOODS Data Interchange. United Nations University, Tokyo, 1989.
+Available at: ftp://ftp.fao.org/es/esn/infoods/Klensinetal1989Identificationoffoodcomponents.pdf
+(Accessed May, 2012).
+LanguaL (2012) The International Framework for Food Description. Available at
+http://www.langual.org/ (Accessed June 2012).
+Merrill A.L., Watt, B.K. (1973). Energy value of foods, basis and derivation. Human Nutrition
+Research Branch. Agriculture Research Service. United States Department of Agriculture.
+Agriculture Handbook No.74. Available at
+http://www.nal.usda.gov/fnic/foodcomp/Data/Classics/ah74.pdf (Accessed May, 2012).
+Murphy, E.W., P.E. Criner, and B.C. Gray. 1975. Comparison of methods for determining
+retentions of nutrients in cooked foods. Journal of Agriculture and Food Chemistry 23:1153.
+Pennington, J.A.T. (2008). Applications of food composition data: Data sources and considerations
+for use. Journal of Food Composition and Analysis, 21, S3–S12.
+Pennington, J.A.T (1996). Issues of food description. Food Chemistry, 57(1), 145-148.
+Rand, W.M., Pennington, J.A.T., Murphy, S.P., Klensin, J.C. (1991). Compiling Data for Food
+Composition Data Bases. United Nations University Press, Tokyo, Japan.
+Schakel, S.F., Buzzard, I.M., Gebhardt, S.E. (1997). Procedures for Estimating Nutrient Values for
+Food Composition Databases. Journal of Food Composition and Analysis, 10, 102-114.
+Truswell, A.S., Bateson, D.J., Madafiglio, K.C., Pennington, J.A.T., Rand, W.R., Klensin, J.C.
+(1991). INFOODS Guidelines for Describing Foods: A Systematic Approach to Describing Foods to
+Facilitate International Exchange of Food Composition Data. Journal of Food Composition and
+Analysis, 4, 18–38.
+USDA (2011). USDA National Nutrient Database for Standard Reference, Release 24.
+Available at http://www.ars.usda.gov/services/docs.htm?docid=8964 (Accessed May, 2012).
+USDA (2007). Table of Nutrient Retention Factors, Release 6 Available at
+http://www.nal.usda.gov/fnic/foodcomp/Data/retn6/retn06.pdf (Accessed May, 2012).
+USDA (1975). Agriculture Handbook No. 102. Food Yields Summarized by Different Stages of
+Preparation. USDA Agricultural Research Service, Washington, D.C. Available at
+http://www.nal.usda.gov/fnic/foodcomp/Data/Classics/ah102.pdf (Accessed May, 2012).
+
+43
+
+Westenbrink, S., Oseredczuk, M., Castanheira, I. (2009). Food composition databases: The EuroFIR
+approach to develop tools to assure the quality of the data compilation process Food Chemistry, 113,
+759 -767.
+Additional literature
+Burlingame, B., Monro J. (1991). Proceedings of the third OCEANIAFOODS Conference. Crop
+and Food Research. Auckland, New Zealand.
+Buzzard, I.M., Schakel, S.F., Ditter-Johnson, J. (1993). Quality Control in the Use of Food and
+Nutrient Databases for Epidemiologic Studies. In: Proceedings of the First International Food Data
+Base Conference held in Sydney, Australia, 22–24 September. Heather Greenfield and FAO. First
+edition. (Available at: ftp://ftp.fao.org/docrep/fao/008/af282e/af282e00.pdf (Accessed May, 2012).
+Castanheira, I., Roe, M., Westenbrink, S., J., Møller, A., Salvini, S., Beernaert, H., Oseredczuk, M.,
+Calhau, M.A. (2009) Establishing quality management systems for European food composition
+databases, Food Chemistry, 113 (3), 776-780.
+Schlotke, F., Becker, W., Ireland, J., Møller, A., Ovaskainen, M.-L., Monspart, J., Unwin, I. (2000).
+EUROFOODS recommendations for food composition database management and data interchange.
+Journal of Food Composition and Analysis, 13 (4), 709-744.
+
+44
+

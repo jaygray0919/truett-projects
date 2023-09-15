@@ -1,0 +1,11 @@
+
+http://www.biovisualize.com/
+
+http://biovisualize.github.io/d3visualization/
+
+http://christopheviau.com/d3list/gallery.html
+
+http://stackoverflow.com/users/537080/biovisualize
+
+Backbone + reusable D3 charts
+https://bl.ocks.org/biovisualize/40ce9f6886ee5011e536

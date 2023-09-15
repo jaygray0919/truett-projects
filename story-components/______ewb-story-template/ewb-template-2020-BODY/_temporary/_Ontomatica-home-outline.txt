@@ -1,0 +1,68 @@
+
+Framework to generate electronic, machine-readable labels for
+	foods
+	drugs
+	cosmetics
+	meals
+	textiles
+	commodities
+	chemicals
+
+
+Pizza is a complex product.
+
+Physical products can be ... graphs
+
+An electronic label for pizza handles complexity by linking structured data from many sources into graphs.
+
+Structured data describes flavors, ingredients and formulations.
+
+Structured data also describes how a pizza and its components were sourced, combined and packaged.
+
+A graph that combines structured data about a product's characteristics is packaged as an electroninc label.
+
+An electronic label is machine&#x2010;readable and is a data source for data&#x2010;driven machines.
+
+Electronic labels can be combined to make new labels for new products.
+
+For humans, electronic labels can be published and spoken in 27 national languages.
+
+
+
+
+
+level-1 menu (lower case)
+	about
+		level-2
+	resource
+		level-2
+	ontology
+		
+	language
+		
+	offer
+		single page
+	contact
+		lightbox, form and slack
+	search
+		lightbox and autosuggest
+---
+	language (for translated pages; selective!)
+
+each level-2 option for level-1 has a symbol
+level-2 selection navigates to detail page with sidebar menu for detail navigation
+
+___________________________
+|	Ontologies (label)
+|	ontology tree, similar to amp-component list
+|
+
+___________________________
+|	Resources (label)
+|	selectable tree
+|
+
+___________________________
+|	About Us (label)
+|	selectable tree
+|
