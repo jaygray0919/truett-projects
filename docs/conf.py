@@ -139,6 +139,8 @@ html_extra_path = [
     '_files/color/sequence-by-group.html',
     '_files/bullet-color/color-bullet-23-07-04.html',
     '_files/google-doc-viewer/doc-viewer-23-06-11.html',
+    '_files/amp-img/amp-img-DAG-base64.html',
+    '_files/amp-img/amp-img-positioning-WestonR.html',
     ]
 
 html_static_path = [

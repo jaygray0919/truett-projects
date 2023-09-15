@@ -2,5 +2,5 @@
 
 `WestonR positioning </en/latest/amp-img-positioning-WestonR.html>`_
 
-`directed acyclic graph as base64 </en/latest/amp-img-DAG-base64.html.html>`_
+`directed acyclic graph as base64 </en/latest/amp-img-DAG-base64.html>`_
 
