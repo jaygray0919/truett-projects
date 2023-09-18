@@ -1,0 +1,2 @@
+
+integrate with amp-list/mustache for regional versions

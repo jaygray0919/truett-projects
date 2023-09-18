@@ -1,0 +1,92 @@
+
+Data has been a valuable commodity for more than a decade now. It not only has changed the way our civilization is progressing but, has also provided us with a new perspective with which we look at our skill sets and professional growth. For an individual who is beginning to work with data, it is obviously important to understand what data is and how to process and use it. But, it is also important to understand what working with data means, what are its various forms, who uses it and how. Such individuals should be able to identify with what role they play in this ecosystem and whereto can they progress. At the same time, they should also recognise the needs of other people in this ecosystem in order to understand problem statements and create better solutions.
+
+This article is a generalised account of my experiences as a data professional at a Video OTT (B2C) Product organisation. The intent here is to describe what the ecosystem in modern data-driven product companies can feel like, what various stages of its life cycle are, and who are producers and consumers in this ecosystem. Data is as much about engineering and technical concepts, as it is about decision making and operations when properly translated to intelligence.
+
+    Experiences are unique — This ecosystem is also unique to one organisation and might not be exactly applicable elsewhere. The idea is to give a sense of its working to people who are new to such an ecosystem.
+
+Meet the players of this ecosystem!
+
+While data may be the all-powerful artificial resource of the 21st century, the roles that humans play in this ecosystem are crucial. Let’s see who they are.
+Illustration created by the author
+
+Consumers are at the centre of this ecosystem — They consume the product offerings and receive the benefits of an ever-evolving user experience. They are the gold mine of this world and their interactions with various digital products translate to raw data which runs through the ecosystem.
+
+Product Managers and Business Stakeholders are tasked with continuously creating value for both the consumers and the product/organization they work for. They work in tandem to meet the expectations set by the consumers and improve the value proposition that their product offers while optimizing the return on investment of their efforts and achieving organizational targets.
+
+Data Architects work with Product Managers to create a foundation of what kind of raw data needs to be generated and how it needs to be consumed. They provide a technical map to the vision of a data ecosystem and this map facilitates the development of data processing pipelines, business intelligence dashboards, data feeds, etc.
+
+Data Engineers build on top of this foundation by setting up resources and creating systems to store and process data and support the analytical needs of their stakeholders. Their work revolves around building data pipelines and maintaining data availability in various forms.
+
+QA (Quality Assurance) Engineers play an important role by keeping a check on the quality of work product that the data engineers produce and making sure that stakeholder expectations are correctly met.
+
+Data Analysts play an interesting role because they work with the unknown. They work on answering questions that anyone in the organization comes up with. They help in understanding unique user behaviour, creating market projections, debugging issues and anomalies, and whatnot. They might work with technical, product, or business teams and address a variety of problem statements.
+
+    An analyst is that wrench in the toolbox that can be adjusted to screw various sizes of nuts and bolts, and provide value beyond that as well.
+
+Lastly, there are the Data Scientists — They carry the burden of pulling a rabbit out of the hat. Their role revolves around generating deeper insights by analysing data and using data science and advanced analytics techniques. From predictive modelling to creating recommendation systems, their work remains unstructured but highly valuable.
+
+These technical brains come together to create amazing analytical work products that inform the organization about the behaviour of their consumers and help stakeholders make better decisions every day.
+
+Facets of data — How is it perceived?
+
+The various players in a data ecosystem interact with data differently, and this interaction defines how they perceive data and what they do with it. In 2006, when Clive Humby coined the phrase “Data is the new oil”, he drew an unmistakable comparison between the 2 resources. Just like oil goes through various stages like extraction, refining, and storage; some people value data in a crude form, some only make use of the processed form and some just need to understand its characteristics to store and process it.
+
+Interaction with data defines a player’s perception and usage of it. Illustration created by the author.
+
+In this ecosystem, the data presents 3 facets. These facets, while visible and accessible to anyone, have higher relevance to only a few players.
+
+    Volume & Characteristics — This facet is most visible and relevant to the data engineering players as they are responsible for understanding the data’s structure and size, storing it, processing it and creating analytical work products like reports, models and analyses. While they are also exposed to the other two facets, the relevance to their responsibilities is lower and only acts as additional knowledge to their understanding of the ecosystem which might help them create better solutions.
+	
+    Patterns & Behaviours — This facet is most relevant to Data Analysts and Scientists. It’s their responsibility to get their hands dirty and find answers that no one knows how to figure out. They study the hidden patterns and consumer behaviours to address the problem statements at hand which are always exploratory and diagnostic in nature. Their work product often contributes to that of the Data Architects and Engineers in the form of the development of new production processes.
+    
+	Summarised Information — This facet is most important for the decision-making players of the ecosystem. Product Managers and Business Stakeholders perform a variety of operational (day-to-day), as well as strategic (long term) functions with the help of reporting dashboards, outcomes of predictive models, insights from ad-hoc analyses, etc. They depend on these analytical tools to improve the product experience and create value for the consumer and the organization.
+
+These interactions may not be as exclusive as they might seem above and anyone in the ecosystem can experience a fair amount of overlap. Business Stakeholders might never be exposed to the raw data or its metadata as they might not be technically equipped to consume it but nothing stops a Data or QA Engineer from consuming and comprehending the summarised information presented to these stakeholders. It might just be an exercise to better understand the impact of their work or an effort to upgrade their knowledge of the product or organization they work for. Similarly, while the work of Data Scientists might be highly technical or statistical in nature, more often than not they have to get a deep understanding of various business functions and market dynamics in order to better inform their understanding of the problem statement.
+
+    Its safe to say that any professional who has a solid understanding of how all of these aspects interact with one another will be highly functional in this ecosystem and might be capable of creating greater value than others.
+
+What happens with data?
+
+Growing our crop — Generating Data
+
+An essential component of the data ecosystem is the accurate generation of raw data. Consumer apps can have various features and functionalities, branched user experiences, video players, payment gateways, etc. To better understand the user behaviour, it is necessary to capture the right kind of user touchpoints and to do that you have to correctly design your applications event logging architecture. A correctly designed architecture can help you understand precious behavioural information about a large section of your user base; on the other hand, a poorly designed event logging system may cause you to lose out on valuable insights.
+
+Illustration created by the author
+
+Most ecosystems rely on interactions between frontend and backend systems to generate the event logs for user interactions. Every time a user interacts with a particular feature, an event log is pushed to the data ingestion systems containing various variables and parameters defining the captured event.
+
+    Say, a user tries to search a video on the application, when she hits search, a request is sent to the backend service for search and a response is sent back to the front end presenting multiple relevant search results for the user. This process involves generation of an event log from the backend and frontend systems that goes into a data warehouse and is stored as raw data for various analytical use cases. This log can contain various attributes like search keyword, search results, language, etc. which can later help in understanding what users search for or evaluating the quality of search results that are served.
+
+Here, an important role is played by Product Managers and Data Architects to understand and decide what information needs to be captured and how it can be included in the services’ architecture.
+
+Intelligence factories — The Data Platform
+
+Business Intelligence systems have been a crucial part of any company’s decision-making process for quite some time and they have continuously evolved with the evolution of data management and processing technologies. In our ecosystem, a well-architected data platform helps the organization build data-driven strategies and enrich the product offering for our consumers.
+
+Illustration created by the author
+
+Data is collected from various sources — Event logs from consumer apps and backend services, content metadata from external vendors, billing transactions from payment partners, interaction data from social media accounts, customer service data, etc. All of this data needs to be properly ingested, stored efficiently and processed in order to extract intelligence. The data engineering team takes on this challenge where Data Architects along with Data Engineers create an end to end data processing platform. They set up data ingestion pipelines, design a data warehouse with multiple data marts, create ETL processes to serve the needs of various business reports, and build those reports on one or the other enterprise data visualisation tools. They also make sure that integrations are possible with third-party services in order to set up data feeds between them.
+
+The Data Engineering team in tandem with Product Managers create a variety of analytical work products — dashboards, summary reports, predictive models, knowledge graphs, and various exploratory analyses. These products are a result of various requirements from business stakeholders and initiatives within the product management and engineering space. Professionals collaborate to understand what kind of product will address their use-cases and document their version of the requirements which is then discussed with engineers in order to bring it to life. QA Engineers make an important contribution to this process by understanding these requirements and making sure that the deliverable is of the highest quality and accuracy. They validate the facts presented in any report in the form of aggregations, evaluate the usage of these products from the perspectives of its consumers, and make sure that any concerns raised by the stakeholders are addressed in a timely fashion.
+
+    An important component of the ecosystem is Data Democracy. The burden of storing and managing data might lie onto engineering teams, but everyone should be equipped with the power to use and analyse this resource. In this day and age, more and more business strategies are data-driven, so it makes sense that those decision makers have better access to data. Functional teams work with their analysts to create customised dashboards and analyses that support their day to day analytical needs. Democratising data makes sure that understanding of the business and industry is easily factored into the problem solving process and relieves the engineering team of any pressure to invest additional bandwidth in solving functional problems.
+
+Lobbying for Growth — Product Management
+
+A central team of Product Managers and Analysts drives the development and growth of the product from its core. Product Managers work with various aspects of the product — some manage the development of the consumer application, while others manage the growth of business markets and their KPIs. A small group of these managers is responsible for building and driving the data ecosystem by collaborating with engineering teams as well as business stakeholders. Other product managers leverage this ecosystem in order to further strategic roadmaps of their own product components.
+
+Illustration created by the author
+
+
+“What do the numbers tell us?” — Business Stakeholders
+
+These teams are the primary consumers of all analytical work products generated in our ecosystem. They define strategies around various business/market operations like offline and online marketing for user acquisition and retention, advertising and subscription workflows, content acquisition and programming, etc. They also continuously evaluate the market fit of various product features and how the users are engaging with them. This is important to make sure that the product offerings always stay relevant for its target group.
+
+These functional requirements require a deep understanding of the user behaviour and product performance which are fulfilled by a host of timely dashboards, performance trackers, projections and predictive models, user segmentation algorithms… the list goes on. The Business Stakeholders define what they want to track and how they want to study it, in collaboration with Product Managers. These requirements trickle down the tree to the engineering players who provide a technical form to these requirements and build analytical products that provide actionable insights to the Business Stakeholders.
+
+Illustration created by the author
+
+It may seem that the ecosystem presents itself in a cyclic form, where data generated by product consumers comes back to them in the form of an enhanced user experience and new product features. But, the value created in this ecosystem is only as strong as the collaborative effort of the people within it. Bad collaborations tend to create zero or low value for their customers, while good ones create history. It is most important to identify your role in this ecosystem to be both — an effective data professional, and to be a successful collaborator. Kudos!
+
+

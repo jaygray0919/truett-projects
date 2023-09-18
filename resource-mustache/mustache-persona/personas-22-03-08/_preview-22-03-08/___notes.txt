@@ -1,0 +1,8 @@
+
+errors
+
+add closing </g> before closing </svg>
+for
+19 (closing for layer-1)
+21 (closing for layer-1)
+39

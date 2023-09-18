@@ -1,0 +1,18 @@
+
+02:21 5/12/2022
+additional errors discovered when comparing to
+    21x2-original-files-linked
+
+notes added to:
+_workbooks-persona
+___items-single-page-22-05-12.xlsx
+
+
+---------------
+previous errors
+
+add closing </g> before closing </svg>
+for
+19 (closing for layer-1)
+21 (closing for layer-1)
+39

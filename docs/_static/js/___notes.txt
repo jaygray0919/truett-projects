@@ -1,2 +1,6 @@
 
 add d3.js libs here
+
+or
+
+in conf.js as with amp-libs

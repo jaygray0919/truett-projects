@@ -1,0 +1,51 @@
+
+Let me know how i can improve this or clarify
+
+from the file
+	___items-single-page-22-05-12.xlsx
+
+copy out
+	row 11, cells BP thru BCE
+
+that file is attached as
+	_pori-row-11-raw.txt
+
+next, remove all tabs from the file (\t)
+there are 1365 occurences
+
+next remove all pipes (|)
+there are 384 occurences
+
+next replace ^ with a space
+there are 6 occurences
+
+i performed the above and saved the file as
+	_pori-row-11-clean.html
+
+you can run that file locally in your browser
+it is identical to your original source file
+	1_1.svg
+
+--------------------
+let's do another one
+
+copy out
+	row 18, cells BP thru BCE
+
+it is attached as
+	_pori-row-18-raw.txt
+
+repeat above
+	delete \t
+	delete |
+	change ^ to space
+
+as implemented here
+	_pori-row-18-clean.html
+
+compare that to the original
+	4_2.svg
+
+there is an error; the white medalion is missing!
+
+

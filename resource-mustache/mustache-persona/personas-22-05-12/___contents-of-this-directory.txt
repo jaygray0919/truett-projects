@@ -1,0 +1,81 @@
+Folder PATH listing for volume tera_drive
+Volume serial number is AEE4-B95A
+E:.
+│   tree.txt
+│   __personas-structure.xlsx
+│   
+├───21x2-original-files-linked
+│       10_1.svg
+│       10_2.svg
+│       11_1.svg
+│       11_2.svg
+│       12_1.svg
+│       12_2.svg
+│       13_1.svg
+│       13_2.svg
+│       14_1.svg
+│       14_2.svg
+│       15_1.svg
+│       15_2.svg
+│       16_1.svg
+│       16_2.svg
+│       17_1.svg
+│       17_2.svg
+│       18_1.svg
+│       18_2.svg
+│       19_1.svg
+│       19_2.svg
+│       1_1.svg
+│       1_2.svg
+│       20_1.svg
+│       20_2.svg
+│       21_1.svg
+│       21_2.svg
+│       2_1.svg
+│       2_2.svg
+│       3_1.svg
+│       3_2.svg
+│       4_1.svg
+│       4_2.svg
+│       5_1.svg
+│       5_2.svg
+│       6_1.svg
+│       6_2.svg
+│       7_1.svg
+│       7_2.svg
+│       8_1.svg
+│       8_2.svg
+│       9_1.svg
+│       9_2.svg
+│       z-index-complete.html
+│       _index-home-reference_frames-21-12-02.html
+│       _index-home-reference__targets.html
+│       __index-complete.html
+│       
+├───personas-data-roles-HTML
+│       block-1-w1235-h726.jpeg
+│       block-2-w1235-h904.jpeg
+│       block-3-w1235-h860.jpeg
+│       block-4-w1235-h699.jpeg
+│       block-5-w4000-h3104.jpeg
+│       personas-data-roles-w2000-h323.jpeg
+│       soa-sketch-paul-downey.webp
+│       triangle-1-w1235-h1051.jpeg
+│       _index.html
+│       
+├───personas-data-roles-webp
+├───_preview-22-05-12
+│       _test-personas-items-single.html
+│       _test-personas.html
+│       ___notes.txt
+│       
+├───_workbooks-persona
+│       ___items-single-page-22-05-12.xlsx
+│       
+└───__pori-memos
+        _pori-row-11-clean.html
+        _pori-row-11-raw.txt
+        _pori-row-18-clean.html
+        _pori-row-18-raw.txt
+        __pori-memo-SVG-edits.txt
+        
