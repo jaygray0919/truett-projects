@@ -140,7 +140,7 @@ html_extra_path = [
     '_files/bullet-color/color-bullet-23-07-04.html',
     '_files/color/sequence-by-group.html',
     '_files/fonts/___Japanese-Korean-Chinese-simplified.html',
-    '_files/fonts/___noto-serif+sans-poppins-recursive-zillaslab.html',
+    '_files/fonts/___noto-serif-sans-poppins-recursive-zillaslab.html',
     '_files/fonts/___robotoflex-VF.html',
     '_files/fonts/amstelvar-alpha.html',
     '_files/google-doc-viewer/doc-viewer-23-06-11.html',
