@@ -1,12 +1,15 @@
 
 .. describe:: amp-list and amp-mustache for persona
 
-   item
+   substitution of specific value from a list of values
 
 
 .. attention::
-   Notes about amp-list and amp-mustache.
+   depends on <amp-list> and <amp-mustache>.
 
+
+sample code
+-----------
 
 .. highlight:: html
 
@@ -52,8 +55,8 @@
    </amp-story-page>
 
 
-Example
+example
 -------
 
-`persona </en/latest/__persona-story-rice_-_22-05-14___3.html>`_
+`persona avec mustache </en/latest/__persona-story-rice_-_22-05-14___3.html>`_
 

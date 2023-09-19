@@ -1,3 +1,10 @@
 
 
-`amstelvar </en/latest/font-face-amstelvar.html>`_
+`Japanese, Korean, and Chinese-simplified </en/latest/___Japanese-Korean-Chinese-simplified.html>`_
+
+`Noto Serif, Noto Sans, Poppins, Recursive and ZillaSlab </en/latest/noto-serif+sans-poppins-recursive-zillaslab.html>`_
+
+`Description of pizza using Amstelvar and Recursive variable fonts (VF) </en/latest/amstelvar-alpha.html>`_
+
+`RobotoFlex VF </en/latest/___robotoflex-VF.html>`_
+
