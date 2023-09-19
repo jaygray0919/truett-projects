@@ -1,7 +1,7 @@
 .. index:
 
-amp-list amp-mustache example
-*****************************
+example |emd| amp-list amp-mustache
+***********************************
 
 
 .. include:: _local.txt
