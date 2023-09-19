@@ -1,7 +1,7 @@
 
 `Japanese, Korean, and Chinese-simplified </en/latest/___Japanese-Korean-Chinese-simplified.html>`_
 
-`Noto Serif, Noto Sans, Poppins, Recursive and ZillaSlab </en/latest/noto-serif+sans-poppins-recursive-zillaslab.html>`_
+`Noto Serif, Noto Sans, Poppins, Recursive and ZillaSlab </en/latest/noto-serif-sans-poppins-recursive-zillaslab.html>`_
 
 `Description of pizza using Amstelvar and Recursive variable fonts (VF) </en/latest/amstelvar-alpha.html>`_
 
