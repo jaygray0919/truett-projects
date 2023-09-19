@@ -1,5 +1,4 @@
 
-
 `Japanese, Korean, and Chinese-simplified </en/latest/___Japanese-Korean-Chinese-simplified.html>`_
 
 `Noto Serif, Noto Sans, Poppins, Recursive and ZillaSlab </en/latest/noto-serif+sans-poppins-recursive-zillaslab.html>`_
