@@ -9,3 +9,6 @@ list |emd| mustache
    1/index.rst
    2/index.rst
    3/index.rst
+   
+   _example/index.rst
+

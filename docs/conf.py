@@ -145,6 +145,8 @@ html_extra_path = [
     '_files/fonts/amstelvar-alpha.html',
     '_files/google-doc-viewer/doc-viewer-23-06-11.html',
     '_files/list-mustache/persona/__persona-story-rice_-_22-05-14___3.html',
+    '_files/list-mustache/pizza-vlad/Pizza_1_01.06.2021.svg',
+    '_files/list-mustache/pizza-vlad/pizza_2_01.06.2021.svg',
     ]
 
 html_static_path = [

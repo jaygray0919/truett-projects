@@ -54,9 +54,3 @@ sample code
 
    </amp-story-page>
 
-
-example
--------
-
-`persona avec mustache </en/latest/__persona-story-rice_-_22-05-14___3.html>`_
-
