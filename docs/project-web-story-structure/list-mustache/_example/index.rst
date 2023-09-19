@@ -1,6 +1,6 @@
 .. index:
 
-amp-list amp-lustache example
+amp-list amp-mustache example
 *****************************
 
 
