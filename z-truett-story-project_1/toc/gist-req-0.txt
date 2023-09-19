@@ -1,8 +1,0 @@
-
-# Truett Story Project Summary
-
-1.  fonts for amp-story
-2.  image srcset for Landscape/Portrait Mobile/Tablet/Desktop (LP/MTD)
-3.  sidebar for amp-story-player
-4.  side-by-side for LP/MTD
-5.  amp-interactive additions

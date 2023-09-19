@@ -1,7 +1,5 @@
 
-.. describe:: amp-list and amp-mustache 1
-
-   item
+.. describe:: amp-list and amp-mustache for persona
 
    item
 
@@ -11,8 +9,6 @@
 
 
 .. highlight:: html
-
-Guidance about amp-list and amp-mustache for Web Story
 
 ::
 
@@ -54,3 +50,10 @@ Guidance about amp-list and amp-mustache for Web Story
      </amp-story-grid-layer>
 
    </amp-story-page>
+
+
+Example
+-------
+
+`persona </en/latest/__persona-story-rice_-_22-05-14___3.html>`_
+

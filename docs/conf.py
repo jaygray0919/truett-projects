@@ -135,12 +135,13 @@ html_short_title = 'Truett Documentation'
 html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
 
 html_extra_path = [
-    '_files/fonts/font-face-amstelvar.html',
-    '_files/color/sequence-by-group.html',
-    '_files/bullet-color/color-bullet-23-07-04.html',
-    '_files/google-doc-viewer/doc-viewer-23-06-11.html',
     '_files/amp-img/amp-img-DAG-base64.html',
     '_files/amp-img/amp-img-positioning-WestonR.html',
+    '_files/bullet-color/color-bullet-23-07-04.html',
+    '_files/color/sequence-by-group.html',
+    '_files/fonts/font-face-amstelvar.html',
+    '_files/google-doc-viewer/doc-viewer-23-06-11.html',
+    '_files/list-mustache/persona/__persona-story-rice_-_22-05-14___3.html',
     ]
 
 html_static_path = [
