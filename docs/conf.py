@@ -139,10 +139,10 @@ html_extra_path = [
     '_files/amp-img/amp-img-positioning-WestonR.html',
     '_files/bullet-color/color-bullet-23-07-04.html',
     '_files/color/sequence-by-group.html',
-    '_files/fonts/amstelvar-alpha.html',
     '_files/fonts/___Japanese-Korean-Chinese-simplified.html',
     '_files/fonts/___noto-serif+sans-poppins-recursive-zillaslab.html',
     '_files/fonts/___robotoflex-VF.html',
+    '_files/fonts/amstelvar-alpha.html',
     '_files/google-doc-viewer/doc-viewer-23-06-11.html',
     '_files/list-mustache/persona/__persona-story-rice_-_22-05-14___3.html',
     ]
