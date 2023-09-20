@@ -1,0 +1,33 @@
+
+.. describe:: <link rel="preload">
+
+   preload fonts
+   
+   preload PDFs
+
+.. attention::
+   Based on testing, may need to preload PDFs to work effectively with Google Doc Viewer.
+
+
+.. highlight:: html
+
+::
+
+   <link rel="preload" as="script"
+     href="https://cdn.ampproject.org/v0.js" />
+   <link rel="preload" as="script"
+     href="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
+
+   <link rel="preload" as="font" crossorigin
+     href="https://s3.amazonaws.com/benetta.net/fonts/robotoflex/RobotoFlex-VariableFont.ttf" />
+   <link rel="preload" as="font" crossorigin
+     href="https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf" />
+
+   <!-- pdf source: https://stackoverflow.com/questions/62319786/corb-issue-with-pdf-preload -->
+   <link rel="preload" as="fetch" type="application/pdf" crossorigin
+     href="https://s3.amazonaws.com/benetta/16418920171000000061/reference/einstein-riddle-manual-solution.pdf" />
+   <link rel="preload" as="fetch" type="application/pdf" crossorigin
+     href="https://s3.amazonaws.com/benetta/16418920171000000061/reference/solving-construction-machine-allocation-problems.pdf" />
+
+
+

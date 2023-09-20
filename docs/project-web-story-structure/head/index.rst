@@ -1,8 +1,11 @@
 .. index:
 
-<head> elements
+organize <head>
 ***************
 
+.. toctree::
+   :maxdepth: 1
 
-.. include:: _local.txt
+   1/index.rst
+   2/index.rst
 
