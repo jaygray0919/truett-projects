@@ -1,7 +1,7 @@
 .. index:
 
-organize <head>
-***************
+<head>
+******
 
 .. toctree::
    :maxdepth: 1

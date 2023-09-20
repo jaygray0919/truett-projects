@@ -1,18 +1,14 @@
 
-.. describe:: font size
-
-   item
+.. describe:: font size - Story
 
    item
 
 
 .. attention::
-   Notes about font size.
+   calc applies to Story only
 
 
 .. highlight:: html
-
-Guidance about font size.
 
 ::
 
