@@ -13,3 +13,4 @@ Transform HTML to SVG
    project-3/index.rst
    project-4/index.rst
 
+   _example/index.rst

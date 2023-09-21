@@ -1,8 +1,7 @@
 .. index:
 
-<head> components
-*****************
+examples
+********
 
 
 .. include:: _local.txt
-

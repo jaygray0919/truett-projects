@@ -12,9 +12,11 @@
    story library: amp-story-1.0.js
 
 
-.. highlight:: html
+.. attention::
+   Will need to correctly set title and canonical URL for each instance.
 
-Add guidance about <head> elements here.
+
+.. highlight:: html
 
 ::
 
@@ -31,13 +33,9 @@ Add guidance about <head> elements here.
    </title>
    
    <link rel="canonical"
-     href="index.html" />
+     href="https://directory/index.html" />
    <script async
      src="https://cdn.ampproject.org/v0.js"></script>
    <script async custom-element="amp-story"
      src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
-
-
-.. attention::
-   Will need to correctly set title and canonical URL for each instance.
 

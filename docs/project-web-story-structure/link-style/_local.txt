@@ -1,16 +1,14 @@
 
-.. describe:: link style
+.. describe:: URL link style
 
-   Item
+   item
 
-   Item
 
-   Item
+.. attention::
+   Notes about link styling.
 
 
 .. highlight:: html
-
-Add guidance link styling.
 
 ::
 
@@ -40,6 +38,3 @@ Add guidance link styling.
      width: 70%;
      background: var(--on-1f64ff);
    }
-
-.. attention::
-   Notes about link styling.

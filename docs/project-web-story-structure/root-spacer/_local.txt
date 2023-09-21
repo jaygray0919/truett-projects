@@ -3,15 +3,12 @@
 
    item
 
-   item
 
-   item
-
+.. attention::
+   notes about spacers.
 
 
 .. highlight:: html
-
-Add guidance about :root spacer elements here.
 
 ::
 
@@ -94,8 +91,4 @@ Add guidance about :root spacer elements here.
    .h-sp-32 {
      width: var(--space-20);
    }
-
-
-.. attention::
-   notes about spacers.
 
