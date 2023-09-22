@@ -1,7 +1,7 @@
 .. index:
 
 ************
-Manage Color
+Manage fonts
 ************
 
 .. toctree::
