@@ -1,9 +1,0 @@
-
-Visual OWL text
-<h1>VOWL: Visual Notation for OWL Ontologies</h1>
-
-no dependencies
-
-uses
-    src: url("https://s3.amazonaws.com/benetta.net/fonts/noto-sans/noto-sans-v21-latin-italic.woff2")
-

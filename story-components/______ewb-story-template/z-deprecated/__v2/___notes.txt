@@ -1,6 +1,0 @@
-
-issue
-trader
-svg-primo
-  container top
-

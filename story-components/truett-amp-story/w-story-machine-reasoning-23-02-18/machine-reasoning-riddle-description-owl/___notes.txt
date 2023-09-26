@@ -1,2 +1,0 @@
-
-use updated back-to-top symbol

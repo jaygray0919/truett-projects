@@ -1,2 +1,0 @@
-
-localize font files per version

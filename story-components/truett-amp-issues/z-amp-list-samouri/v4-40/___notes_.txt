@@ -1,9 +1,0 @@
-
-16:50 12/12/2020
-hierarchical JSON
-
-now using amp-state
-
-
-old
-  src='https://afdsi.org/test/_amp-list-tooltip-2/data.json'

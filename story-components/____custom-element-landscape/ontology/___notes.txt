@@ -1,6 +1,0 @@
-
-ontology SVG
-
-using
-font-family: RobotoFlex;
-

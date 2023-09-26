@@ -1,4 +1,0 @@
-
-  src='https://afdsi.org/test/_amp-list-modal-41/data.json'
-
-labels wrap on mobile

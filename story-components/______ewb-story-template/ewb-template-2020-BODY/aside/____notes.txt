@@ -1,5 +1,0 @@
-
-add to pages to reveal more semantic information
-
-
-all SCRIPT items must be fully linked; no missing items

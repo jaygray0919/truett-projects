@@ -1,3 +1,0 @@
-
-uses
-    src:url("https://s3.amazonaws.com/benetta.net/fonts/recursive-woff2/Recursive-VF.ttf") 

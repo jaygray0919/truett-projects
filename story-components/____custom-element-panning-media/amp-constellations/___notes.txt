@@ -1,6 +1,0 @@
-
-original source
-
-	dims top
-	background, black
-	text, white

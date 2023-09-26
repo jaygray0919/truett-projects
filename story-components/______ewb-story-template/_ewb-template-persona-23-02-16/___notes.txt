@@ -1,4 +1,0 @@
-
-includes structured items
-	with assigned CSS
-	with amp-list and assigned variables

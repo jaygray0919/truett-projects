@@ -1,6 +1,0 @@
-
-The tag 'amp-state' may not appear as a descendant of tag 'amp-story-page-attachment'.
-line 891, column 0
-
-The tag 'script' may not appear as a descendant of tag 'amp-story-page-attachment'.
-line 892, column 0

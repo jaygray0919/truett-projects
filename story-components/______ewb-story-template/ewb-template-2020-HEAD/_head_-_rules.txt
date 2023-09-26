@@ -1,7 +1,0 @@
-
-report about amp.dev
-
-The recommended title length is less than 70 characters. The current title is 85 characters.
-The current description is 199 characters. The recommended description length is between 70 and 160 characters.
-
-A robots meta tag was not detected. The robots meta tag instructs search engines what pages to index.

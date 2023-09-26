@@ -1,9 +1,0 @@
-
-
-In modern browser you *must* be explicit about being comfortable with sharing your full URL (-fragment) in referrers.
-Something like this does the job:
-
-<meta name="referrer" content="no-referrer-when-downgrade">
-
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
-

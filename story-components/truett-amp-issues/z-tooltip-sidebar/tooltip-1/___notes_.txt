@@ -1,7 +1,0 @@
-
-this example uses amp-state and local data
-
-
-hierarchical JSON
-
-  src='https://afdsi.com/test/_amp-list-tooltip-2/data.json'

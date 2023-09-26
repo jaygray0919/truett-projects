@@ -1,5 +1,0 @@
-
-https://afdsi.com/plato-schema-diagrams/
-
-add descriptions
-    sources: schema.org
