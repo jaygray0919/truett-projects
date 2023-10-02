@@ -169,7 +169,7 @@ html_js_files = [
 ]
 
 today_fmt = '%y-%m-%d'
-html_last_updated_fmt = '%y-%m-%d %z-05:00 at %H:%M'
+html_last_updated_fmt = '%y-%m-%d at %H:%M  offset %z -05:00:00'
 html_domain_indices = True
 html_use_index = True
 html_split_index = True
