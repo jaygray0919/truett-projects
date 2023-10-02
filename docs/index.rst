@@ -15,7 +15,7 @@ Truett Projects
 :Project: `Truett Documentation <https://example.com/index.html>`_
 :Author: `Jay Gray <https://ontomatica.io>`_
 :Organization: `Ontomatica <https://dailyfood.io>`_
-:Date: September 2023
+:Date: |today|
 
 .. image:: _images/docs-latest.svg
    :align: left
@@ -30,7 +30,7 @@ Truett Projects
    :hidden:
    :caption: 🍱 Web Story Structure
 
-   project-web-story-structure/index.rst
+   _project-web-story-structure/index.rst
    project-web-story-structure-QA/index.rst
 
 .. toctree::

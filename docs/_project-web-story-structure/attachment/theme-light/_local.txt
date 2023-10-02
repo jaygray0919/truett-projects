@@ -1,0 +1,17 @@
+
+.. describe:: attachment theme, light
+
+   theme and theme value are null
+
+
+.. highlight:: html
+
+::
+
+
+   <amp-story-page-attachment
+     layout="nodisplay"
+     cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+     cta-text=""
+     data-title=""
+   >

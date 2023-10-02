@@ -1,0 +1,247 @@
+
+.. describe:: attachment symbols and bullets - CSS
+
+   item
+
+
+.. attention::
+   bullets and symbols for story-attachment do not use a .container.
+
+
+.. highlight:: css
+
+::
+
+   section {
+     padding-left: 1rem;
+   }
+   
+   p {
+     display: inline-block;
+     border: none;
+   }
+   
+   ul {
+     display: block;
+     margin: 0 auto;
+     max-width: 1160px;
+     padding: 30px;
+   }
+   
+   dt {
+     margin-top: 0.2em;
+     margin-bottom: 0.2em;
+   }
+   
+   dd {
+     text-indent: -1.8em;
+     padding-left: 1.8em;
+   }
+   
+   dd:last-of-type {
+     margin-bottom: 1em;
+   }
+   
+   .chartlegend span {
+     display: inline-block;
+     height: 0.65rem;
+     width: 0.65rem;
+     border-radius: 0.25rem;
+   }
+   
+   .av {
+     color: var(--on-130f30);
+     border: none;
+   }
+   
+   .p-s {
+     padding-left: 1em;
+   }
+   .mr-s {
+     margin-right: 1rem;
+   }
+   
+   .c-11 {
+     background-color: var(--on-0cfa2e);
+   }
+   .c-12 {
+     background-color: var(--on-08446a);
+   }
+   .c-13 {
+     background-color: var(--on-d88b42);
+   }
+   .c-14 {
+     background-color: var(--on-652a16);
+   }
+   .c-15 {
+     background-color: var(--on-5c8f93);
+   }
+   .c-16 {
+     background-color: var(--on-341abd);
+   }
+   .c-17 {
+     background-color: var(--on-f9794e);
+   }
+   .c-18 {
+     background-color: var(--on-17a2af);
+   }
+   .c-19 {
+     background-color: var(--on-ee01b2);
+   }
+   .c-20 {
+     background-color: var(--on-4e4010);
+   }
+   .c-21 {
+     background-color: var(--on-7bce6b);
+   }
+   .c-22 {
+     background-color: var(--on-7363ff);
+   }
+   .c-23 {
+     background-color: var(--on-3167d0);
+   }
+   .c-24 {
+     background-color: var(--on-cb00e2);
+   }
+   .c-25 {
+     background-color: var(--on-f6394b);
+   }
+   .c-26 {
+     background-color: var(--on-4aa4cd);
+   }
+   .c-27 {
+     background-color: var(--on-f2ac0d);
+   }
+   .c-28 {
+     background-color: var(--on-055226);
+   }
+   .c-29 {
+     background-color: var(--on-d877dc);
+   }
+   .c-30 {
+     background-color: var(--on-0345f3);
+   }
+   .c-31 {
+     background-color: var(--on-c506a5);
+   }
+   .c-32 {
+     background-color: var(--on-27478a);
+   }
+   .c-33 {
+     background-color: var(--on-12fa4f);
+   }
+   .c-34 {
+     background-color: var(--on-4dac3f);
+   }
+   .c-35 {
+     background-color: var(--on-4932cc);
+   }
+   .c-36 {
+     background-color: var(--on-d72b86);
+   }
+   .c-37 {
+     background-color: var(--on-00c7b8);
+   }
+   .c-38 {
+     background-color: var(--on-5c8323);
+   }
+   .c-39 {
+     background-color: var(--on-ff2ef6);
+   }
+   .c-40 {
+     background-color: var(--on-23c82c);
+   }
+   .c-41 {
+     background-color: var(--on-cb41d2);
+   }
+   .c-42 {
+     background-color: var(--on-190478);
+   }
+   .c-43 {
+     background-color: var(--on-e69588);
+   }
+   .c-44 {
+     background-color: var(--on-83b11a);
+   }
+   .c-45 {
+     background-color: var(--on-4a1add);
+   }
+   .c-46 {
+     background-color: var(--on-da4a1e);
+   }
+   .c-47 {
+     background-color: var(--on-ba47cf);
+   }
+   .c-48 {
+     background-color: var(--on-0662c9);
+   }
+   .c-49 {
+     background-color: var(--on-fa0b20);
+   }
+   .c-50 {
+     background-color: var(--on-4b1d15);
+   }
+   .c-51 {
+     background-color: var(--on-b47ecc);
+   }
+   .c-52 {
+     background-color: var(--on-ebc05b);
+   }
+   .c-53 {
+     background-color: var(--on-69365e);
+   }
+   .c-54 {
+     background-color: var(--on-a10f0c);
+   }
+   .c-55 {
+     background-color: var(--on-6d71f4);
+   }
+   .c-56 {
+     background-color: var(--on-978a61);
+   }
+   .c-57 {
+     background-color: var(--on-81633a);
+   }
+   .c-58 {
+     background-color: var(--on-1b4906);
+   }
+   .c-59 {
+     background-color: var(--on-bc6e91);
+   }
+   .c-60 {
+     background-color: var(--on-58789f);
+   }
+   .c-61 {
+     background-color: var(--on-db8a61);
+   }
+   .c-62 {
+     background-color: var(--on-8872cd);
+   }
+   .c-63 {
+     background-color: var(--on-1b3cd8);
+   }
+   .c-64 {
+     background-color: var(--on-977663);
+   }
+   .c-65 {
+     background-color: var(--on-2a68a8);
+   }
+   .c-66 {
+     background-color: var(--on-429329);
+   }
+   .c-67 {
+     background-color: var(--on-28ea9a);
+   }
+   .c-68 {
+     background-color: var(--on-0d0cbf);
+   }
+   .c-69 {
+     background-color: var(--on-f3679e);
+   }
+   .c-70 {
+     background-color: var(--on-984897);
+   }
+   .c-71 {
+     background-color: var(--on-0aa1f7);
+   }
+  

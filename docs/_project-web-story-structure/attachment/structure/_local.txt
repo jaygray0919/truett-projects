@@ -1,0 +1,31 @@
+
+.. describe:: attachment structure
+
+   item
+
+
+.. highlight:: html
+
+::
+
+   <amp-story-page-attachment
+     layout="nodisplay"
+     cta-image="https://s3.amazonaws.com/benetta.net/media/logo/ontomatica/ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+     cta-text="Credits"
+     data-title="Ontology Slide credit"
+   >
+     <section class="p-s">
+       <dl class="chartlegend Poppins-Regular-400">
+         <dt>
+         </dt>
+         <dd class="rcsv-mono-linear fs-12">
+           <span class="c-11 mr-s"></span>
+           M&#x00E9;lanie Courtot, Ph.D.
+         </dd>
+         <dd class="rcsv-mono-linear fs-12">
+           <span class="c-12 mr-s"></span>
+           <a class="uline" href="https://www.ebi.ac.uk/QuickGO/">https://www.ebi.ac.uk/QuickGO/</a>
+         </dd>
+       </dl>
+     </section>
+   </amp-story-page-attachment>

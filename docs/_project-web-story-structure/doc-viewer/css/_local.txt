@@ -1,0 +1,35 @@
+
+.. describe:: Google doc viewer CSS
+
+   replace color with variable: #1f64ff;
+
+   replace font-family with new format
+
+
+.. attention::
+   .container does not apply to story attachment
+
+
+.. highlight:: css
+
+::
+
+   /** @format */
+   
+   @font-face {
+     font-family: Poppins-700-Normal;
+     src: url("https://s3.amazonaws.com/benetta.net/fonts/poppins/Poppins-SemiBold.ttf")
+       format("truetype");
+     font-weight: 700;
+     font-style: normal;
+     font-display: swap;
+   }
+   .container {
+     margin-left: 10vw;
+     margin-right: 10vw;
+   }
+   h2,
+   h3 {
+     font-family: Poppins-700-Normal;
+     color: #1f64ff;
+   }

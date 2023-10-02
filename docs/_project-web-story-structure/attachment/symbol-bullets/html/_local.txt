@@ -1,0 +1,63 @@
+
+.. describe:: attachment symbols and bullets - HTML
+
+   item
+
+
+.. attention::
+   bullets and symbols for story-attachment do not use a .container.
+   note: erros on font-weight; change to specific font-family
+
+
+.. highlight:: html
+
+::
+
+   <section class="p-s">
+     <dl class="chartlegend">
+       <div class="av">
+         Similarity to other substances
+       </div>
+       <dt>
+         item-1
+       </dt>
+       <dd class="rcsv-mono-linear fs-12" style="font-weight: 400;">
+         <span class="c-11 mr-s"></span>
+           (3R,5R)-7-[2-(4-fluorophenyl)-3-phenyl-4-(phenylcarbamoyl)-5-propan-2-yl(314C)pyrrol-1-yl]-3,5-dihydroxyheptanoic
+         acid
+       </dd>
+       <dd class="rcsv-mono-linear fs-12" style="font-weight: 400;">
+         <span class="c-12 mr-s"></span>
+           XUKUURHRXDUEBC-IEILOPHXSA-N
+       </dd>
+       <dt>item-2</dt>
+       <dd class="rcsv-mono-linear fs-12" style="font-weight: 400;">
+         <span class="c-13 mr-s"></span>
+           (3R,5R)-7-[2-cyclopropyl-5-(4-fluorophenyl)-4-phenyl-3-(phenylcarbamoyl)pyrrol-1-yl]-3,5-dihydroxyheptanoic
+         acid
+       </dd>
+       <dd class="rcsv-mono-linear fs-12" style="font-weight: 400;">
+         <span class="c-14 mr-s"></span>
+           WDKDRVHIGPVFCW-KAYWLYCHSA-N
+       </dd>
+       <dt>item-3</dt>
+       <dd class="rcsv-mono-linear fs-12" style="font-weight: 400;">
+         <span class="c-15 mr-s"></span>
+           (E,3R,5S)-7-[5-[(3-chlorophenyl)carbamoyl]-3,4-bis(4-fluorophenyl)-1-propan-2-ylpyrrol-2-yl]-3,5-dihydroxyhept-6-enoic
+         acid
+       </dd>
+       <dd class="rcsv-mono-linear fs-12" style="font-weight: 400;">
+         <span class="c-16 mr-s"></span>
+           JNJZDKOQTIGNNB-FDFRSNTISA-N
+       </dd>
+       <div class="av">Has component</div>
+       <dd class="rcsv-mono-linear fs-12" style="font-weight: 400;">
+         <span class="c-17 mr-s"></span>
+           Atorvastatin sodium
+       </dd>
+       <dd class="rcsv-mono-linear fs-12" style="font-weight: 400;">
+         <span class="c-18 mr-s"></span>
+           VVRPOCPLIUDBSA-CNZCJKERSA-M
+       </dd>
+     </dl>
+   </section>

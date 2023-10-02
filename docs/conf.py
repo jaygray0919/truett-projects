@@ -1,6 +1,9 @@
 import sys
 import os
 
+os.environ['TZ'] = 'US/Central'
+time.tzset()
+
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 local_plantuml_path = os.path.join(os.path.dirname(__file__), "utils", "plantuml-1.2023.6.jar")
