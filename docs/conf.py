@@ -1,8 +1,8 @@
 import sys
 import os
 
-os.environ['TZ'] = 'US/Central'
-time.tzset()
+#os.environ['TZ'] = 'US/Central'
+#time.tzset()
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 CURDIR = os.path.abspath(os.path.dirname(__file__))
@@ -66,8 +66,6 @@ release = 'a'
 
 # Turns on numbered figures for HTML output
 number_figures = True
-
-today_fmt = '%y-%m-%d'
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 default_role = None
@@ -173,6 +171,7 @@ html_js_files = [
     'https://cdn.ampproject.org/v0/amp-selector-0.1.js',
 ]
 
+today_fmt = '%y-%m-%d'
 html_last_updated_fmt = '%y-%m-%d at %H:%M'
 html_domain_indices = True
 html_use_index = True
