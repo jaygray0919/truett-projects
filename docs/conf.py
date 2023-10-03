@@ -136,6 +136,7 @@ html_extra_path = [
     '_files/amp-img/amp-img-DAG-base64.html',
     '_files/amp-img/amp-img-positioning-WestonR.html',
     '_files/bullet-color/color-bullet-23-07-04.html',
+    '_files/bullet-color/color-bullet-text-gradient-23-10-02.html',
     '_files/color/sequence-by-group.html',
     '_files/fonts/___Japanese-Korean-Chinese-simplified.html',
     '_files/fonts/___noto-serif-sans-poppins-recursive-zillaslab.html',
