@@ -1,2 +1,4 @@
 
-`colored bullets </en/latest/color-bullet-23-07-04.html>`_
+`colored bullets (simple list) </en/latest/color-bullet-23-07-04.html>`_
+
+`colored bullets, text and gradients </en/latest/color-bullet-text-gradient-23-10-02.html>`_
