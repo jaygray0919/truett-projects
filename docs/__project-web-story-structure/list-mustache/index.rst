@@ -1,7 +1,7 @@
 .. index:
 
-list |emd| mustache
-*******************
+list |emd| mustache ("list/must")
+*********************************
 
 .. toctree::
    :maxdepth: 1

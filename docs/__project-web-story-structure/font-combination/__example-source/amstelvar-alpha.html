@@ -1,0 +1,964 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon"
+  href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<link rel="canonical"
+  href="index.html" />
+
+<title>
+Pizza + biograph: Amstelvar + Recursive
+</title>
+
+<link rel="preload" as="script"
+  href="https://cdn.ampproject.org/v0.js">
+<script async
+  src="https://cdn.ampproject.org/v0.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+@font-face {
+  font-family: Recursive;
+  text-align: initial;
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  src:
+    url("https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Amstelvar;
+  font-style: normal;
+  font-weight: 300 900;
+  font-stretch: 35% 100%;
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2729/AmstelvarAlpha-VF.ttf") format("truetype");
+  font-display: swap;
+}
+
+.support {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: auto;
+  align-items: center;
+  /* background: tomato; */
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 0 10px 0 0;
+  z-index: 100;
+}
+
+.support a {
+  color: #fff;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+@supports (display: grid) {
+  .support {
+    background: #058a6e;
+    right: 40px;
+    transform: translateX(100%);
+    transition: right 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .support:hover {
+    right: 0;
+    transform: translateX(0%);
+  }
+}
+
+.support svg {
+  fill: #ffffff;
+  height: 30px;
+  margin-right: 5px;
+  padding: 5px;
+  width: 30px;
+}
+
+.unsupported {
+  display: block;
+}
+
+@supports (display: grid) {
+  .unsupported {
+    display: none;
+  }
+}
+
+.supported {
+  display: none;
+}
+
+@supports (display: grid) {
+  .supported {
+    display: block;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 60em) {
+  main {
+    justify-content: flex-end;
+  }
+}
+
+@supports (display: grid) {
+  main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 60em) {
+    main {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 60em) {
+  .intro {
+    flex: 0 0 calc(50% - 3rem);
+    margin-left: calc(25% - 3rem);
+  }
+}
+
+@supports (display: grid) {
+  .intro {
+    grid-column: 1/span 2;
+  }
+  @media (min-width: 60em) {
+    .intro {
+      grid-column: 2/span 2;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 60em) {
+  .summary {
+    order: 1;
+  }
+}
+
+@supports (display: grid) {
+  .summary {
+    grid-column: 1/span 2;
+  }
+  @media (min-width: 60em) {
+    .summary {
+      grid-column: 4/span 1;
+    }
+  }
+}
+
+@supports (display: grid) {
+  .post-content {
+    grid-column: 1/span 2;
+  }
+  @media (min-width: 60em) {
+    .post-content {
+      grid-column: 2;
+    }
+  }
+}
+
+@media (min-width: 60em) {
+  .post-content {
+    flex: 0 0 calc(50% - 3rem);
+  }
+  @supports (display: grid) {
+    .post-content {
+      grid-column: 2/span 2;
+    }
+  }
+}
+
+.byline,
+.social {
+  flex: 0 0 calc(50% - 3rem);
+}
+
+@media (min-width: 60em) {
+  @supports (display: flex) {
+    .byline,
+.social {
+      flex: 0 0 calc(25% - 3rem);
+    }
+  }
+}
+
+/********
+ * Styles
+ */
+
+body {
+  background: #fff;
+  color: #5a5c6c;
+}
+
+div {
+  margin: 0.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 60em) {
+  @supports (display: flex) {
+    div {
+      flex: 0 0 calc(25% - 3rem);
+    }
+  }
+}
+
+div:hover {
+  background-color: #fbf9fa;
+}
+
+.social a {
+  margin-top: 1rem;
+}
+
+a {
+  color: #bf4080;
+}
+
+a:hover {
+  color: #7c1d46;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social a {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+:root {
+  --recursive-aalt: "aalt" off;
+  --recursive-case: "case" off;
+  --recursive-dlig: "dlig" off;
+  --recursive-dnom: "dnom" off;
+  --recursive-frac: "frac" off;
+  --recursive-numr: "numr" off;
+  --recursive-ordn: "ordn" off;
+  --recursive-pnum: "pnum" off;
+  --recursive-sinf: "sinf" off;
+  --recursive-ss01: "ss01" off;
+  --recursive-ss02: "ss02" off;
+  --recursive-ss03: "ss03" off;
+  --recursive-ss04: "ss04" off;
+  --recursive-ss05: "ss05" off;
+  --recursive-ss06: "ss06" off;
+  --recursive-ss07: "ss07" off;
+  --recursive-ss08: "ss08" off;
+  --recursive-ss09: "ss09" off;
+  --recursive-ss10: "ss10" off;
+  --recursive-ss11: "ss11" off;
+  --recursive-ss20: "ss20" off;
+  --recursive-sups: "sups" off;
+  --recursive-titl: "titl" off;
+  --recursive-zero: "zero" off;
+  --base-font-size: 1rem;
+  --sans-font-stack: Recursive, Arial, Helvetica, sans-serif;
+  --mono-font-stack: Recursive, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+/* If class is applied, update custom property and apply modern font-variant-* when supported */
+.recursive-aalt {
+  --recursive-aalt: "aalt" on;
+}
+
+.recursive-case {
+  --recursive-case: "case" on;
+}
+
+.recursive-dlig {
+  --recursive-dlig: "dlig" on;
+}
+
+@supports (font-variant-ligatures: discretionary-ligatures) {
+  .recursive-dlig {
+      --recursive-dlig: "____";
+      font-variant-ligatures: discretionary-ligatures;
+  }
+}
+
+.recursive-dnom {
+  --recursive-dnom: "dnom" on;
+}
+
+.recursive-frac {
+  --recursive-frac: "frac" on;
+}
+
+@supports (font-variant-numeric: diagonal-fractions) {
+  .recursive-frac {
+      --recursive-frac: "____";
+      font-variant-numeric: diagonal-fractions;
+  }
+}
+
+.recursive-numr {
+  --recursive-numr: "numr" on;
+}
+
+.recursive-ordn {
+  --recursive-ordn: "ordn" on;
+}
+
+@supports (font-variant-numeric: ordinal) {
+  .recursive-ordn {
+      --recursive-ordn: "____";
+      font-variant-numeric: ordinal;
+  }
+}
+
+.recursive-pnum {
+  --recursive-pnum: "pnum" on;
+}
+
+@supports (font-variant-numeric: proportional-nums) {
+  .recursive-pnum {
+      --recursive-pnum: "____";
+      font-variant-numeric: proportional-nums;
+  }
+}
+
+.recursive-sinf {
+  --recursive-sinf: "sinf" on;
+}
+
+.recursive-ss01 {
+  --recursive-ss01: "ss01" on;
+}
+
+.recursive-ss02 {
+  --recursive-ss02: "ss02" on;
+}
+
+.recursive-ss03 {
+  --recursive-ss03: "ss03" on;
+}
+
+.recursive-ss04 {
+  --recursive-ss04: "ss04" on;
+}
+
+.recursive-ss05 {
+  --recursive-ss05: "ss05" on;
+}
+
+.recursive-ss06 {
+  --recursive-ss06: "ss06" on;
+}
+
+.recursive-ss07 {
+  --recursive-ss07: "ss07" on;
+}
+
+.recursive-ss08 {
+  --recursive-ss08: "ss08" on;
+}
+
+.recursive-ss09 {
+  --recursive-ss09: "ss09" on;
+}
+
+.recursive-ss10 {
+  --recursive-ss10: "ss10" on;
+}
+
+.recursive-ss11 {
+  --recursive-ss11: "ss11" on;
+}
+
+.recursive-ss20 {
+  --recursive-ss20: "ss20" on;
+}
+
+.recursive-sups {
+  --recursive-sups: "sups" on;
+}
+
+@supports (font-variant-position: super) {
+  .recursive-sups {
+      --recursive-sups: "____";
+      font-variant-position: super;
+  }
+}
+
+.recursive-titl {
+  --recursive-titl: "titl" on;
+}
+
+@supports (font-variant-caps: titling-caps) {
+  .recursive-titl {
+      --recursive-titl: "____";
+      font-variant-caps: titling-caps;
+  }
+}
+
+.recursive-zero {
+  --recursive-zero: "zero" on;
+}
+
+@supports (font-variant-numeric: slashed-zero) {
+  .recursive-zero {
+      --recursive-zero: "____";
+      font-variant-numeric: slashed-zero;
+  }
+}
+
+/* Apply current state of all custom properties whenever a class is being applied */
+.recursive-aalt,
+.recursive-case,
+.recursive-dlig,
+.recursive-dnom,
+.recursive-frac,
+.recursive-numr,
+.recursive-ordn,
+.recursive-pnum,
+.recursive-sinf,
+.recursive-ss01,
+.recursive-ss02,
+.recursive-ss03,
+.recursive-ss04,
+.recursive-ss05,
+.recursive-ss06,
+.recursive-ss07,
+.recursive-ss08,
+.recursive-ss09,
+.recursive-ss10,
+.recursive-ss11,
+.recursive-ss20,
+.recursive-sups,
+.recursive-titl,
+.recursive-zero {
+  font-feature-settings: var(--recursive-aalt), var(--recursive-case), var(--recursive-dlig), var(--recursive-dnom), var(--recursive-frac), var(--recursive-numr), var(--recursive-ordn), var(--recursive-pnum), var(--recursive-sinf), var(--recursive-ss01), var(--recursive-ss02), var(--recursive-ss03), var(--recursive-ss04), var(--recursive-ss05), var(--recursive-ss06), var(--recursive-ss07), var(--recursive-ss08), var(--recursive-ss09), var(--recursive-ss10), var(--recursive-ss11), var(--recursive-ss20), var(--recursive-sups), var(--recursive-titl), var(--recursive-zero);
+}
+
+/* Variable instances */
+.recursive-mono-linear-light {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-linear-light-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-casual-light {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-casual-light-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-linear {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-linear-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-casual {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-casual-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-linear-medium {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-linear-medium-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-casual-medium {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-casual-medium-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-linear-semibold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-linear-semibold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-casual-semibold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-casual-semibold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-linear-bold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-linear-bold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-casual-bold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-casual-bold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-linear-extrabold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-linear-extrabold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-casual-extrabold {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-casual-extrabold-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-linear-black {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-linear-black-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-casual-black {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-casual-black-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-linear-extrablack {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-linear-extrablack-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-mono-casual-extrablack {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-mono-casual-extrablack-italic {
+  font-family: var(--mono-font-stack);
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-linear-light {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-linear-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-casual-light {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-casual-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-linear {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-linear-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-casual {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-casual-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-linear-medium {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-linear-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-casual-medium {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-casual-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-linear-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-linear-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-casual-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-casual-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-linear-bold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-linear-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-casual-bold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 696.7742004394531, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-casual-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 696.7742004394531, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-linear-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-linear-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-casual-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-casual-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-linear-black {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-linear-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-casual-black {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-casual-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-linear-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-linear-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.recursive-sans-casual-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "ital" 0.5;
+}
+
+.recursive-sans-casual-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "ital" 1;
+}
+
+.centered {
+  text-align: center;
+}
+
+.example {
+  border: 5px solid #1F64FF;
+  padding: 1em;
+  width: 90%;
+}
+
+.example1 .byline-credit {
+  font-weight: 300;
+  font-variation-settings: "MONO" 0, "CASL" 1, "slnt" -15, "ital" 1;
+  text-transform: uppercase;
+}
+
+.example1 p {
+  line-height: 1.1
+}
+
+.example2 {
+  columns: 2;
+  column-gap: 4em;
+  column-rule: 2px solid #1F64FF;
+}
+
+.example3 h2{
+  font-size: 4.5em;
+}
+
+.page-title {
+  font-family: Recursive, monospace;
+  color: #1F64FF;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin: 1rem auto;
+  text-align: center; 
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 10, "ital" 1;
+}
+
+.post-title {
+  font-family: Recursive, monospace;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-variation-settings: "CASL" 1, "wght" 400, "slnt" 10, "ital" 1;
+}
+
+.meta {
+  font-family: Recursive, monospace;
+  font-size: 0.9rem;
+  font-variation-settings: "MONO" 0, "CASL" 1, "slnt" -10, "ital" 1;
+}
+
+.post-content,
+.summary > h3,p {
+  font-family: Amstelvar, serif;
+  font-variation-settings:
+    'wght' var(--text-wght),
+    'wdth' var(--text-wdth),
+    'opsz' var(--text-opsz),
+    'GRAD' var(--text-GRAD);
+}
+
+.summary h3 {
+  font-size: 1.2rem;
+  --text-wght: 325;
+  --text-wdth: 100;
+  --text-opsz: 16;
+  --text-GRAD: 88;
+}
+
+h3,p {
+  font-size: 1.0rem;
+  --text-wght: 325;
+  --text-wdth: 100;
+}
+
+.post-content p {
+  font-size: 1.3rem;
+  transition: 1s;
+  --text-wght: 375;
+  --text-wdth: 100;
+  --text-opsz: 16;
+  --text-GRAD: 88;
+}
+
+.post-content p:hover {
+  --text-wght: 400;
+  --text-GRAD: 230;
+}
+
+dt {
+  margin: 0;
+  padding: 0.5em 0 0.5em 0;
+  font-size: 1.5em;
+}
+
+dd {
+  margin: 0;
+  padding: 0.5em 0 0.5em 0;
+  font-size: 1.3em;
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="page-title">
+electronic labels
+</h1>
+
+<main>
+
+<div class="intro">
+<h2 class="post-title recursive-ss01 recursive-ss02">
+Generate machine&#x2010;readable electronic labels for foods&#x002C; drugs&#x002C; cosmetics&#x002C; meals&#x002C; textiles&#x002C; and commodities
+</h2>
+</div>
+
+<div class="byline">
+<p class="meta">
+by Jay Gray
+</p>
+</div>
+
+<div class="social">
+<a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-mn-1014"></use></svg></a>
+</div>
+
+<div class="summary">
+<h3>
+TL;DR Summary
+</h3>
+<p>
+Pizza description using an electronic label.
+</p>
+</div>
+
+
+<div class="post-content">
+<p>
+Pizza is a complex product, made from hundreds of parts to satisfy different demands.
+</p>
+<p>
+An electronic label describes complex products by linking structured data from many sources into knowledge graphs.
+</p>
+<p>
+Structured data describes aroma, flavor, texture, shape, size, composition, formulation, preparation, purpose, usage and potentially harmful ingredients.
+</p>
+<p>
+Structured data describes how a product and its ingredients are sourced, processed, preserved and packaged.
+</p>
+<p>
+Electronic labels represent electronic containers that combine knowledge graphs.
+</p>
+<p>
+Electronic labels are machine‐readable and add value to machine‐automation and machine‐learning projects.
+</p>
+<p>
+Electronic labels help authorities control national border and product safety inspections; certify genuine products; expose counterfeit products.
+</p>
+<p>
+Electronic labels are combined to make new labels for new products, and for new levels of machine‐automation and machine‐learning.
+</p>
+<p>
+For humans, electronic labels are published and spoken in 27 natural languages.
+</p>
+<p>
+For scanners, electronic labels are served using Quick Response codes.
+</p>
+<p>
+For computers, electronic labels are served from Uniform Resource Identifiers.
+</p>
+
+<hr>
+
+<dl class="example example2 recursive-mono-linear recursive-ss01 recursive-ss02">
+<dt class="recursive-mono-linear-semibold" style="font-size: 1.4em;">Biograph Summary using pre-defined directives</dt>
+<dd>
+Ontologies define facts about things and relationships among things.
+</dd>
+<dd>
+Graph Kits use ontologies to define things that are closely related.
+</dd>
+<dd>
+Products and product components are defined using Graph Kits and presented using Electronic Labels.
+</dd>
+<dd>
+Electronic Labels provide intake data for your Biograph.
+</dd>
+<dd>
+Biograph uses Shapes to link intake data with outcome data (sensor or monitor data).
+</dd>
+<dd>
+Biograph uses Forms to present intake and outcome data to users and advisers.
+</dd>
+<dd>
+Biograph uses Footprints to store data in a pod that you control.
+</dd>
+<dd>
+Using that data, you adjust your lifestyles based on your personal choices or expert advice.
+</dd>
+<dd>
+But you control the data and share it on your terms.
+</dd>
+<dd>
+Biograph puts you in charge of making data intensive decisions and sharing your data with apps and people you trust.
+</dd>
+</dl>
+
+</div>
+</main>
+</body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<svg id="svg-mn-1014" width="60" height="60" viewBox="0 0 89 89"><defs><linearGradient id="lgr-1014" x1="75%" x2="20%" y1="-25%" y2="120%"><stop offset="0%" stop-color="rgb(100,191,70)"></stop><stop offset="100%" stop-color="rgb(225,235,100)"></stop></linearGradient></defs><path d="M79.668 62.549h-2.954l5.302-7.195a.998.998 0 00-.805-1.593h-4.602V50.54a1 1 0 10-2 0v3.221h-.176a20.542 20.542 0 00-11.238-9.987l1.083-4.174a1 1 0 00-1.474-1.112l-5.723 3.365v-2.369c0-4.724-3.844-8.567-8.567-8.567h-3.542a20.362 20.362 0 00-9.004-14.974h6.738a1 1 0 100-2H32.194c-.021 0-.038.01-.058.012a10.131 10.131 0 00-.185-.071l1.1-4.312a1 1 0 00-1.434-1.133l-5.618 2.951V8.567C25.999 3.843 22.155 0 17.432 0H8.567C3.843 0 0 3.843 0 8.567v8.865c0 4.724 3.844 8.567 8.567 8.567H12v26.25a1 1 0 102 0v-7.333h8.194v4.227a1.001 1.001 0 001.593.805l7.296-5.376v3.778c0 4.724 3.844 8.567 8.567 8.567h3.433v17.375a1 1 0 001 1h8.908v4.37a1.001 1.001 0 001.593.805l7.602-5.601c.022-.016.031-.042.051-.06v5.178c0 4.724 3.844 8.567 8.567 8.567h8.865c4.724 0 8.567-3.843 8.567-8.567v-8.865c0-4.726-3.844-8.57-8.568-8.57zm-4.057-1.872l-3.622-4.916h7.244l-3.622 4.916zM61.738 41.434l-1.702 6.563-2.431-4.133 4.133-2.43zm-31.18-30.181l-1.572 6.164-2.398-4.078 3.97-2.086zM3.999 17.431V8.566a4.572 4.572 0 014.567-4.567h8.865a4.572 4.572 0 014.567 4.567v8.865a4.572 4.572 0 01-4.567 4.567H8.566a4.571 4.571 0 01-4.567-4.567zm20.195 29.732v-7.245l4.916 3.623-4.916 3.622zm6.888-7.681v3.027l-7.296-5.376a1.001 1.001 0 00-1.593.806v4.977h-8.194V25.999h3.433c4.724 0 8.567-3.843 8.567-8.567v-1.146l2.492 4.239a1.003 1.003 0 001.003.483 1 1 0 00.828-.743l1.131-4.432A18.347 18.347 0 0142.96 30.916h-3.311c-4.723-.001-8.567 3.842-8.567 8.566zm4 8.866v-8.866a4.572 4.572 0 014.567-4.567h8.865a4.572 4.572 0 014.567 4.567v8.866a4.572 4.572 0 01-4.567 4.567h-8.865a4.572 4.572 0 01-4.567-4.567zm19.909 29.333v-7.245l4.916 3.623-4.916 3.622zm7.245-6.564v2.197c-.02-.018-.029-.044-.051-.06l-7.602-5.602a1 1 0 00-1.593.806v4.833h-7.908V56.915h3.433c4.724 0 8.567-3.843 8.567-8.567v-1.426l2.452 4.17a1.003 1.003 0 001.001.483 1 1 0 00.829-.739l1.326-5.112c3.964 1.491 7.336 4.367 9.457 8.036h-2.139a1 1 0 00-.805 1.593l5.302 7.195h-3.704c-4.722.001-8.565 3.845-8.565 8.569zm22 8.865a4.572 4.572 0 01-4.567 4.567h-8.865a4.572 4.572 0 01-4.567-4.567v-8.865a4.572 4.572 0 014.567-4.567h8.865a4.572 4.572 0 014.567 4.567v8.865zm-72.237-13.65v-8.417a1 1 0 112 0v8.417a1 1 0 11-2 0zm6.166 7.958a1 1 0 01-1 1h-4.166a1 1 0 01-1-1v-2.958a1 1 0 112 0v1.958h3.166a1 1 0 011 1zm11.75 0a1 1 0 01-1 1h-5.832a1 1 0 110-2h5.832a1 1 0 011 1zm11.167 0a1 1 0 01-1 1h-6.583a1 1 0 110-2h6.583a1 1 0 011 1zm35.529-34.874v6.125a1 1 0 11-2 0v-6.125a1 1 0 112 0zM58.332 15.941h4.163c.489 6.462 5.654 11.626 12.115 12.115v5.109a1 1 0 102 0v-5.109c6.793-.514 12.166-6.193 12.166-13.115 0-7.26-5.906-13.166-13.166-13.166-6.922 0-12.601 5.373-13.115 12.166h-4.163a1 1 0 100 2zM75.611 5.775c5.054 0 9.166 4.112 9.166 9.166s-4.112 9.166-9.166 9.166-9.166-4.112-9.166-9.166 4.112-9.166 9.166-9.166zm-28.029 9.166a1 1 0 011-1h4.875a1 1 0 110 2h-4.875a1 1 0 01-1-1z"/></svg>
+</defs>
+</svg>
+
+</html>

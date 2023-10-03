@@ -30,7 +30,7 @@ Truett Projects
    :hidden:
    :caption: 🍱 Web Story Structure
 
-   _project-web-story-structure/index.rst
+   __project-web-story-structure/index.rst
    project-web-story-structure-QA/index.rst
 
 .. toctree::
