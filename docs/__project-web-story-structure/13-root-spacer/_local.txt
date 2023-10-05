@@ -5,7 +5,7 @@
 
 
 .. attention::
-   notes about spacers.
+   note space-unit-v and space-unit-h
 
 
 .. highlight:: html

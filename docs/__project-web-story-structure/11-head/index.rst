@@ -6,6 +6,6 @@
 .. toctree::
    :maxdepth: 1
 
-   1/index.rst
-   2/index.rst
+   head-main/index.rst
+   head-preload/index.rst
 

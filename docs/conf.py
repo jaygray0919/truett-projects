@@ -133,15 +133,16 @@ html_short_title = 'Truett Documentation'
 html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
 
 html_extra_path = [
+
+    '__project-web-story-structure/32-font-combination/_example/amstelvar-alpha.html',
+    '__project-web-story-structure/32-font-combination/_example/Japanese-Korean-Chinese-simplified.html',
+    '__project-web-story-structure/32-font-combination/_example/noto-serif-sans-poppins-recursive-zillaslab.html',
+    '__project-web-story-structure/32-font-combination/_example/robotoflex-VF.html',
     '_files/amp-img/amp-img-DAG-base64.html',
     '_files/amp-img/amp-img-positioning-WestonR.html',
     '_files/bullet-color/color-bullet-23-07-04.html',
     '_files/bullet-color/color-bullet-text-gradient-23-10-02.html',
     '_files/color/sequence-by-group.html',
-    '_files/fonts/___Japanese-Korean-Chinese-simplified.html',
-    '_files/fonts/___noto-serif-sans-poppins-recursive-zillaslab.html',
-    '_files/fonts/___robotoflex-VF.html',
-    '_files/fonts/amstelvar-alpha.html',
     '_files/google-doc-viewer/doc-viewer-23-06-11.html',
     '_files/list-mustache/persona/__persona-story-rice_-_22-05-14___3.html',
     '_files/list-mustache/pizza-vlad/Pizza_1_01.06.2021.svg',

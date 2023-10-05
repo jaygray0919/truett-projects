@@ -1,0 +1,12 @@
+
+project-web-story-structure/32-font-combination/_example/amstelvar-alpha.html
+project-web-story-structure/32-font-combination/_example/Japanese-Korean-Chinese-simplified.html
+project-web-story-structure/32-font-combination/_example/noto-serif-sans-poppins-recursive-zillaslab.html
+project-web-story-structure/32-font-combination/_example/robotoflex-VF.html
+
+
+`Japanese, Korean, and Chinese-simplified </en/latest/Japanese-Korean-Chinese-simplified.html>`_
+`Noto Serif, Noto Sans, Poppins, Recursive and ZillaSlab </en/latest/noto-serif-sans-poppins-recursive-zillaslab.html>`_
+`Description of pizza using Amstelvar and Recursive variable fonts (VF) </en/latest/amstelvar-alpha.html>`_
+`RobotoFlex Variable Font </en/latest/robotoflex-VF.html>`_
+
