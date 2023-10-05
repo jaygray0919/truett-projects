@@ -1,5 +1,6 @@
 
-project-web-story-structure/31-background-text-color-shadow/_example/background/background-text-color-shadow.html
+project-web-story-structure/31-background-text-color-shadow/_example/background-text-color-shadow.html
+
 project-web-story-structure/31-background-text-color-shadow/_example/background/background-130F30-constellation-w997-h997.svg
 project-web-story-structure/31-background-text-color-shadow/_example/background/background-fractal-noise-w1650-h1500.webp
 project-web-story-structure/31-background-text-color-shadow/_example/image/mental-models-data-centric-architecture-w946-h382.png
