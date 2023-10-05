@@ -135,7 +135,12 @@ html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
 html_extra_path = [
 
     '__project-web-story-structure/21-cover-page/_example/cover-poppins.html',
-    '__project-web-story-structure/31-background-text-color-shadow/_example/background-text-color-shadow.html',
+    '__project-web-story-structure/31-background-text-color-shadow/_example/background/background-text-color-shadow.html',
+    '__project-web-story-structure/31-background-text-color-shadow/_example/background/background-130F30-constellation-w997-h997.svg',
+    '__project-web-story-structure/31-background-text-color-shadow/_example/background/background-fractal-noise-w1650-h1500.webp',
+    '__project-web-story-structure/31-background-text-color-shadow/_example/image/mental-models-data-centric-architecture-w946-h382.png',
+    '__project-web-story-structure/31-background-text-color-shadow/_example/image/mental-models-w936-h576.png',
+    '__project-web-story-structure/31-background-text-color-shadow/_example/image/philip-johnson-laird-w512-h512.jpg',
     '__project-web-story-structure/32-font-combination/_example/amstelvar-alpha.html',
     '__project-web-story-structure/32-font-combination/_example/Japanese-Korean-Chinese-simplified.html',
     '__project-web-story-structure/32-font-combination/_example/noto-serif-sans-poppins-recursive-zillaslab.html',
