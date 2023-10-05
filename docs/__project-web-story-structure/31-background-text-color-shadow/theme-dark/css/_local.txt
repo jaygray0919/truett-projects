@@ -1,7 +1,7 @@
 
 .. describe:: Theme dark
 
-   item
+   shadow-text-back-dark - stb-d
 
 
 .. attention::
@@ -17,8 +17,8 @@
      color: var(--on-ffffff);
    }
 
-   /* for background, dark: shadow-text-back-dark - stbd */
-   .stbd {
+   /* for background, dark: shadow-text-back-dark - stb-d */
+   .stb-d {
      text-shadow:
        2px 7px 5px rgba(0, 0, 0, 0.3),
        0px -4px 10px rgba(255, 255, 255, 0.3);

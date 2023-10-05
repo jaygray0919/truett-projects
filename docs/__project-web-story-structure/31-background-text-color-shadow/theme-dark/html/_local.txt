@@ -11,7 +11,9 @@
 
 ::
 
-   <amp-story-grid-layer template="fill">
+   <amp-story-grid-layer
+     template="fill"
+   >
      <amp-img
        id="background-130F30-constellation"
        data-item-role="background"
