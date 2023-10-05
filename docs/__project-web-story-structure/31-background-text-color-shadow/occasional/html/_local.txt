@@ -1,0 +1,45 @@
+
+.. describe:: Occasional light
+
+   item
+
+.. attention::
+   Use Ontomatica logo for light background
+
+
+.. highlight:: html
+
+::
+
+   <amp-story-grid-layer template="fill">
+     <amp-img
+       id="background-mottled-white"
+       data-item-role="background"
+       data-item-type="static"
+       data-item-label="background-mottled-white"
+       src="background/background-fractal-noise-w1650-h1500.webp"
+       width="1650"
+       height="1500"
+       layout="responsive"
+     ></amp-img>
+   </amp-story-grid-layer>
+
+   <h2 class="
+     t-c
+     ZillaSlab-SemiBold-600
+     fs-70
+     stb-l
+     hc-l
+   ">
+   text
+   </h2>
+
+   <amp-story-page-attachment
+     layout="nodisplay"
+     theme="dark"
+     cta-image="ontomatica-symbol-w33-h36-color-202125-bgnd-white.svg"
+     cta-text=""
+     data-title=""
+   >
+     content
+   </amp-story-page-attachment>

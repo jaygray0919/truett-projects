@@ -1,0 +1,5 @@
+
+project-web-story-structure/31-background-text-color-shadow/_example/background-text-color-shadow.html
+
+`light and dark background examples </en/latest/background-text-color-shadow.html>`_
+

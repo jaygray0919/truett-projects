@@ -1,0 +1,30 @@
+
+.. describe:: Theme dark
+
+   item
+
+
+.. attention::
+   Note dependence on CSS color variables.
+
+
+.. highlight:: css
+
+::
+
+   /* for background, dark */
+   .hcolor-light {
+     color: var(--on-ffffff);
+   }
+
+   /* for background, dark: shadow-text-back-dark - stbd */
+   .stbd {
+     text-shadow:
+       2px 7px 5px rgba(0, 0, 0, 0.3),
+       0px -4px 10px rgba(255, 255, 255, 0.3);
+   }
+
+   /* constellation original */
+   .shadow-text {
+     text-shadow: 0px 4px 4px rgb(0 0 0 / 0.95);
+   }

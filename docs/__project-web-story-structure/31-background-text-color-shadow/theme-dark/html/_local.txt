@@ -1,0 +1,45 @@
+
+.. describe:: Theme dark
+
+   item
+
+.. attention::
+   Use Ontomatica logo for dark background
+
+
+.. highlight:: html
+
+::
+
+   <amp-story-grid-layer template="fill">
+     <amp-img
+       id="background-130F30-constellation"
+       data-item-role="background"
+       data-item-type="static"
+       data-item-label="background-130F30-constellation"
+       src="background-130F30-constellation-w997-h997.svg"
+       width="997"
+       height="997"
+       layout="responsive"
+     ></amp-img>
+   </amp-story-grid-layer>
+
+   <h2 class="
+      t-c
+      ZillaSlab-SemiBold-600
+      fs-70
+      stb-d
+      hc-d
+   ">
+   text
+   </h2>
+
+   <amp-story-page-attachment
+     layout="nodisplay"
+     theme=""
+     cta-image="ontomatica-symbol-w33-h36-color-1F64FF-bgnd-white.svg"
+     cta-text=""
+     data-title=""
+   >
+
+   </amp-story-page-attachment>

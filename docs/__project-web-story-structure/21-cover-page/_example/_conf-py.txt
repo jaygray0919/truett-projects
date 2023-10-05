@@ -1,0 +1,7 @@
+
+
+project-web-story-structure/21-cover-page/_example/cover-poppins.html
+
+
+`cover page, poppins only </en/latest/cover-poppins.html>`_
+
