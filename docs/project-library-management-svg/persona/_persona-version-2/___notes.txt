@@ -1,0 +1,10 @@
+
+design:
+
+assign color values using
+	json list (amp-list, amp-state)
+	template engine (amp-mustache)
+
+works well when all objects are in a single HTML document
+
+does not work well when an SVG (generated as WEBP) is injected into an HTML document

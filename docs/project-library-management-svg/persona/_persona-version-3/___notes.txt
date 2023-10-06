@@ -1,0 +1,7 @@
+
+design
+
+use CSS variables (color) and unique CSS elements to control personas
+
+becasue personas are in a single HTML document, individual SVG style elements must be unique (to avoid collision)
+then, to control color assigned to SVG styles, use CSS variables to control color

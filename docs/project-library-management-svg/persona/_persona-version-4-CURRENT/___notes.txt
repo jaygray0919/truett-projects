@@ -1,0 +1,8 @@
+
+SVG/WEBP is stand alone and injected
+
+injection means that we do not have to worry about CSS element collision
+color is local to the SVG and does not need to use CSS variables
+
+TODO
+work out the best method to combine stand-alone SVG-persona-attributes to create a specific SVG-persona

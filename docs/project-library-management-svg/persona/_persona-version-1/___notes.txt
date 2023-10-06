@@ -1,0 +1,18 @@
+
+issues:
+
+viewBox caused placement problems
+	viewBox="0 -305.637 223.456 305.637">
+
+target viewBox
+	viewBox="0 0 223.456 305.637">
+
+correction:
+
+used Inkscape "fit image"
+exported "fitted" SVG
+
+see:
+	__inkscape-transform-w223-h306.svg
+adjusted viewBox
+	viewBox="0 0 223 306"

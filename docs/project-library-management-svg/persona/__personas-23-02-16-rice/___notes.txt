@@ -1,0 +1,6 @@
+
+generalized
+
+<svg id="svg-persona-biologist" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 223 306" stroke-width="0.5" overflow="visible">
+<g transform="matrix(1,0,0,-1,-25.901441,281.67817)">
+

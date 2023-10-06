@@ -75,9 +75,3 @@ Structure |emd| Story
 
    81-quiz/index.rst
 
-
-.. toctree::
-   :maxdepth: 1
-   :caption: 🦇 List and Mustache
-
-   91-list-mustache/index.rst

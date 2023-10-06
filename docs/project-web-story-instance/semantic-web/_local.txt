@@ -1,7 +1,0 @@
-
-.. describe:: UMSL preso - Semantic Web
-
-   item
-
-   item
-

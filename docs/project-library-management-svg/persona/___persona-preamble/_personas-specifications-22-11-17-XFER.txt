@@ -1,0 +1,66 @@
+========
+Audience
+========
+
+Arguably the most important issue for these types of projects is answering the question:
+	who is the audience?
+
+We don't want to just "make up" labels; we want to use Structured Data to define our audience.
+The principle reason:
+	our content is part of Google search results
+
+The idea for Rice, Wheat and similar presentations is to feature a Persona on a page to identify an instance of our audience.
+Wikipedia defines a Persona as:
+	https://en.wikipedia.org/wiki/Persona
+
+There are three parts to a Persona
+
+1. Ontologies needed to define a Persona
+Here are core ontologies
+	http://wiki.eclipse.org/Persona_Data_Model_2.0
+
+2. Definition of roles and responsibilities (Roles)
+
+In the US Department of Labor (US DOL) Bureau of Labor Statistics BLS occupations
+	https://www.bls.gov/ocs/ocsjobde.htm
+	https://www.bls.gov/ncs/ocs/data.htm
+
+In Europe, O*NET
+	https://www.onetonline.org/
+
+For example, here is astronomer
+	https://www.bls.gov/oes/current/oes192011.htm
+
+Here is food scientist on BLS SOC
+	https://www.bls.gov/oes/current/oes191012.htm
+
+Here is Food Scientists and Technologists on O*NET
+	https://www.onetonline.org/link/summary/19-1012.00
+
+Here are several roles in the audience that are interested in our work:
+	https://afdsi.com/___supplier/paula-perez/schema-audience/data.txt
+The ontology we use is
+	schema.org (from Google, Microsoft, et al)
+You can see where we declare the target ontology in this statement
+	"@context":"http://schema.org/"
+The next declaration:
+	"@type":"BusinessAudience"
+The text that we use comes from US DOL BLS SOC and O*NET
+
+Here, Google reads and "understands" our audience declarations
+	https://validator.schema.org/#url=https%3A%2F%2Fafdsi.com%2F_talent%2Fpaula%2Fschema-audience%2Fdata.txt
+
+Let's look at a more complex declaration: Food Scientists and Technologists
+
+Here is Food Scientists and Technologists in machine-readable format
+	https://afdsi.com/_talent/paula/schema-food-scientist/data.txt
+which is read and "understood" by Google
+	https://validator.schema.org/#url=https%3A%2F%2Fafdsi.com%2F_talent%2Fpaula%2Fschema-food-scientist%2Fdata.txt
+
+Click the box Audience to see how Google parsed the machine-readable data
+	then look at Class
+
+3. An image of the Persona
+
+The idea is that the image is a reasonable representation of the person who performs the role; a generic person in an occupation.
+We use characterists like gender, garments, hair style (head, facial) and accessories to represent the Persona

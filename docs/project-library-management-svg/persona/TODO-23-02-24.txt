@@ -1,0 +1,15 @@
+
+Consolidate:
+
+1.	version 1 personas
+	stand alone SVG
+
+2.	version 2 personas
+	SVG using amp-list and amp-mustache
+
+3.	version 3 personas
+	implemented in a single HTML document using shared CSS
+
+4.	version 4 personas
+	updated approach that creates a stand-alone persona that is injected as a WEBP instance into amp-html
+

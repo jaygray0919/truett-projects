@@ -1,0 +1,1342 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<link rel="icon"                href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+<title>
+Data Ecosystem
+</title>
+<link rel="canonical"           href="index.html" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" /> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" />
+<link rel="preload" as="font"   href="https://s3.amazonaws.com/benetta.net/fonts/noto-sans-sc/noto-sans-sc-v12-latin_chinese-simplified-700.woff2" crossorigin />
+
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+<script  async                                            src="https://cdn.ampproject.org/v0.js"></script>
+<script  async custom-element="amp-animation"             src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+<script  async custom-element="amp-bind"                  src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script  async custom-element="amp-iframe"                src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<script  async custom-element="amp-position-observer"     src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+<script  async custom-element="amp-selector"              src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+@font-face {
+    font-family: Noto-Sans-SC-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://s3.amazonaws.com/benetta.net/fonts/noto-sans-sc/noto-sans-sc-v12-latin_chinese-simplified-700.woff2)
+        format("woff2");
+}
+@font-face {
+    font-family: "RobotoFlex Regular";
+    src: url(https://pixelambacht.nl/remote/RobotoFlex[slnt,wdth,wght,opsz].woff2);
+    font-size: 24px;
+    text-align: initial;
+    font-variation-settings: "wght" 400, "wdth" 100, "opsz" 14, "GRAD" 0,
+        "slnt" 0, "XTRA" 468, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712,
+        "YTAS" 750, "YTDE" -203, "YTFI" 738;
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+:root {
+    --color-text-light: #fff;
+    --color-text-dark: #000;
+    --color-bg-light: #fafafc;
+    --color-bg-dark: #111;
+    --text-color: --color-text-dark;
+    --background-color: --color-text-light;
+    --image-filter: grayscale(0%);
+} /*! Spectre.css v0.5.7 | MIT License */
+html {
+    font-family: "RobotoFlex Regular";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+article,
+header,
+section {
+    display: block;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+figure {
+    display: block;
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+    outline-width: 0;
+}
+address {
+    font-style: normal;
+}
+strong {
+    font-weight: inherit;
+}
+strong {
+    font-weight: bolder;
+}
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+video {
+    display: inline-block;
+}
+img {
+    border-style: none;
+}
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+button {
+    text-transform: none;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+    -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+summary {
+    display: list-item;
+    outline: 0;
+}
+[hidden] {
+    display: none;
+}
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    background: #fff;
+    color: #3b4351;
+    font-family: "RobotoFlex Regular";
+    font-size: 0.8rem;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+a {
+    color: #1f64ff;
+    outline: 0;
+    text-decoration: none;
+}
+a:focus {
+    box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
+}
+a:active,
+a:focus,
+a:hover {
+    color: #302ecd;
+    underline: dotted #1f64ff;
+}
+a:visited {
+    color: #807fe2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 500;
+}
+.h1,
+h1 {
+    font-size: 2rem;
+}
+.h2,
+h2 {
+    font-size: 1.6rem;
+}
+.h3,
+h3 {
+    font-size: 1.4rem;
+}
+.h4,
+h4 {
+    font-size: 1.2rem;
+}
+.h5,
+h5 {
+    font-size: 1rem;
+}
+.h6,
+h6 {
+    font-size: 0.8rem;
+}
+p {
+    margin: 0 0 1.2rem;
+}
+a {
+    -webkit-text-decoration-skip: ink edges;
+    text-decoration-skip: ink edges;
+}
+blockquote {
+    border-left: 0.1rem solid #dadee4;
+    margin-left: 0;
+    padding: 0.4rem 0.8rem;
+}
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+dl dt {
+    font-weight: 700;
+}
+dl dd {
+    margin: 0.4rem 0 0.8rem 0;
+}
+.btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 0.05rem solid #1f64ff;
+    border-radius: 0.1rem;
+    color: #1f64ff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8rem;
+    height: 1.8rem;
+    line-height: 1.2rem;
+    outline: 0;
+    padding: 0.25rem 0.4rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s, border 0.2s, box-shadow 0.2s, color 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.btn:focus {
+    box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
+}
+.btn:focus,
+.btn:hover {
+    background: #f1f1fc;
+    border-color: #4b48d6;
+    text-decoration: none;
+}
+.btn:active {
+    background: #0041d2;
+    border-color: #0041d2;
+    color: #fff;
+    text-decoration: none;
+}
+.btn:active.loading::after {
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+}
+.btn:disabled,
+.btn[disabled] {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.btn.btn-primary {
+    background: #1f64ff;
+    border-color: #4b48d6;
+    color: #fff;
+}
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+    background: #0041d2;
+    border-color: #3634d2;
+    color: #fff;
+}
+.btn.btn-primary:active {
+    background: #0041d2;
+    border-color: #0041d2;
+    color: #fff;
+}
+.btn.btn-lg {
+    font-size: 0.9rem;
+    height: 2rem;
+    padding: 0.35rem 0.6rem;
+}
+.btn.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn.btn-action {
+    padding-left: 0;
+    padding-right: 0;
+    width: 1.8rem;
+}
+.btn.btn-action.btn-lg {
+    width: 2rem;
+}
+.btn-group {
+    display: inline-flex;
+    display: -ms-inline-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.btn-group .btn {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.btn-group .btn:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.btn-group .btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    margin-left: -0.05rem;
+}
+.btn-group .btn:last-child:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -0.05rem;
+}
+.btn-group .btn:active,
+.btn-group .btn:focus,
+.btn-group .btn:hover {
+    z-index: 1;
+}
+.btn-group.btn-group-block {
+    display: flex;
+    display: -ms-flexbox;
+}
+.btn-group.btn-group-block .btn {
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+}
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.img-fit-contain {
+    object-fit: contain;
+}
+.figure {
+    margin: 0 0 0.4rem 0;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    width: 100%;
+}
+.columns {
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -0.4rem;
+    margin-right: -0.4rem;
+}
+.column {
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 100%;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.column.col-1,
+.column.col-10,
+.column.col-11,
+.column.col-12,
+.column.col-2,
+.column.col-3,
+.column.col-4,
+.column.col-5,
+.column.col-6,
+.column.col-7,
+.column.col-8,
+.column.col-9 {
+    -ms-flex: none;
+    flex: none;
+}
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66666667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+@media (max-width: 960px) {
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9 {
+        -ms-flex: none;
+        flex: none;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+    .col-lg-11 {
+        width: 91.66666667%;
+    }
+    .col-lg-10 {
+        width: 83.33333333%;
+    }
+    .col-lg-9 {
+        width: 75%;
+    }
+    .col-lg-8 {
+        width: 66.66666667%;
+    }
+    .col-lg-7 {
+        width: 58.33333333%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-5 {
+        width: 41.66666667%;
+    }
+    .col-lg-4 {
+        width: 33.33333333%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-2 {
+        width: 16.66666667%;
+    }
+    .col-lg-1 {
+        width: 8.33333333%;
+    }
+}
+@media (max-width: 480px) {
+    .col-xs-1,
+    .col-xs-10,
+    .col-xs-11,
+    .col-xs-12,
+    .col-xs-2,
+    .col-xs-3,
+    .col-xs-4,
+    .col-xs-5,
+    .col-xs-6,
+    .col-xs-7,
+    .col-xs-8,
+    .col-xs-9 {
+        -ms-flex: none;
+        flex: none;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+    .col-xs-11 {
+        width: 91.66666667%;
+    }
+    .col-xs-10 {
+        width: 83.33333333%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-8 {
+        width: 66.66666667%;
+    }
+    .col-xs-7 {
+        width: 58.33333333%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-5 {
+        width: 41.66666667%;
+    }
+    .col-xs-4 {
+        width: 33.33333333%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-2 {
+        width: 16.66666667%;
+    }
+    .col-xs-1 {
+        width: 8.33333333%;
+    }
+}
+.card {
+    background: #fff;
+    border: 0.05rem solid #dadee4;
+    border-radius: 0.1rem;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.card .card-body,
+.card .card-header {
+    padding: 0.8rem;
+    padding-bottom: 0;
+}
+.card .card-body:last-child,
+.card .card-header:last-child {
+    padding-bottom: 0.8rem;
+}
+.card .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.card .card-image {
+    padding-top: 0.8rem;
+}
+.card .card-image:first-child {
+    padding-top: 0;
+}
+.card .card-image:first-child img {
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+}
+.card .card-image:last-child img {
+    border-bottom-left-radius: 0.1rem;
+    border-bottom-right-radius: 0.1rem;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.6rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.p-0 {
+    padding: 0;
+}
+.p-1 {
+    padding: 0.2rem;
+}
+.p-2 {
+    padding: 0.4rem;
+}
+.s-circle {
+    border-radius: 50%;
+} /*! Spectre.css Icons v0.5.9 */
+.icon {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: inherit;
+    font-style: normal;
+    height: 1em;
+    position: relative;
+    text-indent: -9999px;
+    vertical-align: middle;
+    width: 1em;
+}
+.icon::after,
+.icon::before {
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn .icon {
+    vertical-align: -10%;
+}
+.btn-lg .icon {
+    vertical-align: -15%;
+}
+.icon-arrow-down::before,
+.icon-arrow-right::before,
+.icon-arrow-up::before,
+.icon-back::before {
+    border: 0.1rem solid currentColor;
+    border-bottom: 0;
+    border-right: 0;
+    height: 0.65em;
+    width: 0.65em;
+}
+.icon-arrow-down::before {
+    transform: translate(-50%, -75%) rotate(225deg);
+}
+.icon-arrow-right::before {
+    transform: translate(-75%, -50%) rotate(135deg);
+}
+.icon-arrow-up::before {
+    transform: translate(-50%, -25%) rotate(45deg);
+}
+.icon-back::after {
+    background: currentColor;
+    height: 0.1rem;
+    width: 0.8em;
+}
+.icon-back::after {
+    left: 55%;
+}
+.icon-back::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.icon-apps::before {
+    background: currentColor;
+    box-shadow: -0.35em -0.35em, -0.35em 0, -0.35em 0.35em, 0 -0.35em, 0 0.35em,
+        0.35em -0.35em, 0.35em 0, 0.35em 0.35em;
+    height: 3px;
+    width: 3px;
+}
+.icon-check::before {
+    border: 0.1rem solid currentColor;
+    border-right: 0;
+    border-top: 0;
+    height: 0.5em;
+    transform: translate(-50%, -75%) rotate(-45deg);
+    width: 0.9em;
+}
+.icon-search::before {
+    border: 0.1rem solid currentColor;
+    border-radius: 50%;
+    height: 0.75em;
+    left: 5%;
+    top: 5%;
+    transform: translate(0, 0) rotate(45deg);
+    width: 0.75em;
+}
+.icon-search::after {
+    background: currentColor;
+    height: 0.1rem;
+    left: 80%;
+    top: 80%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 0.4em;
+}
+.icon-time {
+    border: 0.1rem solid currentColor;
+    border-radius: 50%;
+}
+.icon-time::before {
+    background: currentColor;
+    height: 0.4em;
+    transform: translate(-50%, -75%);
+    width: 0.1rem;
+}
+.icon-time::after {
+    background: currentColor;
+    height: 0.3em;
+    transform: translate(-50%, -75%) rotate(90deg);
+    transform-origin: 50% 90%;
+    width: 0.1rem;
+}
+.icon-people::before {
+    border: 0.1rem solid currentColor;
+    border-radius: 50%;
+    height: 0.45em;
+    top: 25%;
+    width: 0.45em;
+}
+.icon-people::after {
+    border: 0.1rem solid currentColor;
+    border-radius: 50% 50% 0 0;
+    height: 0.4em;
+    top: 75%;
+    width: 0.9em;
+}
+#content {
+    padding-top: 0.4rem;
+    max-width: 1200px;
+}
+.column {
+    padding: 0.4rem;
+}
+#logo {
+    padding-bottom: 1em;
+    display: inline-block;
+}
+header {
+    color: #1f64ff;
+    font-size: 1.8em;
+    height: 1.9em;
+    margin: 0;
+}
+.o-h1 {
+    margin-left: -1em;
+    margin-top: -0.5em;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: "RobotoFlex Regular";
+    font-size: 1.6em;
+    background: linear-gradient(to right, #1f64ff, #6c99ff);
+    color: #fff;
+}
+section {
+    font-family: "RobotoFlex Regular";
+}
+figure {
+    margin: 0;
+}
+strong {
+    font-weight: 500;
+}
+a {
+    color: #005af0;
+}
+.circle {
+    border-radius: 50%;
+}
+.scrollToTop {
+    z-index: 9999;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    visibility: hidden;
+}
+#marker {
+    position: absolute;
+    top: 100px;
+    width: 0;
+    height: 0;
+}
+.-on {
+    display: flex;
+    align-items: center;
+}
+.-on {
+    padding: 0 0 14px;
+    border: 0;
+    background: 0 0;
+}
+.-on:focus ~ .-oi,
+.-on:hover ~ .-oi {
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: var(--color-text-light);
+        --background-color: var(--color-bg-dark);
+        --image-filter: grayscale(50%);
+    }
+}
+body,
+html {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+amp-img {
+    filter: var(--image-filter);
+}
+amp-selector {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+a[href^="http://"]:after,a[href^="https://"]:after
+{
+    content: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -14 36 36' width='24' height='24'><path stroke='lightgray' d='M10 6v2H5v11h11v-5h2v6a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z'></path></svg>");
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 3px;
+}
+.-i {
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.-i {
+    fill: #005af0;
+    padding: 0.438em 0;
+    margin-bottom: auto;
+    margin-right: 0.625em;
+    box-sizing: initial;
+}
+.-on {
+    display: flex;
+    align-items: center;
+}
+.-on {
+    padding: 0 0 14px;
+    border: 0;
+    background: 0 0;
+}
+.-on:focus ~ .-oi,
+.-on:hover ~ .-oi {
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+</style>
+</head>
+<body>
+<div id="top-page"></div>
+
+<header class="container">
+<a id="logo" href="">
+<amp-img
+    src="https://example.com"
+  width="10"
+ height="10"
+></amp-img>
+</a>
+</header>
+
+<div id="blue-top" class="">
+<h1 class="o-h1" property="schema:headline">
+Personas, Roles and Data Management
+</h1>
+</div>
+
+<!-- master container -->
+<div id="content" class="container">
+
+<div id="" class="container">
+<div class="columns">
+<div class="column col-12">
+<h1>
+Data Ecosystem
+</h1>
+</div>
+</div>
+<h3 id="" class="s-subtitle">
+This article describes how data is treated and consumed in a product organization, and how various professional roles interact with data at various stages of its lifecycle
+</h3>
+<div class="docs-note">
+<p>
+Data has been a valuable commodity for more several decades.
+It not only has changed the way our civilization is progressing but, has also provided us with a new perspective with which we look at our skill sets and professional growth.
+It is important to understand what data is and how to process and use it.
+But, it is also important to understand what working with data means, what are its various forms, who uses it and how.
+Such individuals should be able to identify with what role they play in this ecosystem and to where they can progress.
+At the same time, they should recognize the needs of other people in this ecosystem in order to understand problem statements and create better solutions.
+</p>
+</div>
+<div class="docs-note">
+<p>
+The goal here is to describe what the ecosystem in modern data-driven product companies can feel like, what various stages of its life cycle are, and who are producers and consumers in this ecosystem.
+Data is as much about engineering and technical concepts, as it is about decision making and operations when properly translated to intelligence.
+</p>
+</div>
+<blockquote>
+<p>
+Experiences are unique — This ecosystem is also unique to one organization and might not be exactly applicable elsewhere.
+The idea is to give a sense of its working to people who are new to such an ecosystem.
+</p>
+<cite>
+- Jay Gray
+</cite>
+</blockquote>
+</div>
+
+<div id="" class="container">
+<h3 class="s-title">
+Meet the players of this ecosystem.
+</h3>
+<div class="docs-note">
+<p>
+While data may be the all-powerful artificial resource of the 21st century, the roles that humans play in this ecosystem are crucial.
+Let’s see who they are.
+</p>
+</div>
+<div class="columns">
+<div class="column col-12 col-xs-12">
+<div class="card">
+<div class="card-image">
+<amp-img layout="responsive" class="img-responsive" src="personas-data-roles-w2000-h323.jpeg" width="2000" height="323" alt=""></amp-img>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="" class="container">
+<div class="docs-note">
+<p>
+Consumers are at the centre of this ecosystem — They consume the product offerings and receive the benefits of an ever-evolving user experience.
+They are the gold mine of this world and their interactions with various digital products translate to raw data which runs through the ecosystem.
+</p>
+</div>
+<div class="docs-note">
+<p>
+Product Managers and Business Stakeholders are tasked with continuously creating value for both the consumers and the product/organization they work for.
+They work in tandem to meet the expectations set by the consumers and improve the value proposition that their product offers while optimizing the return on investment of their efforts and achieving organizational targets.
+</p>
+</div>
+<div class="docs-note">
+<p>
+Data Architects work with Product Managers to create a foundation of what kind of raw data needs to be generated and how it needs to be consumed.
+They provide a technical map to the vision of a data ecosystem and this map facilitates the development of data processing pipelines, business intelligence dashboards, data feeds, etc.
+</p>
+</div>
+<div class="docs-note">
+<p>
+Data Engineers build on top of this foundation by setting up resources and creating systems to store and process data and support the analytical needs of their stakeholders.
+Their work revolves around building data pipelines and maintaining data availability in various forms.
+</p>
+</div>
+<div class="docs-note">
+<p>
+QA (Quality Assurance) Engineers play an important role by keeping a check on the quality of work product that the data engineers produce and making sure that stakeholder expectations are correctly met.
+</p>
+</div>
+<div class="docs-note">
+<p>
+Data Analysts play an interesting role because they work with the unknown.
+They work on answering questions that anyone in the organization comes up with.
+They help in understanding unique user behaviour, creating market projections, debugging issues and anomalies, and whatnot.
+They might work with technical, product, or business teams and address a variety of problem statements.
+</p>
+</div>
+<blockquote>
+<p>
+An analyst is that wrench in the toolbox that can be adjusted to screw various sizes of nuts and bolts, and provide value beyond that as well.
+</p>
+<cite>
+- Jay Gray
+</cite>
+</blockquote>
+<div class="docs-note">
+<p>
+Lastly, there are the Data Scientists — They carry the burden of pulling a rabbit out of the hat.
+Their role revolves around generating deeper insights by analyzing data and using data science and advanced analytics techniques.
+From predictive modelling to creating recommendation systems, their work remains unstructured but highly valuable.
+</p>
+</div>
+<div class="docs-note">
+<p>
+These technical brains come together to create amazing analytical work products that inform the organization about the behavior of their consumers and help stakeholders make better decisions every day.
+</p>
+</div>
+</div>
+
+<div id="" class="container">
+<h3 class="s-title">
+Facets of data — How is it perceived?
+</h3>
+<div class="docs-note">
+<p>
+The various players in a data ecosystem interact with data differently, and this interaction defines how they perceive data and what they do with it.
+In 2006, when Clive Humby coined the phrase “Data is the new oil”, he drew an unmistakable comparison between the 2 resources.
+Just like oil goes through various stages like extraction, refining, and storage; some people value data in a crude form, some only make use of the processed form and some just need to understand its characteristics to store and process it.
+</p>
+</div>
+
+<div class="columns">
+<div class="column col-12 col-xs-12">
+<div class="card">
+<div class="card-image">
+<amp-img layout="responsive" class="img-responsive" src="triangle-1-w1235-h1051.jpeg" width="1235" height="1051" alt=""></amp-img>
+</div>
+</div>
+</div>
+</div>
+
+<div class="docs-note">
+<p>
+In this ecosystem, the data presents 3 facets.
+These facets, while visible and accessible to anyone, have higher relevance to only a few players.
+</p>
+</div>
+<!-- </div> -->
+
+<div class="columns">
+<div class="column col-12 col-xs-12">
+<dl class="list">
+<dt>
+Volume & Characteristics
+</dt>
+<dd>
+This facet is most visible and relevant to the data engineering players as they are responsible for understanding the data’s structure and size, storing it, processing it and creating analytical work products like reports, models and analyses.
+While they are also exposed to the other two facets, the relevance to their responsibilities is lower and only acts as additional knowledge to their understanding of the ecosystem which might help them create better solutions.
+</dd>
+<dt>
+Patterns & Behaviors
+</dt>
+<dd>
+This facet is most relevant to Data Analysts and Scientists.
+It’s their responsibility to get their hands dirty and find answers that no one knows how to figure out.
+They study the hidden patterns and consumer behaviors to address the problem statements at hand which are always exploratory and diagnostic in nature.
+Their work product often contributes to that of the Data Architects and Engineers in the form of the development of new production processes.
+</dd>
+<dt>
+Summarized Information
+</dt>
+<dd>
+This facet is most important for the decision-making players of the ecosystem.
+Product Managers and Business Stakeholders perform a variety of operational (day-to-day), as well as strategic (long term) functions with the help of reporting dashboards, outcomes of predictive models, insights from ad-hoc analyses, etc.
+They depend on these analytical tools to improve the product experience and create value for the consumer and the organization.
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div id="" class="container">
+<div class="docs-note">
+<p>
+These interactions may not be as exclusive as they might seem above and anyone in the ecosystem can experience a fair amount of overlap.
+Business Stakeholders might never be exposed to the raw data or its metadata as they might not be technically equipped to consume it but nothing stops a Data or QA Engineer from consuming and comprehending the summarized information presented to these stakeholders.
+It might just be an exercise to better understand the impact of their work or an effort to upgrade their knowledge of the product or organization they work for. 
+Similarly, while the work of Data Scientists might be highly technical or statistical in nature, more often than not they have to get a deep understanding of various business functions and market dynamics in order to better inform their understanding of the problem statement.
+</p>
+</div>
+<blockquote>
+<p>
+Its safe to say that any professional who has a solid understanding of how all of these aspects interact with one another will be highly functional in this ecosystem and might be capable of creating greater value than others.
+</p>
+<cite>
+- Jay Gray
+</cite>
+</blockquote>
+</div>
+
+<div id="" class="container">
+<h3 class="s-title">
+What happens with data?
+</h3>
+<h4 class="s-title">
+Growing our crop — Generating Data
+</h4>
+<div class="docs-note">
+<p>
+An essential component of the data ecosystem is the accurate generation of raw data.
+Consumer apps can have various features and functionalities, branched user experiences, video players, payment gateways, etc.
+To better understand the user behavior, it is necessary to capture the right kind of user touchpoints and to do that you have to correctly design your applications event logging architecture.
+A correctly designed architecture can help you understand precious behavioral information about a large section of your user base; on the other hand, a poorly designed event logging system may cause you to lose out on valuable insights.
+</p>
+</div>
+
+<div class="columns">
+<div class="column col-12 col-xs-12">
+<div class="card">
+<div class="card-image">
+<amp-img layout="responsive" class="img-responsive" src="block-1-w1235-h726.jpeg" width="1235" height="726" alt=""></amp-img>
+</div>
+</div>
+</div>
+</div>
+
+<div class="docs-note">
+<p>
+Most ecosystems rely on interactions between frontend and backend systems to generate the event logs for user interactions.
+Every time a user interacts with a particular feature, an event log is pushed to the data ingestion systems containing various variables and parameters defining the captured event.
+</p>
+</div>
+
+<blockquote>
+<p>
+Say, a user tries to search a video on the application, when she hits search, a request is sent to the backend service for search and a response is sent back to the front end presenting multiple relevant search results for the user.
+This process involves generation of an event log from the backend and frontend systems that goes into a data warehouse and is stored as raw data for various analytical use cases.
+This log can contain various attributes like search keyword, search results, language, etc. which can later help in understanding what users search for or evaluating the quality of search results that are served.
+</p>
+<cite>
+- Jay Gray
+</cite>
+</blockquote>
+
+<div class="docs-note">
+<p>
+Here, an important role is played by Product Managers and Data Architects to understand and decide what information needs to be captured and how it can be included in the services’ architecture.
+</p>
+</div>
+
+</div>
+
+<div id="" class="container">
+<h3 class="s-title">
+Intelligence factories — The Data Platform
+</h3>
+<div class="docs-note">
+<p>
+Business Intelligence systems have been a crucial part of any company’s decision-making process for quite some time and they have continuously evolved with the evolution of data management and processing technologies.
+In our ecosystem, a well-architected data platform helps the organization build data-driven strategies and enrich the product offering for our consumers.
+</p>
+</div>
+
+<div class="columns">
+<div class="column col-12 col-xs-12">
+<div class="card">
+<div class="card-image">
+<amp-img layout="responsive" class="img-responsive" src="block-2-w1235-h904.jpeg" width="1235" height="904" alt=""></amp-img>
+</div>
+</div>
+</div>
+</div>
+
+<div class="docs-note">
+<p>
+Data is collected from various sources — Event logs from consumer apps and backend services, content metadata from external vendors, billing transactions from payment partners, interaction data from social media accounts, customer service data, etc.
+All of this data needs to be properly ingested, stored efficiently and processed in order to extract intelligence.
+The data engineering team takes on this challenge where Data Architects along with Data Engineers create an end to end data processing platform.
+They set up data ingestion pipelines, design a data warehouse with multiple data marts, create ETL processes to serve the needs of various business reports, and build those reports on one or the other enterprise data visualization tools.
+They also make sure that integrations are possible with third-party services in order to set up data feeds between them.
+</p>
+</div>
+
+<div class="docs-note">
+<p>
+The Data Engineering team in tandem with Product Managers create a variety of analytical work products — dashboards, summary reports, predictive models, knowledge graphs, and various exploratory analyses.
+These products are a result of various requirements from business stakeholders and initiatives within the product management and engineering space.
+Professionals collaborate to understand what kind of product will address their use-cases and document their version of the requirements which is then discussed with engineers in order to bring it to life.
+QA Engineers make an important contribution to this process by understanding these requirements and making sure that the deliverable is of the highest quality and accuracy.
+They validate the facts presented in any report in the form of aggregations, evaluate the usage of these products from the perspectives of its consumers, and make sure that any concerns raised by the stakeholders are addressed in a timely fashion.
+</p>
+</div>
+<blockquote>
+<p>
+An important component of the ecosystem is Data Democracy.
+The burden of storing and managing data might lie onto engineering teams, but everyone should be equipped with the power to use and analyse this resource.
+In this day and age, more and more business strategies are data-driven, so it makes sense that those decision makers have better access to data.
+Functional teams work with their analysts to create customised dashboards and analyses that support their day to day analytical needs.
+Democratising data makes sure that understanding of the business and industry is easily factored into the problem solving process and relieves the engineering team of any pressure to invest additional bandwidth in solving functional problems.
+</p>
+<cite>
+- Jay Gray
+</cite>
+</blockquote>
+</div>
+
+<div id="" class="container">
+<h3 class="s-title">
+Lobbying for Growth — Product Management
+</h3>
+<div class="docs-note">
+<p>
+A central team of Product Managers and Analysts drives the development and growth of the product from its core.
+Product Managers work with various aspects of the product — some manage the development of the consumer application, while others manage the growth of business markets and their KPIs.
+A small group of these managers is responsible for building and driving the data ecosystem by collaborating with engineering teams as well as business stakeholders. 
+Other product managers leverage this ecosystem in order to further strategic roadmaps of their own product components.
+</p>
+</div>
+<div class="columns">
+<div class="column col-12 col-xs-12">
+<div class="card">
+<div class="card-image">
+<amp-img layout="responsive" class="img-responsive" src="block-3-w1235-h860.jpeg" width="1235" height="860" alt=""></amp-img>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="" class="container">
+<h3 class="s-title">
+“What do the numbers tell us?” — Business Stakeholders
+</h3>
+<div class="docs-note">
+<p>
+These teams are the primary consumers of all analytical work products generated in our ecosystem.
+They define strategies around various business/market operations like offline and online marketing for user acquisition and retention, advertising and subscription workflows, content acquisition and programming, etc.
+They also continuously evaluate the market fit of various product features and how the users are engaging with them.
+This is important to make sure that the product offerings always stay relevant for its target group.
+</p>
+</div>
+<div class="docs-note">
+<p>
+These functional requirements require a deep understanding of the user behavior and product performance which are fulfilled by a host of timely dashboards, performance trackers, projections and predictive models, user segmentation algorithms… the list goes on.
+The Business Stakeholders define what they want to track and how they want to study it, in collaboration with Product Managers.
+These requirements trickle down the tree to the engineering players who provide a technical form to these requirements and build analytical products that provide actionable insights to the Business Stakeholders.
+</p>
+</div>
+<div class="columns">
+<div class="column col-12 col-xs-12">
+<div class="card">
+<div class="card-image">
+<amp-img layout="responsive" class="img-responsive" src="block-4-w1235-h699.jpeg" width="1235" height="699" alt=""></amp-img>
+</div>
+</div>
+</div>
+</div>
+<div class="docs-note">
+<p>
+It may seem that the ecosystem presents itself in a cyclic form, where data generated by product consumers comes back to them in the form of an enhanced user experience and new product features.
+But, the value created in this ecosystem is only as strong as the collaborative effort of the people within it.
+Bad collaborations tend to create zero or low value for their customers, while good ones create history.
+It is most important to identify your role in this ecosystem to be both — an effective data professional, and to be a successful collaborator.
+</p>
+</div>
+</div>
+
+<div id="" class="container">
+<div class="columns">
+<div class="column col-12 col-xs-12">
+<div class="card">
+<div class="card-image">
+<amp-img layout="responsive" class="img-responsive" src="block-5-w4000-h3104.jpeg" width="4000" height="3104" alt=""></amp-img>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<!-- final master container -->
+
+<amp-animation
+     id="showAnim"
+ layout="nodisplay"
+>
+<script type="application/json">
+{
+    "duration": "200ms",
+        "fill": "both",
+  "iterations": "1",
+   "direction": "alternate",
+  "animations": [{"selector": "#scrollToTopButton",
+                  "keyframes": [{"opacity": "1",
+                                 "visibility": "visible"
+                               }]
+                }]
+}
+</script>
+</amp-animation>
+<amp-animation
+     id="hideAnim"
+ layout="nodisplay"
+>
+<script type="application/json">
+{
+    "duration": "200ms",
+        "fill": "both",
+  "iterations": "1",
+   "direction": "alternate",
+  "animations": [{"selector": "#scrollToTopButton",
+                  "keyframes": [{"opacity": "0",
+                                 "visibility": "hidden"
+                               }]
+                }]
+}
+</script>
+</amp-animation>
+
+<div id="marker">
+<amp-position-observer
+     on="enter:hideAnim.start; exit:showAnim.start"
+ layout="nodisplay"
+></amp-position-observer>
+</div>
+
+<button
+     id="scrollToTopButton"
+     on="tap:top-page.scrollTo(duration=200)"
+  class="scrollToTop btn btn-action btn-primary btn-lg s-circle"
+>
+<i class="icon icon-arrow-up"></i>
+</button>
+
+</body>
+</html>
