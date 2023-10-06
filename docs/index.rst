@@ -8,7 +8,6 @@
 |br|
 |br|
 
-===============
 Truett Projects
 ===============
 
@@ -28,9 +27,9 @@ Truett Projects
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🌀 Background
+   :caption: 🌀 Projects Background
 
-   background/index.rst
+   project-background/index.rst
 
 
 .. toctree::
@@ -54,14 +53,6 @@ Truett Projects
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🔠 Libraries - Fonts
-
-   project-library-management-fonts/index.rst
-
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
    :caption: ⚙️ Libraries - JavaScript
 
    project-library-management-javascript/index.rst
@@ -70,17 +61,25 @@ Truett Projects
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🏵 Libraries - SVGs
+   :caption: 🎨 Libraries - Color
 
-   project-library-management-svg/index.rst
+   project-library-management-color/index.rst
 
 
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🎨 Libraries - Color
+   :caption: 🔠 Libraries - Fonts
 
-   project-library-management-color/index.rst
+   project-library-management-fonts/index.rst
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: 🏵 Libraries - SVGs
+
+   project-library-management-svg/index.rst
 
 
 .. toctree::
