@@ -25,6 +25,13 @@ Truett Projects
 
 * :ref:`Index of Glossary Terms <genindex>`
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: 🌀 Background
+
+   background/index.rst
+
 
 .. toctree::
    :maxdepth: 2
