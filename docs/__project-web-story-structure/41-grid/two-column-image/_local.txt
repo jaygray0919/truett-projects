@@ -8,8 +8,6 @@
 
 .. highlight:: css
 
-Guidance about 2 column grid
-
 ::
 
    .grid-block-group {

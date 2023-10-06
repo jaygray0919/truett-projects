@@ -1,12 +1,10 @@
 
 .. describe:: grid for Twitter
 
-   item
+   see SDL SHACL example
 
 
 .. highlight:: css
-
-Guidance about twitter grid
 
 ::
 
