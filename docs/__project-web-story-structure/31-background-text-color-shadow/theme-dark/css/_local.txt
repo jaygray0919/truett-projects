@@ -13,7 +13,7 @@
 ::
 
    /* for background, dark */
-   .hcolor-light {
+   .hc-d {
      color: var(--on-ffffff);
    }
 

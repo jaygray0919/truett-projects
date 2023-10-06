@@ -13,7 +13,7 @@
 ::
 
    /* for background, light */
-   .hcolor-dark {
+   .hc-l {
      color: var(--on-595775);
    }
 
