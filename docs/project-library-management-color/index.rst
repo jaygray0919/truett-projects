@@ -13,4 +13,3 @@ Manage Color
    project-3/index.rst
    project-4/index.rst
 
-   _example
