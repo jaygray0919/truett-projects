@@ -25,6 +25,7 @@ Truett Projects
 
 * :ref:`Index of Glossary Terms <genindex>`
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -33,48 +34,62 @@ Truett Projects
    __project-web-story-structure/index.rst
    project-web-story-structure-QA/index.rst
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🧪 Web Story Instances 
+   :caption: 🔢 Web Story Instances 
 
    project-web-story-instance/index.rst
    project-web-story-instance-QA/index.rst
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 💡 Libraries - Fonts
+   :caption: 🔠 Libraries - Fonts
 
    project-library-management-fonts/index.rst
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🍱 Libraries - JavaScript
+   :caption: ⚙️ Libraries - JavaScript
 
    project-library-management-javascript/index.rst
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🍱 Libraries - SVGs
+   :caption: 🏵 Libraries - SVGs
 
    project-library-management-svg/index.rst
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🍱 Libraries - Color
+   :caption: 🎨 Libraries - Color
 
    project-library-management-color/index.rst
 
+
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: 🍱 Transformations
+   :caption: ♒ Transformations
 
    project-html-to-svg/index.rst
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: 📐 Data Management
+
+   project-data-management/index.rst
 
 
 .. toctree::
@@ -83,6 +98,7 @@ Truett Projects
    :caption: 📚 Reference
 
    glossary.rst
+
 
 |br|
 
