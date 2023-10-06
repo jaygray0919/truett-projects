@@ -1,0 +1,50 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 415 163"
+  color-interpolation-filters="sRGB"
+  fill="none"
+  fill-rule="evenodd"
+  font-size="12"
+  overflow="visible"
+  stroke-linecap="square"
+  stroke-miterlimit="3"
+>
+<defs>
+<style type="text/css">
+.st1 {
+  fill:none;
+  stroke:none;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:.75;
+}
+
+@font-face {
+  font-family:RussoOne;
+  src:url('https://s3.amazonaws.com/benetta.net/fonts/russo-one/RussoOne-Regular.ttf')
+  format('truetype');
+  font-display:swap;
+}
+@font-face {
+  font-family: RobotoFlex;
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  src: url("https://s3.amazonaws.com/benetta.net/fonts/robotoflex/RobotoFlex-VariableFont.ttf") format("truetype");
+  font-display:swap;
+}
+.robotoflex-sans-italic-500{font-family:RobotoFlex,sans-serif;font-variation-settings:"wght" 500,"wdth" 100,"opsz" 14,"GRAD" 0,"slnt" -10,"XTRA" 468,"XOPQ" 96,"YOPQ" 79,"YTLC" 514,"YTUC" 712,"YTAS" 750,"YTDE" -203,"YTFI"738;}
+
+</style>
+</defs>
+<g transform="translate(.375 -72.375)">
+<path class="st1" d="M0 72.75h414v90H0z"/>
+<text x="4" y="139.35" fill="#1f64ff" font-family="RussoOne" font-size="6em">B<tspan font-size=".5em"> </tspan>I/O<tspan font-size=".333em"> </tspan>graph</text>
+</g>
+<g transform="translate(.375 -.375)">
+<path class="st1" d="M0 90.75h414v72H0z"/>
+<text x="42.06" y="119.75" fill="#7f7f7f" class="robotoflex-sans-italic-500" font-size="2.333em">
+applications for monitoring
+<tspan x="93.37" dy="1em" font-size="1em">intake &amp; outcomes</tspan>
+</text>
+</g>
+</svg>

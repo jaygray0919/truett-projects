@@ -1,0 +1,34 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  viewBox="0 0 721 154"
+  color-interpolation-filters="sRGB"
+  fill="none"
+  fill-rule="evenodd"
+  stroke-linecap="square"
+  stroke-miterlimit="3"
+>
+<def>
+<style>
+@font-face {
+  font-family: world-of-water;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.woff2") format("woff2");
+}
+</style>
+</def>
+<g transform="translate(.36 -22.8)">
+<path d="M0 45.6h720v108H0Z"/>
+<text
+  font-family="world-of-water"
+  font-size="8em"
+  x="27.84"
+  y="138"
+  fill="#1f64ff"
+>
+ontOmatica
+</text>
+</g>
+</svg>

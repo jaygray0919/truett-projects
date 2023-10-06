@@ -1,0 +1,1187 @@
+[{
+	"name": "red",
+	"key": "red",
+	"android": "red",
+	"default": {
+		"strength": 500,
+		"hex": "#f44336"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#ffebee"
+	},
+	{
+		"strength": 100,
+		"hex": "#ffcdd2"
+	},
+	{
+		"strength": 200,
+		"hex": "#ef9a9a"
+	},
+	{
+		"strength": 300,
+		"hex": "#e57373"
+	},
+	{
+		"strength": 400,
+		"hex": "#ef5350"
+	},
+	{
+		"strength": 500,
+		"hex": "#f44336"
+	},
+	{
+		"strength": 600,
+		"hex": "#e53935"
+	},
+	{
+		"strength": 700,
+		"hex": "#d32f2f"
+	},
+	{
+		"strength": 800,
+		"hex": "#c62828"
+	},
+	{
+		"strength": 900,
+		"hex": "#b71c1c"
+	},
+	{
+		"strength": "A100",
+		"hex": "#ff8a80"
+	},
+	{
+		"strength": "A200",
+		"hex": "#ff5252"
+	},
+	{
+		"strength": "A400",
+		"hex": "#ff1744"
+	},
+	{
+		"strength": "A700",
+		"hex": "#d50000"
+	}]
+},
+{
+	"name": "pink",
+	"key": "pink",
+	"android": "pink",
+	"default": {
+		"strength": 500,
+		"hex": "#e91e63"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#fce4ec"
+	},
+	{
+		"strength": 100,
+		"hex": "#f8bbd0"
+	},
+	{
+		"strength": 200,
+		"hex": "#f48fb1"
+	},
+	{
+		"strength": 300,
+		"hex": "#f06292"
+	},
+	{
+		"strength": 400,
+		"hex": "#ec407a"
+	},
+	{
+		"strength": 500,
+		"hex": "#e91e63"
+	},
+	{
+		"strength": 600,
+		"hex": "#d81b60"
+	},
+	{
+		"strength": 700,
+		"hex": "#c2185b"
+	},
+	{
+		"strength": 800,
+		"hex": "#ad1457"
+	},
+	{
+		"strength": 900,
+		"hex": "#880e4f"
+	},
+	{
+		"strength": "A100",
+		"hex": "#ff80ab"
+	},
+	{
+		"strength": "A200",
+		"hex": "#ff4081"
+	},
+	{
+		"strength": "A400",
+		"hex": "#f50057"
+	},
+	{
+		"strength": "A700",
+		"hex": "#c51162"
+	}]
+},
+{
+	"name": "purple",
+	"key": "purple",
+	"android": "purple",
+	"default": {
+		"strength": 500,
+		"hex": "#9c27b0"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#f3e5f5"
+	},
+	{
+		"strength": 100,
+		"hex": "#e1bee7"
+	},
+	{
+		"strength": 200,
+		"hex": "#ce93d8"
+	},
+	{
+		"strength": 300,
+		"hex": "#ba68c8"
+	},
+	{
+		"strength": 400,
+		"hex": "#ab47bc"
+	},
+	{
+		"strength": 500,
+		"hex": "#9c27b0"
+	},
+	{
+		"strength": 600,
+		"hex": "#8e24aa"
+	},
+	{
+		"strength": 700,
+		"hex": "#7b1fa2"
+	},
+	{
+		"strength": 800,
+		"hex": "#6a1b9a"
+	},
+	{
+		"strength": 900,
+		"hex": "#4a148c"
+	},
+	{
+		"strength": "A100",
+		"hex": "#ea80fc"
+	},
+	{
+		"strength": "A200",
+		"hex": "#e040fb"
+	},
+	{
+		"strength": "A400",
+		"hex": "#d500f9"
+	},
+	{
+		"strength": "A700",
+		"hex": "#aa00ff"
+	}]
+},
+{
+	"name": "deeppurple",
+	"key": "deep-purple",
+	"android": "deep_purple",
+	"default": {
+		"strength": 500,
+		"hex": "#673ab7"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#ede7f6"
+	},
+	{
+		"strength": 100,
+		"hex": "#d1c4e9"
+	},
+	{
+		"strength": 200,
+		"hex": "#b39ddb"
+	},
+	{
+		"strength": 300,
+		"hex": "#9575cd"
+	},
+	{
+		"strength": 400,
+		"hex": "#7e57c2"
+	},
+	{
+		"strength": 500,
+		"hex": "#673ab7"
+	},
+	{
+		"strength": 600,
+		"hex": "#5e35b1"
+	},
+	{
+		"strength": 700,
+		"hex": "#512da8"
+	},
+	{
+		"strength": 800,
+		"hex": "#4527a0"
+	},
+	{
+		"strength": 900,
+		"hex": "#311b92"
+	},
+	{
+		"strength": "A100",
+		"hex": "#b388ff"
+	},
+	{
+		"strength": "A200",
+		"hex": "#7c4dff"
+	},
+	{
+		"strength": "A400",
+		"hex": "#651fff"
+	},
+	{
+		"strength": "A700",
+		"hex": "#6200ea"
+	}]
+},
+{
+	"name": "indigo",
+	"key": "indigo",
+	"android": "indigo",
+	"default": {
+		"strength": 500,
+		"hex": "#3f51b5"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#e8eaf6"
+	},
+	{
+		"strength": 100,
+		"hex": "#c5cae9"
+	},
+	{
+		"strength": 200,
+		"hex": "#9fa8da"
+	},
+	{
+		"strength": 300,
+		"hex": "#7986cb"
+	},
+	{
+		"strength": 400,
+		"hex": "#5c6bc0"
+	},
+	{
+		"strength": 500,
+		"hex": "#3f51b5"
+	},
+	{
+		"strength": 600,
+		"hex": "#3949ab"
+	},
+	{
+		"strength": 700,
+		"hex": "#303f9f"
+	},
+	{
+		"strength": 800,
+		"hex": "#283593"
+	},
+	{
+		"strength": 900,
+		"hex": "#1a237e"
+	},
+	{
+		"strength": "A100",
+		"hex": "#8c9eff"
+	},
+	{
+		"strength": "A200",
+		"hex": "#536dfe"
+	},
+	{
+		"strength": "A400",
+		"hex": "#3d5afe"
+	},
+	{
+		"strength": "A700",
+		"hex": "#304ffe"
+	}]
+},
+{
+	"name": "blue",
+	"key": "blue",
+	"android": "blue",
+	"default": {
+		"strength": 500,
+		"hex": "#2196f3"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#e3f2fd"
+	},
+	{
+		"strength": 100,
+		"hex": "#bbdefb"
+	},
+	{
+		"strength": 200,
+		"hex": "#90caf9"
+	},
+	{
+		"strength": 300,
+		"hex": "#64b5f6"
+	},
+	{
+		"strength": 400,
+		"hex": "#42a5f5"
+	},
+	{
+		"strength": 500,
+		"hex": "#2196f3"
+	},
+	{
+		"strength": 600,
+		"hex": "#1e88e5"
+	},
+	{
+		"strength": 700,
+		"hex": "#1976d2"
+	},
+	{
+		"strength": 800,
+		"hex": "#1565c0"
+	},
+	{
+		"strength": 900,
+		"hex": "#0d47a1"
+	},
+	{
+		"strength": "A100",
+		"hex": "#82b1ff"
+	},
+	{
+		"strength": "A200",
+		"hex": "#448aff"
+	},
+	{
+		"strength": "A400",
+		"hex": "#2979ff"
+	},
+	{
+		"strength": "A700",
+		"hex": "#2962ff"
+	}]
+},
+{
+	"name": "lightblue",
+	"key": "light-blue",
+	"android": "light_blue",
+	"default": {
+		"strength": 500,
+		"hex": "#03a9f4"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#e1f5fe"
+	},
+	{
+		"strength": 100,
+		"hex": "#b3e5fc"
+	},
+	{
+		"strength": 200,
+		"hex": "#81d4fa"
+	},
+	{
+		"strength": 300,
+		"hex": "#4fc3f7"
+	},
+	{
+		"strength": 400,
+		"hex": "#29b6f6"
+	},
+	{
+		"strength": 500,
+		"hex": "#03a9f4"
+	},
+	{
+		"strength": 600,
+		"hex": "#039be5"
+	},
+	{
+		"strength": 700,
+		"hex": "#0288d1"
+	},
+	{
+		"strength": 800,
+		"hex": "#0277bd"
+	},
+	{
+		"strength": 900,
+		"hex": "#01579b"
+	},
+	{
+		"strength": "A100",
+		"hex": "#80d8ff"
+	},
+	{
+		"strength": "A200",
+		"hex": "#40c4ff"
+	},
+	{
+		"strength": "A400",
+		"hex": "#00b0ff"
+	},
+	{
+		"strength": "A700",
+		"hex": "#0091ea"
+	}]
+},
+{
+	"name": "cyan",
+	"key": "cyan",
+	"android": "cyan",
+	"default": {
+		"strength": 500,
+		"hex": "#00bcd4"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#e0f7fa"
+	},
+	{
+		"strength": 100,
+		"hex": "#b2ebf2"
+	},
+	{
+		"strength": 200,
+		"hex": "#80deea"
+	},
+	{
+		"strength": 300,
+		"hex": "#4dd0e1"
+	},
+	{
+		"strength": 400,
+		"hex": "#26c6da"
+	},
+	{
+		"strength": 500,
+		"hex": "#00bcd4"
+	},
+	{
+		"strength": 600,
+		"hex": "#00acc1"
+	},
+	{
+		"strength": 700,
+		"hex": "#0097a7"
+	},
+	{
+		"strength": 800,
+		"hex": "#00838f"
+	},
+	{
+		"strength": 900,
+		"hex": "#006064"
+	},
+	{
+		"strength": "A100",
+		"hex": "#84ffff"
+	},
+	{
+		"strength": "A200",
+		"hex": "#18ffff"
+	},
+	{
+		"strength": "A400",
+		"hex": "#00e5ff"
+	},
+	{
+		"strength": "A700",
+		"hex": "#00b8d4"
+	}]
+},
+{
+	"name": "teal",
+	"key": "teal",
+	"android": "teal",
+	"default": {
+		"strength": 500,
+		"hex": "#009688"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#e0f2f1"
+	},
+	{
+		"strength": 100,
+		"hex": "#b2dfdb"
+	},
+	{
+		"strength": 200,
+		"hex": "#80cbc4"
+	},
+	{
+		"strength": 300,
+		"hex": "#4db6ac"
+	},
+	{
+		"strength": 400,
+		"hex": "#26a69a"
+	},
+	{
+		"strength": 500,
+		"hex": "#009688"
+	},
+	{
+		"strength": 600,
+		"hex": "#00897b"
+	},
+	{
+		"strength": 700,
+		"hex": "#00796b"
+	},
+	{
+		"strength": 800,
+		"hex": "#00695c"
+	},
+	{
+		"strength": 900,
+		"hex": "#004d40"
+	},
+	{
+		"strength": "A100",
+		"hex": "#a7ffeb"
+	},
+	{
+		"strength": "A200",
+		"hex": "#64ffda"
+	},
+	{
+		"strength": "A400",
+		"hex": "#1de9b6"
+	},
+	{
+		"strength": "A700",
+		"hex": "#00bfa5"
+	}]
+},
+{
+	"name": "green",
+	"key": "green",
+	"android": "green",
+	"default": {
+		"strength": 500,
+		"hex": "#4caf50"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#e8f5e9"
+	},
+	{
+		"strength": 100,
+		"hex": "#c8e6c9"
+	},
+	{
+		"strength": 200,
+		"hex": "#a5d6a7"
+	},
+	{
+		"strength": 300,
+		"hex": "#81c784"
+	},
+	{
+		"strength": 400,
+		"hex": "#66bb6a"
+	},
+	{
+		"strength": 500,
+		"hex": "#4caf50"
+	},
+	{
+		"strength": 600,
+		"hex": "#43a047"
+	},
+	{
+		"strength": 700,
+		"hex": "#388e3c"
+	},
+	{
+		"strength": 800,
+		"hex": "#2e7d32"
+	},
+	{
+		"strength": 900,
+		"hex": "#1b5e20"
+	},
+	{
+		"strength": "A100",
+		"hex": "#b9f6ca"
+	},
+	{
+		"strength": "A200",
+		"hex": "#69f0ae"
+	},
+	{
+		"strength": "A400",
+		"hex": "#00e676"
+	},
+	{
+		"strength": "A700",
+		"hex": "#00c853"
+	}]
+},
+{
+	"name": "lightgreen",
+	"key": "light-green",
+	"android": "light_green",
+	"default": {
+		"strength": 500,
+		"hex": "#8bc34a"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#f1f8e9"
+	},
+	{
+		"strength": 100,
+		"hex": "#dcedc8"
+	},
+	{
+		"strength": 200,
+		"hex": "#c5e1a5"
+	},
+	{
+		"strength": 300,
+		"hex": "#aed581"
+	},
+	{
+		"strength": 400,
+		"hex": "#9ccc65"
+	},
+	{
+		"strength": 500,
+		"hex": "#8bc34a"
+	},
+	{
+		"strength": 600,
+		"hex": "#7cb342"
+	},
+	{
+		"strength": 700,
+		"hex": "#689f38"
+	},
+	{
+		"strength": 800,
+		"hex": "#558b2f"
+	},
+	{
+		"strength": 900,
+		"hex": "#33691e"
+	},
+	{
+		"strength": "A100",
+		"hex": "#ccff90"
+	},
+	{
+		"strength": "A200",
+		"hex": "#b2ff59"
+	},
+	{
+		"strength": "A400",
+		"hex": "#76ff03"
+	},
+	{
+		"strength": "A700",
+		"hex": "#64dd17"
+	}]
+},
+{
+	"name": "lime",
+	"key": "lime",
+	"android": "lime",
+	"default": {
+		"strength": 500,
+		"hex": "#cddc39"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#f9fbe7"
+	},
+	{
+		"strength": 100,
+		"hex": "#f0f4c3"
+	},
+	{
+		"strength": 200,
+		"hex": "#e6ee9c"
+	},
+	{
+		"strength": 300,
+		"hex": "#dce775"
+	},
+	{
+		"strength": 400,
+		"hex": "#d4e157"
+	},
+	{
+		"strength": 500,
+		"hex": "#cddc39"
+	},
+	{
+		"strength": 600,
+		"hex": "#c0ca33"
+	},
+	{
+		"strength": 700,
+		"hex": "#afb42b"
+	},
+	{
+		"strength": 800,
+		"hex": "#9e9d24"
+	},
+	{
+		"strength": 900,
+		"hex": "#827717"
+	},
+	{
+		"strength": "A100",
+		"hex": "#f4ff81"
+	},
+	{
+		"strength": "A200",
+		"hex": "#eeff41"
+	},
+	{
+		"strength": "A400",
+		"hex": "#c6ff00"
+	},
+	{
+		"strength": "A700",
+		"hex": "#aeea00"
+	}]
+},
+{
+	"name": "yellow",
+	"key": "yellow",
+	"android": "yellow",
+	"default": {
+		"strength": 500,
+		"hex": "#ffeb3b"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#fffde7"
+	},
+	{
+		"strength": 100,
+		"hex": "#fff9c4"
+	},
+	{
+		"strength": 200,
+		"hex": "#fff59d"
+	},
+	{
+		"strength": 300,
+		"hex": "#fff176"
+	},
+	{
+		"strength": 400,
+		"hex": "#ffee58"
+	},
+	{
+		"strength": 500,
+		"hex": "#ffeb3b"
+	},
+	{
+		"strength": 600,
+		"hex": "#fdd835"
+	},
+	{
+		"strength": 700,
+		"hex": "#fbc02d"
+	},
+	{
+		"strength": 800,
+		"hex": "#f9a825"
+	},
+	{
+		"strength": 900,
+		"hex": "#f57f17"
+	},
+	{
+		"strength": "A100",
+		"hex": "#ffff8d"
+	},
+	{
+		"strength": "A200",
+		"hex": "#ffff00"
+	},
+	{
+		"strength": "A400",
+		"hex": "#ffea00"
+	},
+	{
+		"strength": "A700",
+		"hex": "#ffd600"
+	}]
+},
+{
+	"name": "amber",
+	"key": "amber",
+	"android": "amber",
+	"default": {
+		"strength": 500,
+		"hex": "#ffc107"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#fff8e1"
+	},
+	{
+		"strength": 100,
+		"hex": "#ffecb3"
+	},
+	{
+		"strength": 200,
+		"hex": "#ffe082"
+	},
+	{
+		"strength": 300,
+		"hex": "#ffd54f"
+	},
+	{
+		"strength": 400,
+		"hex": "#ffca28"
+	},
+	{
+		"strength": 500,
+		"hex": "#ffc107"
+	},
+	{
+		"strength": 600,
+		"hex": "#ffb300"
+	},
+	{
+		"strength": 700,
+		"hex": "#ffa000"
+	},
+	{
+		"strength": 800,
+		"hex": "#ff8f00"
+	},
+	{
+		"strength": 900,
+		"hex": "#ff6f00"
+	},
+	{
+		"strength": "A100",
+		"hex": "#ffe57f"
+	},
+	{
+		"strength": "A200",
+		"hex": "#ffd740"
+	},
+	{
+		"strength": "A400",
+		"hex": "#ffc400"
+	},
+	{
+		"strength": "A700",
+		"hex": "#ffab00"
+	}]
+},
+{
+	"name": "orange",
+	"key": "orange",
+	"android": "orange",
+	"default": {
+		"strength": 500,
+		"hex": "#ff9800"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#fff3e0"
+	},
+	{
+		"strength": 100,
+		"hex": "#ffe0b2"
+	},
+	{
+		"strength": 200,
+		"hex": "#ffcc80"
+	},
+	{
+		"strength": 300,
+		"hex": "#ffb74d"
+	},
+	{
+		"strength": 400,
+		"hex": "#ffa726"
+	},
+	{
+		"strength": 500,
+		"hex": "#ff9800"
+	},
+	{
+		"strength": 600,
+		"hex": "#fb8c00"
+	},
+	{
+		"strength": 700,
+		"hex": "#f57c00"
+	},
+	{
+		"strength": 800,
+		"hex": "#ef6c00"
+	},
+	{
+		"strength": 900,
+		"hex": "#e65100"
+	},
+	{
+		"strength": "A100",
+		"hex": "#ffd180"
+	},
+	{
+		"strength": "A200",
+		"hex": "#ffab40"
+	},
+	{
+		"strength": "A400",
+		"hex": "#ff9100"
+	},
+	{
+		"strength": "A700",
+		"hex": "#ff6d00"
+	}]
+},
+{
+	"name": "deeporange",
+	"key": "deep-orange",
+	"android": "deep_orange",
+	"default": {
+		"strength": 500,
+		"hex": "#ff5722"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#fbe9e7"
+	},
+	{
+		"strength": 100,
+		"hex": "#ffccbc"
+	},
+	{
+		"strength": 200,
+		"hex": "#ffab91"
+	},
+	{
+		"strength": 300,
+		"hex": "#ff8a65"
+	},
+	{
+		"strength": 400,
+		"hex": "#ff7043"
+	},
+	{
+		"strength": 500,
+		"hex": "#ff5722"
+	},
+	{
+		"strength": 600,
+		"hex": "#f4511e"
+	},
+	{
+		"strength": 700,
+		"hex": "#e64a19"
+	},
+	{
+		"strength": 800,
+		"hex": "#d84315"
+	},
+	{
+		"strength": 900,
+		"hex": "#bf360c"
+	},
+	{
+		"strength": "A100",
+		"hex": "#ff9e80"
+	},
+	{
+		"strength": "A200",
+		"hex": "#ff6e40"
+	},
+	{
+		"strength": "A400",
+		"hex": "#ff3d00"
+	},
+	{
+		"strength": "A700",
+		"hex": "#dd2c00"
+	}]
+},
+{
+	"name": "brown",
+	"key": "brown",
+	"android": "brown",
+	"default": {
+		"strength": 500,
+		"hex": "#795548"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#efebe9"
+	},
+	{
+		"strength": 100,
+		"hex": "#d7ccc8"
+	},
+	{
+		"strength": 200,
+		"hex": "#bcaaa4"
+	},
+	{
+		"strength": 300,
+		"hex": "#a1887f"
+	},
+	{
+		"strength": 400,
+		"hex": "#8d6e63"
+	},
+	{
+		"strength": 500,
+		"hex": "#795548"
+	},
+	{
+		"strength": 600,
+		"hex": "#6d4c41"
+	},
+	{
+		"strength": 700,
+		"hex": "#5d4037"
+	},
+	{
+		"strength": 800,
+		"hex": "#4e342e"
+	},
+	{
+		"strength": 900,
+		"hex": "#3e2723"
+	}]
+},
+{
+	"name": "grey",
+	"key": "grey",
+	"android": "grey",
+	"default": {
+		"strength": 500,
+		"hex": "#9e9e9e"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#fafafa"
+	},
+	{
+		"strength": 100,
+		"hex": "#f5f5f5"
+	},
+	{
+		"strength": 200,
+		"hex": "#eeeeee"
+	},
+	{
+		"strength": 300,
+		"hex": "#e0e0e0"
+	},
+	{
+		"strength": 400,
+		"hex": "#bdbdbd"
+	},
+	{
+		"strength": 500,
+		"hex": "#9e9e9e"
+	},
+	{
+		"strength": 600,
+		"hex": "#757575"
+	},
+	{
+		"strength": 700,
+		"hex": "#616161"
+	},
+	{
+		"strength": 800,
+		"hex": "#424242"
+	},
+	{
+		"strength": 900,
+		"hex": "#212121"
+	}]
+},
+{
+	"name": "bluegrey",
+	"key": "blue-grey",
+	"android": "blue_grey",
+	"default": {
+		"strength": 500,
+		"hex": "#607d8b"
+	},
+	"shades": [{
+		"strength": 50,
+		"hex": "#eceff1"
+	},
+	{
+		"strength": 100,
+		"hex": "#cfd8dc"
+	},
+	{
+		"strength": 200,
+		"hex": "#b0bec5"
+	},
+	{
+		"strength": 300,
+		"hex": "#90a4ae"
+	},
+	{
+		"strength": 400,
+		"hex": "#78909c"
+	},
+	{
+		"strength": 500,
+		"hex": "#607d8b"
+	},
+	{
+		"strength": 600,
+		"hex": "#546e7a"
+	},
+	{
+		"strength": 700,
+		"hex": "#455a64"
+	},
+	{
+		"strength": 800,
+		"hex": "#37474f"
+	},
+	{
+		"strength": 900,
+		"hex": "#263238"
+	}]
+}]

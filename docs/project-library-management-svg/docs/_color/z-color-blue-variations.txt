@@ -1,0 +1,54 @@
+
+Google blue works better than Facebook or Fresno Bee blue
+
+==========
+Google AMP
+blue ('medium-blue')
+h1,h2,h3,h4,h5
+	Hex: #0379C4;
+	http://www.colorhexa.com/0379c4
+	http://www.color-hex.com/color/0379c4
+
+gray ('dark gray')
+	Hex: #424242;
+	http://www.colorhexa.com/424242
+
+H3 background
+	Hex: #2196F3;
+	http://www.color-hex.com/color/2196f3
+
+============
+bio-ontology
+blue ('dark-blue')
+style="background: rgb(35, 73, 121)"
+	Hex: #234979
+	http://www.colorhexa.com/234979
+	http://www.color-hex.com/color/234979
+
+==========
+Ontomatica
+blue ('medium-blue')
+	Hex: #0379C4
+	http://www.colorhexa.com/0379c4
+	http://www.color-hex.com/color/0379c4
+
+what is scroll bar color?
+
+
+=============
+Facebook
+https://colorswatches.info/facebook-blue/
+Facebook Dark Blue
+	Hex: #0e1f56
+Facebook Blue
+	Hex: #3b5998
+Facebook Medium Blue
+	Hex: #6d84b4
+Facebook Light Blue
+	Hex: #afbdd4
+Facebook Light Blue
+	Hex: #d8dfea
+
+===============
+Fresno Bee blue
+	Hex: #4c699a;

@@ -1,0 +1,54 @@
+
+Plato font
+	Raleway
+	https://fonts.google.com/specimen/Raleway
+
+
+similar application for
+	Toronto
+	Pronto
+
+
+Graph Kits
+font
+	DM sans
+	https://fonts.google.com/specimen/DM+Sans
+
+Graph Kit green
+	#47A025
+
+
+Ontomatica blue
+Navy Blue (Secondary)
+	#0F5FDF
+
+Plato Gold
+uncertain
+
+
+Daily Food
+Orange
+	#F77F00
+
+Teal
+	#035E7B
+
+
+Daily Care
+light green
+	#31E981
+
+dark green
+	#35605A
+
+
+AFDSI
+twine (tan)
+	#bb9155
+cyprus dark green
+	#030C0C
+blue
+	#557FBB
+
+font: Raleway
+

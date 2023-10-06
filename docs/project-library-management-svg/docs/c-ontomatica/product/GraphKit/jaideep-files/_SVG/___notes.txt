@@ -1,0 +1,9 @@
+
+for sprite:
+	graphkits-logo-green-black-style-inline-w120-h46.svg
+	graphkit-symbol-green-style-inline-w50-h50.svg
+
+used as external image
+	graphkits-logo-green-black-w120-h46.svg
+	graphkit-symbol-green-w50-h50.svg
+

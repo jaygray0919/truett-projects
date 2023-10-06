@@ -1,0 +1,50 @@
+<!-- source: https://stackoverflow.com/questions/35690691/svg-draw-one-letter-at-a-time -->
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<link rel="canonical" href="self.html" />
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<style amp-custom>
+
+@font-face {
+  font-family:world-of-water;
+  font-style:normal;
+  font-weight:400;
+  src:
+    url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.ttf") format("truetype");
+  font-display:swap;
+}
+
+@keyframes fadein_left {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+#start:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0%;
+  opacity: 0.7;
+  height: 3em;
+  background: #fff;
+  animation: fadein_left 3s;
+}
+
+.letter{font-family: world-of-water; font-size:3em; padding-left:10vw;}
+</style>
+</head>
+<body>
+<div id="start" class="letter">
+ontomatica
+</div>
+
+</body></html>

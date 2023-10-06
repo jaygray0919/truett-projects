@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="30 0 64 64">
+<style>
+@font-face {
+  font-family:world-of-water;
+  font-style:normal;
+  font-weight:400;
+  src:
+    url("https://s3.amazonaws.com/benetta.net/fonts/world-of-water/world-of-water-v2.ttf") format("truetype");
+  font-display:swap;
+}
+</style>
+<text font-family="world-of-water" x="0" y="20">ontomatica
+  <animate attributeName="dy" from="0 0 0 0 0" to="0 0 0 -5 5" dur="1s" repeatCount="2"/>
+</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+ xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" 
+ viewBox="0 0 792 612"
+ color-interpolation-filters="sRGB"
+ class="st4"
+>
+<style type="text/css">
+<![CDATA[
+	.st1 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+	.st2 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+	.st3 {fill:#ffffff;font-family:World of Water;font-size:10.6667em}
+	.st4 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+]]>
+</style>
+
+<g>
+<g transform="translate(18,-396)"><rect x="0" y="414" width="756" height="198" class="st1"/></g>
+<g transform="translate(31.5,-427.5)"><title>Ontomatica</title><v:textBlock v:margins="rect(4,4,4,4)"/><v:textRect cx="360" cy="549" width="720" height="126"/><rect x="0" y="486" width="720" height="126" class="st2"/><text x="5" y="587.4" class="st3"><v:paragraph v:horizAlign="1"/><v:tabList/>ontOmatica</text></g>
+</g>
+</svg>

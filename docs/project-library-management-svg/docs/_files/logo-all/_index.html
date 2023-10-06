@@ -1,0 +1,1539 @@
+<!--
+move to S3
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2729/AmstelvarAlpha-VF.ttf')
+-->
+<!doctype html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>
+Logo Preview
+</title>
+<link rel="canonical"
+  href="https://ontomatica.io/canonical.html" />
+<link rel="icon"
+  href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg" />
+
+<link rel="preload" as="script"
+  href="https://cdn.ampproject.org/v0.js" />
+<script async
+  src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-date-display"
+  src="https://cdn.ampproject.org/v0/amp-date-display-0.1.js"></script>
+<script async custom-template="amp-mustache"
+  src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+<script async custom-element="amp-lightbox-gallery"
+  src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+/* Recursive */
+@font-face {
+  font-family: Recursive;
+  text-align: initial;
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  src: url("https://s3.amazonaws.com/benetta.net/fonts/recursive/Recursive-VF.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+/* recursive font-feature-settings (custom properties) - off */
+  --rc-aalt: "aalt" off;
+  --rc-case: "case" off;
+  --rc-dlig: "dlig" off;
+  --rc-dnom: "dnom" off;
+  --rc-frac: "frac" off;
+  --rc-numr: "numr" off;
+  --rc-ordn: "ordn" off;
+  --rc-pnum: "pnum" off;
+  --rc-sinf: "sinf" off;
+  --rc-ss01: "ss01" off;
+  --rc-ss02: "ss02" off;
+  --rc-ss03: "ss03" off;
+  --rc-ss04: "ss04" off;
+  --rc-ss05: "ss05" off;
+  --rc-ss06: "ss06" off;
+  --rc-ss07: "ss07" off;
+  --rc-ss08: "ss08" off;
+  --rc-ss09: "ss09" off;
+  --rc-ss10: "ss10" off;
+  --rc-ss11: "ss11" off;
+  --rc-ss20: "ss20" off;
+  --rc-sups: "sups" off;
+  --rc-titl: "titl" off;
+  --rc-zero: "zero" off;
+}
+
+/* If rcsv-class is applied, UPDATE custom property */
+.rc-pnum{--rc-pnum:"pnum" on;}
+.rc-ss01{--rc-ss01:"ss01" on;}
+.rc-ss02{--rc-ss02:"ss02" on;}
+.rc-ss03{--rc-ss03:"ss03" on;}
+.rc-ss04{--rc-ss04:"ss04" on;}
+.rc-ss05{--rc-ss05:"ss05" on;}
+.rc-ss06{--rc-ss06:"ss06" on;}
+.rc-ss07{--rc-ss07:"ss07" on;}
+.rc-ss08{--rc-ss08:"ss08" on;}
+.rc-ss09{--rc-ss09:"ss09" on;}
+.rc-ss10{--rc-ss10:"ss10" on;}
+.rc-ss11{--rc-ss11:"ss11" on;}
+.rc-ss20{--rc-ss20:"ss20" on;}
+
+/* Apply current state of all custom properties WHEN a rc-class is applied */
+.rc-pnum,.rc-ss01,.rc-ss02,.rc-ss03,.rc-ss04,.rc-ss05,.rc-ss06,.rc-ss07,.rc-ss08,.rc-ss09,.rc-ss10,.rc-ss11,
+.rc-ss20 {
+  font-feature-settings:
+    var(--rc-pnum), var(--rc-ss01), var(--rc-ss02), var(--rc-ss03), var(--rc-ss04), var(--rc-ss05), var(--rc-ss06), var(--rc-ss07), var(--rc-ss08), var(--rc-ss09), var(--rc-ss10), var(--rc-ss11), var(--rc-ss20);
+}
+
+/* Recursive COMBO */
+.recursive-mono-300-casual-light-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 300,"slnt" 0,"ital" 0.5;}
+.recursive-mono-300-casual-light-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 300,"slnt" -15,"ital" 1;}
+.recursive-mono-300-linear-light-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 300,"slnt" 0,"ital" 0.5;}
+.recursive-mono-300-linear-light-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 300,"slnt" -15,"ital" 1;}
+.recursive-mono-400-casual-normal-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 400,"slnt" 0,"ital" 0.5;}
+.recursive-mono-400-casual-normal-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 400,"slnt" -15,"ital" 1;}
+.recursive-mono-400-linear-normal-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 400,"slnt" 0,"ital" 0.5;}
+.recursive-mono-400-linear-normal-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 400,"slnt" -15,"ital" 1;}
+.recursive-mono-500-casual-medium-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 500,"slnt" 0,"ital" 0.5;}
+.recursive-mono-500-casual-medium-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 500,"slnt" -15,"ital" 1;}
+.recursive-mono-500-linear-medium-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 500,"slnt" 0,"ital" 0.5;}
+.recursive-mono-500-linear-medium-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 500,"slnt" -15,"ital" 1;}
+.recursive-mono-600-casual-semibold-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 600,"slnt" 0,"ital" 0.5;}
+.recursive-mono-600-casual-semibold-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 600,"slnt" -15,"ital" 1;}
+.recursive-mono-600-linear-semibold-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 600,"slnt" 0,"ital" 0.5;}
+.recursive-mono-600-linear-semibold-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 600,"slnt" -15,"ital" 1;}
+.recursive-mono-700-casual-bold-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-mono-700-casual-bold-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-mono-700-linear-bold-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-mono-700-linear-bold-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-mono-800-casual-extrabold-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-mono-800-casual-extrabold-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-mono-800-linear-extrabold-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-mono-800-linear-extrabold-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-mono-900-casual-black-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-mono-900-casual-black-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-mono-900-linear-black-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-mono-900-linear-black-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-mono-1000-casual-extrablack-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-mono-1000-casual-extrablack-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 1,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-mono-1000-linear-extrablack-regular{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-mono-1000-linear-extrablack-italic{font-family:Recursive;font-variation-settings:"MONO" 1,"CASL" 0,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-sans-300-casual-light-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 300,"slnt" 0,"ital" 0.5;}
+.recursive-sans-300-casual-light-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 300,"slnt" -15,"ital" 1;}
+.recursive-sans-300-linear-light-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 300,"slnt" 0,"ital" 0.5;}
+.recursive-sans-300-linear-light-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 300,"slnt" -15,"ital" 1;}
+.recursive-sans-400-casual-normal-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 400,"slnt" 0,"ital" 0.5;}
+.recursive-sans-400-casual-normal-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 400,"slnt" -15,"ital" 1;}
+.recursive-sans-400-linear-normal-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 400,"slnt" 0,"ital" 0.5;}
+.recursive-sans-400-linear-normal-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 400,"slnt" -15,"ital" 1;}
+.recursive-sans-500-casual-medium-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 500,"slnt" 0,"ital" 0.5;}
+.recursive-sans-500-casual-medium-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 500,"slnt" -15,"ital" 1;}
+.recursive-sans-500-linear-medium-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 500,"slnt" 0,"ital" 0.5;}
+.recursive-sans-500-linear-medium-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 500,"slnt" -15,"ital" 1;}
+.recursive-sans-600-casual-semibold-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 600,"slnt" 0,"ital" 0.5;}
+.recursive-sans-600-casual-semibold-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 600,"slnt" -15,"ital" 1;}
+.recursive-sans-600-linear-semibold-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 600,"slnt" 0,"ital" 0.5;}
+.recursive-sans-600-linear-semibold-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 600,"slnt" -15,"ital" 1;}
+.recursive-sans-700-casual-bold-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-sans-700-casual-bold-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-sans-700-linear-bold-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 696,"slnt" 0,"ital" 0.5;}
+.recursive-sans-700-linear-bold-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 696,"slnt" -15,"ital" 1;}
+.recursive-sans-800-casual-extrabold-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 800,"slnt" 0,"ital" 0.5;}
+.recursive-sans-800-casual-extrabold-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 800,"slnt" -15,"ital" 1;}
+.recursive-sans-800-linear-extrabold-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 800,"slnt" 0,"ital" 0.5;}
+.recursive-sans-800-linear-extrabold-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 800,"slnt" -15,"ital" 1;}
+.recursive-sans-900-casual-black-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 900,"slnt" 0,"ital" 0.5;}
+.recursive-sans-900-casual-black-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 900,"slnt" -15,"ital" 1;}
+.recursive-sans-900-linear-black-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 900,"slnt" 0,"ital" 0.5;}
+.recursive-sans-900-linear-black-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 900,"slnt" -15,"ital" 1;}
+.recursive-sans-1000-casual-extrablack-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 1000,"slnt" 0,"ital" 0.5;}
+.recursive-sans-1000-casual-extrablack-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 1,"wght" 1000,"slnt" -15,"ital" 1;}
+.recursive-sans-1000-linear-extrablack-regular{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 1000,"slnt" 0,"ital" 0.5;}
+.recursive-sans-1000-linear-extrablack-italic{font-family:Recursive;font-variation-settings:"MONO" 0,"CASL" 0,"wght" 1000,"slnt" -15,"ital" 1;}
+
+h2,h3,p {
+  font-feature-settings:
+    "ss01" on,
+    "ss02" on,
+    "ss08" on;
+}
+
+@font-face {
+  font-family: Amstelvar-VF;
+  src:
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2729/AmstelvarAlpha-VF.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-stretch: 50% 125%;
+  font-display: swap;
+}
+
+* {box-sizing: border-box;}
+
+/* may be missing: initialization */
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+amp-img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1 {
+  font-family: Amstelvar-VF;
+  --wdth: 85;
+  --opsz: 80;
+  font-size: 3rem;
+  font-weight: 350;
+  margin-top: -0.5rem;
+  margin-bottom: -0.05rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-family: Amstelvar-VF;
+  --wdth: 95;
+  font-size: 1.5rem;
+  font-weight: 375;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 5rem auto;
+  overflow: hidden;
+}
+
+.examples {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.examples > * + * {
+  padding-top: 3rem;
+}
+
+.media--flex-grow {
+  --gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--gap) * -1);
+  margin-left: calc(var(--gap) * -1);
+}
+
+.media--flex-grow > * {
+  margin-top: var(--gap);
+  margin-left: var(--gap);
+}
+
+.media--flex-grow .media__graphic {
+  flex: 200px 1 1;
+}
+
+.media--flex-grow .media__main {
+  flex: 30ch 9999 1;
+}
+
+.media--albatross {
+  --gap: 1rem;
+  --modifier: calc(40rem - 100%);
+  --image-width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--gap) * -1);
+  margin-left: calc(var(--gap) * -1);
+}
+
+.media--albatross > * {
+  padding-top: var(--gap);
+  padding-left: var(--gap);
+}
+
+.media--albatross .media__graphic {
+  flex: var(--image-width) 1 0;
+}
+
+.media--albatross .media__main {
+  flex: 1 1 calc(var(--modifier) * 999);
+  min-width: calc(100% - var(--image-width));
+}
+
+.media--min-width {
+  --gap: 1rem;
+  --image-width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--gap) * -1);
+  margin-left: calc(var(--gap) * -1);
+}
+
+.media--min-width > * {
+  padding-top: var(--gap);
+  padding-left: var(--gap);
+}
+
+.media--min-width .media__graphic {
+  flex: var(--image-width) 1 0;
+}
+
+.media--min-width .media__main {
+  flex: 1 1 calc(100% - var(--image-width));
+  min-width: 30ch;
+}
+
+/**
+ * anchor control
+ * source: https://stackoverflow.com/questions/62218343/how-to-show-after-content-on-the-same-line-as-an-a-element
+ */
+
+.uline {
+  font-family: Recursive;
+  font-size: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.uline::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: #e6e6e6;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.uline:hover::before {
+    width: 70%;
+    background: #1F64FF;
+}
+
+.amp-Date {
+  font-family: Recursive;
+  font-size: 0.7rem;
+  padding-left: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>
+Organization &amp; Product Logos for Consortium of Six Companies
+</h1>
+<span style="font-size:1rem; font-family:Recursive;padding-left:0.3rem;">each logo in a lightbox</span>
+
+<div class="amp-Date">
+<amp-date-display template="mst-Date-1" datetime="2021-10-26T06:00:00-05:00" locale="en-US" layout="fixed" width="480" height="1rem"></amp-date-display>
+<template id="mst-Date-1" type="amp-mustache">
+Published: {{dayName}}, {{monthName}} {{day}}, {{year}}; {{hourTwoDigit}}:{{minuteTwoDigit}}
+</template>
+
+<amp-date-display template="mst-Date-2" datetime="2023-09-17T14:02:00-05:00" locale="en-US" layout="fixed" width="480" height="1rem"></amp-date-display>
+<template id="mst-Date-2" type="amp-mustache">
+Modified: {{dayName}}, {{monthName}} {{day}}, {{year}}; {{hourTwoDigit}}:{{minuteTwoDigit}}
+</template>
+</div>
+<br>
+<ul class="examples">
+
+<h2 class="recursive-sans-700-linear-bold-regular">
+Company Logos
+</h2>
+
+<!-- ******  Electronic Label  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  data-hero
+  lightbox
+  src="electronic-label-symbol-orange-blue-w126-h126.svg"
+  width="126"
+  height="126"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Electronic Label (symbol)
+</h3>
+<p>
+  Electronic labels deliver detailed product information in machine-readable form.
+  Devices read and apply the electronic label to automate the next steps in a work flow.
+</p>
+<p>
+<a class="uline" href="electronic-label-symbol-orange-blue-w126-h126.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="electronic-label-logo-orange-blue-w519-h126.svg"
+  width="519"
+  height="126"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Electronic Label (image)
+</h3>
+<p>
+missing letters; font uncertain
+</p>
+<p>
+<a class="uline" href="electronic-label-logo-orange-blue-w519-h126.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  American Food Data Systems Institute  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="afdsi-symbol-color-brown-back-white-w330-h412.svg"
+  width="330"
+  height="412"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  American Food Data Systems Institute (symbol)
+</h3>
+<p>
+  American Food Data Systems Institute specifies data about food and drugs.
+  Data specifications are used to comprehensively define the food stream that delivers food to our tables.
+  Data specifications are used to describe medicinal foods and manufactured drugs.
+</p>
+<p>
+<a class="uline" href="afdsi-symbol-color-brown-back-white-w330-h412.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="afdsi-logo-color-brown-text-cypress-raleway-extrabold-w717-h190.svg"
+  width="717"
+  height="190"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  American Food Data Systems Institute (image)
+</h3>
+<p>
+font: Raleway ExtraBold
+</p>
+<p>
+<a class="uline" href="afdsi-logo-color-brown-text-cypress-raleway-extrabold-w717-h190.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="afdsi-logo-color-brown-letters-cypress-w292-h363.svg"
+  width="292"
+  height="363"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  American Food Data Systems Institute (symbol + label)
+</h3>
+<p>
+font: Raleway ExtraBold
+</p>
+<p>
+missing letters
+</p>
+<p>
+<a class="uline" href="afdsi-logo-color-brown-letters-cypress-w292-h363.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Ontomatica  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="ontomatica-symbol-1F64FF-w252-h252.svg"
+  width="252"
+  height="252"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Ontomatica (symbol)
+</h3>
+<p>
+  Ontomatica applies the technology and discipline of informatics to the fields of nutrition, health, agriculture, biology, chemistry, cosmetics, and textiles.
+  We specify data and build software for health-informatics, agro-informatics, biochem-informatics, and material-informatics.
+  We develop visualization and reasoning tools for data analysis.
+</p>
+<p>
+<a class="uline" href="ontomatica-symbol-1F64FF-w252-h252.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="ontomatica-logo-text-1F64FF-w325-h60.svg"
+  width="325"
+  height="60"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Ontomatica (image)
+</h3>
+<p>
+font: World of Water
+</p>
+<p>
+missing letters
+</p>
+<p>
+<a class="uline" href="ontomatica-logo-text-1F64FF-w325-h60.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="ontomatica-logo-text-black-symbol-green-w360-h57.svg"
+  width="360"
+  height="57"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Ontomatica (image)
+</h3>
+<p>
+font: World of Water
+</p>
+<p>
+missing letters
+</p>
+<p>
+<a class="uline" href="ontomatica-logo-text-black-symbol-green-w360-h57.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  DailyFood  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="daily-food-symbol-w536-h536-color-orange-teal.svg"
+  width="536"
+  height="536"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  DailyFood (symbol)
+</h3>
+<p>
+  Daily Food is the public repository of food information developed by Ontomatica and its partners.
+  Daily Food emulates the US National Library of Medicine drug information site ‒ Daily Med.
+  Daily Food describes all aspects of human foods and meals, animal feed and pet foods.
+</p>
+<p>
+<a class="uline" href="daily-food-symbol-w536-h536-color-orange-teal.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="daily-food-logo-w587-h174-color-orange-teal.svg"
+  width="587"
+  height="174"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  DailyFood (image)
+</h3>
+<p>
+font: Raleway (or DM Sans)
+</p>
+<p>
+missing letters; remove space between Daily and Food (DailyCare is correct)
+</p>
+<p>
+<a class="uline" href="daily-food-logo-w587-h174-color-orange-teal.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  DailyCare  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="daily-care-symbol-w505-h443-green-back-white.svg"
+  width="505"
+  height="443"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  DailyCare (symbol)
+</h3>
+<p>
+  Daily Care is the public repository of personal product information developed by Ontomatica and its partners.
+  Daily Care emulates the US National Library of Medicine drug information site ‒ Daily Med.
+  Daily Care describes all aspects of personal care products such as cosmetics, textiles and household chemicals.
+</p>
+<p>
+<a class="uline" href="daily-care-symbol-w505-h443-green-back-white.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="daily-care-logo-w586-h109-color-green-text-black.svg"
+  width="586"
+  height="109"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  DailyCare (image)
+</h3>
+<p>
+font: Raleway (or DM Sans)
+</p>
+<p>
+missing letters
+</p>
+<p>
+<a class="uline" href="daily-care-logo-w586-h109-color-green-text-black.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Export Import Data  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="export-import-data-symbol-h252-w175_-_21-06-04.svg"
+  width="252"
+  height="175"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Export Import Data (symbol)
+</h3>
+<p>
+  Export Import Data Corporation offers national control systems for commodities, foods, drugs, chemicals, cosmetics and textiles.
+  Customers use the Export Import Data platform to implement national safety and protection programs; enforce public policy; electronically register commodity, food, drug, chemical, cosmetics and textile products; and, generate electronic product passports for those items.
+</p>
+<p>
+<a class="uline" href="export-import-data-symbol-h252-w175_-_21-06-04.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="export-import-data-logo-w424-h132_-_21-06-08.svg"
+  width="424"
+  height="132"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Export Import Data (image)
+</h3>
+<p>
+font: Russo One
+</p>
+<p>
+missing letters
+</p>
+<p>
+<a class="uline" href="export-import-data-logo-w424-h132_-_21-06-08.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<h2 class="recursive-sans-700-linear-bold-regular">
+Product Logos
+</h2>
+
+<!--
+******  PRODUCT BREAK  ******
+Ordered according to product positioning doc
+-->
+
+<!-- ******  Pronto  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Pronto (symbol)
+</h3>
+<p>
+  Ontomatica's identity specification application is named Pronto, an acronym for Practical ontologies for building electronic labels.
+  Pronto has three components.
+  Substance Data Kit is pre-defined substance descriptions.
+  Each substance (each item) is described using Substance Markup Language - Linked Data <code class="">(SUML-LD)</code> based on <code>ISO 11238</code> standard.
+  Product Data Kit is pre-defined product descriptions.
+  Each product (each item) is described using a specific Product Markup Language - Linked Data <code>(PRML-LD)</code> based on <code>ISO 11238</code> structurally diverse substances standard for defining products.
+  Linked Data Indexing is a service to index chemicals, foods, drugs, cosmetics and textiles based on <code>ISO 11238 Group 1</code> and <code>Group 4</code> specifications to describe chemical, food, drug, cosmetic and textile substances, commodities and products.
+</p>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Pronto (image)
+</h3>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Graph Kits  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="graphkit-symbol-green-w50-h50_-_21-06-04.svg"
+  width="50"
+  height="50"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Graph Kits (symbol)
+</h3>
+<p>
+  Ontomatica's knowledge graph application is named Knowledge Graph Kit.
+  Graph Kits are packages of information about food and health products.
+  Packages are readable by humans ("machine-to-person") and are actionable by intelligent devices ("machine-to-machine").
+  Graph Kits integrate relevant ontology rules (properties, attributes, relationships, constraints) with relevant data sets (items).
+  Each Graph Kit is a starter kit to fast-forward automation of a specific problem.
+</p>
+<p>
+<a class="uline" href="graphkit-symbol-green-w50-h50_-_21-06-04.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="graphkit-logo-green-w120-h46-green-dark_-_21-06-04.svg"
+  width="120"
+  height="46"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Graph Kits (image)
+</h3>
+<p>
+font: Raleway of DM Sans
+</p>
+<p>
+missing letters
+</p>
+<p>
+<a class="uline" href="graphkit-logo-green-w120-h46-green-dark_-_21-06-04.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Wedge  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="wedge-symbol-w512-h512-color-multiple_-_21-06-03.svg"
+  width="512"
+  height="513"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Wedge (symbol)
+</h3>
+<p>
+  Ontomatica's graph query application is named Wedge, an acronym Web Enabled Directed Graph Engine.
+  Wedge is a web application that combines a graph database and faceted search interface.
+  Customers use Wedge to visualize relationships among objects (things) that otherwise are difficult to see and understand.
+</p>
+<p>
+<a class="uline" href="wedge-symbol-w512-h512-color-multiple_-_21-06-03.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="wedge-symbol-red-w240-h193.svg"
+  width="240"
+  height="193"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Wedge (symbol, alt)
+</h3>
+<p>
+<a class="uline" href="wedge-symbol-red-w240-h193.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="wedge-logo-red-text-black-w572-h193.svg"
+  width="572"
+  height="193"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Wedge (image, alt)
+</h3>
+<p>
+font: missing
+</p>
+<p>
+missing letters
+</p>
+<p>
+<a class="uline" href="wedge-logo-red-text-black-w572-h193.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Socrato  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="socrato-symbol-black-gold-w143-h143.svg"
+  width="143"
+  height="143"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Socrato (symbol)
+</h3>
+<p>
+  Ontomatica's graph analysis application is named Socrato.
+  Socrato's documentation service generates the meaning of objects and vertices in a graph.
+  A visualization service renders a graph in formats such as hierarchy diagrams, phylotrees, state transitions, and parallel coordinates.
+  A reasoning service uses description logic for querying, checking, transforming and filtering information.
+  When data is properly structured, Socrato generates sentences in different natural languages for input to text-to-speech applications.</p>
+<p>
+<a class="uline" href="socrato-symbol-black-gold-w143-h143.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="socrato-logo-black-gold-w678-h170.svg"
+  width="678"
+  height="170"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Wedge (image)
+</h3>
+<p>
+<a class="uline" href="socrato-logo-black-gold-w678-h170.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Resotto  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Resotto (symbol)
+</h3>
+<p>
+  Machine reasoning.
+</p>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Resotto (image)
+</h3>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Choreograph  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Choreograph (symbol)
+</h3>
+<p>
+  Product management.
+</p>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Choreograph (image)
+</h3>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Polygraph  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Polygraph (symbol)
+</h3>
+<p>
+  Graph analytics to detect counterfeit products.
+</p>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Polygraph (image)
+</h3>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Diagraph  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Diagraph (symbol)
+</h3>
+<p>
+  Graph visualization.
+</p>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Diagraph (image)
+</h3>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Tellograph  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Tellograph (symbol)
+</h3>
+<p>
+  Graph "text-to-speech" in 27 natural languages.
+</p>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Tellograph (image)
+</h3>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Toronto  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Toronto (symbol)
+</h3>
+<p>
+  Ontomatica's machine automation application is named Toronto, an acronym for torque ontologies.
+  Toronto transfers electronic label information to a machine controller.
+  An example is composition and formulation instructions for an agricultural chemical as defined on a material safety data sheet.
+  When agricultural equipment integates environmental sensors, Toronto-defined chemical components are reformulated in real-time and directed appropriately.
+</p>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Toronto (image)
+</h3>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Fast Forward  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Fast Forward (symbol)
+</h3>
+<p>
+  Ontomatica's knowledge transition application is named Fast Forward.
+  Fast Forward extracts unstructured information from existing content and re-organizes content as a knowledge graph.
+  For example, a Fast Forward template extracts recipe information from existing recipes and generates an equivalent knowledge graph.
+  Other Fast Forward templates do similar work for loosely structured instructions.
+</p>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Fast Forward (image)
+</h3>
+<p>
+<a class="uline" href="">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Plato  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="plato-symbol-text-black-symbol-gold-w130-h139.svg"
+  width="130"
+  height="139"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Plato (symbol)
+</h3>
+<p>
+  Ontomatica's application development environment is named Plato, Platform for Ontologies.
+  Leveraging different ontologies, Plato generates applications for managing chemicals; human foods, drugs and cosmetics; animal foods and drugs; and textiles.
+  Plato integrates complementary technologies for curating data and generating specialized applications.
+  Plato development processes use inference reasoning and machine learning to generate specialized applications.
+</p>
+<p>
+<a class="uline" href="plato-symbol-text-black-symbol-gold-w130-h139.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="plato-logo-text-black-symbol-gold-w341-h140.svg"
+  width="341"
+  height="140"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Plato (image)
+</h3>
+<p>
+<a class="uline" href="plato-logo-text-black-symbol-gold-w341-h140.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Vocal  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="vocal-symbol-w482-h563-color-orange-blue.svg"
+  width="482"
+  height="563"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Vocal (symbol)
+</h3>
+<p>
+  Vocabularium Alimentarum &#x2013; Language of Food.
+  Using structured data and ontology rules, Vocal defines terms such as food source, cooking method, treatment applied and packing medium.
+</p>
+<p>
+<a class="uline" href="vocal-symbol-w482-h563-color-orange-blue.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="vocal-logo-w735-h180-color-orange-back-clear.svg"
+  width="735"
+  height="180"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Vocal (image)
+</h3>
+<p>
+Font: Raleway ExtraBold
+</p>
+<p>
+<a class="uline" href="vocal-logo-w735-h180-color-orange-back-clear.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Biograph  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="biograph-image-tagline-1F64FF-w415-h163.svg"
+  width="415"
+  height="163"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Biograph (symbol)
+</h3>
+<p>
+  Biograph is your personal record of foods and drugs consumed over time.
+  It also is a record of chemicals in cosmetics and personal care products used over time.
+  Biograph is an electronic complement to your electronic health records.
+  Intake and exposure data helps you and your advisers (doctors, trainers, nutritionists) adjust your lifestyle to improve health outcomes.
+  Examples: minimize prediabetes; control type 2 diabetes; maximize microbiome (gut) health; reduce exposure to potentially harmful chemicals; increase consumption of phytochemicals.
+  Unlike a conventional application, you own and control your data.
+  Your data is stored in a secure place and you decide which people and which apps can access your data.
+</p>
+<p>
+<a class="uline" href="biograph-image-tagline-1F64FF-w415-h163.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="biograph-image-1F64FF-w433-h107.svg"
+  width="433"
+  height="107"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Biograph (image)
+</h3>
+<p>
+Font: Russo One
+</p>
+<p>
+<a class="uline" href="biograph-image-1F64FF-w433-h107.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="https://via.placeholder.com/600x400"
+  width="600"
+  height="400"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Biograph (alt)
+</h3>
+<p>
+<a class="uline" href="biograph-animated-IO.html">link to alternative approach</a>
+</p>
+</div>
+</article>
+</li>
+
+<!-- ******  Product Passport  ****** -->
+<li>
+<article class="media media--flex-grow">
+<div class="media__graphic">
+<amp-img
+  lightbox
+  src="product-passport-logo-w392-h564-color-blue-back-clear.svg"
+  width="392"
+  height="564"
+  layout="responsive"
+></amp-img>
+</div>
+<div class="media__main">
+<h3 class="recursive-sans-400-linear-normal-regular">
+  Product Passport (symbol)
+</h3>
+<p>
+  Export Import Data's Product Passport contains a product's identity, components, origin, status, and related information in an electronic, machine-readable format.
+  Product Passport information is used to determine compliance with trade regulations, conformance to standards, and alignment with import duties.
+</p>
+<p>
+<a class="uline" href="product-passport-logo-w392-h564-color-blue-back-clear.svg">source link</a>
+</p>
+</div>
+</article>
+</li>
+
+</ul>
+</div>
+<!-- /container -->
+
+</body>
+</html>

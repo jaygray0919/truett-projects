@@ -1,0 +1,9 @@
+
+this file
+onto_logo_w325_h60.svg
+
+was updated 08:54 6/12/2023
+
+changed color to #1f64ff
+replacing old logo with new logo at
+https://ontomatica.io/static/image/onto_logo_w325_h60.svg

@@ -1,0 +1,13 @@
+
+source:
+https://www.onlinewebfonts.com/download/f6355d4b75f5722f6da1d246caf9320a
+
+
+@font-face {font-family: "Makimango";
+  src: url("//db.onlinewebfonts.com/t/f6355d4b75f5722f6da1d246caf9320a.eot");
+  src: url("//db.onlinewebfonts.com/t/f6355d4b75f5722f6da1d246caf9320a.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/f6355d4b75f5722f6da1d246caf9320a.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/f6355d4b75f5722f6da1d246caf9320a.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/f6355d4b75f5722f6da1d246caf9320a.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/f6355d4b75f5722f6da1d246caf9320a.svg#Makimango") format("svg");
+}

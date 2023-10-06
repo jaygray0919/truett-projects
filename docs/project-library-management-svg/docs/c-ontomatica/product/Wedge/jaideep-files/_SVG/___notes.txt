@@ -1,0 +1,11 @@
+
+for sprite:
+	_wedge-logo-symbol-red-text-black-style-inline-w572-h193.svg
+	_wedge-symbol-red-style-inline-w240-h193.svg
+
+used as external image
+	_wedge-logo-symbol-red-text-black-w572-h193.svg
+	_wedge-symbol-red-w240-h193.svg
+
+consider
+	use new font for WEDGE

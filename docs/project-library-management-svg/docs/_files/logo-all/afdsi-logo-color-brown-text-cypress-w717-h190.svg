@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 717 190" color-interpolation-filters="sRGB" fill="none" fill-rule="evenodd" font-size="12" overflow="visible" stroke-linecap="square" stroke-miterlimit="3">
+<style>
+.st1{fill:#bb9155;stroke:none;stroke-linecap:butt;stroke-width:4.45447}
+.st4{font-size:1em}
+
+@font-face{font-family:Raleway-Bold;font-style:normal;font-display:swap;src:url("https://s3.amazonaws.com/benetta.net/fonts/raleway/Raleway-Bold.ttf") format("truetype");}
+
+</style>
+<g id="group16-1" transform="translate(4.477 -.36)">
+<g id="shape1-2" transform="translate(25.524 -111.194)">
+<path class="st1" d="M0 184.063h5.702v5.657H0z"/>
+</g>
+<g id="shape2-4" transform="translate(42.852 -150.349)">
+<path class="st1" d="M0 184.018h5.702v5.702H0z"/>
+</g>
+<g id="shape3-6" transform="translate(49.356 -103.443)">
+<path d="M0 167.18l11.98 8.06v14.48L0 181.52v-14.34z" class="st1"/>
+</g>
+<g id="shape4-8" transform="translate(49.356 -79.834)">
+<path d="M0 166.29l11.98 8.2v15.23L0 181.52v-15.23z" class="st1"/>
+</g>
+<g id="shape5-10" transform="translate(61.962 -47.45)">
+<path class="st1" d="M0 184.018h5.702v5.702H0z"/>
+</g>
+<g id="shape6-12" transform="translate(68.243 -103.443)">
+<path d="M0 175.29l11.31-7.26v13.98L0 189.72v-14.43z" class="st1"/>
+</g>
+<g id="shape7-14" transform="translate(68.243 -79.656)">
+<path d="M0 174.31l11.31-7.75v15.81L0 189.72v-15.41z" class="st1"/>
+</g>
+<g id="shape8-16" transform="translate(98.355 -138.589)">
+<path class="st1" d="M0 184.018h5.702v5.702H0z"/>
+</g>
+<g id="shape9-18" transform="translate(0 -18)">
+<path d="M122.68 23.92H6.86A6.86 6.86-180 000 30.82v92.39a64.813 64.813-180 10129.58 0V30.82a6.86 6.86-180 00-6.9-6.9zm-11.76 52.12h-6.28v11.71l-18.22 12.47v24.24L68.24 136.3v11.36h6.28v19.47H55.06v-19.47h6.28v-11.4l-36.39-24.81v-7.97h-6.29V83.96h19.47v19.52h-6.28v4.45l10.65 7.26V64.28h-6.55V44.81h19.46v19.47h-6.05v9.13l15.5 10.42 21.56-13.85v21.87l11.31-7.71v-8.1h-6.28V56.57h19.47v19.47z" class="st1"/>
+</g>
+<g id="shape15-20" transform="translate(135.911)">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width=".72" d="M0 .72h576v189H0z"/>
+<text x="4" y="50.22" fill="#0e3e3e" font-family="Raleway-Bold" font-size="5em">American<tspan x="4" dy="1em" class="st4">Food Data Systems</tspan>
+<tspan x="4" dy="1em" class="st4">Institute</tspan>
+</text>
+</g>
+</g>
+</svg>

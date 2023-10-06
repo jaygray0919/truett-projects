@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 792 612"
+   color-interpolation-filters="sRGB"
+   class="st4"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="onto_logo_yello_white_back_.svg">
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs22" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1344"
+     inkscape:window-height="817"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="0.96405229"
+     inkscape:cx="243"
+     inkscape:cy="306"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6" />
+  <style
+     type="text/css"
+     id="style4"><![CDATA[
+	.st1 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+	.st2 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+	.st3 {fill:#ffffff;font-family:World of Water;font-size:10.6667em}
+	.st4 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+]]></style>
+  <g
+     id="g6">
+    <rect
+       style="fill:none;stroke:none;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round"
+       id="rect16"
+       class="st2"
+       height="126"
+       width="720"
+       y="58.5"
+       x="31.5" />
+    <text
+       style="font-size:128.00039673px;font-family:'World of Water';fill:#ffffc7;fill-opacity:1;"
+       id="text18"
+       class="st3"
+       y="159.90002"
+       x="36.5"><v:paragraph
+   v:horizAlign="1" />
+<v:tabList />
+ontOmatica</text>
+  </g>
+</svg>
