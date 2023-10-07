@@ -1,0 +1,14 @@
+
+pedon data
+https://nasis.sc.egov.usda.gov/NasisReportsWebSite/limsreport.aspx?report_name=WEB-profiles-by-PEIID&pedon_peiid=638880
+
+related links:
+
+https://www.google.com/maps/place/39%C2%B050'47.0%22N+94%C2%B055'46.0%22W/@39.846389,-94.9316327,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d39.846389!4d-94.929444
+
+https://casoilresource.lawr.ucdavis.edu/gmap/?loc=39.846389,-94.929444
+
+https://nasis.sc.egov.usda.gov/NasisReportsWebSite/limsreport.aspx?report_name=Pedon+Description+html+(userpedid)&pedon_id=2004MO003002
+
+https://ncsslabdatamart.sc.egov.usda.gov/rptExecute.aspx?pnk=M0400302&r=1&r=2&r=3&r=4&r=5&r=6&g=on&
+

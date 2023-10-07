@@ -1,0 +1,30 @@
+
+source
+https://news.ycombinator.com/item?id=30399576
+
+Very interesting. Am thinking: how to integrate with our complementary geo information as illustrated in these links.
+
+*Climate*
+
+https://afdsi.com/environment-climate-zone-us/
+
+https://afdsi.com/environment-climate-zone-missouri/
+
+*Soil*
+
+https://afdsi.com/environment-soil-ontology-usda/
+
+https://afdsi.com/environment-soil-ontology-unfao/
+
+https://afdsi.com/environment-soil-geoJSON-andrews-county/
+
+*Properties: environment and plants*
+
+https://afdsi.com/lode-earthster/
+
+https://afdsi.com/environment-plant-environment-ontology-LODE/
+
+*Agriculture products*
+
+https://hort.purdue.edu/newcrop/cropmap/missouri/counties/andrew.html
+

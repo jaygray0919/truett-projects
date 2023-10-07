@@ -1,0 +1,39 @@
+
+Collapse Description — Chemical Soil Properties
+Chemical Soil Properties
+
+This table shows estimates of some chemical characteristics and features that affect soil behavior. These estimates are given for the layers of each soil in the survey area. The estimates are based on field observations and on test data for these and similar soils.
+
+Depth to the upper and lower boundaries of each layer is indicated.
+
+Cation-exchange capacity is the total amount of extractable cations that can be held by the soil, expressed in terms of milliequivalents per 100 grams of soil at neutrality (pH 7.0) or at some other stated pH value. Soils having a low cation-exchange capacity hold fewer cations and may require more frequent applications of fertilizer than soils having a high cation-exchange capacity. The ability to retain cations reduces the hazard of ground-water pollution.
+
+Effective cation-exchange capacity refers to the sum of extractable cations plus aluminum expressed in terms of milliequivalents per 100 grams of soil. It is determined for soils that have pH of less than 5.5.
+
+Soil reaction is a measure of acidity or alkalinity. It is important in selecting crops and other plants, in evaluating soil amendments for fertility and stabilization, and in determining the risk of corrosion.
+
+Calcium carbonate equivalent is the percent of carbonates, by weight, in the fraction of the soil less than 2 millimeters in size. The availability of plant nutrients is influenced by the amount of carbonates in the soil.
+
+Gypsum is expressed as a percent, by weight, of hydrated calcium sulfates in the fraction of the soil less than 20 millimeters in size. Gypsum is partially soluble in water. Soils that have a high content of gypsum may collapse if the gypsum is removed by percolating water.
+
+Salinity is a measure of soluble salts in the soil at saturation. It is expressed as the electrical conductivity of the saturation extract, in millimhos per centimeter at 25 degrees C. Estimates are based on field and laboratory measurements at representative sites of nonirrigated soils. The salinity of irrigated soils is affected by the quality of the irrigation water and by the frequency of water application. Hence, the salinity of soils in individual fields can differ greatly from the value given in the table. Salinity affects the suitability of a soil for crop production, the stability of soil if used as construction material, and the potential of the soil to corrode metal and concrete.
+
+Sodium adsorption ratio (SAR) is a measure of the amount of sodium (Na) relative to calcium (Ca) and magnesium (Mg) in the water extract from saturated soil paste. It is the ratio of the Na concentration divided by the square root of one-half of the Ca + Mg concentration. Soils that have SAR values of 13 or more may be characterized by an increased dispersion of organic matter and clay particles, reduced saturated hydraulic conductivity and aeration, and a general degradation of soil structure.
+
+This table shows estimates of some chemical characteristics and features that affect soil behavior. These estimates are given for the layers of each soil in the survey area. The estimates are based on field observations and on test data for these and similar soils.
+
+Depth to the upper and lower boundaries of each layer is indicated.
+
+Cation-exchange capacity is the total amount of extractable cations that can be held by the soil, expressed in terms of milliequivalents per 100 grams of soil at neutrality (pH 7.0) or at some other stated pH value. Soils having a low cation-exchange capacity hold fewer cations and may require more frequent applications of fertilizer than soils having a high cation-exchange capacity. The ability to retain cations reduces the hazard of ground-water pollution.
+
+Effective cation-exchange capacity refers to the sum of extractable cations plus aluminum expressed in terms of milliequivalents per 100 grams of soil. It is determined for soils that have pH of less than 5.5.
+
+Soil reaction is a measure of acidity or alkalinity. It is important in selecting crops and other plants, in evaluating soil amendments for fertility and stabilization, and in determining the risk of corrosion.
+
+Calcium carbonate equivalent is the percent of carbonates, by weight, in the fraction of the soil less than 2 millimeters in size. The availability of plant nutrients is influenced by the amount of carbonates in the soil.
+
+Gypsum is expressed as a percent, by weight, of hydrated calcium sulfates in the fraction of the soil less than 20 millimeters in size. Gypsum is partially soluble in water. Soils that have a high content of gypsum may collapse if the gypsum is removed by percolating water.
+
+Salinity is a measure of soluble salts in the soil at saturation. It is expressed as the electrical conductivity of the saturation extract, in millimhos per centimeter at 25 degrees C. Estimates are based on field and laboratory measurements at representative sites of nonirrigated soils. The salinity of irrigated soils is affected by the quality of the irrigation water and by the frequency of water application. Hence, the salinity of soils in individual fields can differ greatly from the value given in the table. Salinity affects the suitability of a soil for crop production, the stability of soil if used as construction material, and the potential of the soil to corrode metal and concrete.
+
+Sodium adsorption ratio (SAR) is a measure of the amount of sodium (Na) relative to calcium (Ca) and magnesium (Mg) in the water extract from saturated soil paste. It is the ratio of the Na concentration divided by the square root of one-half of the Ca + Mg concentration. Soils that have SAR values of 13 or more may be characterized by an increased dispersion of organic matter and clay particles, reduced saturated hydraulic conductivity and aeration, and a general degradation of soil structure.

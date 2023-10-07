@@ -1,0 +1,1290 @@
+
+Glossary
+
+Many of the terms relating to landforms, geology, and geomorphology are defined in more detail in the following National Soil Survey Handbook link: "National Soil Survey Handbook."
+
+ABC soil
+
+    A soil having an A, a B, and a C horizon.
+Ablation till
+
+    Loose, relatively permeable earthy material deposited during the downwasting of nearly static glacial ice, either contained within or accumulated on the surface of the glacier.
+AC soil
+
+    A soil having only an A and a C horizon. Commonly, such soil formed in recent alluvium or on steep, rocky slopes.
+Aeration, soil
+
+    The exchange of air in soil with air from the atmosphere. The air in a well aerated soil is similar to that in the atmosphere; the air in a poorly aerated soil is considerably higher in carbon dioxide and lower in oxygen.
+Aggregate, soil
+
+    Many fine particles held in a single mass or cluster. Natural soil aggregates, such as granules, blocks, or prisms, are called peds. Clods are aggregates produced by tillage or logging.
+Alkali (sodic) soil
+
+    A soil having so high a degree of alkalinity (pH 8.5 or higher) or so high a percentage of exchangeable sodium (15 percent or more of the total exchangeable bases), or both, that plant growth is restricted.
+Alluvial cone
+
+    A semiconical type of alluvial fan having very steep slopes. It is higher, narrower, and steeper than a fan and is composed of coarser and thicker layers of material deposited by a combination of alluvial episodes and (to a much lesser degree) landslides (debris flow). The coarsest materials tend to be concentrated at the apex of the cone.
+Alluvial fan
+
+    A low, outspread mass of loose materials and/or rock material, commonly with gentle slopes. It is shaped like an open fan or a segment of a cone. The material was deposited by a stream at the place where it issues from a narrow mountain valley or upland valley or where a tributary stream is near or at its junction with the main stream. The fan is steepest near its apex, which points upstream, and slopes gently and convexly outward (downstream) with a gradual decrease in gradient.
+Alluvium
+
+    Unconsolidated material, such as gravel, sand, silt, clay, and various mixtures of these, deposited on land by running water.
+Alpha,alpha-dipyridyl
+
+    A compound that when dissolved in ammonium acetate is used to detect the presence of reduced iron (Fe II) in the soil. A positive reaction implies reducing conditions and the likely presence of redoximorphic features.
+Animal unit month (AUM)
+
+    The amount of forage required by one mature cow of approximately 1,000 pounds weight, with or without a calf, for 1 month.
+Aquic conditions
+
+    Current soil wetness characterized by saturation, reduction, and redoximorphic features.
+Argillic horizon
+
+    A subsoil horizon characterized by an accumulation of illuvial clay.
+Arroyo
+
+    The flat-floored channel of an ephemeral stream, commonly with very steep to vertical banks cut in unconsolidated material. It is usually dry but can be transformed into a temporary watercourse or short-lived torrent after heavy rain within the watershed.
+Aspect
+
+    The direction toward which a slope faces. Also called slope aspect.
+Association, soil
+
+    A group of soils or miscellaneous areas geographically associated in a characteristic repeating pattern and defined and delineated as a single map unit.
+Available water capacity (available moisture capacity)
+
+    The capacity of soils to hold water available for use by most plants. It is commonly defined as the difference between the amount of soil water at field moisture capacity and the amount at wilting point. It is commonly expressed as inches of water per inch of soil. The capacity, in inches, in a 60-inch profile or to a limiting layer is expressed as:
+
+        Very low: 0 to 3
+
+        Low: 3 to 6
+
+        Moderate: 6 to 9
+
+        High: 9 to 12
+
+        Very high: More than 12
+
+Backslope
+
+    The position that forms the steepest and generally linear, middle portion of a hillslope. In profile, backslopes are commonly bounded by a convex shoulder above and a concave footslope below.
+Backswamp
+
+    A flood-plain landform. Extensive, marshy or swampy, depressed areas of flood plains between natural levees and valley sides or terraces.
+Badland
+
+    A landscape that is intricately dissected and characterized by a very fine drainage network with high drainage densities and short, steep slopes and narrow interfluves. Badlands develop on surfaces that have little or no vegetative cover overlying unconsolidated or poorly cemented materials (clays, silts, or sandstones) with, in some cases, soluble minerals, such as gypsum or halite.
+Bajada
+
+    A broad, gently inclined alluvial piedmont slope extending from the base of a mountain range out into a basin and formed by the lateral coalescence of a series of alluvial fans. Typically, it has a broadly undulating transverse profile, parallel to the mountain front, resulting from the convexities of component fans. The term is generally restricted to constructional slopes of intermontane basins.
+Basal area
+
+    The area of a cross section of a tree, generally referring to the section at breast height and measured outside the bark. It is a measure of stand density, commonly expressed in square feet.
+Base saturation
+
+    The degree to which material having cation-exchange properties is saturated with exchangeable bases (sum of Ca, Mg, Na, and K), expressed as a percentage of the total cation-exchange capacity.
+Base slope (geomorphology)
+
+    A geomorphic component of hills consisting of the concave to linear (perpendicular to the contour) slope that, regardless of the lateral shape, forms an apron or wedge at the bottom of a hillside dominated by colluvium and slope-wash sediments (for example, slope alluvium).
+Bedding plane
+
+    A planar or nearly planar bedding surface that visibly separates each successive layer of stratified sediment or rock (of the same or different lithology) from the preceding or following layer; a plane of deposition. It commonly marks a change in the circumstances of deposition and may show a parting, a color difference, a change in particle size, or various combinations of these. The term is commonly applied to any bedding surface, even one that is conspicuously bent or deformed by folding.
+Bedding system
+
+    A drainage system made by plowing, grading, or otherwise shaping the surface of a flat field. It consists of a series of low ridges separated by shallow, parallel dead furrows.
+Bedrock
+
+    The solid rock that underlies the soil and other unconsolidated material or that is exposed at the surface.
+Bedrock-controlled topography
+
+    A landscape where the configuration and relief of the landforms are determined or strongly influenced by the underlying bedrock.
+Bench terrace
+
+    A raised, level or nearly level strip of earth constructed on or nearly on a contour, supported by a barrier of rocks or similar material, and designed to make the soil suitable for tillage and to prevent accelerated erosion.
+Bisequum
+
+    Two sequences of soil horizons, each of which consists of an illuvial horizon and the overlying eluvial horizons.
+Blowout (map symbol)
+
+    A saucer-, cup-, or trough-shaped depression formed by wind erosion on a preexisting dune or other sand deposit, especially in an area of shifting sand or loose soil or where protective vegetation is disturbed or destroyed. The adjoining accumulation of sand derived from the depression, where recognizable, is commonly included. Blowouts are commonly small.
+Borrow pit (map symbol)
+
+    An open excavation from which soil and underlying material have been removed, usually for construction purposes.
+Bottom land
+
+    An informal term loosely applied to various portions of a flood plain.
+Boulders
+
+    Rock fragments larger than 2 feet (60 centimeters) in diameter.
+Breaks
+
+    A landscape or tract of steep, rough or broken land dissected by ravines and gullies and marking a sudden change in topography.
+Breast height
+
+    An average height of 4.5 feet above the ground surface; the point on a tree where diameter measurements are ordinarily taken.
+Brush management
+
+    Use of mechanical, chemical, or biological methods to make conditions favorable for reseeding or to reduce or eliminate competition from woody vegetation and thus allow understory grasses and forbs to recover. Brush management increases forage production and thus reduces the hazard of erosion. It can improve the habitat for some species of wildlife.
+Butte
+
+    An isolated, generally flat-topped hill or mountain with relatively steep slopes and talus or precipitous cliffs and characterized by summit width that is less than the height of bounding escarpments; commonly topped by a caprock of resistant material and representing an erosion remnant carved from flat-lying rocks.
+Cable yarding
+
+    A method of moving felled trees to a nearby central area for transport to a processing facility. Most cable yarding systems involve use of a drum, a pole, and wire cables in an arrangement similar to that of a rod and reel used for fishing. To reduce friction and soil disturbance, felled trees generally are reeled in while one end is lifted or the entire log is suspended.
+Calcareous soil
+
+    A soil containing enough calcium carbonate (commonly combined with magnesium carbonate) to effervesce visibly when treated with cold, dilute hydrochloric acid.
+Caliche
+
+    A general term for a prominent zone of secondary carbonate accumulation in surficial materials in warm, subhumid to arid areas. Caliche is formed by both geologic and pedologic processes. Finely crystalline calcium carbonate forms a nearly continuous surface-coating and void-filling medium in geologic (parent) materials. Cementation ranges from weak in nonindurated forms to very strong in indurated forms. Other minerals (e.g., carbonates, silicate, and sulfate) may occur as accessory cements. Most petrocalcic horizons and some calcic horizons are caliche.
+California bearing ratio (CBR)
+
+    The load-supporting capacity of a soil as compared to that of standard crushed limestone, expressed as a ratio. First standardized in California. A soil having a CBR of 16 supports 16 percent of the load that would be supported by standard crushed limestone, per unit area, with the same degree of distortion.
+Canopy
+
+    The leafy crown of trees or shrubs. (See Crown.)
+Canyon
+
+    A long, deep, narrow valley with high, precipitous walls in an area of high local relief.
+Capillary water
+
+    Water held as a film around soil particles and in tiny spaces between particles. Surface tension is the adhesive force that holds capillary water in the soil.
+Catena
+
+    A sequence, or "chain," of soils on a landscape that formed in similar kinds of parent material and under similar climatic conditions but that have different characteristics as a result of differences in relief and drainage.
+Cation
+
+    An ion carrying a positive charge of electricity. The common soil cations are calcium, potassium, magnesium, sodium, and hydrogen.
+Cation-exchange capacity
+
+    The total amount of exchangeable cations that can be held by the soil, expressed in terms of milliequivalents per 100 grams of soil at neutrality (pH 7.0) or at some other stated pH value. The term, as applied to soils, is synonymous with base-exchange capacity but is more precise in meaning.
+Catsteps
+
+    See Terracettes.
+Cement rock
+
+    Shaly limestone used in the manufacture of cement.
+Channery soil material
+
+    Soil material that has, by volume, 15 to 35 percent thin, flat fragments of sandstone, shale, slate, limestone, or schist as much as 6 inches (15 centimeters) along the longest axis. A single piece is called a channer.
+Chemical treatment
+
+    Control of unwanted vegetation through the use of chemicals.
+Chiseling
+
+    Tillage with an implement having one or more soil-penetrating points that shatter or loosen hard, compacted layers to a depth below normal plow depth.
+Cirque
+
+    A steep-walled, semicircular or crescent-shaped, half-bowl-like recess or hollow, commonly situated at the head of a glaciated mountain valley or high on the side of a mountain. It was produced by the erosive activity of a mountain glacier. It commonly contains a small round lake (tarn).
+Clay
+
+    As a soil separate, the mineral soil particles less than 0.002 millimeter in diameter. As a soil textural class, soil material that is 40 percent or more clay, less than 45 percent sand, and less than 40 percent silt.
+Clay depletions
+
+    See Redoximorphic features.
+Clay film
+
+    A thin coating of oriented clay on the surface of a soil aggregate or lining pores or root channels. Synonyms: clay coating, clay skin.
+Clay spot (map symbol)
+
+    A spot where the surface texture is silty clay or clay in areas where the surface layer of the soils in the surrounding map unit is sandy loam, loam, silt loam, or coarser.
+Claypan
+
+    A dense, compact subsoil layer that contains much more clay than the overlying materials, from which it is separated by a sharply defined boundary. The layer restricts the downward movement of water through the soil. A claypan is commonly hard when dry and plastic and sticky when wet.
+Climax plant community
+
+    The stabilized plant community on a particular site. The plant cover reproduces itself and does not change so long as the environment remains the same.
+Coarse textured soil
+
+    Sand or loamy sand.
+Cobble (or cobblestone)
+
+    A rounded or partly rounded fragment of rock 3 to 10 inches (7.6 to 25 centimeters) in diameter.
+Cobbly soil material
+
+    Material that has 15 to 35 percent, by volume, rounded or partially rounded rock fragments 3 to 10 inches (7.6 to 25 centimeters) in diameter. Very cobbly soil material has 35 to 60 percent of these rock fragments, and extremely cobbly soil material has more than 60 percent.
+COLE (coefficient of linear extensibility)
+
+    See Linear extensibility.
+Colluvium
+
+    Unconsolidated, unsorted earth material being transported or deposited on side slopes and/or at the base of slopes by mass movement (e.g., direct gravitational action) and by local, unconcentrated runoff.
+Complex slope
+
+    Irregular or variable slope. Planning or establishing terraces, diversions, and other water-control structures on a complex slope is difficult.
+Complex, soil
+
+    A map unit of two or more kinds of soil or miscellaneous areas in such an intricate pattern or so small in area that it is not practical to map them separately at the selected scale of mapping. The pattern and proportion of the soils or miscellaneous areas are somewhat similar in all areas.
+Concretions
+
+    See Redoximorphic features.
+Conglomerate
+
+    A coarse grained, clastic sedimentary rock composed of rounded or subangular rock fragments more than 2 millimeters in diameter. It commonly has a matrix of sand and finer textured material. Conglomerate is the consolidated equivalent of gravel.
+Conservation cropping system
+
+    Growing crops in combination with needed cultural and management practices. In a good conservation cropping system, the soil-improving crops and practices more than offset the effects of the soil-depleting crops and practices. Cropping systems are needed on all tilled soils. Soil-improving practices in a conservation cropping system include the use of rotations that contain grasses and legumes and the return of crop residue to the soil. Other practices include the use of green manure crops of grasses and legumes, proper tillage, adequate fertilization, and weed and pest control.
+Conservation tillage
+
+    A tillage system that does not invert the soil and that leaves a protective amount of crop residue on the surface throughout the year.
+Consistence, soil
+
+    Refers to the degree of cohesion and adhesion of soil material and its resistance to deformation when ruptured. Consistence includes resistance of soil material to rupture and to penetration; plasticity, toughness, and stickiness of puddled soil material; and the manner in which the soil material behaves when subject to compression. Terms describing consistence are defined in the "Soil Survey Manual."
+Contour stripcropping
+
+    Growing crops in strips that follow the contour. Strips of grass or close-growing crops are alternated with strips of clean-tilled crops or summer fallow.
+Control section
+
+    The part of the soil on which classification is based. The thickness varies among different kinds of soil, but for many it is that part of the soil profile between depths of 10 inches and 40 or 80 inches.
+Coprogenous earth (sedimentary peat)
+
+    A type of limnic layer composed predominantly of fecal material derived from aquatic animals.
+Corrosion (geomorphology)
+
+    A process of erosion whereby rocks and soil are removed or worn away by natural chemical processes, especially by the solvent action of running water, but also by other reactions, such as hydrolysis, hydration, carbonation, and oxidation.
+Corrosion (soil survey interpretations)
+
+    Soil-induced electrochemical or chemical action that dissolves or weakens concrete or uncoated steel.
+Cover crop
+
+    A close-growing crop grown primarily to improve and protect the soil between periods of regular crop production, or a crop grown between trees and vines in orchards and vineyards.
+Crop residue management
+
+    Returning crop residue to the soil, which helps to maintain soil structure, organic matter content, and fertility and helps to control erosion.
+Cropping system
+
+    Growing crops according to a planned system of rotation and management practices.
+Cross-slope farming
+
+    Deliberately conducting farming operations on sloping farmland in such a way that tillage is across the general slope.
+Crown
+
+    The upper part of a tree or shrub, including the living branches and their foliage.
+Cryoturbate
+
+    A mass of soil or other unconsolidated earthy material moved or disturbed by frost action. It is typically coarser than the underlying material.
+Cuesta
+
+    An asymmetric ridge capped by resistant rock layers of slight or moderate dip (commonly less than 15 percent slopes); a type of homocline produced by differential erosion of interbedded resistant and weak rocks. A cuesta has a long, gentle slope on one side (dip slope) that roughly parallels the inclined beds; on the other side, it has a relatively short and steep or clifflike slope (scarp) that cuts through the tilted rocks.
+Culmination of the mean annual increment (CMAI)
+
+    The average annual increase per acre in the volume of a stand. Computed by dividing the total volume of the stand by its age. As the stand increases in age, the mean annual increment continues to increase until mortality begins to reduce the rate of increase. The point where the stand reaches its maximum annual rate of growth is called the culmination of the mean annual increment.
+Cutbanks cave
+
+    The walls of excavations tend to cave in or slough.
+Decreasers
+
+    The most heavily grazed climax range plants. Because they are the most palatable, they are the first to be destroyed by overgrazing.
+Deferred grazing
+
+    Postponing grazing or resting grazing land for a prescribed period.
+Delta
+
+    A body of alluvium having a surface that is fan shaped and nearly flat; deposited at or near the mouth of a river or stream where it enters a body of relatively quiet water, generally a sea or lake.
+Dense layer
+
+    A very firm, massive layer that has a bulk density of more than 1.8 grams per cubic centimeter. Such a layer affects the ease of digging and can affect filling and compacting.
+Depression, closed (map symbol)
+
+    A shallow, saucer-shaped area that is slightly lower on the landscape than the surrounding area and that does not have a natural outlet for surface drainage.
+Depth, soil
+
+    Generally, the thickness of the soil over bedrock. Very deep soils are more than 60 inches deep over bedrock; deep soils, 40 to 60 inches; moderately deep, 20 to 40 inches; shallow, 10 to 20 inches; and very shallow, less than 10 inches.
+Desert pavement
+
+    A natural, residual concentration or layer of wind-polished, closely packed gravel, boulders, and other rock fragments mantling a desert surface. It forms where wind action and sheetwash have removed all smaller particles or where rock fragments have migrated upward through sediments to the surface. It typically protects the finer grained underlying material from further erosion.
+Diatomaceous earth
+
+    A geologic deposit of fine, grayish siliceous material composed chiefly or entirely of the remains of diatoms.
+Dip slope
+
+    A slope of the land surface, roughly determined by and approximately conforming to the dip of the underlying bedrock.
+Diversion (or diversion terrace)
+
+    A ridge of earth, generally a terrace, built to protect downslope areas by diverting runoff from its natural course.
+Divided-slope farming
+
+    A form of field stripcropping in which crops are grown in a systematic arrangement of two strips, or bands, across the slope to reduce the hazard of water erosion. One strip is in a close-growing crop that provides protection from erosion, and the other strip is in a crop that provides less protection from erosion. This practice is used where slopes are not long enough to permit a full stripcropping pattern to be used.
+Drainage class (natural)
+
+    Refers to the frequency and duration of wet periods under conditions similar to those under which the soil formed. Alterations of the water regime by human activities, either through drainage or irrigation, are not a consideration unless they have significantly changed the morphology of the soil. Seven classes of natural soil drainage are recognized—excessively drained, somewhat excessively drained, well drained, moderately well drained, somewhat poorly drained, poorly drained, and very poorly drained. These classes are defined in the "Soil Survey Manual."
+Drainage, surface
+
+    Runoff, or surface flow of water, from an area.
+Drainageway
+
+    A general term for a course or channel along which water moves in draining an area. A term restricted to relatively small, linear depressions that at some time move concentrated water and either do not have a defined channel or have only a small defined channel.
+Draw
+
+    A small stream valley that generally is shallower and more open than a ravine or gulch and that has a broader bottom. The present stream channel may appear inadequate to have cut the drainageway that it occupies.
+Drift
+
+    A general term applied to all mineral material (clay, silt, sand, gravel, and boulders) transported by a glacier and deposited directly by or from the ice or transported by running water emanating from a glacier. Drift includes unstratified material (till) that forms moraines and stratified deposits that form outwash plains, eskers, kames, varves, and glaciofluvial sediments. The term is generally applied to Pleistocene glacial deposits in areas that no longer contain glaciers.
+Drumlin
+
+    A low, smooth, elongated oval hill, mound, or ridge of compact till that has a core of bedrock or drift. It commonly has a blunt nose facing the direction from which the ice approached and a gentler slope tapering in the other direction. The longer axis is parallel to the general direction of glacier flow. Drumlins are products of streamline (laminar) flow of glaciers, which molded the subglacial floor through a combination of erosion and deposition.
+Duff
+
+    A generally firm organic layer on the surface of mineral soils. It consists of fallen plant material that is in the process of decomposition and includes everything from the litter on the surface to underlying pure humus.
+Dune
+
+    A low mound, ridge, bank, or hill of loose, windblown granular material (generally sand), either barren and capable of movement from place to place or covered and stabilized with vegetation but retaining its characteristic shape.
+Earthy fill
+
+    See Mine spoil.
+Ecological site
+
+    An area where climate, soil, and relief are sufficiently uniform to produce a distinct natural plant community. An ecological site is the product of all the environmental factors responsible for its development. It is typified by an association of species that differ from those on other ecological sites in kind and/or proportion of species or in total production.
+Eluviation
+
+    The movement of material in true solution or colloidal suspension from one place to another within the soil. Soil horizons that have lost material through eluviation are eluvial; those that have received material are illuvial.
+Endosaturation
+
+    A type of saturation of the soil in which all horizons between the upper boundary of saturation and a depth of 2 meters are saturated.
+Eolian deposit
+
+    Sand-, silt-, or clay-sized clastic material transported and deposited primarily by wind, commonly in the form of a dune or a sheet of sand or loess.
+Ephemeral stream
+
+    A stream, or reach of a stream, that flows only in direct response to precipitation. It receives no long-continued supply from melting snow or other source, and its channel is above the water table at all times.
+Episaturation
+
+    A type of saturation indicating a perched water table in a soil in which saturated layers are underlain by one or more unsaturated layers within 2 meters of the surface.
+Erosion
+
+    The wearing away of the land surface by water, wind, ice, or other geologic agents and by such processes as gravitational creep.
+Erosion (accelerated)
+
+    Erosion much more rapid than geologic erosion, mainly as a result of human or animal activities or of a catastrophe in nature, such as a fire, that exposes the surface.
+Erosion (geologic)
+
+    Erosion caused by geologic processes acting over long geologic periods and resulting in the wearing away of mountains and the building up of such landscape features as flood plains and coastal plains. Synonym: natural erosion.
+Erosion pavement
+
+    A surficial lag concentration or layer of gravel and other rock fragments that remains on the soil surface after sheet or rill erosion or wind has removed the finer soil particles and that tends to protect the underlying soil from further erosion.
+Erosion surface
+
+    A land surface shaped by the action of erosion, especially by running water.
+Escarpment
+
+    A relatively continuous and steep slope or cliff breaking the general continuity of more gently sloping land surfaces and resulting from erosion or faulting. Most commonly applied to cliffs produced by differential erosion. Synonym: scarp.
+Escarpment, bedrock (map symbol)
+
+    A relatively continuous and steep slope or cliff, produced by erosion or faulting, that breaks the general continuity of more gently sloping land surfaces. Exposed material is hard or soft bedrock.
+Escarpment, nonbedrock (map symbol)
+
+    A relatively continuous and steep slope or cliff, generally produced by erosion but in some places produced by faulting, that breaks the continuity of more gently sloping land surfaces. Exposed earthy material is nonsoil or very shallow soil.
+Esker
+
+    A long, narrow, sinuous, steep-sided ridge of stratified sand and gravel deposited as the bed of a stream flowing in an ice tunnel within or below the ice (subglacial) or between ice walls on top of the ice of a wasting glacier and left behind as high ground when the ice melted. Eskers range in length from less than a kilometer to more than 160 kilometers and in height from 3 to 30 meters.
+Extrusive rock
+
+    Igneous rock derived from deep-seated molten matter (magma) deposited and cooled on the earth's surface.
+Fallow
+
+    Cropland left idle in order to restore productivity through accumulation of moisture. Summer fallow is common in regions of limited rainfall where cereal grain is grown. The soil is tilled for at least one growing season for weed control and decomposition of plant residue.
+Fan remnant
+
+    A general term for landforms that are the remaining parts of older fan landforms, such as alluvial fans, that have been either dissected or partially buried.
+Fertility, soil
+
+    The quality that enables a soil to provide plant nutrients, in adequate amounts and in proper balance, for the growth of specified plants when light, moisture, temperature, tilth, and other growth factors are favorable.
+Fibric soil material (peat)
+
+    The least decomposed of all organic soil material. Peat contains a large amount of well preserved fiber that is readily identifiable according to botanical origin. Peat has the lowest bulk density and the highest water content at saturation of all organic soil material.
+Field moisture capacity
+
+    The moisture content of a soil, expressed as a percentage of the ovendry weight, after the gravitational, or free, water has drained away; the field moisture content 2 or 3 days after a soaking rain; also called normal field capacity, normal moisture capacity, or capillary capacity.
+Fill slope
+
+    A sloping surface consisting of excavated soil material from a road cut. It commonly is on the downhill side of the road.
+Fine textured soil
+
+    Sandy clay, silty clay, or clay.
+Firebreak
+
+    An area cleared of flammable material to stop or help control creeping or running fires. It also serves as a line from which to work and to facilitate the movement of firefighters and equipment. Designated roads also serve as firebreaks.
+First bottom
+
+    An obsolete, informal term loosely applied to the lowest flood-plain steps that are subject to regular flooding.
+Flaggy soil material
+
+    Material that has, by volume, 15 to 35 percent flagstones. Very flaggy soil material has 35 to 60 percent flagstones, and extremely flaggy soil material has more than 60 percent flagstones.
+Flagstone
+
+    A thin fragment of sandstone, limestone, slate, shale, or (rarely) schist 6 to 15 inches (15 to 38 centimeters) long.
+Flood plain
+
+    The nearly level plain that borders a stream and is subject to flooding unless protected artificially.
+Flood-plain landforms
+
+    A variety of constructional and erosional features produced by stream channel migration and flooding. Examples include backswamps, flood-plain splays, meanders, meander belts, meander scrolls, oxbow lakes, and natural levees.
+Flood-plain splay
+
+    A fan-shaped deposit or other outspread deposit formed where an overloaded stream breaks through a levee (natural or artificial) and deposits its material (commonly coarse grained) on the flood plain.
+Flood-plain step
+
+    An essentially flat, terrace-like alluvial surface within a valley that is frequently covered by floodwater from the present stream; any approximately horizontal surface still actively modified by fluvial scour and/or deposition. May occur individually or as a series of steps.
+Fluvial
+
+    Of or pertaining to rivers or streams; produced by stream or river action.
+Foothills
+
+    A region of steeply sloping hills that fringes a mountain range or high-plateau escarpment. The hills have relief of as much as 1,000 feet (300 meters).
+Footslope
+
+    The concave surface at the base of a hillslope. A footslope is a transition zone between upslope sites of erosion and transport (shoulders and backslopes) and downslope sites of deposition (toeslopes).
+Forb
+
+    Any herbaceous plant not a grass or a sedge.
+Forest cover
+
+    All trees and other woody plants (underbrush) covering the ground in a forest.
+Forest type
+
+    A stand of trees similar in composition and development because of given physical and biological factors by which it may be differentiated from other stands.
+Fragipan
+
+    A loamy, brittle subsurface horizon low in porosity and content of organic matter and low or moderate in clay but high in silt or very fine sand. A fragipan appears cemented and restricts roots. When dry, it is hard or very hard and has a higher bulk density than the horizon or horizons above. When moist, it tends to rupture suddenly under pressure rather than to deform slowly.
+Genesis, soil
+
+    The mode of origin of the soil. Refers especially to the processes or soil-forming factors responsible for the formation of the solum, or true soil, from the unconsolidated parent material.
+Gilgai
+
+    Commonly, a succession of microbasins and microknolls in nearly level areas or of microvalleys and microridges parallel with the slope. Typically, the microrelief of clayey soils that shrink and swell considerably with changes in moisture content.
+Glaciofluvial deposits
+
+    Material moved by glaciers and subsequently sorted and deposited by streams flowing from the melting ice. The deposits are stratified and occur in the form of outwash plains, valley trains, deltas, kames, eskers, and kame terraces.
+Glaciolacustrine deposits
+
+    Material ranging from fine clay to sand derived from glaciers and deposited in glacial lakes mainly by glacial meltwater. Many deposits are bedded or laminated.
+Gleyed soil
+
+    Soil that formed under poor drainage, resulting in the reduction of iron and other elements in the profile and in gray colors.
+Graded stripcropping
+
+    Growing crops in strips that grade toward a protected waterway.
+Grassed waterway
+
+    A natural or constructed waterway, typically broad and shallow, seeded to grass as protection against erosion. Conducts surface water away from cropland.
+Gravel
+
+    Rounded or angular fragments of rock as much as 3 inches (2 millimeters to 7.6 centimeters) in diameter. An individual piece is a pebble.
+Gravel pit (map symbol)
+
+    An open excavation from which soil and underlying material have been removed and used, without crushing, as a source of sand or gravel.
+Gravelly soil material
+
+    Material that has 15 to 35 percent, by volume, rounded or angular rock fragments, not prominently flattened, as much as 3 inches (7.6 centimeters) in diameter.
+Gravelly spot (map symbol)
+
+    A spot where the surface layer has more than 35 percent, by volume, rock fragments that are mostly less than 3 inches in diameter in an area that has less than 15 percent rock fragments.
+Green manure crop (agronomy)
+
+    A soil-improving crop grown to be plowed under in an early stage of maturity or soon after maturity.
+Ground water
+
+    Water filling all the unblocked pores of the material below the water table.
+Gully (map symbol)
+
+    A small, steep-sided channel caused by erosion and cut in unconsolidated materials by concentrated but intermittent flow of water. The distinction between a gully and a rill is one of depth. A gully generally is an obstacle to farm machinery and is too deep to be obliterated by ordinary tillage whereas a rill is of lesser depth and can be smoothed over by ordinary tillage.
+Hard bedrock
+
+    Bedrock that cannot be excavated except by blasting or by the use of special equipment that is not commonly used in construction.
+Hard to reclaim
+
+    Reclamation is difficult after the removal of soil for construction and other uses. Revegetation and erosion control are extremely difficult.
+Hardpan
+
+    A hardened or cemented soil horizon, or layer. The soil material is sandy, loamy, or clayey and is cemented by iron oxide, silica, calcium carbonate, or other substance.
+Head slope (geomorphology)
+
+    A geomorphic component of hills consisting of a laterally concave area of a hillside, especially at the head of a drainageway. The overland waterflow is converging.
+Hemic soil material (mucky peat)
+
+    Organic soil material intermediate in degree of decomposition between the less decomposed fibric material and the more decomposed sapric material.
+High-residue crops
+
+    Such crops as small grain and corn used for grain. If properly managed, residue from these crops can be used to control erosion until the next crop in the rotation is established. These crops return large amounts of organic matter to the soil.
+Hill
+
+    A generic term for an elevated area of the land surface, rising as much as 1,000 feet above surrounding lowlands, commonly of limited summit area and having a well defined outline. Slopes are generally more than 15 percent. The distinction between a hill and a mountain is arbitrary and may depend on local usage.
+Hillslope
+
+    A generic term for the steeper part of a hill between its summit and the drainage line, valley flat, or depression floor at the base of a hill.
+Horizon, soil
+
+    A layer of soil, approximately parallel to the surface, having distinct characteristics produced by soil-forming processes. In the identification of soil horizons, an uppercase letter represents the major horizons. Numbers or lowercase letters that follow represent subdivisions of the major horizons. An explanation of the subdivisions is given in the "Soil Survey Manual." The major horizons of mineral soil are as follows:
+
+        O horizon: An organic layer of fresh and decaying plant residue.
+
+        L horizon: A layer of organic and mineral limnic materials, including coprogenous earth (sedimentary peat), diatomaceous earth, and marl.
+
+        A horizon: The mineral horizon at or near the surface in which an accumulation of humified organic matter is mixed with the mineral material. Also, a plowed surface horizon, most of which was originally part of a B horizon.
+
+        E horizon: The mineral horizon in which the main feature is loss of silicate clay, iron, aluminum, or some combination of these.
+
+        B horizon: The mineral horizon below an A horizon. The B horizon is in part a layer of transition from the overlying A to the underlying C horizon. The B horizon also has distinctive characteristics, such as (1) accumulation of clay, sesquioxides, humus, or a combination of these; (2) prismatic or blocky structure; (3) redder or browner colors than those in the A horizon; or (4) a combination of these.
+
+        C horizon: The mineral horizon or layer, excluding indurated bedrock, that is little affected by soil-forming processes and does not have the properties typical of the overlying soil material. The material of a C horizon may be either like or unlike that in which the solum formed. If the material is known to differ from that in the solum, an Arabic numeral, commonly a 2, precedes the letter C.
+
+        Cr horizon: Soft, consolidated bedrock beneath the soil.
+
+        R layer: Consolidated bedrock beneath the soil. The bedrock commonly underlies a C horizon, but it can be directly below an A or a B horizon.
+
+        M layer: A root-limiting subsoil layer consisting of nearly continuous, horizontally oriented, human-manufactured materials.
+
+        W layer: A layer of water within or beneath the soil.
+
+Humus
+
+    The well decomposed, more or less stable part of the organic matter in mineral soils.
+Hydrologic soil groups
+
+    Refers to soils grouped according to their runoff potential. The soil properties that influence this potential are those that affect the minimum rate of water infiltration on a bare soil during periods after prolonged wetting when the soil is not frozen. These properties include depth to a seasonal high water table, the infiltration rate, and depth to a layer that significantly restricts the downward movement of water. The slope and the kind of plant cover are not considered but are separate factors in predicting runoff.
+Igneous rock
+
+    Rock that was formed by cooling and solidification of magma and that has not been changed appreciably by weathering since its formation. Major varieties include plutonic and volcanic rock (e.g., andesite, basalt, and granite).
+Illuviation
+
+    The movement of soil material from one horizon to another in the soil profile. Generally, material is removed from an upper horizon and deposited in a lower horizon.
+Impervious soil
+
+    A soil through which water, air, or roots penetrate slowly or not at all. No soil is absolutely impervious to air and water all the time.
+Increasers
+
+    Species in the climax vegetation that increase in amount as the more desirable plants are reduced by close grazing. Increasers commonly are the shorter plants and the less palatable to livestock.
+Infiltration
+
+    The downward entry of water into the immediate surface of soil or other material, as contrasted with percolation, which is movement of water through soil layers or material.
+Infiltration capacity
+
+    The maximum rate at which water can infiltrate into a soil under a given set of conditions.
+Infiltration rate
+
+    The rate at which water penetrates the surface of the soil at any given instant, usually expressed in inches per hour. The rate can be limited by the infiltration capacity of the soil or the rate at which water is applied at the surface.
+Intake rate
+
+    The average rate of water entering the soil under irrigation. Most soils have a fast initial rate; the rate decreases with application time. Therefore, intake rate for design purposes is not a constant but is a variable depending on the net irrigation application. The rate of water intake, in inches per hour, is expressed as follows:
+
+        Very low: Less than 0.2
+
+        Low: 0.2 to 0.4
+
+        Moderately low: 0.4 to 0.75
+
+        Moderate: 0.75 to 1.25
+
+        Moderately high: 1.25 to 1.75
+
+        High: 1.75 to 2.5
+
+        Very high: More than 2.5
+
+Interfluve
+
+    A landform composed of the relatively undissected upland or ridge between two adjacent valleys containing streams flowing in the same general direction. An elevated area between two drainageways that sheds water to those drainageways.
+Interfluve (geomorphology)
+
+    A geomorphic component of hills consisting of the uppermost, comparatively level or gently sloping area of a hill; shoulders of backwearing hillslopes can narrow the upland or can merge, resulting in a strongly convex shape.
+Intermittent stream
+
+    A stream, or reach of a stream, that does not flow year-round but that is commonly dry for 3 or more months out of 12 and whose channel is generally below the local water table. It flows only during wet periods or when it receives ground-water discharge or long, continued contributions from melting snow or other surface and shallow subsurface sources.
+Invaders
+
+    On range, plants that encroach into an area and grow after the climax vegetation has been reduced by grazing. Generally, plants invade following disturbance of the surface.
+Iron depletions
+
+    See Redoximorphic features.
+Irrigation
+
+    Application of water to soils to assist in production of crops. Methods of irrigation are:
+
+        Basin: Water is applied rapidly to nearly level plains surrounded by levees or dikes.
+
+        Border: Water is applied at the upper end of a strip in which the lateral flow of water is controlled by small earth ridges called border dikes, or borders.
+
+        Controlled flooding: Water is released at intervals from closely spaced field ditches and distributed uniformly over the field.
+
+        Corrugation: Water is applied to small, closely spaced furrows or ditches in fields of close-growing crops or in orchards so that it flows in only one direction.
+
+        Drip (or trickle): Water is applied slowly and under low pressure to the surface of the soil or into the soil through such applicators as emitters, porous tubing, or perforated pipe.
+
+        Furrow: Water is applied in small ditches made by cultivation implements. Furrows are used for tree and row crops.
+
+        Sprinkler: Water is sprayed over the soil surface through pipes or nozzles from a pressure system.
+
+        Subirrigation: Water is applied in open ditches or tile lines until the water table is raised enough to wet the soil.
+
+        Wild flooding: Water, released at high points, is allowed to flow onto an area without controlled distribution.
+
+Kame
+
+    A low mound, knob, hummock, or short irregular ridge composed of stratified sand and gravel deposited by a subglacial stream as a fan or delta at the margin of a melting glacier; by a supraglacial stream in a low place or hole on the surface of the glacier; or as a ponded deposit on the surface or at the margin of stagnant ice.
+Karst (topography)
+
+    A kind of topography that formed in limestone, gypsum, or other soluble rocks by dissolution and that is characterized by closed depressions, sinkholes, caves, and underground drainage.
+Knoll
+
+    A small, low, rounded hill rising above adjacent landforms.
+Ksat
+
+    See Saturated hydraulic conductivity.
+Lacustrine deposit
+
+    Material deposited in lake water and exposed when the water level is lowered or the elevation of the land is raised.
+Lake plain
+
+    A nearly level surface marking the floor of an extinct lake filled by well sorted, generally fine textured, stratified deposits, commonly containing varves.
+Lake terrace
+
+    A narrow shelf, partly cut and partly built, produced along a lakeshore in front of a scarp line of low cliffs and later exposed when the water level falls.
+Landfill (map symbol)
+
+    An area of accumulated waste products of human habitation, either above or below natural ground level.
+Landslide
+
+    A general, encompassing term for most types of mass movement landforms and processes involving the downslope transport and outward deposition of soil and rock materials caused by gravitational forces; the movement may or may not involve saturated materials. The speed and distance of movement, as well as the amount of soil and rock material, vary greatly.
+Large stones
+
+    Rock fragments 3 inches (7.6 centimeters) or more across. Large stones adversely affect the specified use of the soil.
+Lava flow (map symbol)
+
+    A solidified, commonly lobate body of rock formed through lateral, surface outpouring of molten lava from a vent or fissure.
+Leaching
+
+    The removal of soluble material from soil or other material by percolating water.
+Levee (map symbol)
+
+    An embankment that confines or controls water, especially one built along the banks of a river to prevent overflow onto lowlands.
+Linear extensibility
+
+    Refers to the change in length of an unconfined clod as moisture content is decreased from a moist to a dry state. Linear extensibility is used to determine the shrink-swell potential of soils. It is an expression of the volume change between the water content of the clod at 1/3- or 1/10-bar tension (33kPa or 10kPa tension) and oven dryness. Volume change is influenced by the amount and type of clay minerals in the soil. The volume change is the percent change for the whole soil. If it is expressed as a fraction, the resulting value is COLE, coefficient of linear extensibility.
+Liquid limit
+
+    The moisture content at which the soil passes from a plastic to a liquid state.
+Loam
+
+    Soil material that is 7 to 27 percent clay particles, 28 to 50 percent silt particles, and less than 52 percent sand particles.
+Loess
+
+    Material transported and deposited by wind and consisting dominantly of silt-sized particles.
+Low strength
+
+    The soil is not strong enough to support loads.
+Low-residue crops
+
+    Such crops as corn used for silage, peas, beans, and potatoes. Residue from these crops is not adequate to control erosion until the next crop in the rotation is established. These crops return little organic matter to the soil.
+Marl
+
+    An earthy, unconsolidated deposit consisting chiefly of calcium carbonate mixed with clay in approximately equal proportions; formed primarily under freshwater lacustrine conditions but also formed in more saline environments.
+Marsh or swamp (map symbol)
+
+    A water-saturated, very poorly drained area that is intermittently or permanently covered by water. Sedges, cattails, and rushes are the dominant vegetation in marshes, and trees or shrubs are the dominant vegetation in swamps. Not used in map units where the named soils are poorly drained or very poorly drained.
+Mass movement
+
+    A generic term for the dislodgment and downslope transport of soil and rock material as a unit under direct gravitational stress.
+Masses
+
+    See Redoximorphic features.
+Meander belt
+
+    The zone within which migration of a meandering channel occurs; the flood-plain area included between two imaginary lines drawn tangential to the outer bends of active channel loops.
+Meander scar
+
+    A crescent-shaped, concave or linear mark on the face of a bluff or valley wall, produced by the lateral erosion of a meandering stream that impinged upon and undercut the bluff.
+Meander scroll
+
+    One of a series of long, parallel, close-fitting, crescent-shaped ridges and troughs formed along the inner bank of a stream meander as the channel migrated laterally down-valley and toward the outer bank.
+Mechanical treatment
+
+    Use of mechanical equipment for seeding, brush management, and other management practices.
+Medium textured soil
+
+    Very fine sandy loam, loam, silt loam, or silt.
+Mesa
+
+    A broad, nearly flat topped and commonly isolated landmass bounded by steep slopes or precipitous cliffs and capped by layers of resistant, nearly horizontal rocky material. The summit width is characteristically greater than the height of the bounding escarpments.
+Metamorphic rock
+
+    Rock of any origin altered in mineralogical composition, chemical composition, or structure by heat, pressure, and movement at depth in the earth's crust. Nearly all such rocks are crystalline.
+Mine or quarry (map symbol)
+
+    An open excavation from which soil and underlying material have been removed and in which bedrock is exposed. Also denotes surface openings to underground mines.
+Mine spoil
+
+    An accumulation of displaced earthy material, rock, or other waste material removed during mining or excavation. Also called earthy fill.
+Mineral soil
+
+    Soil that is mainly mineral material and low in organic material. Its bulk density is more than that of organic soil.
+Minimum tillage
+
+    Only the tillage essential to crop production and prevention of soil damage.
+Miscellaneous area
+
+    A kind of map unit that has little or no natural soil and supports little or no vegetation.
+Miscellaneous water (map symbol)
+
+    Small, constructed bodies of water that are used for industrial, sanitary, or mining applications and that contain water most of the year.
+Moderately coarse textured soil
+
+    Coarse sandy loam, sandy loam, or fine sandy loam.
+Moderately fine textured soil
+
+    Clay loam, sandy clay loam, or silty clay loam.
+Mollic epipedon
+
+    A thick, dark, humus-rich surface horizon (or horizons) that has high base saturation and pedogenic soil structure. It may include the upper part of the subsoil.
+Moraine
+
+    In terms of glacial geology, a mound, ridge, or other topographically distinct accumulation of unsorted, unstratified drift, predominantly till, deposited primarily by the direct action of glacial ice in a variety of landforms. Also, a general term for a landform composed mainly of till (except for kame moraines, which are composed mainly of stratified outwash) that has been deposited by a glacier. Some types of moraines are disintegration, end, ground, kame, lateral, recessional, and terminal.
+Morphology, soil
+
+    The physical makeup of the soil, including the texture, structure, porosity, consistence, color, and other physical, mineral, and biological properties of the various horizons, and the thickness and arrangement of those horizons in the soil profile.
+Mottling, soil
+
+    Irregular spots of different colors that vary in number and size. Descriptive terms are as follows: abundance—few, common, and many; size—fine, medium, and coarse; and contrast—faint, distinct, and prominent. The size measurements are of the diameter along the greatest dimension. Fine indicates less than 5 millimeters (about 0.2 inch); medium, from 5 to 15 millimeters (about 0.2 to 0.6 inch); and coarse, more than 15 millimeters (about 0.6 inch).
+Mountain
+
+    A generic term for an elevated area of the land surface, rising more than 1,000 feet (300 meters) above surrounding lowlands, commonly of restricted summit area (relative to a plateau) and generally having steep sides. A mountain can occur as a single, isolated mass or in a group forming a chain or range. Mountains are formed primarily by tectonic activity and/or volcanic action but can also be formed by differential erosion.
+Muck
+
+    Dark, finely divided, well decomposed organic soil material. (See Sapric soil material.)
+Mucky peat
+
+    See Hemic soil material.
+Mudstone
+
+    A blocky or massive, fine grained sedimentary rock in which the proportions of clay and silt are approximately equal. Also, a general term for such material as clay, silt, claystone, siltstone, shale, and argillite and that should be used only when the amounts of clay and silt are not known or cannot be precisely identified.
+Munsell notation
+
+    A designation of color by degrees of three simple variables—hue, value, and chroma. For example, a notation of 10YR 6/4 is a color with hue of 10YR, value of 6, and chroma of 4.
+Natric horizon
+
+    A special kind of argillic horizon that contains enough exchangeable sodium to have an adverse effect on the physical condition of the subsoil.
+Neutral soil
+
+    A soil having a pH value of 6.6 to 7.3. (See Reaction, soil.)
+Nodules
+
+    See Redoximorphic features.
+Nose slope (geomorphology)
+
+    A geomorphic component of hills consisting of the projecting end (laterally convex area) of a hillside. The overland waterflow is predominantly divergent. Nose slopes consist dominantly of colluvium and slope-wash sediments (for example, slope alluvium).
+Nutrient, plant
+
+    Any element taken in by a plant essential to its growth. Plant nutrients are mainly nitrogen, phosphorus, potassium, calcium, magnesium, sulfur, iron, manganese, copper, boron, and zinc obtained from the soil and carbon, hydrogen, and oxygen obtained from the air and water.
+Organic matter
+
+    Plant and animal residue in the soil in various stages of decomposition. The content of organic matter in the surface layer is described as follows:
+
+        Very low: Less than 0.5 percent
+
+        Low: 0.5 to 1.0 percent
+
+        Moderately low: 1.0 to 2.0 percent
+
+        Moderate: 2.0 to 4.0 percent
+
+        High: 4.0 to 8.0 percent
+
+        Very high: More than 8.0 percent
+
+Outwash
+
+    Stratified and sorted sediments (chiefly sand and gravel) removed or "washed out" from a glacier by meltwater streams and deposited in front of or beyond the end moraine or the margin of a glacier. The coarser material is deposited nearer to the ice.
+Outwash plain
+
+    An extensive lowland area of coarse textured glaciofluvial material. An outwash plain is commonly smooth; where pitted, it generally is low in relief.
+Paleoterrace
+
+    An erosional remnant of a terrace that retains the surface form and alluvial deposits of its origin but was not emplaced by, and commonly does not grade to, a present-day stream or drainage network.
+Pan
+
+    A compact, dense layer in a soil that impedes the movement of water and the growth of roots. For example, hardpan, fragipan, claypan, plowpan, and traffic pan.
+Parent material
+
+    The unconsolidated organic and mineral material in which soil forms.
+Peat
+
+    Unconsolidated material, largely undecomposed organic matter, that has accumulated under excess moisture. (See Fibric soil material.)
+Ped
+
+    An individual natural soil aggregate, such as a granule, a prism, or a block.
+Pedisediment
+
+    A layer of sediment, eroded from the shoulder and backslope of an erosional slope, that lies on and is being (or was) transported across a gently sloping erosional surface at the foot of a receding hill or mountain slope.
+Pedon
+
+    The smallest volume that can be called "a soil." A pedon is three dimensional and large enough to permit study of all horizons. Its area ranges from about 10 to 100 square feet (1 square meter to 10 square meters), depending on the variability of the soil.
+Percolation
+
+    The movement of water through the soil.
+Perennial water (map symbol)
+
+    Small, natural or constructed lakes, ponds, or pits that contain water most of the year.
+Permafrost
+
+    Ground, soil, or rock that remains at or below 0 degrees C for at least 2 years. It is defined on the basis of temperature and is not necessarily frozen.
+pH value
+
+    A numerical designation of acidity and alkalinity in soil. (See Reaction, soil.)
+Phase, soil
+
+    A subdivision of a soil series based on features that affect its use and management, such as slope, stoniness, and flooding.
+Piping
+
+    Formation of subsurface tunnels or pipelike cavities by water moving through the soil.
+Pitting
+
+    Pits caused by melting around ice. They form on the soil after plant cover is removed.
+Plastic limit
+
+    The moisture content at which a soil changes from semisolid to plastic.
+Plasticity index
+
+    The numerical difference between the liquid limit and the plastic limit; the range of moisture content within which the soil remains plastic.
+Plateau (geomorphology)
+
+    A comparatively flat area of great extent and elevation; specifically, an extensive land region that is considerably elevated (more than 100 meters) above the adjacent lower lying terrain, is commonly limited on at least one side by an abrupt descent, and has a flat or nearly level surface. A comparatively large part of a plateau surface is near summit level.
+Playa
+
+    The generally dry and nearly level lake plain that occupies the lowest parts of closed depressions, such as those on intermontane basin floors. Temporary flooding occurs primarily in response to precipitation and runoff. Playa deposits are fine grained and may or may not have a high water table and saline conditions.
+Plinthite
+
+    The sesquioxide-rich, humus-poor, highly weathered mixture of clay with quartz and other diluents. It commonly appears as red mottles, usually in platy, polygonal, or reticulate patterns. Plinthite changes irreversibly to an ironstone hardpan or to irregular aggregates on repeated wetting and drying, especially if it is exposed also to heat from the sun. In a moist soil, plinthite can be cut with a spade. It is a form of laterite.
+Plowpan
+
+    A compacted layer formed in the soil directly below the plowed layer.
+Ponding
+
+    Standing water on soils in closed depressions. Unless the soils are artificially drained, the water can be removed only by percolation or evapotranspiration.
+Poorly graded
+
+    Refers to a coarse grained soil or soil material consisting mainly of particles of nearly the same size. Because there is little difference in size of the particles, density can be increased only slightly by compaction.
+Pore linings
+
+    See Redoximorphic features.
+Potential native plant community
+
+    See Climax plant community.
+Potential rooting depth (effective rooting depth)
+
+    Depth to which roots could penetrate if the content of moisture in the soil were adequate. The soil has no properties restricting the penetration of roots to this depth.
+Prescribed burning
+
+    Deliberately burning an area for specific management purposes, under the appropriate conditions of weather and soil moisture and at the proper time of day.
+Productivity, soil
+
+    The capability of a soil for producing a specified plant or sequence of plants under specific management.
+Profile, soil
+
+    A vertical section of the soil extending through all its horizons and into the parent material.
+Proper grazing use
+
+    Grazing at an intensity that maintains enough cover to protect the soil and maintain or improve the quantity and quality of the desirable vegetation. This practice increases the vigor and reproduction capacity of the key plants and promotes the accumulation of litter and mulch necessary to conserve soil and water.
+Rangeland
+
+    Land on which the potential natural vegetation is predominantly grasses, grasslike plants, forbs, or shrubs suitable for grazing or browsing. It includes natural grasslands, savannas, many wetlands, some deserts, tundras, and areas that support certain forb and shrub communities.
+Reaction, soil
+
+    A measure of acidity or alkalinity of a soil, expressed as pH values. A soil that tests to pH 7.0 is described as precisely neutral in reaction because it is neither acid nor alkaline. The degrees of acidity or alkalinity, expressed as pH values, are:
+
+        Ultra acid: Less than 3.5
+
+        Extremely acid: 3.5 to 4.4
+
+        Very strongly acid: 4.5 to 5.0
+
+        Strongly acid: 5.1 to 5.5
+
+        Moderately acid: 5.6 to 6.0
+
+        Slightly acid: 6.1 to 6.5
+
+        Neutral: 6.6 to 7.3
+
+        Slightly alkaline: 7.4 to 7.8
+
+        Moderately alkaline: 7.9 to 8.4
+
+        Strongly alkaline: 8.5 to 9.0
+
+        Very strongly alkaline: 9.1 and higher
+
+Red beds
+
+    Sedimentary strata that are mainly red and are made up largely of sandstone and shale.
+Redoximorphic concentrations
+
+    See Redoximorphic features.
+Redoximorphic depletions
+
+    See Redoximorphic features.
+Redoximorphic features
+
+    Redoximorphic features are associated with wetness and result from alternating periods of reduction and oxidation of iron and manganese compounds in the soil. Reduction occurs during saturation with water, and oxidation occurs when the soil is not saturated. Characteristic color patterns are created by these processes. The reduced iron and manganese ions may be removed from a soil if vertical or lateral fluxes of water occur, in which case there is no iron or manganese precipitation in that soil. Wherever the iron and manganese are oxidized and precipitated, they form either soft masses or hard concretions or nodules. Movement of iron and manganese as a result of redoximorphic processes in a soil may result in redoximorphic features that are defined as follows:
+
+        Redoximorphic concentrations.—These are zones of apparent accumulation of iron-manganese oxides, including:
+
+            Nodules and concretions, which are cemented bodies that can be removed from the soil intact. Concretions are distinguished from nodules on the basis of internal organization. A concretion typically has concentric layers that are visible to the naked eye. Nodules do not have visible organized internal structure; and
+
+            Masses, which are noncemented concentrations of substances within the soil matrix; and
+
+            Pore linings, i.e., zones of accumulation along pores that may be either coatings on pore surfaces or impregnations from the matrix adjacent to the pores.
+
+        Redoximorphic depletions.—These are zones of low chroma (chromas less than those in the matrix) where either iron-manganese oxides alone or both iron-manganese oxides and clay have been stripped out, including:
+
+            Iron depletions, i.e., zones that contain low amounts of iron and manganese oxides but have a clay content similar to that of the adjacent matrix; and
+
+            Clay depletions, i.e., zones that contain low amounts of iron, manganese, and clay (often referred to as silt coatings or skeletans).
+
+        Reduced matrix.—This is a soil matrix that has low chroma in situ but undergoes a change in hue or chroma within 30 minutes after the soil material has been exposed to air.
+
+Reduced matrix
+
+    See Redoximorphic features.
+Regolith
+
+    All unconsolidated earth materials above the solid bedrock. It includes material weathered in place from all kinds of bedrock and alluvial, glacial, eolian, lacustrine, and pyroclastic deposits.
+Relief
+
+    The relative difference in elevation between the upland summits and the lowlands or valleys of a given region.
+Residuum (residual soil material)
+
+    Unconsolidated, weathered or partly weathered mineral material that accumulated as bedrock disintegrated in place.
+Rill
+
+    A very small, steep-sided channel resulting from erosion and cut in unconsolidated materials by concentrated but intermittent flow of water. A rill generally is not an obstacle to wheeled vehicles and is shallow enough to be smoothed over by ordinary tillage.
+Riser
+
+    The vertical or steep side slope (e.g., escarpment) of terraces, flood-plain steps, or other stepped landforms; commonly a recurring part of a series of natural, steplike landforms, such as successive stream terraces.
+Road cut
+
+    A sloping surface produced by mechanical means during road construction. It is commonly on the uphill side of the road.
+Rock fragments
+
+    Rock or mineral fragments having a diameter of 2 millimeters or more; for example, pebbles, cobbles, stones, and boulders.
+Rock outcrop (map symbol)
+
+    An exposure of bedrock at the surface of the earth. Not used where the named soils of the surrounding map unit are shallow over bedrock or where "Rock outcrop" is a named component of the map unit.
+Root zone
+
+    The part of the soil that can be penetrated by plant roots.
+Runoff
+
+    The precipitation discharged into stream channels from an area. The water that flows off the surface of the land without sinking into the soil is called surface runoff. Water that enters the soil before reaching surface streams is called ground-water runoff or seepage flow from ground water.
+Saline soil
+
+    A soil containing soluble salts in an amount that impairs growth of plants. A saline soil does not contain excess exchangeable sodium.
+Saline spot (map symbol)
+
+    An area where the surface layer has an electrical conductivity of 8 mmhos/cm more than the surface layer of the named soils in the surrounding map unit. The surface layer of the surrounding soils has an electrical conductivity of 2 mmhos/cm or less.
+Sand
+
+    As a soil separate, individual rock or mineral fragments from 0.05 millimeter to 2.0 millimeters in diameter. Most sand grains consist of quartz. As a soil textural class, a soil that is 85 percent or more sand and not more than 10 percent clay.
+Sandstone
+
+    Sedimentary rock containing dominantly sand-sized particles.
+Sandy spot (map symbol)
+
+    A spot where the surface layer is loamy fine sand or coarser in areas where the surface layer of the named soils in the surrounding map unit is very fine sandy loam or finer.
+Sapric soil material (muck)
+
+    The most highly decomposed of all organic soil material. Muck has the least amount of plant fiber, the highest bulk density, and the lowest water content at saturation of all organic soil material.
+Saturated hydraulic conductivity (Ksat)
+
+    The ease with which pores of a saturated soil transmit water. Formally, the proportionality coefficient that expresses the relationship of the rate of water movement to hydraulic gradient in Darcy's Law, a law that describes the rate of water movement through porous media. Commonly abbreviated as "Ksat." Terms describing saturated hydraulic conductivity are:
+
+        Very high: 100 or more micrometers per second (14.17 or more inches per hour)
+
+        High: 10 to 100 micrometers per second (1.417 to 14.17 inches per hour)
+
+        Moderately high: 1 to 10 micrometers per second (0.1417 inch to 1.417 inches per hour)
+
+        Moderately low: 0.1 to 1 micrometer per second (0.01417 to 0.1417 inch per hour)
+
+        Low: 0.01 to 0.1 micrometer per second (0.001417 to 0.01417 inch per hour)
+
+        Very low: Less than 0.01 micrometer per second (less than 0.001417 inch per hour).
+
+    To convert inches per hour to micrometers per second, multiply inches per hour by 7.0572. To convert micrometers per second to inches per hour, multiply micrometers per second by 0.1417.
+Saturation
+
+    Wetness characterized by zero or positive pressure of the soil water. Under conditions of saturation, the water will flow from the soil matrix into an unlined auger hole.
+Scarification
+
+    The act of abrading, scratching, loosening, crushing, or modifying the surface to increase water absorption or to provide a more tillable soil.
+Sedimentary rock
+
+    A consolidated deposit of clastic particles, chemical precipitates, or organic remains accumulated at or near the surface of the earth under normal low temperature and pressure conditions. Sedimentary rocks include consolidated equivalents of alluvium, colluvium, drift, and eolian, lacustrine, and marine deposits. Examples are sandstone, siltstone, mudstone, claystone, shale, conglomerate, limestone, dolomite, and coal.
+Sequum
+
+    A sequence consisting of an illuvial horizon and the overlying eluvial horizon. (See Eluviation.)
+Series, soil
+
+    A group of soils that have profiles that are almost alike, except for differences in texture of the surface layer. All the soils of a series have horizons that are similar in composition, thickness, and arrangement.
+Severely eroded spot (map symbol)
+
+    An area where, on the average, 75 percent or more of the original surface layer has been lost because of accelerated erosion. Not used in map units in which "severely eroded," "very severely eroded," or "gullied" is part of the map unit name.
+Shale
+
+    Sedimentary rock that formed by the hardening of a deposit of clay, silty clay, or silty clay loam and that has a tendency to split into thin layers.
+Sheet erosion
+
+    The removal of a fairly uniform layer of soil material from the land surface by the action of rainfall and surface runoff.
+Short, steep slope (map symbol)
+
+    A narrow area of soil having slopes that are at least two slope classes steeper than the slope class of the surrounding map unit.
+Shoulder
+
+    The convex, erosional surface near the top of a hillslope. A shoulder is a transition from summit to backslope.
+Shrink-swell
+
+    The shrinking of soil when dry and the swelling when wet. Shrinking and swelling can damage roads, dams, building foundations, and other structures. It can also damage plant roots.
+Shrub-coppice dune
+
+    A small, streamlined dune that forms around brush and clump vegetation.
+Side slope (geomorphology)
+
+    A geomorphic component of hills consisting of a laterally planar area of a hillside. The overland waterflow is predominantly parallel. Side slopes are dominantly colluvium and slope-wash sediments.
+Silica
+
+    A combination of silicon and oxygen. The mineral form is called quartz.
+Silica-sesquioxide ratio
+
+    The ratio of the number of molecules of silica to the number of molecules of alumina and iron oxide. The more highly weathered soils or their clay fractions in warm-temperate, humid regions, and especially those in the tropics, generally have a low ratio.
+Silt
+
+    As a soil separate, individual mineral particles that range in diameter from the upper limit of clay (0.002 millimeter) to the lower limit of very fine sand (0.05 millimeter). As a soil textural class, soil that is 80 percent or more silt and less than 12 percent clay.
+Siltstone
+
+    An indurated silt having the texture and composition of shale but lacking its fine lamination or fissility; a massive mudstone in which silt predominates over clay.
+Similar soils
+
+    Soils that share limits of diagnostic criteria, behave and perform in a similar manner, and have similar conservation needs or management requirements for the major land uses in the survey area.
+Sinkhole (map symbol)
+
+    A closed, circular or elliptical depression, commonly funnel shaped, characterized by subsurface drainage and formed either by dissolution of the surface of underlying bedrock (e.g., limestone, gypsum, or salt) or by collapse of underlying caves within bedrock. Complexes of sinkholes in carbonate-rock terrain are the main components of karst topography.
+Site index
+
+    A designation of the quality of a forest site based on the height of the dominant stand at an arbitrarily chosen age. For example, if the average height attained by dominant and codominant trees in a fully stocked stand at the age of 50 years is 75 feet, the site index is 75.
+Slickensides (pedogenic)
+
+    Grooved, striated, and/or glossy (shiny) slip faces on structural peds, such as wedges; produced by shrink-swell processes, most commonly in soils that have a high content of expansive clays.
+Slide or slip (map symbol)
+
+    A prominent landform scar or ridge caused by fairly recent mass movement or descent of earthy material resulting from failure of earth or rock under shear stress along one or several surfaces.
+Slope
+
+    The inclination of the land surface from the horizontal. Percentage of slope is the vertical distance divided by horizontal distance, then multiplied by 100. Thus, a slope of 20 percent is a drop of 20 feet in 100 feet of horizontal distance.
+Slope alluvium
+
+    Sediment gradually transported down the slopes of mountains or hills primarily by nonchannel alluvial processes (i.e., slope-wash processes) and characterized by particle sorting. Lateral particle sorting is evident on long slopes. In a profile sequence, sediments may be distinguished by differences in size and/or specific gravity of rock fragments and may be separated by stone lines. Burnished peds and sorting of rounded or subrounded pebbles or cobbles distinguish these materials from unsorted colluvial deposits.
+Slow refill
+
+    The slow filling of ponds, resulting from restricted water transmission in the soil.
+Slow water movement
+
+    Restricted downward movement of water through the soil. See Saturated hydraulic conductivity.
+Sodic (alkali) soil
+
+    A soil having so high a degree of alkalinity (pH 8.5 or higher) or so high a percentage of exchangeable sodium (15 percent or more of the total exchangeable bases), or both, that plant growth is restricted.
+Sodic spot (map symbol)
+
+    An area where the surface layer has a sodium adsorption ratio that is at least 10 more than that of the surface layer of the named soils in the surrounding map unit. The surface layer of the surrounding soils has a sodium adsorption ratio of 5 or less.
+Sodicity
+
+    The degree to which a soil is affected by exchangeable sodium. Sodicity is expressed as a sodium adsorption ratio (SAR) of a saturation extract, or the ratio of Na+ to Ca++ + Mg++. The degrees of sodicity and their respective ratios are:
+
+        Slight: Less than 13:1
+
+        Moderate: 13-30:1
+
+        Strong: More than 30:1
+
+Sodium adsorption ratio (SAR)
+
+    A measure of the amount of sodium (Na) relative to calcium (Ca) and magnesium (Mg) in the water extract from saturated soil paste. It is the ratio of the Na concentration divided by the square root of one-half of the Ca + Mg concentration.
+Soft bedrock
+
+    Bedrock that can be excavated with trenching machines, backhoes, small rippers, and other equipment commonly used in construction.
+Soil
+
+    A natural, three-dimensional body at the earth's surface. It is capable of supporting plants and has properties resulting from the integrated effect of climate and living matter acting on earthy parent material, as conditioned by relief and by the passage of time.
+Soil separates
+
+    Mineral particles less than 2 millimeters in equivalent diameter and ranging between specified size limits. The names and sizes, in millimeters, of separates recognized in the United States are as follows:
+
+        Very coarse sand: 2.0 to 1.0
+
+        Coarse sand: 1.0 to 0.5
+
+        Medium sand: 0.5 to 0.25
+
+        Fine sand: 0.25 to 0.10
+
+        Very fine sand: 0.10 to 0.05
+
+        Silt: 0.05 to 0.002
+
+        Clay: Less than 0.002
+
+Solum
+
+    The upper part of a soil profile, above the C horizon, in which the processes of soil formation are active. The solum in soil consists of the A, E, and B horizons. Generally, the characteristics of the material in these horizons are unlike those of the material below the solum. The living roots and plant and animal activities are largely confined to the solum.
+Spoil area (map symbol)
+
+    A pile of earthy materials, either smoothed or uneven, resulting from human activity.
+Stone line
+
+    In a vertical cross section, a line formed by scattered fragments or a discrete layer of angular and subangular rock fragments (commonly a gravel- or cobble-sized lag concentration) that formerly was draped across a topographic surface and was later buried by additional sediments. A stone line generally caps material that was subject to weathering, soil formation, and erosion before burial. Many stone lines seem to be buried erosion pavements, originally formed by sheet and rill erosion across the land surface.
+Stones
+
+    Rock fragments 10 to 24 inches (25 to 60 centimeters) in diameter if rounded or 15 to 24 inches (38 to 60 centimeters) in length if flat.
+Stony
+
+    Refers to a soil containing stones in numbers that interfere with or prevent tillage.
+Stony spot (map symbol)
+
+    A spot where 0.01 to 0.1 percent of the soil surface is covered by rock fragments that are more than 10 inches in diameter in areas where the surrounding soil has no surface stones.
+Strath terrace
+
+    A type of stream terrace; formed as an erosional surface cut on bedrock and thinly mantled with stream deposits (alluvium).
+Stream terrace
+
+    One of a series of platforms in a stream valley, flanking and more or less parallel to the stream channel, originally formed near the level of the stream; represents the remnants of an abandoned flood plain, stream bed, or valley floor produced during a former state of fluvial erosion or deposition.
+Stripcropping
+
+    Growing crops in a systematic arrangement of strips or bands that provide vegetative barriers to wind erosion and water erosion.
+Structure, soil
+
+    The arrangement of primary soil particles into compound particles or aggregates. The principal forms of soil structure are:
+
+        Platy: Flat and laminated
+
+        Prismatic: Vertically elongated and having flat tops
+
+        Columnar: Vertically elongated and having rounded tops
+
+        Angular blocky: Having faces that intersect at sharp angles (planes)
+
+        Subangular blocky: Having subrounded and planar faces (no sharp angles)
+
+        Granular: Small structural units with curved or very irregular faces
+
+    Structureless soil horizons are defined as follows:
+
+        Single grained: Entirely noncoherent (each grain by itself), as in loose sand
+
+        Massive: Occurring as a coherent mass
+
+Stubble mulch
+
+    Stubble or other crop residue left on the soil or partly worked into the soil. It protects the soil from wind erosion and water erosion after harvest, during preparation of a seedbed for the next crop, and during the early growing period of the new crop.
+Subsoil
+
+    Technically, the B horizon; roughly, the part of the solum below plow depth.
+Subsoiling
+
+    Tilling a soil below normal plow depth, ordinarily to shatter a hardpan or claypan.
+Substratum
+
+    The part of the soil below the solum.
+Subsurface layer
+
+    Any surface soil horizon (A, E, AB, or EB) below the surface layer.
+Summer fallow
+
+    The tillage of uncropped land during the summer to control weeds and allow storage of moisture in the soil for the growth of a later crop. A practice common in semiarid regions, where annual precipitation is not enough to produce a crop every year. Summer fallow is frequently practiced before planting winter grain.
+Summit
+
+    The topographically highest position of a hillslope. It has a nearly level (planar or only slightly convex) surface.
+Surface layer
+
+    The soil ordinarily moved in tillage, or its equivalent in uncultivated soil, ranging in depth from 4 to 10 inches (10 to 25 centimeters). Frequently designated as the "plow layer," or the "Ap horizon."
+Surface soil
+
+    The A, E, AB, and EB horizons, considered collectively. It includes all subdivisions of these horizons.
+Talus
+
+    Rock fragments of any size or shape (commonly coarse and angular) derived from and lying at the base of a cliff or very steep rock slope. The accumulated mass of such loose broken rock formed chiefly by falling, rolling, or sliding.
+Taxadjuncts
+
+    Soils that cannot be classified in a series recognized in the classification system. Such soils are named for a series they strongly resemble and are designated as taxadjuncts to that series because they differ in ways too small to be of consequence in interpreting their use and behavior. Soils are recognized as taxadjuncts only when one or more of their characteristics are slightly outside the range defined for the family of the series for which the soils are named.
+Terminal moraine
+
+    An end moraine that marks the farthest advance of a glacier. It typically has the form of a massive arcuate or concentric ridge, or complex of ridges, and is underlain by till and other types of drift.
+Terrace (conservation)
+
+    An embankment, or ridge, constructed across sloping soils on the contour or at a slight angle to the contour. The terrace intercepts surface runoff so that water soaks into the soil or flows slowly to a prepared outlet. A terrace in a field generally is built so that the field can be farmed. A terrace intended mainly for drainage has a deep channel that is maintained in permanent sod.
+Terrace (geomorphology)
+
+    A steplike surface, bordering a valley floor or shoreline, that represents the former position of a flood plain, lake, or seashore. The term is usually applied both to the relatively flat summit surface (tread) that was cut or built by stream or wave action and to the steeper descending slope (scarp or riser) that has graded to a lower base level of erosion.
+Terracettes
+
+    Small, irregular steplike forms on steep hillslopes, especially in pasture, formed by creep or erosion of surficial materials that may be induced or enhanced by trampling of livestock, such as sheep or cattle.
+Texture, soil
+
+    The relative proportions of sand, silt, and clay particles in a mass of soil. The basic textural classes, in order of increasing proportion of fine particles, are sand, loamy sand, sandy loam, loam, silt loam, silt, sandy clay loam, clay loam, silty clay loam, sandy clay, silty clay, and clay. The sand, loamy sand, and sandy loam classes may be further divided by specifying "coarse," "fine," or "very fine."
+Thin layer
+
+    Otherwise suitable soil material that is too thin for the specified use.
+Till
+
+    Dominantly unsorted and nonstratified drift, generally unconsolidated and deposited directly by a glacier without subsequent reworking by meltwater, and consisting of a heterogeneous mixture of clay, silt, sand, gravel, stones, and boulders; rock fragments of various lithologies are embedded within a finer matrix that can range from clay to sandy loam.
+Till plain
+
+    An extensive area of level to gently undulating soils underlain predominantly by till and bounded at the distal end by subordinate recessional or end moraines.
+Tilth, soil
+
+    The physical condition of the soil as related to tillage, seedbed preparation, seedling emergence, and root penetration.
+Toeslope
+
+    The gently inclined surface at the base of a hillslope. Toeslopes in profile are commonly gentle and linear and are constructional surfaces forming the lower part of a hillslope continuum that grades to valley or closed-depression floors.
+Topsoil
+
+    The upper part of the soil, which is the most favorable material for plant growth. It is ordinarily rich in organic matter and is used to topdress roadbanks, lawns, and land affected by mining.
+Trace elements
+
+    Chemical elements, for example, zinc, cobalt, manganese, copper, and iron, in soils in extremely small amounts. They are essential to plant growth.
+Tread
+
+    The flat to gently sloping, topmost, laterally extensive slope of terraces, flood-plain steps, or other stepped landforms; commonly a recurring part of a series of natural steplike landforms, such as successive stream terraces.
+Tuff
+
+    A generic term for any consolidated or cemented deposit that is 50 percent or more volcanic ash.
+Upland
+
+    An informal, general term for the higher ground of a region, in contrast with a low-lying adjacent area, such as a valley or plain, or for land at a higher elevation than the flood plain or low stream terrace; land above the footslope zone of the hillslope continuum.
+Valley fill
+
+    The unconsolidated sediment deposited by any agent (water, wind, ice, or mass wasting) so as to fill or partly fill a valley.
+Variegation
+
+    Refers to patterns of contrasting colors assumed to be inherited from the parent material rather than to be the result of poor drainage.
+Varve
+
+    A sedimentary layer or a lamina or sequence of laminae deposited in a body of still water within a year. Specifically, a thin pair of graded glaciolacustrine layers seasonally deposited, usually by meltwater streams, in a glacial lake or other body of still water in front of a glacier.
+Very stony spot (map symbol)
+
+    A spot where 0.1 to 3.0 percent of the soil surface is covered by rock fragments that are more than 10 inches in diameter in areas where the surface of the surrounding soil is covered by less than 0.01 percent stones.
+Water bars
+
+    Smooth, shallow ditches or depressional areas that are excavated at an angle across a sloping road. They are used to reduce the downward velocity of water and divert it off and away from the road surface. Water bars can easily be driven over if constructed properly.
+Weathering
+
+    All physical disintegration, chemical decomposition, and biologically induced changes in rocks or other deposits at or near the earth's surface by atmospheric or biologic agents or by circulating surface waters but involving essentially no transport of the altered material.
+Well graded
+
+    Refers to soil material consisting of coarse grained particles that are well distributed over a wide range in size or diameter. Such soil normally can be easily increased in density and bearing properties by compaction. Contrasts with poorly graded soil.
+Wet spot (map symbol)
+
+    A somewhat poorly drained to very poorly drained area that is at least two drainage classes wetter than the named soils in the surrounding map unit.
+Wilting point (or permanent wilting point)
+
+    The moisture content of soil, on an ovendry basis, at which a plant (specifically a sunflower) wilts so much that it does not recover when placed in a humid, dark chamber.
+Windthrow
+
+    The uprooting and tipping over of trees by the wind.
+

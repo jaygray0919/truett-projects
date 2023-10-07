@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html class=" uzlesuyevs idc0_326" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<title>SoilWeb: An Online Soil Survey Browser | California Soil Resource Lab</title> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="SoilWeb_files/leaflet.css">
+<link media="screen" href="SoilWeb_files/style_20190830.css" rel="stylesheet" type="text/css">
+
+<!-- better favorites icons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://casoilresource.lawr.ucdavis.edu/gmap/icons/favicon-128.png" sizes="128x128">
+<meta name="application-name" content="&nbsp;">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="icons/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="icons/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="icons/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="icons/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="icons/mstile-310x310.png">
+<style type="text/css">
+.esri-truncated-attribution:hover {white-space: normal;}
+</style>
+<style type="text/css">
+.esri-truncated-attribution {vertical-align: -3px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: inline-block;transition: 0s white-space;transition-delay: 1s;max-width: 1359px;}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="8.869.0" data-gr-ext-installed="">
+
+<!-- <div id="header"> -->
+<!-- <div id="close-button" class="button">&lt; Close</div> -->
+<!-- <div id="menu-button" class="button">Menu <span>▼</span><span class="hidden">▲</span></div> -->
+<!-- <h1>SoilWeb</h1> -->
+<!-- <div id="header-logos"> -->
+<!-- <a href="https://casoilresource.lawr.ucdavis.edu/" target="_blank"> -->
+<!-- <img alt="uc davis logo" src="SoilWeb_files/ucdavis_logo_gold.png"> -->
+<!-- </a> -->
+<!-- <a href="http://nrcs.usda.gov/" target="_blank"> -->
+<!-- <img alt="nrcs logo" src="SoilWeb_files/nrcs_logo.gif"> -->
+<!-- </a> -->
+<!-- <a href="http://ucanr.org/" target="_blank"> -->
+<!-- <img alt="uc anr logo" src="SoilWeb_files/ucanr_logo.png"> -->
+<!-- </a> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<div id="map-canvas" class="fill-screen leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom crosshair-cursor-enabled" tabindex="0">
+
+<div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+
+<div class="leaflet-pane leaflet-tile-pane">
+<div class="leaflet-layer " style="z-index: 2; opacity: 1;">
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 20; transform: translate3d(-2117px, -1293px, 0px) scale(4);">
+</div>
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 22; transform: translate3d(0px, 0px, 0px) scale(1);">
+<img alt="" role="presentation" src="SoilWeb_files/3871_003.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3871.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870_003.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872_003.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3871_002.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870_002.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872_002.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869_002.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873_003.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869_003.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873_002.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868_003.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874_002.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868_002.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874_003.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, 463px, 0px); opacity: 1;">
+</div>
+</div>
+</div>
+
+<div class="leaflet-pane leaflet-shadow-pane">
+<img src="SoilWeb_files/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(711px, 401px, 0px);" alt="">
+</div>
+
+<div class="leaflet-pane leaflet-overlay-pane"></div>
+<div class="leaflet-pane leaflet-marker-pane">
+<img src="SoilWeb_files/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(711px, 401px, 0px); z-index: 401;" alt="" tabindex="0">
+</div>
+
+<div class="leaflet-pane leaflet-tooltip-pane"></div>
+
+<div class="leaflet-pane leaflet-popup-pane">
+<div class="leaflet-popup  leaflet-zoom-animated" style="opacity: 1; transform: translate3d(712px, 367px, 0px); bottom: -7px; left: -84px;">
+<div class="leaflet-popup-content-wrapper">
+<div class="leaflet-popup-content" style="width: 128px;">
+<p>Latitude: 39.846389<br>Longitude: -94.929444</p>
+<p>
+<a class="remove-geomarker-link" href="">Remove location marker</a>
+</p>
+</div>
+</div>
+<div class="leaflet-popup-tip-container">
+<div class="leaflet-popup-tip">
+</div>
+</div>
+<a class="leaflet-popup-close-button" href="#close">×</a>
+</div>
+</div>
+
+<div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(991140px, 1590120px, 0px) scale(8192);"></div>
+
+<div class="leaflet-pane leaflet-soillayers-pane" style="z-index: 201;">
+<div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(2px, -1px, 0px) scale(1);">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_020.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(541px, 208px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_010.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(541px, -48px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_006.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(285px, 208px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_014.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(797px, 208px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_005.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(285px, -48px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(797px, -48px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_017.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(29px, 208px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_013.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1053px, 208px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_009.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(29px, -48px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1053px, -48px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_019.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-227px, 208px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_008.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1309px, 208px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-227px, -48px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_012.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1309px, -48px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_016.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(541px, 464px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_011.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(285px, 464px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_018.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(797px, 464px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_021.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(29px, 464px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_007.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1053px, 464px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv_015.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-227px, 464px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/mapserv.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1309px, 464px, 0px); opacity: 1;">
+</div>
+</div>
+</div>
+
+<div class="leaflet-pane leaflet-esri-labels-pane" style="pointer-events: none; z-index: 500;">
+<div class="leaflet-layer " style="z-index: 2; opacity: 1;">
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);">
+<img alt="" role="presentation" src="SoilWeb_files/3871_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3871.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3871_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872_006.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870_006.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873_006.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868_006.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874_006.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874_005.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, 463px, 0px); opacity: 1;">
+</div>
+</div>
+<div class="leaflet-layer " style="z-index: 2; opacity: 1;">
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(-2117px, -1293px, 0px) scale(4);">
+</div>
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);">
+<img alt="" role="presentation" src="SoilWeb_files/3871_006.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3871_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872_005.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3871_005.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(543px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870_005.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3870_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(287px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3872_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(799px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869_005.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3869_006.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(31px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3873_005.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1055px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, 207px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868_005.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, -49px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3868_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-225px, 463px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="SoilWeb_files/3874_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1311px, 463px, 0px); opacity: 1;">
+</div>
+</div>
+</div>
+</div>
+
+<!--
+<div class="leaflet-control-container">
+<div class="leaflet-top leaflet-left">
+<div class="custom-map-control leaflet-control" title="Zoom to my location using the current geolocation settings">
+<img src="SoilWeb_files/target.png" class="custom-control-icon">
+</div>
+</div>
+<div class="leaflet-top leaflet-right">
+<div class="map-message leaflet-control" style="display: none;">Currently displaying soil survey area boundaries<br>Click map to view survey area metadata<br>Zoom in to view and identify soil map units</div>
+<div class="wss-control leaflet-control" style="">
+<a href="" class="wss-link" title="Create an Area of Interest (AOI) for this area in Web Soil Survey (WSS)">Link to WSS</a>
+</div>
+<div class="leaflet-control-layers leaflet-control" aria-haspopup="true">
+<a class="leaflet-control-layers-toggle" href="#" title="Layers">
+</a>
+<section class="leaflet-control-layers-list">
+<label class="bold">Base Map:</label>
+<div class="leaflet-control-layers-base">
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_27">
+<span> ESRI Imagery</span>
+</div>
+</label>
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_27" checked="checked">
+<span> ESRI Imagery With Labels</span>
+</div>
+</label>
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_27">
+<span> ESRI Street</span>
+</div>
+</label>
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_27">
+<span> ESRI Topo</span>
+</div>
+</label>
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_27">
+<span> USGS Topo</span>
+</div>
+</label>
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_27">
+<span> OpenStreetMap</span>
+</div>
+</label>
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_27">
+<span> Stamen Terrain</span>
+</div>
+</label>
+</div>
+<div class="leaflet-control-layers-separator" style="display: none;">
+</div>
+<div class="leaflet-control-layers-overlays">
+</div>
+</section>
+</div>
+<div class="leaflet-control-layers leaflet-control" aria-haspopup="true">
+<a class="leaflet-control-layers-toggle" href="#" title="Layers" style="background-image: none; width: auto; height: auto; text-decoration: none; color: rgb(102, 102, 102); text-align: center; padding: 2px;">
+<label class="bold">Outline<br>Color</label>
+</a>
+<section class="leaflet-control-layers-list">
+<label class="bold">Outline Color for Map<br>Units and Survey Areas:</label>
+<div class="leaflet-control-layers-base">
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_37" checked="checked">
+<span> Light</span>
+</div>
+</label>
+<label>
+<div>
+<input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_37">
+<span> Dark</span>
+</div>
+</label>
+</div>
+<div class="leaflet-control-layers-separator" style="display: none;">
+</div>
+<div class="leaflet-control-layers-overlays">
+</div>
+</section>
+</div>
+</div>
+<div class="leaflet-bottom leaflet-left">
+</div>
+<div class="leaflet-bottom leaflet-right">
+<div class="leaflet-control-zoom leaflet-bar leaflet-control">
+<a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
+<a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
+</div>
+<div class="lat-lon leaflet-control">Lat: 39.8539<br>Lon: -94.9431</div>
+<div class="leaflet-control-attribution leaflet-control esri-truncated-attribution:hover esri-truncated-attribution">
+<a href="http://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Powered by <a href="https://www.esri.com/">Esri</a> | <span class="esri-dynamic-attribution" style="max-width: 1359px;">USDA FSA, GeoEye, Maxar</span>
+</div>
+</div>
+</div>
+-->
+
+</div>
+
+<!--
+<div id="menu">
+<ul>
+<li>
+<a href="#zoom-to">Zoom To Location</a>
+</li>
+<li>
+<a href="#help-menu">Help</a>
+</li>
+</ul>
+</div>
+-->
+
+<!--
+<div id="zoom-to" class="overlay menu-overlay" style="max-height: 610.6px;">
+<h2>Zoom To Location</h2>
+<br>
+<form name="geolocate-form" id="geolocate-form" method="post">
+<input type="submit" value="Use My Current Location" class="ui-button">
+&nbsp;&nbsp;
+<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/geolocation.html">?</a>
+</span>&nbsp;<span class="sub-text">
+<a class="help-topic" href="#" data-url="help/geolocation.html">About this...</a>
+</span>
+<div>
+<div class="vertical-margin">Settings when finding my current location:</div>
+<div class="smaller vertical-margin ">
+<label for="geoaccuracy">Desired accuracy: </label>
+<span id="geoaccuracy-label">100 m</span>
+<input type="range" min="10" max="1000" value="100" step="10" id="geoaccuracy-slider" name="geoaccuracy" class="range-slider">
+
+</div>
+<div class="smaller vertical-margin ">
+<label for="geowait">Maximum wait: </label>
+<span id="geowait-label">10 sec</span>
+<input type="range" min="5" max="60" value="10" step="5" id="geowait-slider" name="geowait" class="range-slider">
+
+</div>
+<div class="smaller vertical-margin ">
+<input type="checkbox" name="on-geosuccess-query" id="on-geosuccess-query">
+<label for="on-geosuccess-query" class="multiline-label">Automatically display soil data after my location is determined</label>
+</div>
+</div>
+</form>
+<p class="bold">- OR -</p>
+<form name="geocode-form" id="geocode-form" method="post">
+<label>Enter a location:</label>
+<br>
+<input type="text" id="locationText" size="25" maxlength="75" class="focus-field required-value textbox">
+<input type="submit" class="ui-button" value="Go" disabled="disabled">
+</form>
+<div class="smaller">
+<p>Locations may be entered as:</p>
+<ul class="indented bullet-list">
+<li>Complete address</li>
+<li>City, state</li>
+<li>Zip code</li>
+<li>Landmark (Example: Mt. Diablo, CA)</li>
+</ul>
+</div>
+<p class="bold">- OR -</p>
+<form name="lat-lon-form" id="lat-lon-form" method="post">
+<label>Enter a latitude/longitude:</label>
+<br>
+<input type="text" id="lat-lon-text" placeholder="latitude, longitude" size="25" maxlength="30" class="focus-field required-value textbox">
+<input type="submit" class="ui-button" value="Go" disabled="disabled">
+</form>
+<div class="smaller">
+<p>Enter latitude and longitude in decimal degrees, separated by a 
+comma. Use positive values for degrees North and East, and negative 
+values for degrees South and West.
+</p>
+<p>Example: 38.543, -121.739</p>
+</div>
+</div>
+-->
+
+<!--
+<div id="help-menu" class="overlay menu-overlay" style="max-height: 610.6px;">
+<h2>Help</h2>
+<ul>
+<li class="expandable">
+<h2>
+<span class="hidden">▼</span>
+<span class="">▲</span>&nbsp;&nbsp;Soil Survey Definitions</h2>
+<div class="expandable-content" style="display: block;">
+<ul class="help-links indented">
+<li>
+<a class="help-topic" href="#" data-url="help/defn-calcium-carbonate.html">Calcium carbonate</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-cation-exchange-capacity.html">Cation exchange capacity</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-clay.html">Clay</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-drainage-class.html">Drainage class</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-electrical-conductivity.html">Electrical conductivity</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-gypsum.html">Gypsum</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-hydric-rating.html">Hydric rating</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-hydrologic-group.html">Hydrologic group</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-kf-factor.html">K<span class="sub-text">f</span> factor</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-ksat.html">K<span class="sub-text">sat</span>
+</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-land-capability-class.html">Land capability class</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-linear-extensibility.html">Linear extensibility</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-map-unit-type.html">Map unit type</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-organic-matter.html">Organic matter</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-ph.html">pH</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-sand.html">Sand</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-sodium-adsorption-ratio.html">Sodium adsorption ratio</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-t-factor.html">T factor</a>
+</li>
+<li>
+<a class="help-topic" href="#" data-url="help/defn-wind-erodibility.html">Wind erodibility</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+-->
+
+<!--
+<div id="mapunit-summary" class="overlay content-overlay" style="max-height: 630.6px;">
+<div id="mu-header">
+</div>
+<ul>
+<li class="expandable">
+<h2>
+<span class="hidden">▼</span>
+<span class="">▲</span>&nbsp;&nbsp;Map Unit Composition</h2>
+<div id="comp-data" class="expandable-content" style="display: block;">
+</div>
+</li>
+<li class="expandable">
+<h2>
+<span>▼</span>
+<span class="hidden">▲</span>&nbsp;&nbsp;Map Unit Data</h2>
+<div id="mu-data" class="expandable-content">
+</div>
+</li>
+<li class="expandable">
+<h2>
+<span>▼</span>
+<span class="hidden">▲</span>&nbsp;&nbsp;Survey Metadata</h2>
+<div id="survey-metadata" class="expandable-content">
+</div>
+</li>
+</ul>
+</div>
+-->
+
+<!--
+<div id="component-summary" class="overlay content-overlay" style="max-height: 630.6px;">
+<div id="comp-header">
+</div>
+<ul>
+<li class="expandable">
+<h2>
+<span class="hidden">▼</span>
+<span class="">▲</span>&nbsp;&nbsp;Soil Profiles</h2>
+<div id="soil-profiles" class="expandable-content" style="display: block;">
+<ul id="soil-prof-menu" class="inline-menu">
+<li class="active">Typical Profile<span class="hidden toggler">
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>Org. Matter<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-organic-matter.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>Clay<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-clay.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>Sand<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-sand.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>K<span class="sub-text">sat</span>
+<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-ksat.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>pH<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-ph.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>K<span class="sub-text">f</span> Factor<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-kf-factor.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>EC<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-electrical-conductivity.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>SAR<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-sodium-adsorption-ratio.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>CaCO<span class="sub-text">3</span>
+<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-calcium-carbonate.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>Gypsum<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-gypsum.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>CEC @ pH7<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-cation-exchange-capacity.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+<li>Linear Ext.<span class="hidden toggler">&nbsp;&nbsp;<span class="help-icon">
+<a class="help-topic" href="#" data-url="help/defn-linear-extensibility.html">?</a>
+</span>
+<span class="pointer">&gt;</span>
+</span>
+</li>
+</ul>
+<div id="soil-prof-images" class="center">
+</div>
+</div>
+</li>
+<li class="expandable">
+<h2>
+<span>▼</span>
+<span class="hidden">▲</span>&nbsp;&nbsp;Soil Taxonomy</h2>
+<div id="soil-taxonomy" class="expandable-content">
+</div>
+</li>
+<li class="expandable">
+<h2>
+<span>▼</span>
+<span class="hidden">▲</span>&nbsp;&nbsp;Land Classification</h2>
+<div id="land-classification" class="expandable-content">
+</div>
+</li>
+<li class="expandable">
+<h2>
+<span>▼</span>
+<span class="hidden">▲</span>&nbsp;&nbsp;Hydraulic and Erosion Ratings</h2>
+<div id="hyd-erosion-ratings" class="expandable-content">
+</div>
+</li>
+<li class="expandable">
+<h2>
+<span>▼</span>
+<span class="hidden">▲</span>&nbsp;&nbsp;Forest Productivity</h2>
+<div id="forest-prod" class="expandable-content">
+</div>
+</li>
+<li class="expandable">
+<h2>
+<span>▼</span>
+<span class="hidden">▲</span>&nbsp;&nbsp;Soil Suitability Ratings</h2>
+<div class="expandable-content">
+<div id="suitability-ratings">
+</div>
+<div id="soil-suit-content">
+</div>
+</div>
+</li>
+<li class="expandable">
+<h2>
+<span>▼</span>
+<span class="hidden">▲</span>&nbsp;&nbsp;Details</h2>
+<div id="comp-details" class="expandable-content">
+</div>
+</li>
+</ul>
+</div>
+-->
+
+<!--
+<div id="help-topic" class="overlay content-overlay" style="max-height: 610.6px;">
+<h2>SoilWeb Help</h2>
+<div id="help-content">
+</div>
+</div>
+
+<div id="osd" class="overlay content-overlay" style="max-height: 630.6px;">
+</div>
+
+<div id="mask" class="fill-screen" style="display: none;">
+</div>
+
+<div id="message" class="message" style="display: none;">
+<p class="msg-content">
+<h3>Welcome</h3>
+<p style="margin-top:0">
+This interactive map allows you to explore USDA-NCSS soil survey data 
+for locations throughout most of the U.S.  It is compatible with 
+smartphones, tablets, and desktop computers.
+</p>
+
+<h3>Getting Started</h3>
+<p style="margin-top:0">
+1) Go to <span style="font-style:italic">Menu-&gt;Zoom To Location</span> to enter your area of interest or let your browser determine your current location.
+</p>
+<p>
+2) Click on the map to identify "map units", which are delineated by the
+ yellow lines.  Then click on the expandable category headings to view 
+the data of interest to you.
+</p>
+<p>
+For help with soil survey terms and definitions, see the topics under <span style="font-style:italic">Menu-&gt;Help</span>.
+</p>
+
+<h3>About This App</h3>
+<p style="margin-top:0">
+This app was developed by the <a href="https://casoilresource.lawr.ucdavis.edu/" target="_blank">California Soil Resource Lab</a> at UC Davis and UC-ANR in collaboration with the <a href="http://nrcs.usda.gov/" target="_blank">USDA Natural Resources Conservation Service</a>.
+</p>
+<img class="logo" alt="uc davis logo" src="SoilWeb_files/ucdavis_logo_gold.png" height="25">
+<img class="logo" alt="nrcs logo" src="SoilWeb_files/nrcs_logo.gif" height="25">
+<img class="logo" alt="uc anr logo" src="SoilWeb_files/ucanr_logo.png" height="30">
+
+<p>
+<label>
+<input type="checkbox" id="chk-nosplash" checked="checked"> Don't show this message again</label>
+</p>
+</p>
+<p>
+<button class="ok-button ui-button">OK</button>
+</p>
+</div>
+
+<div id="loader" class="message">
+<span class="close-x">×</span>
+<p class="msg-content">
+</p>
+<p id="geo-accuracy">
+</p>
+<img src="SoilWeb_files/ajax-loader.gif" alt="">
+</div>
+-->
+
+<!-- SCRIPTS -->
+<!--
+<script type="text/javascript" async="" src="SoilWeb_files/ga.js">
+</script>
+<script src="SoilWeb_files/jquery_002.js">
+</script>
+<script src="SoilWeb_files/leaflet.js">
+</script>
+<script src="SoilWeb_files/esri-leaflet.js">
+</script>
+<script src="SoilWeb_files/jquery.js">
+</script>
+<script src="SoilWeb_files/accurate-geolocation.js">
+</script>   
+<script src="SoilWeb_files/main_20201202.js">
+</script>
+-->
+
+</body>
+</html>

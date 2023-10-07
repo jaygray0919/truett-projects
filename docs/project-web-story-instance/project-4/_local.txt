@@ -1,9 +1,9 @@
 
 .. describe:: Project 4
 
-   Person-1.
+   item-1.
 
-   Person-2.
+   item-2.
 
-   Person-3.
+   item-3.
 
