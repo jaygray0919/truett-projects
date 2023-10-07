@@ -1,0 +1,87 @@
+
+<!-- source: https://examples.tappable.co/bonappetit -->
+<!-- native amp-story: https://examples.tappable.co/bonappetit?story=true -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>
+Mushroom Carbonara Recipe
+</title>
+
+<style>
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0;overflow:visible;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden]{display:none}h1,p{margin:0}button{background-color:transparent;background-image:none}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}img{border-style:solid}[role=button],button{cursor:pointer}h1{font-size:inherit;font-weight:inherit}a{text-decoration:inherit}a,button{color:inherit}button{padding:0;line-height:inherit}img,svg{display:block;vertical-align:middle}img{max-width:100%;height:auto}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-darker-400{background-color:rgba(0,0,0,.4)}.bg-darker-600{background-color:rgba(0,0,0,.6)}.bg-center{background-position:50%}.bg-cover{background-size:cover}.rounded{border-radius:.25rem}.rounded-md{border-radius:.375rem}.flex{display:flex}.hidden{display:none}.flex-col{flex-direction:column}.items-center{align-items:center}.self-center{align-self:center}.font-bold{font-weight:700}.h-6{height:1.5rem}.h-12{height:3rem}.h-40{height:10rem}.h-full{height:100%}.text-xs{font-size:.75rem}.text-3xl{font-size:1.875rem}.m-auto{margin:auto}.mx-2{margin-left:.5rem;margin-right:.5rem}.-mx-2{margin-left:-.5rem;margin-right:-.5rem}.mt-2{margin-top:.5rem}.mb-2{margin-bottom:.5rem}.ml-2{margin-left:.5rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.object-cover{-o-object-fit:cover;object-fit:cover}.overflow-hidden{overflow:hidden}.p-3{padding:.75rem}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{top:0;right:0;bottom:0;left:0}.top-0{top:0}.left-0{left:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)}.fill-current{fill:currentColor}.text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.w-6{width:1.5rem}.w-40{width:10rem}.w-full{width:100%}.transition-opacity{transition-property:opacity}@media (max-aspect-ratio:6/11){@media (max-height:1199.9px){#story{max-height:min(calc(100% - 24px),183vw);margin-top:0;border-top-left-radius:0;border-top-right-radius:0}}}@media (max-aspect-ratio:2/3) and (min-aspect-ratio:6/11){#story{border-radius:0}}@media (min-aspect-ratio:2/3){@media (max-width:1199.9px){#story{max-width:66.6vh;border-radius:0}}}@media (min-height:1200px){#layout{flex-direction:column;width:auto;height:auto}#story{width:360px;height:600px}#background-image,#more{display:block}#more{margin-top:2rem;width:min(100vw,480px);text-align:center}#social{justify-content:center}#qr{margin:auto}}@media (min-width:1200px){#layout{flex-direction:row;width:auto;height:auto}#story{width:360px;height:600px}#background-image,#more{display:block}#more{margin-left:2rem;width:360px;text-align:left}#social{justify-content:start}#qr{margin-left:0}}</style>
+
+<link rel="stylesheet" href="https://examples.tappable.co/sdk/player.css"/>
+
+<script src="https://examples.tappable.co/sdk/player.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    var lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var lazyImage = entry.target;
+
+          if (lazyImage.dataset.src) {
+            lazyImage.src = lazyImage.dataset.src;
+          }
+
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+    lazyImages.forEach(function (lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
+});
+</script>
+
+<link rel="canonical" href="https://examples.tappable.co/bonappetit">
+</head>
+
+<body class="fixed inset-0">
+
+<div id="background" class="absolute inset-0 bg-cover bg-center" style="background-image:url(&quot;data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http%3A//www.w3.org/2000/svg\' xmlns%3Axlink=\'http%3A//www.w3.org/1999/xlink\' viewBox=\'0 0 6 9\'%3E%3Cfilter id=\'b\' color-interpolation-filters=\'sRGB\'%3E%3CfeGaussianBlur stdDeviation=\'.5\'%3E%3C/feGaussianBlur%3E%3CfeComponentTransfer%3E%3CfeFuncA type=\'discrete\' tableValues=\'1 1\'%3E%3C/feFuncA%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Cimage filter=\'url(%23b)\' x=\'0\' y=\'0\' height=\'100%25\' width=\'100%25\' xlink%3Ahref=\'data%3Aimage/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJCAYAAAARml2dAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAA1ElEQVQI1y3PP0uCYRSG8edrCUFD5CoODfUBgibnQGiQxmqopYZocdMhyFATaiowy3J4CaJeIjDUkjzPP6Tg6igNNxec6XeMcw6rcz4g1mJFsFrjvSfEiEy+tA4R3eQbE0LgqdvgrrJBa3+VNLlkLAGT9G6pbi/QOclSKS1R283znvYwDzd1mjuLtMvrnB0WuNhb5vWxhhl9pLSO1jg/yFHdynBV3qQ/HGDi9Jfn+zrXxyt0T4u8vSQMP0eqUmqc/hBCVLJXsqqsYOZ//NtnnR3FWf4AP7K5PcjHUkoAAAAASUVORK5CYII=\'%3E%3C/image%3E%3C/svg%3E&quot;)">
+
+<img id="background-image" class="lazy hidden w-full h-full object-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://cdn.tappable.io/5qjqbUk5/i/nZhpkGVW4QepYZtmyeN37.o.jpeg?w=1800&h=1200&q=75&fit=cover">
+</div>
+
+<div id="container" class="absolute inset-0 flex bg-darker-400">
+  <div id="layout" class="w-full h-full m-auto flex flex-col">
+    <div id="story" class="w-full h-full m-auto bg-darker-600 overflow-hidden flex-0 relative  rounded-md   shadow-lg ">
+
+      <amp-story-player class="w-full h-full">
+        <a href="https://examples.tappable.co/bonappetit?story=true" style="--story-player-poster:transparent"></a>
+      </amp-story-player>
+
+      <a href="https://tappable.co/product?utm_source=examples.tappable.co&utm_medium=story&utm_campaign=/bonappetit" target="_blank">
+        <div class="absolute top-0 left-0 mt-2 h-12 p-3 flex items-center">
+          <svg class="fill-current text-white w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2H21V22H5V15H8V19H18V5H14V2Z"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H2V2H11V5H8V12H5V5Z"></path>
+          </svg>
+          <p class="ml-2 text-white font-bold text-xs transition-opacity" onload="">Made with Tappable</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="more" class="hidden text-white flex self-center">
+      <div id="description" class="mb-8">
+        <h1 class="font-bold text-3xl mb-2">Mushroom Carbonara Recipe</h1>
+        <p>Mushrooms take the place of the traditional cured pork in this super-satisfying vegetarian carbonara recipe.</p>
+      </div>
+
+      <!-- <img id="qr" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://examples.tappable.co/qr?text=https://examples.tappable.co/bonappetit" class="lazy bg-white h-40 p-3 w-40  rounded-md   shadow-lg "> -->
+    </div>
+  </div>
+</div>
+
+</body></html>

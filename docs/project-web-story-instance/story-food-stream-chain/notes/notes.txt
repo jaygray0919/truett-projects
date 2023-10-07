@@ -1,0 +1,9 @@
+
+animation using @keyframes
+
+animate 6 new foods
+https://afdsi.com/_svg-projects/story-food-chain-peanuts/
+
+
+ask Truett if they can handle advanced animation
+    provide animation examples
