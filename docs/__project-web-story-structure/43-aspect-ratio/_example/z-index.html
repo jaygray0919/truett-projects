@@ -1,0 +1,335 @@
+<!--
+-->
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<link rel="shortcut icon"
+	href="https://ontomatica.io/static/image/logo/onto-symbol-w252-h252.svg"/>
+<title>
+Story aspect-ratio examples
+</title>
+<link rel="canonical"
+	href="index.html" />
+<link rel="preload" as="script"
+	href="https://cdn.ampproject.org/v0.js"/>
+<script async
+	src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story"
+	src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+
+:root {
+    --h1-var: calc(3.0 * var(--story-page-vw));
+    --h2-var: calc(5.0 * var(--story-page-vw));
+    --h3-var: calc(4.0 * var(--story-page-vw));
+    --h4-var: calc(3.5 * var(--story-page-vw));
+    --h5-var: calc(3.0 * var(--story-page-vw));
+
+    --rcsv-pnum:"pnum" off;
+    --rcsv-ss01:"ss01" off;
+    --rcsv-ss02:"ss02" off;
+    --rcsv-ss03:"ss03" off;
+    --rcsv-ss04:"ss04" off;
+    --rcsv-ss05:"ss05" off;
+    --rcsv-ss06:"ss06" off;
+    --rcsv-ss07:"ss07" off;
+    --rcsv-ss08:"ss08" off;
+    --rcsv-ss09:"ss09" off;
+    --rcsv-ss10:"ss10" off;
+    --rcsv-ss11:"ss11" off;
+    --rcsv-ss20:"ss20" off;
+}
+
+@font-face {
+    font-family: Recursive;
+    src:
+        url('https://s3.amazonaws.com/benetta.net/fonts/recursive/recursive-2019_11_22-20_38.woff2')
+            format('woff2-variations');
+    text-align: initial;
+    font-weight: 100 600;
+    font-stretch: 25% 151%;
+    font-display: swap;
+}
+
+/* Apply current state of all custom properties when a class is applied */
+.rcsv-pnum,.rcsv-ss01,.rcsv-ss02,.rcsv-ss03,.rcsv-ss04,.rcsv-ss05,.rcsv-ss06,.rcsv-ss07,.rcsv-ss08,.rcsv-ss09,.rcsv-ss10,.rcsv-ss11,
+.rcsv-ss20 {
+    font-feature-settings:var(--rcsv-pnum), var(--rcsv-ss01), var(--rcsv-ss02), var(--rcsv-ss03), var(--rcsv-ss04), var(--rcsv-ss05), var(--rcsv-ss06), var(--rcsv-ss07), var(--rcsv-ss08), var(--rcsv-ss09), var(--rcsv-ss10), var(--rcsv-ss11), var(--rcsv-ss20);
+}
+
+/* If class is applied, update custom property */
+.rcsv-pnum{--rcsv-pnum:"pnum" on}
+.rcsv-ss01{--rcsv-ss01:"ss01" on}
+.rcsv-ss02{--rcsv-ss02:"ss02" on}
+.rcsv-ss03{--rcsv-ss03:"ss03" on}
+.rcsv-ss04{--rcsv-ss04:"ss04" on}
+.rcsv-ss05{--rcsv-ss05:"ss05" on}
+.rcsv-ss06{--rcsv-ss06:"ss06" on}
+.rcsv-ss07{--rcsv-ss07:"ss07" on}
+.rcsv-ss08{--rcsv-ss08:"ss08" on}
+.rcsv-ss09{--rcsv-ss09:"ss09" on}
+.rcsv-ss10{--rcsv-ss10:"ss10" on}
+.rcsv-ss11{--rcsv-ss11:"ss11" on}
+.rcsv-ss20{--rcsv-ss20:"ss20" on}
+
+@font-face {
+  font-family: ZillaSlab;
+  src: url(https://s3.amazonaws.com/benetta.net/fonts/zilla-slab/zilla-slab-v6-latin-500.woff2)
+    format("woff2");
+  text-align: initial;
+  font-style: normal;
+  font-weight: 100 600;
+  font-display: swap;
+}
+
+/*******************
+ *  Font: Noto Serif
+ */
+
+@font-face {
+    font-family: NotoSerif;
+    src:
+        url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/NotoSerif-Regular.ttf")
+            format("truetype"),
+        url("https://s3.amazonaws.com/benetta.net/fonts/noto-serif/noto-serif-v11-latin-regular.woff2")
+            format("woff2");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: ZillaSlab;
+    font-size: var(--h1-var);
+    color: #ffffff;
+    border: none;
+}
+
+h2 {
+    font-family: ZillaSlab;
+    font-size: var(--h2-var);
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+}
+
+h3 {
+    font-family: NotoSerif;
+    font-size: var(--h3-var);;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-top: 1em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h4 {
+    font-family: NotoSerif;
+    font-size: var(--h4-var);;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-top: 1em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+h5 {
+    font-family: NotoSerif;
+    font-size: var(--h5-var);;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    margin-top: 1em;
+    color: #ffffff;
+    border: none;
+    transition: 1s;
+}
+
+.title-centered {
+    text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+<amp-story
+  standalone
+  title="Template"
+  publisher=""
+  publisher-logo-src=""
+  poster-portrait-src=""
+  poster-square-src=""
+  poster-landscape-src=""
+  supports-landscape
+>
+
+
+<amp-story-page id="item-10">
+
+<amp-story-grid-layer template="thirds">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Introduction to Einstein Riddle
+</h2>
+<h3>
+Introduction to Einstein Riddle
+</h3>
+<h4>
+Introduction to Einstein Riddle
+</h4>
+<h5>
+Introduction to Einstein Riddle
+</h5>
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page id="item-11" data-item-label="3:3 1:1">
+
+<amp-story-grid-layer template="thirds" aspect-ratio="3:3">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Introduction to Einstein Riddle (3:3) - same as 1:1
+</h2>
+</div>
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<h4>
+We&#x0027;re going to show you how to use machine logic to solve a famous riddle. The riddle focuses on deductive reasoning where facts are used to come to a logical conclusion.
+</h4>
+<h4>
+If all the facts are true and all the rules of deductive logic are followed, then the conclusion will also be true.
+</h4>
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page id="item-12" data-item-label="2:1">
+
+<amp-story-grid-layer template="thirds" aspect-ratio="2:1">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Introduction to Einstein Riddle (2:1)
+</h2>
+</div>
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<h4>
+We&#x0027;re going to show you how to use machine logic to solve a famous riddle. The riddle focuses on deductive reasoning where facts are used to come to a logical conclusion.
+</h4>
+<h4>
+If all the facts are true and all the rules of deductive logic are followed, then the conclusion will also be true.
+</h4>
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page id="item-13" data-item-label="4:3">
+
+<amp-story-grid-layer template="thirds" aspect-ratio="4:3">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Introduction to Einstein Riddle (4:3)
+</h2>
+</div>
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<h4>
+We&#x0027;re going to show you how to use machine logic to solve a famous riddle. The riddle focuses on deductive reasoning where facts are used to come to a logical conclusion.
+</h4>
+<h4>
+If all the facts are true and all the rules of deductive logic are followed, then the conclusion will also be true.
+</h4>
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page id="item-14" data-item-label="6:4">
+
+<amp-story-grid-layer template="thirds" aspect-ratio="6:4">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Introduction to Einstein Riddle (6:4)
+</h2>
+</div>
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<h4>
+We&#x0027;re going to show you how to use machine logic to solve a famous riddle. The riddle focuses on deductive reasoning where facts are used to come to a logical conclusion.
+</h4>
+<h4>
+If all the facts are true and all the rules of deductive logic are followed, then the conclusion will also be true.
+</h4>
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page id="item-15" data-item-label="16:9">
+
+<amp-story-grid-layer template="thirds" aspect-ratio="16:9">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Introduction to Einstein Riddle (16:9)
+</h2>
+</div>
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<h4>
+We&#x0027;re going to show you how to use machine logic to solve a famous riddle. The riddle focuses on deductive reasoning where facts are used to come to a logical conclusion.
+</h4>
+<h4>
+If all the facts are true and all the rules of deductive logic are followed, then the conclusion will also be true.
+</h4>
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+
+<amp-story-page id="item-16" data-item-label="0.5 1:2">
+
+<amp-story-grid-layer template="thirds" aspect-ratio="0.5">
+<div grid-area="upper-third">
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s">
+<h2>
+Introduction to Einstein Riddle (0.5) sames as (1:2)
+</h2>
+</div>
+<div class="title-centered" animate-in="fade-in" animate-in-duration="4s" animate-in-delay="1s">
+<h4>
+We&#x0027;re going to show you how to use machine logic to solve a famous riddle. The riddle focuses on deductive reasoning where facts are used to come to a logical conclusion.
+</h4>
+<h4>
+If all the facts are true and all the rules of deductive logic are followed, then the conclusion will also be true.
+</h4>
+</div>
+</div>
+</amp-story-grid-layer>
+
+</amp-story-page>
+</body>
+</html>

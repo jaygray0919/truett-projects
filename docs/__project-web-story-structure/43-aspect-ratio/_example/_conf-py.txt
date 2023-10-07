@@ -1,0 +1,6 @@
+
+project-web-story-structure/43-aspect-ratio/_example/aspect-ratio.html
+
+
+`aspect-ratio </en/latest/aspect-ratio.html>`_
+
