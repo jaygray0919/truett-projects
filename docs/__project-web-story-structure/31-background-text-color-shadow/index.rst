@@ -7,7 +7,7 @@ slide background |emd| text-color |emd| text-shadow
    :maxdepth: 1
 
    theme-light/index.rst
-   theme-light/index.rst
+   theme-dark/index.rst
    theme-occasional/index.rst
 
 
