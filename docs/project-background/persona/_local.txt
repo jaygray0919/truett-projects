@@ -41,6 +41,8 @@ Here is food scientist on BLS SOC
 Here is Food Scientists and Technologists on O*NET
   https://www.onetonline.org/link/summary/19-1012.00
 
+** schema-audience URL missing **
+
 Here are several roles in the audience that are interested in our work:
   https://afdsi.com/___supplier/paula-perez/schema-audience/data.txt
 The ontology we use is
@@ -55,6 +57,8 @@ Here, Google reads and "understands" our audience declarations
   https://validator.schema.org/#url=https%3A%2F%2Fafdsi.com%2F_talent%2Fpaula%2Fschema-audience%2Fdata.txt
 
 Let's look at a more complex declaration: Food Scientists and Technologists
+
+** schema-food-scientist URL missing **
 
 Here is Food Scientists and Technologists in machine-readable format
   https://afdsi.com/_talent/paula/schema-food-scientist/data.txt
