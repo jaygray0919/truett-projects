@@ -1,7 +1,8 @@
 
 .. describe:: cover page HTML
 
-   item
+   changed: H1 to ZillaSlab-Bold-700
+   updated: example
 
 
 .. attention::
@@ -23,7 +24,7 @@
            <div class="Poppins-Regular-400 fs-14 co-p">
              part of education series: connecting the dots
            </div>
-           <h1 class="Poppins-ExtraBoldItalic-800 fs-20 co-h1">
+           <h1 class="ZillaSlab-Bold-700 fs-32 co-h1">
              Solve Problems with Knowledge Graphs
            </h1>
          </hgroup>

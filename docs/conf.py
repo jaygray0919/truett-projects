@@ -134,7 +134,7 @@ html_favicon = "_images/onto-shortcut-w252-h252-color-ffffff-bgnd-1f64ff.svg"
 
 html_extra_path = [
 
-    '__project-web-story-structure/21-cover-page/_example/cover-poppins.html',
+    '__project-web-story-structure/21-cover-page/_example/cover.html',
     '__project-web-story-structure/31-background-text-color-shadow/_example/background-text-color-shadow.html',
     '__project-web-story-structure/31-background-text-color-shadow/_example/background/background-130F30-constellation-w997-h997.svg',
     '__project-web-story-structure/31-background-text-color-shadow/_example/background/background-fractal-noise-w1650-h1500.webp',
