@@ -13,5 +13,5 @@ cover page
 Example
 -------
 
-`cover page, poppins only </en/latest/cover-poppins.html>`_
+`cover page, poppins + zilla slab </en/latest/cover.html>`_
 

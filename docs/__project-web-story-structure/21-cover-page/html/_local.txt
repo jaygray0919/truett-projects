@@ -2,14 +2,19 @@
 .. describe:: cover page HTML
 
    changed: H1 to ZillaSlab-Bold-700
+
    updated: example
 
 
 .. attention::
    Change hgroup for each Web Story instance.
+
    Change author for each Web Story instance.
+
    Note dependence on CSS color variables.
+
    CSS cover-[value] depends on title width
+
    CSS w-[value] depends on title width
 
 
